@@ -1,0 +1,637 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/94nath",
+    "id": "94nath",
+    "slide": 8,
+    "layoutId": "d1637cf7-ca8a-4ece-94e8-d880829e9047",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "a8d49641-4b3d-4323-b7ea-4a93f3b20b23",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Aptos",
+      "Aptos Display"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "d1637cf7-ca8a-4ece-94e8-d880829e9047",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "a8d49641-4b3d-4323-b7ea-4a93f3b20b23",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "a8d49641-4b3d-4323-b7ea-4a93f3b20b23",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/u9knih4b",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#F7F3EA",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1032lszq",
+      "id": "2",
+      "bbox": [
+        64,
+        34,
+        260,
+        24
+      ],
+      "geometry": "rect",
+      "text": "Proposed Topic",
+      "textPreview": "Proposed Topic",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13,
+        "typeface": "Aptos",
+        "color": "#CC5A43",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Proposed Topic"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Proposed Topic",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "typeface": "Aptos",
+            "color": "#CC5A43",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Proposed Topic",
+              "fontSize": 13,
+              "typeface": "Aptos",
+              "color": "#CC5A43",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cfa9w3m9",
+      "id": "3",
+      "bbox": [
+        64,
+        65,
+        1020,
+        88
+      ],
+      "geometry": "rect",
+      "text": "Working title: Extra-Pacific warming as a modulator of atmosphere-ocean decoupling during the 2023/24 El Niño",
+      "textPreview": "Working title: Extra-Pacific warming as a modulator of atmosphere-ocean decoupling during the 2023/24 El Niño",
+      "resolvedFontSize": 34,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 34,
+        "typeface": "Aptos Display",
+        "color": "#1D1B18",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Working title: Extra-Pacific warming as a modulator of"
+          },
+          {
+            "index": 2,
+            "text": "atmosphere-ocean decoupling during the 2023/24 El Niño"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Working title: Extra-Pacific warming as a modulator of atmosphere-ocean decoupling during the 2023/24 El Niño",
+          "resolvedTextStyle": {
+            "fontSize": 34,
+            "typeface": "Aptos Display",
+            "color": "#1D1B18",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Working title: Extra-Pacific warming as a modulator of atmosphere-ocean decoupling during the 2023/24 El Niño",
+              "fontSize": 34,
+              "typeface": "Aptos Display",
+              "color": "#1D1B18",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jm1cfa9w",
+      "id": "4",
+      "bbox": [
+        64,
+        151,
+        1120,
+        1.5
+      ],
+      "geometry": "rect",
+      "fillColor": "#D8D1C4",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/u18jqh0f",
+      "id": "5",
+      "bbox": [
+        86,
+        190,
+        1000,
+        42
+      ],
+      "geometry": "rect",
+      "text": "Core question: when Pacific SST is already sufficiently warm, how do external basins and background warming change coupling efficiency?",
+      "textPreview": "Core question: when Pacific SST is already sufficiently warm, how do external basins and background warming change coupling efficiency?",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "Aptos",
+        "color": "#2F6F73",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Core question: when Pacific SST is already sufficiently warm, how do external basins and"
+          },
+          {
+            "index": 2,
+            "text": "background warming change coupling efficiency?"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Core question: when Pacific SST is already sufficiently warm, how do external basins and background warming change coupling efficiency?",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Aptos",
+            "color": "#2F6F73",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Core question: when Pacific SST is already sufficiently warm, how do external basins and background warming change coupling efficiency?",
+              "fontSize": 22,
+              "typeface": "Aptos",
+              "color": "#2F6F73",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1orytsvu",
+      "id": "6",
+      "bbox": [
+        88,
+        280,
+        970,
+        76
+      ],
+      "geometry": "rect",
+      "fillColor": "#F5E5DF",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 1
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/c7u54zid",
+      "id": "7",
+      "bbox": [
+        112,
+        298,
+        916,
+        40
+      ],
+      "geometry": "rect",
+      "text": "H1: Spring-summer external-basin warmth altered the Walker background state and weakened central-Pacific westerly response.",
+      "textPreview": "H1: Spring-summer external-basin warmth altered the Walker background state and weakened central-Pacific westerly response.",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 19,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "H1: Spring-summer external-basin warmth altered the Walker background state and weakened"
+          },
+          {
+            "index": 2,
+            "text": "central-Pacific westerly response."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "H1: Spring-summer external-basin warmth altered the Walker background state and weakened central-Pacific westerly response.",
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "H1: Spring-summer external-basin warmth altered the Walker background state and weakened central-Pacific westerly response.",
+              "fontSize": 19,
+              "typeface": "Aptos",
+              "color": "#1D1B18",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nap4r65w",
+      "id": "8",
+      "bbox": [
+        88,
+        384,
+        970,
+        76
+      ],
+      "geometry": "rect",
+      "fillColor": "#EDF3EF",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 1
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/upwb2hwf",
+      "id": "9",
+      "bbox": [
+        112,
+        402,
+        916,
+        40
+      ],
+      "geometry": "rect",
+      "text": "H2: Maritime Continent / Indian Ocean warmth maintained local convection and limited the canonical eastward rainfall shift.",
+      "textPreview": "H2: Maritime Continent / Indian Ocean warmth maintained local convection and limited the canonical eastward rainfall shift.",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 19,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "H2: Maritime Continent / Indian Ocean warmth maintained local convection and limited the canonical"
+          },
+          {
+            "index": 2,
+            "text": "eastward rainfall shift."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "H2: Maritime Continent / Indian Ocean warmth maintained local convection and limited the canonical eastward rainfall shift.",
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "H2: Maritime Continent / Indian Ocean warmth maintained local convection and limited the canonical eastward rainfall shift.",
+              "fontSize": 19,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/orytsvu9",
+      "id": "10",
+      "bbox": [
+        88,
+        488,
+        970,
+        76
+      ],
+      "geometry": "rect",
+      "fillColor": "#ECECF6",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 1
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hcrmhk3q",
+      "id": "11",
+      "bbox": [
+        112,
+        506,
+        916,
+        40
+      ],
+      "geometry": "rect",
+      "text": "H3: Tropical North Atlantic warmth or tropical-mean warming raised the threshold for a Pacific-driven atmospheric response.",
+      "textPreview": "H3: Tropical North Atlantic warmth or tropical-mean warming raised the threshold for a Pacific-driven atmospheric response.",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 19,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "H3: Tropical North Atlantic warmth or tropical-mean warming raised the threshold for a Pacific-driven"
+          },
+          {
+            "index": 2,
+            "text": "atmospheric response."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "H3: Tropical North Atlantic warmth or tropical-mean warming raised the threshold for a Pacific-driven atmospheric response.",
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "H3: Tropical North Atlantic warmth or tropical-mean warming raised the threshold for a Pacific-driven atmospheric response.",
+              "fontSize": 19,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/al87ed8b",
+      "id": "12",
+      "bbox": [
+        64,
+        684,
+        1070,
+        18
+      ],
+      "geometry": "rect",
+      "text": "Interpretation based on reproduction + raw validation + external-basin diagnostics.",
+      "textPreview": "Interpretation based on reproduction + raw validation + external-basin diagnostics.",
+      "resolvedFontSize": 9,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 9,
+        "typeface": "Aptos",
+        "color": "#6E675D",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Interpretation based on reproduction + raw validation + external-basin diagnostics."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Interpretation based on reproduction + raw validation + external-basin diagnostics.",
+          "resolvedTextStyle": {
+            "fontSize": 9,
+            "typeface": "Aptos",
+            "color": "#6E675D",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Interpretation based on reproduction + raw validation + external-basin diagnostics.",
+              "fontSize": 9,
+              "typeface": "Aptos",
+              "color": "#6E675D"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

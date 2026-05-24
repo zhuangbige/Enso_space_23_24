@@ -1,0 +1,554 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/cwdy0i",
+    "id": "cwdy0i",
+    "slide": 1,
+    "layoutId": "ccb5f8a6-a626-4559-b885-6faf23462ff4",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "cb01c3ff-e267-4739-a91e-c06d16db3118",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Aptos",
+      "Aptos Display"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "ccb5f8a6-a626-4559-b885-6faf23462ff4",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "cb01c3ff-e267-4739-a91e-c06d16db3118",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "cb01c3ff-e267-4739-a91e-c06d16db3118",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sneloj2t",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#F7F3EA",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/32lszqtc",
+      "id": "2",
+      "bbox": [
+        64,
+        54,
+        240,
+        24
+      ],
+      "geometry": "rect",
+      "text": "开题方向",
+      "textPreview": "开题方向",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Aptos",
+        "color": "#CC5A43",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "开题方向"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "开题方向",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Aptos",
+            "color": "#CC5A43",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "开题方向",
+              "fontSize": 14,
+              "typeface": "Aptos",
+              "color": "#CC5A43",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ahoza1gv",
+      "id": "3",
+      "bbox": [
+        64,
+        104,
+        850,
+        190
+      ],
+      "geometry": "rect",
+      "text": "2023/24 强厄尔尼诺为何呈现海洋强、空气弱的脱耦响应？",
+      "textPreview": "2023/24 强厄尔尼诺为何呈现海洋强、空气弱的脱耦响应？",
+      "resolvedFontSize": 45,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 45,
+        "typeface": "Aptos Display",
+        "color": "#1D1B18",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "2023/24"
+          },
+          {
+            "index": 2,
+            "text": "强厄尔尼诺为何呈现海洋强、空气弱的脱"
+          },
+          {
+            "index": 3,
+            "text": "耦响应？"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "2023/24 强厄尔尼诺为何呈现海洋强、空气弱的脱耦响应？",
+          "resolvedTextStyle": {
+            "fontSize": 45,
+            "typeface": "Aptos Display",
+            "color": "#1D1B18",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "2023/24 强厄尔尼诺为何呈现海洋强、空气弱的脱耦响应？",
+              "fontSize": 45,
+              "typeface": "Aptos Display",
+              "color": "#1D1B18",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lkjm1cfa",
+      "id": "4",
+      "bbox": [
+        66,
+        322,
+        920,
+        62
+      ],
+      "geometry": "rect",
+      "text": "从 Peng et al. 2025 复现出发，转向外海盆背景态对太平洋大气响应的调制",
+      "textPreview": "从 Peng et al. 2025 复现出发，转向外海盆背景态对太平洋大气响应的调制",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "Aptos",
+        "color": "#6E675D",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "从 Peng et al. 2025 复现出发，转向外海盆背景态对太平洋大气响应的调制"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "从 Peng et al. 2025 复现出发，转向外海盆背景态对太平洋大气响应的调制",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Aptos",
+            "color": "#6E675D",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "从 Peng et al. 2025 复现出发，转向外海盆背景态对太平洋大气响应的调制",
+              "fontSize": 22,
+              "typeface": "Aptos",
+              "color": "#6E675D"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/szqtcj6t",
+      "id": "5",
+      "bbox": [
+        72,
+        448,
+        7,
+        7
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#CC5A43",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3ex0nuxc",
+      "id": "6",
+      "bbox": [
+        92,
+        440,
+        810,
+        50
+      ],
+      "geometry": "rect",
+      "text": "主问题：哪些海盆/背景态因素削弱了太平洋暖 SST 对风场、SOI、降水和 Walker 环流的典型响应？",
+      "textPreview": "主问题：哪些海盆/背景态因素削弱了太平洋暖 SST 对风场、SOI、降水和 Walker 环流的典型响应？",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "主问题：哪些海盆/背景态因素削弱了太平洋暖 SST 对风场、SOI、降水和 Walker 环流的典型响应？"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "主问题：哪些海盆/背景态因素削弱了太平洋暖 SST 对风场、SOI、降水和 Walker 环流的典型响应？",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "主问题：哪些海盆/背景态因素削弱了太平洋暖 SST 对风场、SOI、降水和 Walker 环流的典型响应？",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/at47y1kr",
+      "id": "7",
+      "bbox": [
+        72,
+        506,
+        7,
+        7
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#CC5A43",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/loj2t83i",
+      "id": "8",
+      "bbox": [
+        92,
+        498,
+        810,
+        50
+      ],
+      "geometry": "rect",
+      "text": "阶段定位：复现完成，独立验证完成一部分，已形成新研究切口。",
+      "textPreview": "阶段定位：复现完成，独立验证完成一部分，已形成新研究切口。",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "阶段定位：复现完成，独立验证完成一部分，已形成新研究切口。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "阶段定位：复现完成，独立验证完成一部分，已形成新研究切口。",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "阶段定位：复现完成，独立验证完成一部分，已形成新研究切口。",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/w3m94fu1",
+      "id": "9",
+      "bbox": [
+        1010,
+        118,
+        150,
+        150
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#CC5A43",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/udg7adsj",
+      "id": "10",
+      "bbox": [
+        1075,
+        310,
+        88,
+        88
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#2F6F73",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nyd0z610",
+      "id": "11",
+      "bbox": [
+        64,
+        684,
+        1070,
+        18
+      ],
+      "geometry": "rect",
+      "text": "Source: Peng et al. 2025 Nature Geoscience; NOAA OISST, GPCP, NCEP/NCAR reanalysis.",
+      "textPreview": "Source: Peng et al. 2025 Nature Geoscience; NOAA OISST, GPCP, NCEP/NCAR reanalysis.",
+      "resolvedFontSize": 9,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 9,
+        "typeface": "Aptos",
+        "color": "#6E675D",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Source: Peng et al. 2025 Nature Geoscience; NOAA OISST, GPCP, NCEP/NCAR reanalysis."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Source: Peng et al. 2025 Nature Geoscience; NOAA OISST, GPCP, NCEP/NCAR reanalysis.",
+          "resolvedTextStyle": {
+            "fontSize": 9,
+            "typeface": "Aptos",
+            "color": "#6E675D",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Source: Peng et al. 2025 Nature Geoscience; NOAA OISST, GPCP, NCEP/NCAR reanalysis.",
+              "fontSize": 9,
+              "typeface": "Aptos",
+              "color": "#6E675D"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

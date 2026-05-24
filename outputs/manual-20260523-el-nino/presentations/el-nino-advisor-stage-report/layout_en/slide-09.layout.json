@@ -1,0 +1,676 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/imr4qz",
+    "id": "imr4qz",
+    "slide": 9,
+    "layoutId": "b6e9cf10-085d-44eb-a4bb-c253e7764d1c",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "16c6856f-8e00-41a8-a10c-c132761ace82",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Aptos",
+      "Aptos Display"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "b6e9cf10-085d-44eb-a4bb-c253e7764d1c",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "16c6856f-8e00-41a8-a10c-c132761ace82",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "16c6856f-8e00-41a8-a10c-c132761ace82",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zed8v6ps",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#F7F3EA",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/oza1gvy9",
+      "id": "2",
+      "bbox": [
+        64,
+        34,
+        300,
+        24
+      ],
+      "geometry": "rect",
+      "text": "Raw Validation",
+      "textPreview": "Raw Validation",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13,
+        "typeface": "Aptos",
+        "color": "#CC5A43",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Raw Validation"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Raw Validation",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "typeface": "Aptos",
+            "color": "#CC5A43",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Raw Validation",
+              "fontSize": 13,
+              "typeface": "Aptos",
+              "color": "#CC5A43",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hk3q5o7q",
+      "id": "3",
+      "bbox": [
+        64,
+        65,
+        1090,
+        82
+      ],
+      "geometry": "rect",
+      "text": "Public datasets confirm that the paper-level signal is not a single-dataset artifact",
+      "textPreview": "Public datasets confirm that the paper-level signal is not a single-dataset artifact",
+      "resolvedFontSize": 31,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 31,
+        "typeface": "Aptos Display",
+        "color": "#1D1B18",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Public datasets confirm that the paper-level signal is not a single-dataset"
+          },
+          {
+            "index": 2,
+            "text": "artifact"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Public datasets confirm that the paper-level signal is not a single-dataset artifact",
+          "resolvedTextStyle": {
+            "fontSize": 31,
+            "typeface": "Aptos Display",
+            "color": "#1D1B18",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Public datasets confirm that the paper-level signal is not a single-dataset artifact",
+              "fontSize": 31,
+              "typeface": "Aptos Display",
+              "color": "#1D1B18",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/65wjudg7",
+      "id": "4",
+      "bbox": [
+        64,
+        151,
+        1120,
+        1.5
+      ],
+      "geometry": "rect",
+      "fillColor": "#D8D1C4",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/m58z25kb",
+      "id": "5",
+      "bbox": [
+        78,
+        184,
+        548,
+        358
+      ],
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "b4448416-6d27-4143-8ee3-5db485d1a8c2",
+        "contentType": "image/png",
+        "byteLength": 64889
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/obm58z25",
+      "id": "6",
+      "bbox": [
+        680,
+        222,
+        7,
+        7
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#CC5A43",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hwfyxobm",
+      "id": "7",
+      "bbox": [
+        700,
+        214,
+        410,
+        73
+      ],
+      "geometry": "rect",
+      "text": "NOAA Optimum Interpolation SST, or OISST, Niño-3 correlates 0.9999 with reproduced Fig. 1.",
+      "textPreview": "NOAA Optimum Interpolation SST, or OISST, Niño-3 correlates 0.9999 with reproduced Fig. 1.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "NOAA Optimum Interpolation SST, or OISST,"
+          },
+          {
+            "index": 2,
+            "text": "Niño-3 correlates 0.9999 with reproduced Fig. 1."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "NOAA Optimum Interpolation SST, or OISST, Niño-3 correlates 0.9999 with reproduced Fig. 1.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "NOAA Optimum Interpolation SST, or OISST, Niño-3 correlates 0.9999 with reproduced Fig. 1.",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/a9w3m94f",
+      "id": "8",
+      "bbox": [
+        680,
+        300,
+        7,
+        7
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#CC5A43",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zupwb2hw",
+      "id": "9",
+      "bbox": [
+        700,
+        292,
+        410,
+        73
+      ],
+      "geometry": "rect",
+      "text": "Global Precipitation Climatology Project, or GPCP, shows weaker central/eastern Pacific rainfall in 2023 than in the strong-event composite.",
+      "textPreview": "Global Precipitation Climatology Project, or GPCP, shows weaker central/eastern Pacific rainfall in 2023 than in the strong-event composite.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Global Precipitation Climatology Project, or GPCP,"
+          },
+          {
+            "index": 2,
+            "text": "shows weaker central/eastern Pacific rainfall in"
+          },
+          {
+            "index": 3,
+            "text": "2023 than in the strong-event composite."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Global Precipitation Climatology Project, or GPCP, shows weaker central/eastern Pacific rainfall in 2023 than in the strong-event composite.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Global Precipitation Climatology Project, or GPCP, shows weaker central/eastern Pacific rainfall in 2023 than in the strong-event composite.",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7y1kre1w",
+      "id": "10",
+      "bbox": [
+        680,
+        378,
+        7,
+        7
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#CC5A43",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ed8v6psf",
+      "id": "11",
+      "bbox": [
+        700,
+        370,
+        410,
+        73
+      ],
+      "geometry": "rect",
+      "text": "NCEP/NCAR reanalysis wind and SOI-like pressure-gradient proxies align closely with the paper's atmospheric metrics.",
+      "textPreview": "NCEP/NCAR reanalysis wind and SOI-like pressure-gradient proxies align closely with the paper's atmospheric metrics.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "NCEP/NCAR reanalysis wind and SOI-like"
+          },
+          {
+            "index": 2,
+            "text": "pressure-gradient proxies align closely with the"
+          },
+          {
+            "index": 3,
+            "text": "paper's atmospheric metrics."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "NCEP/NCAR reanalysis wind and SOI-like pressure-gradient proxies align closely with the paper's atmospheric metrics.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "NCEP/NCAR reanalysis wind and SOI-like pressure-gradient proxies align closely with the paper's atmospheric metrics.",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p4r65wju",
+      "id": "12",
+      "bbox": [
+        78,
+        568,
+        1080,
+        88
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFAF1",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.8
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wjudg7ad",
+      "id": "13",
+      "bbox": [
+        90,
+        576,
+        1056,
+        76
+      ],
+      "geometry": "rect",
+      "text": "Data note: NOAA OISST, GPCP, and NCEP/NCAR R1; corresponding tables oisst_vs_fig1_nino3.csv, gpcp_vs_fig2_precip.csv, and ncep_vs_fig1_atmosphere.csv. How to read: OISST validates SST, GPCP validates rainfall, and NCEP serves as a wind/pressure fallback. Their consistent direction means the ocean-strong / atmosphere-weak signal is not an artifact of the paper source data.",
+      "textPreview": "Data note: NOAA OISST, GPCP, and NCEP/NCAR R1; corresponding tables oisst_vs_fig1_nino3.csv, gpcp_vs_fig2_precip.csv, and ncep_vs_fig1_at...",
+      "resolvedFontSize": 10.4,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 10.4,
+        "typeface": "Aptos",
+        "color": "#6E675D",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Data note: NOAA OISST, GPCP, and NCEP/NCAR R1; corresponding tables oisst_vs_fig1_nino3.csv, gpcp_vs_fig2_precip.csv, and ncep_vs_fig1_atmosphere.csv. How to read: OISST validates SST, GPCP validates rainfall, and"
+          },
+          {
+            "index": 2,
+            "text": "NCEP serves as a wind/pressure fallback. Their consistent direction means the ocean-strong / atmosphere-weak signal is not an artifact of the paper source data."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Data note: NOAA OISST, GPCP, and NCEP/NCAR R1; corresponding tables oisst_vs_fig1_nino3.csv, gpcp_vs_fig2_precip.csv, and ncep_vs_fig1_atmosphere.csv. How to read: OISST validates SST, GPCP validates rainfall, and NCEP serves as a wind/pressure fallback. Their consistent direction means the ocean-strong / atmosphere-weak signal is not an artifact of the paper source data.",
+          "resolvedTextStyle": {
+            "fontSize": 10.4,
+            "typeface": "Aptos",
+            "color": "#6E675D",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Data note: NOAA OISST, GPCP, and NCEP/NCAR R1; corresponding tables oisst_vs_fig1_nino3.csv, gpcp_vs_fig2_precip.csv, and ncep_vs_fig1_atmosphere.csv. How to read: OISST validates SST, GPCP validates rainfall, and NCEP serves as a wind/pressure fallback. Their consistent direction means the ocean-strong / atmosphere-weak signal is not an artifact of the paper source data.",
+              "fontSize": 10.4,
+              "typeface": "Aptos",
+              "color": "#6E675D"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7qpg3ex0",
+      "id": "14",
+      "bbox": [
+        64,
+        684,
+        1100,
+        22
+      ],
+      "geometry": "rect",
+      "text": "D2 NOAA OISST; D3 GPCP; D4 NCEP/NCAR R1 via NOAA PSL OPeNDAP.",
+      "textPreview": "D2 NOAA OISST; D3 GPCP; D4 NCEP/NCAR R1 via NOAA PSL OPeNDAP.",
+      "resolvedFontSize": 8.6,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 8.6,
+        "typeface": "Aptos",
+        "color": "#6E675D",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "D2 NOAA OISST; D3 GPCP; D4 NCEP/NCAR R1 via NOAA PSL OPeNDAP."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "D2 NOAA OISST; D3 GPCP; D4 NCEP/NCAR R1 via NOAA PSL OPeNDAP.",
+          "resolvedTextStyle": {
+            "fontSize": 8.6,
+            "typeface": "Aptos",
+            "color": "#6E675D",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "D2 NOAA OISST; D3 GPCP; D4 NCEP/NCAR R1 via NOAA PSL OPeNDAP.",
+              "fontSize": 8.6,
+              "typeface": "Aptos",
+              "color": "#6E675D"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

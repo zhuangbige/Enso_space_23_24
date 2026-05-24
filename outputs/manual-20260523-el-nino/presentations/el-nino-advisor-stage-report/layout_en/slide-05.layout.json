@@ -1,0 +1,602 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/zseqr6",
+    "id": "zseqr6",
+    "slide": 5,
+    "layoutId": "b6e9cf10-085d-44eb-a4bb-c253e7764d1c",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "16c6856f-8e00-41a8-a10c-c132761ace82",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Aptos",
+      "Aptos Display"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "b6e9cf10-085d-44eb-a4bb-c253e7764d1c",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "16c6856f-8e00-41a8-a10c-c132761ace82",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "16c6856f-8e00-41a8-a10c-c132761ace82",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hoza1gvy",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#F7F3EA",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/a1gvy90j",
+      "id": "2",
+      "bbox": [
+        64,
+        34,
+        300,
+        24
+      ],
+      "geometry": "rect",
+      "text": "Reproduction 1",
+      "textPreview": "Reproduction 1",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13,
+        "typeface": "Aptos",
+        "color": "#CC5A43",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Reproduction 1"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Reproduction 1",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "typeface": "Aptos",
+            "color": "#CC5A43",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Reproduction 1",
+              "fontSize": 13,
+              "typeface": "Aptos",
+              "color": "#CC5A43",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zidonyd0",
+      "id": "3",
+      "bbox": [
+        64,
+        65,
+        1090,
+        82
+      ],
+      "geometry": "rect",
+      "text": "Peng et al. Fig. 1: strong sea-surface temperature but weak wind-pressure coupling in 2023/24",
+      "textPreview": "Peng et al. Fig. 1: strong sea-surface temperature but weak wind-pressure coupling in 2023/24",
+      "resolvedFontSize": 31,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 31,
+        "typeface": "Aptos Display",
+        "color": "#1D1B18",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Peng et al. Fig. 1: strong sea-surface temperature but weak"
+          },
+          {
+            "index": 2,
+            "text": "wind-pressure coupling in 2023/24"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Peng et al. Fig. 1: strong sea-surface temperature but weak wind-pressure coupling in 2023/24",
+          "resolvedTextStyle": {
+            "fontSize": 31,
+            "typeface": "Aptos Display",
+            "color": "#1D1B18",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Peng et al. Fig. 1: strong sea-surface temperature but weak wind-pressure coupling in 2023/24",
+              "fontSize": 31,
+              "typeface": "Aptos Display",
+              "color": "#1D1B18",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/svu9knih",
+      "id": "4",
+      "bbox": [
+        64,
+        151,
+        1120,
+        1.5
+      ],
+      "geometry": "rect",
+      "fillColor": "#D8D1C4",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/0fepkzup",
+      "id": "5",
+      "bbox": [
+        66,
+        178,
+        528,
+        386
+      ],
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "2c57dfce-a0eb-404c-a848-2ec429d2ccb1",
+        "contentType": "image/png",
+        "byteLength": 2324062
+      }
+    },
+    {
+      "order": 6,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/bulwval8",
+      "id": "6",
+      "bbox": [
+        620,
+        186,
+        430,
+        250
+      ],
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "0631cae9-2828-4776-b194-f3e11f77c6e6",
+        "contentType": "image/png",
+        "byteLength": 88515
+      }
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/za1gvy90",
+      "id": "7",
+      "bbox": [
+        632,
+        470,
+        7,
+        7
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#CC5A43",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sji5snel",
+      "id": "8",
+      "bbox": [
+        652,
+        462,
+        460,
+        37
+      ],
+      "geometry": "rect",
+      "text": "Reproduction confirms 2023/24 as a strong SST event.",
+      "textPreview": "Reproduction confirms 2023/24 as a strong SST event.",
+      "resolvedFontSize": 14.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14.51,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Reproduction confirms 2023/24 as a strong SST event."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Reproduction confirms 2023/24 as a strong SST event.",
+          "resolvedTextStyle": {
+            "fontSize": 14.51,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Reproduction confirms 2023/24 as a strong SST event.",
+              "fontSize": 14.51,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h4byhgn2",
+      "id": "9",
+      "bbox": [
+        632,
+        512,
+        7,
+        7
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#CC5A43",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p4r65wju",
+      "id": "10",
+      "bbox": [
+        652,
+        504,
+        460,
+        37
+      ],
+      "geometry": "rect",
+      "text": "Wind and pressure responses are muted relative to 1982/83, 1997/98, and 2015/16.",
+      "textPreview": "Wind and pressure responses are muted relative to 1982/83, 1997/98, and 2015/16.",
+      "resolvedFontSize": 14.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14.51,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Wind and pressure responses are muted relative to 1982/83, 1997/98,"
+          },
+          {
+            "index": 2,
+            "text": "and 2015/16."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Wind and pressure responses are muted relative to 1982/83, 1997/98, and 2015/16.",
+          "resolvedTextStyle": {
+            "fontSize": 14.51,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Wind and pressure responses are muted relative to 1982/83, 1997/98, and 2015/16.",
+              "fontSize": 14.51,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wjudg7ad",
+      "id": "11",
+      "bbox": [
+        68,
+        574,
+        1088,
+        82
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFAF1",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.8
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7y1kre1w",
+      "id": "12",
+      "bbox": [
+        80,
+        582,
+        1064,
+        70
+      ],
+      "geometry": "rect",
+      "text": "Data note: Peng et al. 2025 source archive Fig. 1; local table fig1_event_coupling.csv. Niño-3 is the eastern equatorial Pacific SST region; u10 is 10-m zonal wind; SOI is the Southern Oscillation Index. For 2023, Niño-3=1.929, u10=0.640, SOI=-0.433; u10 and SOI response ratios are only 0.27 and 0.31. How to read: the left panel reproduces the paper's SST, MSLP/u10, and scatter relationships; the right panel compresses them into response ratios. The anomaly is not weak SST, but a weak atmospheric response relative to historical slopes.",
+      "textPreview": "Data note: Peng et al. 2025 source archive Fig. 1; local table fig1_event_coupling.csv. Niño-3 is the eastern equatorial Pacific SST regi...",
+      "resolvedFontSize": 10.4,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 10.4,
+        "typeface": "Aptos",
+        "color": "#6E675D",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Data note: Peng et al. 2025 source archive Fig. 1; local table fig1_event_coupling.csv. Niño-3 is the eastern equatorial Pacific SST region; u10 is 10-m zonal wind; SOI is the Southern Oscillation Index. For 2023, Niño-3=1.929,"
+          },
+          {
+            "index": 2,
+            "text": "u10=0.640, SOI=-0.433; u10 and SOI response ratios are only 0.27 and 0.31. How to read: the left panel reproduces the paper's SST, MSLP/u10, and scatter relationships; the right panel compresses them into response ratios."
+          },
+          {
+            "index": 3,
+            "text": "The anomaly is not weak SST, but a weak atmospheric response relative to historical slopes."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Data note: Peng et al. 2025 source archive Fig. 1; local table fig1_event_coupling.csv. Niño-3 is the eastern equatorial Pacific SST region; u10 is 10-m zonal wind; SOI is the Southern Oscillation Index. For 2023, Niño-3=1.929, u10=0.640, SOI=-0.433; u10 and SOI response ratios are only 0.27 and 0.31. How to read: the left panel reproduces the paper's SST, MSLP/u10, and scatter relationships; the right panel compresses them into response ratios. The anomaly is not weak SST, but a weak atmospheric response relative to historical slopes.",
+          "resolvedTextStyle": {
+            "fontSize": 10.4,
+            "typeface": "Aptos",
+            "color": "#6E675D",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Data note: Peng et al. 2025 source archive Fig. 1; local table fig1_event_coupling.csv. Niño-3 is the eastern equatorial Pacific SST region; u10 is 10-m zonal wind; SOI is the Southern Oscillation Index. For 2023, Niño-3=1.929, u10=0.640, SOI=-0.433; u10 and SOI response ratios are only 0.27 and 0.31. How to read: the left panel reproduces the paper's SST, MSLP/u10, and scatter relationships; the right panel compresses them into response ratios. The anomaly is not weak SST, but a weak atmospheric response relative to historical slopes.",
+              "fontSize": 10.4,
+              "typeface": "Aptos",
+              "color": "#6E675D"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ed8v6psf",
+      "id": "13",
+      "bbox": [
+        64,
+        684,
+        1100,
+        22
+      ],
+      "geometry": "rect",
+      "text": "L1 Peng et al. 2025; local reproduction: data/derived/peng2025_repro/figures/Fig1.png.",
+      "textPreview": "L1 Peng et al. 2025; local reproduction: data/derived/peng2025_repro/figures/Fig1.png.",
+      "resolvedFontSize": 8.6,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 8.6,
+        "typeface": "Aptos",
+        "color": "#6E675D",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "L1 Peng et al. 2025; local reproduction: data/derived/peng2025_repro/figures/Fig1.png."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "L1 Peng et al. 2025; local reproduction: data/derived/peng2025_repro/figures/Fig1.png.",
+          "resolvedTextStyle": {
+            "fontSize": 8.6,
+            "typeface": "Aptos",
+            "color": "#6E675D",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "L1 Peng et al. 2025; local reproduction: data/derived/peng2025_repro/figures/Fig1.png.",
+              "fontSize": 8.6,
+              "typeface": "Aptos",
+              "color": "#6E675D"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

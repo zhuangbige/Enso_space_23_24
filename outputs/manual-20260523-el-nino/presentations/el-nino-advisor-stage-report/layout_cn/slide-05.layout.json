@@ -1,0 +1,590 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/2zcpo0",
+    "id": "2zcpo0",
+    "slide": 5,
+    "layoutId": "e5698df0-2fb8-4bed-8fda-3879695537c5",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "7dfe6ee2-3dab-44ee-92a3-bc71eddd40fe",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Aptos",
+      "Aptos Display"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "e5698df0-2fb8-4bed-8fda-3879695537c5",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "7dfe6ee2-3dab-44ee-92a3-bc71eddd40fe",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "7dfe6ee2-3dab-44ee-92a3-bc71eddd40fe",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6psfil0r",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#F7F3EA",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dcbulwva",
+      "id": "2",
+      "bbox": [
+        64,
+        34,
+        300,
+        24
+      ],
+      "geometry": "rect",
+      "text": "原文复现 1",
+      "textPreview": "原文复现 1",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13,
+        "typeface": "Aptos",
+        "color": "#CC5A43",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "原文复现 1"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "原文复现 1",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "typeface": "Aptos",
+            "color": "#CC5A43",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "原文复现 1",
+              "fontSize": 13,
+              "typeface": "Aptos",
+              "color": "#CC5A43",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kre1w7mp",
+      "id": "3",
+      "bbox": [
+        64,
+        65,
+        1090,
+        82
+      ],
+      "geometry": "rect",
+      "text": "Peng et al. Fig. 1：2023/24 海表温度强，但风压耦合响应偏弱",
+      "textPreview": "Peng et al. Fig. 1：2023/24 海表温度强，但风压耦合响应偏弱",
+      "resolvedFontSize": 31,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 31,
+        "typeface": "Aptos Display",
+        "color": "#1D1B18",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Peng et al. Fig. 1：2023/24 海表温度强，但风压耦合响应偏弱"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Peng et al. Fig. 1：2023/24 海表温度强，但风压耦合响应偏弱",
+          "resolvedTextStyle": {
+            "fontSize": 31,
+            "typeface": "Aptos Display",
+            "color": "#1D1B18",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Peng et al. Fig. 1：2023/24 海表温度强，但风压耦合响应偏弱",
+              "fontSize": 31,
+              "typeface": "Aptos Display",
+              "color": "#1D1B18",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vixczed8",
+      "id": "4",
+      "bbox": [
+        64,
+        151,
+        1120,
+        1.5
+      ],
+      "geometry": "rect",
+      "fillColor": "#D8D1C4",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/vmtwra5g",
+      "id": "5",
+      "bbox": [
+        66,
+        178,
+        528,
+        386
+      ],
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "311b5efd-1835-462a-9c9a-a36ea369f591",
+        "contentType": "image/png",
+        "byteLength": 2324062
+      }
+    },
+    {
+      "order": 6,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/o7qpg3ex",
+      "id": "6",
+      "bbox": [
+        620,
+        186,
+        430,
+        250
+      ],
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "227d7108-af73-4a23-b2ca-767800cf363e",
+        "contentType": "image/png",
+        "byteLength": 88515
+      }
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/k3q5o7qp",
+      "id": "7",
+      "bbox": [
+        632,
+        470,
+        7,
+        7
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#CC5A43",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vu9knih4",
+      "id": "8",
+      "bbox": [
+        652,
+        462,
+        460,
+        37
+      ],
+      "geometry": "rect",
+      "text": "复现结果确认：2023/24 是强海温事件。",
+      "textPreview": "复现结果确认：2023/24 是强海温事件。",
+      "resolvedFontSize": 14.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14.51,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "复现结果确认：2023/24 是强海温事件。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "复现结果确认：2023/24 是强海温事件。",
+          "resolvedTextStyle": {
+            "fontSize": 14.51,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "复现结果确认：2023/24 是强海温事件。",
+              "fontSize": 14.51,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/29gr2p8n",
+      "id": "9",
+      "bbox": [
+        632,
+        512,
+        7,
+        7
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#CC5A43",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kre1w7mp",
+      "id": "10",
+      "bbox": [
+        652,
+        504,
+        460,
+        37
+      ],
+      "geometry": "rect",
+      "text": "相对于 1982/83、1997/98、2015/16，风压响应明显偏弱。",
+      "textPreview": "相对于 1982/83、1997/98、2015/16，风压响应明显偏弱。",
+      "resolvedFontSize": 14.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14.51,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "相对于 1982/83、1997/98、2015/16，风压响应明显偏弱。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "相对于 1982/83、1997/98、2015/16，风压响应明显偏弱。",
+          "resolvedTextStyle": {
+            "fontSize": 14.51,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "相对于 1982/83、1997/98、2015/16，风压响应明显偏弱。",
+              "fontSize": 14.51,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dcbulwva",
+      "id": "11",
+      "bbox": [
+        68,
+        574,
+        1088,
+        82
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFAF1",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.8
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6psfil0r",
+      "id": "12",
+      "bbox": [
+        80,
+        582,
+        1064,
+        70
+      ],
+      "geometry": "rect",
+      "text": "数据说明：Peng et al. 2025 source archive Fig. 1 数据；本地表 fig1_event_coupling.csv。Niño-3 指东赤道太平洋海温区；u10 是 10 米纬向风；SOI 是南方涛动指数。2023 Niño-3=1.929, u10=0.640, SOI=-0.433；u10 与 SOI 响应比仅为 0.27 和 0.31。 读图要点：左侧复现原文中 SST、MSLP/u10 和散点关系，右侧把数值压缩成响应比。它说明 2023/24 的海温并不弱，真正异常的是大气端没有按历史强事件斜率响应。",
+      "textPreview": "数据说明：Peng et al. 2025 source archive Fig. 1 数据；本地表 fig1_event_coupling.csv。Niño-3 指东赤道太平洋海温区；u10 是 10 米纬向风；SOI 是南方涛动指数。2023 Niño-3=1.929,...",
+      "resolvedFontSize": 10.4,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 10.4,
+        "typeface": "Aptos",
+        "color": "#6E675D",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "数据说明：Peng et al. 2025 source archive Fig. 1 数据；本地表 fig1_event_coupling.csv。Niño-3 指东赤道太平洋海温区；u10 是 10 米纬向风；SOI 是南方涛动指数。2023 Niño-3=1.929, u10=0.640, SOI=-0.433；u10 与 SOI"
+          },
+          {
+            "index": 2,
+            "text": "响应比仅为 0.27 和 0.31。 读图要点：左侧复现原文中 SST、MSLP/u10 和散点关系，右侧把数值压缩成响应比。它说明 2023/24 的海温并不弱，真正异常的是大气端没有按历史强事件斜率响应。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "数据说明：Peng et al. 2025 source archive Fig. 1 数据；本地表 fig1_event_coupling.csv。Niño-3 指东赤道太平洋海温区；u10 是 10 米纬向风；SOI 是南方涛动指数。2023 Niño-3=1.929, u10=0.640, SOI=-0.433；u10 与 SOI 响应比仅为 0.27 和 0.31。 读图要点：左侧复现原文中 SST、MSLP/u10 和散点关系，右侧把数值压缩成响应比。它说明 2023/24 的海温并不弱，真正异常的是大气端没有按历史强事件斜率响应。",
+          "resolvedTextStyle": {
+            "fontSize": 10.4,
+            "typeface": "Aptos",
+            "color": "#6E675D",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "数据说明：Peng et al. 2025 source archive Fig. 1 数据；本地表 fig1_event_coupling.csv。Niño-3 指东赤道太平洋海温区；u10 是 10 米纬向风；SOI 是南方涛动指数。2023 Niño-3=1.929, u10=0.640, SOI=-0.433；u10 与 SOI 响应比仅为 0.27 和 0.31。 读图要点：左侧复现原文中 SST、MSLP/u10 和散点关系，右侧把数值压缩成响应比。它说明 2023/24 的海温并不弱，真正异常的是大气端没有按历史强事件斜率响应。",
+              "fontSize": 10.4,
+              "typeface": "Aptos",
+              "color": "#6E675D"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/val87ed8",
+      "id": "13",
+      "bbox": [
+        64,
+        684,
+        1100,
+        22
+      ],
+      "geometry": "rect",
+      "text": "L1 Peng et al. 2025; local reproduction: data/derived/peng2025_repro/figures/Fig1.png.",
+      "textPreview": "L1 Peng et al. 2025; local reproduction: data/derived/peng2025_repro/figures/Fig1.png.",
+      "resolvedFontSize": 8.6,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 8.6,
+        "typeface": "Aptos",
+        "color": "#6E675D",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "L1 Peng et al. 2025; local reproduction: data/derived/peng2025_repro/figures/Fig1.png."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "L1 Peng et al. 2025; local reproduction: data/derived/peng2025_repro/figures/Fig1.png.",
+          "resolvedTextStyle": {
+            "fontSize": 8.6,
+            "typeface": "Aptos",
+            "color": "#6E675D",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "L1 Peng et al. 2025; local reproduction: data/derived/peng2025_repro/figures/Fig1.png.",
+              "fontSize": 8.6,
+              "typeface": "Aptos",
+              "color": "#6E675D"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

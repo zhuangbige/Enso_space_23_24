@@ -1,0 +1,16 @@
+data/raw/
+data/interim/
+data/derived/
+*.png
+*.pdf
+*.eps
+*.svg
+*.part
+__pycache__/
+.venv/
+.DS_Store
+.matplotlib-cache/
+node_modules/
+**/node_modules/
+**/node_modules
+~$*

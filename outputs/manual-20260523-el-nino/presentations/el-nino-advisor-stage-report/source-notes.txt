@@ -1,0 +1,4 @@
+Reproduction figures use local outputs from Peng et al. 2025 source data/code.
+Raw validation uses NOAA OISST, GPCP, and NCEP/NCAR R1 products logged in docs/data_source_log.md.
+Stage A spatial maps are first-pass diagnostics and use NCEP as a fallback for wind/SLP; ERA5 remains the planned paper-grade replacement.
+No logos or identity assets are used.

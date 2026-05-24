@@ -1,0 +1,406 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/yo1m7b",
+    "id": "yo1m7b",
+    "slide": 12,
+    "layoutId": "e5698df0-2fb8-4bed-8fda-3879695537c5",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "7dfe6ee2-3dab-44ee-92a3-bc71eddd40fe",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Aptos",
+      "Aptos Display"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "e5698df0-2fb8-4bed-8fda-3879695537c5",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "7dfe6ee2-3dab-44ee-92a3-bc71eddd40fe",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "7dfe6ee2-3dab-44ee-92a3-bc71eddd40fe",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/judg7ads",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#F7F3EA",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cfa9w3m9",
+      "id": "2",
+      "bbox": [
+        64,
+        34,
+        300,
+        24
+      ],
+      "geometry": "rect",
+      "text": "阶段性发现 3",
+      "textPreview": "阶段性发现 3",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13,
+        "typeface": "Aptos",
+        "color": "#CC5A43",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "阶段性发现 3"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "阶段性发现 3",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "typeface": "Aptos",
+            "color": "#CC5A43",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "阶段性发现 3",
+              "fontSize": 13,
+              "typeface": "Aptos",
+              "color": "#CC5A43",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1032lszq",
+      "id": "3",
+      "bbox": [
+        64,
+        65,
+        1090,
+        82
+      ],
+      "geometry": "rect",
+      "text": "空间图：低层风和海平面气压也显示发展季 Walker 环流响应不典型",
+      "textPreview": "空间图：低层风和海平面气压也显示发展季 Walker 环流响应不典型",
+      "resolvedFontSize": 31,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 31,
+        "typeface": "Aptos Display",
+        "color": "#1D1B18",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "空间图：低层风和海平面气压也显示发展季 Walker 环流响应不典型"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "空间图：低层风和海平面气压也显示发展季 Walker 环流响应不典型",
+          "resolvedTextStyle": {
+            "fontSize": 31,
+            "typeface": "Aptos Display",
+            "color": "#1D1B18",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "空间图：低层风和海平面气压也显示发展季 Walker 环流响应不典型",
+              "fontSize": 31,
+              "typeface": "Aptos Display",
+              "color": "#1D1B18",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/u18jqh0f",
+      "id": "4",
+      "bbox": [
+        64,
+        151,
+        1120,
+        1.5
+      ],
+      "geometry": "rect",
+      "fillColor": "#D8D1C4",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/6hcrmhk3",
+      "id": "5",
+      "bbox": [
+        70,
+        172,
+        1080,
+        380
+      ],
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "e5ea1d65-2313-4e85-8647-8e665b09e221",
+        "contentType": "image/png",
+        "byteLength": 204859
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/c7u54zid",
+      "id": "6",
+      "bbox": [
+        70,
+        568,
+        1080,
+        88
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFAF1",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.8
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1orytsvu",
+      "id": "7",
+      "bbox": [
+        82,
+        576,
+        1056,
+        76
+      ],
+      "geometry": "rect",
+      "text": "数据说明：NCEP/NCAR R1 近地面 sigma995 风与海平面气压 SLP；图为 2023 AMJ/JJA 减去 1982/1997/2015 composite。CWP 指中西太平洋，CWP 低层风差值 AMJ=-2.301 m/s, JJA=-2.576 m/s；类 SOI 的 SLP 梯度差值为正。 读图要点：NCEP 结果目前是 fallback，但已经给出清楚线索：AMJ/JJA 中西太平洋低层风异常相对历史强事件偏弱，SLP 梯度也不像典型强 El Niño 那样充分建立。",
+      "textPreview": "数据说明：NCEP/NCAR R1 近地面 sigma995 风与海平面气压 SLP；图为 2023 AMJ/JJA 减去 1982/1997/2015 composite。CWP 指中西太平洋，CWP 低层风差值 AMJ=-2.301 m/s, JJA=-2.576 m/...",
+      "resolvedFontSize": 10.4,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 10.4,
+        "typeface": "Aptos",
+        "color": "#6E675D",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "数据说明：NCEP/NCAR R1 近地面 sigma995 风与海平面气压 SLP；图为 2023 AMJ/JJA 减去 1982/1997/2015 composite。CWP 指中西太平洋，CWP 低层风差值 AMJ=-2.301 m/s, JJA=-2.576 m/s；类 SOI 的 SLP"
+          },
+          {
+            "index": 2,
+            "text": "梯度差值为正。 读图要点：NCEP 结果目前是 fallback，但已经给出清楚线索：AMJ/JJA 中西太平洋低层风异常相对历史强事件偏弱，SLP 梯度也不像典型强 El Niño 那样充分建立。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "数据说明：NCEP/NCAR R1 近地面 sigma995 风与海平面气压 SLP；图为 2023 AMJ/JJA 减去 1982/1997/2015 composite。CWP 指中西太平洋，CWP 低层风差值 AMJ=-2.301 m/s, JJA=-2.576 m/s；类 SOI 的 SLP 梯度差值为正。 读图要点：NCEP 结果目前是 fallback，但已经给出清楚线索：AMJ/JJA 中西太平洋低层风异常相对历史强事件偏弱，SLP 梯度也不像典型强 El Niño 那样充分建立。",
+          "resolvedTextStyle": {
+            "fontSize": 10.4,
+            "typeface": "Aptos",
+            "color": "#6E675D",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "数据说明：NCEP/NCAR R1 近地面 sigma995 风与海平面气压 SLP；图为 2023 AMJ/JJA 减去 1982/1997/2015 composite。CWP 指中西太平洋，CWP 低层风差值 AMJ=-2.301 m/s, JJA=-2.576 m/s；类 SOI 的 SLP 梯度差值为正。 读图要点：NCEP 结果目前是 fallback，但已经给出清楚线索：AMJ/JJA 中西太平洋低层风异常相对历史强事件偏弱，SLP 梯度也不像典型强 El Niño 那样充分建立。",
+              "fontSize": 10.4,
+              "typeface": "Aptos",
+              "color": "#6E675D"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/upwb2hwf",
+      "id": "8",
+      "bbox": [
+        64,
+        684,
+        1100,
+        22
+      ],
+      "geometry": "rect",
+      "text": "D4 NCEP/NCAR R1 fallback diagnostic. Final paper stage should replace/check with ERA5.",
+      "textPreview": "D4 NCEP/NCAR R1 fallback diagnostic. Final paper stage should replace/check with ERA5.",
+      "resolvedFontSize": 8.6,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 8.6,
+        "typeface": "Aptos",
+        "color": "#6E675D",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "D4 NCEP/NCAR R1 fallback diagnostic. Final paper stage should replace/check with ERA5."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "D4 NCEP/NCAR R1 fallback diagnostic. Final paper stage should replace/check with ERA5.",
+          "resolvedTextStyle": {
+            "fontSize": 8.6,
+            "typeface": "Aptos",
+            "color": "#6E675D",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "D4 NCEP/NCAR R1 fallback diagnostic. Final paper stage should replace/check with ERA5.",
+              "fontSize": 8.6,
+              "typeface": "Aptos",
+              "color": "#6E675D"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

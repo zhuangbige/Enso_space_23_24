@@ -1,0 +1,406 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/8ugp21",
+    "id": "8ugp21",
+    "slide": 6,
+    "layoutId": "e5698df0-2fb8-4bed-8fda-3879695537c5",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "7dfe6ee2-3dab-44ee-92a3-bc71eddd40fe",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Aptos",
+      "Aptos Display"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "e5698df0-2fb8-4bed-8fda-3879695537c5",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "7dfe6ee2-3dab-44ee-92a3-bc71eddd40fe",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "7dfe6ee2-3dab-44ee-92a3-bc71eddd40fe",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5wjudg7a",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#F7F3EA",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/y90je9cv",
+      "id": "2",
+      "bbox": [
+        64,
+        34,
+        300,
+        24
+      ],
+      "geometry": "rect",
+      "text": "原文复现 2",
+      "textPreview": "原文复现 2",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13,
+        "typeface": "Aptos",
+        "color": "#CC5A43",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "原文复现 2"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "原文复现 2",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "typeface": "Aptos",
+            "color": "#CC5A43",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "原文复现 2",
+              "fontSize": 13,
+              "typeface": "Aptos",
+              "color": "#CC5A43",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nuxc3ylc",
+      "id": "3",
+      "bbox": [
+        64,
+        65,
+        1090,
+        82
+      ],
+      "geometry": "rect",
+      "text": "Peng et al. Fig. 2：原文将强事件归因到赤道太平洋海洋动力过程",
+      "textPreview": "Peng et al. Fig. 2：原文将强事件归因到赤道太平洋海洋动力过程",
+      "resolvedFontSize": 31,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 31,
+        "typeface": "Aptos Display",
+        "color": "#1D1B18",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Peng et al. Fig. 2：原文将强事件归因到赤道太平洋海洋动力过程"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Peng et al. Fig. 2：原文将强事件归因到赤道太平洋海洋动力过程",
+          "resolvedTextStyle": {
+            "fontSize": 31,
+            "typeface": "Aptos Display",
+            "color": "#1D1B18",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Peng et al. Fig. 2：原文将强事件归因到赤道太平洋海洋动力过程",
+              "fontSize": 31,
+              "typeface": "Aptos Display",
+              "color": "#1D1B18",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gn29gr2p",
+      "id": "4",
+      "bbox": [
+        64,
+        151,
+        1120,
+        1.5
+      ],
+      "geometry": "rect",
+      "fillColor": "#D8D1C4",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/8z25kb6x",
+      "id": "5",
+      "bbox": [
+        70,
+        172,
+        1080,
+        380
+      ],
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "763095de-a8c1-4ca3-bb70-55c042bb7ebd",
+        "contentType": "image/png",
+        "byteLength": 5386354
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yhgn29gr",
+      "id": "6",
+      "bbox": [
+        70,
+        568,
+        1080,
+        88
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFAF1",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.8
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/n29gr2p8",
+      "id": "7",
+      "bbox": [
+        82,
+        576,
+        1056,
+        76
+      ],
+      "geometry": "rect",
+      "text": "数据说明：Peng et al. 2025 source archive Fig. 2 数据；本地表 fig2_equatorial_summary.csv。该图用于支撑原文的海洋动力解释，包括赤道传播、次表层热含量和风应力相关诊断。 读图要点：这页不是你的新机制，而是原文的基础归因。它告诉我们强海温可以由海洋动力解释，但并没有解释为什么春夏早期风压和降水没有同步放大。",
+      "textPreview": "数据说明：Peng et al. 2025 source archive Fig. 2 数据；本地表 fig2_equatorial_summary.csv。该图用于支撑原文的海洋动力解释，包括赤道传播、次表层热含量和风应力相关诊断。 读图要点：这页不是你的新机制，而是原文...",
+      "resolvedFontSize": 10.4,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 10.4,
+        "typeface": "Aptos",
+        "color": "#6E675D",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "数据说明：Peng et al. 2025 source archive Fig. 2 数据；本地表 fig2_equatorial_summary.csv。该图用于支撑原文的海洋动力解释，包括赤道传播、次表层热含量和风应力相关诊断。"
+          },
+          {
+            "index": 2,
+            "text": "读图要点：这页不是你的新机制，而是原文的基础归因。它告诉我们强海温可以由海洋动力解释，但并没有解释为什么春夏早期风压和降水没有同步放大。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "数据说明：Peng et al. 2025 source archive Fig. 2 数据；本地表 fig2_equatorial_summary.csv。该图用于支撑原文的海洋动力解释，包括赤道传播、次表层热含量和风应力相关诊断。 读图要点：这页不是你的新机制，而是原文的基础归因。它告诉我们强海温可以由海洋动力解释，但并没有解释为什么春夏早期风压和降水没有同步放大。",
+          "resolvedTextStyle": {
+            "fontSize": 10.4,
+            "typeface": "Aptos",
+            "color": "#6E675D",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "数据说明：Peng et al. 2025 source archive Fig. 2 数据；本地表 fig2_equatorial_summary.csv。该图用于支撑原文的海洋动力解释，包括赤道传播、次表层热含量和风应力相关诊断。 读图要点：这页不是你的新机制，而是原文的基础归因。它告诉我们强海温可以由海洋动力解释，但并没有解释为什么春夏早期风压和降水没有同步放大。",
+              "fontSize": 10.4,
+              "typeface": "Aptos",
+              "color": "#6E675D"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/czed8v6p",
+      "id": "8",
+      "bbox": [
+        64,
+        684,
+        1100,
+        22
+      ],
+      "geometry": "rect",
+      "text": "L1 Peng et al. 2025; local reproduction: data/derived/peng2025_repro/figures/Fig2.png.",
+      "textPreview": "L1 Peng et al. 2025; local reproduction: data/derived/peng2025_repro/figures/Fig2.png.",
+      "resolvedFontSize": 8.6,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 8.6,
+        "typeface": "Aptos",
+        "color": "#6E675D",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "L1 Peng et al. 2025; local reproduction: data/derived/peng2025_repro/figures/Fig2.png."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "L1 Peng et al. 2025; local reproduction: data/derived/peng2025_repro/figures/Fig2.png.",
+          "resolvedTextStyle": {
+            "fontSize": 8.6,
+            "typeface": "Aptos",
+            "color": "#6E675D",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "L1 Peng et al. 2025; local reproduction: data/derived/peng2025_repro/figures/Fig2.png.",
+              "fontSize": 8.6,
+              "typeface": "Aptos",
+              "color": "#6E675D"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}
