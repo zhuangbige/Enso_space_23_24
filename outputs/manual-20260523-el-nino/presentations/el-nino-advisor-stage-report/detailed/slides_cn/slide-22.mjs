@@ -32,7 +32,7 @@ const data = {
     [
       "ERA5",
       "cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
-      "下一步风压/Walker"
+      "single-level u10/SLP 已用；下一步 pressure-level Walker"
     ],
     [
       "NOAA OLR",

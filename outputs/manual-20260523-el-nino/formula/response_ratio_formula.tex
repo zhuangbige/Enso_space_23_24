@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xeCJK}
+\setCJKmainfont{PingFang SC}
+
+\begin{document}
+
+\section*{Response Ratio / 响应比}
+
+\[
+R_X(s)
+=
+\frac{X'_{2023/24}(s)}
+{\overline{X'}_{\mathrm{historical\ strong\ El\ Nino}}(s)}
+\]
+
+\noindent
+其中：
+
+\begin{itemize}
+  \item \(R_X(s)\)：变量 \(X\) 在季节 \(s\) 的响应比。
+  \item \(X'_{2023/24}(s)\)：2023/24 事件中，变量 \(X\) 在季节 \(s\) 的异常值。
+  \item \(\overline{X'}_{\mathrm{historical\ strong\ El\ Nino}}(s)\)：历史强 El Nino 事件在同一季节 \(s\) 的 composite 异常值。
+  \item \(X\)：被比较的变量，例如 Nino-3 SST、u10、SOI-like SLP、GPCP precipitation、CPC OLR。
+  \item \(s\)：季节窗口，例如 AMJ、JJA、SON、DJF。
+\end{itemize}
+
+\noindent
+历史强事件 composite 当前使用：
+
+\[
+\mathrm{historical\ strong\ El\ Nino}
+=
+\{1982/83,\ 1997/98,\ 2015/16\}
+\]
+
+\noindent
+解释：
+
+\begin{itemize}
+  \item \(R_X(s)>1\)：2023/24 在该季节的变量异常强于历史强 El Nino composite。
+  \item \(0<R_X(s)<1\)：2023/24 在该季节的变量异常弱于历史强 El Nino composite。
+  \item \(R_X(s)<0\)：2023/24 与历史强 El Nino composite 的异常方向相反。
+\end{itemize}
+
+\noindent
+注意：OLR anomaly 为负值时表示增强对流。因此 CPC OLR 的响应比需要结合符号解释；如果历史强 El Nino 的 OLR 为明显负异常，而 2023/24 的负异常较小，则说明 2023/24 的对流增强偏弱。
+
+\end{document}

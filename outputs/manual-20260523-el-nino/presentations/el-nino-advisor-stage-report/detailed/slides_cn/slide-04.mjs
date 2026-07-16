@@ -22,7 +22,7 @@ const data = {
     [
       "ERA5",
       "ECMWF 第五代再分析",
-      "下一步用于论文级 u850、SLP 和 Walker 环流诊断。"
+      "single-level u10 和 SLP 已进入主诊断；pressure-level Walker 环流仍待补。"
     ],
     [
       "ERSSTv5",

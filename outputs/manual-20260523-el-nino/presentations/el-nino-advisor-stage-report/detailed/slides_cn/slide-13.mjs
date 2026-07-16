@@ -1,23 +1,23 @@
 import { renderDeckSlide } from "../deck_shared_cn.mjs";
 const data = {
   "k": "新研究发现 1",
-  "t": "图中数据名称：AMJ/JJA/SON/DJF 季节耦合效率矩阵",
+  "t": "图中数据名称：AMJ/JJA/SON/DJF 分季节回归预期响应矩阵",
   "layout": "figureExplain",
-  "image": "/Users/daiyue/Documents/Maryland/data/derived/research/seasonal_asynchrony_figure.png",
+  "image": "/Users/daiyue/Documents/Maryland/data/derived/research/seasonal_regression_asynchrony_matrix.png",
   "boxes": [
     [
       "这幅图是什么数据",
-      "OISST Niño-3、NCEP 中西太平洋低层风、SOI-like 海平面气压梯度、GPCP 降水等指标，按季节与 1982/83、1997/98、2015/16 强事件平均比较。"
+      "左图为 2023 年实际大气响应除以历史 Niño-3 回归关系给出的预期响应，分别计算 AMJ、JJA、SON、DJF。右图为外海盆 SST 相对历史强事件 composite 的差值。"
     ],
     [
       "它反映了什么",
-      "AMJ/JJA 的 Niño-3 海温比历史强事件还强或相当强，但风压和降水响应效率很低。AMJ CWP 风响应比约 -0.43，JJA 约 -0.14。"
+      "AMJ/JJA 已经出现明显弱响应：ERA5 中西太平洋 u10 在 AMJ 为 -0.38、JJA 为 0.06；SOI-like、GPCP 降水和 CPC OLR 也均低于 1。"
     ],
     [
       "对应原文与我的创新",
-      "原文指出 2023/24 总体弱耦合；我的创新是定位到发展前期，并用历史强事件作基准定量说明哪些变量最先不同步。"
+      "原文在事件尺度比较 observed 与 expected response；本研究把同一逻辑季节化，并扩展到风压、降水和对流链条。"
     ]
   ],
-  "src": "Tables: asynchronous_coupling_efficiency.csv; seasonal_asynchrony_matrix.csv."
+  "src": "Tables: seasonal_regression_expected_response.csv; external_basin_seasonal_summary.csv."
 };
 export async function slide13(presentation, ctx) { return renderDeckSlide(presentation, ctx, data); }

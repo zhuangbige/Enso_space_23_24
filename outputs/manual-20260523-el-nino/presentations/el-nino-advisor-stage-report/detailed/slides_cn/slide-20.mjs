@@ -10,19 +10,19 @@ const data = {
       "为什么需要"
     ],
     [
-      "ERA5 u850 / SLP / χ200",
-      "替换 NCEP fallback，诊断低层风、海平面气压和 Walker 环流。",
-      "论文级风压和环流证据需要更高质量再分析。"
+      "ERA5 pressure-level u850 / χ200",
+      "补充低层风垂直层和 Walker 环流。",
+      "single-level u10/SLP 已接入，pressure-level 环流仍是下一步。"
     ],
     [
-      "NOAA OLR",
-      "独立验证深对流位置和强度。",
-      "避免只依赖降水资料判断对流。"
+      "ERA5 AMJ/JJA 空间图",
+      "替换 NCEP fallback 风压空间图。",
+      "让发展季风压证据进入论文级资料链。"
     ],
     [
-      "ERSSTv5",
-      "做 1854 至今长记录稳健性。",
-      "检查 OISST 1981 以后样本是否限制历史比较。"
+      "ERSSTv5 / detrended SST",
+      "长记录与去趋势稳健性。",
+      "检查外海盆偏暖是否主要来自背景增暖趋势。"
     ],
     [
       "MJO/RMM 或日资料",
@@ -30,7 +30,7 @@ const data = {
       "区分 ENSO 背景、MJO 和趋势影响。"
     ]
   ],
-  "text": "短期优先级是 ERA5 和 OLR：先把风压、Walker 环流和对流证据补齐，再考虑 AGCM 模式实验。",
+  "text": "短期优先级是把 ERA5 AMJ/JJA 风压空间图和 pressure-level Walker 环流补齐。AGCM 仍作为后续机制归因预案，而不是当前汇报的必要前提。",
   "src": "Data priorities from reports/当前数据分析阶段总结.md."
 };
 export async function slide20(presentation, ctx) { return renderDeckSlide(presentation, ctx, data); }

@@ -31,8 +31,8 @@ const data = {
     ],
     [
       "13",
-      "季节耦合效率矩阵",
-      "asynchronous_coupling_efficiency.csv; seasonal_asynchrony_matrix.csv"
+      "分季节回归预期响应矩阵",
+      "seasonal_regression_expected_response.csv; external_basin_seasonal_summary.csv"
     ],
     [
       "14-15",

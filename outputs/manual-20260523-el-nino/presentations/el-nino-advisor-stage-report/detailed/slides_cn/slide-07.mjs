@@ -15,7 +15,7 @@ const data = {
     ],
     [
       "对应原文与我的创新",
-      "对应原文 Fig. 1 的“强海温、弱大气”结论。我的创新是把这个比值思想扩展成季节耦合效率矩阵，而不是只做全年单点对比。"
+      "对应原文 Fig. 1 的“强海温、弱大气”结论。我的创新是把 observed / expected response 思路扩展到 AMJ/JJA/SON/DJF 的季节尺度，而不是只做全年单点对比。"
     ]
   ],
   "src": "Derived table: data/derived/peng2025_repro/tables/fig1_event_coupling.csv."
