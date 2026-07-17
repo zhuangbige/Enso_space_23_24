@@ -1,0 +1,142 @@
+{
+  "analysis": "minimal monthly ENSO air-sea coupling closure",
+  "baseline": [
+    1982,
+    2022
+  ],
+  "events": {
+    "1997/98": [
+      "1997-04-01",
+      "1998-02-01"
+    ],
+    "2015/16": [
+      "2015-04-01",
+      "2016-02-01"
+    ],
+    "2023/24": [
+      "2023-04-01",
+      "2024-02-01"
+    ]
+  },
+  "regions": {
+    "Nino3": "5S-5N, 150W-90W",
+    "CWP_stress": "5S-5N, 160E-140W",
+    "D20_east": "equator, 150W-100W",
+    "D20_west": "equator, 140E-170W"
+  },
+  "qnet_sign": "positive downward; sum of net SW, net LW, latent and sensible heat flux",
+  "bootstrap": {
+    "n": 10000,
+    "block_months": 24,
+    "seed": 20260716
+  },
+  "inference": "eta < historical p05 and bootstrap 95% CI upper < 1",
+  "validation": {
+    "start": "1950-01-01",
+    "end": "2026-05-01",
+    "rows": 917,
+    "baseline_start": 1982,
+    "baseline_end": 2022,
+    "minimum_monthly_baseline_count": 41,
+    "complete_required_windows": {
+      "baseline": {
+        "start": "1982-01-01",
+        "end": "2022-12-01",
+        "months": 492
+      },
+      "2023/24 event plus lag target": {
+        "start": "2023-04-01",
+        "end": "2024-03-01",
+        "months": 12
+      },
+      "2026 frozen-model validation": {
+        "start": "2026-01-01",
+        "end": "2026-05-01",
+        "months": 5
+      }
+    },
+    "missing_by_variable": {
+      "nino3_sst_raw": 384,
+      "nino3_sst_anom": 384,
+      "nino3_sst_trend_per_year": 384,
+      "nino3_sst_ersst_raw": 17,
+      "nino3_sst_ersst_anom": 17,
+      "nino3_sst_ersst_trend_per_year": 17,
+      "d20_east_raw": 120,
+      "d20_east_anom": 120,
+      "d20_east_trend_per_year": 120,
+      "d20_west_raw": 120,
+      "d20_west_anom": 120,
+      "d20_west_trend_per_year": 120,
+      "d20_slope_raw": 120,
+      "d20_slope_anom": 120,
+      "d20_slope_trend_per_year": 120,
+      "tau_x_oras5_raw": 360,
+      "tau_x_oras5_anom": 360,
+      "tau_x_oras5_trend_per_year": 360,
+      "tau_x_era5_raw": 384,
+      "tau_x_era5_anom": 384,
+      "tau_x_era5_trend_per_year": 384,
+      "qnet_nino3_raw": 384,
+      "qnet_nino3_anom": 384,
+      "qnet_nino3_trend_per_year": 384,
+      "gpcp_cwp_raw": 384,
+      "gpcp_cwp_anom": 384,
+      "gpcp_cwp_trend_per_year": 384,
+      "olr_cp_raw": 592,
+      "olr_cp_anom": 592,
+      "olr_cp_trend_per_year": 592
+    }
+  },
+  "sources": {
+    "oisst": "data/interim/research_2026/oisst_nino3_monthly_1982_2026m05.csv",
+    "ersst": "data/interim/raw_validation/ersstv5_nino3_monthly.csv",
+    "d20": "data/interim/research_2026/oras5_d20_timeseries_equatorial_1960_202605.csv",
+    "oras5_stress": "data/interim/research_2026/oras5_windstress_timeseries_equatorial_1980_202605.csv",
+    "gpcp": "data/interim/research_2026/gpcp_event_spatial_tropics_1982_202605.nc",
+    "olr": "data/interim/raw_validation/olr_monthly.csv",
+    "era5": "data/raw/era5/coupling_monthly_1deg"
+  },
+  "links": [
+    {
+      "name": "atmospheric",
+      "label": "SST -> zonal wind stress",
+      "predictor": "nino3_sst_anom",
+      "target": "tau_x_era5_anom",
+      "state": null,
+      "lag": 0,
+      "predictor_units": "degC",
+      "target_units": "N m-2"
+    },
+    {
+      "name": "ocean_adjustment",
+      "label": "zonal wind stress -> D20 slope",
+      "predictor": "tau_x_era5_anom",
+      "target": "d20_slope_anom",
+      "state": "d20_slope_anom",
+      "lag": 1,
+      "predictor_units": "N m-2",
+      "target_units": "m"
+    },
+    {
+      "name": "thermocline_feedback",
+      "label": "eastern D20 -> Nino3 SST",
+      "predictor": "d20_east_anom",
+      "target": "nino3_sst_anom",
+      "state": "nino3_sst_anom",
+      "lag": 1,
+      "predictor_units": "m",
+      "target_units": "degC"
+    },
+    {
+      "name": "thermal_damping",
+      "label": "Nino3 SST -> net surface heat flux",
+      "predictor": "nino3_sst_anom",
+      "target": "qnet_nino3_anom",
+      "state": null,
+      "lag": 0,
+      "predictor_units": "degC",
+      "target_units": "W m-2"
+    }
+  ]
+}

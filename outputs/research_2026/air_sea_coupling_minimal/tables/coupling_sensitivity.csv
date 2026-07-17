@@ -1,0 +1,37 @@
+event,product_combo,link,link_label,eta,n_months,start,end,sensitivity_role
+1997/98,OISST+ERA5,atmospheric,SST -> zonal wind stress,0.87411771,11,1997-04-01,1998-02-01,primary
+1997/98,OISST+ERA5,ocean_adjustment,zonal wind stress -> D20 slope,1.0240418,11,1997-04-01,1998-02-01,primary
+1997/98,OISST+ERA5,thermocline_feedback,eastern D20 -> Nino3 SST,1.1476442,11,1997-04-01,1998-02-01,primary
+1997/98,OISST+ERA5,thermal_damping,Nino3 SST -> net surface heat flux,1.3803318,11,1997-04-01,1998-02-01,primary
+2015/16,OISST+ERA5,atmospheric,SST -> zonal wind stress,1.0895247,11,2015-04-01,2016-02-01,primary
+2015/16,OISST+ERA5,ocean_adjustment,zonal wind stress -> D20 slope,0.82099077,11,2015-04-01,2016-02-01,primary
+2015/16,OISST+ERA5,thermocline_feedback,eastern D20 -> Nino3 SST,1.1875027,11,2015-04-01,2016-02-01,primary
+2015/16,OISST+ERA5,thermal_damping,Nino3 SST -> net surface heat flux,0.92245686,11,2015-04-01,2016-02-01,primary
+2023/24,OISST+ERA5,atmospheric,SST -> zonal wind stress,0.71149417,11,2023-04-01,2024-02-01,primary
+2023/24,OISST+ERA5,ocean_adjustment,zonal wind stress -> D20 slope,0.93980294,11,2023-04-01,2024-02-01,primary
+2023/24,OISST+ERA5,thermocline_feedback,eastern D20 -> Nino3 SST,1.2614181,11,2023-04-01,2024-02-01,primary
+2023/24,OISST+ERA5,thermal_damping,Nino3 SST -> net surface heat flux,0.5918913,11,2023-04-01,2024-02-01,primary
+1997/98,ERSST+ERA5,atmospheric,SST -> zonal wind stress,0.85299606,11,1997-04-01,1998-02-01,product_sensitivity
+1997/98,ERSST+ERA5,ocean_adjustment,zonal wind stress -> D20 slope,1.0240418,11,1997-04-01,1998-02-01,product_sensitivity
+1997/98,ERSST+ERA5,thermocline_feedback,eastern D20 -> Nino3 SST,1.2142022,11,1997-04-01,1998-02-01,product_sensitivity
+1997/98,ERSST+ERA5,thermal_damping,Nino3 SST -> net surface heat flux,1.3511989,11,1997-04-01,1998-02-01,product_sensitivity
+2015/16,ERSST+ERA5,atmospheric,SST -> zonal wind stress,1.0369385,11,2015-04-01,2016-02-01,product_sensitivity
+2015/16,ERSST+ERA5,ocean_adjustment,zonal wind stress -> D20 slope,0.82099077,11,2015-04-01,2016-02-01,product_sensitivity
+2015/16,ERSST+ERA5,thermocline_feedback,eastern D20 -> Nino3 SST,1.3251545,11,2015-04-01,2016-02-01,product_sensitivity
+2015/16,ERSST+ERA5,thermal_damping,Nino3 SST -> net surface heat flux,0.87398967,11,2015-04-01,2016-02-01,product_sensitivity
+2023/24,ERSST+ERA5,atmospheric,SST -> zonal wind stress,0.68590359,11,2023-04-01,2024-02-01,product_sensitivity
+2023/24,ERSST+ERA5,ocean_adjustment,zonal wind stress -> D20 slope,0.93980294,11,2023-04-01,2024-02-01,product_sensitivity
+2023/24,ERSST+ERA5,thermocline_feedback,eastern D20 -> Nino3 SST,1.262634,11,2023-04-01,2024-02-01,product_sensitivity
+2023/24,ERSST+ERA5,thermal_damping,Nino3 SST -> net surface heat flux,0.57343549,11,2023-04-01,2024-02-01,product_sensitivity
+1997/98,OISST+ORAS5,atmospheric,SST -> zonal wind stress,0.92984031,11,1997-04-01,1998-02-01,product_sensitivity
+1997/98,OISST+ORAS5,ocean_adjustment,zonal wind stress -> D20 slope,0.95073423,11,1997-04-01,1998-02-01,product_sensitivity
+1997/98,OISST+ORAS5,thermocline_feedback,eastern D20 -> Nino3 SST,1.1476442,11,1997-04-01,1998-02-01,product_sensitivity
+1997/98,OISST+ORAS5,thermal_damping,Nino3 SST -> net surface heat flux,1.3803318,11,1997-04-01,1998-02-01,product_sensitivity
+2015/16,OISST+ORAS5,atmospheric,SST -> zonal wind stress,1.2226615,11,2015-04-01,2016-02-01,product_sensitivity
+2015/16,OISST+ORAS5,ocean_adjustment,zonal wind stress -> D20 slope,0.71622285,11,2015-04-01,2016-02-01,product_sensitivity
+2015/16,OISST+ORAS5,thermocline_feedback,eastern D20 -> Nino3 SST,1.1875027,11,2015-04-01,2016-02-01,product_sensitivity
+2015/16,OISST+ORAS5,thermal_damping,Nino3 SST -> net surface heat flux,0.92245686,11,2015-04-01,2016-02-01,product_sensitivity
+2023/24,OISST+ORAS5,atmospheric,SST -> zonal wind stress,0.69246004,11,2023-04-01,2024-02-01,product_sensitivity
+2023/24,OISST+ORAS5,ocean_adjustment,zonal wind stress -> D20 slope,0.95617679,11,2023-04-01,2024-02-01,product_sensitivity
+2023/24,OISST+ORAS5,thermocline_feedback,eastern D20 -> Nino3 SST,1.2614181,11,2023-04-01,2024-02-01,product_sensitivity
+2023/24,OISST+ORAS5,thermal_damping,Nino3 SST -> net surface heat flux,0.5918913,11,2023-04-01,2024-02-01,product_sensitivity
