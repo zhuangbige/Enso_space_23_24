@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Plot 2026 Jan-May monthly SSTA/precip/D20 with ERA5 850 hPa wind.
+"""Plot January-June monthly SSTA/precip/D20 with ERA5 850 hPa wind.
 
 Requested methods:
 - SST: NOAA OISST, monthly anomaly, linearly detrended.
@@ -9,7 +9,7 @@ Requested methods:
   linearly detrended.
 
 The requested anomaly/trend reference is 1980-2025. ERA5 and ORAS5 use that
-period directly. OISST v2.1 starts after 1980, so Jan-May OISST fields use the
+period directly. OISST v2.1 starts after 1980, so January-June OISST fields use the
 available same-month years in 1982-2025 and record that caveat in the output
 metadata.
 """
@@ -37,9 +37,11 @@ import matplotlib.pyplot as plt
 
 
 INPUT_DIR = ROOT / "data/interim/research_2026/monthly_panel_inputs"
-ERA5_WIND = ROOT / "data/raw/era5/era5_monthly_pressure850_wind_tropics_1deg_1980_2026_jan_may.nc"
-ERA5_PRECIP = ROOT / "data/raw/era5/era5_monthly_precip_tropics_1deg_1980_2026_jan_may.nc"
-ORAS5_D20 = ROOT / "data/interim/research_2026/oras5_d20_timeseries_equatorial_1960_202605.csv"
+ERA5_WIND_BASE = ROOT / "data/raw/era5/era5_monthly_pressure850_wind_tropics_1deg_1980_2026_jan_may.nc"
+ERA5_PRECIP_BASE = ROOT / "data/raw/era5/era5_monthly_precip_tropics_1deg_1980_2026_jan_may.nc"
+ERA5_WIND_JUNE = ROOT / "data/raw/era5/era5_monthly_pressure850_wind_tropics_1deg_1980_2026_jun.nc"
+ERA5_PRECIP_JUNE = ROOT / "data/raw/era5/era5_monthly_precip_tropics_1deg_1980_2026_jun.nc"
+ORAS5_D20 = ROOT / "data/interim/research_2026/oras5_d20_timeseries_equatorial_1960_202606.csv"
 
 OUT_DIR = ROOT / "outputs/research_2026/monthly_panels_1980_2025_detrended"
 DERIVED_NPZ = INPUT_DIR / "monthly_2026_detrended_fields_1980_2025.npz"
@@ -51,9 +53,9 @@ BASELINE_TAG = "1980_2025"
 TARGET_YEAR = 2026
 EVENT_LABEL = "2026"
 RUN_STEM = "2026"
-MONTHS = [1, 2, 3, 4, 5]
-MONTH_LABELS = ["January", "February", "March", "April", "May"]
-MONTH_TAGS = ["JAN", "FEB", "MAR", "APR", "MAY"]
+MONTHS = [1, 2, 3, 4, 5, 6]
+MONTH_LABELS = ["January", "February", "March", "April", "May", "June"]
+MONTH_TAGS = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN"]
 
 
 @dataclass(frozen=True)
@@ -238,7 +240,7 @@ def linear_detrend_grid(values: np.ndarray, time: np.ndarray, fit_mask: np.ndarr
 
 
 def detrended_monthly_target(da: xr.DataArray, *, name: str, baseline_start: int, baseline_end: int) -> tuple[np.ndarray, str]:
-    """Return target-year Jan-May anomalies after same-month linear detrending."""
+    """Return target-year January-June anomalies after same-month linear detrending."""
     require_months(da, name)
     pieces: list[np.ndarray] = []
     baseline_notes: list[str] = []
@@ -261,7 +263,7 @@ def detrended_monthly_target(da: xr.DataArray, *, name: str, baseline_start: int
 
 
 def oisst_path(month: int) -> Path:
-    tag = ["jan", "feb", "mar", "apr", "may"][month - 1]
+    tag = ["jan", "feb", "mar", "apr", "may", "jun"][month - 1]
     return INPUT_DIR / f"oisst_sst_tropics_1deg_{tag}_1982_2026.nc"
 
 
@@ -283,8 +285,14 @@ def open_oisst() -> xr.DataArray:
 
 
 def open_era5() -> xr.Dataset:
-    wind = standardize(open_netcdf(ERA5_WIND))
-    precip = standardize(open_netcdf(ERA5_PRECIP))
+    wind = xr.concat(
+        [standardize(open_netcdf(ERA5_WIND_BASE)), standardize(open_netcdf(ERA5_WIND_JUNE))],
+        dim="time",
+    ).sortby("time")
+    precip = xr.concat(
+        [standardize(open_netcdf(ERA5_PRECIP_BASE)), standardize(open_netcdf(ERA5_PRECIP_JUNE))],
+        dim="time",
+    ).sortby("time")
     if "pressure_level" in wind.dims:
         wind = wind.sel(pressure_level=850).drop_vars("pressure_level")
     rename = {}
@@ -482,19 +490,6 @@ def plot_monthly_map_group(
         format_map_axes(ax)
         add_boxes(ax, include_nino=variable == "sst")
         ax.set_title(f"{label} {TARGET_YEAR}")
-    axes_flat[-1].axis("off")
-    axes_flat[-1].text(
-        0.0,
-        0.82,
-        "Method\n"
-        "- Same-month climatology\n"
-        "- Linear trend removed\n"
-        "- Wind: ERA5 850 hPa\n"
-        "- Region: 120E-80W, 30S-30N",
-        fontsize=9,
-        color="0.25",
-        va="top",
-    )
     assert mesh is not None
     fig.colorbar(mesh, ax=axes[:, :], label=colorbar_label, shrink=0.88, pad=0.015)
     if variable == "sst":
@@ -523,7 +518,7 @@ def plot_d20_wind(fields: dict[str, object]) -> None:
     d20_lim = max(30.0, float(np.ceil(np.nanmax(np.abs(d20)) / 5.0) * 5.0))
     wind_lim = max(5.5, float(np.ceil(np.nanmax(np.abs(u_eq_on_d20)) * 1.12)))
 
-    fig, axes = plt.subplots(5, 1, figsize=(12.4, 9.2), sharex=True, constrained_layout=True)
+    fig, axes = plt.subplots(len(MONTHS), 1, figsize=(12.4, 10.6), sharex=True, constrained_layout=True)
     fig.suptitle(
         f"{EVENT_LABEL} monthly ORAS5 equatorial D20 anomaly with ERA5 850 hPa zonal wind",
         weight="bold",
@@ -566,12 +561,12 @@ def write_manifest(fields: dict[str, object]) -> None:
     rows = [
         {
             "output": str(DERIVED_NPZ),
-            "description": f"Compiled {TARGET_YEAR} Jan-May detrended fields for monthly panel plots.",
+            "description": f"Compiled {TARGET_YEAR} January-June detrended fields for monthly panel plots.",
             "baseline": f"ERA5/ORAS5 {BASELINE_START}-{BASELINE_END}; OISST effective {fields['sst_baseline_used']}",
         },
         {
             "output": str(D20_OUT_CSV),
-            "description": f"ORAS5 equatorial D20 monthly detrended anomalies for Jan-May {TARGET_YEAR}.",
+            "description": f"ORAS5 equatorial D20 monthly detrended anomalies for January-June {TARGET_YEAR}.",
             "baseline": f"{BASELINE_START}-{BASELINE_END}",
         },
         {
@@ -600,7 +595,7 @@ def write_manifest(fields: dict[str, object]) -> None:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Plot Jan-May monthly SSTA/precip/D20 + ERA5 u850 panels.")
+    parser = argparse.ArgumentParser(description="Plot January-June monthly SSTA/precip/D20 + ERA5 u850 panels.")
     parser.add_argument("--target-year", type=int, default=2026)
     parser.add_argument("--event-label", default=None, help="Label used in figure titles and output directory.")
     parser.add_argument("--baseline-start", type=int, default=1980)

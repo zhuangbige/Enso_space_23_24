@@ -20,6 +20,7 @@ import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+from matplotlib.patches import Rectangle
 
 
 BASELINE_START = 1980
@@ -41,7 +42,7 @@ EVENTS = {
         "npz": INPUT_DIR / "monthly_2023_detrended_fields_1980_2014.npz",
     },
     "2026": {
-        "label": "2026 January-May",
+        "label": "2026 January-June",
         "panel_year": "2026",
         "npz": INPUT_DIR / "monthly_2026_detrended_fields_1980_2014.npz",
     },
@@ -56,8 +57,10 @@ REFERENCE_EVENT_LABELS = {
     2002: "2002/03",
     2009: "2009/10",
 }
-MONTH_LABELS = ["January", "February", "March", "April", "May"]
-SHORT_MONTHS = ["Jan", "Feb", "Mar", "Apr", "May"]
+MONTH_LABELS = ["January", "February", "March", "April", "May", "June"]
+SHORT_MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
+D20_AXIS_LIMIT_M = 60.0
+U850_AXIS_LIMIT_MS = 12.0
 
 
 def load_monthly_module():
@@ -105,7 +108,12 @@ def format_lat(value: float) -> str:
     return f"{abs(value):g}{'N' if value > 0 else 'S'}"
 
 
-def format_map_axes(ax: plt.Axes, *, show_ylabel: bool) -> None:
+def format_map_axes(
+    ax: plt.Axes,
+    *,
+    show_ylabel: bool,
+    show_xlabel: bool = True,
+) -> None:
     xticks = [120, 160, 200, 240, 280]
     yticks = [-30, 0, 30]
     ax.set_xlim(120, 280)
@@ -115,9 +123,26 @@ def format_map_axes(ax: plt.Axes, *, show_ylabel: bool) -> None:
     ax.set_yticks(yticks)
     ax.set_yticklabels([format_lat(tick) for tick in yticks] if show_ylabel else [])
     ax.axhline(0, color="0.2", lw=0.65)
-    ax.set_xlabel("Longitude")
+    ax.set_xlabel("Longitude" if show_xlabel else "")
     if show_ylabel:
         ax.set_ylabel("Latitude")
+
+
+def format_precip_map_axes(ax: plt.Axes, *, show_ylabel: bool) -> None:
+    """Use a compact, paper-style strip layout for rainfall-wind panels."""
+    xticks = [120, 180, 240]
+    yticks = [-30, 0, 30]
+    ax.set_xlim(120, 280)
+    ax.set_ylim(-30, 30)
+    ax.set_xticks(xticks)
+    ax.set_xticklabels([format_lon(tick) for tick in xticks], fontsize=13.0)
+    ax.set_yticks(yticks)
+    ax.set_yticklabels([format_lat(tick) for tick in yticks] if show_ylabel else [], fontsize=13.0)
+    ax.axhline(0, color="0.28", lw=0.72, zorder=3)
+    ax.tick_params(length=3.6, width=0.9, pad=2.2)
+    for spine in ax.spines.values():
+        spine.set_linewidth(0.9)
+        spine.set_color("0.18")
 
 
 def add_boxes(ax: plt.Axes, *, include_nino: bool = True) -> None:
@@ -142,6 +167,33 @@ def add_boxes(ax: plt.Axes, *, include_nino: bool = True) -> None:
         ax.text(lon0 + dx, y_anchor + dy, label, fontsize=8.1, color="0.10")
 
 
+def add_precip_boxes(ax: plt.Axes) -> None:
+    """Retain only the two non-overlapping rainfall-response boxes."""
+    for label, lon0, lon1, color in [
+        ("CP", 180, 220, "#111111"),
+        ("EP", 220, 260, "#b0185b"),
+    ]:
+        ax.plot(
+            [lon0, lon1, lon1, lon0, lon0],
+            [-5, -5, 5, 5, -5],
+            color=color,
+            lw=1.25,
+            zorder=6,
+        )
+        ax.text(
+            (lon0 + lon1) / 2,
+            7.0,
+            label,
+            ha="center",
+            va="bottom",
+            fontsize=10.8,
+            weight="bold",
+            color=color,
+            bbox={"boxstyle": "round,pad=0.12", "facecolor": "white", "edgecolor": "none", "alpha": 0.76},
+            zorder=7,
+        )
+
+
 def add_vectors(
     ax: plt.Axes,
     lon: np.ndarray,
@@ -151,12 +203,12 @@ def add_vectors(
     *,
     key: bool,
     emphasis: str,
-) -> None:
-    x = lon[::7]
-    y = lat[::5]
-    uu = u[::5, ::7]
-    vv = v[::5, ::7]
+):
     if emphasis == "precip":
+        x = lon[::10]
+        y = lat[::8]
+        uu = u[::8, ::10]
+        vv = v[::8, ::10]
         ax.quiver(
             x,
             y,
@@ -164,17 +216,21 @@ def add_vectors(
             vv,
             color="white",
             pivot="middle",
-            width=0.0072,
-            headwidth=4.2,
-            headlength=5.2,
-            headaxislength=4.7,
-            scale=45,
-            alpha=0.98,
+            width=0.0058,
+            headwidth=4.0,
+            headlength=5.0,
+            headaxislength=4.5,
+            scale=48,
+            alpha=0.74,
             zorder=4,
         )
-        color = "#d6007f"
-        width = 0.0042
+        color = "#111111"
+        width = 0.00335
     else:
+        x = lon[::7]
+        y = lat[::5]
+        uu = u[::5, ::7]
+        vv = v[::5, ::7]
         ax.quiver(
             x,
             y,
@@ -203,11 +259,51 @@ def add_vectors(
         headwidth=3.6,
         headlength=4.7,
         headaxislength=4.3,
-        scale=47 if emphasis != "precip" else 45,
+        scale=47 if emphasis != "precip" else 48,
         zorder=5,
     )
-    if key:
-        ax.quiverkey(q, 0.74, 1.06, 4, "4 m/s", labelpos="E", coordinates="axes", fontproperties={"size": 9.5})
+    if key and emphasis != "precip":
+        add_panel_vector_key(ax, q)
+    return q
+
+
+def add_panel_vector_key(
+    ax: plt.Axes,
+    q,
+    *,
+    value: float = 4.0,
+    x: float = 0.902,
+    y: float = 0.17,
+    fontsize: float = 9.5,
+) -> None:
+    """Place a paper-style wind-vector reference inside one panel.
+
+    The lower-right reference area is first whitened, matching the supplied
+    paper example, then the arrow, magnitude, and unit are drawn on top.
+    """
+    key_background = Rectangle(
+        (0.81, 0.015),
+        0.185,
+        0.255,
+        transform=ax.transAxes,
+        facecolor="white",
+        edgecolor="0.28",
+        linewidth=0.65,
+        zorder=8,
+    )
+    ax.add_patch(key_background)
+    key_artist = ax.quiverkey(
+        q,
+        x,
+        y,
+        value,
+        rf"{value:g} m s$^{{-1}}$",
+        labelpos="S",
+        coordinates="axes",
+        labelsep=0.035,
+        fontproperties={"size": fontsize},
+    )
+    key_artist.set_zorder(10)
 
 
 def save(fig: plt.Figure, stem: str) -> tuple[Path, Path]:
@@ -239,7 +335,11 @@ def selected_el_nino_years() -> list[int]:
 def ensure_event_fields() -> None:
     module = load_monthly_module()
     for key, event in EVENTS.items():
-        if not event["npz"].exists():
+        needs_build = not event["npz"].exists()
+        if not needs_build:
+            with np.load(event["npz"]) as current:
+                needs_build = len(current["month_numbers"]) != len(MONTH_LABELS)
+        if needs_build:
             module.configure_run(
                 int(key),
                 event["label"],
@@ -250,7 +350,11 @@ def ensure_event_fields() -> None:
             module.build_fields()
     for year in ALL_REFERENCE_YEARS:
         npz = INPUT_DIR / f"monthly_{year}_detrended_fields_{BASELINE_TAG}.npz"
-        if not npz.exists():
+        needs_build = not npz.exists()
+        if not needs_build:
+            with np.load(npz) as current:
+                needs_build = len(current["month_numbers"]) != len(MONTH_LABELS)
+        if needs_build:
             module.configure_run(
                 year,
                 f"El Niño {REFERENCE_EVENT_LABELS.get(year, str(year))} development year",
@@ -286,12 +390,12 @@ def build_composite_fields(years: list[int]) -> dict[str, object]:
         elif key == "months":
             composite[key] = np.asarray(MONTH_LABELS)
         elif key == "month_numbers":
-            composite[key] = np.arange(1, 6)
+            composite[key] = np.arange(1, 7)
         else:
             composite[key] = value
     composite["composite_years"] = np.asarray(years, dtype=np.int16)
     composite["method"] = np.asarray(
-        "January-May development-year composite mean of the 1982/83 and 1997/98 main classic strong-event references after same-month "
+        "January-June development-year composite mean of the 1982/83 and 1997/98 main classic strong-event references after same-month "
         "climatology and linear trend removal. Target events, including 2015/16, are excluded."
     )
     out = INPUT_DIR / f"monthly_classic_strong_reference_composite_detrended_fields_{BASELINE_TAG}.npz"
@@ -337,43 +441,108 @@ def plot_monthly_map_group(
         xlon = lon
         ylat = lat
     data = np.asarray(fields[variable], dtype=float)
-    fig, axes = plt.subplots(1, 5, figsize=(18.4, 3.55), constrained_layout=True)
-    fig.suptitle(title, weight="bold", y=1.05)
+    nmonths = len(SHORT_MONTHS)
+    # Keep the figure at full manuscript width while using a moderately wide
+    # 2 x 3 layout.  A 1 x 6 strip makes the individual maps too small when
+    # the image is inserted into a portrait report at 6.35 inches wide.
+    fig, axes = plt.subplots(2, 3, figsize=(13.6, 6.05), constrained_layout=True)
+    axes_flat = np.asarray(axes).ravel()
+    fig.suptitle(title, fontsize=17.0, weight="bold", y=1.015)
     mesh = None
-    for i, ax in enumerate(axes):
-        mesh = ax.pcolormesh(xlon, ylat, data[i], cmap=cmap, vmin=vmin, vmax=vmax, shading="auto")
-        add_vectors(ax, lon, lat, u[i], v[i], key=(i == 4), emphasis="precip" if variable == "precip" else "sst")
-        format_map_axes(ax, show_ylabel=(i == 0))
-        add_boxes(ax, include_nino=variable == "sst")
-        if composite_years is None:
-            ax.set_title(f"{SHORT_MONTHS[i]} {panel_year}")
+    vector_ref = None
+    for i, ax in enumerate(axes_flat):
+        row, col = divmod(i, 3)
+        if variable == "precip":
+            levels = np.linspace(vmin, vmax, 25)
+            mesh = ax.contourf(
+                xlon,
+                ylat,
+                data[i],
+                levels=levels,
+                cmap=cmap,
+                extend="both",
+                antialiased=True,
+            )
+            vector_ref = add_vectors(ax, lon, lat, u[i], v[i], key=False, emphasis="precip")
+            add_panel_vector_key(ax, vector_ref, fontsize=9.8)
+            format_precip_map_axes(ax, show_ylabel=(col == 0))
+            if row == 0:
+                ax.tick_params(labelbottom=False)
+            ax.set_box_aspect(0.375)
+            add_precip_boxes(ax)
+            ax.set_title(
+                f"{SHORT_MONTHS[i]} {panel_year}" if composite_years is None else f"{SHORT_MONTHS[i]} composite",
+                fontsize=14.0,
+                weight="bold",
+                pad=6,
+            )
         else:
-            ax.set_title(f"{SHORT_MONTHS[i]} composite")
+            mesh = ax.pcolormesh(xlon, ylat, data[i], cmap=cmap, vmin=vmin, vmax=vmax, shading="auto")
+            vector_ref = add_vectors(ax, lon, lat, u[i], v[i], key=False, emphasis="sst")
+            add_panel_vector_key(ax, vector_ref, fontsize=9.8)
+            format_map_axes(ax, show_ylabel=(col == 0), show_xlabel=(row == 1))
+            if row == 0:
+                ax.tick_params(labelbottom=False)
+            ax.set_box_aspect(0.375)
+            add_boxes(ax, include_nino=True)
+            if composite_years is None:
+                ax.set_title(f"{SHORT_MONTHS[i]} {panel_year}", fontsize=14.0, weight="bold")
+            else:
+                ax.set_title(f"{SHORT_MONTHS[i]} composite", fontsize=14.0, weight="bold")
     assert mesh is not None
-    cbar = fig.colorbar(mesh, ax=axes, label=colorbar_label, shrink=0.88, pad=0.008)
-    cbar.ax.tick_params(labelsize=10.2)
-    cbar.set_label(colorbar_label, fontsize=11.2)
+    if variable == "precip":
+        assert vector_ref is not None
+        cbar = fig.colorbar(
+            mesh,
+            ax=axes_flat.tolist(),
+            orientation="horizontal",
+            ticks=np.arange(vmin, vmax + 0.1, 3.0),
+            shrink=0.64,
+            pad=0.045,
+            aspect=42,
+        )
+        cbar.ax.tick_params(labelsize=12.3, length=3.2, width=0.8, pad=2)
+        cbar.set_label(colorbar_label, fontsize=13.2, labelpad=3)
+        cbar.outline.set_linewidth(0.85)
+    else:
+        cbar = fig.colorbar(
+            mesh,
+            ax=axes_flat.tolist(),
+            orientation="horizontal",
+            label=colorbar_label,
+            shrink=0.64,
+            pad=0.045,
+            aspect=42,
+        )
+        cbar.ax.tick_params(labelsize=11.4)
+        cbar.set_label(colorbar_label, fontsize=12.4)
     if composite_years is None:
         if variable == "sst":
             note = (
                 f"Monthly detrended anomalies. ERA5 wind baseline {fields['era5_baseline_used']}; "
-                f"OISST baseline {fields['sst_baseline_used']}."
+                f"OISST baseline {fields['sst_baseline_used']}. "
+                r"Each panel's wind-vector reference is 4 m s$^{-1}$."
             )
         else:
-            note = f"Monthly detrended anomalies. ERA5 precipitation/wind baseline {fields['era5_baseline_used']}."
+            note = (
+                f"Monthly detrended anomalies. ERA5 precipitation/wind baseline {fields['era5_baseline_used']}. "
+                r"Each panel's wind-vector reference is 4 m s$^{-1}$."
+            )
     else:
         years = ", ".join(str(y) for y in composite_years)
         if variable == "sst":
             note = (
                 f"Composite years: {years}. Same monthly anomaly and detrending method; "
-                f"ERA5 wind baseline {BASELINE_START}-{BASELINE_END}; OISST baseline 1982-{BASELINE_END}."
+                f"ERA5 wind baseline {BASELINE_START}-{BASELINE_END}; OISST baseline 1982-{BASELINE_END}. "
+                r"Each panel's wind-vector reference is 4 m s$^{-1}$."
             )
         else:
             note = (
                 f"Composite years: {years}. Same monthly anomaly and detrending method; "
-                f"ERA5 precipitation/wind baseline {BASELINE_START}-{BASELINE_END}."
+                f"ERA5 precipitation/wind baseline {BASELINE_START}-{BASELINE_END}. "
+                r"Each panel's wind-vector reference is 4 m s$^{-1}$."
             )
-    fig.text(0.01, -0.035, note, fontsize=10.0, color="0.28")
+    fig.text(0.01, -0.025, note, fontsize=9.6, color="0.28")
     save(fig, stem)
     plt.close(fig)
 
@@ -391,9 +560,11 @@ def plot_selected_event_map_grid(
     group_description: str,
 ) -> None:
     nrows = len(reference_events)
-    fig, axes = plt.subplots(nrows, 5, figsize=(18.8, 2.85 * nrows + 0.35), constrained_layout=True, squeeze=False)
+    nmonths = len(SHORT_MONTHS)
+    fig, axes = plt.subplots(nrows, nmonths, figsize=(22.0, 2.85 * nrows + 0.35), constrained_layout=True, squeeze=False)
     fig.suptitle(title, weight="bold", y=1.03)
     mesh = None
+    vector_ref = None
     for row_idx, (_year, event_label, fields) in enumerate(reference_events):
         lon = np.asarray(fields["lon"], dtype=float)
         lat = np.asarray(fields["lat"], dtype=float)
@@ -408,15 +579,16 @@ def plot_selected_event_map_grid(
         data = np.asarray(fields[variable], dtype=float)
         for col_idx, ax in enumerate(axes[row_idx]):
             mesh = ax.pcolormesh(xlon, ylat, data[col_idx], cmap=cmap, vmin=vmin, vmax=vmax, shading="auto")
-            add_vectors(
+            vector_ref = add_vectors(
                 ax,
                 lon,
                 lat,
                 u[col_idx],
                 v[col_idx],
-                key=(row_idx == 0 and col_idx == 4),
+                key=False,
                 emphasis="precip" if variable == "precip" else "sst",
             )
+            add_panel_vector_key(ax, vector_ref, fontsize=7.8)
             format_map_axes(ax, show_ylabel=(col_idx == 0))
             add_boxes(ax, include_nino=variable == "sst")
             if row_idx == 0:
@@ -445,12 +617,14 @@ def plot_selected_event_map_grid(
         note = (
             f"{group_description}, plotted individually, not averaged: {years}. "
             f"Monthly detrended anomalies; ERA5 wind baseline {BASELINE_START}-{BASELINE_END}; "
-            f"OISST baseline 1982-{BASELINE_END}."
+            f"OISST baseline 1982-{BASELINE_END}. "
+            r"Each panel's wind-vector reference is 4 m s$^{-1}$."
         )
     else:
         note = (
             f"{group_description}, plotted individually, not averaged: {years}. "
-            f"Monthly detrended anomalies; ERA5 precipitation/wind baseline {BASELINE_START}-{BASELINE_END}."
+            f"Monthly detrended anomalies; ERA5 precipitation/wind baseline {BASELINE_START}-{BASELINE_END}. "
+            r"Each panel's wind-vector reference is 4 m s$^{-1}$."
         )
     fig.text(0.01, -0.02, note, fontsize=10.0, color="0.28")
     save(fig, stem)
@@ -481,35 +655,59 @@ def plot_d20_wind(
     d20 = np.asarray(fields["d20"], dtype=float)
     u_eq = weighted_equatorial_mean(np.asarray(fields["u850"], dtype=float), lat)
     u_eq_on_d20 = interp_monthly_to_lons(u_eq, lon, d20_lon)
-    d20_lim = max(30.0, float(np.ceil(np.nanmax(np.abs(d20)) / 5.0) * 5.0))
-    wind_lim = max(5.5, float(np.ceil(np.nanmax(np.abs(u_eq_on_d20)) * 1.12)))
+    d20_lim = D20_AXIS_LIMIT_M
+    wind_lim = U850_AXIS_LIMIT_MS
 
-    fig, axes = plt.subplots(5, 1, figsize=(14.8, 5.9), sharex=True, constrained_layout=True)
-    fig.suptitle(title, weight="bold", y=1.015)
-    for i, (ax, label) in enumerate(zip(axes, SHORT_MONTHS)):
+    fig, axes = plt.subplots(2, 3, figsize=(13.6, 6.05), sharex=True, sharey=True, constrained_layout=True)
+    axes_flat = np.asarray(axes).ravel()
+    fig.suptitle(title, fontsize=17.0, weight="bold", y=0.99)
+    layout_engine = fig.get_layout_engine()
+    if layout_engine is not None:
+        layout_engine.set(rect=(0.0, 0.0, 1.0, 0.93))
+    for i, (ax, label) in enumerate(zip(axes_flat, SHORT_MONTHS)):
+        row, col = divmod(i, 3)
         colors = np.where(d20[i] >= 0, "#b84b40", "#2f6fab")
         ax.bar(d20_lon, d20[i], width=4.0, color=colors, alpha=0.78, edgecolor="none")
         ax.axhline(0, color="0.25", lw=0.8)
         ax.set_ylim(-d20_lim, d20_lim)
-        ax.set_ylabel("D20 (m)", fontsize=10.5)
-        ax.set_title(f"{label} {panel_year}" if composite_years is None else f"{label} composite", loc="left", fontsize=11.0)
+        ax.set_ylabel("D20 (m)" if col == 0 else "", fontsize=11.5)
+        panel_label = f"{label} {panel_year}" if composite_years is None else f"{label} composite"
+        ax.text(
+            0.012,
+            0.965,
+            panel_label,
+            transform=ax.transAxes,
+            ha="left",
+            va="top",
+            fontsize=12.6,
+            weight="bold",
+            bbox={"boxstyle": "round,pad=0.12", "facecolor": "white", "edgecolor": "none", "alpha": 0.78},
+            zorder=8,
+        )
         ax2 = ax.twinx()
         ax2.plot(d20_lon, u_eq_on_d20[i], color="#111111", lw=1.7)
         ax2.fill_between(d20_lon, 0, u_eq_on_d20[i], color="#111111", alpha=0.12)
         ax2.axhline(0, color="0.45", lw=0.6, ls="--")
         ax2.set_ylim(-wind_lim, wind_lim)
-        ax2.set_ylabel("u850 (m/s)", fontsize=10.5)
-        ax.tick_params(labelsize=9.5)
-        ax2.tick_params(labelsize=9.5)
+        ax2.set_ylabel("u850 (m/s)" if col == 2 else "", fontsize=11.5)
+        if col != 2:
+            ax2.tick_params(labelright=False)
+        ax.tick_params(labelsize=10.2)
+        ax2.tick_params(labelsize=10.2)
         for x, text in [(160, "CWP"), (180, "Date line"), (220, "CP"), (260, "EP"), (275, "FEP")]:
             ax.axvline(x, color="0.35", lw=0.52, ls="--")
             if i == 0:
                 ax.text(x + 1, d20_lim * 0.62, text, fontsize=8.8, color="0.25")
-    axes[-1].set_xlim(130, 275)
-    ticks = [130, 150, 170, 180, 200, 220, 240, 260, 275]
-    axes[-1].set_xticks(ticks)
-    axes[-1].set_xticklabels([format_lon(tick) for tick in ticks])
-    axes[-1].set_xlabel("Longitude along equator")
+        if row == 0:
+            ax.tick_params(labelbottom=False)
+    axes_flat[-1].set_xlim(130, 275)
+    # Keep the date line as the central reference tick.  The former 170E tick
+    # was only 10 degrees away and overlapped with 180 in the 2 x 3 layout.
+    ticks = [130, 150, 180, 200, 220, 240, 260, 275]
+    for ax in axes[1]:
+        ax.set_xticks(ticks)
+        ax.set_xticklabels([format_lon(tick) for tick in ticks], fontsize=9.2)
+        ax.set_xlabel("Longitude along equator", fontsize=10.6)
     if composite_years is None:
         note = (
             f"D20: ORAS5 equatorial 20 deg C isotherm depth, detrended against {BASELINE_START}-{BASELINE_END}. "
@@ -521,7 +719,7 @@ def plot_d20_wind(
             f"Composite years: {years}. D20 and ERA5 u850 use the same monthly anomaly and detrending method. "
             "Positive u850 is westerly; positive D20 is deeper thermocline."
         )
-    fig.text(0.01, -0.035, note, fontsize=10.0, color="0.28")
+    fig.text(0.01, -0.025, note, fontsize=9.6, color="0.28")
     save(fig, stem)
     plt.close(fig)
 
@@ -546,12 +744,13 @@ def plot_selected_event_d20_grid(
         d20_abs = max(d20_abs, float(np.nanmax(np.abs(d20))))
         u_abs = max(u_abs, float(np.nanmax(np.abs(u_eq_on_d20))))
         prepared.append((event_label, d20_lon, d20, u_eq_on_d20))
-    d20_lim = max(30.0, float(np.ceil(d20_abs / 5.0) * 5.0))
-    wind_lim = max(5.5, float(np.ceil(u_abs * 1.12)))
+    d20_lim = D20_AXIS_LIMIT_M
+    wind_lim = U850_AXIS_LIMIT_MS
 
     nrows = len(prepared)
-    fig, axes = plt.subplots(nrows, 5, figsize=(18.8, 2.25 * nrows + 0.35), sharex=True, sharey=True, constrained_layout=True)
-    axes = np.asarray(axes).reshape(nrows, 5)
+    nmonths = len(SHORT_MONTHS)
+    fig, axes = plt.subplots(nrows, nmonths, figsize=(22.0, 2.25 * nrows + 0.35), sharex=True, sharey=True, constrained_layout=True)
+    axes = np.asarray(axes).reshape(nrows, nmonths)
     fig.suptitle(title, weight="bold", y=1.045)
     for row_idx, (event_label, d20_lon, d20, u_eq_on_d20) in enumerate(prepared):
         for col_idx, ax in enumerate(axes[row_idx]):
@@ -574,7 +773,7 @@ def plot_selected_event_d20_grid(
             ax2.fill_between(d20_lon, 0, u_eq_on_d20[col_idx], color="#111111", alpha=0.12)
             ax2.axhline(0, color="0.45", lw=0.55, ls="--")
             ax2.set_ylim(-wind_lim, wind_lim)
-            if col_idx == 4:
+            if col_idx == nmonths - 1:
                 ax2.set_ylabel("u850 (m/s)", fontsize=10.2)
             else:
                 ax2.tick_params(labelright=False)
@@ -582,7 +781,7 @@ def plot_selected_event_d20_grid(
             ax2.tick_params(labelsize=9.0)
     for ax in axes[-1]:
         ax.set_xlim(130, 275)
-        ticks = [130, 150, 170, 180, 200, 220, 240, 260, 275]
+        ticks = [130, 150, 180, 200, 220, 240, 260, 275]
         ax.set_xticks(ticks)
         ax.set_xticklabels([format_lon(tick) for tick in ticks])
         ax.set_xlabel("Longitude")
@@ -600,6 +799,16 @@ def plot_selected_event_d20_grid(
 def main() -> int:
     parser = argparse.ArgumentParser(description="Create target-event and group-separated ENSO development-phase figures.")
     parser.add_argument(
+        "--target-precip-only",
+        action="store_true",
+        help="Regenerate only the three target-event precipitation-wind strip figures.",
+    )
+    parser.add_argument(
+        "--targets-only",
+        action="store_true",
+        help="Regenerate the SST-wind, precipitation-wind, and D20-wind figures for the three target events only.",
+    )
+    parser.add_argument(
         "--groups-only",
         action="store_true",
         help="Regenerate only the historical reference/sensitivity groups and leave the target-event figures untouched.",
@@ -607,10 +816,21 @@ def main() -> int:
     args = parser.parse_args()
     setup_style()
     ensure_event_fields()
-    classic_events = load_reference_event_fields(CLASSIC_REFERENCE_YEARS)
-    sensitivity_events = load_reference_event_fields(EXTENDED_SENSITIVITY_YEARS)
-    build_composite_fields(CLASSIC_REFERENCE_YEARS)
-
+    if args.target_precip_only:
+        for key, event in EVENTS.items():
+            fields = load_npz(event["npz"])
+            plot_monthly_map_group(
+                fields,
+                variable="precip",
+                title=f"{event['label']}: precipitation and 850-hPa wind anomalies",
+                panel_year=event["panel_year"],
+                cmap="BrBG",
+                vmin=-12.0,
+                vmax=12.0,
+                colorbar_label=r"ERA5 precipitation anomaly (mm day$^{-1}$)",
+                stem=f"fig_{key}_paperstyle_era5_precip_u850_strip_detrended_{BASELINE_TAG}",
+            )
+        return 0
     if not args.groups_only:
         for key, event in EVENTS.items():
             fields = load_npz(event["npz"])
@@ -630,13 +850,13 @@ def main() -> int:
             plot_monthly_map_group(
                 fields,
                 variable="precip",
-                title=f"{label}: ERA5 precipitation with ERA5 850 hPa wind anomalies",
+                title=f"{label}: precipitation and 850-hPa wind anomalies",
                 panel_year=panel_year,
                 cmap="BrBG",
-                vmin=-5.0,
-                vmax=5.0,
-                colorbar_label="ERA5 precipitation anomaly (mm/day)",
-                stem=f"fig_{key}_revised_era5_precip_u850_detrended_{BASELINE_TAG}",
+                vmin=-12.0,
+                vmax=12.0,
+                colorbar_label=r"ERA5 precipitation anomaly (mm day$^{-1}$)",
+                stem=f"fig_{key}_paperstyle_era5_precip_u850_strip_detrended_{BASELINE_TAG}",
             )
             plot_d20_wind(
                 fields,
@@ -645,17 +865,24 @@ def main() -> int:
                 stem=f"fig_{key}_revised_d20_u850_detrended_{BASELINE_TAG}",
             )
 
+    if args.targets_only:
+        return 0
+
+    classic_events = load_reference_event_fields(CLASSIC_REFERENCE_YEARS)
+    sensitivity_events = load_reference_event_fields(EXTENDED_SENSITIVITY_YEARS)
+    build_composite_fields(CLASSIC_REFERENCE_YEARS)
+
     group_specs = [
         (
             "classic_strong",
             classic_events,
-            "Main classic strong reference events, development-year January-May (target-only 2015/16 excluded)",
+            "Main classic strong reference events, development-year January-June (target-only 2015/16 excluded)",
             "Main classic strong reference group",
         ),
         (
             "extended_sensitivity",
             sensitivity_events,
-            "Extended sensitivity events, development-year January-May (not included in the main classic reference)",
+            "Extended sensitivity events, development-year January-June (not included in the main classic reference)",
             "Extended sensitivity group",
         ),
     ]
@@ -691,13 +918,13 @@ def main() -> int:
 
     assignments = pd.DataFrame(
         [
-            {"event_year": 1982, "event_label": "1982/83", "comparison_window": "Jan-May 1982", "phase": "early_formation", "group": "main_classic_strong_reference", "role": "reference"},
-            {"event_year": 1997, "event_label": "1997/98", "comparison_window": "Jan-May 1997", "phase": "early_formation", "group": "main_classic_strong_reference", "role": "reference"},
-            {"event_year": 2002, "event_label": "2002/03", "comparison_window": "Jan-May 2002", "phase": "early_formation", "group": "extended_sensitivity", "role": "sensitivity_only"},
-            {"event_year": 2009, "event_label": "2009/10", "comparison_window": "Jan-May 2009", "phase": "early_formation", "group": "extended_sensitivity", "role": "sensitivity_only"},
-            {"event_year": 2015, "event_label": "2015/16", "comparison_window": "Jan-May 2015", "phase": "early_formation", "group": "target_events", "role": "target_only"},
-            {"event_year": 2023, "event_label": "2023/24", "comparison_window": "Jan-May 2023", "phase": "early_formation", "group": "target_events", "role": "target_only"},
-            {"event_year": 2026, "event_label": "2026", "comparison_window": "Jan-May 2026", "phase": "early_formation", "group": "target_events", "role": "target_only"},
+            {"event_year": 1982, "event_label": "1982/83", "comparison_window": "Jan-Jun 1982", "phase": "early_formation", "group": "main_classic_strong_reference", "role": "reference"},
+            {"event_year": 1997, "event_label": "1997/98", "comparison_window": "Jan-Jun 1997", "phase": "early_formation", "group": "main_classic_strong_reference", "role": "reference"},
+            {"event_year": 2002, "event_label": "2002/03", "comparison_window": "Jan-Jun 2002", "phase": "early_formation", "group": "extended_sensitivity", "role": "sensitivity_only"},
+            {"event_year": 2009, "event_label": "2009/10", "comparison_window": "Jan-Jun 2009", "phase": "early_formation", "group": "extended_sensitivity", "role": "sensitivity_only"},
+            {"event_year": 2015, "event_label": "2015/16", "comparison_window": "Jan-Jun 2015", "phase": "early_formation", "group": "target_events", "role": "target_only"},
+            {"event_year": 2023, "event_label": "2023/24", "comparison_window": "Jan-Jun 2023", "phase": "early_formation", "group": "target_events", "role": "target_only"},
+            {"event_year": 2026, "event_label": "2026", "comparison_window": "Jan-Jun 2026", "phase": "early_formation", "group": "target_events", "role": "target_only"},
         ]
     )
     assignments.to_csv(OUT_DIR / "enso_event_group_assignments.csv", index=False)
