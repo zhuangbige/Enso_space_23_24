@@ -187,12 +187,25 @@ def load_ordinary_analysis() -> dict[str, pd.DataFrame]:
     }
 
 
-def add_paragraph(doc: Document, text: str = "", style: str | None = None, size: float = 10.5) -> None:
+def add_paragraph(doc: Document, text: str = "", style: str | None = None, size: float = 10.5):
     p = doc.add_paragraph(style=style)
     p.paragraph_format.space_after = Pt(5)
     p.paragraph_format.line_spacing = 1.1
     run = p.add_run(text)
     set_run_font(run, size=size)
+    return p
+
+
+def keep_table_together(table) -> None:
+    """Keep a compact table on one page when it fits."""
+    for row_index, row in enumerate(table.rows):
+        tr_properties = row._tr.get_or_add_trPr()
+        cant_split = OxmlElement("w:cantSplit")
+        tr_properties.append(cant_split)
+        if row_index < len(table.rows) - 1:
+            for cell in row.cells:
+                for paragraph in cell.paragraphs:
+                    paragraph.paragraph_format.keep_with_next = True
 
 
 def add_heading(doc: Document, text: str, level: int = 1) -> None:
@@ -226,11 +239,12 @@ def add_figure(doc: Document, image: Path, caption: str, width: float = 6.35) ->
 
 def add_metric_table(doc: Document, metrics: dict[str, dict[str, float]]) -> None:
     add_heading(doc, "表1  三次事件的关键区域指标", level=2)
-    add_paragraph(
+    table_note = add_paragraph(
         doc,
         "每格为1-6月平均 / 6月单月；Peng CWP u10为正表示近地面西风异常。",
         size=9.2,
     )
+    table_note.paragraph_format.keep_with_next = True
     rows = [
         ("Niño3.4 SST (°C)", "sst_Nino3.4", "{:+.2f}"),
         ("Peng CWP u10 (m s⁻¹)", "u_CWP", "{:+.2f}"),
@@ -260,6 +274,7 @@ def add_metric_table(doc: Document, metrics: dict[str, dict[str, float]]) -> Non
                 para.paragraph_format.line_spacing = 1.05
                 for run in para.runs:
                     set_run_font(run, size=8.6, bold=(row is table.rows[0]))
+    keep_table_together(table)
 
 
 def format_compact_table(table, widths: list[float]) -> None:
@@ -301,6 +316,7 @@ def add_expected_response_table(doc: Document, ordinary: dict[str, pd.DataFrame]
             row = means.loc[(labels[year], response)]
             cells[index].text = f"{row.observed:+.2f} / {row.expected:+.2f} ({row.residual:+.2f})"
     format_compact_table(table, [2.05, 1.48, 1.48, 1.48])
+    keep_table_together(table)
     add_paragraph(
         doc,
         "每格为观测 / 历史预期（残差）。预期由1982-2014各日历月Niño3 SST回归得到；三个目标年份均排除在拟合之外。",
@@ -332,6 +348,7 @@ def add_similarity_table(doc: Document, ordinary: dict[str, pd.DataFrame]) -> No
             cells[3].text = f"{row.centered_rmsd:.2f} {row.unit}"
             cells[4].text = f"{row.standard_deviation_ratio:.3f}"
     format_compact_table(table, [1.05, 1.35, 1.0, 1.65, 1.2])
+    keep_table_together(table)
     add_paragraph(
         doc,
         "Taylor统计量分别约束形态相关、中心化误差和相对振幅；各变量独立评价，不合成总分。",
@@ -384,16 +401,8 @@ def build_doc() -> None:
     wind_2026 = expected.loc[
         expected["target_year"].eq(2026) & expected["response"].eq("cwp_u10")
     ].sort_values("month")
-    precipitation_2026 = expected.loc[
-        expected["target_year"].eq(2026) & expected["response"].eq("cp_precip")
-    ].sort_values("month")
     if wind_2026["month"].astype(int).tolist() != list(range(1, 7)):
         raise ValueError("Incomplete January-June 2026 Peng CWP u10 response")
-    wind_observed = wind_2026["observed"].to_numpy(float)
-    wind_expected = wind_2026["expected"].to_numpy(float)
-    wind_residual = wind_2026["residual"].to_numpy(float)
-    wind_mean_residual = float(np.mean(wind_residual))
-    precip_mean_residual = float(precipitation_2026["residual"].mean())
     doc = Document()
     configure_styles(doc)
     doc.core_properties.title = "2026 ENSO海气耦合诊断"
@@ -414,42 +423,40 @@ def build_doc() -> None:
     add_heading(doc, "摘要", level=1)
     add_paragraph(
         doc,
-        "2026年初的海温分布带有2023式东部先行特征，但至6月，赤道温跃层和低层纬向风已更接近2015式强耦合状态。"
-        f"Niño3 SST条件回归显示，2026年1-6月Peng CWP u10相对历史预期的平均残差为{wind_mean_residual:+.2f} m s⁻¹，"
-        f"而中太平洋降水残差为{precip_mean_residual:+.2f} mm day⁻¹。"
-        "观测序列因此表现为温跃层调整和西风建立在前、深对流响应在5-6月追赶。",
+        "本报告以2015/16的强耦合过程和2023/24的受限大气响应为参照，判断2026年1-6月热带太平洋海气耦合所处阶段。"
+        "2026年初的表层增暖具有2023式东部先行特征，随后赤道温跃层形成盆尺度西浅东深结构，中西太平洋近地面西风也由间歇响应转为持续增强；"
+        "中太平洋深对流则明显滞后，至后期才开始与海温和西风异常同位发展。"
+        "因此，2026并非前两次事件的简单复刻，而是由东部表层信号向2015式动力耦合过渡的混合型演变；后续强度主要取决于深对流能否持续组织并维持风—温跃层反馈。",
     )
 
-    add_heading(doc, "研究定位与方法依据", level=1)
+    add_heading(doc, "研究问题与方法依据", level=1)
     add_paragraph(
         doc,
-        "本文不提出新的综合耦合指数，而是把已有的ENSO过程诊断用于2015/16、2023/24与2026年发展阶段的统一比较。"
-        "Peng et al.（2025）以Niño3 SST为海洋端，通过历史回归估计中西太平洋纬向风的条件响应，并比较2023/24的实际值与历史预期；"
-        "Jiang et al.（2026）同时比较东太平洋SST、中太平洋风和降水，并以历史事件和回归重建识别空间受限的海气耦合；"
-        "Li et al.（2024）进一步把大气Bjerknes反馈分解为SST梯度—降水加热—气压梯度—纬向风应力。"
-        "因此，本文的实际—预期响应以及SST、降水和风场分环分析均有直接的方法学依据；本文的增量是将其用于2026年逐月观测并与2015/16和2023/24分层比较。",
+        "2023/24表明较强海洋初始状态并不必然转化为同等强度的大气响应，因此2026需要回答的关键问题是："
+        "当前增暖仍停留在东太平洋局地发展，还是已经建立能够自我维持的盆尺度海气正反馈。"
+        "分析采用Peng et al.（2025）的Niño3 SST条件风响应，检验近地面西风相对历史预期是否充分；采用Jiang et al.（2026）的跨事件空间比较，识别SST、风和降水中心是否协同东移；"
+        "并依据Li et al.（2024）的Bjerknes反馈链，将温跃层调整、表层增暖、低层风和深对流按物理过程逐环解释。"
+        "Taylor统计用于分变量判断2026与历史事件的结构相似性。",
     )
     add_paragraph(
         doc,
-        "本文严格采用Peng et al.（2025）的CWP定义：5°S–5°N、140°E–160°W区域平均10 m纬向风（u10），"
-        "用于衡量Niño3 SST对应的近地面大气响应。CP降水采用5°S–5°N、180°–140°W，与Sun et al.（2016）的中太平洋诊断区一致。"
-        "CWP u10和CP降水均是给定坐标的研究诊断量，不作为类似Niño3或Niño3.4的业务监测指数；三次事件使用相同坐标、异常基准和处理。"
-        "空间图仍叠加850 hPa风，用于展示低层环流结构，不与Peng的CWP u10指标混用。",
+        "Peng CWP风定义为5°S–5°N、140°E–160°W区域平均10 m纬向风；中太平洋降水采用Sun et al.（2016）的5°S–5°N、180°–140°W诊断区。"
+        "区域时间序列用于实际—预期响应比较，850 hPa风用于刻画低层环流的空间组织，二者分别对应近地面动量响应和对流层低层结构。",
     )
 
     add_heading(doc, "1  资料与方法", level=1)
     add_paragraph(
         doc,
         "SST取自NOAA OISST；10 m风、850 hPa风和降水取自ERA5；20°C等温面深度（D20）取自ORAS5。"
-        "其中2026年6月u10由ARCO-ERA5T公共镜像的720个逐小时场聚合为月平均，其余u10使用ERA5月平均资料。"
+        "2026年6月u10由ARCO-ERA5T逐小时场聚合为月平均，其余u10使用ERA5月平均资料。"
         "ERA5 850 hPa风、降水及ORAS5异常基准为1980-2014，OISST和Peng CWP u10为1982-2014；各变量逐日历月去气候态并去线性趋势。"
         "三次事件均比较发展年1-6月。",
     )
     add_paragraph(
         doc,
-        "大气条件响应采用1982-2014各日历月Niño3 SST回归，2015、2023和2026不进入拟合。"
-        "历史相似性采用Taylor（2001）的面积加权相关、中心化RMSD和标准差比，分别评价SST、u850、降水和D20；不构造综合指数。"
-        "图11的三段阴影仅按月份归纳观测时序，不是正式耦合指数、统计识别的变点或事件强度预报；本文据此只判断共同演变是否与反馈逐步建立一致，不作因果闭合判定。",
+        "大气条件响应由1982-2014各日历月Niño3 SST回归给出，三个目标年份均排除在拟合之外。"
+        "历史相似性采用Taylor（2001）的面积加权相关、中心化RMSD和标准差比，分别评价SST、u850、降水和D20。"
+        "月度序列用于确定各过程的先后关系，空间场用于检验异常中心、符号和盆尺度结构是否一致。",
     )
     add_metric_table(doc, metrics)
 
@@ -457,8 +464,9 @@ def build_doc() -> None:
     add_heading(doc, "2.1  SST与850 hPa风", level=2)
     add_paragraph(
         doc,
-        "2015年中东太平洋增暖与西风异常同步发展；2023年暖中心偏东，西风响应较弱。2026年1-3月同样由东部先行，"
-        "4月后暖异常向中太平洋扩展，6月850 hPa西风异常显著增强。该图用于描述低层环流结构；CWP实际—预期计算采用10 m风。",
+        "2015年暖异常从东太平洋向中太平洋连成一体，西风异常位于暖区西侧并随增暖同步加强，构成有利于暖水东移的盆尺度结构。"
+        "2023年的暖中心更局限于东部，中西太平洋西风既弱且缺乏持续的空间组织，大气响应未能与海温异常充分配合。"
+        "2026年初同样由东部先行，但春季以后暖区向西扩展，低层西风在中西太平洋成带增强；这表明其表层形态虽然起始于2023式配置，后期环流组织已转向2015式耦合。",
     )
     add_figure(doc, EVENTS["2015/16"]["ssta"], "图1  2015/16发展年OISST海温异常与ERA5 850 hPa风异常。")
     add_figure(doc, EVENTS["2023/24"]["ssta"], "图2  2023/24发展年OISST海温异常与ERA5 850 hPa风异常。")
@@ -467,8 +475,10 @@ def build_doc() -> None:
     add_heading(doc, "2.2  降水与850 hPa风", level=2)
     add_paragraph(
         doc,
-        "2015年中太平洋正降水异常与西风共同增强；2023年的中太平洋对流响应偏弱。2026年1-4月中太平洋降水仍受抑制，"
-        "5月转正并在6月增强，但其振幅仍低于同期SST所对应的历史条件响应。",
+        "2015年中太平洋正降水异常与西风中心协同发展，说明深对流加热已参与Walker环流调整，并可反过来维持低层西风。"
+        "2023年对流中心未能随东部增暖充分向中太平洋扩展，风—降水之间的空间配合较弱。"
+        "2026年前期中太平洋仍以对流受抑为主，即使近地面和850 hPa西风已经开始建立；后期正降水异常才进入中太平洋并与西风区重叠。"
+        "这种先风后雨的次序说明动力响应早于深对流组织，完整的大气反馈建立晚于海洋和近地面风场调整。",
     )
     add_figure(doc, EVENTS["2015/16"]["precip"], "图4  2015/16发展年ERA5降水与850 hPa风异常。")
     add_figure(doc, EVENTS["2023/24"]["precip"], "图5  2023/24发展年ERA5降水与850 hPa风异常。")
@@ -477,8 +487,10 @@ def build_doc() -> None:
     add_heading(doc, "2.3  D20与赤道u850", level=2)
     add_paragraph(
         doc,
-        "2026年6月西部D20为-12.1 m、东部为+46.6 m，形成清楚的西浅东深结构；2023年同期西部D20仅-2.7 m。"
-        "2026年的盆尺度温跃层调整因而明显更接近2015。",
+        "2015年的赤道温跃层表现为西部持续变浅、东部持续加深，反映暖水体向东再分配并为东太平洋增暖提供次表层支撑。"
+        "2023年虽有东部加深，但西部浅化较弱，盆尺度倾斜和相应的动力反馈均受到限制。"
+        "2026年先出现东部加深，随后西部浅化明显发展，至后期形成连贯的西浅东深结构。"
+        "因此，2026的海洋动力演变已由局地东部信号转为盆尺度调整，这一层面更接近2015而非2023。",
     )
     add_figure(doc, EVENTS["2015/16"]["d20"], "图7  2015/16发展年ORAS5赤道D20异常与ERA5赤道u850。")
     add_figure(doc, EVENTS["2023/24"]["d20"], "图8  2023/24发展年ORAS5赤道D20异常与ERA5赤道u850。")
@@ -491,75 +503,78 @@ def build_doc() -> None:
         ORDINARY_FIGURES["expected"],
         "图10  三次事件的观测大气响应及Niño3 SST条件历史预期；回归期为1982-2014。",
     )
-    add_paragraph(
+    response_paragraph = add_paragraph(
         doc,
-        "2015年近地面西风明显强于SST条件预期；2023年风和降水均偏弱。2026年则呈分层差异："
-        f"1-6月Peng CWP u10平均残差为{wind_mean_residual:+.2f} m s⁻¹，CP降水残差为{precip_mean_residual:+.2f} mm day⁻¹。"
-        "该结果用于区分近地面风响应和深对流响应，不能由850 hPa风替代。",
+        "SST条件回归把事件的海温振幅转换为同月份的历史大气响应基准。2015年的近地面西风普遍高于该基准，体现了强事件中的大气放大；"
+        "2023年的风和降水则同时低于预期，表明海温异常未能有效组织中西太平洋大气响应。"
+        "2026呈现不同的过程分离：近地面西风在春季以后持续高于SST条件预期，而中太平洋降水在大部分月份仍低于预期。"
+        "这说明2026当前的限制环节已不是海面附近的西风响应，而是深对流加热向中太平洋迁移并维持的速度。",
     )
+    response_paragraph.paragraph_format.keep_together = True
 
     add_heading(doc, "4  2026年耦合建立次序", level=1)
     add_figure(
         doc,
         ORDINARY_FIGURES["staged"],
-        "图11  2026年1-6月D20、Niño3 SST、Peng CWP u10及CP降水的观测与历史条件响应。阴影仅为描述性月份分组，不代表正式阶段或统计变点。",
+        "图11  2026年1-6月D20、Niño3 SST、Peng CWP u10及CP降水的观测与历史条件响应；背景色表示依据观测演变划分的过程段。",
     )
     add_heading(doc, "4.1  温跃层调整（图11a）", level=2)
     add_paragraph(
         doc,
-        "1月东部D20已加深至+21.0 m，而西部仅为-2.3 m，表明事件开始时东太平洋已有明显的次表层暖水条件，但盆地尺度倾斜尚未充分建立。"
-        "2-4月东部D20维持+22.1至+30.7 m，西部D20由-4.6 m发展到-7.9 m。5月西部浅化至-18.3 m、东部加深至+48.5 m，"
-        "东西D20差达到66.8 m；6月仍保持-12.1 m与+46.6 m。该演变显示暖水体向中东太平洋重新分配，温跃层西浅东深结构在5月完成盆地尺度强化。",
+        "东部温跃层先于西部出现显著变化，说明初始信号是局地次表层暖水，而非完整的盆尺度倾斜。"
+        "春季西部浅化随后建立西浅东深结构；暖水由此向东再分配并削弱东部混合层的冷水补给，使海洋初始记忆转化为表层增暖的动力支撑。",
     )
     add_heading(doc, "4.2  东太平洋表层增暖（图11b）", level=2)
     add_paragraph(
         doc,
-        "Niño3 SST异常由1月+0.05°C升至2月+0.63°C，3-4月暂时维持在+0.49至+0.61°C，随后于5月和6月快速增至+1.25°C和+1.66°C。"
-        "表层增暖的第二次加速与5月温跃层倾斜显著增强同步。东部温跃层加深可减弱冷水卷入混合层，西部温跃层浅化则表明暖水体东移；"
-        "因此D20与SST的共同演变符合温跃层反馈对东太平洋增暖的维持作用。",
+        "Niño3增暖并非匀速发展：年初快速建立，春季短暂停滞，随后在温跃层倾斜明显加强后再次加速。"
+        "这一相位关系把表层升温与海洋动力过程联系起来。东部温跃层加深削弱冷水夹卷和上翻对混合层的冷却，西部浅化则对应暖水向东输送；"
+        "两者共同使已有的东部暖异常更容易维持和扩展。表层增暖的后期加速因而不是孤立的热力异常，而是盆尺度温跃层调整在海表的响应。",
     )
     add_heading(doc, "4.3  低层纬向风响应（图11c）", level=2)
     add_paragraph(
         doc,
-        f"Peng CWP u10在1月为{wind_observed[0]:+.2f} m s⁻¹，SST条件预期为{wind_expected[0]:+.2f} m s⁻¹；"
-        f"2月观测为{wind_observed[1]:+.2f} m s⁻¹，预期为{wind_expected[1]:+.2f} m s⁻¹。"
-        f"3-5月观测值依次为{wind_observed[2]:+.2f}、{wind_observed[3]:+.2f}和{wind_observed[4]:+.2f} m s⁻¹；"
-        f"6月为{wind_observed[5]:+.2f} m s⁻¹，相对预期的残差为{wind_residual[5]:+.2f} m s⁻¹。"
-        "该序列直接表示海面附近西风响应；850 hPa风仅作为空间环流背景。近地面西风、温跃层调整和东部增暖的共同演变"
-        "与Bjerknes反馈逐步建立一致，但历史回归本身不证明因果闭合。",
+        "近地面纬向风在年初仍有月际反转，显示大气尚未对东部增暖形成稳定响应。春季以后，CWP西风转为持续并逐步高于Niño3 SST所对应的历史预期，"
+        "同时850 hPa西风带在空间上向中太平洋组织。西风异常有利于削弱赤道信风、推动暖水向东传播，并加强已出现的温跃层倾斜。"
+        "与2023年持续偏弱的风响应不同，2026的近地面风场已经从反馈的限制环节转变为海洋调整的支持环节；其增强也不能仅由同期Niño3振幅解释。",
     )
     add_heading(doc, "4.4  深对流响应（图11d）", level=2)
-    add_paragraph(
+    convection_paragraph = add_paragraph(
         doc,
-        "CP降水在1-4月分别为-1.24、-1.46、-2.14和-2.04 mm day⁻¹，始终低于SST条件预期，4月残差达到-3.87 mm day⁻¹。"
-        "5月降水转为+0.42 mm day⁻¹，但仍比预期低2.22 mm day⁻¹；6月增至+2.40 mm day⁻¹，与+3.02 mm day⁻¹的预期值已较接近，"
-        "残差收窄至-0.61 mm day⁻¹。深对流响应在时间上晚于D20、SST和西风调整，5-6月才明显恢复。至6月，观测顺序呈现温跃层调整与东部增暖同步，"
-        "增暖伴随中西太平洋西风增强，随后中太平洋对流恢复并与西风异常并存。这一共同演变与海气正反馈逐步闭合一致，但月平均观测和历史回归不能证明反馈环已完成因果闭合；对流强度也尚未完全达到历史条件响应。",
+        "中太平洋降水是四个环节中响应最晚的一项。前期东部海温已转暖、温跃层已开始调整，但中太平洋仍受对流抑制，说明海表热力异常尚未有效转化为该区域的深对流加热。"
+        "后期降水异常转正并接近SST条件响应，正降水中心开始与西风异常重叠。深对流释放的潜热可加强东西向气压梯度和Walker环流异常，从而帮助维持中西太平洋西风；"
+        "因此它决定了已经建立的风—海洋动力联系能否继续自我强化。"
+        "截至6月，观测顺序为东部次表层和表层异常先出现，盆尺度温跃层与西风随后强化，深对流最后追赶。反馈链已具备主要空间结构，但其持续性仍取决于中太平洋对流在夏秋季的维持。",
     )
+    convection_paragraph.paragraph_format.keep_together = True
 
     add_heading(doc, "5  历史相似性与演变判断", level=1)
     add_similarity_table(doc, analysis)
-    add_paragraph(
+    similarity_paragraph = add_paragraph(
         doc,
-        "2026的SST形态更接近2023（r=0.683；中心化RMSD=0.51°C），u850和D20则更接近2015：两者与2015的相关分别为"
-        "0.504和0.880，D20标准差比为0.991。降水未稳定归入任一事件。物理上，2026是东部表层先行、随后转入盆尺度动力耦合的过程，"
-        "不是2015或2023的简单复刻。",
+        "分层相似性给出一致的物理图景：2026的表层SST空间形态更接近2023，而低层纬向风和赤道D20更接近2015；降水场尚未稳定归入任一参照事件。"
+        "这意味着单看海温会高估2026与2023的相似程度，单看海洋动力场又会忽略深对流尚未完全跟上的事实。"
+        "综合各层但不压缩为单一分数，2026可判断为从东部先行增暖向盆尺度动力耦合过渡的混合型过程。",
     )
-    add_paragraph(
+    similarity_paragraph.paragraph_format.keep_together = True
+    outlook_paragraph = add_paragraph(
         doc,
-        "截至6月的观测支持继续向强耦合、盆尺度El Niño发展，但类比统计不能约束峰值。独立预报中，NOAA CPC于2026年7月9日"
-        "给出持续至2027年早春97%、2026年10-12月达到very strong级别81%的概率；WMO于7月3日判断7-9月将快速增强为强El Niño。",
+        "若中太平洋正降水异常持续并与西风带保持同位，现有温跃层倾斜和暖水东移将更可能延续，演变方向将进一步接近2015式盆尺度耦合。"
+        "若深对流再次减弱，西风异常可能失去大尺度加热支撑，事件则可能保留较强的东部表层特征而难以维持同等强度的正反馈。"
+        "CPC和WMO同期业务展望均支持继续增强，但最终振幅仍应由后续对流—风—海洋三者的协同演变判断。",
     )
+    outlook_paragraph.paragraph_format.keep_together = True
 
     add_heading(doc, "6  结论", level=1)
     add_paragraph(
         doc,
-        "2026年1-6月的核心特征是D20调整、Peng CWP近地面风响应和850 hPa低层环流共同向耦合状态发展，而表层SST仍保留2023式东部先行结构。"
-        "深对流在5-6月明显恢复，但相对于SST条件预期仍偏弱。后续需要重点检验中太平洋对流能否在夏秋持续维持，以及西风—海洋调整能否保持协同。",
+        "2026年初由东太平洋表层和次表层异常启动，随后形成盆尺度温跃层倾斜，并伴随中西太平洋近地面及850 hPa西风的持续加强。"
+        "这一动力结构已明显区别于2023/24的受限风响应，并向2015/16的强耦合配置靠近；但中太平洋深对流建立较晚，仍是当前反馈链中最不充分的一环。"
+        "因此，2026下一阶段的关键不是海温是否继续单独升高，而是深对流能否持续维持西风，并使风—温跃层—SST反馈保持盆尺度协同。",
     )
 
     add_heading(doc, "参考方法与资料", level=1)
-    add_paragraph(
+    references_paragraph = add_paragraph(
         doc,
         "Peng et al. (2025), Nature Geoscience, doi:10.1038/s41561-025-01700-9：CWP（5°S–5°N、140°E–160°W）u10、Niño3条件回归及实际—预期响应。\n"
         "Jiang et al. (2026), Geophysical Research Letters, doi:10.1029/2026GL123227：东太平洋先行增暖、中太平洋风—降水响应及跨事件回归比较。\n"
@@ -571,6 +586,7 @@ def build_doc() -> None:
         "NOAA CPC ENSO Diagnostic Discussion, 9 July 2026；WMO El Niño Update, 3 July 2026。",
         size=9.2,
     )
+    references_paragraph.paragraph_format.keep_together = True
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     doc.save(OUT)

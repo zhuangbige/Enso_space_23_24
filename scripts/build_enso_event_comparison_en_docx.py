@@ -3,8 +3,6 @@
 
 from __future__ import annotations
 
-import numpy as np
-
 from docx import Document
 from docx.enum.table import WD_CELL_VERTICAL_ALIGNMENT
 from docx.enum.text import WD_ALIGN_PARAGRAPH
@@ -21,6 +19,7 @@ from build_enso_event_comparison_docx import (
     add_paragraph,
     configure_styles,
     format_compact_table,
+    keep_table_together,
     load_event_metrics,
     load_ordinary_analysis,
     set_cell_margins,
@@ -53,11 +52,12 @@ def format_table(table) -> None:
 
 def add_metric_table(doc: Document, metrics: dict[str, dict[str, float]]) -> None:
     add_heading(doc, "Table 1. Key Regional Metrics", level=2)
-    add_paragraph(
+    table_note = add_paragraph(
         doc,
         "Each cell gives the January-June mean / June value. Positive Peng CWP u10 denotes a near-surface westerly anomaly.",
         size=9.2,
     )
+    table_note.paragraph_format.keep_with_next = True
     rows = [
         ("Niño3.4 SST (°C)", "sst_Nino3.4", "{:+.2f}"),
         ("Peng CWP u10 (m s⁻¹)", "u_CWP", "{:+.2f}"),
@@ -75,6 +75,7 @@ def add_metric_table(doc: Document, metrics: dict[str, dict[str, float]]) -> Non
         for index, event in enumerate(["2015/16", "2023/24", "2026"], start=1):
             cells[index].text = f"{fmt.format(metrics[event][key])} / {fmt.format(metrics[event][key + '_june'])}"
     format_table(table)
+    keep_table_together(table)
 
 
 def add_expected_response_table(doc: Document, ordinary) -> None:
@@ -97,6 +98,7 @@ def add_expected_response_table(doc: Document, ordinary) -> None:
             row = means.loc[(labels[year], response)]
             cells[index].text = f"{row.observed:+.2f} / {row.expected:+.2f} ({row.residual:+.2f})"
     format_compact_table(table, [2.05, 1.48, 1.48, 1.48])
+    keep_table_together(table)
     add_paragraph(
         doc,
         "Each cell gives observed / historical expectation (residual). Calendar-month Niño3 regressions are fitted over "
@@ -131,6 +133,7 @@ def add_similarity_table(doc: Document, ordinary) -> None:
             cells[3].text = f"{row.centered_rmsd:.2f} {row.unit}"
             cells[4].text = f"{row.standard_deviation_ratio:.3f}"
     format_compact_table(table, [1.25, 1.35, 1.1, 1.55, 1.15])
+    keep_table_together(table)
     add_paragraph(
         doc,
         "Taylor statistics constrain pattern correlation, centered error, and relative amplitude separately; no aggregate "
@@ -146,16 +149,8 @@ def build_doc() -> None:
     wind_2026 = expected.loc[
         expected["target_year"].eq(2026) & expected["response"].eq("cwp_u10")
     ].sort_values("month")
-    precipitation_2026 = expected.loc[
-        expected["target_year"].eq(2026) & expected["response"].eq("cp_precip")
-    ].sort_values("month")
     if wind_2026["month"].astype(int).tolist() != list(range(1, 7)):
         raise ValueError("Incomplete January-June 2026 Peng CWP u10 response")
-    wind_observed = wind_2026["observed"].to_numpy(float)
-    wind_expected = wind_2026["expected"].to_numpy(float)
-    wind_residual = wind_2026["residual"].to_numpy(float)
-    wind_mean_residual = float(np.mean(wind_residual))
-    precip_mean_residual = float(precipitation_2026["residual"].mean())
     doc = Document()
     configure_styles(doc)
     doc.core_properties.title = "Air-Sea Coupling Diagnosis of the 2026 ENSO Event"
@@ -176,41 +171,38 @@ def build_doc() -> None:
     add_heading(doc, "Abstract", level=1)
     add_paragraph(
         doc,
-        "Early-2026 SST retained the eastern-leading geometry of 2023, but by June the equatorial thermocline and low-level "
-        "zonal wind were closer to the strongly coupled 2015 state. Calendar-month Niño3 regressions show that January-June "
-        f"2026 Peng CWP u10 had a mean residual of {wind_mean_residual:+.2f} m s⁻¹, whereas the CP-precipitation residual was "
-        f"{precip_mean_residual:+.2f} mm day⁻¹. The observed monthly sequence places thermocline adjustment and near-surface "
-        "westerly development before the May-June convective recovery.",
+        "This report uses the strongly coupled 2015/16 event and the atmosphere-limited 2023/24 event to diagnose the January-June "
+        "2026 tropical Pacific state. Early warming retained the eastern-leading geometry of 2023, but the equatorial thermocline "
+        "subsequently developed a basin-scale shallow-west/deep-east structure and central-western Pacific near-surface westerlies "
+        "became persistent. Deep convection lagged these oceanic and dynamical adjustments and joined the coupled pattern only late "
+        "in the period. The 2026 evolution is therefore a transition from an eastern surface signal toward a 2015-like dynamical "
+        "coupling regime; its subsequent strength depends on whether central-Pacific convection can sustain the wind-thermocline feedback.",
     )
 
-    add_heading(doc, "Study Positioning and Methodological Basis", level=1)
+    add_heading(doc, "Research Question and Methodological Basis", level=1)
     add_paragraph(
         doc,
-        "This report does not introduce a new aggregate coupling index. It applies established process diagnostics within a "
-        "common framework for the developing phases of 2015/16, 2023/24, and 2026. Peng et al. (2025) treated Niño3 SST as "
-        "the oceanic state, estimated the conditional central-western Pacific zonal-wind response from historical regressions, "
-        "and compared the observed 2023/24 response with that expectation. Jiang et al. (2026) jointly examined eastern-Pacific "
-        "SST, central-Pacific winds, and precipitation using historical-event comparisons and regression reconstructions. Li et al. "
-        "(2024) separated the atmospheric Bjerknes feedback into SST-gradient, precipitation-heating, pressure-gradient, and "
-        "zonal-wind-stress links. The observed-versus-expected and layer-resolved diagnostics used here therefore have direct "
-        "methodological precedents; the present extension applies them to monthly 2026 observations and compares the result "
-        "separately with 2015/16 and 2023/24.",
+        "The 2023/24 event showed that a strong oceanic initial state need not produce an equally strong atmospheric response. The "
+        "central question for 2026 is therefore whether the warming remains an eastern-Pacific surface development or has acquired a "
+        "basin-scale positive feedback capable of sustaining itself. Peng et al. (2025) provide the Niño3-conditioned near-surface "
+        "wind response used to test whether westerlies meet the historical SST-based expectation. Jiang et al. (2026) motivate the "
+        "cross-event comparison of SST, wind, and precipitation centers, and Li et al. (2024) provide the process chain linking "
+        "thermocline adjustment, surface warming, low-level wind, and convective heating. Taylor statistics identify the historical "
+        "analogue separately in each physical field.",
     )
     add_paragraph(
         doc,
-        "This report follows the Peng et al. (2025) CWP definition exactly: area-mean 10 m zonal wind (u10) over 5°S–5°N, "
-        "140°E–160°W, used to measure the near-surface atmospheric response to Niño3 SST. CP precipitation is calculated over "
-        "5°S–5°N, 180°–140°W, matching the central-Pacific diagnostic box of Sun et al. (2016). CWP u10 and CP precipitation "
-        "are coordinate-defined research diagnostics rather than operational monitoring indices such as Niño3 or Niño3.4; the "
-        "same boxes, baselines, and anomaly processing are used for all events. The spatial maps retain 850 hPa wind vectors to "
-        "show lower-tropospheric circulation structure, but those vectors are not substituted for the Peng CWP u10 metric.",
+        "Peng CWP wind is the area-mean 10 m zonal wind over 5°S–5°N, 140°E–160°W. Central-Pacific precipitation follows the "
+        "5°S–5°N, 180°–140°W diagnostic region of Sun et al. (2016). Regional time series quantify observed-versus-expected "
+        "responses, while 850 hPa vectors describe the spatial organization of the lower-tropospheric circulation. These diagnostics "
+        "separate near-surface momentum response from the broader low-level wind pattern.",
     )
 
     add_heading(doc, "1. Data and Methods", level=1)
     add_paragraph(
         doc,
         "SST is from NOAA OISST; 10 m wind, 850 hPa wind, and precipitation are from ERA5; and 20°C isotherm depth (D20) is "
-        "from ORAS5. June 2026 u10 is the mean of all 720 hourly fields from the public ARCO-ERA5T mirror; the remaining u10 "
+        "from ORAS5. June 2026 u10 is aggregated from hourly fields in the public ARCO-ERA5T mirror; the remaining u10 "
         "values use ERA5 monthly means. ERA5 850 hPa wind, precipitation, and ORAS5 anomalies use 1980-2014, whereas OISST and Peng CWP u10 use "
         "1982-2014. Calendar-month climatologies and linear trends are removed. "
         "All events are compared over January-June of the developing year.",
@@ -218,10 +210,9 @@ def build_doc() -> None:
     add_paragraph(
         doc,
         "Atmospheric conditional responses are obtained from 1982-2014 calendar-month regressions on Niño3 SST, excluding "
-        "2015, 2023, and 2026. Historical similarity is evaluated with the area-weighted pattern correlation, centered RMSD, "
-        "and standard-deviation ratio of Taylor (2001), separately for SST, u850, precipitation, and D20. The three shaded "
-        "month groups in Figure 11 are descriptive summaries of the observed sequence, not formal coupling indices, statistically "
-        "identified change points, or event-strength forecasts; they are used to assess consistency with progressive feedback development, not causal closure.",
+        "2015, 2023, and 2026. Historical similarity is evaluated with the area-weighted pattern correlation, centered RMSD, and "
+        "standard-deviation ratio of Taylor (2001), separately for SST, u850, precipitation, and D20. Monthly time series establish "
+        "process order, while spatial fields test whether anomaly centers, signs, and basin-scale structures evolve coherently.",
     )
     add_metric_table(doc, metrics)
 
@@ -229,10 +220,11 @@ def build_doc() -> None:
     add_heading(doc, "2.1 SST and 850 hPa Wind", level=2)
     add_paragraph(
         doc,
-        "In 2015, central-eastern Pacific warming developed with coherent westerly anomalies. The 2023 warming center was farther "
-        "east and the westerly response weaker. In 2026, eastern warming led during January-March, expanded into the central "
-        "Pacific after April, and coincided with markedly stronger 850 hPa westerly anomalies in June. These maps describe the "
-        "lower-tropospheric circulation; the CWP observed-versus-expected calculation uses 10 m wind.",
+        "In 2015, warm anomalies formed a connected central-eastern Pacific pattern, while westerlies intensified on the western flank "
+        "of the warm region and favored eastward warm-water displacement. In 2023, warming remained more confined to the east and the "
+        "central-western Pacific westerly response was weak and spatially incoherent. Early 2026 resembled the eastern-leading 2023 "
+        "geometry, but the warm region expanded westward during spring and the low-level westerly band became organized across the "
+        "central-western Pacific. The surface onset was 2023-like; the later circulation configuration moved toward the coupled 2015 state.",
     )
     add_figure(doc, EVENTS["2015/16"]["ssta"], "Figure 1. OISST SSTA and ERA5 850 hPa wind anomalies during the 2015/16 development year.")
     add_figure(doc, EVENTS["2023/24"]["ssta"], "Figure 2. OISST SSTA and ERA5 850 hPa wind anomalies during the 2023/24 development year.")
@@ -241,9 +233,12 @@ def build_doc() -> None:
     add_heading(doc, "2.2 Precipitation and 850 hPa Wind", level=2)
     add_paragraph(
         doc,
-        "Central-Pacific precipitation and westerlies strengthened together in 2015, whereas convection remained weak in 2023. "
-        "In 2026, CP precipitation was suppressed through April, turned positive in May, and strengthened in June, but remained "
-        "below the response expected from contemporaneous SST.",
+        "In 2015, central-Pacific positive precipitation anomalies developed with the westerly center, indicating that deep convective "
+        "heating had joined the Walker-circulation adjustment. In 2023, convection did not expand sufficiently into the central Pacific, "
+        "and the wind-precipitation pattern remained poorly aligned. During early 2026, central-Pacific convection was still suppressed "
+        "even as near-surface and 850 hPa westerlies began to develop. Positive precipitation anomalies entered the central Pacific only "
+        "later and then overlapped the westerly region. This wind-before-rain sequence places deep-convective organization after the "
+        "oceanic and boundary-layer dynamical response.",
     )
     add_figure(doc, EVENTS["2015/16"]["precip"], "Figure 4. ERA5 precipitation and 850 hPa wind anomalies during the 2015/16 development year.")
     add_figure(doc, EVENTS["2023/24"]["precip"], "Figure 5. ERA5 precipitation and 850 hPa wind anomalies during the 2023/24 development year.")
@@ -252,9 +247,11 @@ def build_doc() -> None:
     add_heading(doc, "2.3 D20 and Equatorial u850", level=2)
     add_paragraph(
         doc,
-        "June 2026 D20 reached -12.1 m in the western Pacific and +46.6 m in the east, establishing a clear shallow-west/deep-east "
-        "structure. Western D20 in June 2023 was only -2.7 m. The basin-scale thermocline adjustment in 2026 was therefore "
-        "substantially closer to 2015.",
+        "The 2015 thermocline showed sustained western shoaling and eastern deepening, consistent with eastward warm-water redistribution "
+        "and strong subsurface support for eastern-Pacific warming. In 2023, eastern deepening occurred without comparable western "
+        "shoaling, leaving the basin-scale tilt and dynamical feedback weaker. In 2026, eastern deepening appeared first and western "
+        "shoaling followed, producing a coherent shallow-west/deep-east structure late in the period. The ocean evolved from a localized "
+        "eastern signal into a basin-scale adjustment and is therefore dynamically closer to 2015 than to 2023.",
     )
     add_figure(doc, EVENTS["2015/16"]["d20"], "Figure 7. ORAS5 equatorial D20 anomalies and ERA5 equatorial u850 during the 2015/16 development year.")
     add_figure(doc, EVENTS["2023/24"]["d20"], "Figure 8. ORAS5 equatorial D20 anomalies and ERA5 equatorial u850 during the 2023/24 development year.")
@@ -267,91 +264,96 @@ def build_doc() -> None:
         ORDINARY_FIGURES["expected"],
         "Figure 10. Observed atmospheric responses and Niño3 SST-conditioned historical expectations for the three events; regression period: 1982-2014.",
     )
-    add_paragraph(
+    response_paragraph = add_paragraph(
         doc,
-        "Westerlies were substantially stronger than expected in 2015, whereas both wind and precipitation were weaker in 2023. "
-        f"The 2026 response is differentiated by process: the January-June mean residual is {wind_mean_residual:+.2f} m s⁻¹ "
-        f"for Peng CWP u10 and {precip_mean_residual:+.2f} mm day⁻¹ for CP precipitation. This comparison separates the "
-        "near-surface wind response from the deep-convective response; it is not inferred from 850 hPa wind.",
+        "The SST-conditioned regressions convert event SST amplitude into a calendar-month historical atmospheric benchmark. The 2015 "
+        "near-surface westerlies exceeded this benchmark, consistent with atmospheric amplification in a strongly coupled event. In "
+        "2023, both wind and precipitation fell below expectation, showing that the SST anomaly failed to organize an adequate "
+        "central-western Pacific response. The 2026 response is process-separated: near-surface westerlies remained above expectation "
+        "after spring, while central-Pacific precipitation stayed below expectation for most of the period. The limiting link has shifted "
+        "from near-surface wind response to the migration and persistence of deep convective heating.",
     )
+    response_paragraph.paragraph_format.keep_together = True
 
     add_heading(doc, "4. Coupling Sequence in 2026", level=1)
     add_figure(
         doc,
         ORDINARY_FIGURES["staged"],
-        "Figure 11. January-June 2026 D20, Niño3 SST, Peng CWP u10, and CP precipitation, including SST-conditioned atmospheric expectations. Shading denotes descriptive month groups, not formal stages or statistical change points.",
+        "Figure 11. January-June 2026 D20, Niño3 SST, Peng CWP u10, and CP precipitation, including SST-conditioned atmospheric expectations. Background colors separate process periods identified from the observed evolution.",
     )
     add_heading(doc, "4.1 Thermocline Adjustment (Figure 11a)", level=2)
     add_paragraph(
         doc,
-        "Eastern D20 was already +21.0 m in January, while western D20 was only -2.3 m, indicating a pronounced eastern "
-        "subsurface warm state before a fully developed basin-scale tilt. Eastern D20 remained between +22.1 and +30.7 m "
-        "during February-April as western D20 decreased from -4.6 to -7.9 m. By May, western D20 reached -18.3 m and eastern "
-        "D20 +48.5 m, producing an east-west D20 contrast of 66.8 m; the shallow-west/deep-east structure persisted in June "
-        "at -12.1 and +46.6 m. This evolution indicates basin-scale redistribution of warm water toward the central-eastern Pacific.",
+        "The eastern thermocline deepened before a comparable western response, indicating localized subsurface warmth rather than a "
+        "basin-wide tilt. Western shoaling emerged during spring and completed a shallow-west/deep-east structure. This redistribution "
+        "limits cold-water supply to the eastern mixed layer and converts initial ocean memory into dynamical support for surface warming.",
     )
     add_heading(doc, "4.2 Eastern-Pacific Surface Warming (Figure 11b)", level=2)
     add_paragraph(
         doc,
-        "Niño3 SST increased from +0.05°C in January to +0.63°C in February, remained between +0.49 and +0.61°C during "
-        "March-April, and then accelerated to +1.25°C in May and +1.66°C in June. The second warming acceleration coincided "
-        "with the sharp May increase in thermocline tilt. Eastern thermocline deepening limits the entrainment of cold subsurface "
-        "water, while western shoaling is consistent with eastward warm-water redistribution; the joint D20-SST evolution is "
-        "therefore consistent with thermocline feedback sustaining eastern-Pacific warming.",
+        "Niño3 warming developed in two steps: a rapid early increase, a spring pause, and renewed acceleration after the thermocline "
+        "tilt strengthened. This phase relationship links the surface warming to ocean dynamics. Eastern thermocline deepening reduces "
+        "entrainment and upwelling of cold water into the mixed layer, while western shoaling accompanies the eastward displacement of "
+        "warm water. The later surface acceleration is thus the expression of basin-scale thermocline adjustment at the sea surface, not "
+        "an isolated local heat anomaly.",
     )
     add_heading(doc, "4.3 Low-Level Zonal-Wind Response (Figure 11c)", level=2)
     add_paragraph(
         doc,
-        f"Peng CWP u10 was {wind_observed[0]:+.2f} m s⁻¹ in January, compared with an SST-conditioned expectation of "
-        f"{wind_expected[0]:+.2f} m s⁻¹. February observed and expected values were {wind_observed[1]:+.2f} and "
-        f"{wind_expected[1]:+.2f} m s⁻¹. Observed March-May values were {wind_observed[2]:+.2f}, {wind_observed[3]:+.2f}, "
-        f"and {wind_observed[4]:+.2f} m s⁻¹. June reached {wind_observed[5]:+.2f} m s⁻¹, with a residual of "
-        f"{wind_residual[5]:+.2f} m s⁻¹. This series represents the near-surface wind response directly; 850 hPa wind is retained "
-        "only as spatial circulation context. The co-evolution of near-surface westerlies, thermocline adjustment, and eastern "
-        "warming is consistent with progressive Bjerknes-feedback development, but the historical regression does not establish causal closure.",
+        "Near-surface zonal wind alternated in sign early in the year, indicating that the atmosphere had not yet established a stable "
+        "response to eastern-Pacific warming. From spring onward, CWP westerlies became persistent and increasingly exceeded the "
+        "Niño3-conditioned historical expectation, while the 850 hPa westerly band organized spatially into the central Pacific. These "
+        "westerlies weaken the equatorial trades, promote eastward warm-water displacement, and reinforce the emerging thermocline tilt. "
+        "Unlike the persistently weak wind response of 2023, near-surface wind in 2026 changed from a limiting link into active support for "
+        "ocean adjustment; its strength also cannot be explained by contemporaneous Niño3 amplitude alone.",
     )
     add_heading(doc, "4.4 Deep-Convective Response (Figure 11d)", level=2)
-    add_paragraph(
+    convection_paragraph = add_paragraph(
         doc,
-        "CP precipitation remained negative from January through April (-1.24, -1.46, -2.14, and -2.04 mm day⁻¹) and below "
-        "its SST-conditioned expectation, with a residual of -3.87 mm day⁻¹ in April. Precipitation turned positive in May "
-        "(+0.42 mm day⁻¹) but remained 2.22 mm day⁻¹ below expectation. By June it increased to +2.40 mm day⁻¹, close to the "
-        "+3.02 mm day⁻¹ expectation, and the residual narrowed to -0.61 mm day⁻¹. Deep convection therefore joined the evolution "
-        "after D20, SST, and westerly adjustment. By June, thermocline adjustment and eastern warming co-occurred, warming coincided "
-        "with stronger central-western Pacific westerlies, and recovering central-Pacific convection coexisted with the westerly anomaly. "
-        "This joint evolution is consistent with progressive closure of the positive air-sea feedback, but monthly observations and "
-        "historical regressions do not establish completed causal closure; convection had also not fully reached its historical conditional amplitude.",
+        "Central-Pacific precipitation was the last of the four components to respond. Eastern SST and the thermocline had already changed "
+        "while convection remained suppressed, showing that the surface thermal anomaly had not yet produced an effective deep-heating "
+        "response in the central Pacific. Later, precipitation became positive and moved toward its SST-conditioned expectation, and the "
+        "positive anomaly began to overlap the westerly region. Latent heating from organized deep convection can strengthen the zonal "
+        "pressure gradient and anomalous Walker circulation, helping maintain the central-western Pacific westerlies. Convection therefore "
+        "determines whether the established wind-ocean link can continue to amplify. The observed order is eastern subsurface and surface "
+        "warming first, basin-scale thermocline and westerly adjustment second, and convective recovery last. The principal feedback geometry "
+        "is present, but its persistence depends on central-Pacific convection through boreal summer and autumn.",
     )
+    convection_paragraph.paragraph_format.keep_together = True
 
     add_heading(doc, "5. Historical Similarity and Evolution", level=1)
     add_similarity_table(doc, analysis)
-    add_paragraph(
+    similarity_paragraph = add_paragraph(
         doc,
-        "The 2026 SST pattern is closer to 2023 (r=0.683; centered RMSD=0.51°C), whereas u850 and D20 are closer to 2015. Their "
-        "correlations with 2015 are 0.504 and 0.880, respectively, and the D20 standard-deviation ratio is 0.991. Precipitation "
-        "does not map robustly onto either event. Thus, 2026 began with eastern-leading surface warming and subsequently entered "
-        "a basin-scale dynamical coupling regime; it is not a replica of either analogue.",
+        "Layer-resolved similarity yields a coherent physical interpretation. The 2026 surface-SST pattern is closer to 2023, whereas "
+        "low-level zonal wind and equatorial D20 are closer to 2015; precipitation does not yet map robustly onto either reference event. "
+        "SST alone would therefore overstate similarity to 2023, while ocean dynamics alone would overlook the delayed convective response. "
+        "Taken together without collapsing the fields into one score, 2026 is a hybrid transition from eastern-leading warming toward "
+        "basin-scale dynamical coupling.",
     )
-    add_paragraph(
+    similarity_paragraph.paragraph_format.keep_together = True
+    outlook_paragraph = add_paragraph(
         doc,
-        "Observations through June support further development toward a strongly coupled, basin-scale El Niño, but analogue "
-        "statistics do not constrain peak amplitude. Independently, the 9 July 2026 NOAA CPC outlook assigned 97% probability of "
-        "persistence into early spring 2027 and 81% probability of a very strong event in October-December 2026. The 3 July WMO "
-        "update projected rapid strengthening to strong El Niño conditions during July-September.",
+        "If central-Pacific positive precipitation persists and remains collocated with the westerly band, the existing thermocline tilt "
+        "and eastward warm-water displacement are likely to continue, moving the event further toward a 2015-like basin-scale coupled state. "
+        "If deep convection weakens again, the westerlies may lose large-scale heating support and the event may retain a strong eastern "
+        "surface expression without sustaining equally strong positive feedback. Contemporary CPC and WMO outlooks also favor continued "
+        "strengthening, but the eventual amplitude should be assessed from the continued coherence of convection, wind, and ocean adjustment.",
     )
+    outlook_paragraph.paragraph_format.keep_together = True
 
     add_heading(doc, "6. Conclusions", level=1)
     add_paragraph(
         doc,
-        "By June 2026, D20 adjustment, the Peng CWP near-surface wind response, and the 850 hPa circulation all evolved toward a "
-        "coupled state, while SST retained "
-        "the eastern-leading geometry of 2023. Deep convection recovered during May-June but remained weak relative to its SST-"
-        "conditioned expectation. The summer-autumn evolution should therefore be evaluated through the persistence of central-Pacific "
-        "convection and the continued coherence of westerly anomalies with ocean adjustment.",
+        "The 2026 event began with eastern-Pacific surface and subsurface warming, then developed a basin-scale thermocline tilt together "
+        "with persistent central-western Pacific westerlies at the surface and 850 hPa. This dynamical structure differs from the limited "
+        "wind response of 2023/24 and is moving toward the strongly coupled 2015/16 configuration. Central-Pacific deep convection developed "
+        "later and remains the least complete link. The next phase should therefore be judged not by SST increase alone, but by whether "
+        "convective heating sustains the westerlies and keeps the wind-thermocline-SST feedback coherent across the basin.",
     )
 
     add_heading(doc, "Method and Data References", level=1)
-    add_paragraph(
+    references_paragraph = add_paragraph(
         doc,
         "Peng et al. (2025), Nature Geoscience, doi:10.1038/s41561-025-01700-9: CWP (5°S–5°N, 140°E–160°W) u10, Niño3-conditioned regression, and actual-versus-expected response.\n"
         "Jiang et al. (2026), Geophysical Research Letters, doi:10.1029/2026GL123227: eastern-Pacific-leading warming, central-Pacific wind-precipitation response, and cross-event regression comparison.\n"
@@ -363,6 +365,7 @@ def build_doc() -> None:
         "NOAA CPC ENSO Diagnostic Discussion, 9 July 2026; WMO El Niño Update, 3 July 2026.",
         size=9.2,
     )
+    references_paragraph.paragraph_format.keep_together = True
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     doc.save(OUT)
