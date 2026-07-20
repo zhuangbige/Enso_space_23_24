@@ -146,25 +146,48 @@ def format_precip_map_axes(ax: plt.Axes, *, show_ylabel: bool) -> None:
 
 
 def add_boxes(ax: plt.Axes, *, include_nino: bool = True) -> None:
+    """Draw only the SST regions needed for interpretation.
+
+    CP and CWP boxes are intentionally omitted from SST-wind maps: their
+    overlap with the standard Nino and eastern-Pacific boxes obscures the
+    anomaly field.  Distinct color-blind-safe colors and line styles keep the
+    remaining nested regions legible.
+    """
     boxes = [
-        ("CWP", -5, 5, 160, 220),
-        ("CP", -5, 5, 180, 220),
-        ("EP", -5, 5, 220, 260),
-        ("FEP", -5, 5, 270, 280),
-        ("Niño-3.4", -5, 5, 190, 240),
-        ("Niño-3", -5, 5, 210, 270),
+        ("EP", -5, 5, 220, 260, "#009E73", "-"),
+        ("FEP", -5, 5, 270, 280, "#CC79A7", "-"),
+        ("Niño-3.4", -5, 5, 190, 240, "#0072B2", "--"),
+        ("Niño-3", -5, 5, 210, 270, "#D55E00", "-."),
     ]
-    for label, lat0, lat1, lon0, lon1 in boxes:
+    for label, lat0, lat1, lon0, lon1, color, linestyle in boxes:
         if not include_nino and label.startswith("Niño"):
             continue
-        ax.plot([lon0, lon1, lon1, lon0, lon0], [lat0, lat0, lat1, lat1, lat0], color="0.12", lw=0.85)
+        ax.plot(
+            [lon0, lon1, lon1, lon0, lon0],
+            [lat0, lat0, lat1, lat1, lat0],
+            color=color,
+            lw=1.35,
+            ls=linestyle,
+            alpha=0.98,
+            zorder=6,
+        )
         dx, dy = {
-            "FEP": (-10.0, 1.1),
-            "Niño-3": (14.0, -5.6),
-            "Niño-3.4": (1.1, 1.1),
-        }.get(label, (1.1, 1.1))
+            "EP": (15.0, 1.4),
+            "FEP": (-1.0, 1.4),
+            "Niño-3": (23.0, -6.1),
+            "Niño-3.4": (1.5, 1.4),
+        }[label]
         y_anchor = lat1 if dy >= 0 else lat0
-        ax.text(lon0 + dx, y_anchor + dy, label, fontsize=8.1, color="0.10")
+        ax.text(
+            lon0 + dx,
+            y_anchor + dy,
+            label,
+            fontsize=8.4,
+            weight="bold",
+            color=color,
+            bbox={"boxstyle": "round,pad=0.08", "facecolor": "white", "edgecolor": "none", "alpha": 0.76},
+            zorder=7,
+        )
 
 
 def add_precip_boxes(ax: plt.Axes) -> None:

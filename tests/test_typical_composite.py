@@ -13,6 +13,7 @@ from el_nino_decoupling.typical_composite import (
     fit_expected_response,
     identify_warm_episodes,
     ordinary_event_manifest,
+    weighted_taylor_statistics,
 )
 
 
@@ -113,6 +114,19 @@ class TestCompositeMath(unittest.TestCase):
     def test_ep_cp_classification(self) -> None:
         self.assertEqual(classify_ep_cp(1.0, 0.2), "EP")
         self.assertEqual(classify_ep_cp(0.1, 0.9), "CP")
+
+    def test_taylor_statistics_keep_pattern_and_amplitude_separate(self) -> None:
+        reference = np.array([1.0, 2.0, 3.0])
+        candidate = 2.0 * reference + 4.0
+        result = weighted_taylor_statistics(reference, candidate, np.ones(3))
+        self.assertAlmostEqual(result["pattern_correlation"], 1.0)
+        self.assertAlmostEqual(result["standard_deviation_ratio"], 2.0)
+        self.assertGreater(result["centered_rmsd"], 0.0)
+        self.assertAlmostEqual(result["mean_bias"], 6.0)
+
+    def test_taylor_statistics_reject_shape_mismatch(self) -> None:
+        with self.assertRaisesRegex(ValueError, "same shape"):
+            weighted_taylor_statistics(np.ones(3), np.ones(4), np.ones(3))
 
 
 if __name__ == "__main__":

@@ -250,6 +250,64 @@ def fit_expected_response(
     }
 
 
+def weighted_taylor_statistics(
+    reference: np.ndarray,
+    candidate: np.ndarray,
+    weights: np.ndarray,
+) -> dict[str, float]:
+    """Return the standard Taylor (2001) pattern-comparison statistics.
+
+    The function deliberately returns the component statistics rather than a
+    synthesized similarity score.  Correlation measures pattern agreement,
+    centered RMS difference measures pattern error in the variable's physical
+    units, and the standard-deviation ratio measures relative amplitude.
+    """
+
+    reference_values = np.asarray(reference, dtype=float)
+    candidate_values = np.asarray(candidate, dtype=float)
+    weight_values = np.broadcast_to(np.asarray(weights, dtype=float), reference_values.shape)
+    if reference_values.shape != candidate_values.shape:
+        raise ValueError("reference and candidate must have the same shape")
+    valid = (
+        np.isfinite(reference_values)
+        & np.isfinite(candidate_values)
+        & np.isfinite(weight_values)
+        & (weight_values > 0)
+    )
+    if int(valid.sum()) < 3:
+        raise ValueError("At least three finite, positively weighted samples are required")
+
+    reference_values = reference_values[valid]
+    candidate_values = candidate_values[valid]
+    weight_values = weight_values[valid]
+    weight_values = weight_values / weight_values.sum()
+
+    reference_mean = float(np.sum(weight_values * reference_values))
+    candidate_mean = float(np.sum(weight_values * candidate_values))
+    reference_centered = reference_values - reference_mean
+    candidate_centered = candidate_values - candidate_mean
+    reference_std = float(np.sqrt(np.sum(weight_values * reference_centered**2)))
+    candidate_std = float(np.sqrt(np.sum(weight_values * candidate_centered**2)))
+    if reference_std == 0 or candidate_std == 0:
+        raise ValueError("Taylor statistics require non-zero reference and candidate variance")
+
+    correlation = float(
+        np.sum(weight_values * reference_centered * candidate_centered) / (reference_std * candidate_std)
+    )
+    centered_rmsd = float(
+        np.sqrt(np.sum(weight_values * (candidate_centered - reference_centered) ** 2))
+    )
+    rmsd = float(np.sqrt(np.sum(weight_values * (candidate_values - reference_values) ** 2)))
+    return {
+        "pattern_correlation": correlation,
+        "centered_rmsd": centered_rmsd,
+        "standard_deviation_ratio": candidate_std / reference_std,
+        "mean_bias": candidate_mean - reference_mean,
+        "rmsd": rmsd,
+        "n_samples": int(valid.sum()),
+    }
+
+
 def classify_ep_cp(ep_index: float, cp_index: float) -> str:
     """Assign the dominant Yan-style EOF index for a warm event."""
 
