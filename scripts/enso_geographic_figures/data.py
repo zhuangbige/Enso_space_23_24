@@ -7,6 +7,7 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+import xarray as xr
 
 from .config import (
     BUDGET_EVENT_PATH,
@@ -123,3 +124,39 @@ def load_hovmoller() -> pd.DataFrame:
 def to_display_longitude(lon_deg_e: np.ndarray) -> np.ndarray:
     values = np.asarray(lon_deg_e, dtype=float)
     return np.where(values > 180.0, values - 360.0, values)
+
+
+def open_geographic_fields(path: Path) -> xr.Dataset:
+    """Open and validate the compact SODA3 fields used by the map atlas."""
+    path = Path(path)
+    if not path.exists():
+        raise FileNotFoundError(path)
+    dataset = xr.open_dataset(path)
+    required_dims = ("event", "phase", "lat", "lon")
+    if "ohc300_anom_gjm2" not in dataset:
+        dataset.close()
+        raise ValueError(f"{path.name} does not contain ohc300_anom_gjm2")
+    if dataset["ohc300_anom_gjm2"].dims != required_dims:
+        dataset.close()
+        raise ValueError(
+            "ohc300_anom_gjm2 must use dimensions "
+            f"{required_dims}, found {dataset['ohc300_anom_gjm2'].dims}"
+        )
+    if dataset["event"].values.tolist() != list(EVENTS):
+        dataset.close()
+        raise ValueError("Geographic fields do not contain the required events")
+    longitude = dataset["lon"].values.astype(float)
+    latitude = dataset["lat"].values.astype(float)
+    if not (np.all(np.diff(longitude) > 0) and np.all(np.diff(latitude) > 0)):
+        dataset.close()
+        raise ValueError("Geographic coordinates must be strictly increasing")
+    if longitude.min() < 130.0 or longitude.max() > 280.0:
+        dataset.close()
+        raise ValueError("Geographic longitude lies outside 130E-80W")
+    if latitude.min() < -10.0 or latitude.max() > 5.0:
+        dataset.close()
+        raise ValueError("Geographic latitude lies outside 10S-5N")
+    if not np.isfinite(dataset["ohc300_anom_gjm2"].values).any():
+        dataset.close()
+        raise ValueError("Geographic OHC field contains no finite ocean values")
+    return dataset

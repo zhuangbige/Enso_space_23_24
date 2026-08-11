@@ -12,7 +12,13 @@ from scripts.enso_geographic_figures.data import (
     extract_event_budget,
     load_hovmoller,
     load_trajectory_data,
+    open_geographic_fields,
     to_display_longitude,
+)
+from scripts.enso_geographic_figures.figures import (
+    build_arrival_box_map,
+    build_fate_budget_map,
+    build_trajectory_connectivity,
 )
 from scripts.enso_geographic_figures.plotting import arrow_width_zj, save_figure_pair
 
@@ -80,6 +86,54 @@ class GeographicPlottingTests(unittest.TestCase):
             self.assertEqual(pdf.name, "probe.pdf")
             self.assertGreater(png.stat().st_size, 5_000)
             self.assertGreater(pdf.stat().st_size, 1_000)
+
+
+class GeographicFieldTests(unittest.TestCase):
+    def test_geographic_field_schema(self) -> None:
+        path = (
+            Path(__file__).resolve().parents[1]
+            / "data/derived/research_2026/"
+            "soda3_geographic_figure_fields_1997_2015_2023.nc"
+        )
+        with open_geographic_fields(path) as dataset:
+            self.assertEqual(dataset.event.values.tolist(), [1997, 2015, 2023])
+            self.assertEqual(
+                dataset.ohc300_anom_gjm2.dims,
+                ("event", "phase", "lat", "lon"),
+            )
+            self.assertEqual(
+                dataset.attrs["baseline"],
+                "1980-2022 same-calendar-month linear expectation",
+            )
+            self.assertGreaterEqual(float(dataset.lon.min()), 130.0)
+            self.assertLessEqual(float(dataset.lon.max()), 280.0)
+            self.assertGreaterEqual(float(dataset.lat.min()), -10.0)
+            self.assertLessEqual(float(dataset.lat.max()), 5.0)
+            self.assertTrue(np.isfinite(dataset.ohc300_anom_gjm2.values).any())
+
+
+class ImmediateGeographicFigureTests(unittest.TestCase):
+    def test_map_builders_return_audited_metadata_and_artifacts(self) -> None:
+        with TemporaryDirectory() as directory:
+            output_dir = Path(directory)
+            trajectory = build_trajectory_connectivity(output_dir)
+            arrival = build_arrival_box_map(output_dir)
+            fate = build_fate_budget_map(output_dir)
+            self.assertEqual(trajectory["particles"], {1997: 467, 2015: 483, 2023: 410})
+            self.assertEqual(
+                arrival["east_inflow_zj"], {1997: 16.96, 2015: 8.49, 2023: 9.90}
+            )
+            self.assertEqual(
+                fate["storage_loss_zj"], {1997: 21.76, 2015: 19.89, 2023: 15.95}
+            )
+            self.assertGreater(fate["westward_return_zj"][1997], 0.0)
+            for stem in (
+                "fig02_trajectory_connectivity",
+                "fig03_arrival_box_map",
+                "fig04_fate_budget_map",
+            ):
+                self.assertGreater((output_dir / f"{stem}.png").stat().st_size, 50_000)
+                self.assertGreater((output_dir / f"{stem}.pdf").stat().st_size, 5_000)
 
 
 if __name__ == "__main__":
