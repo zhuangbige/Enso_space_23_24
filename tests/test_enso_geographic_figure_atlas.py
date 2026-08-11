@@ -1,7 +1,10 @@
 from __future__ import annotations
 
 import unittest
+from pathlib import Path
+from tempfile import TemporaryDirectory
 
+import matplotlib.pyplot as plt
 import numpy as np
 
 from scripts.enso_geographic_figures.config import BOXES, EVENTS
@@ -11,6 +14,7 @@ from scripts.enso_geographic_figures.data import (
     load_trajectory_data,
     to_display_longitude,
 )
+from scripts.enso_geographic_figures.plotting import arrow_width_zj, save_figure_pair
 
 
 class GeographicFigureDataTests(unittest.TestCase):
@@ -54,6 +58,28 @@ class GeographicFigureDataTests(unittest.TestCase):
     def test_display_longitude_conversion(self) -> None:
         actual = to_display_longitude(np.array([130.0, 180.0, 220.0, 280.0]))
         np.testing.assert_allclose(actual, np.array([130.0, 180.0, -140.0, -80.0]))
+
+
+class GeographicPlottingTests(unittest.TestCase):
+    def test_arrow_scale_is_monotonic_and_sign_independent(self) -> None:
+        self.assertEqual(arrow_width_zj(0.0, 20.0), 0.0)
+        self.assertLess(arrow_width_zj(10.0, 20.0), arrow_width_zj(20.0, 20.0))
+        self.assertEqual(arrow_width_zj(-10.0, 20.0), arrow_width_zj(10.0, 20.0))
+
+    def test_arrow_scale_rejects_nonpositive_reference(self) -> None:
+        with self.assertRaises(ValueError):
+            arrow_width_zj(1.0, 0.0)
+
+    def test_export_creates_png_and_pdf(self) -> None:
+        with TemporaryDirectory() as directory:
+            fig = plt.figure(figsize=(4, 2))
+            axis = fig.add_subplot(111)
+            axis.plot([0, 1], [0, 1], color="black")
+            png, pdf = save_figure_pair(fig, "probe", Path(directory))
+            self.assertEqual(png.name, "probe.png")
+            self.assertEqual(pdf.name, "probe.pdf")
+            self.assertGreater(png.stat().st_size, 5_000)
+            self.assertGreater(pdf.stat().st_size, 1_000)
 
 
 if __name__ == "__main__":
