@@ -135,7 +135,17 @@ def build_atlas(output_dir: Path, fields_path: Path, *, skip_grid_fields: bool) 
         + "\n",
         encoding="utf-8",
     )
-    png_paths = [Path(metadata["artifacts"]["png"]) for metadata in figures.values()]
+    png_paths: list[Path] = []
+    for metadata in figures.values():
+        if "artifacts_by_event" in metadata:
+            png_paths.extend(
+                Path(metadata["artifacts_by_event"][str(event)]["png"])
+                if str(event) in metadata["artifacts_by_event"]
+                else Path(metadata["artifacts_by_event"][event]["png"])
+                for event in (1997, 2015, 2023)
+            )
+        else:
+            png_paths.append(Path(metadata["artifacts"]["png"]))
     montage_path = output_dir / "atlas-montage.png"
     create_montage(png_paths, montage_path)
     return {

@@ -676,7 +676,7 @@ def build_fate_budget_map(output_dir: Path, surface_field=None) -> dict:
 
 
 def build_propagation_atlas(output_dir: Path, fields) -> dict:
-    """Combine longitude-time propagation and event OHC maps."""
+    """Render one full-size longitude-time and map figure per event."""
     hovmoller = load_hovmoller()
     field = fields["ohc300_anom_gjm2"].sel(phase="arrival_Jan_Jun")
     hov_limit = _symmetric_percentile_limit(hovmoller["ohc300_anom_gjm2"].to_numpy())
@@ -685,30 +685,21 @@ def build_propagation_atlas(output_dir: Path, fields) -> dict:
     map_norm = TwoSlopeNorm(vmin=-map_limit, vcenter=0.0, vmax=map_limit)
     cmap = plt.get_cmap("RdBu_r")
 
-    fig = plt.figure(figsize=(11.2, 18.0), constrained_layout=True)
-    grid = fig.add_gridspec(
-        8,
-        1,
-        height_ratios=(0.78, 1.12, 0.78, 1.12, 0.78, 1.12, 0.10, 0.10),
-    )
-    hov_axes = [fig.add_subplot(grid[2 * index, 0]) for index in range(3)]
-    map_axes = [
-        fig.add_subplot(
-            grid[2 * index + 1, 0],
+    artifacts_by_event: dict[int, dict[str, str]] = {}
+    for event in EVENTS:
+        fig = plt.figure(figsize=(11.2, 7.4), constrained_layout=True)
+        grid = fig.add_gridspec(4, 1, height_ratios=(0.78, 1.12, 0.10, 0.10))
+        axis = fig.add_subplot(grid[0, 0])
+        map_axis = fig.add_subplot(
+            grid[1, 0],
             projection=ccrs.PlateCarree(central_longitude=180.0),
         )
-        for index in range(3)
-    ]
-    hov_mesh = None
-    map_mesh = None
-    for index, event in enumerate(EVENTS):
         event_hov = hovmoller.loc[hovmoller["event_year"] == event]
         matrix = event_hov.pivot(
             index="relative_month",
             columns="lon_deg_e",
             values="ohc300_anom_gjm2",
         ).sort_index().sort_index(axis=1)
-        axis = hov_axes[index]
         hov_mesh = axis.pcolormesh(
             matrix.columns.to_numpy(),
             matrix.index.to_numpy(),
@@ -735,9 +726,8 @@ def build_propagation_atlas(output_dir: Path, fields) -> dict:
         axis.tick_params(length=3, width=0.7)
         axis.spines[["top", "right"]].set_visible(False)
         axis.grid(color="#D2D9DE", linestyle=":", linewidth=0.5)
-        add_panel_label(axis, f"({chr(97 + 2 * index)}) {event}")
+        add_panel_label(axis, f"(a) {event}")
 
-        map_axis = map_axes[index]
         format_pacific_axis(
             map_axis,
             extent=(130.0, 280.0, -22.0, 22.0),
@@ -766,29 +756,35 @@ def build_propagation_atlas(output_dir: Path, fields) -> dict:
             zorder=3,
         )
         draw_box_boundaries(map_axis, emphasize_gate=220.0)
-        add_panel_label(map_axis, f"({chr(98 + 2 * index)}) {event}")
+        add_panel_label(map_axis, f"(b) {event}")
 
-    hov_color_axis = fig.add_subplot(grid[6, 0])
-    map_color_axis = fig.add_subplot(grid[7, 0])
-    hov_colorbar = fig.colorbar(
-        hov_mesh,
-        cax=hov_color_axis,
-        orientation="horizontal",
-    )
-    hov_colorbar.set_label("Equatorial 0–300 m OHC′ (GJ m$^{-2}$)")
-    map_colorbar = fig.colorbar(
-        map_mesh,
-        cax=map_color_axis,
-        orientation="horizontal",
-    )
-    map_colorbar.set_label("Jan–Jun 0–300 m OHC′ (GJ m$^{-2}$)")
-    png, pdf = save_figure_pair(fig, "fig01_propagation_atlas", output_dir)
+        hov_color_axis = fig.add_subplot(grid[2, 0])
+        map_color_axis = fig.add_subplot(grid[3, 0])
+        hov_colorbar = fig.colorbar(
+            hov_mesh,
+            cax=hov_color_axis,
+            orientation="horizontal",
+        )
+        hov_colorbar.set_label("Equatorial 0–300 m OHC′ (GJ m$^{-2}$)")
+        map_colorbar = fig.colorbar(
+            map_mesh,
+            cax=map_color_axis,
+            orientation="horizontal",
+        )
+        map_colorbar.set_label("Jan–Jun 0–300 m OHC′ (GJ m$^{-2}$)")
+        letter = chr(97 + EVENTS.index(event))
+        png, pdf = save_figure_pair(
+            fig,
+            f"fig01{letter}_propagation_{event}",
+            output_dir,
+        )
+        artifacts_by_event[event] = _artifact_metadata(png, pdf)
     return {
         "events": list(EVENTS),
         "gate_longitude_deg_e": 220.0,
         "color_limits": [-map_limit, map_limit],
         "hovmoller_color_limits": [-hov_limit, hov_limit],
-        "artifacts": _artifact_metadata(png, pdf),
+        "artifacts_by_event": artifacts_by_event,
     }
 
 

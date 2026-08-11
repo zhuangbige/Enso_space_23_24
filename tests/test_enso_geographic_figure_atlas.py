@@ -157,10 +157,13 @@ class RemainingGeographicFigureTests(unittest.TestCase):
             self.assertEqual(metadata["color_limits"][0], -metadata["color_limits"][1])
             self.assertEqual(metadata["events"], [1997, 2015, 2023])
             self.assertEqual(metadata["gate_longitude_deg_e"], 220.0)
-            self.assertGreater(
-                (Path(directory) / "fig01_propagation_atlas.png").stat().st_size,
-                50_000,
-            )
+            for letter, event in zip("abc", (1997, 2015, 2023), strict=True):
+                self.assertGreater(
+                    (
+                        Path(directory) / f"fig01{letter}_propagation_{event}.png"
+                    ).stat().st_size,
+                    50_000,
+                )
 
     def test_q3_metadata_matches_current_residual_relations(self) -> None:
         with TemporaryDirectory() as directory:
@@ -189,7 +192,9 @@ class CompleteAtlasTests(unittest.TestCase):
             output = Path(directory)
             build_atlas(output, fields, skip_grid_fields=False)
             stems = (
-                "fig01_propagation_atlas",
+                "fig01a_propagation_1997",
+                "fig01b_propagation_2015",
+                "fig01c_propagation_2023",
                 "fig02_trajectory_connectivity",
                 "fig03_arrival_box_map",
                 "fig04_fate_budget_map",
@@ -199,7 +204,16 @@ class CompleteAtlasTests(unittest.TestCase):
                 self.assertGreater((output / f"{stem}.png").stat().st_size, 100_000)
                 self.assertGreater((output / f"{stem}.pdf").stat().st_size, 10_000)
             audit = json.loads((output / "figure-audit.json").read_text())
-            self.assertEqual(set(audit["figures"]), set(stems))
+            self.assertEqual(
+                set(audit["figures"]),
+                {
+                    "fig01_propagation_atlas",
+                    "fig02_trajectory_connectivity",
+                    "fig03_arrival_box_map",
+                    "fig04_fate_budget_map",
+                    "fig05_q3_state_map",
+                },
+            )
             self.assertGreater((output / "atlas-montage.png").stat().st_size, 100_000)
 
 
