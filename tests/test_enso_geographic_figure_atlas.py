@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import unittest
+import json
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
@@ -18,9 +19,12 @@ from scripts.enso_geographic_figures.data import (
 from scripts.enso_geographic_figures.figures import (
     build_arrival_box_map,
     build_fate_budget_map,
+    build_propagation_atlas,
+    build_q3_state_map,
     build_trajectory_connectivity,
 )
 from scripts.enso_geographic_figures.plotting import arrow_width_zj, save_figure_pair
+from scripts.build_enso_geographic_figure_atlas import build_atlas
 
 
 class GeographicFigureDataTests(unittest.TestCase):
@@ -134,6 +138,69 @@ class ImmediateGeographicFigureTests(unittest.TestCase):
             ):
                 self.assertGreater((output_dir / f"{stem}.png").stat().st_size, 50_000)
                 self.assertGreater((output_dir / f"{stem}.pdf").stat().st_size, 5_000)
+
+
+class RemainingGeographicFigureTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls.field_path = (
+            Path(__file__).resolve().parents[1]
+            / "data/derived/research_2026/"
+            "soda3_geographic_figure_fields_1997_2015_2023.nc"
+        )
+
+    def test_propagation_panels_share_one_color_limit(self) -> None:
+        with TemporaryDirectory() as directory, open_geographic_fields(
+            self.field_path
+        ) as fields:
+            metadata = build_propagation_atlas(Path(directory), fields)
+            self.assertEqual(metadata["color_limits"][0], -metadata["color_limits"][1])
+            self.assertEqual(metadata["events"], [1997, 2015, 2023])
+            self.assertEqual(metadata["gate_longitude_deg_e"], 220.0)
+            self.assertGreater(
+                (Path(directory) / "fig01_propagation_atlas.png").stat().st_size,
+                50_000,
+            )
+
+    def test_q3_metadata_matches_current_residual_relations(self) -> None:
+        with TemporaryDirectory() as directory:
+            metadata = build_q3_state_map(Path(directory))
+            self.assertEqual(metadata["n_events"], 13)
+            self.assertEqual(round(metadata["relations"]["route_to_ne925"]["r"], 2), 0.68)
+            self.assertEqual(round(metadata["relations"]["stress_to_export"]["r"], 2), 0.74)
+            self.assertEqual(
+                round(metadata["relations"]["sst_to_surface_loss"]["r"], 2),
+                0.65,
+            )
+            self.assertGreater(
+                (Path(directory) / "fig05_q3_state_map.png").stat().st_size,
+                50_000,
+            )
+
+
+class CompleteAtlasTests(unittest.TestCase):
+    def test_complete_atlas_artifacts(self) -> None:
+        fields = (
+            Path(__file__).resolve().parents[1]
+            / "data/derived/research_2026/"
+            "soda3_geographic_figure_fields_1997_2015_2023.nc"
+        )
+        with TemporaryDirectory() as directory:
+            output = Path(directory)
+            build_atlas(output, fields, skip_grid_fields=False)
+            stems = (
+                "fig01_propagation_atlas",
+                "fig02_trajectory_connectivity",
+                "fig03_arrival_box_map",
+                "fig04_fate_budget_map",
+                "fig05_q3_state_map",
+            )
+            for stem in stems:
+                self.assertGreater((output / f"{stem}.png").stat().st_size, 100_000)
+                self.assertGreater((output / f"{stem}.pdf").stat().st_size, 10_000)
+            audit = json.loads((output / "figure-audit.json").read_text())
+            self.assertEqual(set(audit["figures"]), set(stems))
+            self.assertGreater((output / "atlas-montage.png").stat().st_size, 100_000)
 
 
 if __name__ == "__main__":
