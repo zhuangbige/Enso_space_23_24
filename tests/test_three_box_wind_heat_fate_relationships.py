@@ -1,9 +1,12 @@
 from __future__ import annotations
 
+import json
+
 import numpy as np
 import pandas as pd
 import pytest
 import xarray as xr
+from pathlib import Path
 
 from scripts import analyze_three_box_wind_heat_fate_relationships as analysis
 
@@ -147,3 +150,24 @@ def test_prespecified_rows_retain_highlight_values() -> None:
     assert row["response_2023"] == pytest.approx(-3.501413, abs=0.005)
     assert row["predictor_2015"] == pytest.approx(0.02004, abs=0.0002)
     assert row["predictor_2023"] == pytest.approx(0.00400, abs=0.0002)
+
+
+def test_pipeline_writes_tables_figures_audit_and_report(tmp_path: Path) -> None:
+    result = analysis.run_pipeline(
+        output_dir=tmp_path,
+        input_root=analysis.discover_input_root(),
+        output_root=tmp_path,
+    )
+    assert result.event_heat_csv.stat().st_size > 5_000
+    assert result.relationship_csv.stat().st_size > 5_000
+    assert result.fate_png.stat().st_size > 100_000
+    assert result.matrix_png.stat().st_size > 100_000
+    assert result.scatter_png.stat().st_size > 100_000
+    assert result.audit_json.stat().st_size > 1_000
+    audit = json.loads(result.audit_json.read_text(encoding="utf-8"))
+    assert audit["key_140W_mismatch_zj"]["2015_redistribution_Jul_Dec"] < 0.5
+    assert audit["key_140W_mismatch_zj"]["2023_redistribution_Jul_Dec"] < 1.0
+    text = result.report_md.read_text(encoding="utf-8")
+    assert "2015" in text and "2023" in text
+    assert "不能证明单向因果" in text
+    assert "共享断面通量" in text

@@ -8,7 +8,10 @@ residual as an audit term rather than a physical heat-loss mechanism.
 
 from __future__ import annotations
 
+import argparse
+import json
 import os
+from dataclasses import dataclass
 from functools import lru_cache
 from pathlib import Path
 
@@ -19,6 +22,17 @@ from scipy import stats
 
 
 ROOT = Path(__file__).resolve().parents[1]
+os.environ.setdefault(
+    "MPLCONFIGDIR",
+    str(ROOT / "outputs/research_2026/mplconfig"),
+)
+import matplotlib
+
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+from matplotlib.colors import TwoSlopeNorm
+from matplotlib.patches import Rectangle
+
 EVENTS = (
     1982,
     1986,
@@ -59,6 +73,19 @@ WIND_WINDOWS = {
     "redistribution_Jul_Dec": (0, 7, 12),
     "decay_Jan_May_next": (1, 1, 5),
 }
+OUTPUT_DIR = Path("outputs/research_2026/three_box_wind_heat_fate_relationships")
+EVENT_HEAT_NAME = "three_box_wind_heat_fate_events.csv"
+WIND_NAME = "three_box_wind_indices.csv"
+RELATIONSHIP_NAME = "three_box_wind_heat_prespecified_relationships.csv"
+DISCOVERY_NAME = "three_box_wind_heat_discovery_matrix.csv"
+AUDIT_NAME = "three_box_wind_heat_fate_audit.json"
+REPORT_NAME = "THREE_BOX_WIND_HEAT_FATE_CN.md"
+FATE_STEM = "three_box_2015_2023_heat_fate"
+MATRIX_STEM = "three_box_wind_heat_relationship_matrix"
+SCATTER_STEM = "three_box_wind_heat_scatter"
+
+EVENT_COLORS = {1997: "#2F6FA5", 2015: "#D97706", 2023: "#0F8F83"}
+BOX_COLORS = {"west": "#6BAED6", "central": "#4292C6", "east": "#2171B5"}
 
 HEAT_FATE_COLUMNS = (
     "west_face_loss_zj",
@@ -68,6 +95,22 @@ HEAT_FATE_COLUMNS = (
     "surface_loss_zj",
     "storage_loss_zj",
 )
+
+
+@dataclass(frozen=True)
+class PipelineOutputs:
+    event_heat_csv: Path
+    wind_csv: Path
+    relationship_csv: Path
+    discovery_csv: Path
+    audit_json: Path
+    fate_png: Path
+    fate_pdf: Path
+    matrix_png: Path
+    matrix_pdf: Path
+    scatter_png: Path
+    scatter_pdf: Path
+    report_md: Path
 
 
 def discover_input_root() -> Path:
@@ -246,7 +289,7 @@ def _time_frame(times: xr.DataArray | np.ndarray) -> pd.DataFrame:
 
 
 def _load_u10_indices(input_root: Path) -> pd.DataFrame:
-    with xr.open_dataset(input_root / ERA5_U10, engine="netcdf4", chunks=None) as dataset:
+    with xr.open_dataset(input_root / ERA5_U10, engine="h5netcdf", chunks=None) as dataset:
         u10 = _normalize_field(dataset.u10).load()
         v10 = _normalize_field(dataset.v10).load()
     frame = _time_frame(u10.time.values)
@@ -275,7 +318,7 @@ def _load_eastward_stress(input_root: Path) -> xr.DataArray:
             )
         pieces = []
         for path in paths:
-            with xr.open_dataset(path, engine="netcdf4", chunks=None) as dataset:
+            with xr.open_dataset(path, engine="h5netcdf", chunks=None) as dataset:
                 pieces.append(_normalize_field(dataset.avg_iews).load())
         field = xr.concat(pieces, dim="lon").sortby("lon")
         _, unique = np.unique(field.lon.values, return_index=True)
@@ -649,3 +692,638 @@ def build_discovery_matrix(heat: pd.DataFrame, wind: pd.DataFrame) -> pd.DataFra
     output["pearson_q"] = _benjamini_hochberg(output["pearson_p"])
     output["spearman_q"] = _benjamini_hochberg(output["spearman_p"])
     return output
+
+
+def _setup_plot_style() -> None:
+    plt.rcParams.update(
+        {
+            "figure.dpi": 180,
+            "savefig.dpi": 340,
+            "font.family": "DejaVu Sans",
+            "font.size": 9.5,
+            "axes.labelsize": 10.0,
+            "axes.titlesize": 10.5,
+            "axes.edgecolor": "#263746",
+            "axes.labelcolor": "#102A3A",
+            "xtick.color": "#263746",
+            "ytick.color": "#263746",
+            "text.color": "#102A3A",
+            "pdf.fonttype": 42,
+            "ps.fonttype": 42,
+        }
+    )
+
+
+def _panel_label(axis: plt.Axes, label: str) -> None:
+    axis.text(
+        0.01,
+        0.98,
+        f"({label})",
+        transform=axis.transAxes,
+        ha="left",
+        va="top",
+        fontsize=10.5,
+        fontweight="bold",
+    )
+
+
+def _save_figure(figure: plt.Figure, output_dir: Path, stem: str) -> tuple[Path, Path]:
+    output_dir.mkdir(parents=True, exist_ok=True)
+    png = output_dir / f"{stem}.png"
+    pdf = output_dir / f"{stem}.pdf"
+    figure.savefig(png, dpi=340, bbox_inches="tight", facecolor="white")
+    figure.savefig(pdf, bbox_inches="tight", facecolor="white")
+    plt.close(figure)
+    return png, pdf
+
+
+def make_fate_figure(heat: pd.DataFrame, output_dir: Path) -> tuple[Path, Path]:
+    """Plot the fixed boxes and paired 2015/2023 heat fates by phase."""
+
+    _setup_plot_style()
+    figure = plt.figure(figsize=(15.2, 12.8), constrained_layout=True)
+    grid = figure.add_gridspec(4, 3, height_ratios=(0.52, 1.0, 1.0, 1.0))
+    locator = figure.add_subplot(grid[0, :])
+    locator.set_xlim(120, 290)
+    locator.set_ylim(-20, 15)
+    locator.axhline(0, color="#6C7A86", linewidth=0.7)
+    locator.grid(color="#D9E1E6", linewidth=0.6, alpha=0.8)
+    for box, (lon0, lon1) in BOXES.items():
+        locator.add_patch(
+            Rectangle(
+                (lon0, -10),
+                lon1 - lon0,
+                15,
+                facecolor=BOX_COLORS[box],
+                edgecolor="#102A3A",
+                linewidth=1.0,
+                alpha=0.75,
+            )
+        )
+        locator.text(
+            (lon0 + lon1) / 2,
+            -2.5,
+            box.capitalize(),
+            ha="center",
+            va="center",
+            color="white",
+            fontweight="bold",
+            fontsize=10.5,
+        )
+    locator.set_xticks(
+        [120, 160, 180, 220, 260, 280],
+        ["120°E", "160°E", "180°", "140°W", "100°W", "80°W"],
+    )
+    locator.set_yticks([-10, 0, 5], ["10°S", "Eq", "5°N"])
+    locator.set_ylabel("Latitude")
+    locator.spines[["top", "right"]].set_visible(False)
+    _panel_label(locator, "a")
+
+    component_labels = [
+        "West\nface",
+        "East\nface",
+        "South",
+        "North",
+        "Surface",
+        "Storage",
+    ]
+    phase_labels = {
+        "arrival_Jan_Jun": "Arrival: Jan–Jun",
+        "redistribution_Jul_Dec": "Redistribution: Jul–Dec",
+        "decay_Jan_May_next": "Decay: following Jan–May",
+    }
+    highlighted = heat.loc[heat.event_year.isin([2015, 2023])]
+    maximum = float(np.nanmax(np.abs(highlighted[list(HEAT_FATE_COLUMNS)].to_numpy())))
+    limit = np.ceil(maximum / 2.0) * 2.0 * 1.08
+    panel_index = 1
+    for row_index, phase in enumerate(PHASE_MONTHS, start=1):
+        for column_index, box in enumerate(BOXES):
+            axis = figure.add_subplot(grid[row_index, column_index])
+            x = np.arange(len(HEAT_FATE_COLUMNS))
+            width = 0.36
+            for event_index, year in enumerate((2015, 2023)):
+                selected = heat.loc[
+                    heat.event_year.eq(year) & heat.phase.eq(phase) & heat.box.eq(box)
+                ].iloc[0]
+                axis.bar(
+                    x + (event_index - 0.5) * width,
+                    [float(selected[column]) for column in HEAT_FATE_COLUMNS],
+                    width=width,
+                    color=EVENT_COLORS[year],
+                    edgecolor="white",
+                    linewidth=0.6,
+                    label=str(year),
+                    zorder=3,
+                )
+            axis.axhline(0, color="#52616B", linewidth=0.8)
+            axis.grid(axis="y", color="#D8E0E6", linewidth=0.7, alpha=0.8)
+            axis.set_ylim(-limit, limit)
+            axis.set_xticks(x, component_labels)
+            axis.tick_params(axis="x", labelsize=8.2)
+            axis.spines[["top", "right"]].set_visible(False)
+            if column_index == 0:
+                axis.set_ylabel(f"{phase_labels[phase]}\nHeat loss from box (ZJ)")
+            axis.set_title(box.capitalize(), fontweight="bold")
+            if row_index == 1 and column_index == 0:
+                axis.legend(frameon=False, ncol=2, loc="upper left", bbox_to_anchor=(0.10, 1.0))
+            _panel_label(axis, chr(ord("a") + panel_index))
+            panel_index += 1
+    return _save_figure(figure, output_dir, FATE_STEM)
+
+
+def _predictor_short(name: str) -> str:
+    if name == "cwp_u10_anom_ms":
+        return "CWP u10"
+    if name == "jiang_ne925_mjj_ms":
+        return "NE925"
+    if "north_curl_tx" in name:
+        return "−∂τx/∂y (N)"
+    if "south_curl_tx" in name:
+        return "−∂τx/∂y (S)"
+    if "tau_x_5n" in name:
+        return "τx at 5°N"
+    if "tau_x_10s" in name:
+        return "τx at 10°S"
+    if "wind_speed" in name:
+        return "Wind speed"
+    if "tau_x" in name:
+        return "Local τx"
+    return name
+
+
+def _best_relationship(
+    relationships: pd.DataFrame,
+    *,
+    box: str,
+    phase: str,
+    response: str,
+) -> pd.Series:
+    candidates = relationships.loc[
+        relationships.box.eq(box)
+        & relationships.response_phase.eq(phase)
+        & relationships.response.eq(response)
+    ].copy()
+    stable = candidates.loc[candidates.sign_agreement & candidates.loeo_sign_stable]
+    if not stable.empty:
+        candidates = stable
+    return candidates.loc[candidates.partial_r.abs().idxmax()]
+
+
+def make_relationship_matrix(
+    relationships: pd.DataFrame,
+    output_dir: Path,
+) -> tuple[Path, Path]:
+    """Summarize the best pre-specified relationship for each loss pathway."""
+
+    _setup_plot_style()
+    response_labels = {
+        "west_face_loss_zj": "West-face loss",
+        "east_face_loss_zj": "East-face loss",
+        "southward_loss_zj": "Southward loss",
+        "northward_loss_zj": "Northward loss",
+        "surface_loss_zj": "Surface loss",
+        "storage_loss_zj": "Storage loss",
+    }
+    phases = ("redistribution_Jul_Dec", "decay_Jan_May_next")
+    figure, axes = plt.subplots(1, 2, figsize=(10.8, 7.2), constrained_layout=True)
+    image = None
+    for panel_index, (axis, phase) in enumerate(zip(axes, phases)):
+        values = np.full((len(response_labels), len(BOXES)), np.nan)
+        annotations: list[list[str]] = [["" for _ in BOXES] for _ in response_labels]
+        for row_index, response in enumerate(response_labels):
+            for column_index, box in enumerate(BOXES):
+                row = _best_relationship(
+                    relationships, box=box, phase=phase, response=response
+                )
+                values[row_index, column_index] = float(row.partial_r)
+                window = "MJJ" if row.predictor_window == "MJJ" else "same phase"
+                annotations[row_index][column_index] = (
+                    f"{row.partial_r:+.2f}\n{_predictor_short(row.predictor)}\n{window}"
+                )
+        image = axis.imshow(
+            values,
+            cmap="RdBu_r",
+            norm=TwoSlopeNorm(vmin=-1.0, vcenter=0.0, vmax=1.0),
+            aspect="auto",
+        )
+        axis.set_xticks(range(len(BOXES)), [box.capitalize() for box in BOXES])
+        axis.set_yticks(range(len(response_labels)), list(response_labels.values()))
+        axis.set_xlabel(
+            "Jul–Dec response" if phase == "redistribution_Jul_Dec" else "Following Jan–May response"
+        )
+        for row_index in range(len(response_labels)):
+            for column_index in range(len(BOXES)):
+                color = "white" if abs(values[row_index, column_index]) >= 0.58 else "#102A3A"
+                axis.text(
+                    column_index,
+                    row_index,
+                    annotations[row_index][column_index],
+                    ha="center",
+                    va="center",
+                    fontsize=8.2,
+                    color=color,
+                )
+        _panel_label(axis, chr(ord("a") + panel_index))
+    figure.colorbar(image, ax=axes, orientation="horizontal", shrink=0.72, label="Partial correlation")
+    return _save_figure(figure, output_dir, MATRIX_STEM)
+
+
+def make_scatter_figure(
+    heat: pd.DataFrame,
+    wind: pd.DataFrame,
+    relationships: pd.DataFrame,
+    output_dir: Path,
+) -> tuple[Path, Path]:
+    """Plot four physically interpretable wind–loss relationships."""
+
+    _setup_plot_style()
+    selections = [
+        (
+            "east",
+            "decay_Jan_May_next",
+            "decay_Jan_May_next",
+            "northward_loss_zj",
+            "east_north_curl_tx_anom_1e8_nm3",
+            "East-box northward loss (ZJ)",
+            "East northern −∂τx/∂y (10⁻⁸ N m⁻³)",
+        ),
+        (
+            "central",
+            "redistribution_Jul_Dec",
+            "redistribution_Jul_Dec",
+            "east_face_loss_zj",
+            "central_tau_x_anom_nm2",
+            "Central east-face loss (ZJ)",
+            "Central τx anomaly (N m⁻²)",
+        ),
+        (
+            "central",
+            "decay_Jan_May_next",
+            "decay_Jan_May_next",
+            "surface_loss_zj",
+            "central_tau_x_anom_nm2",
+            "Central surface loss (ZJ)",
+            "Central τx anomaly (N m⁻²)",
+        ),
+        (
+            "central",
+            "redistribution_Jul_Dec",
+            "MJJ",
+            "storage_loss_zj",
+            "cwp_u10_anom_ms",
+            "Central storage loss (ZJ)",
+            "MJJ CWP u10 anomaly (m s⁻¹)",
+        ),
+    ]
+    figure, axes = plt.subplots(2, 2, figsize=(11.6, 9.0), constrained_layout=True)
+    for panel_index, (axis, selection) in enumerate(zip(axes.ravel(), selections)):
+        box, phase, window, response, predictor, ylabel, xlabel = selection
+        joined = _relationship_frame(
+            heat,
+            wind,
+            box=box,
+            response_phase=phase,
+            predictor_window=window,
+            response=response,
+            predictor=predictor,
+        )
+        row = relationships.loc[
+            relationships.box.eq(box)
+            & relationships.response_phase.eq(phase)
+            & relationships.predictor_window.eq(window)
+            & relationships.response.eq(response)
+            & relationships.predictor.eq(predictor)
+        ].iloc[0]
+        ordinary = ~joined.event_year.isin(EVENT_COLORS)
+        axis.scatter(
+            joined.loc[ordinary, predictor],
+            joined.loc[ordinary, response],
+            s=38,
+            color="#97A6B2",
+            edgecolor="white",
+            linewidth=0.7,
+            zorder=3,
+            label="Other events",
+        )
+        for year in EVENT_COLORS:
+            selected = joined.loc[joined.event_year.eq(year)]
+            axis.scatter(
+                selected[predictor],
+                selected[response],
+                s=70,
+                color=EVENT_COLORS[year],
+                edgecolor="white",
+                linewidth=0.9,
+                zorder=4,
+                label=str(year),
+            )
+        fit = stats.linregress(joined[predictor], joined[response])
+        x_values = np.linspace(joined[predictor].min(), joined[predictor].max(), 100)
+        axis.plot(x_values, fit.intercept + fit.slope * x_values, color="#102A3A", linewidth=1.5)
+        axis.axhline(0, color="#7C8A94", linewidth=0.7)
+        axis.axvline(0, color="#7C8A94", linewidth=0.7)
+        axis.grid(color="#D8E0E6", linewidth=0.7, alpha=0.8)
+        axis.spines[["top", "right"]].set_visible(False)
+        axis.set_xlabel(xlabel)
+        axis.set_ylabel(ylabel)
+        axis.text(
+            0.98,
+            0.04,
+            f"n = {int(row.n)}\nr = {row.pearson_r:+.2f}\nρ = {row.spearman_r:+.2f}\npartial r = {row.partial_r:+.2f}",
+            transform=axis.transAxes,
+            ha="right",
+            va="bottom",
+            fontsize=9.0,
+        )
+        _panel_label(axis, chr(ord("a") + panel_index))
+    handles, labels = axes[0, 0].get_legend_handles_labels()
+    figure.legend(
+        handles,
+        labels,
+        frameon=False,
+        ncol=4,
+        loc="upper center",
+        bbox_to_anchor=(0.5, 1.015),
+    )
+    return _save_figure(figure, output_dir, SCATTER_STEM)
+
+
+def _heat_value(
+    heat: pd.DataFrame,
+    event_year: int,
+    phase: str,
+    box: str,
+    column: str,
+) -> float:
+    return float(
+        heat.loc[
+            heat.event_year.eq(event_year) & heat.phase.eq(phase) & heat.box.eq(box),
+            column,
+        ].iloc[0]
+    )
+
+
+def _relation_value(
+    relationships: pd.DataFrame,
+    *,
+    box: str,
+    phase: str,
+    window: str,
+    response: str,
+    predictor: str,
+) -> pd.Series:
+    return relationships.loc[
+        relationships.box.eq(box)
+        & relationships.response_phase.eq(phase)
+        & relationships.predictor_window.eq(window)
+        & relationships.response.eq(response)
+        & relationships.predictor.eq(predictor)
+    ].iloc[0]
+
+
+def write_report(
+    heat: pd.DataFrame,
+    relationships: pd.DataFrame,
+    output_dir: Path,
+) -> Path:
+    """Write a compact Chinese scientific interpretation."""
+
+    east_north = _relation_value(
+        relationships,
+        box="east",
+        phase="decay_Jan_May_next",
+        window="decay_Jan_May_next",
+        response="northward_loss_zj",
+        predictor="east_north_curl_tx_anom_1e8_nm3",
+    )
+    central_east = _relation_value(
+        relationships,
+        box="central",
+        phase="redistribution_Jul_Dec",
+        window="redistribution_Jul_Dec",
+        response="east_face_loss_zj",
+        predictor="central_tau_x_anom_nm2",
+    )
+    central_surface = _relation_value(
+        relationships,
+        box="central",
+        phase="decay_Jan_May_next",
+        window="decay_Jan_May_next",
+        response="surface_loss_zj",
+        predictor="central_tau_x_anom_nm2",
+    )
+    central_storage = _relation_value(
+        relationships,
+        box="central",
+        phase="redistribution_Jul_Dec",
+        window="MJJ",
+        response="storage_loss_zj",
+        predictor="cwp_u10_anom_ms",
+    )
+    east_storage = _relation_value(
+        relationships,
+        box="east",
+        phase="decay_Jan_May_next",
+        window="MJJ",
+        response="storage_loss_zj",
+        predictor="cwp_u10_anom_ms",
+    )
+    report = f"""# 三箱暖量命运与风异常关系
+
+## 核心发现
+
+暖量到达总量不能代表耦合所需的空间配置。1—6月中箱OHC异常增量在2015年为{_heat_value(heat, 2015, 'arrival_Jan_Jun', 'central', 'storage_change_zj'):.2f} ZJ，2023年仅为{_heat_value(heat, 2023, 'arrival_Jan_Jun', 'central', 'storage_change_zj'):.2f} ZJ；东箱则分别增加{_heat_value(heat, 2015, 'arrival_Jan_Jun', 'east', 'storage_change_zj'):.2f}和{_heat_value(heat, 2023, 'arrival_Jan_Jun', 'east', 'storage_change_zj'):.2f} ZJ。2023表现为更多暖量直接堆积在东部，而2015有更大的发展期中太平洋储热。
+
+两次事件在7—12月进一步分化。2015中箱储存损失为{_heat_value(heat, 2015, 'redistribution_Jul_Dec', 'central', 'storage_loss_zj'):+.2f} ZJ，即中箱OHC开始下降；2023为{_heat_value(heat, 2023, 'redistribution_Jul_Dec', 'central', 'storage_loss_zj'):+.2f} ZJ，表示中箱仍在继续增热。同期中箱向东边界损失在2015和2023分别为{_heat_value(heat, 2015, 'redistribution_Jul_Dec', 'central', 'east_face_loss_zj'):.2f}和{_heat_value(heat, 2023, 'redistribution_Jul_Dec', 'central', 'east_face_loss_zj'):.2f} ZJ。因此2015的中部暖量更早建立并进入重新分配阶段，2023的中部增暖则明显推迟。
+
+## 不同箱体中与风最一致的损失通道
+
+东箱最清楚的风—热量关系出现在次年1—5月的北向输出。东箱北侧 `−∂τx/∂y` 与北向热量损失的Pearson相关为{east_north.pearson_r:+.2f}，Spearman相关为{east_north.spearman_r:+.2f}，控制1—6月东箱储热后的偏相关为{east_north.partial_r:+.2f}；逐一删除事件后的偏相关范围为{east_north.loeo_r_min:+.2f}至{east_north.loeo_r_max:+.2f}。2015和2023的东箱北向输出分别为{_heat_value(heat, 2015, 'decay_Jan_May_next', 'east', 'northward_loss_zj'):.2f}和{_heat_value(heat, 2023, 'decay_Jan_May_next', 'east', 'northward_loss_zj'):.2f} ZJ。这表明东箱衰减期最有风场信息的出口是5°N北侧边界，而不是笼统的总散热。
+
+中箱的主要风响应集中在纬向重新分配和海表释放。7—12月中箱纬向风应力与向东边界损失的相关为r={central_east.pearson_r:+.2f}，偏相关为{central_east.partial_r:+.2f}；次年1—5月纬向风应力与中箱海表损失的相关为r={central_surface.pearson_r:+.2f}，偏相关为{central_surface.partial_r:+.2f}。2015/2023同期中箱海表损失分别为{_heat_value(heat, 2015, 'decay_Jan_May_next', 'central', 'surface_loss_zj'):.2f}/{_heat_value(heat, 2023, 'decay_Jan_May_next', 'central', 'surface_loss_zj'):.2f} ZJ。
+
+发展期风异常还与后续储热衰减有关。MJJ中西太平洋u10与7—12月中箱储存损失的偏相关为{central_storage.partial_r:+.2f}，与次年1—5月东箱储存损失的偏相关为{east_storage.partial_r:+.2f}。这与2015更强、更早的西风异常以及更早的中部释放相一致，而2023的中箱储热建立较晚。
+
+## 对2015和2023差异的更新
+
+当前结果支持把两次事件的差异写成“空间配置和释放通道不同”，而不是“东部有没有暖量”。2015的发展期暖量较多进入中箱，并伴随较强的中太平洋纬向风应力；随后中箱通过向东输送和海表交换释放暖量，东箱在衰减期还出现较强北向输出。2023的暖量更集中于东箱，中箱在7—12月仍继续增热，说明中太平洋储热与风异常没有在同一发展窗口充分衔接。
+
+这些统计关系不能证明单向因果。同期风、洋流、海表通量和对流属于相互反馈的耦合系统；即使MJJ风领先后期储热变化，也可能同时反映更早的海洋状态或对流组织。最稳妥的表述是：不同风异常分别与不同热量出口相匹配，中箱的纬向输送和表面释放、东箱的北向输出是2015与2023暖量命运分化中最值得保留的通道。
+
+## 边界输送的使用范围
+
+三个箱体分别采用质量闭合后的法向速度计算箱内边界输送，因此本文把它们解释为“该箱体的边界损失”，不把相邻两箱的修正值强制视为完全相等的共享通量。关键的140°W边界在2015和2023年7—12月的两侧差值分别为{abs(_heat_value(heat, 2015, 'redistribution_Jul_Dec', 'central', 'east_theta_heat_in_zj') + _heat_value(heat, 2015, 'redistribution_Jul_Dec', 'east', 'west_theta_heat_in_zj')):.2f}和{abs(_heat_value(heat, 2023, 'redistribution_Jul_Dec', 'central', 'east_theta_heat_in_zj') + _heat_value(heat, 2023, 'redistribution_Jul_Dec', 'east', 'west_theta_heat_in_zj')):.2f} ZJ。因而当前结果适合回答各箱热量从哪些出口流失；若要严格讨论箱间守恒转移，应另用同一个未分箱修正的共享断面通量。
+"""
+    output_dir.mkdir(parents=True, exist_ok=True)
+    path = output_dir / REPORT_NAME
+    path.write_text(report, encoding="utf-8")
+    return path
+
+
+def _audit_payload(
+    heat: pd.DataFrame,
+    wind: pd.DataFrame,
+    relationships: pd.DataFrame,
+    discovery: pd.DataFrame,
+) -> dict[str, object]:
+    promoted = relationships.loc[
+        relationships.sign_agreement
+        & relationships.loeo_sign_stable
+        & relationships.partial_r.abs().ge(0.5)
+    ].copy()
+    promoted = promoted.reindex(promoted.partial_r.abs().sort_values(ascending=False).index)
+    internal_180 = heat["east_theta_heat_in_zj"].where(heat.box.eq("west"))
+    # Corrected-face mismatches are evaluated after a self-join on event/phase.
+    indexed = heat.set_index(["event_year", "phase", "box"])
+    mismatch_180 = []
+    mismatch_220 = []
+    for event in EVENTS:
+        for phase in PHASE_MONTHS:
+            west = indexed.loc[(event, phase, "west")]
+            central = indexed.loc[(event, phase, "central")]
+            east = indexed.loc[(event, phase, "east")]
+            mismatch_180.append(
+                abs(float(west.east_theta_heat_in_zj + central.west_theta_heat_in_zj))
+            )
+            mismatch_220.append(
+                abs(float(central.east_theta_heat_in_zj + east.west_theta_heat_in_zj))
+            )
+    del internal_180
+    return {
+        "heat_rows": int(len(heat)),
+        "wind_rows": int(len(wind)),
+        "prespecified_relationship_rows": int(len(relationships)),
+        "discovery_rows": int(len(discovery)),
+        "missing_primary_relationship_values": int(
+            relationships[["pearson_r", "spearman_r", "partial_r"]].isna().sum().sum()
+        ),
+        "corrected_internal_face_mismatch_max_zj": {
+            "180E": float(max(mismatch_180)),
+            "140W": float(max(mismatch_220)),
+        },
+        "key_140W_mismatch_zj": {
+            "2015_redistribution_Jul_Dec": abs(
+                _heat_value(
+                    heat,
+                    2015,
+                    "redistribution_Jul_Dec",
+                    "central",
+                    "east_theta_heat_in_zj",
+                )
+                + _heat_value(
+                    heat,
+                    2015,
+                    "redistribution_Jul_Dec",
+                    "east",
+                    "west_theta_heat_in_zj",
+                )
+            ),
+            "2023_redistribution_Jul_Dec": abs(
+                _heat_value(
+                    heat,
+                    2023,
+                    "redistribution_Jul_Dec",
+                    "central",
+                    "east_theta_heat_in_zj",
+                )
+                + _heat_value(
+                    heat,
+                    2023,
+                    "redistribution_Jul_Dec",
+                    "east",
+                    "west_theta_heat_in_zj",
+                )
+            ),
+        },
+        "audited_arrival_storage_change_zj": {
+            "2015_central": _heat_value(heat, 2015, "arrival_Jan_Jun", "central", "storage_change_zj"),
+            "2023_central": _heat_value(heat, 2023, "arrival_Jan_Jun", "central", "storage_change_zj"),
+            "2015_east": _heat_value(heat, 2015, "arrival_Jan_Jun", "east", "storage_change_zj"),
+            "2023_east": _heat_value(heat, 2023, "arrival_Jan_Jun", "east", "storage_change_zj"),
+        },
+        "promoted_relationship_count": int(len(promoted)),
+        "strongest_promoted_relationships": json.loads(
+            promoted.head(12).to_json(orient="records")
+        ),
+    }
+
+
+def run_pipeline(
+    output_dir: Path | None = None,
+    input_root: Path | None = None,
+    output_root: Path | None = None,
+) -> PipelineOutputs:
+    """Run the complete calculation and write deterministic checkpoints."""
+
+    data_root = discover_input_root() if input_root is None else Path(input_root)
+    root = ROOT if output_root is None else Path(output_root)
+    target = root / OUTPUT_DIR if output_dir is None else Path(output_dir)
+    derived = root / DERIVED
+    target.mkdir(parents=True, exist_ok=True)
+    derived.mkdir(parents=True, exist_ok=True)
+
+    heat = load_heat_fate_events(data_root)
+    wind = build_event_wind_table(data_root)
+    relationships = build_prespecified_relationships(heat, wind)
+    discovery = build_discovery_matrix(heat, wind)
+
+    event_heat_csv = derived / EVENT_HEAT_NAME
+    wind_csv = derived / WIND_NAME
+    relationship_csv = derived / RELATIONSHIP_NAME
+    discovery_csv = derived / DISCOVERY_NAME
+    audit_json = derived / AUDIT_NAME
+    heat.to_csv(event_heat_csv, index=False, float_format="%.8g")
+    wind.to_csv(wind_csv, index=False, float_format="%.8g")
+    relationships.to_csv(relationship_csv, index=False, float_format="%.8g")
+    discovery.to_csv(discovery_csv, index=False, float_format="%.8g")
+    audit_json.write_text(
+        json.dumps(
+            _audit_payload(heat, wind, relationships, discovery),
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+
+    fate_png, fate_pdf = make_fate_figure(heat, target)
+    matrix_png, matrix_pdf = make_relationship_matrix(relationships, target)
+    scatter_png, scatter_pdf = make_scatter_figure(heat, wind, relationships, target)
+    report_md = write_report(heat, relationships, target)
+    return PipelineOutputs(
+        event_heat_csv=event_heat_csv,
+        wind_csv=wind_csv,
+        relationship_csv=relationship_csv,
+        discovery_csv=discovery_csv,
+        audit_json=audit_json,
+        fate_png=fate_png,
+        fate_pdf=fate_pdf,
+        matrix_png=matrix_png,
+        matrix_pdf=matrix_pdf,
+        scatter_png=scatter_png,
+        scatter_pdf=scatter_pdf,
+        report_md=report_md,
+    )
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--input-root", type=Path, default=None)
+    parser.add_argument("--output-root", type=Path, default=None)
+    parser.add_argument("--output-dir", type=Path, default=None)
+    return parser.parse_args()
+
+
+def main() -> int:
+    arguments = parse_args()
+    outputs = run_pipeline(
+        output_dir=arguments.output_dir,
+        input_root=arguments.input_root,
+        output_root=arguments.output_root,
+    )
+    for path in outputs.__dict__.values():
+        print(path)
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
