@@ -95,3 +95,55 @@ def test_event_wind_table_has_complete_primary_predictors() -> None:
     assert primary
     assert table[primary].notna().all().all()
     assert table["jiang_ne925_mjj_ms"].notna().all()
+
+
+def test_partial_correlation_removes_shared_control() -> None:
+    control = np.arange(13, dtype=float)
+    noise = np.array([0, 1, -1, 1, -1, 0, 1, -1, 0, 1, -1, 0, 0], dtype=float)
+    x = control + noise
+    y = control - noise
+    raw = np.corrcoef(x, y)[0, 1]
+    adjusted = analysis.partial_correlation(x, y, control)
+    assert raw > 0.8
+    assert adjusted < -0.9
+
+
+def test_relationship_statistics_reports_loeo_range() -> None:
+    x = np.arange(13, dtype=float)
+    result = analysis.relationship_statistics(x, 2.0 * x, np.zeros_like(x))
+    assert result["pearson_r"] == pytest.approx(1.0)
+    assert result["spearman_r"] == pytest.approx(1.0)
+    assert result["partial_r"] == pytest.approx(1.0)
+    assert result["loeo_r_min"] == pytest.approx(1.0)
+    assert result["loeo_r_max"] == pytest.approx(1.0)
+
+
+def test_prespecified_relationships_are_unique_and_complete() -> None:
+    root = analysis.discover_input_root()
+    heat = analysis.load_heat_fate_events(root)
+    wind = analysis.build_event_wind_table(root)
+    relationships = analysis.build_prespecified_relationships(heat, wind)
+    key = ["box", "predictor_window", "response_phase", "response", "predictor"]
+    assert not relationships.duplicated(key).any()
+    assert set(relationships["n"]) == {13}
+    assert relationships[["pearson_r", "spearman_r", "partial_r"]].notna().all().all()
+    assert relationships["prespecified"].all()
+
+
+def test_prespecified_rows_retain_highlight_values() -> None:
+    root = analysis.discover_input_root()
+    relationships = analysis.build_prespecified_relationships(
+        analysis.load_heat_fate_events(root),
+        analysis.build_event_wind_table(root),
+    )
+    row = relationships.loc[
+        relationships.box.eq("central")
+        & relationships.response_phase.eq("redistribution_Jul_Dec")
+        & relationships.response.eq("storage_loss_zj")
+        & relationships.predictor.eq("central_tau_x_anom_nm2")
+        & relationships.predictor_window.eq("MJJ")
+    ].iloc[0]
+    assert row["response_2015"] == pytest.approx(4.041709, abs=0.005)
+    assert row["response_2023"] == pytest.approx(-3.501413, abs=0.005)
+    assert row["predictor_2015"] == pytest.approx(0.02004, abs=0.0002)
+    assert row["predictor_2023"] == pytest.approx(0.00400, abs=0.0002)

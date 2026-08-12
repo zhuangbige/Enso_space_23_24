@@ -15,6 +15,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import xarray as xr
+from scipy import stats
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -361,4 +362,290 @@ def build_event_wind_table(input_root: Path | None = None) -> pd.DataFrame:
     output = pd.DataFrame(rows)
     if len(output) != len(EVENTS) * len(WIND_WINDOWS):
         raise ValueError("Incomplete event wind table")
+    return output
+
+
+def _residualize(values: np.ndarray, control: np.ndarray) -> np.ndarray:
+    values = np.asarray(values, dtype=float)
+    control = np.asarray(control, dtype=float)
+    if np.nanstd(control) < 1.0e-12:
+        return values - np.nanmean(values)
+    design = np.column_stack([np.ones(len(control)), control])
+    coefficients = np.linalg.lstsq(design, values, rcond=None)[0]
+    return values - design @ coefficients
+
+
+def partial_correlation(
+    x: np.ndarray | pd.Series,
+    y: np.ndarray | pd.Series,
+    control: np.ndarray | pd.Series,
+) -> float:
+    """Return Pearson correlation after linear removal of one control."""
+
+    x_array = np.asarray(x, dtype=float)
+    y_array = np.asarray(y, dtype=float)
+    control_array = np.asarray(control, dtype=float)
+    valid = np.isfinite(x_array) & np.isfinite(y_array) & np.isfinite(control_array)
+    if valid.sum() < 4:
+        return float("nan")
+    x_residual = _residualize(x_array[valid], control_array[valid])
+    y_residual = _residualize(y_array[valid], control_array[valid])
+    if np.std(x_residual) < 1.0e-12 or np.std(y_residual) < 1.0e-12:
+        return float("nan")
+    return float(np.corrcoef(x_residual, y_residual)[0, 1])
+
+
+def relationship_statistics(
+    x: np.ndarray | pd.Series,
+    y: np.ndarray | pd.Series,
+    control: np.ndarray | pd.Series,
+) -> dict[str, float | int | bool]:
+    """Calculate raw, rank, controlled, slope, and leave-one-event statistics."""
+
+    x_array = np.asarray(x, dtype=float)
+    y_array = np.asarray(y, dtype=float)
+    control_array = np.asarray(control, dtype=float)
+    valid = np.isfinite(x_array) & np.isfinite(y_array) & np.isfinite(control_array)
+    x_array = x_array[valid]
+    y_array = y_array[valid]
+    control_array = control_array[valid]
+    if len(x_array) < 4 or np.std(x_array) < 1.0e-12 or np.std(y_array) < 1.0e-12:
+        return {
+            "n": int(len(x_array)),
+            "pearson_r": float("nan"),
+            "pearson_p": float("nan"),
+            "spearman_r": float("nan"),
+            "spearman_p": float("nan"),
+            "partial_r": float("nan"),
+            "partial_spearman_r": float("nan"),
+            "slope_physical": float("nan"),
+            "slope_standardized": float("nan"),
+            "loeo_r_min": float("nan"),
+            "loeo_r_max": float("nan"),
+            "sign_agreement": False,
+            "loeo_sign_stable": False,
+        }
+    pearson = stats.pearsonr(x_array, y_array)
+    spearman = stats.spearmanr(x_array, y_array)
+    partial = partial_correlation(x_array, y_array, control_array)
+    partial_rank = partial_correlation(
+        stats.rankdata(x_array), stats.rankdata(y_array), stats.rankdata(control_array)
+    )
+    slope = stats.linregress(x_array, y_array).slope
+    loeo = []
+    for index in range(len(x_array)):
+        keep = np.arange(len(x_array)) != index
+        value = partial_correlation(x_array[keep], y_array[keep], control_array[keep])
+        if np.isfinite(value):
+            loeo.append(value)
+    loeo_min = float(min(loeo)) if loeo else float("nan")
+    loeo_max = float(max(loeo)) if loeo else float("nan")
+    sign_agreement = bool(
+        np.sign(pearson.statistic) == np.sign(spearman.statistic)
+        and np.sign(pearson.statistic) == np.sign(partial)
+    )
+    loeo_stable = bool(
+        loeo
+        and (
+            (partial > 0 and loeo_min > 0)
+            or (partial < 0 and loeo_max < 0)
+        )
+    )
+    return {
+        "n": int(len(x_array)),
+        "pearson_r": float(pearson.statistic),
+        "pearson_p": float(pearson.pvalue),
+        "spearman_r": float(spearman.statistic),
+        "spearman_p": float(spearman.pvalue),
+        "partial_r": float(partial),
+        "partial_spearman_r": float(partial_rank),
+        "slope_physical": float(slope),
+        "slope_standardized": float(pearson.statistic),
+        "loeo_r_min": loeo_min,
+        "loeo_r_max": loeo_max,
+        "sign_agreement": sign_agreement,
+        "loeo_sign_stable": loeo_stable,
+    }
+
+
+def _pairing_specs(box: str) -> list[tuple[str, str, str]]:
+    return [
+        ("west_face_loss_zj", f"{box}_tau_x_anom_nm2", "zonal_faces"),
+        ("west_face_loss_zj", "cwp_u10_anom_ms", "zonal_faces"),
+        ("east_face_loss_zj", f"{box}_tau_x_anom_nm2", "zonal_faces"),
+        ("east_face_loss_zj", "cwp_u10_anom_ms", "zonal_faces"),
+        ("northward_loss_zj", f"{box}_tau_x_5n_anom_nm2", "north_boundary"),
+        (
+            "northward_loss_zj",
+            f"{box}_north_curl_tx_anom_1e8_nm3",
+            "north_boundary",
+        ),
+        ("northward_loss_zj", "jiang_ne925_mjj_ms", "north_boundary"),
+        ("southward_loss_zj", f"{box}_tau_x_10s_anom_nm2", "south_boundary"),
+        (
+            "southward_loss_zj",
+            f"{box}_south_curl_tx_anom_1e8_nm3",
+            "south_boundary",
+        ),
+        ("surface_loss_zj", f"{box}_wind_speed_anom_ms", "surface"),
+        ("surface_loss_zj", f"{box}_tau_x_anom_nm2", "surface"),
+        ("storage_loss_zj", f"{box}_tau_x_anom_nm2", "storage"),
+        ("storage_loss_zj", "cwp_u10_anom_ms", "storage"),
+        ("storage_loss_zj", f"{box}_wind_speed_anom_ms", "storage"),
+    ]
+
+
+def _relationship_frame(
+    heat: pd.DataFrame,
+    wind: pd.DataFrame,
+    *,
+    box: str,
+    response_phase: str,
+    predictor_window: str,
+    response: str,
+    predictor: str,
+) -> pd.DataFrame:
+    response_rows = heat.loc[
+        heat.box.eq(box) & heat.phase.eq(response_phase),
+        ["event_year", response],
+    ]
+    controls = heat.loc[
+        heat.box.eq(box) & heat.phase.eq("arrival_Jan_Jun"),
+        ["event_year", "storage_change_zj"],
+    ].rename(columns={"storage_change_zj": "arrival_storage_change_zj"})
+    predictors = wind.loc[
+        wind.window.eq(predictor_window), ["event_year", predictor]
+    ]
+    joined = response_rows.merge(controls, on="event_year", validate="one_to_one")
+    joined = joined.merge(predictors, on="event_year", validate="one_to_one")
+    return joined.sort_values("event_year").reset_index(drop=True)
+
+
+def _relationship_record(
+    joined: pd.DataFrame,
+    *,
+    box: str,
+    family: str,
+    response_phase: str,
+    predictor_window: str,
+    response: str,
+    predictor: str,
+    prespecified: bool,
+) -> dict[str, object]:
+    result: dict[str, object] = {
+        "box": box,
+        "family": family,
+        "response_phase": response_phase,
+        "predictor_window": predictor_window,
+        "response": response,
+        "predictor": predictor,
+        "control": "arrival_storage_change_zj",
+        "prespecified": prespecified,
+    }
+    result.update(
+        relationship_statistics(
+            joined[predictor], joined[response], joined["arrival_storage_change_zj"]
+        )
+    )
+    for year in (1997, 2015, 2023):
+        row = joined.loc[joined.event_year.eq(year)].iloc[0]
+        result[f"predictor_{year}"] = float(row[predictor])
+        result[f"response_{year}"] = float(row[response])
+        result[f"control_{year}"] = float(row["arrival_storage_change_zj"])
+    return result
+
+
+def build_prespecified_relationships(
+    heat: pd.DataFrame,
+    wind: pd.DataFrame,
+) -> pd.DataFrame:
+    """Calculate only physically pre-registered wind–loss relationships."""
+
+    rows = []
+    for box in BOXES:
+        for response_phase in ("redistribution_Jul_Dec", "decay_Jan_May_next"):
+            for response, predictor, family in _pairing_specs(box):
+                predictor_windows = ["MJJ"] if predictor == "jiang_ne925_mjj_ms" else [
+                    "MJJ",
+                    response_phase,
+                ]
+                for predictor_window in predictor_windows:
+                    joined = _relationship_frame(
+                        heat,
+                        wind,
+                        box=box,
+                        response_phase=response_phase,
+                        predictor_window=predictor_window,
+                        response=response,
+                        predictor=predictor,
+                    )
+                    rows.append(
+                        _relationship_record(
+                            joined,
+                            box=box,
+                            family=family,
+                            response_phase=response_phase,
+                            predictor_window=predictor_window,
+                            response=response,
+                            predictor=predictor,
+                            prespecified=True,
+                        )
+                    )
+    output = pd.DataFrame(rows)
+    key = ["box", "predictor_window", "response_phase", "response", "predictor"]
+    if output.duplicated(key).any():
+        raise ValueError("Pre-specified relationship registry produced duplicate rows")
+    return output
+
+
+def _benjamini_hochberg(values: pd.Series) -> pd.Series:
+    output = pd.Series(np.nan, index=values.index, dtype=float)
+    valid = values.dropna().sort_values()
+    if valid.empty:
+        return output
+    count = len(valid)
+    adjusted = valid.to_numpy(dtype=float) * count / np.arange(1, count + 1)
+    adjusted = np.minimum.accumulate(adjusted[::-1])[::-1]
+    output.loc[valid.index] = np.minimum(adjusted, 1.0)
+    return output
+
+
+def build_discovery_matrix(heat: pd.DataFrame, wind: pd.DataFrame) -> pd.DataFrame:
+    """Retain a complete audit matrix without redefining the primary tests."""
+
+    predictor_columns = [
+        column
+        for column in wind
+        if "_anom_" in column or column == "jiang_ne925_mjj_ms"
+    ]
+    rows = []
+    for box in BOXES:
+        for response_phase in ("redistribution_Jul_Dec", "decay_Jan_May_next"):
+            for predictor_window in ("MJJ", response_phase):
+                for response in HEAT_FATE_COLUMNS:
+                    for predictor in predictor_columns:
+                        joined = _relationship_frame(
+                            heat,
+                            wind,
+                            box=box,
+                            response_phase=response_phase,
+                            predictor_window=predictor_window,
+                            response=response,
+                            predictor=predictor,
+                        )
+                        rows.append(
+                            _relationship_record(
+                                joined,
+                                box=box,
+                                family="discovery",
+                                response_phase=response_phase,
+                                predictor_window=predictor_window,
+                                response=response,
+                                predictor=predictor,
+                                prespecified=False,
+                            )
+                        )
+    output = pd.DataFrame(rows)
+    output["pearson_q"] = _benjamini_hochberg(output["pearson_p"])
+    output["spearman_q"] = _benjamini_hochberg(output["spearman_p"])
     return output
