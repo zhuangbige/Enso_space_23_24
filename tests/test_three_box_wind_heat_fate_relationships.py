@@ -64,3 +64,34 @@ def test_heat_fate_table_has_thirteen_events_three_phases_three_boxes() -> None:
     assert set(table.box) == set(analysis.BOXES)
     assert set(table.phase) == set(analysis.PHASE_MONTHS)
 
+
+def test_same_month_detrending_removes_monthly_linear_signal() -> None:
+    frame = analysis.synthetic_monthly_signal(1982, 2024)
+    anomaly = analysis.same_month_linear_anomaly(frame, "value", (1982, 2014))
+    assert np.allclose(anomaly, 0.0, atol=1e-10)
+
+
+def test_cosine_box_mean_weights_latitude() -> None:
+    field = xr.DataArray(
+        [[0.0], [10.0]],
+        dims=("lat", "lon"),
+        coords={"lat": [0.0, 60.0], "lon": [220.0]},
+    )
+    assert float(analysis.cosine_box_mean(field, 0, 60, 220, 220)) == pytest.approx(
+        10.0 / 3.0
+    )
+
+
+def test_event_wind_table_has_complete_primary_predictors() -> None:
+    table = analysis.build_event_wind_table(analysis.discover_input_root())
+    assert len(table) == 13 * 5
+    assert set(table.event_year) == set(analysis.EVENTS)
+    assert set(table.window) == set(analysis.WIND_WINDOWS)
+    primary = [
+        column
+        for column in table
+        if column.endswith(("_u10_anom_ms", "_wind_speed_anom_ms", "_tau_x_anom_nm2"))
+    ]
+    assert primary
+    assert table[primary].notna().all().all()
+    assert table["jiang_ne925_mjj_ms"].notna().all()
