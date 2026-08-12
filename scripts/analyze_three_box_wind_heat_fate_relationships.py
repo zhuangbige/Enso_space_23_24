@@ -24,7 +24,7 @@ from scipy import stats
 ROOT = Path(__file__).resolve().parents[1]
 os.environ.setdefault(
     "MPLCONFIGDIR",
-    str(ROOT / "outputs/research_2026/mplconfig"),
+    str(ROOT / ".matplotlib-cache"),
 )
 import matplotlib
 
