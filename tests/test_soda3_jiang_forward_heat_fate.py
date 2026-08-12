@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from types import SimpleNamespace
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -315,3 +316,92 @@ def test_surface_clipping_uses_shallowest_velocity_grid_depth() -> None:
     assert bool(result.loc[0, "active"])
     assert result.loc[0, "depth_m"] == pytest.approx(10.0)
     assert result.loc[0, "surface_clip_steps"] > 0
+
+
+def test_load_eulerian_directional_losses_uses_standardized_fate_table(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    derived = tmp_path / "data/derived/research_2026"
+    derived.mkdir(parents=True)
+    pd.DataFrame(
+        {
+            "event_year": [2015, 2015],
+            "box": ["east", "east"],
+            "phase": ["redistribution_Jul_Dec", "decay_Jan_May_next"],
+            "west_face_loss_zj": [-1.0, 3.0],
+            "northward_loss_zj": [2.0, 1.0],
+            "southward_loss_zj": [1.0, 1.0],
+            "east_face_loss_zj": [0.5, 0.5],
+        }
+    ).to_csv(derived / "three_box_wind_heat_fate_events.csv", index=False)
+    monkeypatch.setattr(fate, "ROOT", tmp_path)
+    monkeypatch.setattr(fate, "discover_source_root", lambda: tmp_path)
+
+    result = fate.load_eulerian_directional_losses([2015]).iloc[0]
+
+    assert result["west"] == pytest.approx(2.0)
+    assert result["north"] == pytest.approx(3.0)
+    assert result["south"] == pytest.approx(2.0)
+    assert result["east"] == pytest.approx(1.0)
+
+
+def test_products_write_figures_report_and_audit(tmp_path: Path) -> None:
+    destinations = ["returned_west_140w", "north_of_5n", "south_of_5s", "retained_east"]
+    endpoint_rows = []
+    trajectory_rows = []
+    particle = 0
+    for event in (2015, 2023):
+        for index, destination in enumerate(destinations):
+            endpoint_rows.append(
+                {
+                    "event": event,
+                    "particle_id": particle,
+                    "release_date": pd.Timestamp(event, 3, 15),
+                    "release_lon": 220.0,
+                    "release_lat": -3.0 + 2.0 * index,
+                    "release_depth_m": 50.0,
+                    "release_temp_anomaly_c": 1.0,
+                    "heat_weight_zj": 1.0 + index,
+                    "destination": destination,
+                    "lon": 218.0 + 12.0 * index,
+                    "lat": -6.0 + 4.0 * index,
+                    "depth_m": 60.0,
+                    "endpoint_temp_anomaly_c": 0.2 if destination == "retained_east" else np.nan,
+                    "surface_clip_steps": 0,
+                }
+            )
+            for step, date in enumerate(
+                [pd.Timestamp(event, 3, 15), pd.Timestamp(event + 1, 5, 15)]
+            ):
+                trajectory_rows.append(
+                    {
+                        "event": event,
+                        "particle_id": particle,
+                        "date": date,
+                        "lon": 220.0 + step * (index + 1) * 3.0,
+                        "lat": -3.0 + 2.0 * index + step,
+                    }
+                )
+            particle += 1
+    endpoints = pd.DataFrame(endpoint_rows)
+    trajectories = pd.DataFrame(trajectory_rows)
+    summary = pd.DataFrame(
+        [fate.summarize_endpoints(group) for _, group in endpoints.groupby("event")]
+    )
+    eulerian = pd.DataFrame(
+        {
+            "event_year": [2015, 2023],
+            "west": [4.0, 5.0],
+            "north": [3.0, 2.0],
+            "south": [2.0, 4.0],
+            "east": [1.0, 1.0],
+        }
+    )
+    outputs = fate.write_products(endpoints, trajectories, summary, eulerian, tmp_path)
+    assert outputs.destination_png.stat().st_size > 20_000
+    assert outputs.comparison_png.stat().st_size > 20_000
+    report = outputs.report_md.read_text(encoding="utf-8")
+    assert "拉格朗日" in report
+    assert "不是完整复现" in report
+    assert "三箱" in report

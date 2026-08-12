@@ -27,6 +27,12 @@ from scipy.interpolate import RegularGridInterpolator
 
 ROOT = Path(__file__).resolve().parents[1]
 os.environ.setdefault("MPLCONFIGDIR", str(ROOT / ".matplotlib-cache"))
+import matplotlib
+
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import cartopy.crs as ccrs
+import cartopy.feature as cfeature
 DERIVED_DIR = ROOT / "data/derived/research_2026"
 INTERIM_DIR = ROOT / "data/interim/research_2026/soda3_jiang_forward_heat_fate"
 OUTPUT_DIR = ROOT / "outputs/research_2026/soda3_jiang_forward_heat_fate"
@@ -67,6 +73,15 @@ class TemperatureExpectedField:
     month: int
     baseline_start_year: int
     baseline_end_year: int
+
+
+@dataclass(frozen=True)
+class ProductOutputs:
+    destination_png: Path
+    destination_pdf: Path
+    comparison_png: Path
+    comparison_pdf: Path
+    report_md: Path
 
 
 def discover_source_root() -> Path:
@@ -1107,6 +1122,398 @@ def write_calculation_tables(
     )
 
 
+def load_eulerian_directional_losses(years: list[int]) -> pd.DataFrame:
+    source_root = discover_source_root()
+    relative_path = Path(
+        "data/derived/research_2026/three_box_wind_heat_fate_events.csv"
+    )
+    standardized_path = ROOT / relative_path
+    if not standardized_path.exists():
+        standardized_path = source_root / relative_path
+    heat = pd.read_csv(standardized_path)
+    rows = []
+    for event in years:
+        selected = heat.loc[
+            heat.event_year.eq(event)
+            & heat.box.eq("east")
+            & heat.phase.isin(["redistribution_Jul_Dec", "decay_Jan_May_next"])
+        ]
+        if len(selected) != 2:
+            raise ValueError(f"Missing post-arrival east-box Eulerian phases for {event}")
+        rows.append(
+            {
+                "event_year": int(event),
+                "west": max(0.0, float(selected["west_face_loss_zj"].sum())),
+                "north": max(0.0, float(selected["northward_loss_zj"].sum())),
+                "south": max(0.0, float(selected["southward_loss_zj"].sum())),
+                "east": max(0.0, float(selected["east_face_loss_zj"].sum())),
+            }
+        )
+    return pd.DataFrame(rows)
+
+
+def _setup_plot_style() -> None:
+    plt.rcParams.update(
+        {
+            "figure.dpi": 180,
+            "savefig.dpi": 340,
+            "font.family": "DejaVu Sans",
+            "font.size": 10.0,
+            "axes.labelsize": 10.5,
+            "axes.edgecolor": "#253746",
+            "axes.labelcolor": "#102A3A",
+            "xtick.color": "#253746",
+            "ytick.color": "#253746",
+            "text.color": "#102A3A",
+            "pdf.fonttype": 42,
+        }
+    )
+
+
+def _save_figure(figure: plt.Figure, output_dir: Path, stem: str) -> tuple[Path, Path]:
+    output_dir.mkdir(parents=True, exist_ok=True)
+    png = output_dir / f"{stem}.png"
+    pdf = output_dir / f"{stem}.pdf"
+    figure.savefig(png, dpi=340, bbox_inches="tight", facecolor="white")
+    figure.savefig(pdf, bbox_inches="tight", facecolor="white")
+    plt.close(figure)
+    return png, pdf
+
+
+def _panel_label(axis: plt.Axes, label: str) -> None:
+    axis.text(
+        0.015,
+        0.975,
+        f"({label})",
+        transform=axis.transAxes,
+        ha="left",
+        va="top",
+        fontsize=11,
+        fontweight="bold",
+        zorder=10,
+    )
+
+
+def make_destination_figure(
+    endpoints: pd.DataFrame,
+    trajectories: pd.DataFrame,
+    summary: pd.DataFrame,
+    output_dir: Path,
+) -> tuple[Path, Path]:
+    _setup_plot_style()
+    events = sorted(int(value) for value in endpoints.event.unique())
+    projection = ccrs.PlateCarree(central_longitude=180.0)
+    figure = plt.figure(figsize=(13.6, 7.6), constrained_layout=True)
+    grid = figure.add_gridspec(2, len(events), height_ratios=(1.15, 1.0))
+    event_colors = {2015: "#D97706", 2023: "#0F8F83"}
+    destination_colors = {
+        "returned_west_140w": "#6A51A3",
+        "north_of_5n": "#2C7FB8",
+        "south_of_5s": "#D95F0E",
+        "below_300m": "#636363",
+        "east_of_80w": "#41AB5D",
+        "retained_east": "#F2C14E",
+        "unresolved_land_or_grid": "#BDBDBD",
+        "invalid_velocity": "#525252",
+    }
+    for column, event in enumerate(events):
+        axis = figure.add_subplot(grid[0, column], projection=projection)
+        axis.set_extent([216.0, 282.0, -15.0, 15.0], crs=ccrs.PlateCarree())
+        axis.add_feature(cfeature.LAND.with_scale("50m"), facecolor="#E8E4DC", zorder=4)
+        axis.coastlines(resolution="50m", color="#4D5D66", linewidth=0.7, zorder=5)
+        gridlines = axis.gridlines(
+            crs=ccrs.PlateCarree(),
+            draw_labels=True,
+            linewidth=0.55,
+            color="#AAB7C0",
+            alpha=0.65,
+            linestyle="--",
+        )
+        gridlines.top_labels = False
+        gridlines.right_labels = False
+        if column > 0:
+            gridlines.left_labels = False
+        event_endpoints = endpoints.loc[endpoints.event.eq(event)].sort_values(
+            "heat_weight_zj", ascending=False
+        )
+        chosen_particles = event_endpoints.head(120).particle_id.to_numpy(int)
+        event_tracks = trajectories.loc[
+            trajectories.event.eq(event) & trajectories.particle_id.isin(chosen_particles)
+        ]
+        for _, track in event_tracks.groupby("particle_id"):
+            track = track.sort_values("date")
+            axis.plot(
+                track.lon,
+                track.lat,
+                color=event_colors.get(event, "#617784"),
+                linewidth=0.55,
+                alpha=0.20,
+                transform=ccrs.PlateCarree(),
+                zorder=2,
+            )
+        for destination, color in destination_colors.items():
+            selected = event_endpoints.loc[event_endpoints.destination.eq(destination)]
+            if selected.empty:
+                continue
+            relative = selected.heat_weight_zj / event_endpoints.heat_weight_zj.max()
+            axis.scatter(
+                selected.lon,
+                selected.lat,
+                s=8.0 + 35.0 * np.sqrt(relative),
+                color=color,
+                edgecolor="white",
+                linewidth=0.35,
+                alpha=0.72,
+                transform=ccrs.PlateCarree(),
+                zorder=6,
+            )
+        axis.plot(
+            [GATE_LONGITUDE, GATE_LONGITUDE],
+            [SOUTH_EXIT_LATITUDE, NORTH_EXIT_LATITUDE],
+            color="#102A3A",
+            linewidth=1.2,
+            transform=ccrs.PlateCarree(),
+            zorder=7,
+        )
+        for boundary_latitude in (SOUTH_EXIT_LATITUDE, NORTH_EXIT_LATITUDE):
+            axis.plot(
+                [GATE_LONGITUDE, EAST_EXIT_LONGITUDE],
+                [boundary_latitude, boundary_latitude],
+                color="#617784",
+                linewidth=0.75,
+                linestyle="--",
+                transform=ccrs.PlateCarree(),
+                zorder=3,
+            )
+        axis.text(
+            GATE_LONGITUDE + 1.0,
+            11.5,
+            "Release: 140°W",
+            transform=ccrs.PlateCarree(),
+            fontsize=8.5,
+            va="center",
+        )
+        axis.text(
+            0.98,
+            0.95,
+            str(event),
+            transform=axis.transAxes,
+            ha="right",
+            va="top",
+            fontsize=13,
+            fontweight="bold",
+            zorder=10,
+        )
+        _panel_label(axis, chr(ord("a") + column))
+
+    bar_axis = figure.add_subplot(grid[1, :])
+    plot_destinations = [
+        "returned_west_140w",
+        "north_of_5n",
+        "south_of_5s",
+        "below_300m",
+        "east_of_80w",
+        "retained_east",
+        "unresolved_land_or_grid",
+    ]
+    labels = [
+        "Returned west",
+        "North of 5°N",
+        "South of 5°S",
+        "Below 300 m",
+        "East boundary",
+        "Retained east",
+        "Land/grid unresolved",
+    ]
+    x = np.arange(len(events), dtype=float)
+    bottoms = np.zeros(len(events), dtype=float)
+    indexed = summary.set_index("event")
+    for destination, label in zip(plot_destinations, labels, strict=True):
+        values = np.asarray(
+            [indexed.loc[event, f"heat_fraction_{destination}"] for event in events]
+        )
+        bar_axis.bar(
+            x,
+            100.0 * values,
+            bottom=100.0 * bottoms,
+            width=0.55,
+            color=destination_colors[destination],
+            edgecolor="white",
+            linewidth=0.7,
+            label=label,
+        )
+        bottoms += values
+    bar_axis.set_xticks(x, [str(event) for event in events])
+    bar_axis.set_ylabel("Fraction of 140°W positive-T′ heat weight (%)")
+    bar_axis.set_ylim(0.0, 100.0)
+    bar_axis.grid(axis="y", color="#D6DEE4", linewidth=0.7)
+    bar_axis.spines[["top", "right"]].set_visible(False)
+    bar_axis.legend(frameon=False, ncol=4, loc="upper center", bbox_to_anchor=(0.5, -0.18))
+    _panel_label(bar_axis, chr(ord("a") + len(events)))
+    return _save_figure(figure, output_dir, "soda3_jiang_forward_destinations")
+
+
+def make_comparison_figure(
+    summary: pd.DataFrame,
+    eulerian: pd.DataFrame,
+    output_dir: Path,
+) -> tuple[Path, Path]:
+    _setup_plot_style()
+    events = sorted(int(value) for value in summary.event.unique())
+    directions = ["west", "north", "south", "east"]
+    labels = ["West", "North", "South", "East"]
+    lagrangian_columns = {
+        "west": "resolved_fraction_returned_west_140w",
+        "north": "resolved_fraction_north_of_5n",
+        "south": "resolved_fraction_south_of_5s",
+        "east": "resolved_fraction_east_of_80w",
+    }
+    figure, axes = plt.subplots(1, len(events), figsize=(12.4, 4.8), constrained_layout=True)
+    axes = np.atleast_1d(axes)
+    lagrangian = summary.set_index("event")
+    eu = eulerian.set_index("event_year")
+    for panel_index, (axis, event) in enumerate(zip(axes, events, strict=True)):
+        x = np.arange(len(directions), dtype=float)
+        lagrangian_values = np.asarray(
+            [lagrangian.loc[event, lagrangian_columns[item]] for item in directions]
+        )
+        lagrangian_values = (
+            lagrangian_values / lagrangian_values.sum()
+            if lagrangian_values.sum() > 0.0
+            else np.full(len(directions), np.nan)
+        )
+        eulerian_values = np.asarray([max(0.0, eu.loc[event, item]) for item in directions])
+        eulerian_values = (
+            eulerian_values / eulerian_values.sum()
+            if eulerian_values.sum() > 0.0
+            else np.full(len(directions), np.nan)
+        )
+        axis.bar(
+            x - 0.18,
+            100.0 * lagrangian_values,
+            width=0.36,
+            color="#2F6FA5",
+            label="Lagrangian first exit",
+        )
+        axis.bar(
+            x + 0.18,
+            100.0 * eulerian_values,
+            width=0.36,
+            color="#D8A13B",
+            label="Eulerian outward faces",
+        )
+        axis.set_xticks(x, labels)
+        maximum_fraction = float(
+            np.nanmax(np.concatenate([lagrangian_values, eulerian_values]))
+        )
+        axis.set_ylim(0.0, max(70.0, 110.0 * maximum_fraction))
+        axis.set_ylabel("Lateral-exit share (%)" if panel_index == 0 else "")
+        axis.grid(axis="y", color="#D6DEE4", linewidth=0.7)
+        axis.spines[["top", "right"]].set_visible(False)
+        axis.text(
+            0.98,
+            0.96,
+            str(event),
+            transform=axis.transAxes,
+            ha="right",
+            va="top",
+            fontsize=13,
+            fontweight="bold",
+        )
+        _panel_label(axis, chr(ord("a") + panel_index))
+    handles, legend_labels = axes[0].get_legend_handles_labels()
+    figure.legend(
+        handles,
+        legend_labels,
+        frameon=False,
+        ncol=2,
+        loc="lower center",
+        bbox_to_anchor=(0.5, -0.055),
+    )
+    return _save_figure(figure, output_dir, "soda3_lagrangian_eulerian_direction_check")
+
+
+def _percent(row: pd.Series, column: str) -> float:
+    return 100.0 * float(row[column])
+
+
+def write_report(
+    summary: pd.DataFrame,
+    eulerian: pd.DataFrame,
+    output_dir: Path,
+) -> Path:
+    indexed = summary.set_index("event")
+    first = indexed.loc[2015]
+    second = indexed.loc[2023]
+    lateral_columns = [
+        "resolved_fraction_returned_west_140w",
+        "resolved_fraction_north_of_5n",
+        "resolved_fraction_south_of_5s",
+        "resolved_fraction_east_of_80w",
+    ]
+    lagrangian_lateral = {}
+    for event, row in indexed.iterrows():
+        values = row[lateral_columns].to_numpy(float)
+        lagrangian_lateral[int(event)] = 100.0 * values / values.sum()
+    eulerian_lateral = {}
+    for _, row in eulerian.iterrows():
+        values = row[["west", "north", "south", "east"]].to_numpy(float)
+        eulerian_lateral[int(row.event_year)] = 100.0 * values / values.sum()
+    report = f"""# Jiang式正向暖水去向试验：2015与2023
+
+## 方法定位
+
+本试验采用与Wenrui Jiang等人相同的核心逻辑：先标记异常暖水，再沿三维流场追踪同一批数值粒子，并把建立期和衰减期分开。但这不是完整复现Jiang的过程预算。当前SODA3资料没有提供与其ECCO4试验完全对应的模式原生扩散、混合和外部加热倾向，因此这里只计算拉格朗日连通性、首个几何出口和次年5月温度异常；三箱欧拉预算继续承担热量收支闭合。
+
+粒子在发展年1—6月的140°W断面释放，必须同时满足向东流和正温度异常。释放权重为 `ρ₀cₚu⁺T′⁺ΔAΔt`。轨迹采用SODA3月平均三维流场正向积分至次年5月；5°N、5°S、140°W、80°W和最深0—300 m网格中心为首个出口。海岸或陆地掩膜造成的不可解析路径始终保留在总分母中。
+
+## 主要结果
+
+以全部初始正异常热权重为分母，2015和2023可解析的比例分别为{_percent(first, 'resolved_heat_fraction'):.1f}%和{_percent(second, 'resolved_heat_fraction'):.1f}%；海岸/陆地掩膜不可解析比例分别为{_percent(first, 'heat_fraction_unresolved_land_or_grid'):.1f}%和{_percent(second, 'heat_fraction_unresolved_land_or_grid'):.1f}%。两次事件的不可解析比例相近，因而可以比较已解析路径，但不能把它们当成100%闭合的水团命运。
+
+在已解析路径中，2015向南越过5°S占{_percent(first, 'resolved_fraction_south_of_5s'):.1f}%，2023升至{_percent(second, 'resolved_fraction_south_of_5s'):.1f}%；向西返回分别为{_percent(first, 'resolved_fraction_returned_west_140w'):.1f}%和{_percent(second, 'resolved_fraction_returned_west_140w'):.1f}%；向北越过5°N分别为{_percent(first, 'resolved_fraction_north_of_5n'):.1f}%和{_percent(second, 'resolved_fraction_north_of_5n'):.1f}%。因此2023的主要差异不是更强北向去向，而是更强的南向逸出与一定程度的向西返回，同时东向到达80°W边界的比例由2015的{_percent(first, 'resolved_fraction_east_of_80w'):.1f}%降至2023的{_percent(second, 'resolved_fraction_east_of_80w'):.1f}%。
+
+次年5月仍留在东部的已解析比例，2015为{_percent(first, 'resolved_fraction_retained_east'):.1f}%，2023为{_percent(second, 'resolved_fraction_retained_east'):.1f}%。这部分粒子的加权温度异常分别为{float(first.retained_weighted_endpoint_temp_anomaly_c):+.2f}°C和{float(second.retained_weighted_endpoint_temp_anomaly_c):+.2f}°C，表明到次年5月原有暖异常整体已接近消失；2023甚至转为相对偏冷。
+
+## 与三箱预算的关系
+
+拉格朗日释放热权重在2015和2023分别为{float(first.gate_positive_anomaly_heat_zj):.2f}和{float(second.gate_positive_anomaly_heat_zj):.2f} ZJ，但不能与三箱预算中的140°W净异常焓输入直接等同。前者只计算 `u>0` 且 `T′>0` 的暖水样本权重，后者还包括平均温度上的流速异常、反向流和质量闭合修正。这里应比较的是归一化方向结构，不是两套数值的绝对相等。
+
+三箱预算回答固定区域通过各边界和海表失去多少异常热量；拉格朗日试验回答被标记暖水最先越过哪个几何边界。二者若方向一致，可加强路径解释；若不一致，则意味着固定箱体热量变化包含其他水团、海表交换或混合过程。
+
+只在西、北、南、东四个水平出口内归一化后，拉格朗日结果的南向份额从2015的{lagrangian_lateral[2015][2]:.1f}%升至2023的{lagrangian_lateral[2023][2]:.1f}%。欧拉东箱净侧向损失却显示，2015以北侧输出为主（{eulerian_lateral[2015][1]:.1f}%），2023则由西侧返回、北侧和南侧共同承担（分别为{eulerian_lateral[2023][0]:.1f}%、{eulerian_lateral[2023][1]:.1f}%和{eulerian_lateral[2023][2]:.1f}%）。这种不一致不是计算矛盾，而是说明“标记暖水的首出口”和“固定东箱全部水团的净边界热输送”并非同一个量。因此，Jiang式轨迹更适合回答暖水去向，三箱预算更适合回答区域热量收支；二者应并列而不能互相替代。
+
+## 当前结论边界
+
+这套结果适合把第二问更新为“2015和2023进入东太平洋的暖水具有不同路径分配”。目前月平均流场会平滑五日尺度脉冲和涡旋，海岸/陆地掩膜仍占约三成权重，因此不应把具体百分比写成最终论文定量值。下一步应对140°W输入峰值和分流转折期使用原生五日场加密，并在能取得模式原生倾向时补充沿轨迹扩散和外部加热分解。
+"""
+    output_dir.mkdir(parents=True, exist_ok=True)
+    path = output_dir / "SODA3_JIANG_FORWARD_HEAT_FATE_CN.md"
+    path.write_text(report, encoding="utf-8")
+    return path
+
+
+def write_products(
+    endpoints: pd.DataFrame,
+    trajectories: pd.DataFrame,
+    summary: pd.DataFrame,
+    eulerian: pd.DataFrame,
+    output_dir: Path,
+) -> ProductOutputs:
+    destination_png, destination_pdf = make_destination_figure(
+        endpoints, trajectories, summary, output_dir
+    )
+    comparison_png, comparison_pdf = make_comparison_figure(summary, eulerian, output_dir)
+    report_md = write_report(summary, eulerian, output_dir)
+    return ProductOutputs(
+        destination_png=destination_png,
+        destination_pdf=destination_pdf,
+        comparison_png=comparison_png,
+        comparison_pdf=comparison_pdf,
+        report_md=report_md,
+    )
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--years", nargs="+", type=int, default=[2015, 2023])
@@ -1131,8 +1538,18 @@ def main() -> int:
         temporal_resolution=args.temporal_resolution,
     )
     write_calculation_tables(endpoints, trajectories, summary, audit)
+    eulerian = load_eulerian_directional_losses(args.years)
+    products = write_products(endpoints, trajectories, summary, eulerian, OUTPUT_DIR)
     print(summary.to_string(index=False), flush=True)
     for path in (ENDPOINT_CSV, TRAJECTORY_CSV, SUMMARY_CSV, AUDIT_JSON):
+        print(path, flush=True)
+    for path in (
+        products.destination_png,
+        products.destination_pdf,
+        products.comparison_png,
+        products.comparison_pdf,
+        products.report_md,
+    ):
         print(path, flush=True)
     return 0
 
