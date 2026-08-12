@@ -12,8 +12,13 @@ from __future__ import annotations
 import argparse
 import json
 import os
+from dataclasses import dataclass
 from pathlib import Path
 
+import matplotlib
+
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import xarray as xr
@@ -41,6 +46,10 @@ DERIVED_DIR = Path("data/derived/research_2026")
 MONTHLY_CSV_NAME = "enso_2015_2023_coupling_exchange_monthly.csv"
 SEASONAL_CSV_NAME = "enso_2015_2023_coupling_exchange_seasonal.csv"
 AUDIT_JSON_NAME = "enso_2015_2023_coupling_exchange_audit.json"
+FIGURE_DIR = Path("outputs/research_2026/enso_2015_2023_coupling_exchange")
+FIGURE_STEM = "enso_2015_2023_coupling_exchange"
+REPORT_NAME = "ENSO_2015_2023_COUPLING_EXCHANGE_CN.md"
+EVENT_COLORS = {2015: "#D97706", 2023: "#0F8F83"}
 
 MONTHLY_OUTPUT_COLUMNS = (
     "date",
@@ -61,6 +70,16 @@ MONTHLY_OUTPUT_COLUMNS = (
     "tau_cwp_anom_nm2",
 )
 SEASONAL_METRICS = tuple(column for column in MONTHLY_OUTPUT_COLUMNS if column not in {"date", "year", "month"})
+
+
+@dataclass(frozen=True)
+class PipelineOutputs:
+    monthly_csv: Path
+    seasonal_csv: Path
+    audit_json: Path
+    png: Path
+    pdf: Path
+    report: Path
 
 
 def same_month_linear_anomaly(
@@ -357,6 +376,236 @@ def write_tables(output_root: Path | None = None, input_root: Path | None = None
     return monthly_path, seasonal_path, audit_path
 
 
+def _style_axis(axis: plt.Axes, panel: str, *, zero_line: bool = True) -> None:
+    axis.text(
+        0.01,
+        0.98,
+        f"({panel})",
+        transform=axis.transAxes,
+        ha="left",
+        va="top",
+        fontsize=11,
+        fontweight="bold",
+    )
+    axis.spines[["top", "right"]].set_visible(False)
+    axis.grid(axis="y", color="#D8E0E6", linewidth=0.7, alpha=0.75)
+    axis.tick_params(labelsize=9, length=3.5, width=0.8)
+    if zero_line:
+        axis.axhline(0.0, color="#52616B", linewidth=0.8, zorder=0)
+
+
+def _plot_monthly_pair(
+    axis: plt.Axes,
+    monthly: pd.DataFrame,
+    column: str,
+    ylabel: str,
+    panel: str,
+    *,
+    zero_line: bool = True,
+    legend: bool = False,
+) -> None:
+    axis.axvspan(4.5, 7.5, color="#DCE9F2", alpha=0.55, linewidth=0, zorder=0)
+    for year in EVENT_YEARS:
+        selected = monthly.loc[monthly.year.eq(year)].sort_values("month")
+        axis.plot(
+            selected.month,
+            selected[column],
+            color=EVENT_COLORS[year],
+            marker="o",
+            markersize=4.2,
+            markeredgecolor="white",
+            markeredgewidth=0.6,
+            linewidth=2.15,
+            label=str(year),
+            zorder=3,
+        )
+    axis.set_xlim(0.7, 12.3)
+    axis.set_xticks(range(1, 13))
+    axis.set_xticklabels(["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"])
+    axis.set_ylabel(ylabel, fontsize=10)
+    _style_axis(axis, panel, zero_line=zero_line)
+    if legend:
+        axis.legend(
+            loc="best",
+            frameon=False,
+            fontsize=9,
+            handlelength=2.0,
+            ncol=2,
+            columnspacing=1.2,
+        )
+
+
+def make_figure(monthly: pd.DataFrame, output_dir: Path) -> tuple[Path, Path]:
+    """Render the paired evidence chain without a figure-level title."""
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+    plt.rcParams.update(
+        {
+            "font.family": "DejaVu Sans",
+            "axes.edgecolor": "#263746",
+            "axes.labelcolor": "#102A3A",
+            "xtick.color": "#263746",
+            "ytick.color": "#263746",
+            "text.color": "#102A3A",
+            "pdf.fonttype": 42,
+            "ps.fonttype": 42,
+        }
+    )
+    figure, axes = plt.subplots(3, 3, figsize=(15.2, 10.8), constrained_layout=True)
+    axes = axes.ravel()
+
+    arrival = audited_arrival_table().set_index("year")
+    x = np.arange(2)
+    width = 0.34
+    for index, year in enumerate(EVENT_YEARS):
+        values = [arrival.loc[year, "transport_140w_zj"], arrival.loc[year, "east_ohc_gain_zj"]]
+        bars = axes[0].bar(
+            x + (index - 0.5) * width,
+            values,
+            width=width,
+            color=EVENT_COLORS[year],
+            edgecolor="white",
+            linewidth=0.7,
+            label=str(year),
+            zorder=3,
+        )
+        axes[0].bar_label(bars, fmt="%.2f", padding=3, fontsize=8.5, color="#263746")
+    axes[0].set_xticks(x)
+    axes[0].set_xticklabels(["140°W input", "East-box OHC gain"])
+    axes[0].set_ylabel("Jan–Jun heat content (ZJ)", fontsize=10)
+    axes[0].set_ylim(0, 12.8)
+    axes[0].legend(frameon=False, fontsize=9, ncol=2, loc="upper left", bbox_to_anchor=(0.12, 1.0))
+    _style_axis(axes[0], "a", zero_line=False)
+
+    specifications = [
+        ("sst_east_raw_c", "Eastern SST (°C)", "b", False, True),
+        ("sst_east_anom_c", "Eastern SST anomaly (°C)", "c", True, False),
+        ("latent_loss_anom_wm2", "Upward latent heat flux\nanomaly (W m⁻²)", "d", True, False),
+        ("sensible_loss_anom_wm2", "Upward sensible heat flux\nanomaly (W m⁻²)", "e", True, False),
+        ("net_ocean_loss_anom_wm2", "Net ocean heat-loss\nanomaly (W m⁻²)", "f", True, False),
+        ("minus_olr_cp_wm2", "Central −OLR (W m⁻²)", "g", True, False),
+        ("precip_central_anom_mmday", "Central precipitation\nanomaly (mm day⁻¹)", "h", True, False),
+        ("tau_cwp_anom_nm2", "Central-western eastward stress\nanomaly (N m⁻²)", "i", True, False),
+    ]
+    for axis, (column, ylabel, panel, zero_line, legend) in zip(axes[1:], specifications):
+        _plot_monthly_pair(
+            axis,
+            monthly,
+            column,
+            ylabel,
+            panel,
+            zero_line=zero_line,
+            legend=legend,
+        )
+
+    png_path = output_dir / f"{FIGURE_STEM}.png"
+    pdf_path = output_dir / f"{FIGURE_STEM}.pdf"
+    figure.savefig(png_path, dpi=340, bbox_inches="tight", facecolor="white")
+    figure.savefig(pdf_path, bbox_inches="tight", facecolor="white")
+    plt.close(figure)
+    return png_path, pdf_path
+
+
+def _seasonal_markdown_table(seasonal: pd.DataFrame) -> str:
+    columns = [
+        ("sst_east_raw_c", "SST (°C)"),
+        ("sst_east_anom_c", "SST′ (°C)"),
+        ("latent_loss_anom_wm2", "潜热损失′ (W m⁻²)"),
+        ("net_ocean_loss_anom_wm2", "净散热′ (W m⁻²)"),
+        ("minus_olr_cp_wm2", "−OLR (W m⁻²)"),
+        ("precip_central_anom_mmday", "降水′ (mm d⁻¹)"),
+        ("tau_cwp_anom_nm2", "东向应力′ (N m⁻²)"),
+    ]
+    lines = [
+        "| 季节 | 事件 | " + " | ".join(label for _, label in columns) + " |",
+        "|---|---:" + "|---:" * len(columns) + "|",
+    ]
+    selected = seasonal.loc[seasonal.event.isin(["2015", "2023"])]
+    for row in selected.itertuples(index=False):
+        values = []
+        for key, _ in columns:
+            value = float(getattr(row, key))
+            digits = 3 if key == "tau_cwp_anom_nm2" else 2
+            values.append(f"{value:.{digits}f}")
+        lines.append(f"| {row.season} | {row.event} | " + " | ".join(values) + " |")
+    return "\n".join(lines)
+
+
+def write_report(monthly: pd.DataFrame, seasonal: pd.DataFrame, output_dir: Path) -> Path:
+    """Write a concise Chinese interpretation anchored to audited values."""
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+    mjj = seasonal.loc[
+        seasonal.season.eq("MJJ") & seasonal.event.isin(["2015", "2023"])
+    ].set_index("event")
+    report = f"""# 2015与2023年厄尔尼诺发展期海气耦合对比
+
+## 比较目的
+
+2015和2023年1—6月均有大量异常暖量到达东赤道太平洋。140°W累计输入分别为8.49和9.90 ZJ，东箱海洋热含量增量分别为8.60和11.12 ZJ。因此，两次事件的差异不能简单归结为2023年暖量没有到达。本比较检验的是：在相近的暖量到达和东部海温背景下，2015年是否建立了更有效的海洋向大气能量释放—深对流—西风异常协同变化。
+
+## 数据与计算
+
+海表温度采用OISST，地表热通量和纬向风应力采用ERA5，降水采用GPCP，OLR采用CPC月资料。除CPC OLR沿用资料自带异常外，其余异常均相对于1982—2014年逐月线性气候期望计算。ERA5热通量由向下为正统一转换为向上为正，因此正值表示海洋向大气散热增强。东部海洋热收支箱为10°S—5°N、140°W—80°W；东部SST箱为5°S—5°N、140°W—110°W；中太平洋对流和降水箱为5°S—5°N、180°—140°W；中西太平洋风应力箱为5°S—5°N、160°E—140°W。
+
+下表的MAM、MJJ、JJA和SON为重叠的三个月窗口，用于识别两次事件何时开始分化，而不是四个相互独立的样本。
+
+{_seasonal_markdown_table(seasonal)}
+
+## 结果
+
+两次事件在东部海温达到相近水平时，大气响应强度已经明显不同。MJJ东部绝对SST在2015年和2023年分别为{mjj.loc['2015', 'sst_east_raw_c']:.2f}和{mjj.loc['2023', 'sst_east_raw_c']:.2f} °C，SST异常分别为{mjj.loc['2015', 'sst_east_anom_c']:.2f}和{mjj.loc['2023', 'sst_east_anom_c']:.2f} °C。也就是说，MJJ期间2023年并不缺少维持海气相互作用所需的东部暖海温背景。
+
+真正突出的差异出现在海气交换及其大气响应。MJJ向上潜热通量异常在2015年为{mjj.loc['2015', 'latent_loss_anom_wm2']:.2f} W m⁻²，在2023年仅为{mjj.loc['2023', 'latent_loss_anom_wm2']:.2f} W m⁻²；同期净海洋散热异常分别为{mjj.loc['2015', 'net_ocean_loss_anom_wm2']:.2f}和{mjj.loc['2023', 'net_ocean_loss_anom_wm2']:.2f} W m⁻²。差异主要由潜热通量贡献，表明2015年暖海面向大气提供水汽和能量的交换更强，而2023年的东部暖海温没有转化为同等强度的表面能量释放。
+
+与热通量差异一致，2015年MJJ中太平洋−OLR和降水异常分别为{mjj.loc['2015', 'minus_olr_cp_wm2']:.2f} W m⁻²和{mjj.loc['2015', 'precip_central_anom_mmday']:.2f} mm d⁻¹，明显强于2023年的{mjj.loc['2023', 'minus_olr_cp_wm2']:.2f} W m⁻²和{mjj.loc['2023', 'precip_central_anom_mmday']:.2f} mm d⁻¹。中西太平洋东向风应力异常也由2015年的{mjj.loc['2015', 'tau_cwp_anom_nm2']:.3f} N m⁻²降至2023年的{mjj.loc['2023', 'tau_cwp_anom_nm2']:.3f} N m⁻²。分化在MAM已经出现，并在MJJ—JJA保持：2015年呈现较完整的散热增强、对流增强、降水增强和西风应力增强的协同演变，2023年则明显较弱。
+
+## 判断边界
+
+这些结果支持“2015年建立了更有效的海气耦合，而2023年暖量到达后未产生同等强度的大气响应”这一判断。海表散热可以理解为海洋向大气输送显热和潜热，其中潜热通过增加水汽并在凝结时释放能量，有利于深对流和环流响应；但不能把净散热直接等同于局地空气温度升高。
+
+月尺度共演变不能据此证明“散热增强单向造成西风异常”。西风本身也会改变蒸发和潜热通量，对流、风和热通量属于相互反馈的耦合系统。因此，当前最稳妥的结论是：在近似的东部海温和暖量到达条件下，2015年的海气交换—对流—西风响应更协调、更强，2023年的耦合效率较低；中间触发机制仍需通过滞后关系、垂直结构或模式试验进一步检验。
+"""
+    path = output_dir / REPORT_NAME
+    path.write_text(report, encoding="utf-8")
+    return path
+
+
+def run_pipeline(
+    output_dir: Path | None = None,
+    input_root: Path | None = None,
+    output_root: Path | None = None,
+) -> PipelineOutputs:
+    """Run calculations once and write tables, audit, figure, and report."""
+
+    data_root = discover_input_root() if input_root is None else Path(input_root)
+    root = ROOT if output_root is None else Path(output_root)
+    target = root / FIGURE_DIR if output_dir is None else Path(output_dir)
+    monthly = build_monthly_table(input_root=data_root)
+    seasonal = build_seasonal_table(monthly)
+    audit = validate_monthly_table(monthly, seasonal)
+
+    derived = root / DERIVED_DIR
+    derived.mkdir(parents=True, exist_ok=True)
+    monthly_path = derived / MONTHLY_CSV_NAME
+    seasonal_path = derived / SEASONAL_CSV_NAME
+    audit_path = derived / AUDIT_JSON_NAME
+    monthly.to_csv(monthly_path, index=False, float_format="%.8g")
+    seasonal.to_csv(seasonal_path, index=False, float_format="%.8g")
+    audit_path.write_text(json.dumps(audit, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    png_path, pdf_path = make_figure(monthly, target)
+    report_path = write_report(monthly, seasonal, target)
+    return PipelineOutputs(
+        monthly_csv=monthly_path,
+        seasonal_csv=seasonal_path,
+        audit_json=audit_path,
+        png=png_path,
+        pdf=pdf_path,
+        report=report_path,
+    )
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--tables-only", action="store_true")
@@ -367,7 +616,18 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
-    paths = write_tables(output_root=args.output_root, input_root=args.input_root)
+    if args.tables_only:
+        paths = write_tables(output_root=args.output_root, input_root=args.input_root)
+    else:
+        outputs = run_pipeline(output_root=args.output_root, input_root=args.input_root)
+        paths = (
+            outputs.monthly_csv,
+            outputs.seasonal_csv,
+            outputs.audit_json,
+            outputs.png,
+            outputs.pdf,
+            outputs.report,
+        )
     for path in paths:
         print(path)
     return 0

@@ -97,3 +97,15 @@ def test_mjj_paired_diagnosis_matches_audited_first_pass() -> None:
     assert mjj.loc["2023", "latent_loss_anom_wm2"] == pytest.approx(0.09, abs=0.08)
     assert mjj.loc["2015", "minus_olr_cp_wm2"] == pytest.approx(17.75, abs=0.08)
     assert mjj.loc["2023", "minus_olr_cp_wm2"] == pytest.approx(4.75, abs=0.08)
+
+
+def test_pipeline_writes_nonempty_figure_and_report(tmp_path) -> None:
+    result = module.run_pipeline(
+        output_dir=tmp_path,
+        input_root=module.discover_input_root(),
+    )
+    assert result.png.stat().st_size > 100_000
+    assert result.pdf.stat().st_size > 20_000
+    text = result.report.read_text(encoding="utf-8")
+    assert "27.88" in text and "27.90" in text
+    assert "不能据此证明" in text
