@@ -70,3 +70,30 @@ def test_audited_arrival_values_match_current_ppt() -> None:
     assert table.loc[2015, "east_ohc_gain_zj"] == 8.60
     assert table.loc[2023, "transport_140w_zj"] == 9.90
     assert table.loc[2023, "east_ohc_gain_zj"] == 11.12
+
+
+def test_build_monthly_table_has_two_complete_event_years() -> None:
+    table = module.build_monthly_table(input_root=module.discover_input_root())
+    assert table.groupby("year")["month"].nunique().to_dict() == {2015: 12, 2023: 12}
+    assert set(module.MONTHLY_OUTPUT_COLUMNS).issubset(table.columns)
+    target = [
+        "sst_east_anom_c",
+        "latent_loss_anom_wm2",
+        "minus_olr_cp_wm2",
+        "tau_cwp_anom_nm2",
+    ]
+    assert table[target].notna().all().all()
+
+
+def test_mjj_paired_diagnosis_matches_audited_first_pass() -> None:
+    monthly = module.build_monthly_table(input_root=module.discover_input_root())
+    seasonal = module.build_seasonal_table(monthly)
+    mjj = seasonal.loc[
+        seasonal.season.eq("MJJ") & seasonal.event.isin(["2015", "2023"])
+    ].set_index("event")
+    assert mjj.loc["2015", "sst_east_raw_c"] == pytest.approx(27.88, abs=0.03)
+    assert mjj.loc["2023", "sst_east_raw_c"] == pytest.approx(27.90, abs=0.03)
+    assert mjj.loc["2015", "latent_loss_anom_wm2"] == pytest.approx(5.96, abs=0.08)
+    assert mjj.loc["2023", "latent_loss_anom_wm2"] == pytest.approx(0.09, abs=0.08)
+    assert mjj.loc["2015", "minus_olr_cp_wm2"] == pytest.approx(17.75, abs=0.08)
+    assert mjj.loc["2023", "minus_olr_cp_wm2"] == pytest.approx(4.75, abs=0.08)
