@@ -1,0 +1,35 @@
+{
+  "events": [
+    2015,
+    2023
+  ],
+  "maximum_destination_fraction_sum_error": 1.1102230246251565e-16,
+  "minimum_gate_positive_anomaly_heat_zj": 3.440848185866642,
+  "missing_summary_values": 0,
+  "stride": 6,
+  "step_hours": 12.0,
+  "temporal_resolution": "monthly",
+  "snapshot_counts": {
+    "2015": 17,
+    "2023": 17
+  },
+  "release_latitude_range": [
+    -5.0,
+    5.0
+  ],
+  "tracking_domain": {
+    "longitude": [
+      218.0,
+      280.0
+    ],
+    "latitude": [
+      -5.0,
+      5.0
+    ],
+    "depth_m": [
+      5.0,
+      300.0
+    ]
+  },
+  "method_scope": "Heat-flux-weighted Lagrangian connectivity and following-May endpoint temperature anomaly; not a full native diffusion/external-heating budget."
+}
