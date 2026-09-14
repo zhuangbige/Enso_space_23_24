@@ -1,0 +1,326 @@
+year,group,response,response_label,model,observed,predicted,error_sd,training_response_sd
+1982,classic EP,atmosphere_composite_z,Atmosphere composite,Intercept only,0.25178029,0.56261904,-0.31367281,0.99096493
+1986,other warm,atmosphere_composite_z,Atmosphere composite,Intercept only,-0.55067627,0.62949042,-1.26292078,0.93447405
+1991,other warm,atmosphere_composite_z,Atmosphere composite,Intercept only,0.33817836,0.55541921,-0.21876002,0.99305550
+1994,CP,atmosphere_composite_z,Atmosphere composite,Intercept only,-0.15772587,0.59674456,-0.77720497,0.97074834
+1997,classic EP,atmosphere_composite_z,Atmosphere composite,Intercept only,2.89382542,0.34244862,3.82955899,0.66623254
+2002,other warm,atmosphere_composite_z,Atmosphere composite,Intercept only,0.39147332,0.55097796,-0.16047163,0.99397412
+2004,CP,atmosphere_composite_z,Atmosphere composite,Intercept only,0.02196967,0.58176993,-0.57020974,0.98174447
+2006,other warm,atmosphere_composite_z,Atmosphere composite,Intercept only,0.09028536,0.57607695,-0.49316634,0.98504613
+2009,other warm,atmosphere_composite_z,Atmosphere composite,Intercept only,0.27330410,0.56082539,-0.28996995,0.99155550
+2015,classic EP,atmosphere_composite_z,Atmosphere composite,Intercept only,2.06490138,0.41152562,1.89565159,0.87219390
+2018,other warm,atmosphere_composite_z,Atmosphere composite,Intercept only,-0.16613255,0.59744511,-0.78707128,0.97015059
+2019,CP,atmosphere_composite_z,Atmosphere composite,Intercept only,0.93649110,0.50555981,0.43652493,0.98718598
+2023,2023 weak-coupling EP,atmosphere_composite_z,Atmosphere composite,Intercept only,0.61553452,0.53230619,0.08366714,0.99475536
+1982,classic EP,atmosphere_composite_z,Atmosphere composite,OHC only,0.25178029,0.79917052,-0.55238103,0.99096493
+1986,other warm,atmosphere_composite_z,Atmosphere composite,OHC only,-0.55067627,0.15776342,-0.75811596,0.93447405
+1991,other warm,atmosphere_composite_z,Atmosphere composite,OHC only,0.33817836,0.62338621,-0.28720233,0.99305550
+1994,CP,atmosphere_composite_z,Atmosphere composite,OHC only,-0.15772587,-0.10676403,-0.05249748,0.97074834
+1997,classic EP,atmosphere_composite_z,Atmosphere composite,OHC only,2.89382542,1.61924836,1.91311139,0.66623254
+2002,other warm,atmosphere_composite_z,Atmosphere composite,OHC only,0.39147332,0.29633599,0.09571409,0.99397412
+2004,CP,atmosphere_composite_z,Atmosphere composite,OHC only,0.02196967,0.28208649,-0.26495369,0.98174447
+2006,other warm,atmosphere_composite_z,Atmosphere composite,OHC only,0.09028536,-0.20291364,0.29765003,0.98504613
+2009,other warm,atmosphere_composite_z,Atmosphere composite,OHC only,0.27330410,-0.56622421,0.84667809,0.99155550
+2015,classic EP,atmosphere_composite_z,Atmosphere composite,OHC only,2.06490138,1.68521603,0.43532218,0.87219390
+2018,other warm,atmosphere_composite_z,Atmosphere composite,OHC only,-0.16613255,0.95958806,-1.16035657,0.97015059
+2019,CP,atmosphere_composite_z,Atmosphere composite,OHC only,0.93649110,0.28718300,0.65773636,0.98718598
+2023,2023 weak-coupling EP,atmosphere_composite_z,Atmosphere composite,OHC only,0.61553452,0.52991071,0.08607525,0.99475536
+1982,classic EP,atmosphere_composite_z,Atmosphere composite,SST indices,0.25178029,1.21312048,-0.97010516,0.99096493
+1986,other warm,atmosphere_composite_z,Atmosphere composite,SST indices,-0.55067627,-0.27544655,-0.29452901,0.93447405
+1991,other warm,atmosphere_composite_z,Atmosphere composite,SST indices,0.33817836,0.61471338,-0.27846885,0.99305550
+1994,CP,atmosphere_composite_z,Atmosphere composite,SST indices,-0.15772587,-0.18152757,0.02451892,0.97074834
+1997,classic EP,atmosphere_composite_z,Atmosphere composite,SST indices,2.89382542,0.86058879,3.05184229,0.66623254
+2002,other warm,atmosphere_composite_z,Atmosphere composite,SST indices,0.39147332,0.67367151,-0.28390900,0.99397412
+2004,CP,atmosphere_composite_z,Atmosphere composite,SST indices,0.02196967,-0.31136288,0.33953087,0.98174447
+2006,other warm,atmosphere_composite_z,Atmosphere composite,SST indices,0.09028536,-0.08048344,0.17336123,0.98504613
+2009,other warm,atmosphere_composite_z,Atmosphere composite,SST indices,0.27330410,0.63820896,-0.36801254,0.99155550
+2015,classic EP,atmosphere_composite_z,Atmosphere composite,SST indices,2.06490138,1.49526257,0.65311028,0.87219390
+2018,other warm,atmosphere_composite_z,Atmosphere composite,SST indices,-0.16613255,-0.34062990,0.17986625,0.97015059
+2019,CP,atmosphere_composite_z,Atmosphere composite,SST indices,0.93649110,0.59800275,0.34288205,0.98718598
+2023,2023 weak-coupling EP,atmosphere_composite_z,Atmosphere composite,SST indices,0.61553452,2.33562440,-1.72915868,0.99475536
+1982,classic EP,atmosphere_composite_z,Atmosphere composite,Full SST pattern,0.25178029,1.18495264,-0.94168050,0.99096493
+1986,other warm,atmosphere_composite_z,Atmosphere composite,Full SST pattern,-0.55067627,-0.62037057,0.07458132,0.93447405
+1991,other warm,atmosphere_composite_z,Atmosphere composite,Full SST pattern,0.33817836,0.57481857,-0.23829505,0.99305550
+1994,CP,atmosphere_composite_z,Atmosphere composite,Full SST pattern,-0.15772587,-0.08873950,-0.07106514,0.97074834
+1997,classic EP,atmosphere_composite_z,Atmosphere composite,Full SST pattern,2.89382542,0.72938500,3.24877621,0.66623254
+2002,other warm,atmosphere_composite_z,Atmosphere composite,Full SST pattern,0.39147332,0.76788552,-0.37869417,0.99397412
+2004,CP,atmosphere_composite_z,Atmosphere composite,Full SST pattern,0.02196967,-0.21022216,0.23650943,0.98174447
+2006,other warm,atmosphere_composite_z,Atmosphere composite,Full SST pattern,0.09028536,0.06971918,0.02087840,0.98504613
+2009,other warm,atmosphere_composite_z,Atmosphere composite,Full SST pattern,0.27330410,0.72332088,-0.45384932,0.99155550
+2015,classic EP,atmosphere_composite_z,Atmosphere composite,Full SST pattern,2.06490138,1.32744459,0.84551931,0.87219390
+2018,other warm,atmosphere_composite_z,Atmosphere composite,Full SST pattern,-0.16613255,-0.04559674,-0.12424444,0.97015059
+2019,CP,atmosphere_composite_z,Atmosphere composite,Full SST pattern,0.93649110,0.71728818,0.22204825,0.98718598
+2023,2023 weak-coupling EP,atmosphere_composite_z,Atmosphere composite,Full SST pattern,0.61553452,2.16353153,-1.55615849,0.99475536
+1982,classic EP,atmosphere_composite_z,Atmosphere composite,Full SST pattern + OHC,0.25178029,0.93013973,-0.68454435,0.99096493
+1986,other warm,atmosphere_composite_z,Atmosphere composite,Full SST pattern + OHC,-0.55067627,-0.44362537,-0.11455737,0.93447405
+1991,other warm,atmosphere_composite_z,Atmosphere composite,Full SST pattern + OHC,0.33817836,0.49780736,-0.16074530,0.99305550
+1994,CP,atmosphere_composite_z,Atmosphere composite,Full SST pattern + OHC,-0.15772587,-0.31737060,0.16445532,0.97074834
+1997,classic EP,atmosphere_composite_z,Atmosphere composite,Full SST pattern + OHC,2.89382542,1.27569448,2.42877802,0.66623254
+2002,other warm,atmosphere_composite_z,Atmosphere composite,Full SST pattern + OHC,0.39147332,0.51051841,-0.11976679,0.99397412
+2004,CP,atmosphere_composite_z,Atmosphere composite,Full SST pattern + OHC,0.02196967,0.01858836,0.00344418,0.98174447
+2006,other warm,atmosphere_composite_z,Atmosphere composite,Full SST pattern + OHC,0.09028536,-0.22581550,0.32089955,0.98504613
+2009,other warm,atmosphere_composite_z,Atmosphere composite,Full SST pattern + OHC,0.27330410,-0.14647575,0.42335487,0.99155550
+2015,classic EP,atmosphere_composite_z,Atmosphere composite,Full SST pattern + OHC,2.06490138,1.94783987,0.13421500,0.87219390
+2018,other warm,atmosphere_composite_z,Atmosphere composite,Full SST pattern + OHC,-0.16613255,0.55779321,-0.74619937,0.97015059
+2019,CP,atmosphere_composite_z,Atmosphere composite,Full SST pattern + OHC,0.93649110,0.41060250,0.53271482,0.98718598
+2023,2023 weak-coupling EP,atmosphere_composite_z,Atmosphere composite,Full SST pattern + OHC,0.61553452,1.84015646,-1.23107850,0.99475536
+1982,classic EP,u850_response_z,850-hPa westerly,Intercept only,0.65470594,0.71469321,-0.05638809,1.06382856
+1986,other warm,u850_response_z,850-hPa westerly,Intercept only,-0.40022540,0.80260415,-1.19649090,1.00529771
+1991,other warm,u850_response_z,850-hPa westerly,Intercept only,0.93028117,0.69172861,0.22468417,1.06172395
+1994,CP,u850_response_z,850-hPa westerly,Intercept only,0.17341223,0.75480102,-0.55341043,1.05055626
+1997,classic EP,u850_response_z,850-hPa westerly,Intercept only,3.35177845,0.48993717,4.29129148,0.66689511
+2002,other warm,u850_response_z,850-hPa westerly,Intercept only,0.42719461,0.73365249,-0.28904020,1.06026038
+2004,CP,u850_response_z,850-hPa westerly,Intercept only,-0.25846575,0.79079085,-1.02905557,1.01963065
+2006,other warm,u850_response_z,850-hPa westerly,Intercept only,0.05820949,0.76440125,-0.67635205,1.04411860
+2009,other warm,u850_response_z,850-hPa westerly,Intercept only,0.40618784,0.73540305,-0.31067191,1.05968775
+2015,classic EP,u850_response_z,850-hPa westerly,Intercept only,2.15007212,0.59007936,1.61953912,0.96323253
+2018,other warm,u850_response_z,850-hPa westerly,Intercept only,0.69964970,0.71094790,-0.01061895,1.06396545
+2019,CP,u850_response_z,850-hPa westerly,Intercept only,0.85034823,0.69838969,0.14294454,1.06305947
+2023,2023 weak-coupling EP,u850_response_z,850-hPa westerly,Intercept only,0.18787582,0.75359572,-0.53812799,1.05127388
+1982,classic EP,u850_response_z,850-hPa westerly,OHC only,0.65470594,0.98114265,-0.30685085,1.06382856
+1986,other warm,u850_response_z,850-hPa westerly,OHC only,-0.40022540,0.26247399,-0.65920711,1.00529771
+1991,other warm,u850_response_z,850-hPa westerly,OHC only,0.93028117,0.76859745,0.15228414,1.06172395
+1994,CP,u850_response_z,850-hPa westerly,OHC only,0.17341223,-0.06326279,0.22528543,1.05055626
+1997,classic EP,u850_response_z,850-hPa westerly,OHC only,3.35177845,1.96436630,2.08040535,0.66689511
+2002,other warm,u850_response_z,850-hPa westerly,OHC only,0.42719461,0.44563040,-0.01738798,1.06026038
+2004,CP,u850_response_z,850-hPa westerly,OHC only,-0.25846575,0.45563195,-0.70034938,1.01963065
+2006,other warm,u850_response_z,850-hPa westerly,OHC only,0.05820949,-0.10740553,0.15861706,1.04411860
+2009,other warm,u850_response_z,850-hPa westerly,OHC only,0.40618784,-0.54372248,0.89640587,1.05968775
+2015,classic EP,u850_response_z,850-hPa westerly,OHC only,2.15007212,2.13702676,0.01354331,0.96323253
+2018,other warm,u850_response_z,850-hPa westerly,OHC only,0.69964970,1.10846376,-0.38423621,1.06396545
+2019,CP,u850_response_z,850-hPa westerly,OHC only,0.85034823,0.45252641,0.37422348,1.06305947
+2023,2023 weak-coupling EP,u850_response_z,850-hPa westerly,OHC only,0.18787582,0.75087659,-0.53554148,1.05127388
+1982,classic EP,u850_response_z,850-hPa westerly,SST indices,0.65470594,1.33450481,-0.63901167,1.06382856
+1986,other warm,u850_response_z,850-hPa westerly,SST indices,-0.40022540,0.05060824,-0.44845784,1.00529771
+1991,other warm,u850_response_z,850-hPa westerly,SST indices,0.93028117,0.81468524,0.10887569,1.06172395
+1994,CP,u850_response_z,850-hPa westerly,SST indices,0.17341223,0.02435082,0.14188807,1.05055626
+1997,classic EP,u850_response_z,850-hPa westerly,SST indices,3.35177845,0.77130476,3.86938466,0.66689511
+2002,other warm,u850_response_z,850-hPa westerly,SST indices,0.42719461,0.90043067,-0.44633947,1.06026038
+2004,CP,u850_response_z,850-hPa westerly,SST indices,-0.25846575,-0.00728049,-0.24634926,1.01963065
+2006,other warm,u850_response_z,850-hPa westerly,SST indices,0.05820949,0.26169918,-0.19489136,1.04411860
+2009,other warm,u850_response_z,850-hPa westerly,SST indices,0.40618784,0.90290968,-0.46874360,1.05968775
+2015,classic EP,u850_response_z,850-hPa westerly,SST indices,2.15007212,1.49927846,0.67563505,0.96323253
+2018,other warm,u850_response_z,850-hPa westerly,SST indices,0.69964970,-0.51149844,1.13833410,1.06396545
+2019,CP,u850_response_z,850-hPa westerly,SST indices,0.85034823,0.77138519,0.07427904,1.06305947
+2023,2023 weak-coupling EP,u850_response_z,850-hPa westerly,SST indices,0.18787582,2.68769181,-2.37789223,1.05127388
+1982,classic EP,u850_response_z,850-hPa westerly,Full SST pattern,0.65470594,1.57734216,-0.86727904,1.06382856
+1986,other warm,u850_response_z,850-hPa westerly,Full SST pattern,-0.40022540,-0.03360838,-0.36468502,1.00529771
+1991,other warm,u850_response_z,850-hPa westerly,Full SST pattern,0.93028117,0.91281713,0.01644875,1.06172395
+1994,CP,u850_response_z,850-hPa westerly,Full SST pattern,0.17341223,0.08449876,0.08463466,1.05055626
+1997,classic EP,u850_response_z,850-hPa westerly,Full SST pattern,3.35177845,0.65871949,4.03820472,0.66689511
+2002,other warm,u850_response_z,850-hPa westerly,Full SST pattern,0.42719461,0.88292580,-0.42982950,1.06026038
+2004,CP,u850_response_z,850-hPa westerly,Full SST pattern,-0.25846575,-0.05988019,-0.19476224,1.01963065
+2006,other warm,u850_response_z,850-hPa westerly,Full SST pattern,0.05820949,0.28960367,-0.22161676,1.04411860
+2009,other warm,u850_response_z,850-hPa westerly,Full SST pattern,0.40618784,0.83326681,-0.40302341,1.05968775
+2015,classic EP,u850_response_z,850-hPa westerly,Full SST pattern,2.15007212,1.33647037,0.84465768,0.96323253
+2018,other warm,u850_response_z,850-hPa westerly,Full SST pattern,0.69964970,0.12908523,0.53626222,1.06396545
+2019,CP,u850_response_z,850-hPa westerly,Full SST pattern,0.85034823,0.78241273,0.06390564,1.06305947
+2023,2023 weak-coupling EP,u850_response_z,850-hPa westerly,Full SST pattern,0.18787582,2.38753089,-2.09237109,1.05127388
+1982,classic EP,u850_response_z,850-hPa westerly,Full SST pattern + OHC,0.65470594,1.27560229,-0.58364324,1.06382856
+1986,other warm,u850_response_z,850-hPa westerly,Full SST pattern + OHC,-0.40022540,0.20332767,-0.60037247,1.00529771
+1991,other warm,u850_response_z,850-hPa westerly,Full SST pattern + OHC,0.93028117,0.81133308,0.11203297,1.06172395
+1994,CP,u850_response_z,850-hPa westerly,Full SST pattern + OHC,0.17341223,-0.22228726,0.37665711,1.05055626
+1997,classic EP,u850_response_z,850-hPa westerly,Full SST pattern + OHC,3.35177845,1.39160156,2.93925817,0.66689511
+2002,other warm,u850_response_z,850-hPa westerly,Full SST pattern + OHC,0.42719461,0.54060340,-0.10696315,1.06026038
+2004,CP,u850_response_z,850-hPa westerly,Full SST pattern + OHC,-0.25846575,0.25569775,-0.50426446,1.01963065
+2006,other warm,u850_response_z,850-hPa westerly,Full SST pattern + OHC,0.05820949,-0.10331033,0.15469489,1.04411860
+2009,other warm,u850_response_z,850-hPa westerly,Full SST pattern + OHC,0.40618784,-0.38813095,0.74957815,1.05968775
+2015,classic EP,u850_response_z,850-hPa westerly,Full SST pattern + OHC,2.15007212,2.21398651,-0.06635407,0.96323253
+2018,other warm,u850_response_z,850-hPa westerly,Full SST pattern + OHC,0.69964970,0.83119640,-0.12363813,1.06396545
+2019,CP,u850_response_z,850-hPa westerly,Full SST pattern + OHC,0.85034823,0.38327275,0.43936909,1.06305947
+2023,2023 weak-coupling EP,u850_response_z,850-hPa westerly,Full SST pattern + OHC,0.18787582,1.92350659,-1.65097869,1.05127388
+1982,classic EP,convection_response_z,Convection (-OLR),Intercept only,-0.24722107,0.37972615,-0.56798988,1.10379999
+1986,other warm,convection_response_z,Convection (-OLR),Intercept only,-0.59479615,0.40869074,-0.92897280,1.08021127
+1991,other warm,convection_response_z,Convection (-OLR),Intercept only,-0.32244690,0.38599497,-0.64423986,1.09965544
+1994,CP,convection_response_z,Convection (-OLR),Intercept only,-0.64694325,0.41303633,-0.98540983,1.07567385
+1997,classic EP,convection_response_z,Convection (-OLR),Intercept only,2.81342517,0.12467230,3.34867694,0.80292991
+2002,other warm,convection_response_z,Convection (-OLR),Intercept only,0.30192031,0.33396437,-0.02864650,1.11860294
+2004,CP,convection_response_z,Convection (-OLR),Intercept only,0.18195059,0.34396185,-0.14495621,1.11765653
+2006,other warm,convection_response_z,Convection (-OLR),Intercept only,0.11283690,0.34972132,-0.21216036,1.11653474
+2009,other warm,convection_response_z,Convection (-OLR),Intercept only,-0.12025812,0.36914590,-0.44105500,1.10962130
+2015,classic EP,convection_response_z,Convection (-OLR),Intercept only,1.92783020,0.19847188,1.72901900,1.00019625
+2018,other warm,convection_response_z,Convection (-OLR),Intercept only,-0.89234126,0.43348617,-1.26192071,1.05064241
+2019,CP,convection_response_z,Convection (-OLR),Intercept only,1.07740273,0.26934083,0.73871440,1.09387592
+2023,2023 weak-coupling EP,convection_response_z,Convection (-OLR),Intercept only,0.71813358,0.29927993,0.37665285,1.11204164
+1982,classic EP,convection_response_z,Convection (-OLR),OHC only,-0.24722107,0.61709742,-0.78303905,1.10379999
+1986,other warm,convection_response_z,Convection (-OLR),OHC only,-0.59479615,-0.06574692,-0.48976459,1.08021127
+1991,other warm,convection_response_z,Convection (-OLR),OHC only,-0.32244690,0.45383853,-0.70593515,1.09965544
+1994,CP,convection_response_z,Convection (-OLR),OHC only,-0.64694325,-0.26426897,-0.35575307,1.07567385
+1997,classic EP,convection_response_z,Convection (-OLR),OHC only,2.81342517,1.28398945,1.90481847,0.80292991
+2002,other warm,convection_response_z,Convection (-OLR),OHC only,0.30192031,0.07982115,0.19855049,1.11860294
+2004,CP,convection_response_z,Convection (-OLR),OHC only,0.18195059,0.04130559,0.12583919,1.11765653
+2006,other warm,convection_response_z,Convection (-OLR),OHC only,0.11283690,-0.44444160,0.49911434,1.11653474
+2009,other warm,convection_response_z,Convection (-OLR),OHC only,-0.12025812,-0.71924551,0.53981244,1.10962130
+2015,classic EP,convection_response_z,Convection (-OLR),OHC only,1.92783020,1.43677883,0.49095502,1.00019625
+2018,other warm,convection_response_z,Convection (-OLR),OHC only,-0.89234126,0.80240763,-1.61305966,1.05064241
+2019,CP,convection_response_z,Convection (-OLR),OHC only,1.07740273,0.04999984,0.93923166,1.09387592
+2023,2023 weak-coupling EP,convection_response_z,Convection (-OLR),OHC only,0.71813358,0.29689911,0.37879380,1.11204164
+1982,classic EP,convection_response_z,Convection (-OLR),SST indices,-0.24722107,1.07973934,-1.20217469,1.10379999
+1986,other warm,convection_response_z,Convection (-OLR),SST indices,-0.59479615,-0.54387347,-0.04714141,1.08021127
+1991,other warm,convection_response_z,Convection (-OLR),SST indices,-0.32244690,0.37450783,-0.63379373,1.09965544
+1994,CP,convection_response_z,Convection (-OLR),SST indices,-0.64694325,-0.40918295,-0.22103383,1.07567385
+1997,classic EP,convection_response_z,Convection (-OLR),SST indices,2.81342517,0.72180674,2.60498258,0.80292991
+2002,other warm,convection_response_z,Convection (-OLR),SST indices,0.30192031,0.43451032,-0.11853179,1.11860294
+2004,CP,convection_response_z,Convection (-OLR),SST indices,0.18195059,-0.62266069,0.71990925,1.11765653
+2006,other warm,convection_response_z,Convection (-OLR),SST indices,0.11283690,-0.44072067,0.49578178,1.11653474
+2009,other warm,convection_response_z,Convection (-OLR),SST indices,-0.12025812,0.40506448,-0.47342512,1.10962130
+2015,classic EP,convection_response_z,Convection (-OLR),SST indices,1.92783020,1.49158172,0.43616288,1.00019625
+2018,other warm,convection_response_z,Convection (-OLR),SST indices,-0.89234126,-0.33243119,-0.53292163,1.05064241
+2019,CP,convection_response_z,Convection (-OLR),SST indices,1.07740273,0.26603664,0.74173503,1.09387592
+2023,2023 weak-coupling EP,convection_response_z,Convection (-OLR),SST indices,0.71813358,2.12072614,-1.26127701,1.11204164
+1982,classic EP,convection_response_z,Convection (-OLR),Full SST pattern,-0.24722107,0.86462661,-1.00729090,1.10379999
+1986,other warm,convection_response_z,Convection (-OLR),Full SST pattern,-0.59479615,-1.18495998,0.54634111,1.08021127
+1991,other warm,convection_response_z,Convection (-OLR),Full SST pattern,-0.32244690,0.23674520,-0.50851574,1.09965544
+1994,CP,convection_response_z,Convection (-OLR),Full SST pattern,-0.64694325,-0.28264958,-0.33866554,1.07567385
+1997,classic EP,convection_response_z,Convection (-OLR),Full SST pattern,2.81342517,0.57295773,2.79036491,0.80292991
+2002,other warm,convection_response_z,Convection (-OLR),Full SST pattern,0.30192031,0.63555959,-0.29826427,1.11860294
+2004,CP,convection_response_z,Convection (-OLR),Full SST pattern,0.18195059,-0.38597928,0.50814347,1.11765653
+2006,other warm,convection_response_z,Convection (-OLR),Full SST pattern,0.11283690,-0.15768947,0.24229105,1.11653474
+2009,other warm,convection_response_z,Convection (-OLR),Full SST pattern,-0.12025812,0.61976491,-0.66691494,1.10962130
+2015,classic EP,convection_response_z,Convection (-OLR),Full SST pattern,1.92783020,1.25141852,0.67627896,1.00019625
+2018,other warm,convection_response_z,Convection (-OLR),Full SST pattern,-0.89234126,-0.27764676,-0.58506538,1.05064241
+2019,CP,convection_response_z,Convection (-OLR),Full SST pattern,1.07740273,0.50032754,0.52755087,1.09387592
+2023,2023 weak-coupling EP,convection_response_z,Convection (-OLR),Full SST pattern,0.71813358,1.98474279,-1.13899441,1.11204164
+1982,classic EP,convection_response_z,Convection (-OLR),Full SST pattern + OHC,-0.24722107,0.57783424,-0.74746813,1.10379999
+1986,other warm,convection_response_z,Convection (-OLR),Full SST pattern + OHC,-0.59479615,-1.01544592,0.38941435,1.08021127
+1991,other warm,convection_response_z,Convection (-OLR),Full SST pattern + OHC,-0.32244690,0.16097665,-0.43961366,1.09965544
+1994,CP,convection_response_z,Convection (-OLR),Full SST pattern + OHC,-0.64694325,-0.50061460,-0.13603441,1.07567385
+1997,classic EP,convection_response_z,Convection (-OLR),Full SST pattern + OHC,2.81342517,1.10955595,2.12206470,0.80292991
+2002,other warm,convection_response_z,Convection (-OLR),Full SST pattern + OHC,0.30192031,0.38238975,-0.07193745,1.11860294
+2004,CP,convection_response_z,Convection (-OLR),Full SST pattern + OHC,0.18195059,-0.16875968,0.31379074,1.11765653
+2006,other warm,convection_response_z,Convection (-OLR),Full SST pattern + OHC,0.11283690,-0.44723971,0.50162041,1.11653474
+2009,other warm,convection_response_z,Convection (-OLR),Full SST pattern + OHC,-0.12025812,-0.12760019,0.00661673,1.10962130
+2015,classic EP,convection_response_z,Convection (-OLR),Full SST pattern + OHC,1.92783020,1.83556477,0.09224733,1.00019625
+2018,other warm,convection_response_z,Convection (-OLR),Full SST pattern + OHC,-0.89234126,0.38074662,-1.21172328,1.05064241
+2019,CP,convection_response_z,Convection (-OLR),Full SST pattern + OHC,1.07740273,0.18827014,0.81282765,1.09387592
+2023,2023 weak-coupling EP,convection_response_z,Convection (-OLR),Full SST pattern + OHC,0.71813358,1.68073324,-0.86561476,1.11204164
+1982,classic EP,precip_response_z,Precipitation,Intercept only,0.30973562,0.46561398,-0.14980606,1.04053438
+1986,other warm,precip_response_z,Precipitation,Intercept only,-0.36547624,0.52188164,-0.87918648,1.00929427
+1991,other warm,precip_response_z,Precipitation,Intercept only,-0.08230066,0.49828367,-0.56485614,1.02784459
+1994,CP,precip_response_z,Precipitation,Intercept only,-0.60060583,0.54147577,-1.15645617,0.98757016
+1997,classic EP,precip_response_z,Precipitation,Intercept only,2.17838711,0.30989302,2.09985964,0.88981856
+2002,other warm,precip_response_z,Precipitation,Intercept only,0.48568966,0.45095114,0.03335543,1.04146508
+2004,CP,precip_response_z,Precipitation,Intercept only,0.38735739,0.45914550,-0.06894045,1.04130607
+2006,other warm,precip_response_z,Precipitation,Intercept only,0.04446823,0.48771960,-0.42885538,1.03356840
+2009,other warm,precip_response_z,Precipitation,Intercept only,0.08763142,0.48412266,-0.38302367,1.03516121
+2015,classic EP,precip_response_z,Precipitation,Intercept only,2.18794548,0.30909649,2.11585201,0.88798696
+2018,other warm,precip_response_z,Precipitation,Intercept only,-1.10656365,0.58363892,-1.83867558,0.91925002
+2019,CP,precip_response_z,Precipitation,Intercept only,1.03158666,0.40545973,0.61049893,1.02559873
+2023,2023 weak-coupling EP,precip_response_z,Precipitation,Intercept only,1.33924820,0.37982127,0.95584634,1.00374600
+1982,classic EP,precip_response_z,Precipitation,OHC only,0.30973562,0.66580400,-0.34219762,1.04053438
+1986,other warm,precip_response_z,Precipitation,OHC only,-0.36547624,0.11726527,-0.47829610,1.00929427
+1991,other warm,precip_response_z,Precipitation,OHC only,-0.08230066,0.55626825,-0.62126990,1.02784459
+1994,CP,precip_response_z,Precipitation,OHC only,-0.60060583,-0.02096065,-0.58694076,0.98757016
+1997,classic EP,precip_response_z,Precipitation,OHC only,2.17838711,1.60840893,0.64055551,0.88981856
+2002,other warm,precip_response_z,Precipitation,OHC only,0.48568966,0.23314883,0.24248612,1.04146508
+2004,CP,precip_response_z,Precipitation,OHC only,0.38735739,0.19958432,0.18032457,1.04130607
+2006,other warm,precip_response_z,Precipitation,OHC only,0.04446823,-0.17161108,0.20906145,1.03356840
+2009,other warm,precip_response_z,Precipitation,OHC only,0.08763142,-0.44975171,0.51912990,1.03516121
+2015,classic EP,precip_response_z,Precipitation,OHC only,2.18794548,1.24032132,1.06716000,0.88798696
+2018,other warm,precip_response_z,Precipitation,OHC only,-1.10656365,0.90790175,-2.19142274,0.91925002
+2019,CP,precip_response_z,Precipitation,OHC only,1.03158666,0.21833972,0.79294847,1.02559873
+2023,2023 weak-coupling EP,precip_response_z,Precipitation,OHC only,1.33924820,0.37778543,0.95787458,1.00374600
+1982,classic EP,precip_response_z,Precipitation,SST indices,0.30973562,1.10682927,-0.76604259,1.04053438
+1986,other warm,precip_response_z,Precipitation,SST indices,-0.36547624,-0.82802363,0.45828793,1.00929427
+1991,other warm,precip_response_z,Precipitation,SST indices,-0.08230066,0.44435660,-0.51238997,1.02784459
+1994,CP,precip_response_z,Precipitation,SST indices,-0.60060583,-0.19423628,-0.41148423,0.98757016
+1997,classic EP,precip_response_z,Precipitation,SST indices,2.17838711,1.31479294,0.97052839,0.88981856
+2002,other warm,precip_response_z,Precipitation,SST indices,0.48568966,0.55927599,-0.07065655,1.04146508
+2004,CP,precip_response_z,Precipitation,SST indices,0.38735739,-0.49288820,0.84532840,1.04130607
+2006,other warm,precip_response_z,Precipitation,SST indices,0.04446823,-0.37216335,0.40310015,1.03356840
+2009,other warm,precip_response_z,Precipitation,SST indices,0.08763142,0.39007325,-0.29216882,1.03516121
+2015,classic EP,precip_response_z,Precipitation,SST indices,2.18794548,1.62446131,0.63456356,0.88798696
+2018,other warm,precip_response_z,Precipitation,SST indices,-1.10656365,-0.11612473,-1.07744237,0.91925002
+2019,CP,precip_response_z,Precipitation,SST indices,1.03158666,0.58487188,0.43556487,1.02559873
+2023,2023 weak-coupling EP,precip_response_z,Precipitation,SST indices,1.33924820,1.82335643,-0.48230153,1.00374600
+1982,classic EP,precip_response_z,Precipitation,Full SST pattern,0.30973562,0.82586173,-0.49602024,1.04053438
+1986,other warm,precip_response_z,Precipitation,Full SST pattern,-0.36547624,-1.36096062,0.98631728,1.00929427
+1991,other warm,precip_response_z,Precipitation,Full SST pattern,-0.08230066,0.35967373,-0.43000118,1.02784459
+1994,CP,precip_response_z,Precipitation,Full SST pattern,-0.60060583,-0.12878081,-0.47776355,0.98757016
+1997,classic EP,precip_response_z,Precipitation,Full SST pattern,2.17838711,1.03793628,1.28166671,0.88981856
+2002,other warm,precip_response_z,Precipitation,Full SST pattern,0.48568966,0.68588698,-0.19222663,1.04146508
+2004,CP,precip_response_z,Precipitation,Full SST pattern,0.38735739,-0.33122786,0.69008073,1.04130607
+2006,other warm,precip_response_z,Precipitation,Full SST pattern,0.04446823,-0.13457564,0.17322885,1.03356840
+2009,other warm,precip_response_z,Precipitation,Full SST pattern,0.08763142,0.67162582,-0.56415792,1.03516121
+2015,classic EP,precip_response_z,Precipitation,Full SST pattern,2.18794548,1.38716498,0.90179309,0.88798696
+2018,other warm,precip_response_z,Precipitation,Full SST pattern,-1.10656365,-0.10565586,-1.08883086,0.91925002
+2019,CP,precip_response_z,Precipitation,Full SST pattern,1.03158666,0.80366639,0.22223143,1.02559873
+2023,2023 weak-coupling EP,precip_response_z,Precipitation,Full SST pattern,1.33924820,1.76865570,-0.42780494,1.00374600
+1982,classic EP,precip_response_z,Precipitation,Full SST pattern + OHC,0.30973562,0.63349407,-0.31114633,1.04053438
+1986,other warm,precip_response_z,Precipitation,Full SST pattern + OHC,-0.36547624,-1.27003369,0.89622766,1.00929427
+1991,other warm,precip_response_z,Precipitation,Full SST pattern + OHC,-0.08230066,0.31572058,-0.38723874,1.02784459
+1994,CP,precip_response_z,Precipitation,Full SST pattern + OHC,-0.60060583,-0.24993814,-0.35508129,0.98757016
+1997,classic EP,precip_response_z,Precipitation,Full SST pattern + OHC,2.17838711,1.54745928,0.70905222,0.88981856
+2002,other warm,precip_response_z,Precipitation,Full SST pattern + OHC,0.48568966,0.53914031,-0.05132256,1.04146508
+2004,CP,precip_response_z,Precipitation,Full SST pattern + OHC,0.38735739,-0.21646693,0.57987208,1.04130607
+2006,other warm,precip_response_z,Precipitation,Full SST pattern + OHC,0.04446823,-0.30147831,0.33471084,1.03356840
+2009,other warm,precip_response_z,Precipitation,Full SST pattern + OHC,0.08763142,0.28958108,-0.19509005,1.03516121
+2015,classic EP,precip_response_z,Precipitation,Full SST pattern + OHC,2.18794548,1.66722477,0.58640581,0.88798696
+2018,other warm,precip_response_z,Precipitation,Full SST pattern + OHC,-1.10656365,0.36324523,-1.59892178,0.91925002
+2019,CP,precip_response_z,Precipitation,Full SST pattern + OHC,1.03158666,0.62616539,0.39530204,1.02559873
+2023,2023 weak-coupling EP,precip_response_z,Precipitation,Full SST pattern + OHC,1.33924820,1.58480764,-0.24464300,1.00374600
+1982,classic EP,tau_response_z,Eastward wind stress,Intercept only,0.28990068,0.69044284,-0.38238790,1.04747604
+1986,other warm,tau_response_z,Eastward wind stress,Intercept only,-0.84220728,0.78478517,-1.72603029,0.94262103
+1991,other warm,tau_response_z,Eastward wind stress,Intercept only,0.82717984,0.64566957,0.17244478,1.05257035
+1994,CP,tau_response_z,Eastward wind stress,Intercept only,0.44323336,0.67766511,-0.22290902,1.05169252
+1997,classic EP,tau_response_z,Eastward wind stress,Intercept only,3.23171093,0.44529198,4.11222502,0.67759399
+2002,other warm,tau_response_z,Eastward wind stress,Intercept only,0.35108868,0.68534384,-0.31851258,1.04942527
+2004,CP,tau_response_z,Eastward wind stress,Intercept only,-0.22296356,0.73318152,-0.94031560,1.01683422
+2006,other warm,tau_response_z,Eastward wind stress,Intercept only,0.14562684,0.70246566,-0.53466881,1.04146494
+2009,other warm,tau_response_z,Eastward wind stress,Intercept only,0.71965526,0.65462995,0.06171055,1.05371449
+2015,classic EP,tau_response_z,Eastward wind stress,Intercept only,1.99375770,0.54845475,1.49439573,0.96714874
+2018,other warm,tau_response_z,Eastward wind stress,Intercept only,0.63472498,0.66170748,-0.02560364,1.05385386
+2019,CP,tau_response_z,Eastward wind stress,Intercept only,0.78662679,0.64904899,0.13063718,1.05312901
+2023,2023 weak-coupling EP,tau_response_z,Eastward wind stress,Intercept only,0.21688049,0.69652785,-0.45913184,1.04468329
+1982,classic EP,tau_response_z,Eastward wind stress,OHC only,0.28990068,0.93263799,-0.61360574,1.04747604
+1986,other warm,tau_response_z,Eastward wind stress,OHC only,-0.84220728,0.31706133,-1.22983529,0.94262103
+1991,other warm,tau_response_z,Eastward wind stress,OHC only,0.82717984,0.71484061,0.10672847,1.05257035
+1994,CP,tau_response_z,Eastward wind stress,OHC only,0.44323336,-0.07856369,0.49614982,1.05169252
+1997,classic EP,tau_response_z,Eastward wind stress,OHC only,3.23171093,1.62022877,2.37824152,0.67759399
+2002,other warm,tau_response_z,Eastward wind stress,OHC only,0.35108868,0.42674358,-0.07209174,1.04942527
+2004,CP,tau_response_z,Eastward wind stress,OHC only,-0.22296356,0.43182410,-0.64394731,1.01683422
+2006,other warm,tau_response_z,Eastward wind stress,OHC only,0.14562684,-0.08819635,0.22451374,1.04146494
+2009,other warm,tau_response_z,Eastward wind stress,OHC only,0.71965526,-0.55217714,1.20699907,1.05371449
+2015,classic EP,tau_response_z,Eastward wind stress,OHC only,1.99375770,1.92673721,0.06929699,0.96714874
+2018,other warm,tau_response_z,Eastward wind stress,OHC only,0.63472498,1.01957909,-0.36518736,1.05385386
+2019,CP,tau_response_z,Eastward wind stress,OHC only,0.78662679,0.42786602,0.34066176,1.05312901
+2023,2023 weak-coupling EP,tau_response_z,Eastward wind stress,OHC only,0.21688049,0.69408171,-0.45679032,1.04468329
+1982,classic EP,tau_response_z,Eastward wind stress,SST indices,0.28990068,1.33140851,-0.99430230,1.04747604
+1986,other warm,tau_response_z,Eastward wind stress,SST indices,-0.84220728,0.21950267,-1.12633807,0.94262103
+1991,other warm,tau_response_z,Eastward wind stress,SST indices,0.82717984,0.82530385,0.00178229,1.05257035
+1994,CP,tau_response_z,Eastward wind stress,SST indices,0.44323336,-0.14704190,0.56126220,1.05169252
+1997,classic EP,tau_response_z,Eastward wind stress,SST indices,3.23171093,0.63445071,3.83306267,0.67759399
+2002,other warm,tau_response_z,Eastward wind stress,SST indices,0.35108868,0.80046906,-0.42821570,1.04942527
+2004,CP,tau_response_z,Eastward wind stress,SST indices,-0.22296356,-0.12262216,-0.09868020,1.01683422
+2006,other warm,tau_response_z,Eastward wind stress,SST indices,0.14562684,0.22925107,-0.08029482,1.04146494
+2009,other warm,tau_response_z,Eastward wind stress,SST indices,0.71965526,0.85478842,-0.12824457,1.05371449
+2015,classic EP,tau_response_z,Eastward wind stress,SST indices,1.99375770,1.36572880,0.64936124,0.96714874
+2018,other warm,tau_response_z,Eastward wind stress,SST indices,0.63472498,-0.40246525,0.98418792,1.05385386
+2019,CP,tau_response_z,Eastward wind stress,SST indices,0.78662679,0.76971728,0.01605645,1.05312901
+2023,2023 weak-coupling EP,tau_response_z,Eastward wind stress,SST indices,0.21688049,2.71072323,-2.38717586,1.04468329
+1982,classic EP,tau_response_z,Eastward wind stress,Full SST pattern,0.28990068,1.47198006,-1.12850256,1.04747604
+1986,other warm,tau_response_z,Eastward wind stress,Full SST pattern,-0.84220728,0.09804669,-0.99748886,0.94262103
+1991,other warm,tau_response_z,Eastward wind stress,Full SST pattern,0.82717984,0.79003823,0.03528658,1.05257035
+1994,CP,tau_response_z,Eastward wind stress,Full SST pattern,0.44323336,-0.02802637,0.44809650,1.05169252
+1997,classic EP,tau_response_z,Eastward wind stress,Full SST pattern,3.23171093,0.64792651,3.81317495,0.67759399
+2002,other warm,tau_response_z,Eastward wind stress,Full SST pattern,0.35108868,0.86716969,-0.49177490,1.04942527
+2004,CP,tau_response_z,Eastward wind stress,Full SST pattern,-0.22296356,-0.06380132,-0.15652723,1.01683422
+2006,other warm,tau_response_z,Eastward wind stress,Full SST pattern,0.14562684,0.28153815,-0.13050014,1.04146494
+2009,other warm,tau_response_z,Eastward wind stress,Full SST pattern,0.71965526,0.76862600,-0.04647439,1.05371449
+2015,classic EP,tau_response_z,Eastward wind stress,Full SST pattern,1.99375770,1.33472450,0.68141866,0.96714874
+2018,other warm,tau_response_z,Eastward wind stress,Full SST pattern,0.63472498,0.07183044,0.53412961,1.05385386
+2019,CP,tau_response_z,Eastward wind stress,Full SST pattern,0.78662679,0.78274609,0.00368493,1.05312901
+2023,2023 weak-coupling EP,tau_response_z,Eastward wind stress,Full SST pattern,0.21688049,2.51319675,-2.19809801,1.04468329
+1982,classic EP,tau_response_z,Eastward wind stress,Full SST pattern + OHC,0.28990068,1.23362831,-0.90095391,1.04747604
+1986,other warm,tau_response_z,Eastward wind stress,Full SST pattern + OHC,-0.84220728,0.30765043,-1.21985154,0.94262103
+1991,other warm,tau_response_z,Eastward wind stress,Full SST pattern + OHC,0.82717984,0.70319914,0.11778852,1.05257035
+1994,CP,tau_response_z,Eastward wind stress,Full SST pattern + OHC,0.44323336,-0.29664240,0.70350957,1.05169252
+1997,classic EP,tau_response_z,Eastward wind stress,Full SST pattern + OHC,3.23171093,1.05416112,3.21364984,0.67759399
+2002,other warm,tau_response_z,Eastward wind stress,Full SST pattern + OHC,0.35108868,0.57994017,-0.21807316,1.04942527
+2004,CP,tau_response_z,Eastward wind stress,Full SST pattern + OHC,-0.22296356,0.20388231,-0.41977921,1.01683422
+2006,other warm,tau_response_z,Eastward wind stress,Full SST pattern + OHC,0.14562684,-0.05123363,0.18902265,1.04146494
+2009,other warm,tau_response_z,Eastward wind stress,Full SST pattern + OHC,0.71965526,-0.35975294,1.02438394,1.05371449
+2015,classic EP,tau_response_z,Eastward wind stress,Full SST pattern + OHC,1.99375770,2.07458343,-0.08357115,0.96714874
+2018,other warm,tau_response_z,Eastward wind stress,Full SST pattern + OHC,0.63472498,0.65598459,-0.02017320,1.05385386
+2019,CP,tau_response_z,Eastward wind stress,Full SST pattern + OHC,0.78662679,0.44470173,0.32467539,1.05312901
+2023,2023 weak-coupling EP,tau_response_z,Eastward wind stress,Full SST pattern + OHC,0.21688049,2.17157837,-1.87109136,1.04468329

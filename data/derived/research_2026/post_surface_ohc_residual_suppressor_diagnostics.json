@@ -1,0 +1,51 @@
+{
+  "event_years": [
+    1982,
+    1986,
+    1991,
+    1994,
+    1997,
+    2002,
+    2004,
+    2006,
+    2009,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "n_events": 13,
+  "primary_pcs": 2,
+  "primary_ridge_alpha": 1.0,
+  "external_months": [
+    5,
+    6
+  ],
+  "external_baseline": [
+    1982,
+    2023
+  ],
+  "trend_retained_climatology": [
+    1982,
+    2022
+  ],
+  "preceding_wind_months": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "parent_prediction_max_abs_difference": 4.914424422963748e-09,
+  "finite": {
+    "event_table": true,
+    "predictions": true,
+    "skill": true,
+    "increment": true,
+    "sensitivity": true
+  },
+  "outputs": {
+    "figure_png": "/Users/daiyue/Documents/Maryland/outputs/research_2026/post_surface_ohc_residual_suppressors/fig_post_surface_ohc_residual_suppressors.png",
+    "figure_pdf": "/Users/daiyue/Documents/Maryland/outputs/research_2026/post_surface_ohc_residual_suppressors/fig_post_surface_ohc_residual_suppressors.pdf",
+    "report": "/Users/daiyue/Documents/Maryland/outputs/research_2026/post_surface_ohc_residual_suppressors/POST_SURFACE_OHC_RESIDUAL_SUPPRESSORS_CN.md"
+  }
+}

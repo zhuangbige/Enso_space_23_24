@@ -1,0 +1,730 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/m8p9ty",
+    "id": "m8p9ty",
+    "slide": 7,
+    "layoutId": "1636560f-0bb4-477e-bc36-5f737b1d795e",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "91c3fb62-db33-4e19-a094-5f8da4d0190c",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Pacific Heat Arrival",
+    "colors": {
+      "accent1": "#2C7FB8",
+      "accent2": "#D97706",
+      "accent3": "#16877A",
+      "accent4": "#B73A3A",
+      "accent5": "#35566B",
+      "accent6": "#7E5AA6",
+      "bg1": "#FFFFFF",
+      "bg2": "#EDF3F6",
+      "tx1": "#0A2133",
+      "tx2": "#35566B",
+      "dk1": "#0A2133",
+      "dk2": "#35566B",
+      "lt1": "#FFFFFF",
+      "lt2": "#EDF3F6",
+      "hlink": "#2C7FB8",
+      "folHlink": "#16877A"
+    },
+    "typefaces": [
+      "PingFang SC"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "1636560f-0bb4-477e-bc36-5f737b1d795e",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "91c3fb62-db33-4e19-a094-5f8da4d0190c",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "91c3fb62-db33-4e19-a094-5f8da4d0190c",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/d4b6t4rq",
+      "id": "1",
+      "name": "kicker",
+      "bbox": [
+        54,
+        30,
+        180,
+        32
+      ],
+      "geometry": "rect",
+      "text": "问题一",
+      "textPreview": "问题一",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 22,
+        "typeface": "PingFang SC",
+        "color": "#2C7FB8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "问题一"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "问题一",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "PingFang SC",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "问题一",
+              "fontSize": 22,
+              "typeface": "PingFang SC",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/q10ni98z",
+      "id": "2",
+      "name": "slide-title",
+      "bbox": [
+        54,
+        70,
+        1172,
+        58
+      ],
+      "geometry": "rect",
+      "text": "2015与2023的输入和储量几乎相同",
+      "textPreview": "2015与2023的输入和储量几乎相同",
+      "resolvedFontSize": 40,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 40,
+        "typeface": "PingFang SC",
+        "color": "#0A2133",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "2015与2023的输入和储量几乎相同"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "2015与2023的输入和储量几乎相同",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 40,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "2015与2023的输入和储量几乎相同",
+              "fontSize": 40,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/r29ore9k",
+      "id": "3",
+      "name": "rule-54-142",
+      "bbox": [
+        54,
+        142,
+        1172,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#B8BCC4",
+      "lineWidth": 1.4
+    },
+    {
+      "order": 4,
+      "kind": "chart",
+      "scope": "slide",
+      "aid": "ch/wn21wvah",
+      "id": "4",
+      "bbox": [
+        54,
+        166,
+        820,
+        438
+      ],
+      "chartType": "bar"
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p0r6p4ru",
+      "id": "5",
+      "name": "pair-stat",
+      "bbox": [
+        918,
+        186,
+        268,
+        166
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFF0D8",
+      "lineColor": "#D97706",
+      "lineWidth": 1.5
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2d0neps3",
+      "id": "6",
+      "name": "pair-title",
+      "bbox": [
+        942,
+        208,
+        220,
+        34
+      ],
+      "geometry": "rect",
+      "text": "2015 vs 2023",
+      "textPreview": "2015 vs 2023",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 25,
+        "typeface": "PingFang SC",
+        "color": "#D97706",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "2015 vs 2023"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "2015 vs 2023",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "PingFang SC",
+            "color": "#D97706",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "2015 vs 2023",
+              "fontSize": 25,
+              "typeface": "PingFang SC",
+              "color": "#D97706",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3e9onu9o",
+      "id": "7",
+      "name": "pair-body",
+      "bbox": [
+        938,
+        260,
+        228,
+        72
+      ],
+      "geometry": "rect",
+      "text": "输入：3.30 / 3.91 ZJ\n储量：3.53 / 3.88 ZJ",
+      "textPreview": "输入：3.30 / 3.91 ZJ | 储量：3.53 / 3.88 ZJ",
+      "resolvedFontSize": 23.2,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "PingFang SC",
+        "color": "#0A2133",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.97,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "输入：3.30 / 3.91 ZJ"
+          },
+          {
+            "index": 2,
+            "text": "储量：3.53 / 3.88 ZJ"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "输入：3.30 / 3.91 ZJ",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "输入：3.30 / 3.91 ZJ",
+              "fontSize": 24,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "储量：3.53 / 3.88 ZJ",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "储量：3.53 / 3.88 ZJ",
+              "fontSize": 24,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gby5cfax",
+      "id": "8",
+      "name": "q500-stat",
+      "bbox": [
+        918,
+        390,
+        268,
+        156
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#DDEFF7",
+      "lineColor": "#2C7FB8",
+      "lineWidth": 1.5
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hc7mlkri",
+      "id": "9",
+      "name": "q500-title",
+      "bbox": [
+        936,
+        412,
+        232,
+        34
+      ],
+      "geometry": "rect",
+      "text": "0—500 m OHC敏感性",
+      "textPreview": "0—500 m OHC敏感性",
+      "resolvedFontSize": 22.75,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "PingFang SC",
+        "color": "#2C7FB8",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.95,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "0—500 m"
+          },
+          {
+            "index": 2,
+            "text": "OHC敏感性"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "0—500 m OHC敏感性",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "PingFang SC",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "0—500 m OHC敏感性",
+              "fontSize": 24,
+              "typeface": "PingFang SC",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x4za5krm",
+      "id": "10",
+      "name": "q500-body",
+      "bbox": [
+        938,
+        466,
+        228,
+        60
+      ],
+      "geometry": "rect",
+      "text": "2015：6.43 ZJ\n2023：6.46 ZJ",
+      "textPreview": "2015：6.43 ZJ | 2023：6.46 ZJ",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 26,
+        "typeface": "PingFang SC",
+        "color": "#0A2133",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.96,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "2015：6.43 ZJ"
+          },
+          {
+            "index": 2,
+            "text": "2023：6.46 ZJ"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "2015：6.43 ZJ",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 26,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "2015：6.43 ZJ",
+              "fontSize": 26,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "2023：6.46 ZJ",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 26,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "2023：6.46 ZJ",
+              "fontSize": 26,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/c3q9cfq1",
+      "id": "11",
+      "name": "takeaway-band",
+      "bbox": [
+        54,
+        635,
+        1172,
+        55
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#B73A3A",
+      "lineColor": "#B73A3A",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/b2h83a9g",
+      "id": "12",
+      "name": "takeaway-text",
+      "bbox": [
+        78,
+        644,
+        1124,
+        38
+      ],
+      "geometry": "rect",
+      "text": "2023后续较弱，不能解释为“暖量没有进入东太平洋”。",
+      "textPreview": "2023后续较弱，不能解释为“暖量没有进入东太平洋”。",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 25,
+        "typeface": "PingFang SC",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "2023后续较弱，不能解释为“暖量没有进入东太平洋”。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "2023后续较弱，不能解释为“暖量没有进入东太平洋”。",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "PingFang SC",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "2023后续较弱，不能解释为“暖量没有进入东太平洋”。",
+              "fontSize": 25,
+              "typeface": "PingFang SC",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

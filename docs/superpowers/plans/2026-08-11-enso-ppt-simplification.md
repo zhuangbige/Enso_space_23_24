@@ -110,9 +110,11 @@ Run the presentation skill's `inspect_template_deck.mjs` against the 38-slide so
 Map output slides to source slides as follows:
 
 ```text
-1<-1, 2<-2, 3<-15, 4<-16, 5<-17, 6<-18, 7<-19, 8<-20,
-9<-21, 10<-24, 11<-25, 12<-30, 13<-31, 14<-38, 15<-9
+1<-1, 2<-2, 3<-10, 4<-11, 5<-12, 6<-13, 7<-14, 8<-15,
+9<-16, 10<-19, 11<-20, 12<-26, 13<-20, 14<-32, 15<-9
 ```
+
+The source deck was saved by the user as a 32-slide current version after the plan was drafted, so these source numbers supersede the earlier 38-slide mapping while preserving the same narrative roles.
 
 Declare every rewritten text box and replaced image as an explicit edit target. Record all omitted source slides and the reason `redundant literature detail, robustness detail, repeated summary, or superseded figure`.
 

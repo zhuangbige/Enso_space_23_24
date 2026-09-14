@@ -1,0 +1,164 @@
+{
+  "events": [
+    1982,
+    1986,
+    1991,
+    1994,
+    1997,
+    2002,
+    2004,
+    2006,
+    2009,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "ridge_grid": [
+    0.03,
+    0.1,
+    0.3,
+    1.0,
+    3.0,
+    10.0,
+    30.0,
+    100.0,
+    300.0,
+    1000.0
+  ],
+  "primary_outcome": "future-five-day Date-Line warm-volume transport tendency",
+  "model_features": {
+    "base": [
+      "season_sin",
+      "season_cos",
+      "warm_volume_transport_sv_anom",
+      "d20_pressure_accel_1e8_ms2",
+      "wind_accel_1e8_ms2"
+    ],
+    "base_plus_wind_memory": [
+      "season_sin",
+      "season_cos",
+      "warm_volume_transport_sv_anom",
+      "d20_pressure_accel_1e8_ms2",
+      "wind_accel_1e8_ms2",
+      "taux_change5_nm2",
+      "positive_taux_mean15_nm2",
+      "taux_variability15_nm2"
+    ],
+    "base_plus_wave_phase": [
+      "season_sin",
+      "season_cos",
+      "warm_volume_transport_sv_anom",
+      "d20_pressure_accel_1e8_ms2",
+      "wind_accel_1e8_ms2",
+      "d20_200_tendency5_m_day",
+      "d20_220_minus_200_tendency5_m_day",
+      "ssh_220_minus_200_tendency5_m_day"
+    ],
+    "base_plus_transport_structure": [
+      "season_sin",
+      "season_cos",
+      "warm_volume_transport_sv_anom",
+      "d20_pressure_accel_1e8_ms2",
+      "wind_accel_1e8_ms2",
+      "m160_minus_m180_sv",
+      "m180_minus_m220_sv",
+      "m180_x_d20_slope_sv_m"
+    ],
+    "base_plus_heat_geometry": [
+      "season_sin",
+      "season_cos",
+      "warm_volume_transport_sv_anom",
+      "d20_pressure_accel_1e8_ms2",
+      "wind_accel_1e8_ms2",
+      "east_fraction_15day",
+      "centroid_change15day_deg",
+      "east_west_gradient_change15day_gj_m2"
+    ],
+    "base_plus_all": [
+      "season_sin",
+      "season_cos",
+      "warm_volume_transport_sv_anom",
+      "d20_pressure_accel_1e8_ms2",
+      "wind_accel_1e8_ms2",
+      "taux_change5_nm2",
+      "positive_taux_mean15_nm2",
+      "taux_variability15_nm2",
+      "d20_200_tendency5_m_day",
+      "d20_220_minus_200_tendency5_m_day",
+      "ssh_220_minus_200_tendency5_m_day",
+      "m160_minus_m180_sv",
+      "m180_minus_m220_sv",
+      "m180_x_d20_slope_sv_m",
+      "east_fraction_15day",
+      "centroid_change15day_deg",
+      "east_west_gradient_change15day_gj_m2"
+    ]
+  },
+  "winner_future5": "base_plus_transport_structure",
+  "winner_future10": "base_plus_transport_structure",
+  "winner_feature_sign_stability": {
+    "m160_minus_m180_sv": {
+      "median": 0.24811716662787187,
+      "positive_fraction": 1.0,
+      "negative_fraction": 0.0
+    },
+    "m180_minus_m220_sv": {
+      "median": 0.0017574547983014934,
+      "positive_fraction": 0.6153846153846154,
+      "negative_fraction": 0.38461538461538464
+    },
+    "m180_x_d20_slope_sv_m": {
+      "median": -0.0016915231854232095,
+      "positive_fraction": 0.46153846153846156,
+      "negative_fraction": 0.5384615384615384
+    }
+  },
+  "exploratory_refinement_signs": {
+    "taux_change5_nm2": {
+      "median": 0.16729604010355664,
+      "positive_fraction": 1.0
+    },
+    "m160_minus_m180_sv": {
+      "median": 0.24868672136999007,
+      "positive_fraction": 1.0
+    }
+  },
+  "quality_control": {
+    "volume_monthly_reconstruction_max_abs_error_sv": 1.0658141036401503e-14,
+    "d20_monthly_reconstruction_max_abs_error_m": 2.842170943040401e-14,
+    "pentad_interval_min_days": 5.0,
+    "pentad_interval_median_days": 5.0,
+    "pentad_interval_max_days": 5.0,
+    "m_anom_sv_monthly_reconstruction_max_abs_error": 1.0658141036401503e-14,
+    "q20_anom_pw_monthly_reconstruction_max_abs_error": 2.220446049250313e-16,
+    "d20_anom_m_monthly_reconstruction_max_abs_error": 2.842170943040401e-14,
+    "ssh_anom_m_monthly_reconstruction_max_abs_error": 1.1102230246251565e-16,
+    "sst_anom_c_monthly_reconstruction_max_abs_error": 4.274358644806853e-15,
+    "feature_missing_counts": {
+      "centroid_change15day_deg": 49,
+      "d20_200_tendency5_m_day": 13,
+      "d20_220_minus_200_tendency5_m_day": 13,
+      "d20_pressure_accel_1e8_ms2": 0,
+      "east_fraction_15day": 18,
+      "east_west_gradient_change15day_gj_m2": 39,
+      "m160_minus_m180_sv": 0,
+      "m180_minus_m220_sv": 0,
+      "m180_x_d20_slope_sv_m": 0,
+      "positive_taux_mean15_nm2": 26,
+      "season_cos": 0,
+      "season_sin": 0,
+      "ssh_220_minus_200_tendency5_m_day": 13,
+      "taux_change5_nm2": 13,
+      "taux_variability15_nm2": 26,
+      "warm_volume_transport_sv_anom": 0,
+      "wind_accel_1e8_ms2": 0
+    },
+    "common_complete_rows_future5": 408
+  },
+  "interpretation_limits": [
+    "All process terms are reduced proxies and do not close a zonal momentum budget.",
+    "The heat-geometry group is unavailable during the first trailing 15 days, so every model uses the same reduced sample.",
+    "Process ranking is predictive attribution under event holdout, not a causal perturbation experiment."
+  ]
+}

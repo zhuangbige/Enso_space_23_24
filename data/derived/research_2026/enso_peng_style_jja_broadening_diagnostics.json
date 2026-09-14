@@ -1,0 +1,44 @@
+{
+  "method_name": "Peng-style JJA adaptation",
+  "climatology_years": [
+    1982,
+    2022
+  ],
+  "fit_years": [
+    1982,
+    2023
+  ],
+  "months": [
+    6,
+    7,
+    8
+  ],
+  "event_years": [
+    1982,
+    1986,
+    1991,
+    1994,
+    1997,
+    2002,
+    2004,
+    2006,
+    2009,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "n_fit_years": 42,
+  "n_events": 13,
+  "primary_response_components": [
+    "precip",
+    "slp_drive",
+    "wind_stress"
+  ],
+  "ratio_warning": "Observed/expected ratios are diagnostic only because the expected response approaches zero in weak-JJA-Nino3 events.",
+  "year_2023": {
+    "nino3_jja_anom_c": 1.7318506008241232,
+    "primary_composite_residual_z": -1.7462889836879674,
+    "ncep_analog_composite_residual_z": -1.5509777427433569
+  }
+}

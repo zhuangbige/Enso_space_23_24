@@ -1,0 +1,34 @@
+{
+  "data_source": "NOAA CPC NMME seasonal SST hindcasts in CPT format",
+  "verification": "/Users/daiyue/Documents/Maryland/data/raw/ersstv5_sst_monthly_full.nc",
+  "hindcast_years": [
+    1991,
+    2020
+  ],
+  "forecast_files": 44,
+  "models": [
+    "cfsv2",
+    "cmc1",
+    "cmc2",
+    "nasa",
+    "ncar_ccsm4",
+    "ncar_cesm1",
+    "nmme"
+  ],
+  "warm_event_group_counts": {
+    "borderline": 4,
+    "EP": 3,
+    "CP": 3
+  },
+  "individual_models_with_ep_penalty_greater_than_cp": 5,
+  "validation": {
+    "observed_type_index_crosscheck_r": 0.997933478038543,
+    "observed_nino34_crosscheck_r": 0.9906221623375483
+  },
+  "bootstrap": {
+    "ep_minus_cp_mean_c": 0.28988230725708697,
+    "ep_minus_cp_ci_low_c": -0.0371096544319407,
+    "ep_minus_cp_ci_high_c": 0.6174439614923142,
+    "probability_ep_penalty_greater_than_cp": 0.9497
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "experiment": {
+    "only_ocean_variable": "SODA3 March-June central-Pacific 0-300 m OHC anomaly",
+    "only_atmospheric_variable": "ERA5 March-June central-western-Pacific U850 anomaly",
+    "tested_lags_months": [
+      0,
+      1,
+      2
+    ],
+    "n_warm_events": 13
+  },
+  "strongest_sampled_month_pair": {
+    "ohc_month": 4.0,
+    "wind_month": 4.0,
+    "lag_months": 0.0,
+    "n_events": 13.0,
+    "pearson_r": 0.8801387151128427,
+    "pearson_p": 7.216364790086671e-05,
+    "spearman_r": 0.7472527472527472,
+    "spearman_p": 0.003326741383429985,
+    "loeo_r_min": 0.8431079970195567,
+    "loeo_r_max": 0.8931435301701951,
+    "bh_fdr_q": 0.0008358035243629514
+  },
+  "five_highest_correlations": [
+    {
+      "ohc_month": 4,
+      "wind_month": 4,
+      "lag_months": 0,
+      "n_events": 13,
+      "pearson_r": 0.8801387151128427,
+      "pearson_p": 7.216364790086671e-05,
+      "spearman_r": 0.7472527472527472,
+      "spearman_p": 0.003326741383429985,
+      "loeo_r_min": 0.8431079970195567,
+      "loeo_r_max": 0.8931435301701951,
+      "bh_fdr_q": 0.0008358035243629514
+    },
+    {
+      "ohc_month": 3,
+      "wind_month": 4,
+      "lag_months": 1,
+      "n_events": 13,
+      "pearson_r": 0.8623989858688045,
+      "pearson_p": 0.0001487893892366017,
+      "spearman_r": 0.6428571428571429,
+      "spearman_p": 0.01779245069237571,
+      "loeo_r_min": 0.8020987934654947,
+      "loeo_r_max": 0.8956980856553151,
+      "bh_fdr_q": 0.0008358035243629514
+    },
+    {
+      "ohc_month": 4,
+      "wind_month": 6,
+      "lag_months": 2,
+      "n_events": 13,
+      "pearson_r": 0.8592956075731201,
+      "pearson_p": 0.00016716070487259027,
+      "spearman_r": 0.6593406593406593,
+      "spearman_p": 0.014225578511456699,
+      "loeo_r_min": 0.6951595070155209,
+      "loeo_r_max": 0.9172623564023042,
+      "bh_fdr_q": 0.0008358035243629514
+    },
+    {
+      "ohc_month": 3,
+      "wind_month": 5,
+      "lag_months": 2,
+      "n_events": 13,
+      "pearson_r": 0.7789204285415446,
+      "pearson_p": 0.0017023487258646347,
+      "spearman_r": 0.6593406593406593,
+      "spearman_p": 0.014225578511456699,
+      "loeo_r_min": 0.6728747199328042,
+      "loeo_r_max": 0.8363504506826482,
+      "bh_fdr_q": 0.00638380772199238
+    },
+    {
+      "ohc_month": 3,
+      "wind_month": 3,
+      "lag_months": 0,
+      "n_events": 13,
+      "pearson_r": 0.7369313287261418,
+      "pearson_p": 0.004056573248388126,
+      "spearman_r": 0.47802197802197804,
+      "spearman_p": 0.09849011541638983,
+      "loeo_r_min": 0.6161705896018986,
+      "loeo_r_max": 0.7828888783615803,
+      "bh_fdr_q": 0.011657228051606584
+    }
+  ],
+  "positive_fep_case_onsets": [
+    {
+      "year": 1997,
+      "group": "classic EP",
+      "mar_apr_fep_residual_c": 0.8500518415753693,
+      "positive_spring_fep_residual": true,
+      "ohc_first_two_month_positive_start": 1,
+      "wind_first_two_month_positive_start": 3.0,
+      "wind_minus_ohc_onset_months": 2.0,
+      "ohc_jan_jun_mean_gj_m2": 1.3328024851930116,
+      "wind_jan_jun_mean_ms": 2.5307291894438166,
+      "ohc_jan_jun_max_gj_m2": 1.8826117196905292,
+      "wind_jan_jun_max_ms": 7.298245646944724
+    },
+    {
+      "year": 2002,
+      "group": "other warm",
+      "mar_apr_fep_residual_c": 0.6068357847449606,
+      "positive_spring_fep_residual": true,
+      "ohc_first_two_month_positive_start": 1,
+      "wind_first_two_month_positive_start": 1.0,
+      "wind_minus_ohc_onset_months": 0.0,
+      "ohc_jan_jun_mean_gj_m2": 0.474115779708354,
+      "wind_jan_jun_mean_ms": 0.31058948785990564,
+      "ohc_jan_jun_max_gj_m2": 0.7213376273731141,
+      "wind_jan_jun_max_ms": 1.4813562008414456
+    },
+    {
+      "year": 2023,
+      "group": "2023 weak-coupling EP",
+      "mar_apr_fep_residual_c": 1.4635090520852778,
+      "positive_spring_fep_residual": true,
+      "ohc_first_two_month_positive_start": 3,
+      "wind_first_two_month_positive_start": 3.0,
+      "wind_minus_ohc_onset_months": 0.0,
+      "ohc_jan_jun_mean_gj_m2": 0.34943727839255395,
+      "wind_jan_jun_mean_ms": -0.45588814998194555,
+      "ohc_jan_jun_max_gj_m2": 0.6070184678041851,
+      "wind_jan_jun_max_ms": 1.1852899888289303
+    }
+  ],
+  "interpretation": "The strongest sampled link is simultaneous in April, while one- and two-month lead relations are also strong. Monthly data therefore identify a March-April coupled checkpoint, not a uniquely ocean-leading causal transition. A two-month positive sign run is too weak a threshold to distinguish strong from weak coupling."
+}

@@ -1,0 +1,79 @@
+dataset,variable,season,region,case,value,source_ids
+NOAA OISST v2.1,sst,AMJ,nino3,2023,0.9744461347508466,D2
+NOAA OISST v2.1,sst,AMJ,tropical_indian_ocean,2023,0.4315222050652769,D2
+NOAA OISST v2.1,sst,AMJ,maritime_continent,2023,0.4378369848656392,D2
+NOAA OISST v2.1,sst,AMJ,western_pacific_warm_pool,2023,0.5680719273347963,D2
+NOAA OISST v2.1,sst,AMJ,tropical_north_atlantic,2023,0.9972742440470687,D2
+NOAA OISST v2.1,sst,AMJ,nino3,comparable,0.6921175633255645,D2
+NOAA OISST v2.1,sst,AMJ,tropical_indian_ocean,comparable,0.03855238091213231,D2
+NOAA OISST v2.1,sst,AMJ,maritime_continent,comparable,-0.10975047617273402,D2
+NOAA OISST v2.1,sst,AMJ,western_pacific_warm_pool,comparable,-0.14833635319172048,D2
+NOAA OISST v2.1,sst,AMJ,tropical_north_atlantic,comparable,-0.13287206177536806,D2
+NOAA OISST v2.1,sst,AMJ,nino3,difference,0.28232857142528217,D2
+NOAA OISST v2.1,sst,AMJ,tropical_indian_ocean,difference,0.39296982415314463,D2
+NOAA OISST v2.1,sst,AMJ,maritime_continent,difference,0.5475874610383732,D2
+NOAA OISST v2.1,sst,AMJ,western_pacific_warm_pool,difference,0.7164082805265168,D2
+NOAA OISST v2.1,sst,AMJ,tropical_north_atlantic,difference,1.1301463058224368,D2
+NOAA OISST v2.1,sst,JJA,nino3,2023,1.73250649915173,D2
+NOAA OISST v2.1,sst,JJA,tropical_indian_ocean,2023,0.499064420907377,D2
+NOAA OISST v2.1,sst,JJA,maritime_continent,2023,0.35144009766255047,D2
+NOAA OISST v2.1,sst,JJA,western_pacific_warm_pool,2023,0.43000799885679897,D2
+NOAA OISST v2.1,sst,JJA,tropical_north_atlantic,2023,1.2064157369459996,D2
+NOAA OISST v2.1,sst,JJA,nino3,comparable,1.4238473429200038,D2
+NOAA OISST v2.1,sst,JJA,tropical_indian_ocean,comparable,0.1207138592511568,D2
+NOAA OISST v2.1,sst,JJA,maritime_continent,comparable,-0.3193303282928742,D2
+NOAA OISST v2.1,sst,JJA,western_pacific_warm_pool,comparable,-0.431993328842239,D2
+NOAA OISST v2.1,sst,JJA,tropical_north_atlantic,comparable,-0.18220382756375345,D2
+NOAA OISST v2.1,sst,JJA,nino3,difference,0.3086591562317263,D2
+NOAA OISST v2.1,sst,JJA,tropical_indian_ocean,difference,0.3783505616562202,D2
+NOAA OISST v2.1,sst,JJA,maritime_continent,difference,0.6707704259554247,D2
+NOAA OISST v2.1,sst,JJA,western_pacific_warm_pool,difference,0.862001327699038,D2
+NOAA OISST v2.1,sst,JJA,tropical_north_atlantic,difference,1.3886195645097532,D2
+GPCP monthly precipitation,precip,AMJ,central_pacific_180_140w,2023,0.6510012252011588,D3
+GPCP monthly precipitation,precip,AMJ,eastern_pacific_140w_100w,2023,0.48886895222644877,D3
+GPCP monthly precipitation,precip,AMJ,full_tropical_pacific_120e_80w,2023,0.7876648660968707,D3
+GPCP monthly precipitation,precip,AMJ,western_central_pacific_140e_180,2023,1.2664811839638328,D3
+GPCP monthly precipitation,precip,AMJ,central_pacific_180_140w,comparable,1.515246971412406,D3
+GPCP monthly precipitation,precip,AMJ,eastern_pacific_140w_100w,comparable,1.0745618999843984,D3
+GPCP monthly precipitation,precip,AMJ,full_tropical_pacific_120e_80w,comparable,0.8506568355763037,D3
+GPCP monthly precipitation,precip,AMJ,western_central_pacific_140e_180,comparable,1.2959155145528791,D3
+GPCP monthly precipitation,precip,AMJ,central_pacific_180_140w,difference,-0.8642457462112472,D3
+GPCP monthly precipitation,precip,AMJ,eastern_pacific_140w_100w,difference,-0.5856929477579498,D3
+GPCP monthly precipitation,precip,AMJ,full_tropical_pacific_120e_80w,difference,-0.062991969479433,D3
+GPCP monthly precipitation,precip,AMJ,western_central_pacific_140e_180,difference,-0.029434330589046463,D3
+GPCP monthly precipitation,precip,JJA,central_pacific_180_140w,2023,1.2496583450415706,D3
+GPCP monthly precipitation,precip,JJA,eastern_pacific_140w_100w,2023,0.5642199471685313,D3
+GPCP monthly precipitation,precip,JJA,full_tropical_pacific_120e_80w,2023,1.3073849312156252,D3
+GPCP monthly precipitation,precip,JJA,western_central_pacific_140e_180,2023,2.430836684992808,D3
+GPCP monthly precipitation,precip,JJA,central_pacific_180_140w,comparable,3.2784226294476264,D3
+GPCP monthly precipitation,precip,JJA,eastern_pacific_140w_100w,comparable,1.7649852257593421,D3
+GPCP monthly precipitation,precip,JJA,full_tropical_pacific_120e_80w,comparable,1.4490818114116073,D3
+GPCP monthly precipitation,precip,JJA,western_central_pacific_140e_180,comparable,1.4504705027928078,D3
+GPCP monthly precipitation,precip,JJA,central_pacific_180_140w,difference,-2.028764284406056,D3
+GPCP monthly precipitation,precip,JJA,eastern_pacific_140w_100w,difference,-1.200765278590811,D3
+GPCP monthly precipitation,precip,JJA,full_tropical_pacific_120e_80w,difference,-0.14169688019598237,D3
+GPCP monthly precipitation,precip,JJA,western_central_pacific_140e_180,difference,0.9803661822000004,D3
+NCEP/NCAR Reanalysis 1 fallback,uwnd_sig995,AMJ,cwp_u_160e_140w,2023,-0.6949739621325677,D4
+NCEP/NCAR Reanalysis 1 fallback,slp,AMJ,tahiti_slp_proxy,2023,-0.5191298920112472,D4
+NCEP/NCAR Reanalysis 1 fallback,slp,AMJ,darwin_slp_proxy,2023,-0.013486179823845194,D4
+NCEP/NCAR Reanalysis 1 fallback,soi_like_slp,AMJ,tahiti_minus_darwin,2023,-0.505643712187402,D4
+NCEP/NCAR Reanalysis 1 fallback,uwnd_sig995,AMJ,cwp_u_160e_140w,comparable,1.606212038261039,D4
+NCEP/NCAR Reanalysis 1 fallback,slp,AMJ,tahiti_slp_proxy,comparable,-0.6115906649530454,D4
+NCEP/NCAR Reanalysis 1 fallback,slp,AMJ,darwin_slp_proxy,comparable,1.0270483160870358,D4
+NCEP/NCAR Reanalysis 1 fallback,soi_like_slp,AMJ,tahiti_minus_darwin,comparable,-1.6386389810400812,D4
+NCEP/NCAR Reanalysis 1 fallback,uwnd_sig995,AMJ,cwp_u_160e_140w,difference,-2.3011860003936064,D4
+NCEP/NCAR Reanalysis 1 fallback,slp,AMJ,tahiti_slp_proxy,difference,0.09246077294179823,D4
+NCEP/NCAR Reanalysis 1 fallback,slp,AMJ,darwin_slp_proxy,difference,-1.040534495910881,D4
+NCEP/NCAR Reanalysis 1 fallback,soi_like_slp,AMJ,tahiti_minus_darwin,difference,1.1329952688526794,D4
+NCEP/NCAR Reanalysis 1 fallback,uwnd_sig995,JJA,cwp_u_160e_140w,2023,-0.31185879147930373,D4
+NCEP/NCAR Reanalysis 1 fallback,slp,JJA,tahiti_slp_proxy,2023,-0.2919774134656298,D4
+NCEP/NCAR Reanalysis 1 fallback,slp,JJA,darwin_slp_proxy,2023,0.5138569815403846,D4
+NCEP/NCAR Reanalysis 1 fallback,soi_like_slp,JJA,tahiti_minus_darwin,2023,-0.8058343950060144,D4
+NCEP/NCAR Reanalysis 1 fallback,uwnd_sig995,JJA,cwp_u_160e_140w,comparable,2.264388647064499,D4
+NCEP/NCAR Reanalysis 1 fallback,slp,JJA,tahiti_slp_proxy,comparable,-1.0758912188765597,D4
+NCEP/NCAR Reanalysis 1 fallback,slp,JJA,darwin_slp_proxy,comparable,1.2813862525453075,D4
+NCEP/NCAR Reanalysis 1 fallback,soi_like_slp,JJA,tahiti_minus_darwin,comparable,-2.357277471421867,D4
+NCEP/NCAR Reanalysis 1 fallback,uwnd_sig995,JJA,cwp_u_160e_140w,difference,-2.576247438543803,D4
+NCEP/NCAR Reanalysis 1 fallback,slp,JJA,tahiti_slp_proxy,difference,0.7839138054109298,D4
+NCEP/NCAR Reanalysis 1 fallback,slp,JJA,darwin_slp_proxy,difference,-0.7675292710049227,D4
+NCEP/NCAR Reanalysis 1 fallback,soi_like_slp,JJA,tahiti_minus_darwin,difference,1.5514430764158527,D4

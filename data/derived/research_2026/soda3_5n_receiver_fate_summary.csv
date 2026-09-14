@@ -1,0 +1,10 @@
+contrast,metric,n_events,mean_zj,ci_low_zj,ci_high_zj
+CT,q5n_input_zj,4,1.45434897,0.50639879,2.27315525
+CP,q5n_input_zj,4,-0.86576420,-1.27966567,-0.27014904
+CT_minus_CP,q5n_input_zj,8,2.32011317,1.21365429,3.31656068
+CT,receiver_h20_change_zj,4,0.06625017,-0.12195087,0.34680476
+CP,receiver_h20_change_zj,4,-0.39171527,-0.89179826,0.42997904
+CT_minus_CP,receiver_h20_change_zj,8,0.45796544,-0.39307817,1.07069766
+CT,other_net_pathways_zj,4,-1.38809880,-2.37656359,-0.15959403
+CP,other_net_pathways_zj,4,0.47404893,0.32974595,0.70012808
+CT_minus_CP,other_net_pathways_zj,8,-1.86214773,-2.94611452,-0.61690991

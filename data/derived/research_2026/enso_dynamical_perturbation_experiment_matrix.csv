@@ -1,0 +1,11 @@
+experiment_id,perturbation,causal_question,minimum_ensemble
+CTRL-2023,Observed 2023 global SST; observed ocean initial state,Baseline weak-coupling event,"AGCM, 30 members"
+PAC-only,2023 Pacific SST anomalies; climatology elsewhere,Canonical Pacific-only wind/rain response,"AGCM, 30 members"
+minus-IA,CTRL-2023 but remove tropical Indian and Atlantic anomalies,Causal Indo-Atlantic damping,"AGCM, 30 members"
+NPMM-neutral,CTRL-2023 but remove the cold NPMM SST pattern,NPMM effect on central-Pacific convection and wind,"AGCM, 30 members"
+FEP-positive-only,"Positive residual-FEP SST pattern only, following Jiang et al.",Whether FEP warming alone creates the meridional rain dipole,"AGCM, 30 members"
+FEP-minus-dipole,CTRL-2023 plus idealized heating that cancels the 6-10N rain deficit,Controlled role of the meridional precipitation dipole,"LBM/AGCM, 30 members"
+WWB-add,CTRL-2023 plus 10-day westerly stress pulses at 135E-180,Whether pulses launch sufficient Kelvin-wave heat transport,"Coupled model, 20 starts x 3 dates"
+MLN-ocean-neutral,2023 atmosphere/SST with western subsurface heat reset to neutral composite,Oceanic legacy of multi-year La Nina,"Coupled model, 20 members"
+NPMM-x-WWB,Factorial cold/neutral/warm NPMM crossed with no/observed/added WWB,State dependence and interaction,"Coupled model, 3 x 3 x 15 members"
+IA-x-FEP,Factorial Indo-Atlantic anomalies on/off crossed with residual FEP on/off,Remote forcing versus local FEP pathway,"AGCM, 2 x 2 x 30 members"

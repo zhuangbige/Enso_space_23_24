@@ -1,0 +1,150 @@
+{
+  "events": [
+    1997,
+    2015,
+    2023
+  ],
+  "baseline": [
+    1980,
+    2024
+  ],
+  "wind_metric": {
+    "variable": "ERA5 850 hPa zonal wind",
+    "region": "5S-5N, 160E-140W",
+    "positive_sign": "anomalous westerlies"
+  },
+  "convection_metric": {
+    "variable": "ERA5 outgoing longwave radiation",
+    "region": "5S-5N, 170E-140W",
+    "negative_sign": "enhanced high-cloud/deep-convection signal"
+  },
+  "atmospheric_closure_definition": "First of two consecutive January-June months with CWP u850 > 0 and central-Pacific OLR < 0",
+  "timing": {
+    "1997": {
+      "persistent_positive_fep_residual_month": {
+        "month": 3,
+        "month_name": "Mar"
+      },
+      "oceanic_transition_month": {
+        "month": 4,
+        "month_name": "Apr"
+      },
+      "atmospheric_closure_month": {
+        "month": 3,
+        "month_name": "Mar"
+      },
+      "full_ocean_atmosphere_connection_month": {
+        "month": 4,
+        "month_name": "Apr"
+      }
+    },
+    "2015": {
+      "persistent_positive_fep_residual_month": {
+        "month": 4,
+        "month_name": "Apr"
+      },
+      "oceanic_transition_month": {
+        "month": 1,
+        "month_name": "Jan"
+      },
+      "atmospheric_closure_month": {
+        "month": 3,
+        "month_name": "Mar"
+      },
+      "full_ocean_atmosphere_connection_month": {
+        "month": 3,
+        "month_name": "Mar"
+      }
+    },
+    "2023": {
+      "persistent_positive_fep_residual_month": {
+        "month": 2,
+        "month_name": "Feb"
+      },
+      "oceanic_transition_month": {
+        "month": 5,
+        "month_name": "May"
+      },
+      "atmospheric_closure_month": {
+        "month": 5,
+        "month_name": "May"
+      },
+      "full_ocean_atmosphere_connection_month": {
+        "month": 5,
+        "month_name": "May"
+      }
+    }
+  },
+  "qa": {
+    "u850": {
+      "range": [
+        -11.880577087402344,
+        15.714803695678711
+      ],
+      "same_month_residual_checks": {
+        "1": {
+          "mean": 1.4970505082503552e-11,
+          "trend_per_year": -1.1803374797282315e-11
+        },
+        "2": {
+          "mean": -5.5403341174079895e-11,
+          "trend_per_year": 2.155162071993693e-12
+        },
+        "3": {
+          "mean": 6.052533782805212e-12,
+          "trend_per_year": 2.335387908544202e-12
+        },
+        "4": {
+          "mean": -4.563949489937929e-10,
+          "trend_per_year": 1.4282477106309152e-11
+        },
+        "5": {
+          "mean": -1.3147476194161654e-10,
+          "trend_per_year": 5.088497883205922e-12
+        },
+        "6": {
+          "mean": -1.1836878391038555e-10,
+          "trend_per_year": 9.849075615756351e-12
+        }
+      }
+    },
+    "olr": {
+      "range": [
+        -102.2950210571289,
+        80.006591796875
+      ],
+      "same_month_residual_checks": {
+        "1": {
+          "mean": -1.673828177296678e-09,
+          "trend_per_year": 1.2145974629183993e-10
+        },
+        "2": {
+          "mean": -2.0501773710811397e-09,
+          "trend_per_year": -4.249942695259233e-11
+        },
+        "3": {
+          "mean": 2.4424576928873245e-09,
+          "trend_per_year": -8.12454934833191e-12
+        },
+        "4": {
+          "mean": -6.965514584875463e-10,
+          "trend_per_year": -7.437335336615137e-11
+        },
+        "5": {
+          "mean": 1.5141909059934732e-09,
+          "trend_per_year": 7.159314004118306e-12
+        },
+        "6": {
+          "mean": -8.159761261734072e-11,
+          "trend_per_year": -4.7265243974546874e-11
+        }
+      }
+    }
+  },
+  "outputs": {
+    "atmospheric_netcdf": "/Users/daiyue/Documents/Maryland/data/derived/research_2026/era5_u850_olr_equatorial_jan_jun_1980_2024_anomalies.nc",
+    "extended_event_csv": "/Users/daiyue/Documents/Maryland/data/derived/research_2026/jiang_fep_soda3_atmospheric_closure_1997_2015_2023.csv",
+    "figure_png": "/Users/daiyue/Documents/Maryland/outputs/research_2026/soda3_fep_transition/jiang_fep_soda3_u850_olr_1997_2015_2023.png",
+    "figure_pdf": "/Users/daiyue/Documents/Maryland/output/pdf/jiang_fep_soda3_u850_olr_1997_2015_2023.pdf"
+  }
+}

@@ -1,0 +1,16 @@
+# Isca mkmf template for Apple Silicon macOS with conda-forge compilers.
+CPPFLAGS = `nc-config --cflags`
+NC_INC = `nf-config --fflags`
+NC_LIB = `nf-config --flibs`
+SYSROOT = `xcrun --show-sdk-path`
+
+FFLAGS = $(CPPFLAGS) $(NC_INC) -cpp -fcray-pointer \
+	-O2 -ffree-line-length-none -fno-range-check \
+	-fdefault-real-8 -fdefault-double-8 -fallow-invalid-boz \
+	-fallow-argument-mismatch -Wl,-syslibroot,$(SYSROOT)
+
+FC = $(F90)
+LD = $(F90)
+
+LDFLAGS = -Wl,-syslibroot,$(SYSROOT) $(NC_LIB) -lmpi
+CFLAGS = -D__IFC -isysroot $(SYSROOT)

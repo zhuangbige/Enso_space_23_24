@@ -1,0 +1,790 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/rpplww",
+    "id": "rpplww",
+    "slide": 6,
+    "layoutId": "eeae0df4-99e0-4f39-9912-afc7fcc982f2",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "396bf202-7f1a-4258-8d63-44274bd4b711",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Aptos",
+      "Aptos Display"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "eeae0df4-99e0-4f39-9912-afc7fcc982f2",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "396bf202-7f1a-4258-8d63-44274bd4b711",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "396bf202-7f1a-4258-8d63-44274bd4b711",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/65wjudg7",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#F7F3EA",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hwfyxobm",
+      "id": "2",
+      "bbox": [
+        58,
+        30,
+        360,
+        25
+      ],
+      "geometry": "rect",
+      "text": "原文复现 Fig. 1",
+      "textPreview": "原文复现 Fig. 1",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Aptos",
+        "color": "#CC5A43",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "原文复现 Fig. 1"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "原文复现 Fig. 1",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Aptos",
+            "color": "#CC5A43",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "原文复现 Fig. 1",
+              "fontSize": 14,
+              "typeface": "Aptos",
+              "color": "#CC5A43",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/obm58z25",
+      "id": "3",
+      "bbox": [
+        58,
+        64,
+        1100,
+        82
+      ],
+      "geometry": "rect",
+      "text": "图中数据名称：SST、海平面气压/10米风、Niño-3 与大气响应散点",
+      "textPreview": "图中数据名称：SST、海平面气压/10米风、Niño-3 与大气响应散点",
+      "resolvedFontSize": 29,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 29,
+        "typeface": "Aptos Display",
+        "color": "#1D1B18",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "图中数据名称：SST、海平面气压/10米风、Niño-3 与大气响应散点"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "图中数据名称：SST、海平面气压/10米风、Niño-3 与大气响应散点",
+          "resolvedTextStyle": {
+            "fontSize": 29,
+            "typeface": "Aptos Display",
+            "color": "#1D1B18",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "图中数据名称：SST、海平面气压/10米风、Niño-3 与大气响应散点",
+              "fontSize": 29,
+              "typeface": "Aptos Display",
+              "color": "#1D1B18",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zed8v6ps",
+      "id": "4",
+      "bbox": [
+        58,
+        148,
+        1130,
+        1.5
+      ],
+      "geometry": "rect",
+      "fillColor": "#D8D1C4",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/j2t83itg",
+      "id": "5",
+      "bbox": [
+        60,
+        182,
+        600,
+        366
+      ],
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "0ac9b8f5-70ce-4b2f-826f-e83cb2a910d5",
+        "contentType": "image/png",
+        "byteLength": 2324062
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hk3q5o7q",
+      "id": "6",
+      "bbox": [
+        694,
+        168,
+        452,
+        118
+      ],
+      "geometry": "rect",
+      "fillColor": "#F5E5DF",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.8
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/oza1gvy9",
+      "id": "7",
+      "bbox": [
+        708,
+        180,
+        424,
+        22
+      ],
+      "geometry": "rect",
+      "text": "这幅图是什么数据",
+      "textPreview": "这幅图是什么数据",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Aptos",
+        "color": "#2F6F73",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "这幅图是什么数据"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "这幅图是什么数据",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Aptos",
+            "color": "#2F6F73",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "这幅图是什么数据",
+              "fontSize": 14,
+              "typeface": "Aptos",
+              "color": "#2F6F73",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/z61032ls",
+      "id": "8",
+      "bbox": [
+        708,
+        210,
+        424,
+        68
+      ],
+      "geometry": "rect",
+      "text": "Peng et al. Fig. 1 的源数据。上半部分是 2023/24 与历史强事件的海表温度、海平面气压和 10 米风异常；下半部分是 Niño-3 海温与 u10、SOI 的历史关系。",
+      "textPreview": "Peng et al. Fig. 1 的源数据。上半部分是 2023/24 与历史强事件的海表温度、海平面气压和 10 米风异常；下半部分是 Niño-3 海温与 u10、SOI 的历史关系。",
+      "resolvedFontSize": 14.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14.51,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Peng et al. Fig. 1 的源数据。上半部分是 2023/24"
+          },
+          {
+            "index": 2,
+            "text": "与历史强事件的海表温度、海平面气压和 10"
+          },
+          {
+            "index": 3,
+            "text": "米风异常；下半部分是 Niño-3 海温与 u10、SOI 的历史关系。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Peng et al. Fig. 1 的源数据。上半部分是 2023/24 与历史强事件的海表温度、海平面气压和 10 米风异常；下半部分是 Niño-3 海温与 u10、SOI 的历史关系。",
+          "resolvedTextStyle": {
+            "fontSize": 14.51,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Peng et al. Fig. 1 的源数据。上半部分是 2023/24 与历史强事件的海表温度、海平面气压和 10 米风异常；下半部分是 Niño-3 海温与 u10、SOI 的历史关系。",
+              "fontSize": 14.51,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/al87ed8b",
+      "id": "9",
+      "bbox": [
+        694,
+        302,
+        452,
+        118
+      ],
+      "geometry": "rect",
+      "fillColor": "#EDF3EF",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.8
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/k3q5o7qp",
+      "id": "10",
+      "bbox": [
+        708,
+        314,
+        424,
+        22
+      ],
+      "geometry": "rect",
+      "text": "它反映了什么",
+      "textPreview": "它反映了什么",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Aptos",
+        "color": "#2F6F73",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "它反映了什么"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "它反映了什么",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Aptos",
+            "color": "#2F6F73",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "它反映了什么",
+              "fontSize": 14,
+              "typeface": "Aptos",
+              "color": "#2F6F73",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/donyd0z6",
+      "id": "11",
+      "bbox": [
+        708,
+        344,
+        424,
+        68
+      ],
+      "geometry": "rect",
+      "text": "2023/24 的 Niño-3 海温很强，但对应的近地面风和气压响应偏弱，说明海洋强度和大气响应强度没有按历史经验同步增长。",
+      "textPreview": "2023/24 的 Niño-3 海温很强，但对应的近地面风和气压响应偏弱，说明海洋强度和大气响应强度没有按历史经验同步增长。",
+      "resolvedFontSize": 14.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14.51,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "2023/24 的 Niño-3"
+          },
+          {
+            "index": 2,
+            "text": "海温很强，但对应的近地面风和气压响应偏弱，说明海洋强度和大"
+          },
+          {
+            "index": 3,
+            "text": "气响应强度没有按历史经验同步增长。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "2023/24 的 Niño-3 海温很强，但对应的近地面风和气压响应偏弱，说明海洋强度和大气响应强度没有按历史经验同步增长。",
+          "resolvedTextStyle": {
+            "fontSize": 14.51,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "2023/24 的 Niño-3 海温很强，但对应的近地面风和气压响应偏弱，说明海洋强度和大气响应强度没有按历史经验同步增长。",
+              "fontSize": 14.51,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2x4nap4r",
+      "id": "12",
+      "bbox": [
+        694,
+        436,
+        452,
+        118
+      ],
+      "geometry": "rect",
+      "fillColor": "#F5E5DF",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.8
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vixczed8",
+      "id": "13",
+      "bbox": [
+        708,
+        448,
+        424,
+        22
+      ],
+      "geometry": "rect",
+      "text": "对应原文与我的创新",
+      "textPreview": "对应原文与我的创新",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Aptos",
+        "color": "#2F6F73",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "对应原文与我的创新"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "对应原文与我的创新",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Aptos",
+            "color": "#2F6F73",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "对应原文与我的创新",
+              "fontSize": 14,
+              "typeface": "Aptos",
+              "color": "#2F6F73",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kre1w7mp",
+      "id": "14",
+      "bbox": [
+        708,
+        478,
+        424,
+        68
+      ],
+      "geometry": "rect",
+      "text": "对应原文的核心事实复现。创新不是这页本身，而是后续把这个全年/成熟期事实拆到 AMJ/JJA 发展前期，追问弱响应何时开始。",
+      "textPreview": "对应原文的核心事实复现。创新不是这页本身，而是后续把这个全年/成熟期事实拆到 AMJ/JJA 发展前期，追问弱响应何时开始。",
+      "resolvedFontSize": 14.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14.51,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "对应原文的核心事实复现。创新不是这页本身，而是后续把这个全"
+          },
+          {
+            "index": 2,
+            "text": "年/成熟期事实拆到 AMJ/JJA 发展前期，追问弱响应何时开始。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "对应原文的核心事实复现。创新不是这页本身，而是后续把这个全年/成熟期事实拆到 AMJ/JJA 发展前期，追问弱响应何时开始。",
+          "resolvedTextStyle": {
+            "fontSize": 14.51,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "对应原文的核心事实复现。创新不是这页本身，而是后续把这个全年/成熟期事实拆到 AMJ/JJA 发展前期，追问弱响应何时开始。",
+              "fontSize": 14.51,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dcbulwva",
+      "id": "15",
+      "bbox": [
+        58,
+        680,
+        1120,
+        26
+      ],
+      "geometry": "rect",
+      "text": "Data: Peng et al. source archive; local file Fig1.png; table fig1_event_coupling.csv.",
+      "textPreview": "Data: Peng et al. source archive; local file Fig1.png; table fig1_event_coupling.csv.",
+      "resolvedFontSize": 10.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 10.51,
+        "typeface": "Aptos",
+        "color": "#5D574F",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Data: Peng et al. source archive; local file Fig1.png; table fig1_event_coupling.csv."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Data: Peng et al. source archive; local file Fig1.png; table fig1_event_coupling.csv.",
+          "resolvedTextStyle": {
+            "fontSize": 10.51,
+            "typeface": "Aptos",
+            "color": "#5D574F",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Data: Peng et al. source archive; local file Fig1.png; table fig1_event_coupling.csv.",
+              "fontSize": 10.51,
+              "typeface": "Aptos",
+              "color": "#5D574F"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

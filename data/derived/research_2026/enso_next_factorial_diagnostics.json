@@ -1,0 +1,18 @@
+{
+  "event_count": 13,
+  "training_event_count_for_2023_surfaces": 12,
+  "training_excludes_2023": true,
+  "ridge_alpha": 1.0,
+  "bootstrap_samples": 10000,
+  "factorial_cells": 27,
+  "type_cell_class_counts": {
+    "CP-consistent": 6,
+    "metric-disagreement": 3
+  },
+  "robust_type_cell_counts": {
+    "CP-consistent": 0,
+    "metric-disagreement": 0
+  },
+  "robustness_rows": 90,
+  "interpretation_guardrail": "Observationally constrained ridge response surfaces; dynamical model perturbations are required for causal claims."
+}

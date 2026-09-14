@@ -1,0 +1,19 @@
+Communication job:
+By the end, a climate-dynamics group-meeting audience should understand which parts of the three-question storyline are directly supported, which are statistically robust, and which remain an unresolved budget or causal mechanism.
+
+Source structure:
+- 36-slide, 16:9 scientific deck.
+- White background, blue eyebrow, dark navy takeaway titles, thin gray separator.
+- Recurring three-column calculation slides and three-card answer/synthesis slides.
+- Existing figures are inherited images; no new chart primitive is added in this revision.
+- All source slides are retained. Four cloned slides are inserted as two calculation/result pairs.
+
+Insertion contract:
+- Insert a residual-audit calculation slide and result slide after source slide 25.
+- Insert a Q3 robustness calculation slide and result slide after source slide 31.
+- Reuse source slide 24/30 for calculation-page geometry and source slide 2 for three-card result geometry.
+- Edit inherited elements in place; preserve master, layout, typography, spacing, and all unrelated notes/assets.
+
+Placeholder audit:
+- The source inventory shows no visible default prompt text on the reused slides.
+- Final QA will inspect exported OOXML for empty structural placeholders.

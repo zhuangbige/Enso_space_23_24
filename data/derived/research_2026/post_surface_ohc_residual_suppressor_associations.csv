@@ -1,0 +1,16 @@
+response,response_label,factor,pearson_r_with_base_loeo_residual,permutation_p_two_sided
+atmosphere_composite_z,Atmosphere composite,external_warmth_trend_retained_c,-0.15496865693008627,0.5827883442331153
+atmosphere_composite_z,Atmosphere composite,external_warmth_detrended_c,-0.0629247453315301,0.8288634227315453
+atmosphere_composite_z,Atmosphere composite,u850_jan_apr_anom_ms,0.3012999188808527,0.3098338033239335
+u850_response_z,850-hPa westerly,external_warmth_trend_retained_c,-0.2126679464912633,0.44753104937901245
+u850_response_z,850-hPa westerly,external_warmth_detrended_c,-0.1519261374332201,0.6047079058418832
+u850_response_z,850-hPa westerly,u850_jan_apr_anom_ms,0.27152548890995254,0.3643127137457251
+convection_response_z,Convection (-OLR),external_warmth_trend_retained_c,-0.05472694902980322,0.8511029779404412
+convection_response_z,Convection (-OLR),external_warmth_detrended_c,0.06607778886973953,0.8259234815303694
+convection_response_z,Convection (-OLR),u850_jan_apr_anom_ms,0.28043528551024866,0.3518129637407252
+precip_response_z,Precipitation,external_warmth_trend_retained_c,0.010816045999074535,0.9703205935881283
+precip_response_z,Precipitation,external_warmth_detrended_c,0.2467732046141714,0.41295174096518067
+precip_response_z,Precipitation,u850_jan_apr_anom_ms,0.19630084204275663,0.5166896662066759
+tau_response_z,Eastward wind stress,external_warmth_trend_retained_c,-0.18577132679032202,0.5176696466070678
+tau_response_z,Eastward wind stress,external_warmth_detrended_c,-0.19549934851383227,0.5169096618067639
+tau_response_z,Eastward wind stress,u850_jan_apr_anom_ms,0.2743286807156341,0.3625127497450051

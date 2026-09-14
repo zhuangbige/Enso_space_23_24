@@ -1,0 +1,31 @@
+{
+  "baseline": [
+    1982,
+    2022
+  ],
+  "equatorial_box": "5S-5N, 140W-80W, 0-300 m",
+  "north_box": "5-12N, 140W-80W, 0-300 m",
+  "partition_definition": "residual north H20 change conditional on equator+north total H20 change",
+  "n_events": 13,
+  "event_years": [
+    1982,
+    1986,
+    1991,
+    1994,
+    1997,
+    2002,
+    2004,
+    2006,
+    2009,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "strict_lag_windows": [
+    "Jan-Mar -> AMJ",
+    "Jan-Apr -> MJJ",
+    "Jan-May -> JJA"
+  ],
+  "mediation_timing": "Jan-Apr partition -> May-Jun precipitation/SLP -> Jul-Aug wind stress"
+}

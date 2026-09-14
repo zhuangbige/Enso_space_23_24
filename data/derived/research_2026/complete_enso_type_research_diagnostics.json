@@ -1,0 +1,66 @@
+{
+  "method": {
+    "climatology": "1980-2024 for observational E/C indices",
+    "event_validation": "leave one El Nino episode out",
+    "nmme_validation": [
+      "leave one year out",
+      "chronological expanding window"
+    ],
+    "target_primary": "mature DJF Nino3 minus Nino4",
+    "target_sensitivity": "orthogonal ERSSTv5 E minus C flavor",
+    "ridge_alpha": 1.0
+  },
+  "type_definition": {
+    "box_type_vs_nino34_r": 0.8316580917362315,
+    "ec_flavor_vs_nino34_r": 0.6415276869130119,
+    "pc1_variance_fraction": 0.6924114177517505,
+    "pc2_variance_fraction": 0.13815469168527467
+  },
+  "transition_checkpoint": {
+    "earliest_robust_month": 4,
+    "soda_box_skill": 0.4252139817154561,
+    "soda_box_sign": 0.9230769230769231,
+    "oras_box_skill": 0.4999745065946476,
+    "oras_box_sign": 1.0,
+    "soda_ec_skill": 0.3286822706346675,
+    "oras_ec_skill": 0.37765779799987054,
+    "regime_dependence": "checkpoint loses skill when 1982, 1997, and 2015 are removed"
+  },
+  "nmme_barrier": {
+    "ep_penalty_c": 0.3048727882466959,
+    "cp_penalty_c": 0.0147056347165091,
+    "difference_c": 0.28988230725708697,
+    "ci_low_c": -0.0371096544319407,
+    "ci_high_c": 0.6174439614923142,
+    "probability_ep_greater": 0.9497
+  },
+  "nmme_ec_flavor_barrier": {
+    "ep_penalty": 0.038063809993538956,
+    "cp_penalty": 0.24421749493665057,
+    "grouping_note": "groups retain the original Nino3-minus-Nino4 event labels"
+  },
+  "coupling_error_link": {
+    "partial_r": 0.7887284469770743,
+    "partial_p": 0.0199978218125035,
+    "n_events": 10
+  },
+  "nmme_update": {
+    "walk_skill": 0.2632376607790172,
+    "walk_skill_ci": [
+      -0.10012924961156326,
+      0.5046121860021863
+    ],
+    "walk_nmme_r": 0.6821041287863047,
+    "walk_coupling_r": 0.8337534407899709,
+    "loyo_skill": 0.26724815846489935,
+    "loyo_skill_ci": [
+      0.005182593201798537,
+      0.4242617776843721
+    ]
+  },
+  "sample_sizes": {
+    "warm_events": 13,
+    "nmme_years": 30,
+    "nmme_son_files_projected": 35
+  }
+}

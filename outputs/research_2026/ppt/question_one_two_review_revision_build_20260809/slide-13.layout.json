@@ -1,0 +1,2668 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/ksut9s",
+    "id": "ksut9s",
+    "slide": 13,
+    "layoutId": "b34381ef-5364-459e-89fa-0f95bfbafe36",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "6db450a5-3eb5-4389-a9b8-408496577a69",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Pacific Heat Arrival",
+    "colors": {
+      "accent1": "#2C7FB8",
+      "accent2": "#D97706",
+      "accent3": "#16877A",
+      "accent4": "#B73A3A",
+      "accent5": "#35566B",
+      "accent6": "#7E5AA6",
+      "bg1": "#FFFFFF",
+      "bg2": "#EDF3F6",
+      "tx1": "#0A2133",
+      "tx2": "#35566B",
+      "dk1": "#0A2133",
+      "dk2": "#35566B",
+      "lt1": "#FFFFFF",
+      "lt2": "#EDF3F6",
+      "hlink": "#2C7FB8",
+      "folHlink": "#16877A"
+    },
+    "typefaces": [
+      "PingFang SC"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "b34381ef-5364-459e-89fa-0f95bfbafe36",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "6db450a5-3eb5-4389-a9b8-408496577a69",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "6db450a5-3eb5-4389-a9b8-408496577a69",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3q5wjuhc",
+      "id": "1",
+      "name": "kicker",
+      "bbox": [
+        54,
+        30,
+        180,
+        32
+      ],
+      "geometry": "rect",
+      "text": "边界敏感性",
+      "textPreview": "边界敏感性",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 22,
+        "typeface": "PingFang SC",
+        "color": "#2C7FB8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "边界敏感性"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "边界敏感性",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "PingFang SC",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "边界敏感性",
+              "fontSize": 22,
+              "typeface": "PingFang SC",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4rexszix",
+      "id": "2",
+      "name": "slide-title",
+      "bbox": [
+        54,
+        70,
+        1172,
+        58
+      ],
+      "geometry": "rect",
+      "text": "改变北边界后，持续北向仍不是CT的主要去向",
+      "textPreview": "改变北边界后，持续北向仍不是CT的主要去向",
+      "resolvedFontSize": 40,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 40,
+        "typeface": "PingFang SC",
+        "color": "#0A2133",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "改变北边界后，持续北向仍不是CT的主要去向"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "改变北边界后，持续北向仍不是CT的主要去向",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 40,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "改变北边界后，持续北向仍不是CT的主要去向",
+              "fontSize": 40,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/psnyl4zi",
+      "id": "3",
+      "name": "rule-54-142",
+      "bbox": [
+        54,
+        142,
+        1172,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#B8BCC4",
+      "lineWidth": 1.4
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ulcfmp0v",
+      "id": "4",
+      "name": "sensitivity-phase",
+      "bbox": [
+        54,
+        150,
+        1172,
+        28
+      ],
+      "geometry": "rect",
+      "text": "Dec(0)—May(+1)　·　正值表示向北异常输出　·　CT/CP各4个事件",
+      "textPreview": "Dec(0)—May(+1)　·　正值表示向北异常输出　·　CT/CP各4个事件",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "PingFang SC",
+        "color": "#35566B",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Dec(0)—May(+1)　·　正值表示向北异常输出　·　CT/CP各4个事件"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Dec(0)—May(+1)　·　正值表示向北异常输出　·　CT/CP各4个事件",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "PingFang SC",
+            "color": "#35566B",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Dec(0)—May(+1)　·　正值表示向北异常输出　·　CT/CP各4个事件",
+              "fontSize": 20,
+              "typeface": "PingFang SC",
+              "color": "#35566B",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fmlwfuhg",
+      "id": "5",
+      "name": "sens-grid--1",
+      "bbox": [
+        384.62,
+        210,
+        0,
+        300
+      ],
+      "geometry": "line",
+      "lineColor": "#DDE5E9",
+      "lineWidth": 1
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gnuxofil",
+      "id": "6",
+      "name": "sens-tick--1",
+      "bbox": [
+        356.62,
+        522,
+        56,
+        26
+      ],
+      "geometry": "rect",
+      "text": "-1.0",
+      "textPreview": "-1.0",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 17,
+        "typeface": "PingFang SC",
+        "color": "#35566B",
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "-1.0"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "-1.0",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "PingFang SC",
+            "color": "#35566B",
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "-1.0",
+              "fontSize": 17,
+              "typeface": "PingFang SC",
+              "color": "#35566B",
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/honehkz6",
+      "id": "7",
+      "name": "sens-grid--0.75",
+      "bbox": [
+        465.38,
+        210,
+        0,
+        300
+      ],
+      "geometry": "line",
+      "lineColor": "#DDE5E9",
+      "lineWidth": 1
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ehgfy90z",
+      "id": "8",
+      "name": "sens-tick--0.75",
+      "bbox": [
+        437.38,
+        522,
+        56,
+        26
+      ],
+      "geometry": "rect",
+      "text": "-0.75",
+      "textPreview": "-0.75",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 17,
+        "typeface": "PingFang SC",
+        "color": "#35566B",
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "-0.75"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "-0.75",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "PingFang SC",
+            "color": "#35566B",
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "-0.75",
+              "fontSize": 17,
+              "typeface": "PingFang SC",
+              "color": "#35566B",
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zipgrehk",
+      "id": "9",
+      "name": "sens-grid--0.5",
+      "bbox": [
+        546.15,
+        210,
+        0,
+        300
+      ],
+      "geometry": "line",
+      "lineColor": "#DDE5E9",
+      "lineWidth": 1
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rqh07ehs",
+      "id": "10",
+      "name": "sens-tick--0.5",
+      "bbox": [
+        518.15,
+        522,
+        56,
+        26
+      ],
+      "geometry": "rect",
+      "text": "-0.5",
+      "textPreview": "-0.5",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 17,
+        "typeface": "PingFang SC",
+        "color": "#35566B",
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "-0.5"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "-0.5",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "PingFang SC",
+            "color": "#35566B",
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "-0.5",
+              "fontSize": 17,
+              "typeface": "PingFang SC",
+              "color": "#35566B",
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6p8jy907",
+      "id": "11",
+      "name": "sens-grid--0.25",
+      "bbox": [
+        626.92,
+        210,
+        0,
+        300
+      ],
+      "geometry": "line",
+      "lineColor": "#DDE5E9",
+      "lineWidth": 1
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tszi94zi",
+      "id": "12",
+      "name": "sens-tick--0.25",
+      "bbox": [
+        598.92,
+        522,
+        56,
+        26
+      ],
+      "geometry": "rect",
+      "text": "-0.25",
+      "textPreview": "-0.25",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 17,
+        "typeface": "PingFang SC",
+        "color": "#35566B",
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "-0.25"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "-0.25",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "PingFang SC",
+            "color": "#35566B",
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "-0.25",
+              "fontSize": 17,
+              "typeface": "PingFang SC",
+              "color": "#35566B",
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/srq10zid",
+      "id": "13",
+      "name": "sens-grid-0",
+      "bbox": [
+        707.69,
+        210,
+        0,
+        300
+      ],
+      "geometry": "line",
+      "lineColor": "#0A2133",
+      "lineWidth": 2
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fuh0beho",
+      "id": "14",
+      "name": "sens-tick-0",
+      "bbox": [
+        679.69,
+        522,
+        56,
+        26
+      ],
+      "geometry": "rect",
+      "text": "0.0",
+      "textPreview": "0.0",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 17,
+        "typeface": "PingFang SC",
+        "color": "#0A2133",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "0.0"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "0.0",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "0.0",
+              "fontSize": 17,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/et8j2903",
+      "id": "15",
+      "name": "sens-grid-0.25",
+      "bbox": [
+        788.46,
+        210,
+        0,
+        300
+      ],
+      "geometry": "line",
+      "lineColor": "#DDE5E9",
+      "lineWidth": 1
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1gjidozu",
+      "id": "16",
+      "name": "sens-tick-0.25",
+      "bbox": [
+        760.46,
+        522,
+        56,
+        26
+      ],
+      "geometry": "rect",
+      "text": "0.25",
+      "textPreview": "0.25",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 17,
+        "typeface": "PingFang SC",
+        "color": "#35566B",
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "0.25"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "0.25",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "PingFang SC",
+            "color": "#35566B",
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "0.25",
+              "fontSize": 17,
+              "typeface": "PingFang SC",
+              "color": "#35566B",
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gva14ji9",
+      "id": "17",
+      "name": "sens-grid-0.5",
+      "bbox": [
+        869.23,
+        210,
+        0,
+        300
+      ],
+      "geometry": "line",
+      "lineColor": "#DDE5E9",
+      "lineWidth": 1
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3i10fyh0",
+      "id": "18",
+      "name": "sens-tick-0.5",
+      "bbox": [
+        841.23,
+        522,
+        56,
+        26
+      ],
+      "geometry": "rect",
+      "text": "0.5",
+      "textPreview": "0.5",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 17,
+        "typeface": "PingFang SC",
+        "color": "#35566B",
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "0.5"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "0.5",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "PingFang SC",
+            "color": "#35566B",
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "0.5",
+              "fontSize": 17,
+              "typeface": "PingFang SC",
+              "color": "#35566B",
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2hsj6t0f",
+      "id": "19",
+      "name": "sens-grid-0.75",
+      "bbox": [
+        950,
+        210,
+        0,
+        300
+      ],
+      "geometry": "line",
+      "lineColor": "#DDE5E9",
+      "lineWidth": 1
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ydc3yxkn",
+      "id": "20",
+      "name": "sens-tick-0.75",
+      "bbox": [
+        922,
+        522,
+        56,
+        26
+      ],
+      "geometry": "rect",
+      "text": "0.75",
+      "textPreview": "0.75",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 17,
+        "typeface": "PingFang SC",
+        "color": "#35566B",
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "0.75"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "0.75",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "PingFang SC",
+            "color": "#35566B",
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "0.75",
+              "fontSize": 17,
+              "typeface": "PingFang SC",
+              "color": "#35566B",
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ze547i18",
+      "id": "21",
+      "name": "sens-grid-1",
+      "bbox": [
+        1030.77,
+        210,
+        0,
+        300
+      ],
+      "geometry": "line",
+      "lineColor": "#DDE5E9",
+      "lineWidth": 1
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0fel0n2d",
+      "id": "22",
+      "name": "sens-tick-1",
+      "bbox": [
+        1002.77,
+        522,
+        56,
+        26
+      ],
+      "geometry": "rect",
+      "text": "1.0",
+      "textPreview": "1.0",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 17,
+        "typeface": "PingFang SC",
+        "color": "#35566B",
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "1.0"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "1.0",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "PingFang SC",
+            "color": "#35566B",
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "1.0",
+              "fontSize": 17,
+              "typeface": "PingFang SC",
+              "color": "#35566B",
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lgnm9sjy",
+      "id": "23",
+      "name": "sens-grid-1.25",
+      "bbox": [
+        1111.54,
+        210,
+        0,
+        300
+      ],
+      "geometry": "line",
+      "lineColor": "#DDE5E9",
+      "lineWidth": 1
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qpc3adkb",
+      "id": "24",
+      "name": "sens-tick-1.25",
+      "bbox": [
+        1083.54,
+        522,
+        56,
+        26
+      ],
+      "geometry": "rect",
+      "text": "1.25",
+      "textPreview": "1.25",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 17,
+        "typeface": "PingFang SC",
+        "color": "#35566B",
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "1.25"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "1.25",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "PingFang SC",
+            "color": "#35566B",
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "1.25",
+              "fontSize": 17,
+              "typeface": "PingFang SC",
+              "color": "#35566B",
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bal43i1w",
+      "id": "25",
+      "name": "sens-row-0",
+      "bbox": [
+        88,
+        248,
+        170,
+        44
+      ],
+      "geometry": "rect",
+      "text": "10°N",
+      "textPreview": "10°N",
+      "resolvedFontSize": 29,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 29,
+        "typeface": "PingFang SC",
+        "color": "#0A2133",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "10°N"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "10°N",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 29,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "10°N",
+              "fontSize": 29,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 26,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cbulwn2h",
+      "id": "26",
+      "name": "sens-ct-0-whisker",
+      "bbox": [
+        729.54,
+        258,
+        262.8,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#D97706",
+      "lineWidth": 3
+    },
+    {
+      "order": 27,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dc3m5sj2",
+      "id": "27",
+      "name": "sens-ct-0-low-cap",
+      "bbox": [
+        729.54,
+        251,
+        0,
+        14
+      ],
+      "geometry": "line",
+      "lineColor": "#D97706",
+      "lineWidth": 2.4
+    },
+    {
+      "order": 28,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/alw36hkv",
+      "id": "28",
+      "name": "sens-ct-0-high-cap",
+      "bbox": [
+        992.34,
+        251,
+        0,
+        14
+      ],
+      "geometry": "line",
+      "lineColor": "#D97706",
+      "lineWidth": 2.4
+    },
+    {
+      "order": 29,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/v6p4f21g",
+      "id": "29",
+      "name": "sens-ct-0-mean",
+      "bbox": [
+        838.29,
+        250.5,
+        15,
+        15
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#D97706",
+      "lineColor": "#D97706",
+      "lineWidth": 0
+    },
+    {
+      "order": 30,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/50r65g3i",
+      "id": "30",
+      "name": "sens-ct-0-value",
+      "bbox": [
+        855.79,
+        232,
+        76,
+        24
+      ],
+      "geometry": "rect",
+      "text": "+0.43",
+      "textPreview": "+0.43",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 17,
+        "typeface": "PingFang SC",
+        "color": "#D97706",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "+0.43"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "+0.43",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "PingFang SC",
+            "color": "#D97706",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "+0.43",
+              "fontSize": 17,
+              "typeface": "PingFang SC",
+              "color": "#D97706",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 31,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kzipcbmx",
+      "id": "31",
+      "name": "sens-cp-0-whisker",
+      "bbox": [
+        742.66,
+        284,
+        282.79,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#2C7FB8",
+      "lineWidth": 3
+    },
+    {
+      "order": 32,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/je9o36lc",
+      "id": "32",
+      "name": "sens-cp-0-low-cap",
+      "bbox": [
+        742.66,
+        277,
+        0,
+        14
+      ],
+      "geometry": "line",
+      "lineColor": "#2C7FB8",
+      "lineWidth": 2.4
+    },
+    {
+      "order": 33,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/idg7a14r",
+      "id": "33",
+      "name": "sens-cp-0-high-cap",
+      "bbox": [
+        1025.45,
+        277,
+        0,
+        14
+      ],
+      "geometry": "line",
+      "lineColor": "#2C7FB8",
+      "lineWidth": 2.4
+    },
+    {
+      "order": 34,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xc761w36",
+      "id": "34",
+      "name": "sens-cp-0-mean",
+      "bbox": [
+        876.56,
+        276.5,
+        15,
+        15
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#2C7FB8",
+      "lineColor": "#2C7FB8",
+      "lineWidth": 0
+    },
+    {
+      "order": 35,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wby58rml",
+      "id": "35",
+      "name": "sens-cp-0-value",
+      "bbox": [
+        894.06,
+        290,
+        76,
+        24
+      ],
+      "geometry": "rect",
+      "text": "+0.55",
+      "textPreview": "+0.55",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 17,
+        "typeface": "PingFang SC",
+        "color": "#2C7FB8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "+0.55"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "+0.55",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "PingFang SC",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "+0.55",
+              "fontSize": 17,
+              "typeface": "PingFang SC",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 36,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vapozmlg",
+      "id": "36",
+      "name": "sens-row-1",
+      "bbox": [
+        88,
+        338,
+        170,
+        44
+      ],
+      "geometry": "rect",
+      "text": "12°N",
+      "textPreview": "12°N",
+      "resolvedFontSize": 29,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 29,
+        "typeface": "PingFang SC",
+        "color": "#0A2133",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "12°N"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "12°N",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 29,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "12°N",
+              "fontSize": 29,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 37,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/a9gn6h4v",
+      "id": "37",
+      "name": "sens-ct-1-whisker",
+      "bbox": [
+        589.92,
+        348,
+        274.05,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#D97706",
+      "lineWidth": 3
+    },
+    {
+      "order": 38,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h8b6d03q",
+      "id": "38",
+      "name": "sens-ct-1-low-cap",
+      "bbox": [
+        589.92,
+        341,
+        0,
+        14
+      ],
+      "geometry": "line",
+      "lineColor": "#D97706",
+      "lineWidth": 2.4
+    },
+    {
+      "order": 39,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/g72pkvm5",
+      "id": "39",
+      "name": "sens-ct-1-high-cap",
+      "bbox": [
+        863.97,
+        341,
+        0,
+        14
+      ],
+      "geometry": "line",
+      "lineColor": "#D97706",
+      "lineWidth": 2.4
+    },
+    {
+      "order": 40,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/obqx4vml",
+      "id": "40",
+      "name": "sens-ct-1-mean",
+      "bbox": [
+        720.77,
+        340.5,
+        15,
+        15
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#D97706",
+      "lineColor": "#D97706",
+      "lineWidth": 0
+    },
+    {
+      "order": 41,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9czed036",
+      "id": "41",
+      "name": "sens-ct-1-value",
+      "bbox": [
+        738.27,
+        322,
+        76,
+        24
+      ],
+      "geometry": "rect",
+      "text": "+0.06",
+      "textPreview": "+0.06",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 17,
+        "typeface": "PingFang SC",
+        "color": "#D97706",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "+0.06"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "+0.06",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "PingFang SC",
+            "color": "#D97706",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "+0.06",
+              "fontSize": 17,
+              "typeface": "PingFang SC",
+              "color": "#D97706",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 42,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/m98f2l4v",
+      "id": "42",
+      "name": "sens-cp-1-whisker",
+      "bbox": [
+        612,
+        374,
+        408.64,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#2C7FB8",
+      "lineWidth": 3
+    },
+    {
+      "order": 43,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nahwbql0",
+      "id": "43",
+      "name": "sens-cp-1-low-cap",
+      "bbox": [
+        612,
+        367,
+        0,
+        14
+      ],
+      "geometry": "line",
+      "lineColor": "#2C7FB8",
+      "lineWidth": 2.4
+    },
+    {
+      "order": 44,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wfqx8vmx",
+      "id": "44",
+      "name": "sens-cp-1-high-cap",
+      "bbox": [
+        1020.64,
+        367,
+        0,
+        14
+      ],
+      "geometry": "line",
+      "lineColor": "#2C7FB8",
+      "lineWidth": 2.4
+    },
+    {
+      "order": 45,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xgzyh03i",
+      "id": "45",
+      "name": "sens-cp-1-mean",
+      "bbox": [
+        756.57,
+        366.5,
+        15,
+        15
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#2C7FB8",
+      "lineColor": "#2C7FB8",
+      "lineWidth": 0
+    },
+    {
+      "order": 46,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ad8f654r",
+      "id": "46",
+      "name": "sens-cp-1-value",
+      "bbox": [
+        774.07,
+        380,
+        76,
+        24
+      ],
+      "geometry": "rect",
+      "text": "+0.17",
+      "textPreview": "+0.17",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 17,
+        "typeface": "PingFang SC",
+        "color": "#2C7FB8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "+0.17"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "+0.17",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "PingFang SC",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "+0.17",
+              "fontSize": 17,
+              "typeface": "PingFang SC",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 47,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/behwfqlc",
+      "id": "47",
+      "name": "sens-row-2",
+      "bbox": [
+        88,
+        428,
+        170,
+        44
+      ],
+      "geometry": "rect",
+      "text": "15°N",
+      "textPreview": "15°N",
+      "resolvedFontSize": 29,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 29,
+        "typeface": "PingFang SC",
+        "color": "#0A2133",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "15°N"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "15°N",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 29,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "15°N",
+              "fontSize": 29,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 48,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/k3axcf2t",
+      "id": "48",
+      "name": "sens-ct-2-whisker",
+      "bbox": [
+        724.2,
+        438,
+        257.38,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#D97706",
+      "lineWidth": 3
+    },
+    {
+      "order": 49,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l4jylk3e",
+      "id": "49",
+      "name": "sens-ct-2-low-cap",
+      "bbox": [
+        724.2,
+        431,
+        0,
+        14
+      ],
+      "geometry": "line",
+      "lineColor": "#D97706",
+      "lineWidth": 2.4
+    },
+    {
+      "order": 50,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fyl0be5g",
+      "id": "50",
+      "name": "sens-ct-2-high-cap",
+      "bbox": [
+        981.59,
+        431,
+        0,
+        14
+      ],
+      "geometry": "line",
+      "lineColor": "#D97706",
+      "lineWidth": 2.4
+    },
+    {
+      "order": 51,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/uxcz29ob",
+      "id": "51",
+      "name": "sens-ct-2-mean",
+      "bbox": [
+        845.4,
+        430.5,
+        15,
+        15
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#D97706",
+      "lineColor": "#D97706",
+      "lineWidth": 0
+    },
+    {
+      "order": 52,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h0nidonm",
+      "id": "52",
+      "name": "sens-ct-2-value",
+      "bbox": [
+        862.9,
+        412,
+        76,
+        24
+      ],
+      "geometry": "rect",
+      "text": "+0.45",
+      "textPreview": "+0.45",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 17,
+        "typeface": "PingFang SC",
+        "color": "#D97706",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "+0.45"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "+0.45",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "PingFang SC",
+            "color": "#D97706",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "+0.45",
+              "fontSize": 17,
+              "typeface": "PingFang SC",
+              "color": "#D97706",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 53,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gzuh4j61",
+      "id": "53",
+      "name": "sens-cp-2-whisker",
+      "bbox": [
+        574.22,
+        464,
+        198.84,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#2C7FB8",
+      "lineWidth": 3
+    },
+    {
+      "order": 54,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7al07u5k",
+      "id": "54",
+      "name": "sens-cp-2-low-cap",
+      "bbox": [
+        574.22,
+        457,
+        0,
+        14
+      ],
+      "geometry": "line",
+      "lineColor": "#2C7FB8",
+      "lineWidth": 2.4
+    },
+    {
+      "order": 55,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/69czypoz",
+      "id": "55",
+      "name": "sens-cp-2-high-cap",
+      "bbox": [
+        773.06,
+        457,
+        0,
+        14
+      ],
+      "geometry": "line",
+      "lineColor": "#2C7FB8",
+      "lineWidth": 2.4
+    },
+    {
+      "order": 56,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tc3i94nq",
+      "id": "56",
+      "name": "sens-cp-2-mean",
+      "bbox": [
+        675.03,
+        456.5,
+        15,
+        15
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#2C7FB8",
+      "lineColor": "#2C7FB8",
+      "lineWidth": 0
+    },
+    {
+      "order": 57,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sbuh0z65",
+      "id": "57",
+      "name": "sens-cp-2-value",
+      "bbox": [
+        692.53,
+        470,
+        76,
+        24
+      ],
+      "geometry": "rect",
+      "text": "−0.08",
+      "textPreview": "−0.08",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 17,
+        "typeface": "PingFang SC",
+        "color": "#2C7FB8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "−0.08"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "−0.08",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "PingFang SC",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "−0.08",
+              "fontSize": 17,
+              "typeface": "PingFang SC",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 58,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/r650jy5o",
+      "id": "58",
+      "name": "sens-legend-ct",
+      "bbox": [
+        891,
+        183,
+        14,
+        14
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#D97706",
+      "lineColor": "#D97706",
+      "lineWidth": 0
+    },
+    {
+      "order": 59,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/q5wjat43",
+      "id": "59",
+      "name": "sens-legend-ct-text",
+      "bbox": [
+        912,
+        177,
+        210,
+        28
+      ],
+      "geometry": "rect",
+      "text": "CT（均值与95%区间）",
+      "textPreview": "CT（均值与95%区间）",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 19,
+        "typeface": "PingFang SC",
+        "color": "#D97706",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CT（均值与95%区间）"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CT（均值与95%区间）",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "typeface": "PingFang SC",
+            "color": "#D97706",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CT（均值与95%区间）",
+              "fontSize": 19,
+              "typeface": "PingFang SC",
+              "color": "#D97706",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 60,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/m1032xob",
+      "id": "60",
+      "name": "sens-legend-cp",
+      "bbox": [
+        1093,
+        183,
+        14,
+        14
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#2C7FB8",
+      "lineColor": "#2C7FB8",
+      "lineWidth": 0
+    },
+    {
+      "order": 61,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/n29kb2pw",
+      "id": "61",
+      "name": "sens-legend-cp-text",
+      "bbox": [
+        1114,
+        177,
+        70,
+        28
+      ],
+      "geometry": "rect",
+      "text": "CP",
+      "textPreview": "CP",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 19,
+        "typeface": "PingFang SC",
+        "color": "#2C7FB8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CP"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CP",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "typeface": "PingFang SC",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CP",
+              "fontSize": 19,
+              "typeface": "PingFang SC",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 62,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/onil476h",
+      "id": "62",
+      "name": "sens-axis",
+      "bbox": [
+        320,
+        552,
+        840,
+        28
+      ],
+      "geometry": "rect",
+      "text": "向北累计异常暖量输送（ZJ）",
+      "textPreview": "向北累计异常暖量输送（ZJ）",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "PingFang SC",
+        "color": "#35566B",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "向北累计异常暖量输送（ZJ）"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "向北累计异常暖量输送（ZJ）",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "PingFang SC",
+            "color": "#35566B",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "向北累计异常暖量输送（ZJ）",
+              "fontSize": 20,
+              "typeface": "PingFang SC",
+              "color": "#35566B",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 63,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9or2dc72",
+      "id": "63",
+      "name": "sens-ratio",
+      "bbox": [
+        54,
+        590,
+        1172,
+        30
+      ],
+      "geometry": "rect",
+      "text": "CT：10°N / 12°N / 15°N北向输出 = 0.43 / 0.06 / 0.45 ZJ；仅为5°N输入2.74 ZJ的16% / 2% / 16%",
+      "textPreview": "CT：10°N / 12°N / 15°N北向输出 = 0.43 / 0.06 / 0.45 ZJ；仅为5°N输入2.74 ZJ的16% / 2% / 16%",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "PingFang SC",
+        "color": "#0A2133",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CT：10°N / 12°N / 15°N北向输出 = 0.43 / 0.06 / 0.45 ZJ；仅为5°N输入2.74 ZJ的16% / 2% / 16%"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CT：10°N / 12°N / 15°N北向输出 = 0.43 / 0.06 / 0.45 ZJ；仅为5°N输入2.74 ZJ的16% / 2% / 16%",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CT：10°N / 12°N / 15°N北向输出 = 0.43 / 0.06 / 0.45 ZJ；仅为5°N输入2.74 ZJ的16% / 2% / 16%",
+              "fontSize": 20,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 64,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ap036xon",
+      "id": "64",
+      "name": "takeaway-band",
+      "bbox": [
+        54,
+        635,
+        1172,
+        55
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#2C7FB8",
+      "lineColor": "#2C7FB8",
+      "lineWidth": 0
+    },
+    {
+      "order": 65,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bq94f2p8",
+      "id": "65",
+      "name": "takeaway-text",
+      "bbox": [
+        78,
+        644,
+        1124,
+        38
+      ],
+      "geometry": "rect",
+      "text": "“12°N≈0”不具边界稳健性；“持续北向不是CT的主要去向”在10°N—15°N范围内稳健。",
+      "textPreview": "“12°N≈0”不具边界稳健性；“持续北向不是CT的主要去向”在10°N—15°N范围内稳健。",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 25,
+        "typeface": "PingFang SC",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "“12°N≈0”不具边界稳健性；“持续北向不是CT的主要去向”在10°N—15°N范围内稳健。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "“12°N≈0”不具边界稳健性；“持续北向不是CT的主要去向”在10°N—15°N范围内稳健。",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "PingFang SC",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "“12°N≈0”不具边界稳健性；“持续北向不是CT的主要去向”在10°N—15°N范围内稳健。",
+              "fontSize": 25,
+              "typeface": "PingFang SC",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

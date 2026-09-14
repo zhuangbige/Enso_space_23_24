@@ -1,0 +1,53 @@
+{
+  "olr_source": "Copernicus Climate Data Store, reanalysis-era5-single-levels-monthly-means",
+  "olr_variable": "mean_top_net_long_wave_radiation_flux",
+  "olr_conversion": "OLR is the negative of ERA5 mean top net long-wave radiation flux because ERA5 vertical fluxes are positive downward.",
+  "olr_anomaly_method": "For each calendar month and grid cell, subtract the 1980-2014 climatology and remove the linear trend fitted across the same 1980-2014 years.",
+  "olr_grid": "1.0 degree",
+  "olr_domain": "20S-20N, 100E-80W",
+  "years": [
+    2015,
+    2023,
+    2026
+  ],
+  "months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "soi_source": "https://www.cpc.ncep.noaa.gov/data/indices/soi",
+  "equatorial_soi_source": "https://www.cpc.ncep.noaa.gov/data/indices/reqsoi.for",
+  "regions": {
+    "indonesia_120e_170e": {
+      "lat_min": -5.0,
+      "lat_max": 5.0,
+      "lon_min_east": 120.0,
+      "lon_max_east": 170.0
+    },
+    "central_pacific_170e_140w": {
+      "lat_min": -5.0,
+      "lat_max": 5.0,
+      "lon_min_east": 170.0,
+      "lon_max_east": 220.0
+    },
+    "central_pacific_precip_box_180_140w": {
+      "lat_min": -5.0,
+      "lat_max": 5.0,
+      "lon_min_east": 180.0,
+      "lon_max_east": 220.0
+    },
+    "east_central_pacific_140w_110w": {
+      "lat_min": -5.0,
+      "lat_max": 5.0,
+      "lon_min_east": 220.0,
+      "lon_max_east": 250.0
+    }
+  },
+  "sign_conventions": {
+    "olr": "negative anomaly denotes enhanced deep convection",
+    "soi": "negative denotes an El Nino-like pressure pattern"
+  }
+}

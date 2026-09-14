@@ -80,11 +80,16 @@ def _split_cds_areas(area: list[float]) -> list[tuple[str, list[float]]]:
 
 
 def build_request(
-    *, years: list[str], month: str, area: list[float], grid: float
+    *,
+    years: list[str],
+    month: str,
+    area: list[float],
+    grid: float,
+    variables: tuple[str, ...] | list[str] = VARIABLES,
 ) -> dict[str, object]:
     return {
         "product_type": ["monthly_averaged_reanalysis"],
-        "variable": list(VARIABLES),
+        "variable": list(variables),
         "year": years,
         "month": [month],
         "time": ["00:00"],
@@ -110,7 +115,9 @@ def _target_path(
     )
 
 
-def _validate_download(path: Path, expected_years: int) -> None:
+def _validate_download(
+    path: Path, expected_years: int, expected_variables: int = len(VARIABLES)
+) -> None:
     if not path.exists() or path.stat().st_size < 1024:
         raise RuntimeError(f"download is missing or too small: {path}")
     try:
@@ -119,16 +126,21 @@ def _validate_download(path: Path, expected_years: int) -> None:
         return
     try:
         try:
-            ds = xr.open_dataset(path, engine="h5netcdf")
+            ds = xr.open_dataset(path, engine="netcdf4")
         except Exception:
-            ds = xr.open_dataset(path, engine="scipy")
+            try:
+                ds = xr.open_dataset(path, engine="h5netcdf")
+            except Exception:
+                ds = xr.open_dataset(path, engine="scipy")
         time_name = "valid_time" if "valid_time" in ds.dims else "time"
         if ds.sizes.get(time_name, 0) != expected_years:
             raise RuntimeError(
                 f"unexpected time count in {path}: {ds.sizes.get(time_name, 0)} != {expected_years}"
             )
-        if len(ds.data_vars) < len(VARIABLES):
-            raise RuntimeError(f"expected {len(VARIABLES)} fields in {path}, found {list(ds.data_vars)}")
+        if len(ds.data_vars) < expected_variables:
+            raise RuntimeError(
+                f"expected {expected_variables} fields in {path}, found {list(ds.data_vars)}"
+            )
         ds.close()
     except Exception as exc:
         raise RuntimeError(f"download validation failed for {path}: {exc}") from exc
@@ -145,6 +157,7 @@ def retrieve(
     dry_run: bool,
     force: bool,
     retries: int,
+    variables: tuple[str, ...] | list[str] = VARIABLES,
 ) -> list[Path]:
     if start_year > end_year:
         raise ValueError("start-year must be <= end-year")
@@ -167,7 +180,13 @@ def retrieve(
                 grid=grid,
             )
             outputs.append(target)
-            request = build_request(years=years, month=month, area=cds_area, grid=grid)
+            request = build_request(
+                years=years,
+                month=month,
+                area=cds_area,
+                grid=grid,
+                variables=variables,
+            )
             if target.exists() and target.stat().st_size >= 1024 and not force:
                 print(f"exists: {target}")
                 continue
@@ -192,7 +211,7 @@ def retrieve(
                 try:
                     print(f"request month={month} area={cds_area} attempt={attempt}: {target}", flush=True)
                     client.retrieve(DATASET, request, str(partial))
-                    _validate_download(partial, len(years))
+                    _validate_download(partial, len(years), len(variables))
                     partial.replace(target)
                     print(target)
                     last_error = None
@@ -231,6 +250,12 @@ def parse_args() -> argparse.Namespace:
         help="Domain in either -180..180 or 0..360 longitude notation.",
     )
     parser.add_argument("--grid", type=float, default=1.0)
+    parser.add_argument(
+        "--variables",
+        nargs="+",
+        default=list(VARIABLES),
+        help="CDS variable names; defaults to zonal stress and four surface heat-flux components.",
+    )
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--force", action="store_true")
@@ -250,6 +275,7 @@ def main() -> int:
         dry_run=bool(args.dry_run),
         force=bool(args.force),
         retries=int(args.retries),
+        variables=tuple(args.variables),
     )
     return 0
 

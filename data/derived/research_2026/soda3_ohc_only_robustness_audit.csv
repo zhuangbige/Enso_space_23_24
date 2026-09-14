@@ -1,0 +1,21 @@
+scope,phase,quantity,tref0_zj,tref10_zj,tref20_zj,sign_stable,ordering_stable
+1997,development_Jan0_Jun0,140W transport sign,36.3575267,26.1410018,15.924477,True,
+2015,development_Jan0_Jun0,140W transport sign,-9.40814092,-0.357581352,8.69297822,False,
+2023,development_Jan0_Jun0,140W transport sign,-1.32330664,3.8474615,9.01822962,False,
+three-event ranking,development_Jan0_Jun0,140W transport sign,,,,,True
+1997,development_Jan0_Jun0,horizontal convergence sign,28.0580636,22.1048002,16.1515368,True,
+2015,development_Jan0_Jun0,horizontal convergence sign,3.289495,6.78068367,10.2718723,True,
+2023,development_Jan0_Jun0,horizontal convergence sign,11.7736513,10.2033551,8.63305877,True,
+three-event ranking,development_Jan0_Jun0,horizontal convergence sign,,,,,False
+1997,decay_Jan1_May1,5N total transport sign,8.67465693,7.85686979,7.03908267,True,
+2015,decay_Jan1_May1,5N total transport sign,-3.22136752,0.253905872,3.72917927,False,
+2023,decay_Jan1_May1,5N total transport sign,-9.11779266,-3.77015922,1.57747422,False,
+three-event ranking,decay_Jan1_May1,5N total transport sign,,,,,True
+1997,decay_Jan1_May1,5N Ekman transport sign,9.43288016,6.35266903,3.27245789,True,
+2015,decay_Jan1_May1,5N Ekman transport sign,5.84531871,4.16631417,2.48730962,True,
+2023,decay_Jan1_May1,5N Ekman transport sign,2.90511434,2.24940673,1.59369912,True,
+three-event ranking,decay_Jan1_May1,5N Ekman transport sign,,,,,True
+1997,decay_Jan1_May1,horizontal convergence sign,-54.6715129,-34.4304432,-14.1893735,True,
+2015,decay_Jan1_May1,horizontal convergence sign,-26.4397553,-18.2285916,-10.017428,True,
+2023,decay_Jan1_May1,horizontal convergence sign,-21.8767497,-14.5307801,-7.1848106,True,
+three-event ranking,decay_Jan1_May1,horizontal convergence sign,,,,,True

@@ -1,0 +1,10 @@
+relationship,x,y,n_events,pearson_r,permutation_p,bootstrap_ci_low,bootstrap_ci_high,loeo_r_min,loeo_r_max
+Immediate vertical projection: NE925 -> Jiang-box westward surface stress,ne925_mjj_ms,westward_taux_jiang_mjj_nm2,13,0.967123183,1.99996e-05,0.851335332,0.989144009,0.956536307,0.975413256
+Immediate western exit projection: NE925 -> 140W-110W stress,ne925_mjj_ms,westward_taux_exit_west_mjj_nm2,13,0.625476463,0.0252194956,0.209452501,0.913465189,0.396997942,0.762846757
+Immediate eastern exit projection: NE925 -> 110W-80W stress,ne925_mjj_ms,westward_taux_exit_east_mjj_nm2,13,-0.385779411,0.193896122,-0.772187416,0.244666339,-0.510988574,-0.105905463
+Cross-season link: NE925 -> following 5N Ekman Q20,ne925_mjj_ms,q5n_ekman_jan_may1_zj,13,-0.43312741,0.140337193,-0.890507361,0.034345375,-0.632365626,-0.296473195
+Cross-season link: NE925 -> following total 5N Q20,ne925_mjj_ms,q5n_total_jan_may1_zj,13,-0.209241716,0.489030219,-0.630843065,0.126160619,-0.332989094,-0.156311268
+Persistence test: NE925 -> following local westward stress,ne925_mjj_ms,westward_taux_decay_all_nm2,13,-0.461671916,0.111377772,-0.810792815,-0.151218019,-0.570808534,-0.3892269
+Late wind control: following westward stress -> Ekman Q20,westward_taux_decay_all_nm2,q5n_ekman_jan_may1_zj,13,0.967914711,1.99996e-05,0.899373556,0.991872237,0.949636875,0.978244796
+Late wind control: following westward stress -> total Q20,westward_taux_decay_all_nm2,q5n_total_jan_may1_zj,13,0.784402809,0.0017799644,0.388147595,0.949916254,0.661753638,0.877715664
+Pressure competition: geostrophic Q20 -> total Q20,q5n_geo_eos80_jan_may1_zj,q5n_total_jan_may1_zj,13,0.816159176,0.0006399872,0.516669841,0.929944562,0.731903807,0.847805779

@@ -1,0 +1,102 @@
+{"kind":"deck","id":"pr/qqndj5","name":"Deck"}
+{"kind":"layout","layoutId":"9a47583b-a857-444e-ae39-768d1ace9bf7","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"852b7ce8-2fd0-40c0-8587-2791015b16fc","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/no1jdf","slide":1,"title":"SODA3 · CT/CP · 1997/2015/2023","textShapes":4}
+{"kind":"textbox","id":"sh/w3at0ze5","slide":1,"name":"cover-kicker","text":"SODA3 · CT/CP · 1997/2015/2023","textPreview":"SODA3 · CT/CP · 1997/2015/2023","textChars":30,"textLines":1,"bbox":[54,42,760,36]}
+{"kind":"textbox","id":"sh/v21s7udk","slide":1,"name":"cover-title","text":"异常暖量是否真正\n到达东太平洋？","textPreview":"异常暖量是否真正 | 到达东太平洋？","textChars":16,"textLines":2,"bbox":[54,168,1050,220]}
+{"kind":"shape","id":"sh/u1sbypwf","slide":1,"name":"rule-54-435","bbox":[54,435,620,0]}
+{"kind":"textbox","id":"sh/583ud4v2","slide":1,"name":"cover-subtitle","text":"固定断面暖量输入 + 固定箱体储量","textPreview":"固定断面暖量输入 + 固定箱体储量","textChars":17,"textLines":1,"bbox":[54,475,800,58]}
+{"kind":"textbox","id":"sh/47ut4zuh","slide":1,"name":"cover-answer","text":"回答：到达了；CT更强，2015与2023几乎相当。","textPreview":"回答：到达了；CT更强，2015与2023几乎相当。","textChars":26,"textLines":1,"bbox":[54,565,1100,58]}
+{"kind":"notes","id":"nt/no1jdf","slide":1,"text":"[Sources]\n- Local SODA3.15.2 analysis: scripts/analyze_soda3_three_box_warm_heat_fate.py\n- Local event comparison: outputs/research_2026/enso_1997_2015_2023_warm_heat_fate_bridge/\n[/Sources]"}
+{"kind":"slide","id":"sl/nijczr","slide":2,"title":"问题一","textShapes":5}
+{"kind":"textbox","id":"sh/gridofa9","slide":2,"name":"kicker","text":"问题一","textPreview":"问题一","textChars":3,"textLines":1,"bbox":[54,30,180,32]}
+{"kind":"textbox","id":"sh/vq9cvato","slide":2,"name":"slide-title","text":"已有研究证明充放电差异，但终点没有推进到140°W","textPreview":"已有研究证明充放电差异，但终点没有推进到140°W","textChars":25,"textLines":1,"bbox":[54,70,1172,58]}
+{"kind":"shape","id":"sh/up0vm5sj","slide":2,"name":"rule-54-142","bbox":[54,142,1172,0]}
+{"kind":"textbox","id":"sh/torut0by","slide":2,"name":"prior-claim","text":"Chakravorty et al. (2021)","textPreview":"Chakravorty et al. (2021)","textChars":25,"textLines":1,"bbox":[54,186,400,42]}
+{"kind":"textbox","id":"sh/8nidkvad","slide":2,"name":"prior-body","text":"CT\n西太平洋蓄热 → 赤道东传 → 成熟期极向放电\n\nCP\n盆地尺度充放电循环较弱","textPreview":"CT | 西太平洋蓄热 → 赤道东传 → 成熟期极向放电 |  | CP | 盆地尺度充放电循环较弱","textChars":42,"textLines":5,"bbox":[54,248,420,280]}
+{"kind":"shape","id":"sh/7m9crats","slide":2,"name":"figure-frame","bbox":[500,174,726,394]}
+{"kind":"shape","id":"sh/l07up0bm","slide":2,"name":"takeaway-band","bbox":[54,635,1172,55]}
+{"kind":"textbox","id":"sh/kzydgva1","slide":2,"name":"takeaway-text","text":"本文把问题向东推进：暖量是否继续越过140°W，并在东部被储存？","textPreview":"本文把问题向东推进：暖量是否继续越过140°W，并在东部被储存？","textChars":32,"textLines":1,"bbox":[78,644,1124,38]}
+{"kind":"image","id":"im/ni1ori1g","slide":2,"name":"","alt":"Chakravorty et al. 2021 Figure 8 showing normalized zonal and meridional warm-water transports and WWV for CT and CP El Nino","bbox":[520,194,686,354]}
+{"kind":"notes","id":"nt/nijczr","slide":2,"text":"[Sources]\n- Chakravorty et al. (2021), Revisiting the Recharge and Discharge Processes for Different Flavors of El Niño, JGR Oceans, https://doi.org/10.1029/2020JC017075\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/three_questions_full_report_assets_20260805/chakravorty2021_figure8_excerpt.png\n[/Sources]"}
+{"kind":"slide","id":"sl/fmaakj","slide":3,"title":"问题一","textShapes":13}
+{"kind":"textbox","id":"sh/83uhovql","slide":3,"name":"kicker","text":"问题一","textPreview":"问题一","textChars":3,"textLines":1,"bbox":[54,30,180,32]}
+{"kind":"textbox","id":"sh/7il0fq9g","slide":3,"name":"slide-title","text":"只有“跨140°W输入”和“东部储量增加”同时成立，才判定到达","textPreview":"只有“跨140°W输入”和“东部储量增加”同时成立，才判定到达","textChars":31,"textLines":1,"bbox":[54,70,1172,58]}
+{"kind":"shape","id":"sh/6hczml8v","slide":3,"name":"rule-54-142","bbox":[54,142,1172,0]}
+{"kind":"textbox","id":"sh/lg3ydgra","slide":3,"name":"formula-h20-label","text":"东部储量","textPreview":"东部储量","textChars":4,"textLines":1,"bbox":[54,182,220,36]}
+{"kind":"textbox","id":"sh/kfuhkbqp","slide":3,"name":"formula-h20","text":"χ₂₀ = max(T−20°C, 0)\nH₂₀ = ρ₀cₚ ∭ χ₂₀ dV","textPreview":"χ₂₀ = max(T−20°C, 0) | H₂₀ = ρ₀cₚ ∭ χ₂₀ dV","textChars":40,"textLines":2,"bbox":[54,218,560,78]}
+{"kind":"textbox","id":"sh/jelgb694","slide":3,"name":"formula-q-label","text":"断面输入","textPreview":"断面输入","textChars":4,"textLines":1,"bbox":[674,182,220,36]}
+{"kind":"textbox","id":"sh/ydczi18j","slide":3,"name":"formula-q","text":"Qwarm,20 = ρ₀cₚ ∬ vₙ χ₂₀ dA","textPreview":"Qwarm,20 = ρ₀cₚ ∬ vₙ χ₂₀ dA","textChars":27,"textLines":1,"bbox":[674,226,552,56]}
+{"kind":"textbox","id":"sh/xcjy9gry","slide":3,"name":"units","text":"H₂₀：ZJ　　Qwarm,20：PW；按实际月秒数积分后为ZJ","textPreview":"H₂₀：ZJ　　Qwarm,20：PW；按实际月秒数积分后为ZJ","textChars":32,"textLines":1,"bbox":[54,304,1172,38]}
+{"kind":"shape","id":"sh/wbahgbqt","slide":3,"name":"arrow-west-central","bbox":[360,436,118,42]}
+{"kind":"shape","id":"sh/alsfepsr","slide":3,"name":"arrow-central-east","bbox":[804,436,118,42]}
+{"kind":"shape","id":"sh/vm1g7u9c","slide":3,"name":"west-box","bbox":[62,392,298,128]}
+{"kind":"shape","id":"sh/wnuxgzax","slide":3,"name":"central-box","bbox":[478,392,326,128]}
+{"kind":"shape","id":"sh/xo3y94ri","slide":3,"name":"east-box","bbox":[922,392,298,128]}
+{"kind":"textbox","id":"sh/mhsfapsv","slide":3,"name":"west-box-text","text":"西箱\n160°E—180°","textPreview":"西箱 | 160°E—180°","textChars":13,"textLines":2,"bbox":[82,414,258,84]}
+{"kind":"textbox","id":"sh/ni1w3u90","slide":3,"name":"central-box-text","text":"中箱\n180°—140°W","textPreview":"中箱 | 180°—140°W","textChars":13,"textLines":2,"bbox":[498,414,286,84]}
+{"kind":"textbox","id":"sh/8jaxczal","slide":3,"name":"east-box-text","text":"东箱\n140°W—80°W","textPreview":"东箱 | 140°W—80°W","textChars":13,"textLines":2,"bbox":[942,414,258,84]}
+{"kind":"textbox","id":"sh/9kjy5kr6","slide":3,"name":"gate-label-180","text":"180°","textPreview":"180°","textChars":4,"textLines":1,"bbox":[374,398,92,30]}
+{"kind":"textbox","id":"sh/et8f65sj","slide":3,"name":"gate-label-140","text":"140°W","textPreview":"140°W","textChars":5,"textLines":1,"bbox":[808,398,110,30]}
+{"kind":"shape","id":"sh/zehwzat4","slide":3,"name":"takeaway-band","bbox":[54,635,1172,55]}
+{"kind":"textbox","id":"sh/3yxc76pw","slide":3,"name":"takeaway-text","text":"空间范围：10°S—5°N、0—300 m；发展期：Jun(0)—Nov(0)。","textPreview":"空间范围：10°S—5°N、0—300 m；发展期：Jun(0)—Nov(0)。","textChars":40,"textLines":1,"bbox":[78,644,1124,38]}
+{"kind":"notes","id":"nt/fmaakj","slide":3,"text":"[Sources]\n- Chakravorty et al. (2021) provides the 20°C warm-water framework and 5°N/10°S transport boundaries: https://doi.org/10.1029/2020JC017075\n- The fixed 0–300 m three-box control volume and 140°W gate are project diagnostics: scripts/analyze_soda3_three_box_warm_heat_fate.py\n[/Sources]"}
+{"kind":"slide","id":"sl/s6h58k","slide":4,"title":"问题一","textShapes":6}
+{"kind":"textbox","id":"sh/72hwvmtk","slide":4,"name":"kicker","text":"问题一","textPreview":"问题一","textChars":3,"textLines":1,"bbox":[54,30,180,32]}
+{"kind":"textbox","id":"sh/s3qd4ra5","slide":4,"name":"slide-title","text":"CT和CP的发展期都出现跨140°W的正暖量输送","textPreview":"CT和CP的发展期都出现跨140°W的正暖量输送","textChars":24,"textLines":1,"bbox":[54,70,1172,58]}
+{"kind":"shape","id":"sh/tozexcbq","slide":4,"name":"rule-54-142","bbox":[54,142,1172,0]}
+{"kind":"textbox","id":"sh/ixovyxs3","slide":4,"name":"ct-panel-title","text":"CT 合成","textPreview":"CT 合成","textChars":5,"textLines":1,"bbox":[54,170,560,38]}
+{"kind":"textbox","id":"sh/jyxwr2to","slide":4,"name":"cp-panel-title","text":"CP 合成","textPreview":"CP 合成","textChars":5,"textLines":1,"bbox":[666,170,560,38]}
+{"kind":"textbox","id":"sh/2tsva1s7","slide":4,"name":"unit-label","text":"异常暖量输送（PW）","textPreview":"异常暖量输送（PW）","textChars":10,"textLines":1,"bbox":[54,593,1172,28]}
+{"kind":"shape","id":"sh/3u1w36ts","slide":4,"name":"takeaway-band","bbox":[54,635,1172,55]}
+{"kind":"textbox","id":"sh/nid4zixk","slide":4,"name":"takeaway-text","text":"CT更早、更强；CP在夏秋也转为正。","textPreview":"CT更早、更强；CP在夏秋也转为正。","textChars":18,"textLines":1,"bbox":[78,644,1124,38]}
+{"kind":"chart","id":"ch/8nqxozyh","slide":4,"name":"","chartType":"line","bbox":[54,216,560,386]}
+{"kind":"chart","id":"ch/9ozyx4z2","slide":4,"name":"","chartType":"line","bbox":[666,216,560,386]}
+{"kind":"notes","id":"nt/s6h58k","slide":4,"text":"[Sources]\n- Monthly composite values from data/derived/research_2026/soda3_three_box_warm_heat_budget_composites.csv\n- Generated by scripts/analyze_soda3_three_box_warm_heat_fate.py from SODA3.15.2; three-month-smoothed calendar-month detrended anomalies.\n[/Sources]"}
+{"kind":"slide","id":"sl/8y0hua","slide":5,"title":"问题一","textShapes":7}
+{"kind":"textbox","id":"sh/l4jq94n2","slide":5,"name":"kicker","text":"问题一","textPreview":"问题一","textChars":3,"textLines":1,"bbox":[54,30,180,32]}
+{"kind":"textbox","id":"sh/y187ypor","slide":5,"name":"slide-title","text":"CT到达更强，但CP也不是“没有暖量东传”","textPreview":"CT到达更强，但CP也不是“没有暖量东传”","textChars":21,"textLines":1,"bbox":[54,70,1172,58]}
+{"kind":"shape","id":"sh/z2h87u5c","slide":5,"name":"rule-54-142","bbox":[54,142,1172,0]}
+{"kind":"shape","id":"sh/x0zq5kn6","slide":5,"name":"ct-stat","bbox":[858,190,330,150]}
+{"kind":"textbox","id":"sh/ad87upof","slide":5,"name":"ct-stat-number","text":"≈ 2.1倍","textPreview":"≈ 2.1倍","textChars":6,"textLines":1,"bbox":[888,212,270,58]}
+{"kind":"textbox","id":"sh/beh83a50","slide":5,"name":"ct-stat-label","text":"CT / CP\n140°W输入比","textPreview":"CT / CP | 140°W输入比","textChars":16,"textLines":2,"bbox":[888,274,270,54]}
+{"kind":"shape","id":"sh/wbu98j6p","slide":5,"name":"consistency-stat","bbox":[858,378,330,168]}
+{"kind":"textbox","id":"sh/hw3qhona","slide":5,"name":"consistency-title","text":"两类事件均满足","textPreview":"两类事件均满足","textChars":7,"textLines":1,"bbox":[886,400,274,34]}
+{"kind":"textbox","id":"sh/lsnmhcf6","slide":5,"name":"consistency-body","text":"140°W输入 > 0\n东部H₂₀增长 > 0","textPreview":"140°W输入 > 0 | 东部H₂₀增长 > 0","textChars":23,"textLines":2,"bbox":[886,448,274,76]}
+{"kind":"shape","id":"sh/k7e587yl","slide":5,"name":"takeaway-band","bbox":[54,635,1172,55]}
+{"kind":"textbox","id":"sh/z654f2x0","slide":5,"name":"takeaway-text","text":"输入与储量不必相等；东部箱体还受南北边界、海表通量和残差影响。","textPreview":"输入与储量不必相等；东部箱体还受南北边界、海表通量和残差影响。","textChars":31,"textLines":1,"bbox":[78,644,1124,38]}
+{"kind":"chart","id":"ch/cjytknip","slide":5,"name":"","chartType":"bar","bbox":[54,166,760,438]}
+{"kind":"notes","id":"nt/8y0hua","slide":5,"text":"[Sources]\n- CT/CP values from outputs/research_2026/soda3_three_box_warm_heat_fate/SODA3_THREE_BOX_WARM_HEAT_FATE_CN.md\n- Underlying event data: data/derived/research_2026/soda3_three_box_warm_heat_fate_cumulative_summary.csv\n[/Sources]"}
+{"kind":"slide","id":"sl/jmq8jg","slide":6,"title":"问题一","textShapes":6}
+{"kind":"textbox","id":"sh/7utgb69w","slide":6,"name":"kicker","text":"问题一","textPreview":"问题一","textChars":3,"textLines":1,"bbox":[54,30,180,32]}
+{"kind":"textbox","id":"sh/sv2h4ba1","slide":6,"name":"slide-title","text":"三次事件都在140°W以东形成正H₂₀异常","textPreview":"三次事件都在140°W以东形成正H₂₀异常","textChars":21,"textLines":1,"bbox":[54,70,1172,58]}
+{"kind":"shape","id":"sh/twbydgrm","slide":6,"name":"rule-54-142","bbox":[54,142,1172,0]}
+{"kind":"textbox","id":"sh/i50fy1sz","slide":6,"name":"event-1997","text":"1997/98","textPreview":"1997/98","textChars":7,"textLines":1,"bbox":[132,156,338,30]}
+{"kind":"textbox","id":"sh/j69g769k","slide":6,"name":"event-2015","text":"2015/16","textPreview":"2015/16","textChars":7,"textLines":1,"bbox":[500,156,338,30]}
+{"kind":"textbox","id":"sh/k7ix0ba5","slide":6,"name":"event-2023","text":"2023/24","textPreview":"2023/24","textChars":7,"textLines":1,"bbox":[868,156,338,30]}
+{"kind":"shape","id":"sh/214zalsj","slide":6,"name":"takeaway-band","bbox":[54,635,1172,55]}
+{"kind":"textbox","id":"sh/32dgjq9o","slide":6,"name":"takeaway-text","text":"1997最强；2015和2023在东部的建立幅度接近。","textPreview":"1997最强；2015和2023在东部的建立幅度接近。","textChars":27,"textLines":1,"bbox":[78,644,1124,38]}
+{"kind":"image","id":"im/c761k7qt","slide":6,"name":"","alt":"Longitude-time evolution of 0-300 m H20 anomalies for 1997/98, 2015/16 and 2023/24","bbox":[54,188,1172,426]}
+{"kind":"notes","id":"nt/jmq8jg","slide":6,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/soda3_h20/soda3_h20_hovmoller_1997_2015_2023.png\n- Generated from SODA3.15.2 by scripts/plot_soda3_h20_hovmoller.py\n[/Sources]"}
+{"kind":"slide","id":"sl/ej73nt","slide":7,"title":"问题一","textShapes":7}
+{"kind":"textbox","id":"sh/bqpc3qtw","slide":7,"name":"kicker","text":"问题一","textPreview":"问题一","textChars":3,"textLines":1,"bbox":[54,30,180,32]}
+{"kind":"textbox","id":"sh/cbytcbah","slide":7,"name":"slide-title","text":"2015与2023的输入和储量几乎相同","textPreview":"2015与2023的输入和储量几乎相同","textChars":19,"textLines":1,"bbox":[54,70,1172,58]}
+{"kind":"shape","id":"sh/xc7u5gbm","slide":7,"name":"rule-54-142","bbox":[54,142,1172,0]}
+{"kind":"shape","id":"sh/nm5sz6tk","slide":7,"name":"pair-stat","bbox":[918,186,268,166]}
+{"kind":"textbox","id":"sh/onet8ba5","slide":7,"name":"pair-title","text":"2015 vs 2023","textPreview":"2015 vs 2023","textChars":12,"textLines":1,"bbox":[942,208,220,34]}
+{"kind":"textbox","id":"sh/ponu1gbq","slide":7,"name":"pair-body","text":"输入：3.30 / 3.91 ZJ\n储量：3.53 / 3.88 ZJ","textPreview":"输入：3.30 / 3.91 ZJ | 储量：3.53 / 3.88 ZJ","textChars":35,"textLines":2,"bbox":[938,260,228,72]}
+{"kind":"shape","id":"sh/mhgbi5sj","slide":7,"name":"q500-stat","bbox":[918,390,268,156]}
+{"kind":"textbox","id":"sh/7i9cbat4","slide":7,"name":"q500-title","text":"0—500 m OHC敏感性","textPreview":"0—500 m OHC敏感性","textChars":14,"textLines":1,"bbox":[936,412,232,34]}
+{"kind":"textbox","id":"sh/3qtsrml8","slide":7,"name":"q500-body","text":"2015：6.43 ZJ\n2023：6.46 ZJ","textPreview":"2015：6.43 ZJ | 2023：6.46 ZJ","textChars":25,"textLines":2,"bbox":[938,466,228,60]}
+{"kind":"shape","id":"sh/2p0byhkn","slide":7,"name":"takeaway-band","bbox":[54,635,1172,55]}
+{"kind":"textbox","id":"sh/psbutw3y","slide":7,"name":"takeaway-text","text":"2023后续较弱，不能解释为“暖量没有进入东太平洋”。","textPreview":"2023后续较弱，不能解释为“暖量没有进入东太平洋”。","textChars":27,"textLines":1,"bbox":[78,644,1124,38]}
+{"kind":"chart","id":"ch/6d4fux8v","slide":7,"name":"","chartType":"bar","bbox":[54,166,820,438]}
+{"kind":"notes","id":"nt/ej73nt","slide":7,"text":"[Sources]\n- Event arrival values: outputs/research_2026/enso_1997_2015_2023_warm_heat_fate_bridge/ENSO_1997_2015_2023_WARM_HEAT_FATE_BRIDGE_CN.md\n- Q500 sensitivity: data/derived/research_2026/soda3_h20_q500_sensitivity_summary.json and soda3_h20_q500_three_event_phase_sensitivity.csv\n[/Sources]"}
+{"kind":"slide","id":"sl/7rmsja","slide":8,"title":"问题一的回答","textShapes":5}
+{"kind":"textbox","id":"sh/i9czmpgz","slide":8,"name":"answer-kicker","text":"问题一的回答","textPreview":"问题一的回答","textChars":6,"textLines":1,"bbox":[54,42,300,36]}
+{"kind":"textbox","id":"sh/5c3yh4fa","slide":8,"name":"answer-title","text":"暖量确实到达了\n东太平洋","textPreview":"暖量确实到达了 | 东太平洋","textChars":12,"textLines":2,"bbox":[54,150,940,220]}
+{"kind":"shape","id":"sh/4buhozy5","slide":8,"name":"rule-54-410","bbox":[54,410,1172,0]}
+{"kind":"textbox","id":"sh/relgjexg","slide":8,"name":"answer-1","text":"路径：西部蓄热 → 跨180° → 跨140°W → 东部H₂₀建立","textPreview":"路径：西部蓄热 → 跨180° → 跨140°W → 东部H₂₀建立","textChars":34,"textLines":1,"bbox":[54,452,1172,44]}
+{"kind":"textbox","id":"sh/qdczq9wv","slide":8,"name":"answer-2","text":"强度：CT > CP；1997 ≫ 2015 ≈ 2023","textPreview":"强度：CT > CP；1997 ≫ 2015 ≈ 2023","textChars":29,"textLines":1,"bbox":[54,516,1172,44]}
+{"kind":"textbox","id":"sh/dgnilofm","slide":8,"name":"answer-3","text":"边界：这是欧拉控制体意义上的到达，不是同一水团的拉格朗日追踪。","textPreview":"边界：这是欧拉控制体意义上的到达，不是同一水团的拉格朗日追踪。","textChars":31,"textLines":1,"bbox":[54,580,1172,44]}
+{"kind":"notes","id":"nt/7rmsja","slide":8,"text":"[Sources]\n- Synthesis of the SODA3.15.2 fixed-gate transport, fixed-box H20 storage, event H20 Hovmoller, and Q500 sensitivity results used on slides 3–7.\n[/Sources]"}

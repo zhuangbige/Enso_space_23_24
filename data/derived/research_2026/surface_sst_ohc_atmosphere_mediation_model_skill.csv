@@ -1,0 +1,26 @@
+response,response_label,model,n_events,loeo_rmse_sd,loeo_correlation,loeo_mean_error_sd,n_pcs,ridge_alpha
+atmosphere_composite_z,Atmosphere composite,Intercept only,13,1.30382577,-1.00000000,0.10553501,0,1.00000000
+atmosphere_composite_z,Atmosphere composite,OHC only,13,0.75883923,0.72444651,0.09667541,0,1.00000000
+atmosphere_composite_z,Atmosphere composite,SST indices,13,1.05055203,0.52630805,0.06468682,0,1.00000000
+atmosphere_composite_z,Atmosphere composite,Full SST pattern,13,1.07830856,0.50169472,0.06802506,2,1.00000000
+atmosphere_composite_z,Atmosphere composite,Full SST pattern + OHC,13,0.83685767,0.69897343,0.07315154,2,1.00000000
+u850_response_z,850-hPa westerly,Intercept only,13,1.38220009,-1.00000000,0.12448486,0,1.00000000
+u850_response_z,850-hPa westerly,OHC only,13,0.72456380,0.79491502,0.09978397,0,1.00000000
+u850_response_z,850-hPa westerly,SST indices,13,1.34574430,0.22372810,0.09128548,0,1.00000000
+u850_response_z,850-hPa westerly,Full SST pattern,13,1.33061730,0.22962572,0.07773435,2,1.00000000
+u850_response_z,850-hPa westerly,Full SST pattern + OHC,13,1.01089199,0.57460448,0.08733663,2,1.00000000
+convection_response_z,Convection (-OLR),Intercept only,13,1.21895949,-1.00000000,0.07520862,0,1.00000000
+convection_response_z,Convection (-OLR),OHC only,13,0.85802399,0.57873458,0.08688953,0,1.00000000
+convection_response_z,Convection (-OLR),SST indices,13,0.97276035,0.51888944,0.03909787,0,1.00000000
+convection_response_z,Convection (-OLR),Full SST pattern,13,0.98833454,0.51783439,0.05748148,2,1.00000000
+convection_response_z,Convection (-OLR),Full SST pattern + OHC,13,0.81652845,0.66773997,0.05893771,2,1.00000000
+precip_response_z,Precipitation,Intercept only,13,1.12118319,-1.00000000,0.02658557,0,1.00000000
+precip_response_z,Precipitation,OHC only,13,0.84937205,0.54543848,0.02995488,0,1.00000000
+precip_response_z,Precipitation,SST indices,13,0.62781345,0.77501118,0.01037594,0,1.00000000
+precip_response_z,Precipitation,Full SST pattern,13,0.69985265,0.72594769,0.04450098,2,1.00000000
+precip_response_z,Precipitation,Full SST pattern + OHC,13,0.63756395,0.77747745,0.02754822,2,1.00000000
+tau_response_z,Eastward wind stress,Intercept only,13,1.35454466,-1.00000000,0.10475797,0,1.00000000
+tau_response_z,Eastward wind stress,OHC only,13,0.88546317,0.64117350,0.11085643,0,1.00000000
+tau_response_z,Eastward wind stress,SST indices,13,1.37476781,0.15211526,0.06172779,0,1.00000000
+tau_response_z,Eastward wind stress,Full SST pattern,13,1.32658174,0.17791224,0.02818655,2,1.00000000
+tau_response_z,Eastward wind stress,Full SST pattern + OHC,13,1.17861560,0.35946148,0.06457972,2,1.00000000

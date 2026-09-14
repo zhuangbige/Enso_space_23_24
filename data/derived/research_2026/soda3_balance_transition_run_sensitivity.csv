@@ -1,0 +1,13 @@
+run_length,source,n_events,median_lead_to_wind_days,positive_lead_events,positive_lead_fraction,sign_test_one_sided_p
+2,balance_candidate,13,40.0,12,0.9230769230769231,0.001708984375
+2,balance_available,13,35.0,12,0.9230769230769231,0.001708984375
+2,transport_candidate,13,55.0,13,1.0,0.0001220703125
+2,transport_available,13,45.0,12,0.9230769230769231,0.001708984375
+3,balance_candidate,12,32.5,9,0.75,0.072998046875
+3,balance_available,12,22.5,9,0.75,0.072998046875
+3,transport_candidate,13,45.0,12,0.9230769230769231,0.001708984375
+3,transport_available,13,30.0,11,0.8461538461538461,0.01123046875
+4,balance_candidate,11,35.0,8,0.7272727272727273,0.11328125
+4,balance_available,11,20.0,8,0.7272727272727273,0.11328125
+4,transport_candidate,12,15.0,9,0.75,0.072998046875
+4,transport_available,12,-5.0,5,0.4166666666666667,0.80615234375

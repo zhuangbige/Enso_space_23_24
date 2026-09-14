@@ -1,0 +1,571 @@
+RESEARCH LETTER                              Early Establishment of Far Eastern Pacific Warming Shapes
+10.1029/2026GL123227
+                                             Distinctive Air‐Sea Coupling in the 2023–2024 El Niño
+Key Points:
+                                             Leishan Jiang1,2, Han‐Ching Chen1,2           , Wenjun Zhang1,2        , and Yu‐Heng Tseng3,4
+• The 2023–2024 El Niño featured far
+  eastern Pacific (FEP) warming and          1
+                                              State Key Laboratory of Climate System Prediction and Risk Management/Key Laboratory of Meteorological Disaster,
+  weak central Pacific air–sea coupling
+                                             Ministry of Education/Collaborative Innovation Center on Forecast and Evaluation of Meteorological Disasters, Nanjing
+  during its development stage
+• FEP warming and associated                 University of Information Science and Technology, Nanjing, China, 2School of Atmospheric Sciences, Nanjing University of
+  subtropical cooling drives off‐            Information Science and Technology, Nanjing, China, 3Institute of Oceanography, National Taiwan University, Taipei,
+  equatorial northeasterlies that suppress   Taiwan, 4Ocean Center, National Taiwan University, Taipei, Taiwan
+  central Pacific westerly anomalies
+• This El Niño type occurred more
+  frequently before 1980, possibly linked
+  to decadal modulation of the
+                                             Abstract This study investigates the role of far eastern Pacific (FEP) sea surface temperature anomalies
+  thermocline structure                      (SSTA) in shaping El Niño development, focusing on the 2023–2024 event. Unlike most post‐1980 El Niño
+                                             events, which are characterized by central–eastern Pacific–dominated growth and strong air–sea coupling, the
+                                             2023–2024 event featured early FEP warming and weak central Pacific westerly anomalies during its
+Supporting Information:
+Supporting Information may be found in
+                                             development. Linear decomposition shows that a substantial portion of FEP variability is not explained by
+the online version of this article.          canonical El Niño–Southern Oscillation dynamics, and this residual FEP component plays a key role in the
+                                             evolution of the 2023–2024 event. This FEP warming is accompanied by subtropical northeastern Pacific
+Correspondence to:                           cooling and suppressed convection, inducing off‐equatorial northeasterlies that weaken central Pacific
+H.‐C. Chen,                                  westerlies. Such FEP‐dominant characteristics occurred more frequently in pre‐1980 El Niño events, consistent
+hanching@nuist.edu.cn                        with decadal thermocline changes that may modulate the relative sensitivity of eastern and central Pacific SSTA
+                                             growth.
+Citation:
+Jiang, L., Chen, H.‐C., Zhang, W., &         Plain Language Summary El Niño is an important phenomenon that affects weather and climate
+Tseng, Y.‐H. (2026). Early establishment     around the globe. In recent decades, most El Niño events have initiated in the central Pacific, whereas the
+of far eastern Pacific warming shapes
+distinctive air‐sea coupling in the          2023–2024 El Niño event began in the far eastern Pacific (FEP). This event was characterized by early warming
+2023–2024 El Niño. Geophysical               near the coast of South America and unusually weak westerly winds over the central Pacific during its early
+Research Letters, 53, e2026GL123227.         development. Our analysis shows that warming in the FEP played an important role in shaping El Niño
+https://doi.org/10.1029/2026GL123227
+                                             evolution. This warming was linked to changes in atmospheric circulation that weakened the central Pacific
+Received 26 MAR 2026                         westerly winds, which are important for El Niño growth. Atmospheric model experiments further confirm that
+Accepted 27 MAY 2026                         warming in the FEP can influence wind patterns over the central Pacific. Similar features were common in El
+                                             Niño events before the 1980s, suggesting that El Niño development may vary over decades as background ocean
+                                             conditions change.
+
+
+                                             1. Introduction
+                                             El Niño–Southern Oscillation (ENSO) is the dominant mode of interannual climate variability in the tropical
+                                             Pacific (Bjerknes, 1969; McPhaden et al., 2006; Neelin et al., 1998; Philander, 1990; Rasmusson & Carpen-
+                                             ter, 1982), influencing global atmospheric circulation, precipitation, and temperature patterns (Alexander
+                                             et al., 2002; Yeh et al., 2018). In the canonical ENSO theory, equatorial Pacific sea surface temperature anomalies
+                                             (SSTA) grow through the Bjerknes feedback, which arises from positive coupling between central‐eastern Pacific
+                                             SSTA and central‐western Pacific zonal wind anomalies (Bjerknes, 1969). As a result, SSTA in the central‐
+                                             eastern equatorial Pacific, commonly represented by the Niño3.4 index (averaged over 170◦ W–120◦ W,
+                                             5◦ S–5◦ N), are widely used to monitor and characterize ENSO evolution (Bamston et al., 1997), leading most
+                                             studies to focus on SST variability in this region.
+                                             However, SST variability in the far eastern Pacific (FEP), particularly in the coastal equatorial region near
+                                             80◦ W–90◦ W, was once considered important for the early development of El Niño events (McPhaden &
+© 2026. The Author(s).
+This is an open access article under the     Zhang, 2009; Pan et al., 2024; Rasmusson & Carpenter, 1982; B. Wang, 1995; B. Wang & An, 2002). Prior to the
+terms of the Creative Commons                1980s, many El Niño events featured early warming in the easternmost equatorial Pacific during boreal spring and
+Attribution License, which permits use,      summer, which subsequently propagated westward toward the central Pacific (Rasmusson & Carpenter, 1982). In
+distribution and reproduction in any
+medium, provided the original work is        contrast, since the 1980s, most El Niño events have tended to initiate in the central Pacific, followed by eastward
+properly cited.                              expansion of warm anomalies (McPhaden & Zhang, 2009). Recent work further suggests that the preferred onset
+
+
+JIANG ET AL.                                                                                                                                                  1 of 11
+                    Geophysical Research Letters                                                    10.1029/2026GL123227
+
+
+               location of El Niño shifted from the eastern Pacific to the central Pacific and this shift is associated with changes
+               in background conditions that favor central Pacific SST growth (Pan et al., 2024). Despite these advances, the role
+               of FEP warming has received comparatively less attention during ENSO development.
+
+               The 2023–2024 El Niño event presents an opportunity to re‐examine the role of FEP SSTA in El Niño devel-
+               opment. During this event, substantial warming first emerged in the FEP as early as boreal spring, preceding
+               significant warming in the central Pacific (Geng et al., 2024; Peng et al., 2024, 2025; Tan et al., 2024). Although
+               warm SSTA later extended westward into the central Pacific, the associated atmospheric response remained
+               unusual, with zonal wind anomalies over the central Pacific much weaker than typically observed during the
+               development phase (Hong et al., 2024; Lin et al., 2025; Peng et al., 2025; Zhao et al., 2025). This weakened SST‐
+               wind coupling contrasts with the canonical Bjerknes feedback mechanism. Moreover, both the timing and in-
+               tensity of the coastal warming during 2023–2024 closely resemble several pre‐1980 El Niño events, raising the
+               question of whether FEP warming has again become a crucial driver of ENSO development, as observed in those
+               earlier events.
+               Here we investigate the role of pronounced FEP warming in the development of the 2023–2024 El Niño and its
+               association with weakened SST–wind coupling. Our results show that a substantial portion of FEP SST variability
+               is different from recently observed ENSO‐related variability, and this component plays a key role in shaping the
+               distinctive atmospheric response during the 2023–2024 event. Further analysis shows that early FEP warming
+               modulates tropical Pacific air–sea coupling and thereby influences ENSO development.
+
+
+               2. Data and Methods
+               2.1. Observations
+               This study uses monthly mean data sets of SST, wind, precipitation, and ocean temperature from 1960 to 2024.
+               The SST data are sourced from the Extended Reconstructed Sea Surface Temperature version 5 (ERSSTv5,
+               Huang et al., 2017) data set. The 925 hPa wind fields and precipitation data are obtained from the fifth‐generation
+               ECMWF atmospheric reanalysis (ERA5, Hersbach et al., 2020). Ocean temperature data from the Ocean
+               Reanalysis System 5 (ORAS5, Zuo et al., 2019) are used to estimate thermocline depth, defined as the depth of the
+               20◦ C isotherm (D20). Anomalies are calculated relative to the 1960–2024 climatological mean, and linear trends
+               are removed from all data sets to focus on interannual variability. El Niño events are defined based on the Niño3.4
+               index, with conditions exceeding +0.5◦ C for at least 5 consecutive overlapping 3‐month seasons. Based on this
+               criterion, the El Niño events analyzed in this study include 1963–1964, 1965–1966, 1968–1969, 1969–1970,
+               1972–1973, 1976–1977, 1977–1978, 1979–1980, 1982–1983, 1986–1987, 1987–1988, 1991–1992, 1994–1995,
+               1997–1998, 2002–2003, 2004–2005, 2006–2007, 2009–2010, 2015–2016, 2018–2019, 2019–2020, and
+               2023–2024. The 2014–2015 event is excluded from this study as its evolution deviates from that of canonical El
+               Niño, partly due to the influence of the northeastern Pacific warm blob (Tseng et al., 2017), as well as other factors
+               such as off‐equatorial SST anomalies in the South Pacific (Zhu et al., 2016) and variations in the vertical tem-
+               perature gradient of the atmosphere (Hu et al., 2017).
+
+
+               2.2. Linear Regression Decomposition
+
+               The canonical ENSO signal is represented by SSTA averaged over the Niño3.4 region, while the FEP region is
+               defined as 90◦ W–80◦ W and 5◦ S–5◦ N. To isolate the influence of local FEP SSTA on Pacific‐wide SSTA
+               evolution, a linear regression approach is applied to separate out Niño3.4‐related variability from the FEP SSTA
+               (Chen & Jin, 2023; Hu et al., 2018):
+
+                                                            T(t) = E · TN34 (t) + TR (t),                                        (1)
+
+               where TN34 denotes the Niño3.4 index, E is the regression coefficient, and TR represents the residual FEP SST
+               variability after linearly removing the simultaneous Niño3.4‐related component, and is interpreted here as the
+               variability not explained by the canonical ENSO signal.
+               Previous studies commonly use SSTA in the Niño1+2 region (90◦ W–80◦ W, 0◦ S–10◦ S) to characterize coastal
+               eastern Pacific warming. Sensitivity tests show that the results based on the Niño1+2 region are consistent with
+
+
+
+JIANG ET AL.                                                                                                                 2 of 11
+                    Geophysical Research Letters                                                  10.1029/2026GL123227
+
+
+               those obtained using the FEP definition adopted here. In this study, the FEP index is used to provide a more direct
+               representation of equatorial SST variability and its role in air–sea coupling processes.
+
+               2.3. Atmospheric General Circulation Model
+
+               To investigate the atmospheric response to different SSTA patterns, this study employs the ECHAM version 4.6
+               (ECHAM4.6) atmospheric general circulation model (AGCM) developed by the Max Planck Institute for
+               Meteorology (Roeckner et al., 1996). The model is configured with a horizontal spectral resolution of triangular
+               truncation at T42, corresponding approximately to 2.8◦ × 2.8◦ in latitude and longitude, and includes 19 vertical
+               levels using a hybrid sigma‐pressure coordinate system extending from the surface to 10 hPa.
+
+               The control simulation (CTRL) is forced with monthly climatological SST derived from the ERSSTv5 data set
+               averaged over 1991–2020 and integrated for 20 years. In the sensitivity experiments, prescribed SSTA are
+               superimposed on the climatological SST from April to July to evaluate the atmospheric response during the El
+               Niño development stage. Each sensitivity experiment is conducted as a 20‐member ensemble, with initial con-
+               ditions taken from different years of the control simulation, in order to reduce the influence of internal atmo-
+               spheric variability. The atmospheric response is diagnosed as the difference between each sensitivity experiment
+               and the control simulation.
+
+
+               3. Results
+               3.1. Distinct Development Characteristics of the 2023–2024 El Niño
+               In most post‐1980 El Niño events (1982–1983, 1986–1987, 1987–1988, 1991–1992, 1994–1995, 1997–1998,
+               2002–2003, 2004–2005, 2006–2007, 2009–2010, 2015–2016, 2018–2019, and 2019–2020), the SSTA typically
+               develop first in the central Pacific during boreal spring, accompanied by pronounced westerly anomalies
+               extending across the central equatorial Pacific (Figure 1a). These westerly anomalies play a key role in amplifying
+               SSTA warming through the Bjerknes feedback, facilitating the eastward expansion of coupled SST and wind
+               anomalies. Consistent with this evolution, thermocline depth anomalies also exhibit a west‐to‐east propagation,
+               with deepening initiated in the central Pacific and subsequently extending eastward, in phase with the SST and
+               wind anomalies (Figure S1a in Supporting Information S1). By early boreal summer, warm SSTA usually extends
+               into the eastern Pacific, forming a basin‐wide warming pattern characteristic of canonical El Niño development.
+               Owing to strong air–sea coupling during boreal summer, this coupled SST‐wind feedback rapidly accelerates the
+               growth of SST anomalies across the tropical Pacific.
+               In contrast, the 2023–2024 El Niño differed from this typical evolution (Figure 1b). Rather than initiating in the
+               central Pacific, SSTA warming first emerged in the FEP as early as boreal spring. These coastal eastern Pacific
+               SSTA intensified rapidly and expanded westward into the central Pacific during summer. In terms of SST
+               evolution, this eastern Pacific–initiated evolution closely resembles that of pre‐1980 El Niño events (Figure 1c).
+               Consistent with this SST evolution, thermocline depth anomalies (Figure S1b in Supporting Information S1) also
+               exhibit a distinct evolution. Although a west‐to‐east propagating thermocline signal from the western Pacific is
+               still present, a more prominent feature is the pronounced deepening in the FEP that subsequently extends
+               westward. This east‐to‐west thermocline evolution closely matches the development of SST anomalies, indicating
+               a coupled progression of subsurface and surface signals originating from the FEP. Notably, despite pronounced
+               equatorial SSTA warming during spring and summer of 2023, the atmospheric response was unusually weak
+               (contours in Figure 1b). While Niño3.4 SSTA is typically accompanied by central Pacific zonal wind anomalies
+               during El Niño events (Figure 1d), the zonal wind anomaly over the Niño4 region during May–July (MJJ) 2023
+               remained near zero, even as Niño3.4 SSTA approached 1 standard deviation.
+               The spatial structures of SST and atmospheric circulation during MJJ further demonstrate the distinct evolution of
+               the 2023–2024 El Niño. The MJJ period is examined as it corresponds to the onset and early growth stage of El
+               Niño events and exhibits distinctive features in the 2023–2024 case. During MJJ 2023–2024, the warmest SSTA
+               center was located in the FEP near the South American coast (Figure 1f), in contrast to typical post‐1980 El Niño
+               events, in which warming lacks a clearly defined center (Figure 1e). This eastern Pacific warming was accom-
+               panied by a tongue of cold SSTA in the subtropical northeastern Pacific, resembling the negative phase of the
+               North Pacific Meridional Mode (NPMM, Chiang & Vimont, 2004). Consistent with this SST pattern, precipi-
+               tation anomalies exhibited a pronounced meridional contrast, with enhanced convection near the equator and
+
+
+JIANG ET AL.                                                                                                              3 of 11
+                                               Geophysical Research Letters                                                        10.1029/2026GL123227
+
+
+
+
+Figure 1. Hovmöller diagrams of equatorial (5◦ S–5◦ N) sea surface temperature anomalies (SSTA) (shading, ◦ C) and zonal wind anomalies (contours, m s− 1) for
+(a) composite post‐1980 El Niño events (excluding 2023–2024), (b) the 2023–2024 event, and (c) composite pre‐1980 El Niño events. (d) Scatter plot of Niño3.4 SSTA
+versus Niño4 zonal wind anomalies during May–July, where red and blue dots denote El Niño and La Niña events, respectively, and the green triangle highlights the
+2023–2024 event. (e–g) Spatial patterns of May–July SSTA (shading, ◦ C), wind anomalies (vectors, m s− 1), and precipitation anomalies (dots, mm day− 1) for
+(e) composite post‐1980 El Niño events (excluding 2023–2024), (f) the 2023–2024 event, and (g) composite 1965–1966, 1969–1970, 1972–1973, and 1976–1977
+events. SSTA significant at the 90% confidence level are indicated by hatching. Wind anomalies significant at the same level are indicated by black vectors. Wind
+vectors are shown only where wind speeds exceed 0.5 m s− 1. Only precipitation anomalies exceeding ±1 mm day− 1 and significant at the 90% confidence level are
+shown, with green and brown dots indicating positive and negative values, respectively.
+
+                                         suppressed precipitation north of the equator (6◦ N–10◦ N). This meridional contrast in convection favored the
+                                         development of anomalous northeasterly winds originating north of the equator (3◦ N–7◦ N, 180◦ E–130◦ W) and
+                                         extending into the central Pacific. As a result, the equatorial westerly response was confined to the western Pacific
+                                         west of 170◦ E, while surface winds farther east remained near normal or even easterly, reflecting a weakened and
+                                         spatially limited air‐sea coupling during the development of the 2023–2024 El Niño.
+                                         To quantify differences between the 2023–2024 event and post‐1980 El Niño events, we compare the amplitudes
+                                         of SST, wind, and precipitation anomalies during the El Niño development stage (Figure S2 in Supporting In-
+                                         formation S1). The equatorial central‐to‐eastern Pacific SSTA amplitude during 2023–2024 is comparable to that
+                                         of the post‐1980 El Niño average (Figure S2a in Supporting Information S1). However, the central Pacific
+                                         westerlies are significantly weaker (Figure S2b in Supporting Information S1), while northeasterly anomalies
+                                         north of the equator are markedly stronger (Figure S2c in Supporting Information S1). These enhanced north-
+                                         easterlies are closely associated with subtropical northeastern Pacific cooling (Figure S2d in Supporting Infor-
+                                         mation S1) and a meridional precipitation dipole pattern characterized by suppressed precipitation north of the
+                                         equator and enhanced precipitation near the equator (Figures S2e–S2g in Supporting Information S1). Overall,
+                                         despite similar SSTA amplitudes in the Niño3.4 region, the 2023–2024 event exhibits a distinct circulation
+                                         structure marked by strengthened northeasterlies and weakened central Pacific westerlies during the development
+                                         stage.
+
+
+                                         3.2. Role of FEP SST in Tropical Pacific SST Variability
+                                         Among the distinguishing features of the 2023–2024 El Niño, one of the most prominent is the unusually early
+                                         and strong warming in the FEP. To clarify its role, we first examine the time series of FEP SSTA from 1960 to
+                                         2024 during El Niño development stage (Figure 2a; the full‐record time series for all years is shown in Figure S3
+
+
+
+
+JIANG ET AL.                                                                                                                                                4 of 11
+                                                 Geophysical Research Letters                                                                 10.1029/2026GL123227
+
+
+
+
+Figure 2. (a) Time series of far eastern Pacific (FEP) sea surface temperature anomalies (SSTA) (bars, ◦ C) during May–July for El Niño years, together with its El
+Niño–Southern Oscillation‐related component (red lines) and residual component (blue lines). The horizontal dashed line indicates 1 standard deviation of the FEP
+SSTA time series and orange bars highlight FEP‐dominant events. (b) Lead–lag correlations between the Niño3.4 index and FEP SSTA (bars) and between the Niño3.4
+index and the residual FEP SSTA (red lines). The 90% confidence level is indicated by green dashed lines. (c–e) Regression of May–July SST (shading, ◦ C ◦ C− 1), wind
+anomalies (vectors, m s− 1 ◦ C− 1), and precipitation anomalies (dots, mm day− 1 ◦ C− 1) onto the FEP SSTA index (c), and partial regression patterns from a multiple linear
+regression onto the Niño3.4 index (d) and the residual FEP SSTA component (e). SSTA significant at the 90% confidence level are indicated by hatching and wind
+anomalies significant at the same level are indicated by black vectors. Wind vectors are shown only where regressed wind speeds exceed 0.2 m s− 1 ◦ C− 1. Only
+precipitation anomalies exceeding ±1 mm day− 1 ◦ C− 1 and significant at the 90% confidence level are shown, with green and brown dots indicating positive and negative
+values, respectively.
+
+                                            in Supporting Information S1). It is shown that the 2023–2024 event is characterized by exceptionally large FEP
+                                            SSTA compared to most post‐1980 El Niño events.
+
+                                            To further assess the spatial patterns associated with FEP SST variability, regression analyses onto the FEP SSTA
+                                            are performed (Figure 2c). The regression patterns capture several key features in observed conditions during MJJ
+                                            2023 (Figure 1f), including enhanced warming centered over the FEP region, cold SSTA in the subtropical
+                                            northeastern Pacific, suppressed precipitation north of the equator, and associated off‐equatorial northeasterly
+                                            anomalies north of the equator. However, FEP SSTA is strongly correlated with the Niño3.4 index (r = 0.71),
+                                            indicating that a substantial portion of FEP variability covaries with canonical ENSO evolution. As a result, the
+                                            regression pattern in Figure 2c also exhibits pronounced central Pacific warming and westerly anomalies,
+                                            reflecting the influence of Niño3.4‐related variability rather than purely local FEP SSTA influence.
+                                            To extract the component of FEP SST variability independent of ENSO, we remove the Niño3.4‐related vari-
+                                            ability from the FEP SSTA to obtain the residual component TR (see Section 2.2). A lead–lag correlation analysis
+                                            (Figure 3b) shows that the residual FEP SSTA exhibits little correlation with the simultaneous Niño3.4 signal. We
+                                            then employ a multiple linear regression method to separate the respective contributions of Niño3.4‐related
+                                            variability and this residual FEP variability to air–sea patterns. Specifically, for a given variable X, the regression
+                                            model is formulated as
+
+                                                                               X(t, x, y) = α(x, y) TN34 (t) + β(x, y) TR (t) + ε(t, x, y).                                (2)
+
+                                            Here, X denotes a given field such as SST, wind, precipitation, or thermocline depth. TN34 is the Niño3.4 index,
+                                            and TR is the residual FEP SSTA component. The coefficients α and β characterize the spatial patterns associated
+                                            with TN34 and TR, respectively. Figure 2d shows the Niño3.4‐related component (α), which represents the ca-
+                                            nonical ENSO pattern, characterized by basin‐wide warming centered over the central–eastern Pacific together
+                                            with pronounced equatorial westerly anomalies. In association with this SST–wind structure, thermocline depth
+                                            anomalies exhibit a zonally tilted pattern (Figure S4a in Supporting Information S1), with deepening in the
+                                            eastern Pacific and shoaling in the western Pacific. This thermocline tilt is dynamically consistent with the
+
+
+
+
+JIANG ET AL.                                                                                                                                                          5 of 11
+                    Geophysical Research Letters                                                            10.1029/2026GL123227
+
+
+
+
+               Figure 3. Reconstructed patterns of sea surface temperature anomalies (SSTA) (shading, ◦ C), wind anomalies (vectors,
+               m s− 1), and precipitation anomalies (dots, mm day− 1) based on multiple linear regression. (a–c) Reconstructions based on the
+               residual far eastern Pacific (FEP) SSTA component for (a) the 2023–2024 event, (b) pre‐1980 FEP‐dominant events
+               (1965–1966, 1969–1970, 1972–1973, and 1976–1977), and (c) post‐1980 El Niño events (excluding 2023–2024).
+               (d) Atmospheric general circulation model (AGCM)‐simulated atmospheric response to prescribed positive residual FEP
+               SSTA forcing derived from the 2023–2024 reconstruction. Wind vectors are shown only where wind speeds exceed
+               0.25 m s− 1. Precipitation anomalies exceeding ±1 mm day− 1 are shown, with green and brown dots indicating positive and
+               negative values, respectively. For the AGCM panel, wind anomalies significant at the 90% confidence level are indicated by
+               black vectors, and precipitation anomalies are shown only where they are significant at the same level.
+
+               Bjerknes feedback, reflecting the coupled adjustment of oceanic and atmospheric fields. In addition, the warm
+               SSTA extends meridionally along the North and South American coasts.
+               In contrast, Figure 2e shows the residual FEP component (β), which exhibits a more spatially confined warming
+               centered over the FEP, accompanied by pronounced negative SSTA in the extratropical Pacific. The associated
+               thermocline anomalies are likewise confined to the equatorial FEP (Figure S4b in Supporting Information S1),
+               indicating a localized oceanic adjustment distinct from the basin‐scale tilt seen in the canonical ENSO mode. The
+               atmospheric response features enhanced subsidence north of the equator and strengthened northeasterly anom-
+               alies extending into the central Pacific. Notably, the westerly anomalies linked to the residual FEP component are
+               substantially weaker than those associated with the Niño3.4‐related component, consistent with the limited
+               westerly response observed during MJJ 2023 (Figure 1f). These results suggest that FEP variability is closely
+               linked to the atmospheric and oceanic structures during the development of the 2023–2024 El Niño, characterized
+               by localized air–sea coupling and a suppressed large‐scale wind response compared to the canonical ENSO mode.
+
+
+               3.3. FEP‐Dominant Development in the 2023–2024 and Pre‐1980 El Niño Events
+               The previous section showed that the spatial pattern of the residual FEP SST variability closely resembles the
+               development structure of the 2023–2024 event. Consistent with this, the time series (Figure 2a) shows that the
+               residual component (blue line) is substantially larger than the Niño3.4‐related component (red line) during MJJ
+               2023. Together, these results indicate that FEP variability plays a dominant role in shaping the evolution of the
+               2023–2024 El Niño. This raises the question of whether similar FEP‐dominant development has occurred in other
+               El Niño events. To identify such events, we first select years in which FEP SSTA exceeds 1 standard deviation
+               during the May–July development stage. We then impose an additional criterion to exclude cases dominated by
+               central Pacific variability, requiring that the residual FEP component exceeds the Niño3.4‐related component
+               while the latter remains below 1 standard deviation of the total FEP SSTA. Based on these criteria, five FEP‐
+               dominant El Niño events were identified during 1960–2024: 1965–1966, 1969–1970, 1972–1973, 1976–1977,
+               and 2023–2024. Notably, except for 2023–2024, all identified events occurred prior to 1980, indicating that FEP‐
+               dominant development was more prevalent in earlier decades.
+               To assess whether the 2023–2024 El Niño shares similarities with other FEP‐dominant events, composites are
+               constructed for the remaining selected years (1965–1966, 1969–1970, 1972–1973, and 1976–1977; Figure 1g). In
+
+
+JIANG ET AL.                                                                                                                           6 of 11
+                    Geophysical Research Letters                                                   10.1029/2026GL123227
+
+
+               these events, the warm SSTA center is consistently located in the FEP region, similar to the 2023–2024 event.
+               This FEP‐centered warming is accompanied by subtropical cooling in the northeastern Pacific, extending from
+               approximately 30◦ N southward into the central Pacific near 10◦ N. The subtropical cooling is associated with
+               suppressed precipitation around 10◦ N, while enhanced convection develops along the equator, forming a
+               meridional precipitation dipole. This meridional contrast in convection induces anomalous northeasterlies north
+               of the equator (Figure 1g), producing a circulation pattern closely resembling that of May–July 2023 (Figure 1f).
+               To further assess the contribution of residual FEP SSTA to tropical Pacific air–sea variability across different El
+               Niño types, we reconstruct the fields of SSTA, surface winds, and precipitation based on the multiple regression
+               analysis (Equation 2), with results shown in Figure 3. For the 2023–2024 event (Figure 3a) and the pre‐1980 FEP‐
+               dominant events (Figure 3b), the air–sea patterns associated with residual FEP SSTA are pronounced, indicating
+               that FEP variability plays a dominant role in shaping the observed atmospheric responses. In contrast, for post‐
+               1980 El Niño events (Figure 3c), the residual component accounts for only a small fraction of the observed
+               circulation anomalies, suggesting a reduced role of FEP variability in these events.
+               To verify the atmospheric response induced by the residual FEP SST component, AGCM experiments are
+               conducted using residual FEP SSTA from 2023. When only the positive portion of the FEP warming is prescribed
+               (Figure 3d), the simulated response closely resembles the reconstructed patterns from observations (Figure 3a),
+               including suppressed precipitation north of the equator and enhanced convection along the equator, forming a
+               meridional precipitation dipole. This dipole induces off‐equatorial northeasterlies extending into the central
+               Pacific, which oppose and weaken the development of central Pacific westerly anomalies. These results
+               demonstrate that FEP warming alone is sufficient to drive the observed atmospheric response. We next assess the
+               role of the accompanying subtropical cooling by prescribing the full residual FEP SSTA pattern (Figure S5 in
+               Supporting Information S1). A similar atmospheric response is obtained, despite with a stronger amplitude. This
+               suggests that FEP warming acts as the primary driver of the circulation anomalies, while the associated sub-
+               tropical cooling enhances the atmospheric response.
+
+               3.4. Possible Decadal Modulation of ENSO Development Pathways
+
+               The occurrence of FEP‐dominant development in both the pre‐1980 period and 2023–2024 suggests that ENSO
+               development pathways may be modulated on decadal timescales. To explore this, we examine decadal variations
+               in the lead–lag relationship between Niño3.4 and the residual FEP SSTA, together with changes in the back-
+               ground thermocline structure (Figure 4). The lead–lag correlation exhibits pronounced decadal variability
+               (Figure 4a). Before the 1980s, residual FEP SSTA tends to lead the Niño3.4 index, suggesting that ENSO
+               development preferentially originates in the FEP. From the 1980s to the early 2000s, this relationship reverses,
+               with SSTA in the central Pacific tending to precede that in the FEP. In recent decades, residual FEP SSTA again
+               leads Niño3.4, consistent with the development characteristics of the 2023–2024 event. These results indicate that
+               the dominant region of ENSO development shifts on decadal timescales.
+               Previous studies have suggested that the spatial characteristics of ENSO SSTA development may be modulated
+               by the background thermocline structure in the equatorial Pacific (Fedorov & Philander, 2000; Yeh et al., 2009;
+               Yu & Kao, 2007). To assess whether changes in thermocline structure are linked to the decadal modulation of
+               ENSO development pathways, we examine the evolution of the zonal structure of equatorial Pacific thermocline
+               depth (Figure 4b). The results show that the thermocline exhibits pronounced decadal variability, and the timing
+               of these changes closely aligns with the transition in the lead–lag relationship shown in Figure 4a. During the pre‐
+               1980 period, the thermocline exhibits a relatively steep west–east gradient, with a shallower thermocline in the
+               FEP. This configuration may increase the sensitivity of FEP SST to local wind forcing and upwelling anomalies,
+               favoring ENSO development originating from this region. In contrast, during 1977–2004, the thermocline be-
+               comes anomalously shallow over the central Pacific (Figure 4b), while the zonal gradient is reduced. This
+               structural change may enhance the sensitivity of central Pacific SST to zonal wind stress forcing, promoting
+               ENSO development in the central Pacific. In recent decades (2005–2024), the thermocline structure shifts again,
+               with a shallower eastern Pacific and a deeper western Pacific (Figure 4b). This background state increases the
+               sensitivity of SST variability in the eastern Pacific during ENSO development, providing favorable conditions for
+               FEP‐dominant SST growth.
+
+               This interpretation is further supported by theoretical and observational studies showing that ENSO character-
+               istics depend sensitively on the background thermocline structure and mean wind stress, which jointly regulate the
+
+
+JIANG ET AL.                                                                                                               7 of 11
+                    Geophysical Research Letters                                                          10.1029/2026GL123227
+
+
+
+
+               Figure 4. (a) Lead–lag correlation between the Niño3.4 index and the residual far eastern Pacific sea surface temperature
+               anomalies, calculated using a 15‐year sliding window. (b) Time–longitude evolution of mean‐removed equatorial
+               thermocline depth (20◦ C isotherm, m) along the equatorial Pacific, shown as a 10‐year running mean. The white dashed lines
+               indicate the reference times of 1 January 1976 and 1 January 2005.
+
+               strength and structure of ocean–atmosphere coupling (An & Wang, 2000; Fedorov & Philander, 2001; Hu
+               et al., 2013, 2020). In particular, the stability and spatial characteristics of ENSO variability are controlled by the
+               background‐state parameter regime, such that changes in thermocline slope and depth can modulate the efficiency
+               of coupled feedbacks and shift the preferred region of SST growth. In this context, the decadal changes in
+               thermocline structure identified here may not only modulate the overall ENSO variability, but also influence the
+               relative dominance of FEP versus central Pacific development pathways.
+               However, despite the re‐emergence of a west‐deep and east‐shallow thermocline configuration since 2005, El
+               Niño events with development primarily controlled by FEP processes remain rare, with clear evidence only in the
+               2023–2024 event. This may be because the post‐2005 thermocline shoaling is not confined to the FEP but extends
+               westward into the central Pacific, reaching approximately 180◦ . Under this broader shallow thermocline structure,
+               enhanced SST sensitivity is no longer limited to the FEP but extends into the central Pacific, thereby reducing the
+               likelihood of FEP‐dominant development. The emergence of FEP‐dominant events, such as the 2023–2024 case,
+               likely requires additional conditions, including contemporaneous western Pacific warming (Figure S1h in Sup-
+               porting Information S1) or favorable wind–convection feedbacks that allow eastern Pacific SST growth to out-
+               pace that in the central Pacific.
+
+
+
+JIANG ET AL.                                                                                                                        8 of 11
+                    Geophysical Research Letters                                                  10.1029/2026GL123227
+
+
+               4. Conclusion and Discussion
+               This study revisits the role of FEP SSTA in shaping El Niño development, focusing on the 2023–2024 event.
+               Unlike post‐1980 El Niño events, which develop from the central Pacific with strong westerly anomalies, the
+               2023–2024 event featured early warming in the FEP region and an unusually weak central Pacific westerly
+               response despite comparable SSTA amplitude. This weakening is linked to enhanced off‐equatorial northeasterly
+               anomalies that suppress central Pacific westerly development, indicating a distinct development structure. By
+               decomposing FEP SSTA into ENSO‐related and residual components, we identify a residual FEP pattern
+               characterized by localized eastern Pacific warming, subtropical cooling, a meridional precipitation dipole, and
+               enhanced northeasterlies. This pattern closely resembles the observed evolution of the 2023–2024 event, sug-
+               gesting a dominant role of FEP variability. AGCM experiments further confirm that residual FEP‐related SSTA
+               can drive atmospheric responses consistent with observations. Similar FEP‐dominant characteristics are also
+               found in several pre‐1980 events, whereas post‐1980 events exhibit weaker FEP variability and stronger central
+               Pacific–dominated air–sea coupling.
+               The occurrence of FEP‐dominant development in both the pre‐1980 period and the 2023–2024 event is likely
+               linked to the decadal modulation of the background thermocline structure. This is supported by the decadal shifts
+               in the lead–lag relationship between Niño3.4 and residual FEP variability, which closely correspond with changes
+               in thermocline structure. In particular, variations in thermocline slope and depth structure may modulate the
+               relative sensitivity of the eastern and central Pacific to SST growth, thereby influencing where ENSO prefer-
+               entially develops. However, further coupled model experiments are needed to clarify the mechanisms linking
+               thermocline changes to shifts in ENSO development pathways.
+               Recent studies suggest that differences in zonal SSTA patterns during the developing stage can influence the
+               eventual type of El Niño events, including eastern Pacific (EP) and central Pacific (CP) types (R. Wang
+               et al., 2026). In this study, among the five identified FEP‐dominant El Niño events (1965–1966, 1969–1970,
+               1972–1973, 1976–1977, and 2023–2024), all except the 1969–1970 event are classified as EP‐type events. In
+               contrast, among non‐FEP‐dominant El Niño events, approximately 75% (12 out of 16) are identified as CP‐type
+               events. The Hovmöller diagrams of equatorial SSTA (Figure S6 in Supporting Information S1) further reveal
+               distinct evolutionary characteristics between EP and CP types. For EP‐type events (Figure S6a in Supporting
+               Information S1), warming typically initiates in the FEP and subsequently propagates westward, whereas CP‐type
+               events (Figure S6b in Supporting Information S1) exhibit initial warming centered in the central Pacific. These
+               results suggest that the spatial structure of SSTA during the developing stage may provide a precursor for the
+               eventual type of El Niño events.
+               In addition to the FEP‐driven processes identified in this study, several external factors may have further
+               contributed to the wind–SST decoupling observed during 2023–2024. Previous studies suggest that anomalous
+               warming associated with the North Atlantic tripole SSTA, as well as extreme SSTA in the extratropical North
+               Pacific, can induce equatorial Pacific easterly anomalies (Hong et al., 2024). Similarly, enhanced heating over the
+               Indian summer monsoon and Maritime Continent regions, together with warming in the tropical Atlantic and
+               Indian Oceans, can generate easterly anomalies over the equatorial Pacific through Gill‐type responses (Zhao
+               et al., 2025). Enhanced convection over the western tropical Pacific and the associated meridional pressure
+               gradient anomalies have also been shown to suppress surface westerly wind anomalies (Tan et al., 2024). Cold‐
+               phase NPMM conditions may further contribute by inhibiting the development of westerly wind bursts (Lin
+               et al., 2025). Furthermore, long‐term background SST trends, characterized by relatively stronger warming
+               outside the eastern tropical Pacific, may favor easterly anomalies over the central Pacific (Peng et al., 2025).
+               These remote forcings likely acted to reinforce the suppression of the canonical westerly response, thereby
+               reducing the westerly anomalies during the 2023–2024 El Niño. The relative contributions of the FEP variability
+               and remote forcings remain to be quantified in future work.
+
+
+               Conflict of Interest
+               The authors declare no conflicts of interest relevant to this study.
+
+
+
+
+JIANG ET AL.                                                                                                              9 of 11
+                                          Geophysical Research Letters                                                                         10.1029/2026GL123227
+
+
+                                    Availability Statement
+                                    The observational data sets used in this research can be accessed via the following websites: ERSSTv5 at https://
+                                    psl.noaa.gov/data/gridded/data.noaa.ersst.v5.html (Huang et al., 2017), ERA5 at https://cds.climate.copernicus.
+                                    eu/datasets/reanalysis‐era5‐single‐levels‐monthly‐means?tab=download (Hersbach et al., 2020), and ORAS5 at
+                                    https://cds.climate.copernicus.eu/datasets/reanalysis‐oras5?tab=download (Zuo et al., 2019).
+
+
+Acknowledgments                     References
+This work was supported by the
+NSFC42305021, SBK2023043823,        Alexander, M. A., Bladé, I., Newman, M., Lanzante, J. R., Lau, N.‐C., & Scott, J. D. (2002). The atmospheric bridge: The influence of ENSO
+NSFC42205022, and JSSCTD202346.       teleconnections on air–sea interaction over the global oceans. Journal of Climate, 15(16), 2205–2231. https://doi.org/10.1175/1520‐0442(200
+Y.‐H. Tseng was supported by NSTC     2)015<2205:TABTIO>2.0.CO;2
+Grant 112‐2611‐M‐002‐016‐MY3.       An, S.‐I., & Wang, B. (2000). Interdecadal change of the structure of the ENSO mode and its impact on the ENSO frequency. Journal of Climate,
+                                      13, 2044–2055. https://doi.org/10.1175/1520‐0442(2000)013<2044:ICOTSO>2.0.CO;2
+                                    Bamston, A. G., Chelliah, M., & Goldenberg, S. B. (1997). Documentation of a highly ENSO‐related SST region in the equatorial Pacific:
+                                      Research note. Atmosphere‐Ocean, 35(3), 367–383. https://doi.org/10.1080/07055900.1997.9649597
+                                    Bjerknes, J. (1969). Atmospheric teleconnections from the equatorial Pacific. Monthly Weather Review, 97(3), 163–172. https://doi.org/10.1175/1
+                                      520‐0493(1969)097<0163:Atftep>2.3.Co;2
+                                    Chen, H. C., & Jin, F. F. (2023). The mechanism of boreal summer SSTA phase‐locking in the far eastern Pacific. npj Climate and Atmospheric
+                                      Science, 6(1), 138. https://doi.org/10.1038/S41612‐023‐00472‐6
+                                    Chiang, J. C. H., & Vimont, D. J. (2004). Analogous Pacific and Atlantic meridional modes of tropical atmosphere‐ocean variability. Journal of
+                                      Climate, 17(21), 4143–4158. https://doi.org/10.1175/JCLI4953.1
+                                    Fedorov, A. V., & Philander, S. G. (2000). Is El Niño changing? Science, 288, 1997–2002. https://doi.org/10.1126/science.288.5473.1997
+                                    Fedorov, A. V., & Philander, S. G. (2001). A stability analysis of tropical ocean–atmosphere interactions: Bridging measurements and theory for
+                                      El Niño. Journal of Climate, 14, 3086–3101. https://doi.org/10.1175/1520‐0442(2001)014
+                                    Geng, X., Kug, J. S., Shin, N. Y., Zhang, W., & Chen, H. C. (2024). On the spatial double peak of the 2023–2024 El Niño event. Communications
+                                      Earth & Environment, 5(1), 691. https://doi.org/10.1038/S43247‐024‐01870‐1
+                                    Hersbach, H., Bell, B., Berrisford, P., Hirahara, S., Horányi, A., Muñoz‐Sabater, J., et al. (2020). The ERA5 global reanalysis [Dataset]. Quarterly
+                                      Journal of the Royal Meteorological Society, 146(730), 1999–2049. https://doi.org/10.1002/QJ.3803
+                                    Hong, C. C., Sullivan, A., & Chang, C. C. (2024). Impact of north Atlantic tripole and extratropical north Pacific extreme SSTs on the 2023/24 El
+                                      Niño. Geophysical Research Letters, 51(19), e2024GL110639. https://doi.org/10.1029/2024GL110639
+                                    Hu, Z.‐Z., Huang, B., Tseng, Y.‐H., & Kumar, A. (2017). Does vertical temperature gradient of the atmosphere matter for El Niño development?
+                                      Climate Dynamics, 48(5–6), 1413–1429. https://doi.org/10.1007/s00382‐016‐3149‐9
+                                    Hu, Z.‐Z., Huang, B., Zhu, J., Kumar, A., & McPhaden, M. J. (2018). On the variety of coastal El Niño events. Climate Dynamics, 52(12),
+                                      7537–7552. https://doi.org/10.1007/S00382‐018‐4290‐4
+                                    Hu, Z.‐Z., Kumar, A., Huang, B., & Zhu, J. (2013). Weakened interannual variability in the tropical Pacific Ocean after 2000. Journal of Climate,
+                                      26, 2601–2613. https://doi.org/10.1175/JCLI‐D‐12‐00265.1
+                                    Hu, Z.‐Z., Kumar, A., Huang, B., Zhu, J., L’Heureux, M., McPhaden, M. J., & Yu, J.‐Y. (2020). The interdecadal shift of ENSO properties in
+                                      1999/2000: A review. Journal of Climate, 33, 4441–4462. https://doi.org/10.1175/JCLI‐D‐19‐0316.1
+                                    Huang, B., Thorne, P. W., Banzon, V. F., Boyer, T., Chepurin, G., Lawrimore, J. H., et al. (2017). Extended reconstructed sea surface temperature,
+                                      version 5 (ERSSTv5): Upgrades, validations, and intercomparisons [Dataset]. Journal of Climate, 30(20), 8179–8205. https://doi.org/10.1175/J
+                                      CLI‐D‐16‐0836.1
+                                    Lin, Y.‐F., Chen, M., Liu, L., Zheng, F., Ding, R., Wang, X., et al. (2025). Diverse NPMM conditions deviate the 2023/24 El Niño from the 1997/
+                                      1998 and 2015/2016 extreme El Niño events. npj Climate and Atmospheric Science, 8(1), 133. https://doi.org/10.1038/s41612‐025‐01013‐z
+                                    McPhaden, M. J., Zebiak, S. E., & Glantz, M. H. (2006). ENSO as an integrating concept in Earth science. Science, 314(5806), 1740–1745. https://
+                                      doi.org/10.1126/science.1132588
+                                    McPhaden, M. J., & Zhang, X. (2009). Asymmetry in zonal phase propagation of ENSO sea surface temperature anomalies. Geophysical
+                                      Research Letters, 36(13), L13703. https://doi.org/10.1029/2009GL038774
+                                    Neelin, J. D., Battisti, D. S., Hirst, A. C., Jin, F.‐F., Wakata, Y., Yamagata, T., & Zebiak, S. E. (1998). ENSO theory. Journal of Geophysical
+                                      Research, 103(C7), 14261–14290. https://doi.org/10.1029/97JC03424
+                                    Pan, X., Li, T., & Yu, J. (2024). Change of El Niño onset location around 1970. npj Climate and Atmospheric Science, 7(1), 163. https://doi.org/10.
+                                      1038/S41612‐024‐00709‐Y
+                                    Peng, Q., Xie, S. P., Miyamoto, A., Deser, C., Zhang, P., & Luongo, M. T. (2025). Strong 2023–2024 El Niño generated by ocean dynamics.
+                                      Nature Geoscience, 18(6), 471–478. https://doi.org/10.1038/S41561‐025‐01700‐9
+                                    Peng, Q., Xie, S.‐P., Passalacqua, G. A., Miyamoto, A., & Deser, C. (2024). The 2023–24 extreme coastal El Niño: Atmospheric and air‐sea
+                                      coupling mechanisms. Science Advances, 10(12), eadk8646. Retrieved from https://www.science.org
+                                    Philander, S. G. (1990). El Niño, La Niña, and the Southern Oscillation. Academic Press.
+                                    Rasmusson, E. M., & Carpenter, T. H. (1982). Variations in tropical sea surface temperature and surface wind fields associated with the Southern
+                                      Oscillation/El Niño. Monthly Weather Review, 110, 354–384. Retrieved from https://journals.ametsoc.org/view/journals/mwre/110/5/1520‐
+                                      0493_1982_110_0354_vitsst_2_0_co_2.xml
+                                    Roeckner, E., Arpe, K., Bengtsson, L., Christoph, M., Claussen, M., Dfimenil, L., et al. (1996). The atmospheric general circulation model
+                                      ECHAM‐4: Model description and simulation of present‐day climate. Max Planck Institute for Meteorology Reports, 218, 1–90.
+                                    Tan, W., Hu, Z. Z., McPhaden, M. J., Zhu, C., Li, X., & Liu, Y. (2024). On the divergent evolution of ENSO after the coastal El Niños in 2017 and
+                                      2023. Geophysical Research Letters, 51(9), e2024GL108198. https://doi.org/10.1029/2024GL108198
+                                    Tseng, Y.‐H., Ding, R., & Huang, X.‐M. (2017). The warm Blob in the northeast Pacific‐the bridge leading to the 2015/16 El Niño. Environmental
+                                      Research Letters, 12(5), 054019. https://doi.org/10.1088/1748‐9326/aa67c3
+                                    Wang, B. (1995). Interdecadal changes in El Niño onset in the last four decades. Journal of Climate, 8(2), 267–285. https://doi.org/10.1175/1520‐0
+                                      442(1995)008<0267:ICIENO>2.0.CO;2
+                                    Wang, B., & An, S. (2002). A mechanism for decadal changes of ENSO behavior: Roles of background wind changes. Climate Dynamics, 18(6),
+                                      475–486. https://doi.org/10.1007/s00382‐001‐0189‐5
+
+
+
+JIANG ET AL.                                                                                                                                                                10 of 11
+                     Geophysical Research Letters                                                                       10.1029/2026GL123227
+
+
+               Wang, R., Ren, H. L., & Liu, M. (2026). Diversity of developing El Niño events and its relationship with the zonal contrast SSTA mode in
+                 summer. Journal of Climate, 39(4), 1219–1233. https://doi.org/10.1175/JCLI‐D‐25‐0332.1
+               Yeh, S. W., Cai, W., Min, S. K., McPhaden, M. J., Dommenget, D., Dewitte, B., et al. (2018). ENSO atmospheric teleconnections and their
+                 response to greenhouse gas forcing. Reviews of Geophysics, 56(1), 185–206. https://doi.org/10.1002/2017RG000568
+               Yeh, S.‐W., Kug, J.‐S., Dewitte, B., Kwon, M.‐H., Kirtman, B., & Jin, F.‐F. (2009). El Niño in a changing climate. Nature, 461, 511–514. https://
+                 doi.org/10.1038/nature08316
+               Yu, J.‐Y., & Kao, H.‐Y. (2007). Decadal changes of ENSO persistence barrier in SST and ocean heat content indices. Journal of Climate, 20,
+                 4753–4769. https://doi.org/10.1175/JCLI4251.1
+               Zhao, Y., Li, T., & Pan, X. (2025). Why zonal wind anomalies were “decoupled” to El Niño in July 2023. Climate Dynamics, 63(3), 140. https://
+                 doi.org/10.1007/s00382‐025‐07625‐8
+               Zhu, J., Kumar, A., Huang, B., Balmaseda, M. A., & Marx, L. (2016). The role of off‐equatorial surface temperature anomalies in the 2014 El Niño
+                 prediction. Scientific Reports, 6, 19677. https://doi.org/10.1038/srep19677
+               Zuo, H., Balmaseda, M. A., Tietsche, S., Mogensen, K., & Mayer, M. (2019). The ECMWF operational ensemble reanalysis–analysis system for
+                 ocean and sea ice: A description of the system and assessment [Dataset]. Ocean Science, 15, 779–808. https://doi.org/10.5194/os‐15‐779‐2019
+
+
+
+
+JIANG ET AL.                                                                                                                                        11 of 11
+

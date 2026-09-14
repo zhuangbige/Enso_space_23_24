@@ -1,0 +1,123 @@
+{"kind":"deck","id":"pr/ge98dz","name":"Deck"}
+{"kind":"layout","layoutId":"22a80a95-20dd-4771-a46d-3ca250a072f1","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"0b0e7a89-e5ab-4b53-9e37-490b05f7383f","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/sh1esx","slide":1,"title":"厄尔尼诺暖量是否真正到达东太平洋？","textShapes":7}
+{"kind":"textbox","id":"sh/0rexwzid","slide":1,"name":"deck-title","text":"厄尔尼诺暖量是否真正到达东太平洋？","textPreview":"厄尔尼诺暖量是否真正到达东太平洋？","textChars":17,"textLines":1,"bbox":[68,38,1144,62]}
+{"kind":"textbox","id":"sh/zq5wnuhs","slide":1,"name":"deck-subtitle","text":"从 Chakravorty et al.（2021）的 CT/CP 充放电差异开始","textPreview":"从 Chakravorty et al.（2021）的 CT/CP 充放电差异开始","textChars":41,"textLines":1,"bbox":[68,105,1144,42]}
+{"kind":"shape","id":"sh/ypwvup07","slide":1,"name":"paper-summary","bbox":[72,178,380,376]}
+{"kind":"textbox","id":"sh/do3elkz2","slide":1,"name":"paper-question","text":"原文问题","textPreview":"原文问题","textChars":4,"textLines":1,"bbox":[104,204,316,38]}
+{"kind":"textbox","id":"sh/c3udsfih","slide":1,"name":"ct-line","text":"CT：西太平洋蓄热\n→ 赤道东传\n→ 成熟期极向放电","textPreview":"CT：西太平洋蓄热 | → 赤道东传 | → 成熟期极向放电","textChars":26,"textLines":3,"bbox":[106,265,312,122]}
+{"kind":"textbox","id":"sh/r2lwjahw","slide":1,"name":"cp-line","text":"CP：盆地尺度充放电循环弱","textPreview":"CP：盆地尺度充放电循环弱","textChars":13,"textLines":1,"bbox":[106,423,312,70]}
+{"kind":"textbox","id":"sh/xk7exoz6","slide":1,"name":"source","text":"Source: Chakravorty et al. (2021), their Figure 8.","textPreview":"Source: Chakravorty et al. (2021), their Figure 8.","textChars":50,"textLines":1,"bbox":[488,566,718,30]}
+{"kind":"shape","id":"sh/wzyx4jil","slide":1,"name":"takeaway","bbox":[68,628,1144,58]}
+{"kind":"textbox","id":"sh/utsn6pkn","slide":1,"name":"takeaway-text","text":"他们回答了“CT/CP充放电是否不同”，但没有直接量化暖量是否越过140°W。","textPreview":"他们回答了“CT/CP充放电是否不同”，但没有直接量化暖量是否越过140°W。","textChars":39,"textLines":1,"bbox":[88,635,1104,44]}
+{"kind":"image","id":"im/fu5kbap8","slide":1,"name":"","alt":"Chakravorty et al. (2021) Figure 8 excerpt comparing CT and CP transport and WWV evolution","bbox":[486,172,722,382]}
+{"kind":"notes","id":"nt/sh1esx","slide":1,"text":"[Sources]\n- https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020JC017075\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/three_questions_full_report_assets_20260805/chakravorty2021_figure8_excerpt.png\n[/Sources]"}
+{"kind":"slide","id":"sl/g3ieka","slide":2,"title":"已有研究尚未直接回答：暖量是否进入东部箱体？","textShapes":13}
+{"kind":"textbox","id":"sh/m14b2d4v","slide":2,"name":"slide-title","text":"已有研究尚未直接回答：暖量是否进入东部箱体？","textPreview":"已有研究尚未直接回答：暖量是否进入东部箱体？","textChars":22,"textLines":1,"bbox":[68,42,1144,58]}
+{"kind":"shape","id":"sh/94vax83m","slide":2,"name":"title-rule","bbox":[68,108,1144,0]}
+{"kind":"shape","id":"sh/83mt43m1","slide":2,"name":"prior-scope","bbox":[82,142,466,146]}
+{"kind":"textbox","id":"sh/zetsrylk","slide":2,"name":"prior-label","text":"已有框架","textPreview":"已有框架","textChars":4,"textLines":1,"bbox":[108,160,130,34]}
+{"kind":"textbox","id":"sh/ydkryt4z","slide":2,"name":"prior-content","text":"WWV + 170°E暖水输送\n5°N / 10°S经向输送\n以标准化体积异常为主","textPreview":"WWV + 170°E暖水输送 | 5°N / 10°S经向输送 | 以标准化体积异常为主","textChars":41,"textLines":3,"bbox":[108,202,402,78]}
+{"kind":"shape","id":"sh/l0bat83a","slide":2,"name":"scope-arrow","bbox":[576,184,112,54]}
+{"kind":"textbox","id":"sh/kz2903m5","slide":2,"name":"scope-arrow-label","text":"尺度推进","textPreview":"尺度推进","textChars":4,"textLines":1,"bbox":[562,242,140,30]}
+{"kind":"shape","id":"sh/batsne58","slide":2,"name":"new-scope","bbox":[716,142,482,146]}
+{"kind":"textbox","id":"sh/q90rut4n","slide":2,"name":"new-label","text":"本文推进","textPreview":"本文推进","textChars":4,"textLines":1,"bbox":[744,160,140,34]}
+{"kind":"textbox","id":"sh/szahcbe9","slide":2,"name":"new-content","text":"140°W固定断面暖量输入\n东部固定箱体 H₂₀ 储量\n用PW和ZJ保留能量量纲","textPreview":"140°W固定断面暖量输入 | 东部固定箱体 H₂₀ 储量 | 用PW和ZJ保留能量量纲","textChars":40,"textLines":3,"bbox":[744,202,418,78]}
+{"kind":"shape","id":"sh/t0jilgfu","slide":2,"name":"question-1-number","bbox":[116,336,54,54]}
+{"kind":"textbox","id":"sh/6x8za1wj","slide":2,"name":"question-1-number-text","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[116,339,54,46]}
+{"kind":"textbox","id":"sh/ry10j6x4","slide":2,"name":"question-1-text","text":"暖量是否继续越过140°W进入东太平洋？","textPreview":"暖量是否继续越过140°W进入东太平洋？","textChars":20,"textLines":1,"bbox":[194,335,930,58]}
+{"kind":"shape","id":"sh/4vqh8red","slide":2,"name":"question-2-number","bbox":[116,412,54,54]}
+{"kind":"textbox","id":"sh/5wzihwfy","slide":2,"name":"question-2-number-text","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[116,415,54,46]}
+{"kind":"textbox","id":"sh/i98z6hg7","slide":2,"name":"question-2-text","text":"到达量有多少，能否用ZJ直接比较？","textPreview":"到达量有多少，能否用ZJ直接比较？","textChars":17,"textLines":1,"bbox":[194,411,930,58]}
+{"kind":"shape","id":"sh/jah0fmxs","slide":2,"name":"question-3-number","bbox":[116,488,54,54]}
+{"kind":"textbox","id":"sh/oruhkveh","slide":2,"name":"question-3-number-text","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[116,491,54,46]}
+{"kind":"textbox","id":"sh/ps3id0f2","slide":2,"name":"question-3-text","text":"跨边界输入与东部箱体储存是否一致？","textPreview":"跨边界输入与东部箱体储存是否一致？","textChars":17,"textLines":1,"bbox":[194,487,930,58]}
+{"kind":"shape","id":"sh/xozixg76","slide":2,"name":"takeaway","bbox":[68,626,1144,60]}
+{"kind":"textbox","id":"sh/cnqh4b6l","slide":2,"name":"takeaway-text","text":"不是重新证明暖水会东传，而是把体积输送推进为固定区域的能量到达问题。","textPreview":"不是重新证明暖水会东传，而是把体积输送推进为固定区域的能量到达问题。","textChars":34,"textLines":1,"bbox":[88,633,1104,46]}
+{"kind":"notes","id":"nt/g3ieka","slide":2,"text":"[Sources]\n- https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020JC017075\n- Local SODA3.15.2 fixed-gate and fixed-box analysis in /Users/daiyue/Documents/Maryland/scripts/\n[/Sources]"}
+{"kind":"slide","id":"sl/uwe7xl","slide":3,"title":"用固定断面输送与固定箱体储量判断“到达”","textShapes":15}
+{"kind":"textbox","id":"sh/ah43658n","slide":3,"name":"slide-title","text":"用固定断面输送与固定箱体储量判断“到达”","textPreview":"用固定断面输送与固定箱体储量判断“到达”","textChars":20,"textLines":1,"bbox":[68,42,1144,58]}
+{"kind":"shape","id":"sh/xkvmhk7y","slide":3,"name":"title-rule","bbox":[68,108,1144,0]}
+{"kind":"shape","id":"sh/cjml8fqt","slide":3,"name":"h20-box","bbox":[72,136,548,154]}
+{"kind":"textbox","id":"sh/nut4bqpw","slide":3,"name":"h20-label","text":"东部箱体储存","textPreview":"东部箱体储存","textChars":6,"textLines":1,"bbox":[96,152,500,34]}
+{"kind":"textbox","id":"sh/2tk3258b","slide":3,"name":"h20-formula","text":"H₂₀ = ρ₀ cₚ ∭ max(T − 20 °C, 0) dV","textPreview":"H₂₀ = ρ₀ cₚ ∭ max(T − 20 °C, 0) dV","textChars":34,"textLines":1,"bbox":[92,198,508,48]}
+{"kind":"textbox","id":"sh/pgbmd072","slide":3,"name":"h20-use","text":"固定箱体内的20°C阈值相对热含量｜ZJ","textPreview":"固定箱体内的20°C阈值相对热含量｜ZJ","textChars":20,"textLines":1,"bbox":[96,254,500,28]}
+{"kind":"shape","id":"sh/of2l4vqh","slide":3,"name":"q20-box","bbox":[660,136,548,154]}
+{"kind":"textbox","id":"sh/7ax4nupg","slide":3,"name":"q20-label","text":"固定断面输送","textPreview":"固定断面输送","textChars":6,"textLines":1,"bbox":[684,152,500,34]}
+{"kind":"textbox","id":"sh/mpo3ep8v","slide":3,"name":"q20-formula","text":"Qwarm,20 = ρ₀ cₚ ∬ vₙ max(T − 20 °C, 0) dA","textPreview":"Qwarm,20 = ρ₀ cₚ ∬ vₙ max(T − 20 °C, 0) dA","textChars":42,"textLines":1,"bbox":[674,198,520,48]}
+{"kind":"textbox","id":"sh/kbe9wnm1","slide":3,"name":"q20-use","text":"断面瞬时暖量输送为PW｜按每月实际秒数积分为ZJ","textPreview":"断面瞬时暖量输送为PW｜按每月实际秒数积分为ZJ","textChars":24,"textLines":1,"bbox":[684,254,500,28]}
+{"kind":"textbox","id":"sh/5cna5s3m","slide":3,"name":"symbols","text":"ρ₀：参考海水密度　cₚ：定压比热　T：位温　vₙ：断面法向流速　dV / dA：体积元 / 面积元","textPreview":"ρ₀：参考海水密度　cₚ：定压比热　T：位温　vₙ：断面法向流速　dV / dA：体积元 / 面积元","textChars":50,"textLines":1,"bbox":[84,308,1112,34]}
+{"kind":"shape","id":"sh/i9crud4v","slide":3,"name":"arrow-180","bbox":[360,405,126,50]}
+{"kind":"shape","id":"sh/ja5s3ilg","slide":3,"name":"arrow-140","bbox":[792,405,126,50]}
+{"kind":"shape","id":"sh/w7u9s3m5","slide":3,"name":"west-box","bbox":[110,378,250,104]}
+{"kind":"shape","id":"sh/x83a183a","slide":3,"name":"central-box","bbox":[486,378,304,104]}
+{"kind":"shape","id":"sh/alcrqt4z","slide":3,"name":"east-box","bbox":[918,378,250,104]}
+{"kind":"textbox","id":"sh/vmlszylk","slide":3,"name":"west-text","text":"西箱\n160°E—180°","textPreview":"西箱 | 160°E—180°","textChars":13,"textLines":2,"bbox":[130,396,210,70]}
+{"kind":"textbox","id":"sh/8ju9o3mt","slide":3,"name":"central-text","text":"中箱\n180°—140°W","textPreview":"中箱 | 180°—140°W","textChars":13,"textLines":2,"bbox":[510,396,256,70]}
+{"kind":"textbox","id":"sh/9k3ax83e","slide":3,"name":"east-text","text":"东箱\n140°W—80°W","textPreview":"东箱 | 140°W—80°W","textChars":13,"textLines":2,"bbox":[938,396,210,70]}
+{"kind":"textbox","id":"sh/p0vq1kv2","slide":3,"name":"gate180","text":"180°","textPreview":"180°","textChars":4,"textLines":1,"bbox":[386,366,74,28]}
+{"kind":"textbox","id":"sh/ofmpsfeh","slide":3,"name":"gate140","text":"140°W","textPreview":"140°W","textChars":5,"textLines":1,"bbox":[816,366,84,28]}
+{"kind":"shape","id":"sh/net8zudc","slide":3,"name":"criterion-box","bbox":[164,520,952,80]}
+{"kind":"textbox","id":"sh/2dk7qpwr","slide":3,"name":"criterion","text":"到达一致性：140°W东向输入 > 0　＋　东部 H₂₀ 增加","textPreview":"到达一致性：140°W东向输入 > 0　＋　东部 H₂₀ 增加","textChars":31,"textLines":1,"bbox":[190,536,900,42]}
+{"kind":"textbox","id":"sh/1cbqxkv6","slide":3,"name":"euler-note","text":"解释边界：这是欧拉控制体意义上的到达，不是同一水团的拉格朗日追踪。","textPreview":"解释边界：这是欧拉控制体意义上的到达，不是同一水团的拉格朗日追踪。","textChars":33,"textLines":1,"bbox":[168,606,944,30]}
+{"kind":"notes","id":"nt/uwe7xl","slide":3,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/scripts/fetch_soda3_three_box_warm_heat_budget.py\n- /Users/daiyue/Documents/Maryland/scripts/fetch_soda3_chakravorty_transport_baseline.py\n- /Users/daiyue/Documents/Maryland/scripts/analyze_soda3_three_box_warm_heat_fate.py\n[/Sources]"}
+{"kind":"slide","id":"sl/qzt03l","slide":4,"title":"CT和CP的暖量都越过140°W，但CT明显更强","textShapes":7}
+{"kind":"textbox","id":"sh/ylcnu5cb","slide":4,"name":"slide-title","text":"CT和CP的暖量都越过140°W，但CT明显更强","textPreview":"CT和CP的暖量都越过140°W，但CT明显更强","textChars":24,"textLines":1,"bbox":[68,42,1144,58]}
+{"kind":"shape","id":"sh/lonm50v2","slide":4,"name":"title-rule","bbox":[68,108,1144,0]}
+{"kind":"textbox","id":"sh/knu5wvuh","slide":4,"name":"phase","text":"本文定义的发展期：Jun(0)—Nov(0)｜SODA3.15.2｜累计异常暖量","textPreview":"本文定义的发展期：Jun(0)—Nov(0)｜SODA3.15.2｜累计异常暖量","textChars":40,"textLines":1,"bbox":[74,118,900,32]}
+{"kind":"textbox","id":"sh/6pwny5cn","slide":4,"name":"result-1","text":"两类事件的两项指标均为正","textPreview":"两类事件的两项指标均为正","textChars":12,"textLines":1,"bbox":[884,178,292,72]}
+{"kind":"textbox","id":"sh/tcn69kvy","slide":4,"name":"result-1-sub","text":"95%区间均高于0","textPreview":"95%区间均高于0","textChars":9,"textLines":1,"bbox":[892,250,276,34]}
+{"kind":"shape","id":"sh/8be50fud","slide":4,"name":"ct-strong","bbox":[874,316,310,134]}
+{"kind":"textbox","id":"sh/ne14v6do","slide":4,"name":"ct-strong-text","text":"CT相对CP\n输入约2.1倍\n储热约2.1倍","textPreview":"CT相对CP | 输入约2.1倍 | 储热约2.1倍","textChars":22,"textLines":3,"bbox":[900,334,258,96]}
+{"kind":"textbox","id":"sh/mtsnmlc3","slide":4,"name":"not-equal","text":"输入量不要求等于储量增长：东箱还受到南北边界、海表通量和未解析过程影响。","textPreview":"输入量不要求等于储量增长：东箱还受到南北边界、海表通量和未解析过程影响。","textChars":36,"textLines":1,"bbox":[870,486,320,102]}
+{"kind":"shape","id":"sh/4nipwbel","slide":4,"name":"takeaway","bbox":[68,628,1144,58]}
+{"kind":"textbox","id":"sh/pob6pgf6","slide":4,"name":"takeaway-text","text":"第一部分答案：暖量确实进入东太平洋；CP不是“完全没有暖量东传”。","textPreview":"第一部分答案：暖量确实进入东太平洋；CP不是“完全没有暖量东传”。","textChars":33,"textLines":1,"bbox":[88,635,1104,44]}
+{"kind":"chart","id":"ch/7idg3mp4","slide":4,"name":"","chartType":"bar","bbox":[72,152,770,442]}
+{"kind":"notes","id":"nt/qzt03l","slide":4,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/data/derived/research_2026/soda3_three_box_warm_heat_fate_cumulative_summary.csv\n- /Users/daiyue/Documents/Maryland/scripts/analyze_soda3_three_box_warm_heat_fate.py\n[/Sources]"}
+{"kind":"slide","id":"sl/4a2ra0","slide":5,"title":"1997暖量东传最强；2015与2023都进入东部","textShapes":2}
+{"kind":"textbox","id":"sh/kby5cr2p","slide":5,"name":"slide-title","text":"1997暖量东传最强；2015与2023都进入东部","textPreview":"1997暖量东传最强；2015与2023都进入东部","textChars":25,"textLines":1,"bbox":[68,42,1144,58]}
+{"kind":"shape","id":"sh/japojm14","slide":5,"name":"title-rule","bbox":[68,108,1144,0]}
+{"kind":"textbox","id":"sh/tgr6pgj6","slide":5,"name":"ohc-meta","text":"色标：0—300 m OHC异常（GJ m⁻²）｜SODA3.15.2｜5°S—5°N平均｜1980—2024逐月去气候态并去同月线性趋势","textPreview":"色标：0—300 m OHC异常（GJ m⁻²）｜SODA3.15.2｜5°S—5°N平均｜1980—2024逐月去气候态并去同月线性趋势","textChars":69,"textLines":1,"bbox":[68,652,1144,40]}
+{"kind":"image","id":"im/7mdofq5g","slide":5,"name":"","alt":"1997/98、2015/16和2023/24赤道太平洋0—300米上层海洋热含量异常的经度—时间演变","bbox":[104,120,1072,519]}
+{"kind":"notes","id":"nt/4a2ra0","slide":5,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/soda3_ohc300_hovmoller_1997_2015_2023.png\n- /Users/daiyue/Documents/Maryland/scripts/analyze_soda3_ohc_predictability.py\n- SODA3.15.2; 5°S–5°N mean; 0–300 m OHC anomaly; 1980–2024 calendar-month climatology and same-month linear trend removed.\n[/Sources]"}
+{"kind":"slide","id":"sl/h6yvm5","slide":6,"title":"2015与2023的到达量近似，后续差异不能归因于“没到”","textShapes":8}
+{"kind":"textbox","id":"sh/zapsvqto","slide":6,"name":"slide-title","text":"2015与2023的到达量近似，后续差异不能归因于“没到”","textPreview":"2015与2023的到达量近似，后续差异不能归因于“没到”","textChars":29,"textLines":1,"bbox":[68,42,1144,58]}
+{"kind":"shape","id":"sh/0bytova9","slide":6,"name":"title-rule","bbox":[68,108,1144,0]}
+{"kind":"textbox","id":"sh/lc7ax0bu","slide":6,"name":"phase","text":"事件比较：Jan(0)—Jun(0)｜基准1980—2014｜SODA3.15.2","textPreview":"事件比较：Jan(0)—Jun(0)｜基准1980—2014｜SODA3.15.2","textChars":41,"textLines":1,"bbox":[74,118,900,32]}
+{"kind":"shape","id":"sh/ne9szq90","slide":6,"name":"similar-box","bbox":[920,174,286,156]}
+{"kind":"textbox","id":"sh/8fitsval","slide":6,"name":"similar-title","text":"2015 ≈ 2023","textPreview":"2015 ≈ 2023","textChars":11,"textLines":1,"bbox":[940,198,246,44]}
+{"kind":"textbox","id":"sh/9gra10rq","slide":6,"name":"similar-values","text":"输入：3.30 / 3.91 ZJ\n储热：3.53 / 3.88 ZJ","textPreview":"输入：3.30 / 3.91 ZJ | 储热：3.53 / 3.88 ZJ","textChars":35,"textLines":2,"bbox":[938,254,250,58]}
+{"kind":"shape","id":"sh/ah0bu5sb","slide":6,"name":"q500-box","bbox":[920,354,286,148]}
+{"kind":"textbox","id":"sh/v29s3a9w","slide":6,"name":"q500-title","text":"0—500 m OHC敏感性","textPreview":"0—500 m OHC敏感性","textChars":14,"textLines":1,"bbox":[938,372,250,34]}
+{"kind":"textbox","id":"sh/za9gbipw","slide":6,"name":"q500-values","text":"2015：6.43 ZJ\n2023：6.46 ZJ","textPreview":"2015：6.43 ZJ | 2023：6.46 ZJ","textChars":25,"textLines":2,"bbox":[948,420,230,62]}
+{"kind":"textbox","id":"sh/e9gzidob","slide":6,"name":"q500-meaning","text":"结论不依赖H₂₀定义","textPreview":"结论不依赖H₂₀定义","textChars":10,"textLines":1,"bbox":[928,520,270,34]}
+{"kind":"shape","id":"sh/1cryds7m","slide":6,"name":"takeaway","bbox":[68,628,1144,58]}
+{"kind":"textbox","id":"sh/0bihkn6h","slide":6,"name":"takeaway-text","text":"相近到达量没有产生相同演变：到达量本身不足以决定后续事件命运。","textPreview":"相近到达量没有产生相同演变：到达量本身不足以决定后续事件命运。","textChars":31,"textLines":1,"bbox":[88,635,1104,44]}
+{"kind":"chart","id":"ch/mdgbmp4z","slide":6,"name":"","chartType":"bar","bbox":[72,152,820,432]}
+{"kind":"notes","id":"nt/h6yvm5","slide":6,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/data/derived/research_2026/enso_1997_2015_2023_warm_heat_fate_phase_summary.csv\n- /Users/daiyue/Documents/Maryland/data/derived/research_2026/soda3_h20_q500_three_event_phase_sensitivity.csv\n- /Users/daiyue/Documents/Maryland/data/derived/research_2026/soda3_h20_q500_sensitivity_summary.json\n[/Sources]"}
+{"kind":"slide","id":"sl/mtimkh","slide":7,"title":"到达以后呢？下一步解释2015与2023为何走向不同","textShapes":15}
+{"kind":"textbox","id":"sh/6l8n2h83","slide":7,"name":"slide-title","text":"到达以后呢？下一步解释2015与2023为何走向不同","textPreview":"到达以后呢？下一步解释2015与2023为何走向不同","textChars":26,"textLines":1,"bbox":[68,42,1144,58]}
+{"kind":"shape","id":"sh/tojmxw7e","slide":7,"name":"title-rule","bbox":[68,108,1144,0]}
+{"kind":"textbox","id":"sh/snq54rqt","slide":7,"name":"next-question","text":"如果2015和2023都有相近的暖量输入和东部储热，为什么后续出口与海气演变明显不同？","textPreview":"如果2015和2023都有相近的暖量输入和东部储热，为什么后续出口与海气演变明显不同？","textChars":43,"textLines":1,"bbox":[92,126,1096,58]}
+{"kind":"shape","id":"sh/jih4rmpc","slide":7,"name":"next-1-number","bbox":[84,234,64,64]}
+{"kind":"textbox","id":"sh/ih83yh8r","slide":7,"name":"next-1-numtext","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[84,238,64,52]}
+{"kind":"shape","id":"sh/5kzmtc7i","slide":7,"name":"next-1-band","bbox":[168,220,1038,94]}
+{"kind":"textbox","id":"sh/4jq507qx","slide":7,"name":"next-1-label","text":"暖量去了哪里？","textPreview":"暖量去了哪里？","textChars":7,"textLines":1,"bbox":[192,232,430,32]}
+{"kind":"textbox","id":"sh/vex4n2pg","slide":7,"name":"next-1-equation","text":"dH₂₀/dt = Cₓ + F₁₀S + F₅N + Qsurface,warm + R₂₀","textPreview":"dH₂₀/dt = Cₓ + F₁₀S + F₅N + Qsurface,warm + R₂₀","textChars":47,"textLines":1,"bbox":[192,270,620,30]}
+{"kind":"textbox","id":"sh/udo3ux8v","slide":7,"name":"next-1-aim","text":"区分边界输出、海表热损失与储量变化","textPreview":"区分边界输出、海表热损失与储量变化","textChars":17,"textLines":1,"bbox":[830,244,346,48]}
+{"kind":"shape","id":"sh/k7ex0z2l","slide":7,"name":"next-2-number","bbox":[84,354,64,64]}
+{"kind":"textbox","id":"sh/l87y94j6","slide":7,"name":"next-2-numtext","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[84,358,64,52]}
+{"kind":"shape","id":"sh/y5wfypkf","slide":7,"name":"next-2-band","bbox":[168,340,1038,94]}
+{"kind":"textbox","id":"sh/j65g7u10","slide":7,"name":"next-2-label","text":"5°N出口由什么动力组成？","textPreview":"5°N出口由什么动力组成？","textChars":13,"textLines":1,"bbox":[192,352,430,32]}
+{"kind":"textbox","id":"sh/w3exwf29","slide":7,"name":"next-2-equation","text":"Qtotal = Qgeo + QEkman + Qres","textPreview":"Qtotal = Qgeo + QEkman + Qres","textChars":29,"textLines":1,"bbox":[192,390,620,30]}
+{"kind":"textbox","id":"sh/x4ny5kju","slide":7,"name":"next-2-aim","text":"检验地转、Ekman和剩余项的相对贡献","textPreview":"检验地转、Ekman和剩余项的相对贡献","textChars":19,"textLines":1,"bbox":[830,364,346,48]}
+{"kind":"shape","id":"sh/a1wfupkj","slide":7,"name":"next-3-number","bbox":[84,474,64,64]}
+{"kind":"textbox","id":"sh/b25g3u1o","slide":7,"name":"next-3-numtext","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[84,478,64,52]}
+{"kind":"shape","id":"sh/gzih8jit","slide":7,"name":"next-3-band","bbox":[168,460,1038,94]}
+{"kind":"textbox","id":"sh/h0ryhojy","slide":7,"name":"next-3-label","text":"相似FEP先暖为何没有形成相同耦合？","textPreview":"相似FEP先暖为何没有形成相同耦合？","textChars":18,"textLines":1,"bbox":[192,472,430,32]}
+{"kind":"textbox","id":"sh/54365k76","slide":7,"name":"next-3-equation","text":"FEP先暖 → OHC / D20预置 → 深对流与西风 → Ekman出口","textPreview":"FEP先暖 → OHC / D20预置 → 深对流与西风 → Ekman出口","textChars":38,"textLines":1,"bbox":[192,510,620,30]}
+{"kind":"textbox","id":"sh/43upcf6l","slide":7,"name":"next-3-aim","text":"判断海洋预置能否转化为持续大气响应","textPreview":"判断海洋预置能否转化为持续大气响应","textChars":17,"textLines":1,"bbox":[830,484,346,48]}
+{"kind":"shape","id":"sh/3ilo3ap0","slide":7,"name":"takeaway","bbox":[68,628,1144,58]}
+{"kind":"textbox","id":"sh/ihc7a5of","slide":7,"name":"takeaway-text","text":"阶段性结论：暖量到达东部，但相近到达量不足以决定后续事件命运。","textPreview":"阶段性结论：暖量到达东部，但相近到达量不足以决定后续事件命运。","textChars":31,"textLines":1,"bbox":[88,635,1104,44]}
+{"kind":"notes","id":"nt/mtimkh","slide":7,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/scripts/analyze_soda3_three_box_warm_heat_fate.py\n- /Users/daiyue/Documents/Maryland/scripts/analyze_soda3_5n_current_decomposition.py\n- /Users/daiyue/Documents/Maryland/scripts/analyze_soda3_5n_wind_stress_counterfactual.py\n- Causal boundary: current results motivate diagnostic attribution; they do not prove that arrival is a necessary condition or that wind alone determines event fate.\n[/Sources]"}

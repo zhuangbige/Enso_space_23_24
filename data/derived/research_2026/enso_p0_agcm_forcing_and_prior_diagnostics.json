@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-07-31T06:20:53.225439+00:00",
+  "forcing_file": "/Users/daiyue/Documents/Maryland/experiments/enso_type_transition_matrix/forcing/ersstv5_2023_agcm_ia_fep_factorial_mar_aug.nc",
+  "forcing_dimensions": {
+    "time": 6,
+    "lat": 89,
+    "lon": 180
+  },
+  "baseline": "1982-2024",
+  "target_year": 2023,
+  "forcing_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "response_months": [
+    5,
+    6,
+    7
+  ],
+  "bootstrap_samples": 10000,
+  "permutation_samples": 20000,
+  "checks": {
+    "reconstruction_max_abs_error_c": 0.0,
+    "independent_sensitivity_reconstruction_max_abs_error_c": 0.0,
+    "factor_contrast_max_abs_error_c": 0.0,
+    "independent_sensitivity_factor_contrast_max_abs_error_c": 0.0,
+    "ia_fep_mask_max_overlap": 0.0,
+    "minimum_cell_sst_c": -1.7999999523162842,
+    "maximum_cell_sst_c": 34.33403396606445
+  },
+  "all_year_count": 43,
+  "warm_development_count": 23,
+  "basin_specific_interactions_tested": true,
+  "run_manifest_members": 240,
+  "run_manifest_cells": 8,
+  "model_integrations_completed": false,
+  "observational_prior_only": true
+}

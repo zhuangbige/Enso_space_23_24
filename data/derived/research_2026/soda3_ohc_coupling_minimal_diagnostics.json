@@ -1,0 +1,102 @@
+{
+  "experiment": {
+    "ocean_predictor": "SODA3.15.2 March-April 0-300 m OHC anomaly, 5S-5N 180-140W",
+    "atmospheric_response": "ERA5 May-June 850-hPa zonal-wind anomaly, 5S-5N 160E-140W",
+    "ohc_baseline": "1980-2024 calendar-month climatology with same-month trend removed",
+    "n_warm_events": 13
+  },
+  "all_warm_events": {
+    "pearson_r": 0.8875102195502951,
+    "pearson_p": 5.165190813012535e-05,
+    "bootstrap_95_ci": [
+      0.39497232775218144,
+      0.9659987761516745
+    ],
+    "spearman_r": 0.7912087912087913,
+    "spearman_p": 0.001275023901741119,
+    "linear_slope_ms_per_gjm2": 2.548438678275025,
+    "linear_intercept_ms": -0.1670275845739977,
+    "leave_one_event_out_r_range": [
+      0.7912746568535917,
+      0.9266034466639551
+    ],
+    "leave_one_event_out": [
+      {
+        "excluded_year": 1982,
+        "pearson_r": 0.8925603826916121
+      },
+      {
+        "excluded_year": 1986,
+        "pearson_r": 0.8901302110185122
+      },
+      {
+        "excluded_year": 1991,
+        "pearson_r": 0.8880063030509029
+      },
+      {
+        "excluded_year": 1994,
+        "pearson_r": 0.8882845195121742
+      },
+      {
+        "excluded_year": 1997,
+        "pearson_r": 0.7912746568535917
+      },
+      {
+        "excluded_year": 2002,
+        "pearson_r": 0.8866737152018297
+      },
+      {
+        "excluded_year": 2004,
+        "pearson_r": 0.8977920442881221
+      },
+      {
+        "excluded_year": 2006,
+        "pearson_r": 0.8853037030292404
+      },
+      {
+        "excluded_year": 2009,
+        "pearson_r": 0.9266034466639551
+      },
+      {
+        "excluded_year": 2015,
+        "pearson_r": 0.8614136991439403
+      },
+      {
+        "excluded_year": 2018,
+        "pearson_r": 0.8955992140767808
+      },
+      {
+        "excluded_year": 2019,
+        "pearson_r": 0.8946132740851399
+      },
+      {
+        "excluded_year": 2023,
+        "pearson_r": 0.8980874863106388
+      }
+    ]
+  },
+  "positive_fep_highlight_cases": [
+    {
+      "year": 1997,
+      "mar_apr_fep_residual_c": 0.8500518415753693,
+      "ohc300_central_ma_gj_m2": 1.7271749199254967,
+      "u850_cwp_mj_ms": 5.25353822781966,
+      "mature_djf_type_index_c": 2.178809645816081
+    },
+    {
+      "year": 2002,
+      "mar_apr_fep_residual_c": 0.6068357847449606,
+      "ohc300_central_ma_gj_m2": 0.323924413778753,
+      "u850_cwp_mj_ms": 0.6695798273847064,
+      "mature_djf_type_index_c": -0.029568086034839
+    },
+    {
+      "year": 2023,
+      "mar_apr_fep_residual_c": 1.4635090520852778,
+      "ohc300_central_ma_gj_m2": 0.500582718419408,
+      "u850_cwp_mj_ms": 0.2944743601807523,
+      "mature_djf_type_index_c": 0.5912532323462436
+    }
+  ],
+  "interpretation_limit": "This is an event-level observational association and does not by itself establish a causal or universal OHC threshold."
+}

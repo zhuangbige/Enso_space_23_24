@@ -1,0 +1,9 @@
+echo "Loading project-local macOS arm64 Conda environment"
+
+ISCA_RUNTIME_ROOT="${GFDL_BASE%/Isca}"
+export PATH="${ISCA_RUNTIME_ROOT}/env_py312/bin:${PATH}"
+export SDKROOT="$(xcrun --show-sdk-path)"
+
+export GFDL_MKMF_TEMPLATE=macos_arm64_conda
+export F90=mpifort
+export CC=mpicc

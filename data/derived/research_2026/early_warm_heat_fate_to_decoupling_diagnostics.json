@@ -1,0 +1,25 @@
+{
+  "receiver_box": "5-12N, 140W-80W, 0-300 m",
+  "receiver_anomaly_baseline": "calendar-month detrended 1980-2022",
+  "strict_lead_ocean_window": "Jan-Apr(0)",
+  "atmospheric_target_window": "May-Jul(0)",
+  "primary_control": "Mar-Apr Q20 arrival across 140W",
+  "n_events": 13,
+  "event_years": [
+    1982,
+    1986,
+    1991,
+    1994,
+    1997,
+    2002,
+    2004,
+    2006,
+    2009,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "time_weighting": "actual calendar-month seconds for PW-to-ZJ integration",
+  "note": "AMJ/MJJ associations overlap and are classified as feedback, not initiation."
+}

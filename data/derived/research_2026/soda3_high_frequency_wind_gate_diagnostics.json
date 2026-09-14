@@ -1,0 +1,31 @@
+{
+  "gate_definition": "mean positive central-Pacific stress anomaly over the three completed pentads before forecast time; excludes forecast pentad",
+  "gate_units": "N m-2",
+  "primary_risk_rows": 146,
+  "durable_risk_rows": 195,
+  "primary_events": [
+    1982,
+    1986,
+    1991,
+    1997,
+    2002,
+    2004,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "durable_events": [
+    1982,
+    1986,
+    1991,
+    1997,
+    2002,
+    2004,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "minimum_source_lag_days": 5
+}

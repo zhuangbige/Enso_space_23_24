@@ -1,0 +1,257 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/4a2ra0",
+    "id": "4a2ra0",
+    "slide": 5,
+    "layoutId": "0b0e7a89-e5ab-4b53-9e37-490b05f7383f",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "22a80a95-20dd-4771-a46d-3ca250a072f1",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Ocean Arrival",
+    "colors": {
+      "accent1": "#087EAD",
+      "accent2": "#D97706",
+      "accent3": "#008A8A",
+      "accent4": "#B63A3A",
+      "accent5": "#075B82",
+      "accent6": "#6A4C93",
+      "bg1": "#FFFFFF",
+      "bg2": "#E7F5FA",
+      "tx1": "#0B1F33",
+      "tx2": "#0B1F33",
+      "dk1": "#0B1F33",
+      "dk2": "#075B82",
+      "lt1": "#FFFFFF",
+      "lt2": "#E7F5FA",
+      "hlink": "#087EAD",
+      "folHlink": "#008A8A"
+    },
+    "typefaces": [
+      "PingFang SC"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "0b0e7a89-e5ab-4b53-9e37-490b05f7383f",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "22a80a95-20dd-4771-a46d-3ca250a072f1",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "22a80a95-20dd-4771-a46d-3ca250a072f1",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kby5cr2p",
+      "id": "1",
+      "name": "slide-title",
+      "bbox": [
+        68,
+        42,
+        1144,
+        58
+      ],
+      "geometry": "rect",
+      "text": "1997暖量东传最强；2015与2023都进入东部",
+      "textPreview": "1997暖量东传最强；2015与2023都进入东部",
+      "resolvedFontSize": 38,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 38,
+        "typeface": "PingFang SC",
+        "color": "#0B1F33",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "1997暖量东传最强；2015与2023都进入东部"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "1997暖量东传最强；2015与2023都进入东部",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 38,
+            "typeface": "PingFang SC",
+            "color": "#0B1F33",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "1997暖量东传最强；2015与2023都进入东部",
+              "fontSize": 38,
+              "typeface": "PingFang SC",
+              "color": "#0B1F33",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/japojm14",
+      "id": "2",
+      "name": "title-rule",
+      "bbox": [
+        68,
+        108,
+        1144,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#087EAD",
+      "lineWidth": 3
+    },
+    {
+      "order": 3,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/7mdofq5g",
+      "id": "3",
+      "bbox": [
+        104,
+        120,
+        1072,
+        519
+      ],
+      "alt": "1997/98、2015/16和2023/24赤道太平洋0—300米上层海洋热含量异常的经度—时间演变",
+      "contentType": "image/png",
+      "imageCrop": {
+        "left": 0,
+        "top": 0.085,
+        "right": 0,
+        "bottom": 0.055
+      },
+      "imageFit": "cover",
+      "asset": {
+        "assetId": "a59db4b5-dc37-4c2d-8a46-1ee6897371de",
+        "contentType": "image/png",
+        "byteLength": 785316
+      }
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tgr6pgj6",
+      "id": "4",
+      "name": "ohc-meta",
+      "bbox": [
+        68,
+        652,
+        1144,
+        40
+      ],
+      "geometry": "rect",
+      "text": "色标：0—300 m OHC异常（GJ m⁻²）｜SODA3.15.2｜5°S—5°N平均｜1980—2024逐月去气候态并去同月线性趋势",
+      "textPreview": "色标：0—300 m OHC异常（GJ m⁻²）｜SODA3.15.2｜5°S—5°N平均｜1980—2024逐月去气候态并去同月线性趋势",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 20,
+        "typeface": "PingFang SC",
+        "color": "#0B1F33",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "色标：0—300 m OHC异常（GJ m⁻²）｜SODA3.15.2｜5°S—5°N平均｜1980—2024逐月去气候态并去同月线性趋势"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "色标：0—300 m OHC异常（GJ m⁻²）｜SODA3.15.2｜5°S—5°N平均｜1980—2024逐月去气候态并去同月线性趋势",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "PingFang SC",
+            "color": "#0B1F33",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "色标：0—300 m OHC异常（GJ m⁻²）｜SODA3.15.2｜5°S—5°N平均｜1980—2024逐月去气候态并去同月线性趋势",
+              "fontSize": 20,
+              "typeface": "PingFang SC",
+              "color": "#0B1F33",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

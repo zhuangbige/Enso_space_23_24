@@ -1,0 +1,19 @@
+{
+  "dataset": "SODA3.15.2 official 5-day regridded ocean files",
+  "event_years": [
+    1997,
+    2004,
+    2015,
+    2023
+  ],
+  "domain": "5S-5N, 150E-120W, 0-300 m",
+  "anchor": "Within-event-month 5-day departure plus the corresponding 1980-2024 detrended monthly anomaly",
+  "n_rows": 2755,
+  "outputs": {
+    "anchored_csv": "/Users/daiyue/Documents/Maryland/data/derived/research_2026/soda3_5day_event_transport_anchored.csv",
+    "pulse_csv": "/Users/daiyue/Documents/Maryland/data/derived/research_2026/soda3_5day_event_transport_pulse_summary.csv",
+    "lag_csv": "/Users/daiyue/Documents/Maryland/data/derived/research_2026/soda3_5day_wind_transport_lag_correlations.csv",
+    "figure_pdf": "/Users/daiyue/Documents/Maryland/output/pdf/soda3_5day_warm_water_transport_pulses.pdf",
+    "summary_md": "/Users/daiyue/Documents/Maryland/outputs/research_2026/soda3_5day_transport/SODA3_5DAY_TRANSPORT_RESULTS_CN.md"
+  }
+}

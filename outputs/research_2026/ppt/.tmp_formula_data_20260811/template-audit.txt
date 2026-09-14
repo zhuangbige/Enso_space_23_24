@@ -1,0 +1,8 @@
+Source deck: 厄尔尼诺异常暖量到达分配与耦合命运_三文献图解扩展版_20260811.pptx
+Source inventory: 19 slides, 16:9, white canvas, Calibri/PingFang SC, dark navy titles, blue/orange/teal/red accents.
+Narrative insertion: retain source slides 1-5, insert six formula/data slides immediately after the three literature-summary slides, then preserve source slides 6-19 in order.
+Final construction: import the original deck as the base and insert six blank editable slides after source slide 5. Compose only editable PowerPoint text boxes, rectangles, lines and arrows. This avoids the LibreOffice/PowerPoint relationship defect observed when a single source slide is duplicated repeatedly.
+Visual system: reproduce the deck's inherited 54 px margins, eyebrow/title/divider hierarchy, navy/blue/orange/teal/red palette, three-card evidence pattern, process-chain pattern and full-width takeaway bar. No rasterized slide backgrounds are used.
+Scientific contract: all numbered equations from the three papers are transcribed, supplemented only by clearly identified method definitions from the papers' prose. Mathematical variables use visible subscript glyphs rather than underscore notation. The current fixed-layer design excludes the original threshold-thermocline metric without reintroducing it.
+Source contract: each new slide receives a [Sources] speaker-note block with DOI, local PDF, paper section/equation, and data provenance.
+Preservation check: source slides 1-4 and 6-19 are pixel-identical after final LibreOffice rendering. Source slide 5 has a mean absolute pixel difference of 0.635/255 caused by reserialization of its existing objects; visual inspection confirms no content or layout change.

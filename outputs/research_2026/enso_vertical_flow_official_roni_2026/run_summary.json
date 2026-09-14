@@ -1,0 +1,30 @@
+{
+  "historical_temperature": "/Users/daiyue/Documents/Maryland/data/raw/soda3/soda3.15.2_equatorial_temp_jan_jun_1980_2024.nc",
+  "historical_transport": "/Users/daiyue/Documents/Maryland/data/derived/research_2026/soda3_warm_transport_longitude_1980_2024.csv",
+  "target_temperature": "/Users/daiyue/Documents/Maryland/data/raw/godas/godas_pottmp_equatorial_2026_jan_jun.nc",
+  "target_zonal_current": "/Users/daiyue/Documents/Maryland/data/raw/godas/godas_ucur_equatorial_2026_jan_may.nc",
+  "baseline_historical": "1982-2024 same calendar month mean/trend removed",
+  "baseline_target": "GODAS 1991-2020 monthly climatology",
+  "groups": {
+    "moderate": [
+      1994,
+      2002,
+      2023
+    ],
+    "strong": [
+      1986,
+      2009
+    ],
+    "very_strong": [
+      1982,
+      1991,
+      1997,
+      2015
+    ]
+  },
+  "sections_deg_e": [
+    180.0,
+    200.0,
+    220.0
+  ]
+}

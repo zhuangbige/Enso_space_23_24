@@ -1,0 +1,23 @@
+{
+  "n_time": 258.0,
+  "stress_anomaly_reconstruction_max_abs_nm2": 0.0,
+  "stress_raw_min_nm2": -0.09368835389614105,
+  "stress_raw_max_nm2": 0.03932533785700798,
+  "stress_baseline_min_nm2": -0.06508475591392883,
+  "stress_baseline_max_nm2": 0.020716552224694925,
+  "ct_control_mean_zj": 2.1752468728594745,
+  "ct_tau_removed_mean_zj": 0.6516611210249362,
+  "ct_cp_tau_replacement_mean_zj": 0.604817289709694,
+  "cp_observed_mean_zj": 0.4060439334134473,
+  "direct_ct_tau_anomaly_contribution_zj": 1.5235857518345384,
+  "direct_ct_tau_anomaly_fraction_of_control": 0.7004196952742684,
+  "cp_tau_replacement_reduction_fraction": 0.7219546446630997,
+  "direct_ct_tau_positive_event_count": 4.0,
+  "direct_ct_tau_leave_one_out_min_mean_zj": 0.9251624384613729,
+  "direct_ct_tau_leave_one_out_max_mean_zj": 1.9643050789105978,
+  "cp_tau_replacement_positive_reduction_event_count": 4.0,
+  "cp_tau_replacement_leave_one_out_min_mean_zj": 0.9686430583723894,
+  "cp_tau_replacement_leave_one_out_max_mean_zj": 2.001417754226308,
+  "control_existing_event_max_abs_zj": 3.890352928692664e-09,
+  "dose_affine_identity_max_abs_zj": 1.1102230246251565e-16
+}

@@ -1,0 +1,25 @@
+Slide 1
+- Chakravorty, S., Perez, R. C., Gnanaseelan, C., & Anderson, B. T. (2021). Revisiting the Recharge and Discharge Processes for Different Flavors of El Niño. JGR: Oceans, 126, e2020JC017075. https://doi.org/10.1029/2020JC017075
+- Figure asset: /Users/daiyue/Documents/Maryland/outputs/research_2026/three_questions_full_report_assets_20260805/chakravorty2021_figure8_excerpt.png
+
+Slide 2
+- Chakravorty et al. (2021), especially their Section 3.5 and Figure 8.
+- Local study extension: SODA3.15.2 fixed-gate and fixed-box diagnostics.
+
+Slide 3
+- /Users/daiyue/Documents/Maryland/scripts/fetch_soda3_three_box_warm_heat_budget.py
+- /Users/daiyue/Documents/Maryland/scripts/fetch_soda3_chakravorty_transport_baseline.py
+- /Users/daiyue/Documents/Maryland/scripts/analyze_soda3_three_box_warm_heat_fate.py
+
+Slide 4
+- /Users/daiyue/Documents/Maryland/data/derived/research_2026/soda3_three_box_warm_heat_fate_cumulative_summary.csv
+
+Slide 5
+- /Users/daiyue/Documents/Maryland/data/derived/research_2026/enso_1997_2015_2023_warm_heat_fate_phase_summary.csv
+- /Users/daiyue/Documents/Maryland/data/derived/research_2026/soda3_h20_q500_three_event_phase_sensitivity.csv
+- /Users/daiyue/Documents/Maryland/data/derived/research_2026/soda3_h20_q500_sensitivity_summary.json
+
+Slide 6
+- Diagnostic roadmap based on the local three-box budget, 5N current decomposition, and air-sea coupling analysis scripts.
+- /Users/daiyue/Documents/Maryland/scripts/analyze_soda3_5n_current_decomposition.py
+- /Users/daiyue/Documents/Maryland/scripts/analyze_soda3_5n_wind_stress_counterfactual.py

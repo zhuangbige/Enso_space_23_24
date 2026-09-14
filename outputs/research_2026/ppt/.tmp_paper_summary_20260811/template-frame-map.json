@@ -1,0 +1,57 @@
+{
+  "outputSlides": [
+    {"outputSlide": 1, "sourceSlide": 1, "narrativeRole": "preserved source slide", "reuseMode": "duplicate-slide", "editTargets": []},
+    {"outputSlide": 2, "sourceSlide": 2, "narrativeRole": "preserved source slide", "reuseMode": "duplicate-slide", "editTargets": []},
+    {
+      "outputSlide": 3,
+      "sourceSlide": 14,
+      "narrativeRole": "literature evidence summary",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {"shapeIds": ["22", "2", "4", "6", "8", "10", "12", "15", "16", "18", "19", "21"], "action": "rewrite"},
+        {"shapeIds": ["5", "7", "9", "11"], "action": "delete"},
+        {"shapeIds": ["23", "24"], "action": "delete"},
+        {"action": "add", "newPrimitiveAllowed": true, "zone": {"left": 54, "top": 228.88, "width": 820, "height": 342.23}, "reason": "Duplicated source slides share the same OOXML image asset; add one independent image in the vacated inherited image slot to prevent cross-slide replacement.", "mustNotOverlapInherited": true}
+      ]
+    },
+    {
+      "outputSlide": 4,
+      "sourceSlide": 14,
+      "narrativeRole": "literature method summary",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {"shapeIds": ["22", "2", "4", "6", "8", "10", "12", "15", "16", "18", "19", "21"], "action": "rewrite"},
+        {"shapeIds": ["5", "7", "9", "11"], "action": "delete"},
+        {"shapeIds": ["23", "24"], "action": "delete"},
+        {"action": "add", "newPrimitiveAllowed": true, "zone": {"left": 54, "top": 228.88, "width": 820, "height": 342.23}, "reason": "Duplicated source slides share the same OOXML image asset; add one independent image in the vacated inherited image slot to prevent cross-slide replacement.", "mustNotOverlapInherited": true}
+      ]
+    },
+    {
+      "outputSlide": 5,
+      "sourceSlide": 14,
+      "narrativeRole": "literature coupling summary",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {"shapeIds": ["22", "2", "4", "6", "8", "10", "12", "15", "16", "18", "19", "21"], "action": "rewrite"},
+        {"shapeIds": ["5", "7", "9", "11"], "action": "delete"},
+        {"shapeIds": ["23", "24"], "action": "delete"},
+        {"action": "add", "newPrimitiveAllowed": true, "zone": {"left": 54, "top": 228.88, "width": 820, "height": 342.23}, "reason": "Duplicated source slides share the same OOXML image asset; add one independent image in the vacated inherited image slot to prevent cross-slide replacement.", "mustNotOverlapInherited": true}
+      ]
+    },
+    {"outputSlide": 6, "sourceSlide": 3, "narrativeRole": "preserved source slide", "reuseMode": "duplicate-slide", "editTargets": []},
+    {"outputSlide": 7, "sourceSlide": 4, "narrativeRole": "preserved source slide", "reuseMode": "duplicate-slide", "editTargets": []},
+    {"outputSlide": 8, "sourceSlide": 5, "narrativeRole": "preserved source slide", "reuseMode": "duplicate-slide", "editTargets": []},
+    {"outputSlide": 9, "sourceSlide": 6, "narrativeRole": "preserved source slide", "reuseMode": "duplicate-slide", "editTargets": []},
+    {"outputSlide": 10, "sourceSlide": 7, "narrativeRole": "preserved source slide", "reuseMode": "duplicate-slide", "editTargets": []},
+    {"outputSlide": 11, "sourceSlide": 8, "narrativeRole": "preserved source slide", "reuseMode": "duplicate-slide", "editTargets": []},
+    {"outputSlide": 12, "sourceSlide": 9, "narrativeRole": "preserved source slide", "reuseMode": "duplicate-slide", "editTargets": []},
+    {"outputSlide": 13, "sourceSlide": 10, "narrativeRole": "preserved source slide", "reuseMode": "duplicate-slide", "editTargets": []},
+    {"outputSlide": 14, "sourceSlide": 11, "narrativeRole": "preserved source slide", "reuseMode": "duplicate-slide", "editTargets": []},
+    {"outputSlide": 15, "sourceSlide": 12, "narrativeRole": "preserved source slide", "reuseMode": "duplicate-slide", "editTargets": []},
+    {"outputSlide": 16, "sourceSlide": 13, "narrativeRole": "preserved source slide", "reuseMode": "duplicate-slide", "editTargets": []},
+    {"outputSlide": 17, "sourceSlide": 14, "narrativeRole": "preserved source slide", "reuseMode": "duplicate-slide", "editTargets": []},
+    {"outputSlide": 18, "sourceSlide": 15, "narrativeRole": "preserved source slide", "reuseMode": "duplicate-slide", "editTargets": []},
+    {"outputSlide": 19, "sourceSlide": 16, "narrativeRole": "preserved source slide", "reuseMode": "duplicate-slide", "editTargets": []}
+  ],
+  "omittedSourceSlides": []
+}

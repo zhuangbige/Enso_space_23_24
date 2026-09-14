@@ -1,0 +1,576 @@
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"SODA3 · CT/CP · 1997/2015/2023","textShapes":4}
+{"kind":"textbox","id":"sh/ts7md4r2","slide":1,"name":"cover-kicker","text":"SODA3 · CT/CP · 1997/2015/2023","textPreview":"SODA3 · CT/CP · 1997/2015/2023","textChars":30,"textLines":1,"bbox":[54,42,760,36]}
+{"kind":"textbox","id":"sh/547294r6","slide":1,"name":"cover-title","text":"厄尔尼诺异常暖量的\n到达与去向","textPreview":"厄尔尼诺异常暖量的 | 到达与去向","textChars":15,"textLines":2,"bbox":[54,168,1050,220]}
+{"kind":"shape","id":"sh/k3yl0zql","slide":1,"name":"rule-54-435","bbox":[54,435,620,0]}
+{"kind":"textbox","id":"sh/7qp4be9c","slide":1,"name":"cover-subtitle","text":"问题一：是否越过140°W？　问题二：跨过5°N后去了哪里？","textPreview":"问题一：是否越过140°W？　问题二：跨过5°N后去了哪里？","textChars":30,"textLines":1,"bbox":[54,475,1120,58]}
+{"kind":"textbox","id":"sh/65g3298r","slide":1,"name":"cover-answer","text":"回答：异常暖量越界并形成东部储存；北侧显式损失以西向输出和海表失热为主。","textPreview":"回答：异常暖量越界并形成东部储存；北侧显式损失以西向输出和海表失热为主。","textChars":36,"textLines":1,"bbox":[54,565,1140,58]}
+{"kind":"notes","id":"nt/y90nupkv","slide":1,"text":"[Sources]\n- Local SODA3.15.2 analysis: scripts/analyze_soda3_three_box_warm_heat_fate.py\n- Local event comparison: outputs/research_2026/enso_1997_2015_2023_warm_heat_fate_bridge/\n[/Sources]"}
+{"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"问题一","textShapes":5}
+{"kind":"textbox","id":"sh/ove9o7yd","slide":2,"name":"kicker","text":"问题一","textPreview":"问题一","textChars":3,"textLines":1,"bbox":[54,30,180,32]}
+{"kind":"textbox","id":"sh/9072xkry","slide":2,"name":"slide-title","text":"Chakravorty等刻画170°E与南北边界，但未量化140°W东部输入","textPreview":"Chakravorty等刻画170°E与南北边界，但未量化140°W东部输入","textChars":38,"textLines":1,"bbox":[54,70,1172,58]}
+{"kind":"shape","id":"sh/ozy1ofad","slide":2,"name":"rule-54-142","bbox":[54,142,1172,0]}
+{"kind":"textbox","id":"sh/b29kza94","slide":2,"name":"prior-claim","text":"Chakravorty et al. (2021)","textPreview":"Chakravorty et al. (2021)","textChars":25,"textLines":1,"bbox":[54,186,400,42]}
+{"kind":"textbox","id":"sh/a10jqpsj","slide":2,"name":"prior-body","text":"CT\n西太平洋蓄热 → 赤道东传 → 成熟期极向放电\n\nCP\n盆地尺度充放电循环较弱","textPreview":"CT | 西太平洋蓄热 → 赤道东传 → 成熟期极向放电 |  | CP | 盆地尺度充放电循环较弱","textChars":42,"textLines":5,"bbox":[54,248,420,280]}
+{"kind":"shape","id":"sh/x4r21kru","slide":2,"name":"figure-frame","bbox":[500,174,726,394]}
+{"kind":"shape","id":"sh/r65knqtk","slide":2,"name":"takeaway-band","bbox":[54,635,1172,55]}
+{"kind":"textbox","id":"sh/q5wjelsz","slide":2,"name":"takeaway-text","text":"本文把固定门框架向东推进到140°W控制体输入与东部异常暖量储存。","textPreview":"本文把固定门框架向东推进到140°W控制体输入与东部异常暖量储存。","textChars":33,"textLines":1,"bbox":[78,644,1124,38]}
+{"kind":"image","id":"im/ixwfa50j","slide":2,"name":"","bbox":[520,222.23,686,297.54]}
+{"kind":"notes","id":"nt/hwbqtkby","slide":2,"text":"[Sources]\n- Chakravorty et al. (2021), Revisiting the Recharge and Discharge Processes for Different Flavors of El Niño, JGR Oceans, https://doi.org/10.1029/2020JC017075\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/three_questions_full_report_assets_20260805/chakravorty2021_figure8_excerpt.png\n[/Sources]"}
+{"kind":"slide","id":"sl/ofy9wn61","slide":3,"title":"问题一","textShapes":16}
+{"kind":"textbox","id":"sh/sfix03y9","slide":3,"name":"kicker","text":"问题一","textPreview":"问题一","textChars":3,"textLines":1,"bbox":[54,30,180,32]}
+{"kind":"textbox","id":"sh/cza94vmx","slide":3,"name":"slide-title","text":"跨140°W判断越界，东部H₂₀增长判断储存","textPreview":"跨140°W判断越界，东部H₂₀增长判断储存","textChars":22,"textLines":1,"bbox":[54,70,1172,58]}
+{"kind":"shape","id":"sh/d0jax03i","slide":3,"name":"rule-54-142","bbox":[54,142,1172,0]}
+{"kind":"textbox","id":"sh/298ryl4v","slide":3,"name":"formula-q-label","text":"断面异常暖量输送","textPreview":"断面异常暖量输送","textChars":8,"textLines":1,"bbox":[54,168,300,34]}
+{"kind":"textbox","id":"sh/3ah8rqlg","slide":3,"name":"formula-q","text":"Qwarm,20 = ρ₀cₚ ∬ vₙ χ₂₀ dA","textPreview":"Qwarm,20 = ρ₀cₚ ∬ vₙ χ₂₀ dA","textChars":27,"textLines":1,"bbox":[54,208,560,52]}
+{"kind":"textbox","id":"sh/obq90bml","slide":3,"name":"formula-h20-label","text":"固定箱体异常暖量储存","textPreview":"固定箱体异常暖量储存","textChars":10,"textLines":1,"bbox":[674,168,330,34]}
+{"kind":"textbox","id":"sh/pcjqtg36","slide":3,"name":"formula-h20","text":"χ₂₀ = max(T−20°C, 0)\nH₂₀ = ρ₀cₚ ∭ χ₂₀ dV","textPreview":"χ₂₀ = max(T−20°C, 0) | H₂₀ = ρ₀cₚ ∭ χ₂₀ dV","textChars":40,"textLines":2,"bbox":[674,200,552,70]}
+{"kind":"shape","id":"sh/m5cra54z","slide":3,"name":"boundary-evidence","bbox":[54,290,560,82]}
+{"kind":"textbox","id":"sh/n6ls3alk","slide":3,"name":"boundary-evidence-text","text":"Q′₁₄₀W > 0　→　异常暖量越过140°W","textPreview":"Q′₁₄₀W > 0　→　异常暖量越过140°W","textChars":24,"textLines":1,"bbox":[78,311,512,40]}
+{"kind":"shape","id":"sh/n2l4fq98","slide":3,"name":"storage-evidence","bbox":[674,290,552,82]}
+{"kind":"textbox","id":"sh/m1c3mlsn","slide":3,"name":"storage-evidence-text","text":"ΔH′₂₀,E > 0　→　东部形成异常暖量储存","textPreview":"ΔH′₂₀,E > 0　→　东部形成异常暖量储存","textChars":24,"textLines":1,"bbox":[698,311,504,40]}
+{"kind":"shape","id":"sh/943mhgre","slide":3,"name":"arrow-west-central","bbox":[360,458,118,38]}
+{"kind":"shape","id":"sh/83ulovat","slide":3,"name":"arrow-central-east","bbox":[804,458,118,38]}
+{"kind":"shape","id":"sh/v6l4jq94","slide":3,"name":"west-box","bbox":[62,414,298,116]}
+{"kind":"shape","id":"sh/a5c3ql8z","slide":3,"name":"central-box","bbox":[478,414,326,116]}
+{"kind":"shape","id":"sh/x8nml0ra","slide":3,"name":"east-box","bbox":[922,414,298,116]}
+{"kind":"textbox","id":"sh/w7ulsvqp","slide":3,"name":"west-box-text","text":"西箱\n160°E—180°","textPreview":"西箱 | 160°E—180°","textChars":13,"textLines":2,"bbox":[82,432,258,76]}
+{"kind":"textbox","id":"sh/ja54na9g","slide":3,"name":"central-box-text","text":"中箱\n180°—140°W","textPreview":"中箱 | 180°—140°W","textChars":13,"textLines":2,"bbox":[498,432,286,76]}
+{"kind":"textbox","id":"sh/i9w3u58v","slide":3,"name":"east-box-text","text":"东箱\n140°W—80°W","textPreview":"东箱 | 140°W—80°W","textChars":13,"textLines":2,"bbox":[942,432,258,76]}
+{"kind":"textbox","id":"sh/e10f2twf","slide":3,"name":"gate-label-180","text":"180°","textPreview":"180°","textChars":4,"textLines":1,"bbox":[374,420,92,30]}
+{"kind":"textbox","id":"sh/f29gbyx0","slide":3,"name":"gate-label-140","text":"140°W","textPreview":"140°W","textChars":5,"textLines":1,"bbox":[808,420,110,30]}
+{"kind":"textbox","id":"sh/03ix43e5","slide":3,"name":"method-note-1","text":"ρ₀为Boussinesq参考密度；Qwarm,20为PW，按每月实际秒数积分为ZJ。","textPreview":"ρ₀为Boussinesq参考密度；Qwarm,20为PW，按每月实际秒数积分为ZJ。","textChars":43,"textLines":1,"bbox":[54,552,1172,28]}
+{"kind":"textbox","id":"sh/14ryd8fq","slide":3,"name":"method-note-2","text":"先计算完整非线性H₂₀与Qwarm,20，再逐日历月去气候态与趋势；区域10°S—5°N、0—300 m。","textPreview":"先计算完整非线性H₂₀与Qwarm,20，再逐日历月去气候态与趋势；区域10°S—5°N、0—300 m。","textChars":53,"textLines":1,"bbox":[54,584,1172,28]}
+{"kind":"shape","id":"sh/6d0fytg3","slide":3,"name":"takeaway-band","bbox":[54,635,1172,55]}
+{"kind":"textbox","id":"sh/re9g7yxo","slide":3,"name":"takeaway-text","text":"两项共同支持：异常暖量到达并在东部建立暖量库；发展期为Jun(0)—Nov(0)。","textPreview":"两项共同支持：异常暖量到达并在东部建立暖量库；发展期为Jun(0)—Nov(0)。","textChars":41,"textLines":1,"bbox":[78,644,1124,38]}
+{"kind":"notes","id":"nt/ofy9wn61","slide":3,"text":"[Sources]\n- Chakravorty et al. (2021) provides the 20°C warm-water framework and 5°N/10°S transport boundaries: https://doi.org/10.1029/2020JC017075\n- The fixed 0–300 m three-box control volume and 140°W gate are project diagnostics: scripts/analyze_soda3_three_box_warm_heat_fate.py\n[/Sources]"}
+{"kind":"slide","id":"sl/jyx0ra1s","slide":4,"title":"问题一","textShapes":8}
+{"kind":"textbox","id":"sh/x8vaxsfe","slide":4,"name":"kicker","text":"问题一","textPreview":"问题一","textChars":3,"textLines":1,"bbox":[54,30,180,32]}
+{"kind":"textbox","id":"sh/1cj2d8b6","slide":4,"name":"slide-title","text":"CT和CP的发展期均出现140°W东向异常暖量输送增强","textPreview":"CT和CP的发展期均出现140°W东向异常暖量输送增强","textChars":27,"textLines":1,"bbox":[54,70,1172,58]}
+{"kind":"shape","id":"sh/0ba143al","slide":4,"name":"rule-54-142","bbox":[54,142,1172,0]}
+{"kind":"textbox","id":"sh/rm1k7yt4","slide":4,"name":"ct-panel-title","text":"CT 合成","textPreview":"CT 合成","textChars":5,"textLines":1,"bbox":[54,170,560,38]}
+{"kind":"textbox","id":"sh/ql8jytsj","slide":4,"name":"cp-panel-title","text":"CP 合成","textPreview":"CP 合成","textChars":5,"textLines":1,"bbox":[666,170,560,38]}
+{"kind":"shape","id":"sh/3ihk3et8","slide":4,"name":"ct-jun-nov-band","bbox":[352,272,244,286]}
+{"kind":"shape","id":"sh/ih8ju9sn","slide":4,"name":"cp-jun-nov-band","bbox":[964,272,244,286]}
+{"kind":"textbox","id":"sh/kbm987y5","slide":4,"name":"ct-phase-label","text":"Jun(0)—Nov(0)","textPreview":"Jun(0)—Nov(0)","textChars":13,"textLines":1,"bbox":[374,276,198,24]}
+{"kind":"textbox","id":"sh/5cva1cfq","slide":4,"name":"cp-phase-label","text":"Jun(0)—Nov(0)","textPreview":"Jun(0)—Nov(0)","textChars":13,"textLines":1,"bbox":[986,276,198,24]}
+{"kind":"textbox","id":"sh/i94r6xgz","slide":4,"name":"unit-label","text":"异常暖量输送（PW）","textPreview":"异常暖量输送（PW）","textChars":10,"textLines":1,"bbox":[54,593,1172,28]}
+{"kind":"shape","id":"sh/jadsz2xk","slide":4,"name":"takeaway-band","bbox":[54,635,1172,55]}
+{"kind":"textbox","id":"sh/w72947yt","slide":4,"name":"takeaway-text","text":"CT更早、更强；CP在夏秋也转为正。","textPreview":"CT更早、更强；CP在夏秋也转为正。","textChars":18,"textLines":1,"bbox":[78,644,1124,38]}
+{"kind":"chart","id":"ch/upg3qlw3","slide":4,"name":"Chart","chartType":"line","bbox":[54,216,560,386]}
+{"kind":"chart","id":"ch/fqp4zqdo","slide":4,"name":"Chart","chartType":"line","bbox":[666,216,560,386]}
+{"kind":"notes","id":"nt/jyx0ra1s","slide":4,"text":"[Sources]\n- Monthly composite values from data/derived/research_2026/soda3_three_box_warm_heat_budget_composites.csv\n- Generated by scripts/analyze_soda3_three_box_warm_heat_fate.py from SODA3.15.2; three-month-smoothed calendar-month detrended anomalies.\n[/Sources]"}
+{"kind":"slide","id":"sl/i107q5of","slide":5,"title":"问题一","textShapes":8}
+{"kind":"textbox","id":"sh/k7mxovud","slide":5,"name":"kicker","text":"问题一","textPreview":"问题一","textChars":3,"textLines":1,"bbox":[54,30,180,32]}
+{"kind":"textbox","id":"sh/dgbulwnm","slide":5,"name":"slide-title","text":"CT到达更强，但CP也不是“没有暖量东传”","textPreview":"CT到达更强，但CP也不是“没有暖量东传”","textChars":21,"textLines":1,"bbox":[54,70,1172,58]}
+{"kind":"shape","id":"sh/cf2tcr61","slide":5,"name":"rule-54-142","bbox":[54,142,1172,0]}
+{"kind":"textbox","id":"sh/z2tcnm5s","slide":5,"name":"arrival-phase","text":"累计窗口：Jun(0)—Nov(0)　·　CT/CP各4个事件","textPreview":"累计窗口：Jun(0)—Nov(0)　·　CT/CP各4个事件","textChars":31,"textLines":1,"bbox":[54,150,760,28]}
+{"kind":"shape","id":"sh/l4bupwny","slide":5,"name":"ct-stat","bbox":[850,184,346,126]}
+{"kind":"textbox","id":"sh/032tgr6d","slide":5,"name":"ct-stat-number","text":"≈ 2.1倍","textPreview":"≈ 2.1倍","textChars":6,"textLines":1,"bbox":[880,202,286,50]}
+{"kind":"textbox","id":"sh/n6dcr65o","slide":5,"name":"ct-stat-label","text":"CT / CP 的140°W输入比","textPreview":"CT / CP 的140°W输入比","textChars":17,"textLines":1,"bbox":[878,258,290,34]}
+{"kind":"shape","id":"sh/m5kbi1oj","slide":5,"name":"ci-stat","bbox":[850,336,346,236]}
+{"kind":"textbox","id":"sh/w32dkbuh","slide":5,"name":"ci-title","text":"整事件bootstrap 95%区间","textPreview":"整事件bootstrap 95%区间","textChars":18,"textLines":1,"bbox":[872,354,302,34]}
+{"kind":"textbox","id":"sh/x4vedgvm","slide":5,"name":"ci-body","text":"140°W输入\nCT：2.91—9.60\nCP：1.91—4.03\n\n东部H₂₀增长\nCT：5.16—10.46\nCP：2.63—4.80","textPreview":"140°W输入 | CT：2.91—9.60 | CP：1.91—4.03 |  | 东部H₂₀增长 | CT：5.16—10.46 | CP：2.63—4.80","textChars":69,"textLines":7,"bbox":[872,392,302,166]}
+{"kind":"shape","id":"sh/ahkvi1cb","slide":5,"name":"takeaway-band","bbox":[54,635,1172,55]}
+{"kind":"textbox","id":"sh/v2twb6dw","slide":5,"name":"takeaway-text","text":"输入与储量不必相等；东部箱体还受南北边界、海表通量和残差影响。","textPreview":"输入与储量不必相等；东部箱体还受南北边界、海表通量和残差影响。","textChars":31,"textLines":1,"bbox":[78,644,1124,38]}
+{"kind":"chart","id":"ch/pcfidgz6","slide":5,"name":"Chart","chartType":"bar","bbox":[54,178,760,426]}
+{"kind":"notes","id":"nt/i107q5of","slide":5,"text":"[Sources]\n- CT/CP values from outputs/research_2026/soda3_three_box_warm_heat_fate/SODA3_THREE_BOX_WARM_HEAT_FATE_CN.md\n- Underlying event data: data/derived/research_2026/soda3_three_box_warm_heat_fate_cumulative_summary.csv\n[/Sources]"}
+{"kind":"slide","id":"sl/x8f69ofe","slide":6,"title":"问题一","textShapes":6}
+{"kind":"textbox","id":"sh/h4bupgn6","slide":6,"name":"kicker","text":"问题一","textPreview":"问题一","textChars":3,"textLines":1,"bbox":[54,30,180,32]}
+{"kind":"textbox","id":"sh/yhg7epsj","slide":6,"name":"slide-title","text":"三次事件都在140°W以东形成正H₂₀异常","textPreview":"三次事件都在140°W以东形成正H₂₀异常","textChars":21,"textLines":1,"bbox":[54,70,1172,58]}
+{"kind":"shape","id":"sh/zi98nu94","slide":6,"name":"rule-54-142","bbox":[54,142,1172,0]}
+{"kind":"textbox","id":"sh/87ipkzal","slide":6,"name":"event-1997","text":"1997/98","textPreview":"1997/98","textChars":7,"textLines":1,"bbox":[132,156,338,30]}
+{"kind":"textbox","id":"sh/98rqt4r6","slide":6,"name":"event-2015","text":"2015/16","textPreview":"2015/16","textChars":7,"textLines":1,"bbox":[500,156,338,30]}
+{"kind":"textbox","id":"sh/ml07i9sv","slide":6,"name":"event-2023","text":"2023/24","textPreview":"2023/24","textChars":7,"textLines":1,"bbox":[868,156,338,30]}
+{"kind":"shape","id":"sh/oryp8fah","slide":6,"name":"takeaway-band","bbox":[54,635,1172,55]}
+{"kind":"textbox","id":"sh/pc76hkr2","slide":6,"name":"takeaway-text","text":"1997最强；2015和2023在东部的建立幅度接近。","textPreview":"1997最强；2015和2023在东部的建立幅度接近。","textChars":27,"textLines":1,"bbox":[78,644,1124,38]}
+{"kind":"image","id":"im/7ylcjetk","slide":6,"name":"","bbox":[54,188,1172,426]}
+{"kind":"notes","id":"nt/x8f69ofe","slide":6,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/soda3_h20/soda3_h20_hovmoller_1997_2015_2023.png\n- Generated from SODA3.15.2 by scripts/plot_soda3_h20_hovmoller.py\n[/Sources]"}
+{"kind":"slide","id":"sl/gnmp4jqx","slide":7,"title":"事件定性","textShapes":26}
+{"kind":"textbox","id":"sh/9k3qx8ry","slide":7,"name":"kicker","text":"事件定性","textPreview":"事件定性","textChars":4,"textLines":1,"bbox":[54,30,180,32]}
+{"kind":"textbox","id":"sh/cb2tkvap","slide":7,"name":"slide-title","text":"按暖中心位置三次事件均偏CT，但动力性质并不相同","textPreview":"按暖中心位置三次事件均偏CT，但动力性质并不相同","textChars":24,"textLines":1,"bbox":[54,70,1172,58]}
+{"kind":"shape","id":"sh/dcbud0ra","slide":7,"name":"rule-54-142","bbox":[54,142,1172,0]}
+{"kind":"shape","id":"sh/ydkbm5sv","slide":7,"name":"cp-zone","bbox":[250,166,262.86,44]}
+{"kind":"shape","id":"sh/zedcfa9g","slide":7,"name":"ct-zone","bbox":[512.86,166,657.14,44]}
+{"kind":"textbox","id":"sh/kzmdova1","slide":7,"name":"cp-zone-label","text":"CP-like：中太平洋暖中心","textPreview":"CP-like：中太平洋暖中心","textChars":15,"textLines":1,"bbox":[262,174,238.86,28]}
+{"kind":"textbox","id":"sh/l0vuh0rm","slide":7,"name":"ct-zone-label","text":"CT-like：东部冷舌区暖中心","textPreview":"CT-like：东部冷舌区暖中心","textChars":16,"textLines":1,"bbox":[524.86,174,633.14,28]}
+{"kind":"shape","id":"sh/eh0ba1sr","slide":7,"name":"type-grid--1","bbox":[250,220,0,352]}
+{"kind":"textbox","id":"sh/fi9c369c","slide":7,"name":"type-tick--1","text":"-1.0","textPreview":"-1.0","textChars":4,"textLines":1,"bbox":[224,580,52,25]}
+{"kind":"shape","id":"sh/baxkjqlk","slide":7,"name":"type-grid--0.5","bbox":[381.43,220,0,352]}
+{"kind":"textbox","id":"sh/a9ojq5kz","slide":7,"name":"type-tick--0.5","text":"-0.5","textPreview":"-0.5","textChars":4,"textLines":1,"bbox":[355.43,580,52,25]}
+{"kind":"shape","id":"sh/xcz2l03q","slide":7,"name":"type-grid-0","bbox":[512.86,220,0,352]}
+{"kind":"textbox","id":"sh/cbq1sv25","slide":7,"name":"type-tick-0","text":"0.0","textPreview":"0.0","textChars":3,"textLines":1,"bbox":[486.86,580,52,25]}
+{"kind":"shape","id":"sh/n6x0fqlo","slide":7,"name":"type-grid-0.5","bbox":[644.29,220,0,352]}
+{"kind":"textbox","id":"sh/25ojml43","slide":7,"name":"type-tick-0.5","text":"0.5","textPreview":"0.5","textChars":3,"textLines":1,"bbox":[618.29,580,52,25]}
+{"kind":"shape","id":"sh/p8fih03e","slide":7,"name":"type-grid-1","bbox":[775.71,220,0,352]}
+{"kind":"textbox","id":"sh/o761ov2t","slide":7,"name":"type-tick-1","text":"1.0","textPreview":"1.0","textChars":3,"textLines":1,"bbox":[749.71,580,52,25]}
+{"kind":"shape","id":"sh/f2d0b6lc","slide":7,"name":"type-grid-1.5","bbox":[907.14,220,0,352]}
+{"kind":"textbox","id":"sh/eh4jil4r","slide":7,"name":"type-tick-1.5","text":"1.5","textPreview":"1.5","textChars":3,"textLines":1,"bbox":[881.14,580,52,25]}
+{"kind":"shape","id":"sh/id4ju1oz","slide":7,"name":"type-grid-2","bbox":[1038.57,220,0,352]}
+{"kind":"textbox","id":"sh/jedkn654","slide":7,"name":"type-tick-2","text":"2.0","textPreview":"2.0","textChars":3,"textLines":1,"bbox":[1012.57,580,52,25]}
+{"kind":"shape","id":"sh/4fm1wb6p","slide":7,"name":"type-grid-2.5","bbox":[1170,220,0,352]}
+{"kind":"textbox","id":"sh/50v2pgna","slide":7,"name":"type-tick-2.5","text":"2.5","textPreview":"2.5","textChars":3,"textLines":1,"bbox":[1144,580,52,25]}
+{"kind":"textbox","id":"sh/q143ylov","slide":7,"name":"type-event-0","text":"1997/98","textPreview":"1997/98","textChars":7,"textLines":1,"bbox":[54,251,164,40]}
+{"kind":"shape","id":"sh/r2dkrq5g","slide":7,"name":"type-bar-0","bbox":[512.86,275,573.03,0]}
+{"kind":"shape","id":"sh/s3ml0v61","slide":7,"name":"type-marker-0","bbox":[1073.89,263,24,24]}
+{"kind":"textbox","id":"sh/d4f2t0nm","slide":7,"name":"type-value-0","text":"+2.18°C","textPreview":"+2.18°C","textChars":7,"textLines":1,"bbox":[1031.89,227,108,28]}
+{"kind":"textbox","id":"sh/e5o32lor","slide":7,"name":"type-tag-0","text":"典型CT","textPreview":"典型CT","textChars":4,"textLines":1,"bbox":[760,241,380,34]}
+{"kind":"textbox","id":"sh/f6xkvq5c","slide":7,"name":"type-note-0","text":"原文CT事件；E指数占绝对优势","textPreview":"原文CT事件；E指数占绝对优势","textChars":15,"textLines":1,"bbox":[760,279,420,30]}
+{"kind":"textbox","id":"sh/p0zmlk7u","slide":7,"name":"type-event-1","text":"2015/16","textPreview":"2015/16","textChars":7,"textLines":1,"bbox":[54,371,164,40]}
+{"kind":"shape","id":"sh/ozq5szq9","slide":7,"name":"type-bar-1","bbox":[512.86,395,281.26,0]}
+{"kind":"shape","id":"sh/nyh4jupo","slide":7,"name":"type-marker-1","bbox":[782.11,383,24,24]}
+{"kind":"textbox","id":"sh/2x8nqp83","slide":7,"name":"type-value-1","text":"+1.07°C","textPreview":"+1.07°C","textChars":7,"textLines":1,"bbox":[740.11,347,108,28]}
+{"kind":"textbox","id":"sh/x4j6p47q","slide":7,"name":"type-tag-1","text":"CT-like / E–C混合","textPreview":"CT-like / E–C混合","textChars":15,"textLines":1,"bbox":[760,361,380,34]}
+{"kind":"textbox","id":"sh/c3a5wzq5","slide":7,"name":"type-note-1","text":"东部更暖，但中太平洋共同增暖","textPreview":"东部更暖，但中太平洋共同增暖","textChars":14,"textLines":1,"bbox":[760,399,420,30]}
+{"kind":"textbox","id":"sh/b2h4nupk","slide":7,"name":"type-event-2","text":"2023/24","textPreview":"2023/24","textChars":7,"textLines":1,"bbox":[54,491,164,40]}
+{"kind":"shape","id":"sh/a18nup8z","slide":7,"name":"type-bar-2","bbox":[512.86,515,155.09,0]}
+{"kind":"shape","id":"sh/lsj6t47m","slide":7,"name":"type-marker-2","bbox":[655.94,503,24,24]}
+{"kind":"textbox","id":"sh/kra50jqh","slide":7,"name":"type-value-2","text":"+0.59°C","textPreview":"+0.59°C","textChars":7,"textLines":1,"bbox":[613.94,467,108,28]}
+{"kind":"textbox","id":"sh/wneps3ap","slide":7,"name":"type-tag-2","text":"CT-like / FEP主导","textPreview":"CT-like / FEP主导","textChars":15,"textLines":1,"bbox":[760,481,380,34]}
+{"kind":"textbox","id":"sh/honq18ru","slide":7,"name":"type-note-2","text":"东部先暖，但发展期海气耦合偏弱","textPreview":"东部先暖，但发展期海气耦合偏弱","textChars":15,"textLines":1,"bbox":[760,519,420,30]}
+{"kind":"textbox","id":"sh/ulc7qdsj","slide":7,"name":"type-axis-label","text":"成熟期DJF Niño3 − Niño4（°C）","textPreview":"成熟期DJF Niño3 − Niño4（°C）","textChars":24,"textLines":1,"bbox":[250,606,920,26]}
+{"kind":"shape","id":"sh/vm58zi94","slide":7,"name":"takeaway-band","bbox":[54,635,1172,55]}
+{"kind":"textbox","id":"sh/8jupo3ad","slide":7,"name":"takeaway-text","text":"三者都不是CP对照；关键是同为CT-like，2015与2023却出现不同耦合和暖量命运。","textPreview":"三者都不是CP对照；关键是同为CT-like，2015与2023却出现不同耦合和暖量命运。","textChars":45,"textLines":1,"bbox":[78,644,1124,38]}
+{"kind":"notes","id":"nt/gnmp4jqx","slide":7,"text":"[Sources]\n- CT/CP conceptual and event-selection framework: Chakravorty et al. (2021), https://doi.org/10.1029/2020JC017075\n- Mature DJF OISST Niño3−Niño4 values and EP-like labels: data/derived/research_2026/ep_cp_two_gate_event_summary_1982_2023.csv\n- Orthogonal E/C sensitivity: data/derived/research_2026/enso_perturbation_event_indices_1982_2023.csv. 2015 and 2023 are mixed under E/C even though Niño3−Niño4 is positive.\n- 2015 and 2023 are extensions of the CT/CP spatial logic; they are outside the original Chakravorty et al. SODA2 event list ending in 2008.\n[/Sources]"}
+{"kind":"slide","id":"sl/fu1gfa1s","slide":8,"title":"问题一","textShapes":8}
+{"kind":"textbox","id":"sh/0jydkreh","slide":8,"name":"kicker","text":"问题一","textPreview":"问题一","textChars":3,"textLines":1,"bbox":[54,30,180,32]}
+{"kind":"textbox","id":"sh/18byd4zy","slide":8,"name":"slide-title","text":"2015与2023的输入和储量同量级且接近","textPreview":"2015与2023的输入和储量同量级且接近","textChars":21,"textLines":1,"bbox":[54,70,1172,58]}
+{"kind":"shape","id":"sh/g72x4zyd","slide":8,"name":"rule-54-142","bbox":[54,142,1172,0]}
+{"kind":"textbox","id":"sh/ri9g7uhw","slide":8,"name":"event-arrival-window","text":"1997 / 2015 / 2023累计窗口：Jan(0)—Jun(0)","textPreview":"1997 / 2015 / 2023累计窗口：Jan(0)—Jun(0)","textChars":36,"textLines":1,"bbox":[54,150,820,28]}
+{"kind":"shape","id":"sh/tkby9kzm","slide":8,"name":"pair-stat","bbox":[918,186,268,166]}
+{"kind":"textbox","id":"sh/sjix0zy1","slide":8,"name":"pair-title","text":"2015 vs 2023","textPreview":"2015 vs 2023","textChars":12,"textLines":1,"bbox":[942,208,220,34]}
+{"kind":"textbox","id":"sh/je9g3ahk","slide":8,"name":"pair-body","text":"输入  3.30 / 3.91 ZJ\n储量  3.53 / 3.88 ZJ","textPreview":"输入  3.30 / 3.91 ZJ | 储量  3.53 / 3.88 ZJ","textChars":37,"textLines":2,"bbox":[930,260,244,72]}
+{"kind":"shape","id":"sh/id0fu50z","slide":8,"name":"q500-stat","bbox":[918,390,268,156]}
+{"kind":"textbox","id":"sh/o7ydoret","slide":8,"name":"q500-title","text":"0—500 m OHC敏感性","textPreview":"0—500 m OHC敏感性","textChars":14,"textLines":1,"bbox":[936,412,232,34]}
+{"kind":"textbox","id":"sh/98rehwve","slide":8,"name":"q500-body","text":"2015：6.43 ZJ\n2023：6.46 ZJ","textPreview":"2015：6.43 ZJ | 2023：6.46 ZJ","textChars":25,"textLines":2,"bbox":[938,466,228,60]}
+{"kind":"shape","id":"sh/m5gvmhwn","slide":8,"name":"takeaway-band","bbox":[54,635,1172,55]}
+{"kind":"textbox","id":"sh/n6pwfmd8","slide":8,"name":"takeaway-text","text":"H₂₀与0—500 m OHC均显示2015和2023接近；2023较弱不能归因于“暖量未到”。","textPreview":"H₂₀与0—500 m OHC均显示2015和2023接近；2023较弱不能归因于“暖量未到”。","textChars":48,"textLines":1,"bbox":[78,644,1124,38]}
+{"kind":"chart","id":"ch/1kb6903a","slide":8,"name":"Chart","chartType":"bar","bbox":[54,178,820,426]}
+{"kind":"notes","id":"nt/fu1gfa1s","slide":8,"text":"[Sources]\n- Event arrival values: outputs/research_2026/enso_1997_2015_2023_warm_heat_fate_bridge/ENSO_1997_2015_2023_WARM_HEAT_FATE_BRIDGE_CN.md\n- Q500 sensitivity: data/derived/research_2026/soda3_h20_q500_sensitivity_summary.json and soda3_h20_q500_three_event_phase_sensitivity.csv\n[/Sources]"}
+{"kind":"slide","id":"sl/udsvah03","slide":9,"title":"守恒检查","textShapes":14}
+{"kind":"textbox","id":"sh/ml8j6p8n","slide":9,"name":"kicker","text":"守恒检查","textPreview":"守恒检查","textChars":4,"textLines":1,"bbox":[54,30,180,32]}
+{"kind":"textbox","id":"sh/1cfmhgne","slide":9,"name":"slide-title","text":"预算代数闭合，但热量来源尚未完全物理闭合","textPreview":"预算代数闭合，但热量来源尚未完全物理闭合","textChars":20,"textLines":1,"bbox":[54,70,1172,58]}
+{"kind":"shape","id":"sh/0b65obm9","slide":9,"name":"rule-54-142","bbox":[54,142,1172,0]}
+{"kind":"textbox","id":"sh/nex4jq5k","slide":9,"name":"closure-equation","text":"R₂₀ = dH₂₀/dt − (Cₓ + F₁₀S + F₅N + Qsurface,warm)","textPreview":"R₂₀ = dH₂₀/dt − (Cₓ + F₁₀S + F₅N + Qsurface,warm)","textChars":49,"textLines":1,"bbox":[54,166,1172,52]}
+{"kind":"textbox","id":"sh/mdonql4z","slide":9,"name":"ct-close-title","text":"CT东箱发展期：ΔH₂₀ = +7.81 ZJ","textPreview":"CT东箱发展期：ΔH₂₀ = +7.81 ZJ","textChars":23,"textLines":1,"bbox":[54,248,548,36]}
+{"kind":"textbox","id":"sh/9gzml0nq","slide":9,"name":"cp-close-title","text":"CP东箱发展期：ΔH₂₀ = +3.71 ZJ","textPreview":"CP东箱发展期：ΔH₂₀ = +3.71 ZJ","textChars":23,"textLines":1,"bbox":[678,248,548,36]}
+{"kind":"shape","id":"sh/ofq5svm5","slide":9,"name":"ct-explicit","bbox":[96,312,204.04,78]}
+{"kind":"shape","id":"sh/bih4na5w","slide":9,"name":"ct-residual","bbox":[300.04,312,259.96,78]}
+{"kind":"textbox","id":"sh/ah8nu54b","slide":9,"name":"ct-explicit-text","text":"显式净来源\n+3.43 ZJ（44%）","textPreview":"显式净来源 | +3.43 ZJ（44%）","textChars":19,"textLines":2,"bbox":[102,324,192.04,56]}
+{"kind":"textbox","id":"sh/oza1gfyh","slide":9,"name":"ct-residual-text","text":"残差\n+4.38 ZJ（56%）","textPreview":"残差 | +4.38 ZJ（56%）","textChars":16,"textLines":2,"bbox":[306.04,324,247.96,56]}
+{"kind":"shape","id":"sh/p0ji9kf2","slide":9,"name":"cp-explicit","bbox":[720,312,383.79,78]}
+{"kind":"shape","id":"sh/2xsjepgb","slide":9,"name":"cp-residual","bbox":[1103.79,312,80.21,78]}
+{"kind":"textbox","id":"sh/3y107axw","slide":9,"name":"cp-explicit-text","text":"显式净来源\n+3.07 ZJ（83%）","textPreview":"显式净来源 | +3.07 ZJ（83%）","textChars":19,"textLines":2,"bbox":[726,324,371.79,56]}
+{"kind":"textbox","id":"sh/cnu1kzyd","slide":9,"name":"cp-residual-text","text":"残差\n+0.64 ZJ","textPreview":"残差 | +0.64 ZJ","textChars":11,"textLines":2,"bbox":[1107.79,324,72.21,56]}
+{"kind":"shape","id":"sh/do3id4fy","slide":9,"name":"algebra-box","bbox":[54,434,548,154]}
+{"kind":"textbox","id":"sh/qlcjipgn","slide":9,"name":"algebra-title","text":"代数守恒：是","textPreview":"代数守恒：是","textChars":6,"textLines":1,"bbox":[82,454,492,38]}
+{"kind":"textbox","id":"sh/bml0buxs","slide":9,"name":"algebra-body","text":"加入R₂₀后，最大闭合误差\n< 1.1 × 10⁻¹⁶ PW","textPreview":"加入R₂₀后，最大闭合误差 | < 1.1 × 10⁻¹⁶ PW","textChars":30,"textLines":2,"bbox":[82,504,492,62]}
+{"kind":"shape","id":"sh/0ru1ozyp","slide":9,"name":"physical-box","bbox":[678,434,548,154]}
+{"kind":"textbox","id":"sh/lsn2h4fa","slide":9,"name":"physical-title","text":"物理来源闭合：尚未","textPreview":"物理来源闭合：尚未","textChars":9,"textLines":1,"bbox":[706,454,492,38]}
+{"kind":"textbox","id":"sh/98ji147e","slide":9,"name":"physical-body","text":"R₂₀仍混合垂向交换、混合、阈值转换、\n同化增量和月平均离散","textPreview":"R₂₀仍混合垂向交换、混合、阈值转换、 | 同化增量和月平均离散","textChars":30,"textLines":2,"bbox":[706,504,492,62]}
+{"kind":"shape","id":"sh/87a18zqt","slide":9,"name":"takeaway-band","bbox":[54,635,1172,55]}
+{"kind":"textbox","id":"sh/76h0zup8","slide":9,"name":"takeaway-text","text":"可以证明异常暖量“越界与储存”；不能声称东部全部增热都来自140°W水平输入。","textPreview":"可以证明异常暖量“越界与储存”；不能声称东部全部增热都来自140°W水平输入。","textChars":39,"textLines":1,"bbox":[78,644,1124,38]}
+{"kind":"notes","id":"nt/udsvah03","slide":9,"text":"[Sources]\n- East-box development budget values: data/derived/research_2026/soda3_three_box_warm_heat_fate_cumulative_summary.csv\n- Algebraic closure QA: data/derived/research_2026/soda3_three_box_warm_heat_fate_diagnostics.json\n- The residual is defined diagnostically; algebraic closure is not an independent physical validation.\n[/Sources]"}
+{"kind":"slide","id":"sl/m90b6t0r","slide":10,"title":"问题一的回答","textShapes":5}
+{"kind":"textbox","id":"sh/kzu5c32t","slide":10,"name":"answer-kicker","text":"问题一的回答","textPreview":"问题一的回答","textChars":6,"textLines":1,"bbox":[54,42,300,36]}
+{"kind":"textbox","id":"sh/xc3mho32","slide":10,"name":"answer-title","text":"异常暖量越过140°W，\n并在东太平洋建立暖量库","textPreview":"异常暖量越过140°W， | 并在东太平洋建立暖量库","textChars":24,"textLines":2,"bbox":[54,142,1120,230]}
+{"kind":"shape","id":"sh/cbu58j2h","slide":10,"name":"rule-54-410","bbox":[54,410,1172,0]}
+{"kind":"textbox","id":"sh/zelojyl8","slide":10,"name":"answer-1","text":"越界证据：140°W东向异常输入为正","textPreview":"越界证据：140°W东向异常输入为正","textChars":18,"textLines":1,"bbox":[54,452,1172,44]}
+{"kind":"textbox","id":"sh/ydcnatkn","slide":10,"name":"answer-2","text":"储存证据：东部H₂₀增加；强度为CT > CP，1997 ≫ 2015 ≈ 2023","textPreview":"储存证据：东部H₂₀增加；强度为CT > CP，1997 ≫ 2015 ≈ 2023","textChars":42,"textLines":1,"bbox":[54,516,1172,44]}
+{"kind":"textbox","id":"sh/l036l83y","slide":10,"name":"answer-3","text":"边界：这是欧拉控制体意义上的到达，不是同一水团的拉格朗日追踪。","textPreview":"边界：这是欧拉控制体意义上的到达，不是同一水团的拉格朗日追踪。","textChars":31,"textLines":1,"bbox":[54,580,1172,44]}
+{"kind":"notes","id":"nt/m90b6t0r","slide":10,"text":"[Sources]\n- Synthesis of the SODA3.15.2 fixed-gate transport, fixed-box H20 storage, event H20 Hovmoller, and Q500 sensitivity results used on slides 3–7.\n[/Sources]"}
+{"kind":"slide","id":"sl/jetc3ut0","slide":11,"title":"问题二","textShapes":14}
+{"kind":"textbox","id":"sh/j2lgjq5w","slide":11,"name":"kicker","text":"问题二","textPreview":"问题二","textChars":3,"textLines":1,"bbox":[54,30,180,32]}
+{"kind":"textbox","id":"sh/xcryxg7y","slide":11,"name":"slide-title","text":"用北侧接收箱补上5°N之后的暖量去向","textPreview":"用北侧接收箱补上5°N之后的暖量去向","textChars":18,"textLines":1,"bbox":[54,70,1172,58]}
+{"kind":"shape","id":"sh/wbih4b6d","slide":11,"name":"rule-54-142","bbox":[54,142,1172,0]}
+{"kind":"textbox","id":"sh/n69grmpw","slide":11,"name":"receiver-formula","text":"dH₂₀,N/dt = Cₓ,N + F₅N + F₁₂N + Qsurface,N + Rₙ","textPreview":"dH₂₀,N/dt = Cₓ,N + F₅N + F₁₂N + Qsurface,N + Rₙ","textChars":47,"textLines":1,"bbox":[54,168,1172,54]}
+{"kind":"textbox","id":"sh/250zy18b","slide":11,"name":"cx-definition","text":"Cₓ,N = Q₁₄₀W,east − Q₈₀W,east","textPreview":"Cₓ,N = Q₁₄₀W,east − Q₈₀W,east","textChars":29,"textLines":1,"bbox":[54,220,1172,34]}
+{"kind":"textbox","id":"sh/98rytw72","slide":11,"name":"sign-rule","text":"所有项以进入北侧箱体为正　·　累计窗口：Dec(0)—May(+1)","textPreview":"所有项以进入北侧箱体为正　·　累计窗口：Dec(0)—May(+1)","textChars":34,"textLines":1,"bbox":[54,248,1172,30]}
+{"kind":"shape","id":"sh/o7ih0r6h","slide":11,"name":"q5n-arrow","bbox":[592,500,96,74]}
+{"kind":"shape","id":"sh/72t03qp0","slide":11,"name":"surface-arrow","bbox":[594,292,92,62]}
+{"kind":"shape","id":"sh/61kzalof","slide":11,"name":"west-arrow","bbox":[274,380,178,72]}
+{"kind":"shape","id":"sh/ofqtgnyt","slide":11,"name":"east-arrow","bbox":[828,380,178,72]}
+{"kind":"shape","id":"sh/9gza9sze","slide":11,"name":"north-arrow","bbox":[744,300,66,82]}
+{"kind":"shape","id":"sh/mdobedg3","slide":11,"name":"residual-arrow","bbox":[896,472,116,48]}
+{"kind":"shape","id":"sh/nehs7iho","slide":11,"name":"atmosphere-box","bbox":[515,268,250,56]}
+{"kind":"textbox","id":"sh/0b6tc3yx","slide":11,"name":"atmosphere-text","text":"海表热交换","textPreview":"海表热交换","textChars":5,"textLines":1,"bbox":[535,281,210,30]}
+{"kind":"shape","id":"sh/1cfa58zi","slide":11,"name":"receiver-box","bbox":[430,352,420,150]}
+{"kind":"textbox","id":"sh/epobatgr","slide":11,"name":"receiver-box-text","text":"北侧接收箱\n5°N—12°N · 140°W—80°W · 0—300 m","textPreview":"北侧接收箱 | 5°N—12°N · 140°W—80°W · 0—300 m","textChars":37,"textLines":2,"bbox":[452,385,376,84]}
+{"kind":"shape","id":"sh/zaxs3yhc","slide":11,"name":"equatorial-box","bbox":[480,552,320,58]}
+{"kind":"textbox","id":"sh/cn6t83y1","slide":11,"name":"equatorial-box-text","text":"赤道东箱（10°S—5°N）","textPreview":"赤道东箱（10°S—5°N）","textChars":14,"textLines":1,"bbox":[500,566,280,30]}
+{"kind":"textbox","id":"sh/dofa18z6","slide":11,"name":"q5n-label","text":"F₅N","textPreview":"F₅N","textChars":3,"textLines":1,"bbox":[694,514,90,28]}
+{"kind":"textbox","id":"sh/tsnip0ny","slide":11,"name":"west-label","text":"140°W边界","textPreview":"140°W边界","textChars":7,"textLines":1,"bbox":[96,396,170,32]}
+{"kind":"textbox","id":"sh/87ehgv6d","slide":11,"name":"east-label","text":"80°W边界","textPreview":"80°W边界","textChars":6,"textLines":1,"bbox":[1018,398,150,32]}
+{"kind":"textbox","id":"sh/7650nq5s","slide":11,"name":"north-label","text":"F₁₂N","textPreview":"F₁₂N","textChars":4,"textLines":1,"bbox":[800,296,110,30]}
+{"kind":"textbox","id":"sh/65wzelo7","slide":11,"name":"residual-label","text":"Rₙ","textPreview":"Rₙ","textChars":2,"textLines":1,"bbox":[1018,480,80,28]}
+{"kind":"shape","id":"sh/l43ilgn2","slide":11,"name":"takeaway-band","bbox":[54,635,1172,55]}
+{"kind":"textbox","id":"sh/k3uhcb6h","slide":11,"name":"takeaway-text","text":"5°N只是转移门；Cₓ,N同时包含140°W与80°W，残差不是已识别的物理去向。","textPreview":"5°N只是转移门；Cₓ,N同时包含140°W与80°W，残差不是已识别的物理去向。","textChars":41,"textLines":1,"bbox":[78,644,1124,38]}
+{"kind":"notes","id":"nt/jetc3ut0","slide":11,"text":"[Sources]\n- Northern receiver-box diagnostic: outputs/research_2026/soda3_north_receiver_budget/SODA3_NORTH_RECEIVER_WARM_HEAT_BUDGET_CN.md\n- Control volume: 5°N–12°N, 140°W–80°W, 0–300 m; all terms use the into-box-positive convention.\n[/Sources]"}
+{"kind":"slide","id":"sl/8f2psfyx","slide":12,"title":"问题二","textShapes":34}
+{"kind":"textbox","id":"sh/3ilkfadw","slide":12,"name":"kicker","text":"问题二","textPreview":"问题二","textChars":3,"textLines":1,"bbox":[54,30,180,32]}
+{"kind":"textbox","id":"sh/1gbm9s3a","slide":12,"name":"slide-title","text":"成熟—衰减期，CT在5°N获得暖量，CP却向南返回","textPreview":"成熟—衰减期，CT在5°N获得暖量，CP却向南返回","textChars":25,"textLines":1,"bbox":[54,70,1172,58]}
+{"kind":"shape","id":"sh/0f2lgnmp","slide":12,"name":"rule-54-142","bbox":[54,142,1172,0]}
+{"kind":"textbox","id":"sh/ra943il8","slide":12,"name":"receiver-phase","text":"累计窗口：Dec(0)—May(+1)","textPreview":"累计窗口：Dec(0)—May(+1)","textChars":19,"textLines":1,"bbox":[54,151,300,28]}
+{"kind":"shape","id":"sh/q903ad4n","slide":12,"name":"grid--3","bbox":[350,190,0,380]}
+{"kind":"textbox","id":"sh/dcbm583y","slide":12,"name":"tick--3","text":"-3","textPreview":"-3","textChars":2,"textLines":1,"bbox":[328,578,44,26]}
+{"kind":"shape","id":"sh/sb2lcnmd","slide":12,"name":"grid--2","bbox":[451.25,190,0,380]}
+{"kind":"textbox","id":"sh/b6d4f2lc","slide":12,"name":"tick--2","text":"-2","textPreview":"-2","textChars":2,"textLines":1,"bbox":[429.25,578,44,26]}
+{"kind":"shape","id":"sh/a543mx4r","slide":12,"name":"grid--1","bbox":[552.5,190,0,380]}
+{"kind":"textbox","id":"sh/wvupgz6t","slide":12,"name":"tick--1","text":"-1","textPreview":"-1","textChars":2,"textLines":1,"bbox":[530.5,578,44,26]}
+{"kind":"shape","id":"sh/xw3q94ne","slide":12,"name":"grid-0","bbox":[653.75,190,0,380]}
+{"kind":"textbox","id":"sh/atc7epon","slide":12,"name":"tick-0","text":"0","textPreview":"0","textChars":1,"textLines":1,"bbox":[631.75,578,44,26]}
+{"kind":"shape","id":"sh/bulo7u58","slide":12,"name":"grid-1","bbox":[755,190,0,380]}
+{"kind":"textbox","id":"sh/orapcf6h","slide":12,"name":"tick-1","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[733,578,44,26]}
+{"kind":"shape","id":"sh/9sj65kn2","slide":12,"name":"grid-2","bbox":[856.25,190,0,380]}
+{"kind":"textbox","id":"sh/mps7a5or","slide":12,"name":"tick-2","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[834.25,578,44,26]}
+{"kind":"shape","id":"sh/nq1o3a5w","slide":12,"name":"grid-3","bbox":[957.5,190,0,380]}
+{"kind":"textbox","id":"sh/0nap8f6l","slide":12,"name":"tick-3","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[935.5,578,44,26]}
+{"kind":"shape","id":"sh/1oj61kn6","slide":12,"name":"grid-4","bbox":[1058.75,190,0,380]}
+{"kind":"textbox","id":"sh/hkbm5wzu","slide":12,"name":"tick-4","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[1036.75,578,44,26]}
+{"kind":"shape","id":"sh/gj25cry9","slide":12,"name":"grid-5","bbox":[1160,190,0,380]}
+{"kind":"textbox","id":"sh/fit436ho","slide":12,"name":"tick-5","text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1138,578,44,26]}
+{"kind":"textbox","id":"sh/uh0na1g3","slide":12,"name":"row-label-0","text":"5°N输入","textPreview":"5°N输入","textChars":5,"textLines":1,"bbox":[54,202,260,36]}
+{"kind":"shape","id":"sh/tgrm1wzy","slide":12,"name":"rule-54-251","bbox":[54,251,1106,0]}
+{"kind":"shape","id":"sh/sfi58ryd","slide":12,"name":"ct-0-whisker","bbox":[747.29,211,368.26,0]}
+{"kind":"shape","id":"sh/7u94zmhs","slide":12,"name":"ct-0-low-cap","bbox":[747.29,204,0,14]}
+{"kind":"shape","id":"sh/6t0n6hg7","slide":12,"name":"ct-0-high-cap","bbox":[1115.55,204,0,14]}
+{"kind":"shape","id":"sh/dcv6dgz2","slide":12,"name":"ct-0-mean","bbox":[923.92,203.5,15,15]}
+{"kind":"textbox","id":"sh/cbm5kbyh","slide":12,"name":"ct-0-value","text":"+2.74","textPreview":"+2.74","textChars":5,"textLines":1,"bbox":[941.42,185,76,24]}
+{"kind":"shape","id":"sh/alwbitsn","slide":12,"name":"cp-0-whisker","bbox":[500.99,231,127.92,0]}
+{"kind":"shape","id":"sh/bm5sryt8","slide":12,"name":"cp-0-low-cap","bbox":[500.99,224,0,14]}
+{"kind":"shape","id":"sh/wnetkjat","slide":12,"name":"cp-0-high-cap","bbox":[628.91,224,0,14]}
+{"kind":"shape","id":"sh/xonutobe","slide":12,"name":"cp-0-mean","bbox":[549.09,223.5,15,15]}
+{"kind":"textbox","id":"sh/mhcbe9sr","slide":12,"name":"cp-0-value","text":"−0.96","textPreview":"−0.96","textChars":5,"textLines":1,"bbox":[566.59,237,76,24]}
+{"kind":"textbox","id":"sh/nilsnetc","slide":12,"name":"row-label-1","text":"纬向汇聚 Cₓ,N","textPreview":"纬向汇聚 Cₓ,N","textChars":9,"textLines":1,"bbox":[54,266,260,36]}
+{"kind":"shape","id":"sh/ojutgjah","slide":12,"name":"rule-54-315","bbox":[54,315,1106,0]}
+{"kind":"shape","id":"sh/9k3apob2","slide":12,"name":"ct-1-whisker","bbox":[400.27,275,235.65,0]}
+{"kind":"shape","id":"sh/6dgbqdsv","slide":12,"name":"ct-1-low-cap","bbox":[400.27,268,0,14]}
+{"kind":"shape","id":"sh/7epczitg","slide":12,"name":"ct-1-high-cap","bbox":[635.93,268,0,14]}
+{"kind":"shape","id":"sh/r6l8vaxw","slide":12,"name":"ct-1-mean","bbox":[478.8,267.5,15,15]}
+{"kind":"textbox","id":"sh/q5c7m5wb","slide":12,"name":"ct-1-value","text":"−1.65","textPreview":"−1.65","textChars":5,"textLines":1,"bbox":[496.3,249,76,24]}
+{"kind":"shape","id":"sh/d8nqxkf2","slide":12,"name":"cp-1-whisker","bbox":[668.65,295,148.35,0]}
+{"kind":"shape","id":"sh/s7epofeh","slide":12,"name":"cp-1-low-cap","bbox":[668.65,288,0,14]}
+{"kind":"shape","id":"sh/j2lorqxk","slide":12,"name":"cp-1-high-cap","bbox":[817,288,0,14]}
+{"kind":"shape","id":"sh/i1c7i5wf","slide":12,"name":"cp-1-mean","bbox":[721.05,287.5,15,15]}
+{"kind":"textbox","id":"sh/5436t0fq","slide":12,"name":"cp-1-value","text":"+0.74","textPreview":"+0.74","textChars":5,"textLines":1,"bbox":[738.55,301,76,24]}
+{"kind":"textbox","id":"sh/43upkve5","slide":12,"name":"row-label-2","text":"12°N输入项","textPreview":"12°N输入项","textChars":7,"textLines":1,"bbox":[54,330,260,36]}
+{"kind":"shape","id":"sh/nyp83ud4","slide":12,"name":"rule-54-379","bbox":[54,379,1106,0]}
+{"kind":"shape","id":"sh/2xw7upwj","slide":12,"name":"ct-2-whisker","bbox":[604.77,339,85.89,0]}
+{"kind":"shape","id":"sh/kjq5oru1","slide":12,"name":"ct-2-low-cap","bbox":[604.77,332,0,14]}
+{"kind":"shape","id":"sh/lkzmhwvm","slide":12,"name":"ct-2-high-cap","bbox":[690.66,332,0,14]}
+{"kind":"shape","id":"sh/yh8nmhcv","slide":12,"name":"ct-2-mean","bbox":[639.8,331.5,15,15]}
+{"kind":"textbox","id":"sh/zih4fmdg","slide":12,"name":"ct-2-value","text":"−0.06","textPreview":"−0.06","textChars":5,"textLines":1,"bbox":[657.3,313,76,24]}
+{"kind":"shape","id":"sh/87q5srux","slide":12,"name":"cp-2-whisker","bbox":[555.67,359,128.06,0]}
+{"kind":"shape","id":"sh/98jmlwvi","slide":12,"name":"cp-2-low-cap","bbox":[555.67,352,0,14]}
+{"kind":"shape","id":"sh/ml8nq1c7","slide":12,"name":"cp-2-high-cap","bbox":[683.74,352,0,14]}
+{"kind":"shape","id":"sh/7mh4j6dc","slide":12,"name":"cp-2-mean","bbox":[628.58,351.5,15,15]}
+{"kind":"textbox","id":"sh/wba5wbu9","slide":12,"name":"cp-2-value","text":"−0.17","textPreview":"−0.17","textChars":5,"textLines":1,"bbox":[646.08,365,76,24]}
+{"kind":"textbox","id":"sh/hcjmpgbu","slide":12,"name":"row-label-3","text":"海表暖层项","textPreview":"海表暖层项","textChars":5,"textLines":1,"bbox":[54,394,260,36]}
+{"kind":"shape","id":"sh/5sfm9g3y","slide":12,"name":"rule-54-443","bbox":[54,443,1106,0]}
+{"kind":"shape","id":"sh/4765gbmd","slide":12,"name":"ct-3-whisker","bbox":[407.74,403,147.32,0]}
+{"kind":"shape","id":"sh/36x476ls","slide":12,"name":"ct-3-low-cap","bbox":[407.74,396,0,14]}
+{"kind":"shape","id":"sh/i5o3e147","slide":12,"name":"ct-3-high-cap","bbox":[555.06,396,0,14]}
+{"kind":"shape","id":"sh/dwzmdg3u","slide":12,"name":"ct-3-mean","bbox":[473.9,395.5,15,15]}
+{"kind":"textbox","id":"sh/cvq5kbm9","slide":12,"name":"ct-3-value","text":"−1.70","textPreview":"−1.70","textChars":5,"textLines":1,"bbox":[491.4,377,76,24]}
+{"kind":"shape","id":"sh/ruh4b6lo","slide":12,"name":"cp-3-whisker","bbox":[552.82,423,77.63,0]}
+{"kind":"shape","id":"sh/qtonil4j","slide":12,"name":"cp-3-low-cap","bbox":[552.82,416,0,14]}
+{"kind":"shape","id":"sh/t0vm1wnq","slide":12,"name":"cp-3-high-cap","bbox":[630.45,416,0,14]}
+{"kind":"shape","id":"sh/8zml8rm5","slide":12,"name":"cp-3-mean","bbox":[577.72,415.5,15,15]}
+{"kind":"textbox","id":"sh/y5kjixk3","slide":12,"name":"cp-3-value","text":"−0.68","textPreview":"−0.68","textChars":5,"textLines":1,"bbox":[595.22,429,76,24]}
+{"kind":"textbox","id":"sh/j6tkbil8","slide":12,"name":"row-label-4","text":"剩余项","textPreview":"剩余项","textChars":3,"textLines":1,"bbox":[54,458,260,36]}
+{"kind":"shape","id":"sh/k721kn2t","slide":12,"name":"rule-54-507","bbox":[54,507,1106,0]}
+{"kind":"shape","id":"sh/l8b2dsje","slide":12,"name":"ct-4-whisker","bbox":[748.29,467,68.7,0]}
+{"kind":"shape","id":"sh/69kjmxkz","slide":12,"name":"ct-4-low-cap","bbox":[748.29,460,0,14]}
+{"kind":"shape","id":"sh/7atkf21k","slide":12,"name":"ct-4-high-cap","bbox":[816.99,460,0,14]}
+{"kind":"shape","id":"sh/8bm1o725","slide":12,"name":"ct-4-mean","bbox":[775.14,459.5,15,15]}
+{"kind":"textbox","id":"sh/tcv2hcjq","slide":12,"name":"ct-4-value","text":"+1.27","textPreview":"+1.27","textChars":5,"textLines":1,"bbox":[792.64,441,76,24]}
+{"kind":"shape","id":"sh/md0jadkv","slide":12,"name":"cp-4-whisker","bbox":[711.15,487,49.4,0]}
+{"kind":"shape","id":"sh/ne903ylg","slide":12,"name":"cp-4-low-cap","bbox":[711.15,480,0,14]}
+{"kind":"shape","id":"sh/rmxcfyxg","slide":12,"name":"cp-4-high-cap","bbox":[760.55,480,0,14]}
+{"kind":"shape","id":"sh/6lob6twb","slide":12,"name":"cp-4-mean","bbox":[728.43,479.5,15,15]}
+{"kind":"textbox","id":"sh/tozuh8fm","slide":12,"name":"cp-4-value","text":"+0.81","textPreview":"+0.81","textChars":5,"textLines":1,"bbox":[745.93,493,76,24]}
+{"kind":"textbox","id":"sh/snqt83e1","slide":12,"name":"row-label-5","text":"储量倾向","textPreview":"储量倾向","textChars":4,"textLines":1,"bbox":[54,522,260,36]}
+{"kind":"shape","id":"sh/fqhcjixs","slide":12,"name":"ct-5-whisker","bbox":[672.47,531,70.96,0]}
+{"kind":"shape","id":"sh/ep8badw7","slide":12,"name":"ct-5-low-cap","bbox":[672.47,524,0,14]}
+{"kind":"shape","id":"sh/1szul8fy","slide":12,"name":"ct-5-high-cap","bbox":[743.42,524,0,14]}
+{"kind":"shape","id":"sh/grqtc3ed","slide":12,"name":"ct-5-mean","bbox":[706.56,523.5,15,15]}
+{"kind":"textbox","id":"sh/vuds7exo","slide":12,"name":"ct-5-value","text":"+0.60","textPreview":"+0.60","textChars":5,"textLines":1,"bbox":[724.06,505,76,24]}
+{"kind":"shape","id":"sh/ut4by9w3","slide":12,"name":"cp-5-whisker","bbox":[563.88,551,162.38,0]}
+{"kind":"shape","id":"sh/kz298ful","slide":12,"name":"cp-5-low-cap","bbox":[563.88,544,0,14]}
+{"kind":"shape","id":"sh/l0bq1kv6","slide":12,"name":"cp-5-high-cap","bbox":[726.26,544,0,14]}
+{"kind":"shape","id":"sh/yxkr65cv","slide":12,"name":"cp-5-mean","bbox":[619.88,543.5,15,15]}
+{"kind":"textbox","id":"sh/zyt8zadg","slide":12,"name":"cp-5-value","text":"−0.26","textPreview":"−0.26","textChars":5,"textLines":1,"bbox":[637.38,557,76,24]}
+{"kind":"shape","id":"sh/cvi94vup","slide":12,"name":"legend-ct","bbox":[929,157,14,14]}
+{"kind":"textbox","id":"sh/xwbqx0va","slide":12,"name":"legend-ct-text","text":"CT（均值与95%区间）","textPreview":"CT（均值与95%区间）","textChars":12,"textLines":1,"bbox":[950,151,210,28]}
+{"kind":"shape","id":"sh/at0725cj","slide":12,"name":"legend-cp","bbox":[1131,157,14,14]}
+{"kind":"textbox","id":"sh/bu98vad4","slide":12,"name":"legend-cp-text","text":"CP","textPreview":"CP","textChars":2,"textLines":1,"bbox":[1152,151,70,28]}
+{"kind":"textbox","id":"sh/wrm9gzut","slide":12,"name":"axis-label","text":"累计异常暖量（ZJ）","textPreview":"累计异常暖量（ZJ）","textChars":10,"textLines":1,"bbox":[350,604,810,26]}
+{"kind":"shape","id":"sh/hsva94ve","slide":12,"name":"takeaway-band","bbox":[54,635,1172,55]}
+{"kind":"textbox","id":"sh/2hc3m5cb","slide":12,"name":"takeaway-text","text":"CT与CP在5°N和Cₓ,N上方向相反；Rₙ与显式项同量级，不能解释为已识别去向。","textPreview":"CT与CP在5°N和Cₓ,N上方向相反；Rₙ与显式项同量级，不能解释为已识别去向。","textChars":41,"textLines":1,"bbox":[78,644,1124,38]}
+{"kind":"notes","id":"nt/8f2psfyx","slide":12,"text":"[Sources]\n- CT/CP Dec(0)–May(+1) mean and 95% event-bootstrap intervals: data/derived/research_2026/soda3_north_receiver_budget_summary.csv\n- SODA3.15.2, 1980–2022 calendar-month detrended anomalies, three-month smoothing; CT and CP each n=4.\n[/Sources]"}
+{"kind":"slide","id":"sl/hgzapcr6","slide":13,"title":"边界敏感性","textShapes":27}
+{"kind":"textbox","id":"sh/mdwfep0r","slide":13,"name":"kicker","text":"边界敏感性","textPreview":"边界敏感性","textChars":5,"textLines":1,"bbox":[54,30,180,32]}
+{"kind":"textbox","id":"sh/q50nydsj","slide":13,"name":"slide-title","text":"改变北边界后，持续北向仍不是CT的主要去向","textPreview":"改变北边界后，持续北向仍不是CT的主要去向","textChars":21,"textLines":1,"bbox":[54,70,1172,58]}
+{"kind":"shape","id":"sh/bq9orito","slide":13,"name":"rule-54-142","bbox":[54,142,1172,0]}
+{"kind":"textbox","id":"sh/o3i5w3ad","slide":13,"name":"sensitivity-phase","text":"Dec(0)—May(+1)　·　正值表示向北异常输出　·　CT/CP各4个事件","textPreview":"Dec(0)—May(+1)　·　正值表示向北异常输出　·　CT/CP各4个事件","textChars":40,"textLines":1,"bbox":[54,150,1172,28]}
+{"kind":"shape","id":"sh/p4r6p8by","slide":13,"name":"sens-grid--1","bbox":[384.62,210,0,300]}
+{"kind":"textbox","id":"sh/21gnuts7","slide":13,"name":"sens-tick--1","text":"-1.0","textPreview":"-1.0","textChars":4,"textLines":1,"bbox":[356.62,522,56,26]}
+{"kind":"shape","id":"sh/32ponyts","slide":13,"name":"sens-grid--0.75","bbox":[465.38,210,0,300]}
+{"kind":"textbox","id":"sh/gzy5s3a1","slide":13,"name":"sens-tick--0.75","text":"-0.75","textPreview":"-0.75","textChars":5,"textLines":1,"bbox":[437.38,522,56,26]}
+{"kind":"shape","id":"sh/1076lobm","slide":13,"name":"sens-grid--0.5","bbox":[546.15,210,0,300]}
+{"kind":"textbox","id":"sh/hcfy9k3u","slide":13,"name":"sens-tick--0.5","text":"-0.5","textPreview":"-0.5","textChars":4,"textLines":1,"bbox":[518.15,522,56,26]}
+{"kind":"shape","id":"sh/gb6x0zm9","slide":13,"name":"sens-grid--0.25","bbox":[626.92,210,0,300]}
+{"kind":"textbox","id":"sh/vaxg7ulo","slide":13,"name":"sens-tick--0.25","text":"-0.25","textPreview":"-0.25","textChars":5,"textLines":1,"bbox":[598.92,522,56,26]}
+{"kind":"shape","id":"sh/u9ofyp43","slide":13,"name":"sens-grid-0","bbox":[707.69,210,0,300]}
+{"kind":"textbox","id":"sh/t8fy5k3i","slide":13,"name":"sens-tick-0","text":"0.0","textPreview":"0.0","textChars":3,"textLines":1,"bbox":[679.69,522,56,26]}
+{"kind":"shape","id":"sh/876xwfmx","slide":13,"name":"sens-grid-0.25","bbox":[788.46,210,0,300]}
+{"kind":"textbox","id":"sh/7mdg3als","slide":13,"name":"sens-tick-0.25","text":"0.25","textPreview":"0.25","textChars":4,"textLines":1,"bbox":[760.46,522,56,26]}
+{"kind":"shape","id":"sh/6l4fu547","slide":13,"name":"sens-grid-0.5","bbox":[869.23,210,0,300]}
+{"kind":"textbox","id":"sh/lkvy103m","slide":13,"name":"sens-tick-0.5","text":"0.5","textPreview":"0.5","textChars":3,"textLines":1,"bbox":[841.23,522,56,26]}
+{"kind":"shape","id":"sh/kjmxsfm1","slide":13,"name":"sens-grid-0.75","bbox":[950,210,0,300]}
+{"kind":"textbox","id":"sh/cnqh8fux","slide":13,"name":"sens-tick-0.75","text":"0.75","textPreview":"0.75","textChars":4,"textLines":1,"bbox":[922,522,56,26]}
+{"kind":"shape","id":"sh/xozyhkbi","slide":13,"name":"sens-grid-1","bbox":[1030.77,210,0,300]}
+{"kind":"textbox","id":"sh/q18f65cr","slide":13,"name":"sens-tick-1","text":"1.0","textPreview":"1.0","textChars":3,"textLines":1,"bbox":[1002.77,522,56,26]}
+{"kind":"shape","id":"sh/bmhgfatc","slide":13,"name":"sens-grid-1.25","bbox":[1111.54,210,0,300]}
+{"kind":"textbox","id":"sh/oz6x4vul","slide":13,"name":"sens-tick-1.25","text":"1.25","textPreview":"1.25","textChars":4,"textLines":1,"bbox":[1083.54,522,56,26]}
+{"kind":"textbox","id":"sh/p0zyd0b6","slide":13,"name":"sens-row-0","text":"10°N","textPreview":"10°N","textChars":4,"textLines":1,"bbox":[88,248,170,44]}
+{"kind":"shape","id":"sh/2xof2lcv","slide":13,"name":"sens-ct-0-whisker","bbox":[729.54,258,262.8,0]}
+{"kind":"shape","id":"sh/3yxgbqdg","slide":13,"name":"sens-ct-0-low-cap","bbox":[729.54,251,0,14]}
+{"kind":"shape","id":"sh/8vahgzu5","slide":13,"name":"sens-ct-0-high-cap","bbox":[992.34,251,0,14]}
+{"kind":"shape","id":"sh/9wjyp4bq","slide":13,"name":"sens-ct-0-mean","bbox":[838.29,250.5,15,15]}
+{"kind":"textbox","id":"sh/jqlkfyds","slide":13,"name":"sens-ct-0-value","text":"+0.43","textPreview":"+0.43","textChars":5,"textLines":1,"bbox":[855.79,232,76,24]}
+{"kind":"shape","id":"sh/ipcjmtw7","slide":13,"name":"sens-cp-0-whisker","bbox":[742.66,284,282.79,0]}
+{"kind":"shape","id":"sh/5cn2h8vy","slide":13,"name":"sens-cp-0-low-cap","bbox":[742.66,277,0,14]}
+{"kind":"shape","id":"sh/4re1o3ed","slide":13,"name":"sens-cp-0-high-cap","bbox":[1025.45,277,0,14]}
+{"kind":"shape","id":"sh/re5kjydo","slide":13,"name":"sens-cp-0-mean","bbox":[876.56,276.5,15,15]}
+{"kind":"textbox","id":"sh/6dwjqtw3","slide":13,"name":"sens-cp-0-value","text":"+0.55","textPreview":"+0.55","textChars":5,"textLines":1,"bbox":[894.06,290,76,24]}
+{"kind":"textbox","id":"sh/tgn2l8vu","slide":13,"name":"sens-row-1","text":"12°N","textPreview":"12°N","textChars":4,"textLines":1,"bbox":[88,338,170,44]}
+{"kind":"shape","id":"sh/sfe1s3e9","slide":13,"name":"sens-ct-1-whisker","bbox":[589.92,348,274.05,0]}
+{"kind":"shape","id":"sh/7i107edk","slide":13,"name":"sens-ct-1-low-cap","bbox":[589.92,341,0,14]}
+{"kind":"shape","id":"sh/mhsje9wz","slide":13,"name":"sens-ct-1-high-cap","bbox":[863.97,341,0,14]}
+{"kind":"shape","id":"sh/y1wju94v","slide":13,"name":"sens-ct-1-mean","bbox":[720.77,340.5,15,15]}
+{"kind":"textbox","id":"sh/z25kne5g","slide":13,"name":"sens-ct-1-value","text":"+0.06","textPreview":"+0.06","textChars":5,"textLines":1,"bbox":[738.27,322,76,24]}
+{"kind":"shape","id":"sh/03e1wjm1","slide":13,"name":"sens-cp-1-whisker","bbox":[612,374,408.64,0]}
+{"kind":"shape","id":"sh/l4n2po3m","slide":13,"name":"sens-cp-1-low-cap","bbox":[612,367,0,14]}
+{"kind":"shape","id":"sh/m5gjyt4r","slide":13,"name":"sens-cp-1-high-cap","bbox":[1020.64,367,0,14]}
+{"kind":"shape","id":"sh/n6pkrelc","slide":13,"name":"sens-cp-1-mean","bbox":[756.57,366.5,15,15]}
+{"kind":"textbox","id":"sh/8ry10jmx","slide":13,"name":"sens-cp-1-value","text":"+0.17","textPreview":"+0.17","textChars":5,"textLines":1,"bbox":[774.07,380,76,24]}
+{"kind":"textbox","id":"sh/9s72to3i","slide":13,"name":"sens-row-2","text":"15°N","textPreview":"15°N","textChars":4,"textLines":1,"bbox":[88,428,170,44]}
+{"kind":"shape","id":"sh/atgj2t43","slide":13,"name":"sens-ct-2-whisker","bbox":[724.2,438,257.38,0]}
+{"kind":"shape","id":"sh/vupkvylo","slide":13,"name":"sens-ct-2-low-cap","bbox":[724.2,431,0,14]}
+{"kind":"shape","id":"sh/50behwr2","slide":13,"name":"sens-ct-2-high-cap","bbox":[981.59,431,0,14]}
+{"kind":"shape","id":"sh/4z2d8rah","slide":13,"name":"sens-ct-2-mean","bbox":[845.4,430.5,15,15]}
+{"kind":"textbox","id":"sh/jytcfmtw","slide":13,"name":"sens-ct-2-value","text":"+0.45","textPreview":"+0.45","textChars":5,"textLines":1,"bbox":[862.9,412,76,24]}
+{"kind":"shape","id":"sh/ixkv6hsb","slide":13,"name":"sens-cp-2-whisker","bbox":[574.22,464,198.84,0]}
+{"kind":"shape","id":"sh/t4velwry","slide":13,"name":"sens-cp-2-low-cap","bbox":[574.22,457,0,14]}
+{"kind":"shape","id":"sh/s3mdcrad","slide":13,"name":"sens-cp-2-high-cap","bbox":[773.06,457,0,14]}
+{"kind":"shape","id":"sh/r2dwjm98","slide":13,"name":"sens-cp-2-mean","bbox":[675.03,456.5,15,15]}
+{"kind":"textbox","id":"sh/614va1sn","slide":13,"name":"sens-cp-2-value","text":"−0.08","textPreview":"−0.08","textChars":5,"textLines":1,"bbox":[692.53,470,76,24]}
+{"kind":"shape","id":"sh/1svepgra","slide":13,"name":"sens-legend-ct","bbox":[891,183,14,14]}
+{"kind":"textbox","id":"sh/g7mdgbap","slide":13,"name":"sens-legend-ct-text","text":"CT（均值与95%区间）","textPreview":"CT（均值与95%区间）","textChars":12,"textLines":1,"bbox":[912,177,210,28]}
+{"kind":"shape","id":"sh/0buxcfil","slide":13,"name":"sens-legend-cp","bbox":[1093,183,14,14]}
+{"kind":"textbox","id":"sh/lc3ylkz6","slide":13,"name":"sens-legend-cp-text","text":"CP","textPreview":"CP","textChars":2,"textLines":1,"bbox":[1114,177,70,28]}
+{"kind":"textbox","id":"sh/y9cfa50v","slide":13,"name":"sens-axis","text":"向北累计异常暖量输送（ZJ）","textPreview":"向北累计异常暖量输送（ZJ）","textChars":14,"textLines":1,"bbox":[320,552,840,28]}
+{"kind":"textbox","id":"sh/zalgjahg","slide":13,"name":"sens-ratio","text":"CT：10°N / 12°N / 15°N北向输出 = 0.43 / 0.06 / 0.45 ZJ；仅为5°N输入2.74 ZJ的16% / 2% / 16%","textPreview":"CT：10°N / 12°N / 15°N北向输出 = 0.43 / 0.06 / 0.45 ZJ；仅为5°N输入2.74 ZJ的16% / 2% / 16%","textChars":79,"textLines":1,"bbox":[54,590,1172,30]}
+{"kind":"shape","id":"sh/8zexgzix","slide":13,"name":"takeaway-band","bbox":[54,635,1172,55]}
+{"kind":"textbox","id":"sh/90nypkzi","slide":13,"name":"takeaway-text","text":"“12°N≈0”不具边界稳健性；“持续北向不是CT的主要去向”在10°N—15°N范围内稳健。","textPreview":"“12°N≈0”不具边界稳健性；“持续北向不是CT的主要去向”在10°N—15°N范围内稳健。","textChars":47,"textLines":1,"bbox":[78,644,1124,38]}
+{"kind":"notes","id":"nt/hgzapcr6","slide":13,"text":"[Sources]\n- SODA3.15.2 north-boundary sensitivity: data/derived/research_2026/soda3_north_boundary_q20_10_12_15_summary.csv\n- Generated by scripts/analyze_soda3_north_boundary_sensitivity.py; 1980–2022 calendar-month detrending, centered three-month smoothing, actual calendar-month seconds, whole-event bootstrap.\n[/Sources]"}
+{"kind":"slide","id":"sl/6lsnupw7","slide":14,"title":"问题二","textShapes":20}
+{"kind":"textbox","id":"sh/6l0nqxkf","slide":14,"name":"kicker","text":"问题二","textPreview":"问题二","textChars":3,"textLines":1,"bbox":[54,30,180,32]}
+{"kind":"textbox","id":"sh/xc7eds76","slide":14,"name":"slide-title","text":"暖量命运发生方向重组，而不只是强弱变化","textPreview":"暖量命运发生方向重组，而不只是强弱变化","textChars":19,"textLines":1,"bbox":[54,70,1172,58]}
+{"kind":"shape","id":"sh/wbydknq1","slide":14,"name":"rule-54-142","bbox":[54,142,1172,0]}
+{"kind":"textbox","id":"sh/jepwf2pc","slide":14,"name":"flow-phase","text":"累计窗口：Dec(0)—May(+1)　·　异常暖量的欧拉控制体收支","textPreview":"累计窗口：Dec(0)—May(+1)　·　异常暖量的欧拉控制体收支","textChars":34,"textLines":1,"bbox":[54,148,1172,26]}
+{"kind":"shape","id":"sh/idgvmx8r","slide":14,"name":"rule-640-170","bbox":[640,170,0,0]}
+{"kind":"textbox","id":"sh/5grehs7i","slide":14,"name":"ct-flow-title","text":"CT：西向再分配与海表失热","textPreview":"CT：西向再分配与海表失热","textChars":13,"textLines":1,"bbox":[54,178,560,40]}
+{"kind":"textbox","id":"sh/kfidonqx","slide":14,"name":"cp-flow-title","text":"CP：5°N净输送方向反转","textPreview":"CP：5°N净输送方向反转","textChars":13,"textLines":1,"bbox":[666,178,560,40]}
+{"kind":"shape","id":"sh/zi5c3y98","slide":14,"name":"ct-surface","bbox":[288,222,72,92]}
+{"kind":"shape","id":"sh/ehwvat8n","slide":14,"name":"ct-west","bbox":[52,354,172,66]}
+{"kind":"shape","id":"sh/c3e1gjyd","slide":14,"name":"ct-north","bbox":[500,278,56,86]}
+{"kind":"shape","id":"sh/x4ni9ofy","slide":14,"name":"ct-south","bbox":[292,470,74,92]}
+{"kind":"shape","id":"sh/a1wze9g7","slide":14,"name":"ct-residual","bbox":[498,448,112,50]}
+{"kind":"shape","id":"sh/b2507exs","slide":14,"name":"ct-receiver","bbox":[216,318,292,150]}
+{"kind":"textbox","id":"sh/kre1k3y9","slide":14,"name":"ct-receiver-text","text":"北侧接收箱\n储量 +0.60 ZJ\n80°W东向 +0.01 ≈ 0","textPreview":"北侧接收箱 | 储量 +0.60 ZJ | 80°W东向 +0.01 ≈ 0","textChars":34,"textLines":3,"bbox":[238,336,248,112]}
+{"kind":"shape","id":"sh/ls7idofu","slide":14,"name":"ct-equatorial","bbox":[244,560,236,48]}
+{"kind":"textbox","id":"sh/y5wjitgj","slide":14,"name":"ct-equatorial-text","text":"赤道东箱","textPreview":"赤道东箱","textChars":4,"textLines":1,"bbox":[266,571,192,26]}
+{"kind":"textbox","id":"sh/z650byxo","slide":14,"name":"ct-surface-label","text":"海表失热 1.70","textPreview":"海表失热 1.70","textChars":9,"textLines":1,"bbox":[208,216,230,30]}
+{"kind":"textbox","id":"sh/0buh8zy5","slide":14,"name":"ct-west-label","text":"向西越140°W\n1.64","textPreview":"向西越140°W | 1.64","textChars":13,"textLines":2,"bbox":[54,424,155,58]}
+{"kind":"textbox","id":"sh/1w3i14fq","slide":14,"name":"ct-north-label","text":"跨12°N\n0.06 ≈ 0","textPreview":"跨12°N | 0.06 ≈ 0","textChars":14,"textLines":2,"bbox":[494,215,120,58]}
+{"kind":"textbox","id":"sh/hsvy50re","slide":14,"name":"ct-f5n-label","text":"跨5°N +2.74","textPreview":"跨5°N +2.74","textChars":10,"textLines":1,"bbox":[372,514,168,30]}
+{"kind":"textbox","id":"sh/grmxwvqt","slide":14,"name":"ct-res-label","text":"残差 +1.27","textPreview":"残差 +1.27","textChars":8,"textLines":1,"bbox":[440,498,160,28]}
+{"kind":"shape","id":"sh/fqdg3q98","slide":14,"name":"cp-surface","bbox":[926,222,72,92]}
+{"kind":"shape","id":"sh/up4fal83","slide":14,"name":"cp-west","bbox":[674,354,172,66]}
+{"kind":"shape","id":"sh/pwvy90rq","slide":14,"name":"cp-north","bbox":[1138,278,56,86]}
+{"kind":"shape","id":"sh/4vmh0vq5","slide":14,"name":"cp-south","bbox":[930,452,74,106]}
+{"kind":"shape","id":"sh/3udg7q9k","slide":14,"name":"cp-residual","bbox":[1136,448,90,50]}
+{"kind":"shape","id":"sh/2t4fyl8z","slide":14,"name":"cp-receiver","bbox":[854,318,292,150]}
+{"kind":"textbox","id":"sh/d0fydk7m","slide":14,"name":"cp-receiver-text","text":"北侧接收箱\n储量 −0.26 ZJ\n80°W东向 +0.02 ≈ 0","textPreview":"北侧接收箱 | 储量 −0.26 ZJ | 80°W东向 +0.02 ≈ 0","textChars":34,"textLines":3,"bbox":[876,336,248,112]}
+{"kind":"shape","id":"sh/cz6h4fq1","slide":14,"name":"cp-equatorial","bbox":[882,560,236,48]}
+{"kind":"textbox","id":"sh/atg3idk7","slide":14,"name":"cp-equatorial-text","text":"赤道东箱","textPreview":"赤道东箱","textChars":4,"textLines":1,"bbox":[904,571,192,26]}
+{"kind":"textbox","id":"sh/bup4rils","slide":14,"name":"cp-surface-label","text":"海表失热 0.68","textPreview":"海表失热 0.68","textChars":9,"textLines":1,"bbox":[846,216,230,30]}
+{"kind":"textbox","id":"sh/cvylkn2d","slide":14,"name":"cp-west-label","text":"140°W东向输入\n+0.76","textPreview":"140°W东向输入 | +0.76","textChars":15,"textLines":2,"bbox":[674,424,164,58]}
+{"kind":"textbox","id":"sh/xw7mts3y","slide":14,"name":"cp-north-label","text":"跨12°N\n0.17 ≈ 0","textPreview":"跨12°N | 0.17 ≈ 0","textChars":14,"textLines":2,"bbox":[1128,215,120,58]}
+{"kind":"textbox","id":"sh/yxgnmxkj","slide":14,"name":"cp-f5n-label","text":"经5°N向南 0.96","textPreview":"经5°N向南 0.96","textChars":11,"textLines":1,"bbox":[698,514,220,30]}
+{"kind":"textbox","id":"sh/jyp4fil4","slide":14,"name":"cp-res-label","text":"残差 +0.81","textPreview":"残差 +0.81","textChars":8,"textLines":1,"bbox":[1070,498,150,28]}
+{"kind":"shape","id":"sh/kzy5on2p","slide":14,"name":"takeaway-band","bbox":[54,635,1172,55]}
+{"kind":"textbox","id":"sh/lkrmhsju","slide":14,"name":"takeaway-text","text":"在已解析显式项中，CT以西向输出和海表失热为主；CP的5°N净输送方向反转。","textPreview":"在已解析显式项中，CT以西向输出和海表失热为主；CP的5°N净输送方向反转。","textChars":38,"textLines":1,"bbox":[78,644,1124,38]}
+{"kind":"notes","id":"nt/6lsnupw7","slide":14,"text":"[Sources]\n- Pathway values from data/derived/research_2026/soda3_north_receiver_budget_summary.csv, Dec(0)–May(+1).\n- The residual is a closure term and is not interpreted as an identified physical destination.\n[/Sources]"}
+{"kind":"slide","id":"sl/vaxsvy10","slide":15,"title":"问题二","textShapes":38}
+{"kind":"textbox","id":"sh/50r21gn2","slide":15,"name":"kicker","text":"问题二","textPreview":"问题二","textChars":3,"textLines":1,"bbox":[54,30,180,32]}
+{"kind":"textbox","id":"sh/547mhg3m","slide":15,"name":"slide-title","text":"三个事件的北侧预算：1997最强，2023整体最弱","textPreview":"三个事件的北侧预算：1997最强，2023整体最弱","textChars":25,"textLines":1,"bbox":[54,70,1172,58]}
+{"kind":"shape","id":"sh/k3y5ov21","slide":15,"name":"rule-54-142","bbox":[54,142,1172,0]}
+{"kind":"textbox","id":"sh/76p4jqls","slide":15,"name":"north-near-zero","text":"Dec(0)—May(+1)　·　12°N输入项：1997 −0.15　│　2015 +0.01　│　2023 +0.09 ZJ","textPreview":"Dec(0)—May(+1)　·　12°N输入项：1997 −0.15　│　2015 +0.01　│　2023 +0.09 ZJ","textChars":64,"textLines":1,"bbox":[54,148,1172,34]}
+{"kind":"textbox","id":"sh/65gnqlk7","slide":15,"name":"event-1997/98","text":"1997/98","textPreview":"1997/98","textChars":7,"textLines":1,"bbox":[54,178,356,36]}
+{"kind":"shape","id":"sh/t87ml0ji","slide":15,"name":"rule-66-438","bbox":[66,438,332,0]}
+{"kind":"shape","id":"sh/s7y5sv2x","slide":15,"name":"1997/98-bar-0","bbox":[76,250.18,43,187.82]}
+{"kind":"textbox","id":"sh/na5476l8","slide":15,"name":"1997/98-value-0","text":"+4.98","textPreview":"+4.98","textChars":5,"textLines":1,"bbox":[60,223.18,76,24]}
+{"kind":"textbox","id":"sh/m9c3e1kn","slide":15,"name":"1997/98-label-0","text":"5°N","textPreview":"5°N","textChars":3,"textLines":1,"bbox":[65,578,66,26]}
+{"kind":"shape","id":"sh/wrm9kvep","slide":15,"name":"1997/98-bar-1","bbox":[143,438,43,97.11]}
+{"kind":"textbox","id":"sh/hsvat0fa","slide":15,"name":"1997/98-value-1","text":"−2.55","textPreview":"−2.55","textChars":5,"textLines":1,"bbox":[127,539.11,76,24]}
+{"kind":"textbox","id":"sh/upkrilwj","slide":15,"name":"1997/98-label-1","text":"Cx","textPreview":"Cx","textChars":2,"textLines":1,"bbox":[132,578,66,26]}
+{"kind":"shape","id":"sh/vqdsrqx4","slide":15,"name":"1997/98-bar-2","bbox":[210,438,43,108.62]}
+{"kind":"textbox","id":"sh/4vm9ovel","slide":15,"name":"1997/98-value-2","text":"−2.85","textPreview":"−2.85","textChars":5,"textLines":1,"bbox":[194,550.62,76,24]}
+{"kind":"textbox","id":"sh/5wvax0f6","slide":15,"name":"1997/98-label-2","text":"海表","textPreview":"海表","textChars":2,"textLines":1,"bbox":[199,578,66,26]}
+{"kind":"shape","id":"sh/it4rm5wv","slide":15,"name":"1997/98-bar-3","bbox":[277,380.87,43,57.13]}
+{"kind":"textbox","id":"sh/judsvqxg","slide":15,"name":"1997/98-value-3","text":"+1.52","textPreview":"+1.52","textChars":5,"textLines":1,"bbox":[261,353.87,76,24]}
+{"kind":"textbox","id":"sh/0z29cbyh","slide":15,"name":"1997/98-label-3","text":"残差","textPreview":"残差","textChars":2,"textLines":1,"bbox":[266,578,66,26]}
+{"kind":"shape","id":"sh/l0bqlgf2","slide":15,"name":"1997/98-bar-4","bbox":[344,402.35,43,35.65]}
+{"kind":"textbox","id":"sh/1kjyt83e","slide":15,"name":"1997/98-value-4","text":"+0.95","textPreview":"+0.95","textChars":5,"textLines":1,"bbox":[328,375.35,76,24]}
+{"kind":"textbox","id":"sh/gjax03m9","slide":15,"name":"1997/98-label-4","text":"储量","textPreview":"储量","textChars":2,"textLines":1,"bbox":[333,578,66,26]}
+{"kind":"textbox","id":"sh/fi1grylo","slide":15,"name":"event-2015/16","text":"2015/16","textPreview":"2015/16","textChars":7,"textLines":1,"bbox":[462,178,356,36]}
+{"kind":"shape","id":"sh/ehsfyt43","slide":15,"name":"rule-474-438","bbox":[474,438,332,0]}
+{"kind":"shape","id":"sh/p8jyx83q","slide":15,"name":"2015/16-bar-0","bbox":[484,381.53,43,56.47]}
+{"kind":"textbox","id":"sh/o7ah4nm5","slide":15,"name":"2015/16-value-0","text":"+1.50","textPreview":"+1.50","textChars":5,"textLines":1,"bbox":[468,354.53,76,24]}
+{"kind":"textbox","id":"sh/361gvilk","slide":15,"name":"2015/16-label-0","text":"5°N","textPreview":"5°N","textChars":3,"textLines":1,"bbox":[473,578,66,26]}
+{"kind":"shape","id":"sh/25sf2d4z","slide":15,"name":"2015/16-bar-1","bbox":[551,438,43,92.94]}
+{"kind":"textbox","id":"sh/dc3y1s3m","slide":15,"name":"2015/16-value-1","text":"−2.44","textPreview":"−2.44","textChars":5,"textLines":1,"bbox":[535,534.94,76,24]}
+{"kind":"textbox","id":"sh/cbuh8nmh","slide":15,"name":"2015/16-label-1","text":"Cx","textPreview":"Cx","textChars":2,"textLines":1,"bbox":[540,578,66,26]}
+{"kind":"shape","id":"sh/uh4v2pkj","slide":15,"name":"2015/16-bar-2","bbox":[618,438,43,61.69]}
+{"kind":"textbox","id":"sh/vixcvu14","slide":15,"name":"2015/16-value-2","text":"−1.62","textPreview":"−1.62","textChars":5,"textLines":1,"bbox":[602,503.69,76,24]}
+{"kind":"textbox","id":"sh/wj6d4z2p","slide":15,"name":"2015/16-label-2","text":"海表","textPreview":"海表","textChars":2,"textLines":1,"bbox":[607,578,66,26]}
+{"kind":"shape","id":"sh/hkfexkja","slide":15,"name":"2015/16-bar-3","bbox":[685,358.09,43,79.91]}
+{"kind":"textbox","id":"sh/ilov6pkv","slide":15,"name":"2015/16-value-3","text":"+2.12","textPreview":"+2.12","textChars":5,"textLines":1,"bbox":[669,331.09,76,24]}
+{"kind":"textbox","id":"sh/jmxwzu1g","slide":15,"name":"2015/16-label-3","text":"残差","textPreview":"残差","textChars":2,"textLines":1,"bbox":[674,578,66,26]}
+{"kind":"shape","id":"sh/4n6d8z21","slide":15,"name":"2015/16-bar-4","bbox":[752,438,43,16.66]}
+{"kind":"textbox","id":"sh/5ofe14j6","slide":15,"name":"2015/16-value-4","text":"−0.44","textPreview":"−0.44","textChars":5,"textLines":1,"bbox":[736,458.66,76,24]}
+{"kind":"textbox","id":"sh/6p8va9kr","slide":15,"name":"2015/16-label-4","text":"储量","textPreview":"储量","textChars":2,"textLines":1,"bbox":[741,578,66,26]}
+{"kind":"textbox","id":"sh/rqhw3e1c","slide":15,"name":"event-2023/24","text":"2023/24","textPreview":"2023/24","textChars":7,"textLines":1,"bbox":[870,178,356,36]}
+{"kind":"shape","id":"sh/f6dcnetg","slide":15,"name":"rule-882-438","bbox":[882,438,332,0]}
+{"kind":"shape","id":"sh/e54ve9cv","slide":15,"name":"2023/24-bar-0","bbox":[892,418.34,43,19.66]}
+{"kind":"textbox","id":"sh/18vup4bm","slide":15,"name":"2023/24-value-0","text":"+0.52","textPreview":"+0.52","textChars":5,"textLines":1,"bbox":[876,391.34,76,24]}
+{"kind":"textbox","id":"sh/07mdgzu1","slide":15,"name":"2023/24-label-0","text":"5°N","textPreview":"5°N","textChars":3,"textLines":1,"bbox":[881,578,66,26]}
+{"kind":"shape","id":"sh/nadwrets","slide":15,"name":"2023/24-bar-1","bbox":[959,438,43,10.31]}
+{"kind":"textbox","id":"sh/294vi9c7","slide":15,"name":"2023/24-value-1","text":"−0.27","textPreview":"−0.27","textChars":5,"textLines":1,"bbox":[943,452.31,76,24]}
+{"kind":"textbox","id":"sh/pwfetobi","slide":15,"name":"2023/24-label-1","text":"Cx","textPreview":"Cx","textChars":2,"textLines":1,"bbox":[948,578,66,26]}
+{"kind":"shape","id":"sh/ovmdkjud","slide":15,"name":"2023/24-bar-2","bbox":[1026,438,43,22.02]}
+{"kind":"textbox","id":"sh/3etcfut8","slide":15,"name":"2023/24-value-2","text":"−0.58","textPreview":"−0.58","textChars":5,"textLines":1,"bbox":[1010,464.02,76,24]}
+{"kind":"textbox","id":"sh/idkv6pc3","slide":15,"name":"2023/24-label-2","text":"海表","textPreview":"海表","textChars":2,"textLines":1,"bbox":[1015,578,66,26]}
+{"kind":"shape","id":"sh/87e10r6p","slide":15,"name":"2023/24-bar-3","bbox":[1093,433.31,43,4.69]}
+{"kind":"textbox","id":"sh/987itwnu","slide":15,"name":"2023/24-value-3","text":"+0.12","textPreview":"+0.12","textChars":5,"textLines":1,"bbox":[1077,406.31,76,24]}
+{"kind":"textbox","id":"sh/m5wjyhoj","slide":15,"name":"2023/24-label-3","text":"残差","textPreview":"残差","textChars":2,"textLines":1,"bbox":[1082,578,66,26]}
+{"kind":"shape","id":"sh/n650rm54","slide":15,"name":"2023/24-bar-4","bbox":[1160,438,43,4.14]}
+{"kind":"textbox","id":"sh/03e1w76d","slide":15,"name":"2023/24-value-4","text":"−0.11","textPreview":"−0.11","textChars":5,"textLines":1,"bbox":[1144,446.14,76,24]}
+{"kind":"textbox","id":"sh/l4nipcny","slide":15,"name":"2023/24-label-4","text":"储量","textPreview":"储量","textChars":2,"textLines":1,"bbox":[1149,578,66,26]}
+{"kind":"textbox","id":"sh/y1wjuho7","slide":15,"name":"residual-warning","text":"2015残差 +2.12 ZJ > 5°N输入 +1.50 ZJ：未解析过程不可忽略","textPreview":"2015残差 +2.12 ZJ > 5°N输入 +1.50 ZJ：未解析过程不可忽略","textChars":42,"textLines":1,"bbox":[54,606,1172,26]}
+{"kind":"shape","id":"sh/z250nm5s","slide":15,"name":"takeaway-band","bbox":[54,635,1172,55]}
+{"kind":"textbox","id":"sh/4zi18b6h","slide":15,"name":"takeaway-text","text":"5°N输入为1997 ≫ 2015 > 2023；显式通道不能替代对残差的物理拆解。","textPreview":"5°N输入为1997 ≫ 2015 > 2023；显式通道不能替代对残差的物理拆解。","textChars":42,"textLines":1,"bbox":[78,644,1124,38]}
+{"kind":"notes","id":"nt/vaxsvy10","slide":15,"text":"[Sources]\n- Event Dec(0)–May(+1) receiver-box budgets: data/derived/research_2026/soda3_north_receiver_budget_event_cumulative.csv\n- 1997 and 2015 use historical SODA3.15.2; 2023/24 is extended with official University of Maryland annual SODA3 files.\n[/Sources]"}
+{"kind":"slide","id":"sl/gny5sjyp","slide":16,"title":"问题二的回答","textShapes":7}
+{"kind":"textbox","id":"sh/fm1gzq5o","slide":16,"name":"answer2-kicker","text":"问题二的回答","textPreview":"问题二的回答","textChars":6,"textLines":1,"bbox":[54,42,300,36]}
+{"kind":"textbox","id":"sh/8z2h8bq1","slide":16,"name":"answer2-title","text":"异常暖量没有持续向北输出；\n进入北侧箱体后发生方向重组","textPreview":"异常暖量没有持续向北输出； | 进入北侧箱体后发生方向重组","textChars":27,"textLines":2,"bbox":[54,124,1160,220]}
+{"kind":"shape","id":"sh/9kby1g7m","slide":16,"name":"rule-54-378","bbox":[54,378,1172,0]}
+{"kind":"textbox","id":"sh/ytkf2h8j","slide":16,"name":"answer2-ct","text":"CT：在已解析项中，5°N输入对应140°W西向输出与海表失热","textPreview":"CT：在已解析项中，5°N输入对应140°W西向输出与海表失热","textChars":31,"textLines":1,"bbox":[54,410,1172,40]}
+{"kind":"textbox","id":"sh/zutgvm94","slide":16,"name":"answer2-cp","text":"CP：5°N净输送方向反转，北侧箱体向赤道东箱异常输出","textPreview":"CP：5°N净输送方向反转，北侧箱体向赤道东箱异常输出","textChars":27,"textLines":1,"bbox":[54,466,1172,40]}
+{"kind":"textbox","id":"sh/kv2h4rqp","slide":16,"name":"answer2-common","text":"共同点：10°N—15°N范围内持续北向不是CT的主要去向；80°W项也接近0","textPreview":"共同点：10°N—15°N范围内持续北向不是CT的主要去向；80°W项也接近0","textChars":39,"textLines":1,"bbox":[54,522,1172,40]}
+{"kind":"textbox","id":"sh/lwbyxwra","slide":16,"name":"answer2-residual","text":"边界：Rₙ仍包含阈值转换、垂向交换、混合、同化增量与月平均离散。","textPreview":"边界：Rₙ仍包含阈值转换、垂向交换、混合、同化增量与月平均离散。","textChars":32,"textLines":1,"bbox":[54,570,1172,30]}
+{"kind":"shape","id":"sh/ip4zel83","slide":16,"name":"q3-bridge","bbox":[54,618,1172,62]}
+{"kind":"textbox","id":"sh/3qdg7qpo","slide":16,"name":"q3-bridge-text","text":"进入问题三：什么海气耦合过程选择了不同的风场与暖量去向？","textPreview":"进入问题三：什么海气耦合过程选择了不同的风场与暖量去向？","textChars":28,"textLines":1,"bbox":[78,630,1124,36]}
+{"kind":"notes","id":"nt/gny5sjyp","slide":16,"text":"[Sources]\n- Synthesis of the northern receiver-box composite and event budgets shown on slides 9–12.\n[/Sources]"}
+{"kind":"slide","id":"sl/14bup87q","slide":17,"title":"问题二的回答","textShapes":7}
+{"kind":"textbox","id":"sh/4by9or6l","slide":17,"name":"answer2-kicker","text":"问题二的回答","textPreview":"问题二的回答","textChars":6,"textLines":1,"bbox":[54,42,300,36]}
+{"kind":"textbox","id":"sh/1c7e50ni","slide":17,"name":"answer2-title","text":"异常暖量没有持续向北输出；\n进入北侧箱体后发生方向重组","textPreview":"异常暖量没有持续向北输出； | 进入北侧箱体后发生方向重组","textChars":27,"textLines":2,"bbox":[54,124,1160,220]}
+{"kind":"shape","id":"sh/gbedwfmx","slide":17,"name":"rule-54-378","bbox":[54,378,1172,0]}
+{"kind":"textbox","id":"sh/rm5czq50","slide":17,"name":"answer2-ct","text":"CT：在已解析项中，5°N输入对应140°W西向输出与海表失热","textPreview":"CT：在已解析项中，5°N输入对应140°W西向输出与海表失热","textChars":31,"textLines":1,"bbox":[54,410,1172,40]}
+{"kind":"textbox","id":"sh/6lwvql4v","slide":17,"name":"answer2-cp","text":"CP：5°N净输送方向反转，北侧箱体向赤道东箱异常输出","textPreview":"CP：5°N净输送方向反转，北侧箱体向赤道东箱异常输出","textChars":27,"textLines":1,"bbox":[54,466,1172,40]}
+{"kind":"textbox","id":"sh/t8ne10n6","slide":17,"name":"answer2-common","text":"共同点：10°N—15°N范围内持续北向不是CT的主要去向；80°W项也接近0","textPreview":"共同点：10°N—15°N范围内持续北向不是CT的主要去向；80°W项也接近0","textChars":39,"textLines":1,"bbox":[54,522,1172,40]}
+{"kind":"textbox","id":"sh/snedsvml","slide":17,"name":"answer2-residual","text":"边界：Rₙ仍包含阈值转换、垂向交换、混合、同化增量与月平均离散。","textPreview":"边界：Rₙ仍包含阈值转换、垂向交换、混合、同化增量与月平均离散。","textChars":32,"textLines":1,"bbox":[54,570,1172,30]}
+{"kind":"shape","id":"sh/jilcvq54","slide":17,"name":"q3-bridge","bbox":[54,618,1172,62]}
+{"kind":"textbox","id":"sh/ihcvml4j","slide":17,"name":"q3-bridge-text","text":"进入问题三：什么海气耦合过程选择了不同的风场与暖量去向？","textPreview":"进入问题三：什么海气耦合过程选择了不同的风场与暖量去向？","textChars":28,"textLines":1,"bbox":[78,630,1124,36]}
+{"kind":"notes","id":"nt/14bup87q","slide":17,"text":"[Sources]\n- Synthesis of the northern receiver-box composite and event budgets shown on slides 9–12.\n[/Sources]"}
+{"kind":"slide","id":"sl/y5wne50z","slide":18,"title":"问题一","textShapes":8}
+{"kind":"textbox","id":"sh/7mpknmp0","slide":18,"name":"kicker","text":"问题一","textPreview":"问题一","textChars":3,"textLines":1,"bbox":[54,30,180,32]}
+{"kind":"textbox","id":"sh/wrelszu9","slide":18,"name":"slide-title","text":"2015与2023的输入和储量同量级且接近","textPreview":"2015与2023的输入和储量同量级且接近","textChars":21,"textLines":1,"bbox":[54,70,1172,58]}
+{"kind":"shape","id":"sh/hsn2l4bu","slide":18,"name":"rule-54-142","bbox":[54,142,1172,0]}
+{"kind":"textbox","id":"sh/itw3upcf","slide":18,"name":"event-arrival-window","text":"1997 / 2015 / 2023累计窗口：Jan(0)—Jun(0)","textPreview":"1997 / 2015 / 2023累计窗口：Jan(0)—Jun(0)","textChars":36,"textLines":1,"bbox":[54,150,820,28]}
+{"kind":"shape","id":"sh/4felwzu5","slide":18,"name":"pair-stat","bbox":[918,186,268,166]}
+{"kind":"textbox","id":"sh/5gnmp4bq","slide":18,"name":"pair-title","text":"2015 vs 2023","textPreview":"2015 vs 2023","textChars":12,"textLines":1,"bbox":[942,208,220,34]}
+{"kind":"textbox","id":"sh/6hw3y9sb","slide":18,"name":"pair-body","text":"输入  3.30 / 3.91 ZJ\n储量  3.53 / 3.88 ZJ","textPreview":"输入  3.30 / 3.91 ZJ | 储量  3.53 / 3.88 ZJ","textChars":37,"textLines":2,"bbox":[930,260,244,72]}
+{"kind":"shape","id":"sh/rip4retw","slide":18,"name":"q500-stat","bbox":[918,390,268,156]}
+{"kind":"textbox","id":"sh/fapkr6pw","slide":18,"name":"q500-title","text":"0—500 m OHC敏感性","textPreview":"0—500 m OHC敏感性","textChars":14,"textLines":1,"bbox":[936,412,232,34]}
+{"kind":"textbox","id":"sh/upg3i18r","slide":18,"name":"q500-body","text":"2015：6.43 ZJ\n2023：6.46 ZJ","textPreview":"2015：6.43 ZJ | 2023：6.46 ZJ","textChars":25,"textLines":2,"bbox":[938,466,228,60]}
+{"kind":"shape","id":"sh/1cr2tg72","slide":18,"name":"takeaway-band","bbox":[54,635,1172,55]}
+{"kind":"textbox","id":"sh/gbylkbqh","slide":18,"name":"takeaway-text","text":"H₂₀与0—500 m OHC均显示2015和2023接近；2023较弱不能归因于“暖量未到”。","textPreview":"H₂₀与0—500 m OHC均显示2015和2023接近；2023较弱不能归因于“暖量未到”。","textChars":48,"textLines":1,"bbox":[78,644,1124,38]}
+{"kind":"chart","id":"ch/q9cnmpcj","slide":18,"name":"Chart","chartType":"bar","bbox":[54,178,820,426]}
+{"kind":"notes","id":"nt/y5wne50z","slide":18,"text":"[Sources]\n- Event arrival values: outputs/research_2026/enso_1997_2015_2023_warm_heat_fate_bridge/ENSO_1997_2015_2023_WARM_HEAT_FATE_BRIDGE_CN.md\n- Q500 sensitivity: data/derived/research_2026/soda3_h20_q500_sensitivity_summary.json and soda3_h20_q500_three_event_phase_sensitivity.csv\n[/Sources]"}
+{"kind":"slide","id":"sl/nid43ytk","slide":19,"title":"问题一","textShapes":8}
+{"kind":"textbox","id":"sh/0vi1k7qx","slide":19,"name":"kicker","text":"问题一","textPreview":"问题一","textChars":3,"textLines":1,"bbox":[54,30,180,32]}
+{"kind":"textbox","id":"sh/9gb6xgbi","slide":19,"name":"slide-title","text":"2015与2023的输入和储量同量级且接近","textPreview":"2015与2023的输入和储量同量级且接近","textChars":21,"textLines":1,"bbox":[54,70,1172,58]}
+{"kind":"shape","id":"sh/8v2pobax","slide":19,"name":"rule-54-142","bbox":[54,142,1172,0]}
+{"kind":"textbox","id":"sh/vitozqt8","slide":19,"name":"event-arrival-window","text":"1997 / 2015 / 2023累计窗口：Jan(0)—Jun(0)","textPreview":"1997 / 2015 / 2023累计窗口：Jan(0)—Jun(0)","textChars":36,"textLines":1,"bbox":[54,150,820,28]}
+{"kind":"shape","id":"sh/xkbq10be","slide":19,"name":"pair-stat","bbox":[918,186,268,166]}
+{"kind":"textbox","id":"sh/wj2psvat","slide":19,"name":"pair-title","text":"2015 vs 2023","textPreview":"2015 vs 2023","textChars":12,"textLines":1,"bbox":[942,208,220,34]}
+{"kind":"textbox","id":"sh/jmd83atk","slide":19,"name":"pair-body","text":"输入  3.30 / 3.91 ZJ\n储量  3.53 / 3.88 ZJ","textPreview":"输入  3.30 / 3.91 ZJ | 储量  3.53 / 3.88 ZJ","textChars":37,"textLines":2,"bbox":[930,260,244,72]}
+{"kind":"shape","id":"sh/il47u5sz","slide":19,"name":"q500-stat","bbox":[918,390,268,156]}
+{"kind":"textbox","id":"sh/cri1gnql","slide":19,"name":"q500-title","text":"0—500 m OHC敏感性","textPreview":"0—500 m OHC敏感性","textChars":14,"textLines":1,"bbox":[936,412,232,34]}
+{"kind":"textbox","id":"sh/dsri9sr6","slide":19,"name":"q500-body","text":"2015：6.43 ZJ\n2023：6.46 ZJ","textPreview":"2015：6.43 ZJ | 2023：6.46 ZJ","textChars":25,"textLines":2,"bbox":[938,466,228,60]}
+{"kind":"shape","id":"sh/qpgjex8f","slide":19,"name":"takeaway-band","bbox":[54,635,1172,55]}
+{"kind":"textbox","id":"sh/rqp07290","slide":19,"name":"takeaway-text","text":"H₂₀与0—500 m OHC均显示2015和2023接近；2023较弱不能归因于“暖量未到”。","textPreview":"H₂₀与0—500 m OHC均显示2015和2023接近；2023较弱不能归因于“暖量未到”。","textChars":48,"textLines":1,"bbox":[78,644,1124,38]}
+{"kind":"chart","id":"ch/pojm18ra","slide":19,"name":"Chart","chartType":"bar","bbox":[54,178,820,426]}
+{"kind":"notes","id":"nt/nid43ytk","slide":19,"text":"[Sources]\n- Event arrival values: outputs/research_2026/enso_1997_2015_2023_warm_heat_fate_bridge/ENSO_1997_2015_2023_WARM_HEAT_FATE_BRIDGE_CN.md\n- Q500 sensitivity: data/derived/research_2026/soda3_h20_q500_sensitivity_summary.json and soda3_h20_q500_three_event_phase_sensitivity.csv\n[/Sources]"}
+{"kind":"slide","id":"sl/zyxsni5k","slide":20,"title":"问题一","textShapes":8}
+{"kind":"textbox","id":"sh/pwvmlkzm","slide":20,"name":"kicker","text":"问题一","textPreview":"问题一","textChars":3,"textLines":1,"bbox":[54,30,180,32]}
+{"kind":"textbox","id":"sh/qpwjmh8n","slide":20,"name":"slide-title","text":"2015与2023的输入和储量同量级且接近","textPreview":"2015与2023的输入和储量同量级且接近","textChars":21,"textLines":1,"bbox":[54,70,1172,58]}
+{"kind":"shape","id":"sh/rq50vmp8","slide":20,"name":"rule-54-142","bbox":[54,142,1172,0]}
+{"kind":"textbox","id":"sh/4nu1krqh","slide":20,"name":"event-arrival-window","text":"1997 / 2015 / 2023累计窗口：Jan(0)—Jun(0)","textPreview":"1997 / 2015 / 2023累计窗口：Jan(0)—Jun(0)","textChars":36,"textLines":1,"bbox":[54,150,820,28]}
+{"kind":"shape","id":"sh/2lczih8r","slide":20,"name":"pair-stat","bbox":[918,186,268,166]}
+{"kind":"textbox","id":"sh/3ml0rmpw","slide":20,"name":"pair-title","text":"2015 vs 2023","textPreview":"2015 vs 2023","textChars":12,"textLines":1,"bbox":[942,208,220,34]}
+{"kind":"textbox","id":"sh/gjuhg7ql","slide":20,"name":"pair-body","text":"输入  3.30 / 3.91 ZJ\n储量  3.53 / 3.88 ZJ","textPreview":"输入  3.30 / 3.91 ZJ | 储量  3.53 / 3.88 ZJ","textChars":37,"textLines":2,"bbox":[930,260,244,72]}
+{"kind":"shape","id":"sh/hk3ipcr6","slide":20,"name":"q500-stat","bbox":[918,390,268,156]}
+{"kind":"textbox","id":"sh/dkfmp4zy","slide":20,"name":"q500-title","text":"0—500 m OHC敏感性","textPreview":"0—500 m OHC敏感性","textChars":14,"textLines":1,"bbox":[936,412,232,34]}
+{"kind":"textbox","id":"sh/cj65wzyd","slide":20,"name":"q500-body","text":"2015：6.43 ZJ\n2023：6.46 ZJ","textPreview":"2015：6.43 ZJ | 2023：6.46 ZJ","textChars":25,"textLines":2,"bbox":[938,466,228,60]}
+{"kind":"shape","id":"sh/rid4nuhs","slide":20,"name":"takeaway-band","bbox":[54,635,1172,55]}
+{"kind":"textbox","id":"sh/qh4nupg7","slide":20,"name":"takeaway-text","text":"H₂₀与0—500 m OHC均显示2015和2023接近；2023较弱不能归因于“暖量未到”。","textPreview":"H₂₀与0—500 m OHC均显示2015和2023接近；2023较弱不能归因于“暖量未到”。","textChars":48,"textLines":1,"bbox":[78,644,1124,38]}
+{"kind":"chart","id":"ch/ozuxkze9","slide":20,"name":"Chart","chartType":"bar","bbox":[54,178,820,426]}
+{"kind":"notes","id":"nt/zyxsni5k","slide":20,"text":"[Sources]\n- Event arrival values: outputs/research_2026/enso_1997_2015_2023_warm_heat_fate_bridge/ENSO_1997_2015_2023_WARM_HEAT_FATE_BRIDGE_CN.md\n- Q500 sensitivity: data/derived/research_2026/soda3_h20_q500_sensitivity_summary.json and soda3_h20_q500_three_event_phase_sensitivity.csv\n[/Sources]"}
+{"kind":"slide","id":"sl/m1wvqtk3","slide":21,"title":"守恒检查","textShapes":14}
+{"kind":"textbox","id":"sh/2l0vypkn","slide":21,"name":"kicker","text":"守恒检查","textPreview":"守恒检查","textChars":4,"textLines":1,"bbox":[54,30,180,32]}
+{"kind":"textbox","id":"sh/1gbmxs7a","slide":21,"name":"slide-title","text":"预算代数闭合，但热量来源尚未完全物理闭合","textPreview":"预算代数闭合，但热量来源尚未完全物理闭合","textChars":20,"textLines":1,"bbox":[54,70,1172,58]}
+{"kind":"shape","id":"sh/0f2lon6p","slide":21,"name":"rule-54-142","bbox":[54,142,1172,0]}
+{"kind":"textbox","id":"sh/ra9kryp8","slide":21,"name":"closure-equation","text":"R₂₀ = dH₂₀/dt − (Cₓ + F₁₀S + F₅N + Qsurface,warm)","textPreview":"R₂₀ = dH₂₀/dt − (Cₓ + F₁₀S + F₅N + Qsurface,warm)","textChars":49,"textLines":1,"bbox":[54,166,1172,52]}
+{"kind":"textbox","id":"sh/qp03yt8n","slide":21,"name":"ct-close-title","text":"CT东箱发展期：ΔH₂₀ = +7.81 ZJ","textPreview":"CT东箱发展期：ΔH₂₀ = +7.81 ZJ","textChars":23,"textLines":1,"bbox":[54,248,548,36]}
+{"kind":"textbox","id":"sh/dcb2t87y","slide":21,"name":"cp-close-title","text":"CP东箱发展期：ΔH₂₀ = +3.71 ZJ","textPreview":"CP东箱发展期：ΔH₂₀ = +3.71 ZJ","textChars":23,"textLines":1,"bbox":[678,248,548,36]}
+{"kind":"shape","id":"sh/sb2lk36t","slide":21,"name":"ct-explicit","bbox":[96,312,204.04,78]}
+{"kind":"shape","id":"sh/b6d432pc","slide":21,"name":"ct-residual","bbox":[300.04,312,259.96,78]}
+{"kind":"textbox","id":"sh/al43uxor","slide":21,"name":"ct-explicit-text","text":"显式净来源\n+3.43 ZJ（44%）","textPreview":"显式净来源 | +3.43 ZJ（44%）","textChars":19,"textLines":2,"bbox":[102,324,192.04,56]}
+{"kind":"textbox","id":"sh/4jax4nqd","slide":21,"name":"ct-residual-text","text":"残差\n+4.38 ZJ（56%）","textPreview":"残差 | +4.38 ZJ（56%）","textChars":16,"textLines":2,"bbox":[306.04,324,247.96,56]}
+{"kind":"shape","id":"sh/5kjydsri","slide":21,"name":"cp-explicit","bbox":[720,312,383.79,78]}
+{"kind":"shape","id":"sh/ixsf2d87","slide":21,"name":"cp-residual","bbox":[1103.79,312,80.21,78]}
+{"kind":"textbox","id":"sh/jy1gbi9s","slide":21,"name":"cp-explicit-text","text":"显式净来源\n+3.07 ZJ（83%）","textPreview":"显式净来源 | +3.07 ZJ（83%）","textChars":19,"textLines":2,"bbox":[726,324,371.79,56]}
+{"kind":"textbox","id":"sh/wvax03q1","slide":21,"name":"cp-residual-text","text":"残差\n+0.64 ZJ","textPreview":"残差 | +0.64 ZJ","textChars":11,"textLines":2,"bbox":[1107.79,324,72.21,56]}
+{"kind":"shape","id":"sh/hwjy98rm","slide":21,"name":"algebra-box","bbox":[54,434,548,154]}
+{"kind":"textbox","id":"sh/utsfyt8v","slide":21,"name":"algebra-title","text":"代数守恒：是","textPreview":"代数守恒：是","textChars":6,"textLines":1,"bbox":[82,454,492,38]}
+{"kind":"textbox","id":"sh/vu1w7y9g","slide":21,"name":"algebra-body","text":"加入R₂₀后，最大闭合误差\n< 1.1 × 10⁻¹⁶ PW","textPreview":"加入R₂₀后，最大闭合误差 | < 1.1 × 10⁻¹⁶ PW","textChars":30,"textLines":2,"bbox":[82,504,492,62]}
+{"kind":"shape","id":"sh/8rqxw3q5","slide":21,"name":"physical-box","bbox":[678,434,548,154]}
+{"kind":"textbox","id":"sh/9sze58rq","slide":21,"name":"physical-title","text":"物理来源闭合：尚未","textPreview":"物理来源闭合：尚未","textChars":9,"textLines":1,"bbox":[706,454,492,38]}
+{"kind":"textbox","id":"sh/porutkje","slide":21,"name":"physical-body","text":"R₂₀仍混合垂向交换、混合、阈值转换、\n同化增量和月平均离散","textPreview":"R₂₀仍混合垂向交换、混合、阈值转换、 | 同化增量和月平均离散","textChars":30,"textLines":2,"bbox":[706,504,492,62]}
+{"kind":"shape","id":"sh/onid0f2t","slide":21,"name":"takeaway-band","bbox":[54,635,1172,55]}
+{"kind":"textbox","id":"sh/nm9cru18","slide":21,"name":"takeaway-text","text":"可以证明异常暖量“越界与储存”；不能声称东部全部增热都来自140°W水平输入。","textPreview":"可以证明异常暖量“越界与储存”；不能声称东部全部增热都来自140°W水平输入。","textChars":39,"textLines":1,"bbox":[78,644,1124,38]}
+{"kind":"notes","id":"nt/m1wvqtk3","slide":21,"text":"[Sources]\n- East-box development budget values: data/derived/research_2026/soda3_three_box_warm_heat_fate_cumulative_summary.csv\n- Algebraic closure QA: data/derived/research_2026/soda3_three_box_warm_heat_fate_diagnostics.json\n- The residual is defined diagnostically; algebraic closure is not an independent physical validation.\n[/Sources]"}
+{"kind":"slide","id":"sl/5onypobq","slide":22,"title":"问题一的回答","textShapes":5}
+{"kind":"textbox","id":"sh/jmh8nyd0","slide":22,"name":"answer-kicker","text":"问题一的回答","textPreview":"问题一的回答","textChars":6,"textLines":1,"bbox":[54,42,300,36]}
+{"kind":"textbox","id":"sh/6987itcr","slide":22,"name":"answer-title","text":"异常暖量越过140°W，\n并在东太平洋建立暖量库","textPreview":"异常暖量越过140°W， | 并在东太平洋建立暖量库","textChars":24,"textLines":2,"bbox":[54,142,1120,230]}
+{"kind":"shape","id":"sh/7a18rydc","slide":22,"name":"rule-54-410","bbox":[54,410,1172,0]}
+{"kind":"textbox","id":"sh/k7qpgjul","slide":22,"name":"answer-1","text":"越界证据：140°W东向异常输入为正","textPreview":"越界证据：140°W东向异常输入为正","textChars":18,"textLines":1,"bbox":[54,452,1172,44]}
+{"kind":"textbox","id":"sh/58zqpov6","slide":22,"name":"answer-2","text":"储存证据：东部H₂₀增加；强度为CT > CP，1997 ≫ 2015 ≈ 2023","textPreview":"储存证据：东部H₂₀增加；强度为CT > CP，1997 ≫ 2015 ≈ 2023","textChars":42,"textLines":1,"bbox":[54,516,1172,44]}
+{"kind":"textbox","id":"sh/il87etcv","slide":22,"name":"answer-3","text":"边界：这是欧拉控制体意义上的到达，不是同一水团的拉格朗日追踪。","textPreview":"边界：这是欧拉控制体意义上的到达，不是同一水团的拉格朗日追踪。","textChars":31,"textLines":1,"bbox":[54,580,1172,44]}
+{"kind":"notes","id":"nt/5onypobq","slide":22,"text":"[Sources]\n- Synthesis of the SODA3.15.2 fixed-gate transport, fixed-box H20 storage, event H20 Hovmoller, and Q500 sensitivity results used on slides 3–7.\n[/Sources]"}

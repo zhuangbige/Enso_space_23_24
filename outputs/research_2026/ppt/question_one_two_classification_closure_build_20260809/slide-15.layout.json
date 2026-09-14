@@ -1,0 +1,569 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/393x1o",
+    "id": "393x1o",
+    "slide": 15,
+    "layoutId": "a365fc2b-b4a1-4ab1-af3c-ce0ef9337966",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "19beb2b3-63b0-4aac-9fab-0487c42d43c6",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Pacific Heat Arrival",
+    "colors": {
+      "accent1": "#2C7FB8",
+      "accent2": "#D97706",
+      "accent3": "#16877A",
+      "accent4": "#B73A3A",
+      "accent5": "#35566B",
+      "accent6": "#7E5AA6",
+      "bg1": "#FFFFFF",
+      "bg2": "#EDF3F6",
+      "tx1": "#0A2133",
+      "tx2": "#35566B",
+      "dk1": "#0A2133",
+      "dk2": "#35566B",
+      "lt1": "#FFFFFF",
+      "lt2": "#EDF3F6",
+      "hlink": "#2C7FB8",
+      "folHlink": "#16877A"
+    },
+    "typefaces": [
+      "PingFang SC"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "a365fc2b-b4a1-4ab1-af3c-ce0ef9337966",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "19beb2b3-63b0-4aac-9fab-0487c42d43c6",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "19beb2b3-63b0-4aac-9fab-0487c42d43c6",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rix0bads",
+      "id": "1",
+      "name": "answer2-kicker",
+      "bbox": [
+        54,
+        42,
+        300,
+        36
+      ],
+      "geometry": "rect",
+      "text": "问题二的回答",
+      "textPreview": "问题二的回答",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "PingFang SC",
+        "color": "#2C7FB8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "问题二的回答"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "问题二的回答",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "PingFang SC",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "问题二的回答",
+              "fontSize": 24,
+              "typeface": "PingFang SC",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cj6hkfud",
+      "id": "2",
+      "name": "answer2-title",
+      "bbox": [
+        54,
+        130,
+        1120,
+        210
+      ],
+      "geometry": "rect",
+      "text": "暖量没有一路向北；\n它在北侧发生再循环",
+      "textPreview": "暖量没有一路向北； | 它在北侧发生再循环",
+      "resolvedFontSize": 66,
+      "resolvedTextStyle": {
+        "anchor": 3,
+        "fontSize": 66,
+        "typeface": "PingFang SC",
+        "color": "#0A2133",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "bottom",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "暖量没有一路向北；"
+          },
+          {
+            "index": 2,
+            "text": "它在北侧发生再循环"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "暖量没有一路向北；",
+          "lineSpacingPercent": 92000,
+          "resolvedTextStyle": {
+            "fontSize": 66,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 0.92
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "暖量没有一路向北；",
+              "fontSize": 66,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 0.92
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "它在北侧发生再循环",
+          "lineSpacingPercent": 92000,
+          "resolvedTextStyle": {
+            "fontSize": 66,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 0.92
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "它在北侧发生再循环",
+              "fontSize": 66,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 0.92
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dkfidkvy",
+      "id": "3",
+      "name": "rule-54-378",
+      "bbox": [
+        54,
+        378,
+        1172,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#B8BCC4",
+      "lineWidth": 1.6
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2d4zelcb",
+      "id": "4",
+      "name": "answer2-ct",
+      "bbox": [
+        54,
+        416,
+        1172,
+        42
+      ],
+      "geometry": "rect",
+      "text": "CT：跨5°N输入 → 向西返回 + 海表失热",
+      "textPreview": "CT：跨5°N输入 → 向西返回 + 海表失热",
+      "resolvedFontSize": 28,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 28,
+        "typeface": "PingFang SC",
+        "color": "#D97706",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CT：跨5°N输入 → 向西返回 + 海表失热"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CT：跨5°N输入 → 向西返回 + 海表失热",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "PingFang SC",
+            "color": "#D97706",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CT：跨5°N输入 → 向西返回 + 海表失热",
+              "fontSize": 28,
+              "typeface": "PingFang SC",
+              "color": "#D97706",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3edg7qdw",
+      "id": "5",
+      "name": "answer2-cp",
+      "bbox": [
+        54,
+        476,
+        1172,
+        42
+      ],
+      "geometry": "rect",
+      "text": "CP：5°N方向反转 → 暖量向南回到赤道东箱",
+      "textPreview": "CP：5°N方向反转 → 暖量向南回到赤道东箱",
+      "resolvedFontSize": 28,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 28,
+        "typeface": "PingFang SC",
+        "color": "#2C7FB8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CP：5°N方向反转 → 暖量向南回到赤道东箱"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CP：5°N方向反转 → 暖量向南回到赤道东箱",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "PingFang SC",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CP：5°N方向反转 → 暖量向南回到赤道东箱",
+              "fontSize": 28,
+              "typeface": "PingFang SC",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4fmhgvuh",
+      "id": "6",
+      "name": "answer2-common",
+      "bbox": [
+        54,
+        536,
+        1172,
+        42
+      ],
+      "geometry": "rect",
+      "text": "共同点：12°N不是可辨识的主要暖量出口",
+      "textPreview": "共同点：12°N不是可辨识的主要暖量出口",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 27,
+        "typeface": "PingFang SC",
+        "color": "#7E5AA6",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "共同点：12°N不是可辨识的主要暖量出口"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "共同点：12°N不是可辨识的主要暖量出口",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "typeface": "PingFang SC",
+            "color": "#7E5AA6",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "共同点：12°N不是可辨识的主要暖量出口",
+              "fontSize": 27,
+              "typeface": "PingFang SC",
+              "color": "#7E5AA6",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pgvi90v2",
+      "id": "7",
+      "name": "q3-bridge",
+      "bbox": [
+        54,
+        610,
+        1172,
+        70
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFF0D8",
+      "lineColor": "#D97706",
+      "lineWidth": 1.5
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/upkzalcf",
+      "id": "8",
+      "name": "q3-bridge-text",
+      "bbox": [
+        78,
+        625,
+        1124,
+        38
+      ],
+      "geometry": "rect",
+      "text": "进入问题三：什么海气耦合过程选择了不同的风场与暖量去向？",
+      "textPreview": "进入问题三：什么海气耦合过程选择了不同的风场与暖量去向？",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 27,
+        "typeface": "PingFang SC",
+        "color": "#0A2133",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "进入问题三：什么海气耦合过程选择了不同的风场与暖量去向？"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "进入问题三：什么海气耦合过程选择了不同的风场与暖量去向？",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "进入问题三：什么海气耦合过程选择了不同的风场与暖量去向？",
+              "fontSize": 27,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

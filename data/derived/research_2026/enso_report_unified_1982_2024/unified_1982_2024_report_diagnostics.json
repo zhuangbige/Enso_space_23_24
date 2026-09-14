@@ -1,0 +1,47 @@
+{
+  "anomaly_baseline": [
+    1982,
+    2024
+  ],
+  "coupling_training_window_unchanged": [
+    1982,
+    2014
+  ],
+  "n_events": 13,
+  "partial_r": -0.7926977009154245,
+  "residual_rank_r": -0.6703296703296703,
+  "permutation_p": 0.0018998100189981002,
+  "fdr_q": 0.005699430056994301,
+  "bootstrap_95pct": [
+    -0.9477380580968353,
+    -0.17246119258591813
+  ],
+  "leave_one_event_out_r": [
+    -0.8291940659597982,
+    -0.725327181443275
+  ],
+  "year_2023_x_gjm2": 0.04175557048541034,
+  "year_2023_y_z": -0.3258169389252883,
+  "docx_audit": {
+    "paragraphs": 89,
+    "figures": 11,
+    "equations": 8,
+    "captions": 11,
+    "bold_tags": 0,
+    "numbering_tags": 0
+  },
+  "cropped_figures": [
+    "/Users/daiyue/Documents/Maryland/outputs/research_2026/enso_report_unified_1982_2024/figures/cropped_for_docx/figure_01.png",
+    "/Users/daiyue/Documents/Maryland/outputs/research_2026/enso_report_unified_1982_2024/figures/cropped_for_docx/figure_02.png",
+    "/Users/daiyue/Documents/Maryland/outputs/research_2026/enso_report_unified_1982_2024/figures/cropped_for_docx/figure_03.png",
+    "/Users/daiyue/Documents/Maryland/outputs/research_2026/enso_report_unified_1982_2024/figures/cropped_for_docx/figure_04.png",
+    "/Users/daiyue/Documents/Maryland/outputs/research_2026/enso_report_unified_1982_2024/figures/cropped_for_docx/figure_05.png",
+    "/Users/daiyue/Documents/Maryland/outputs/research_2026/enso_report_unified_1982_2024/figures/cropped_for_docx/figure_06.png",
+    "/Users/daiyue/Documents/Maryland/outputs/research_2026/enso_report_unified_1982_2024/figures/cropped_for_docx/figure_07.png",
+    "/Users/daiyue/Documents/Maryland/outputs/research_2026/enso_report_unified_1982_2024/figures/cropped_for_docx/figure_08.png",
+    "/Users/daiyue/Documents/Maryland/outputs/research_2026/enso_report_unified_1982_2024/figures/cropped_for_docx/figure_09.png",
+    "/Users/daiyue/Documents/Maryland/outputs/research_2026/enso_report_unified_1982_2024/figures/cropped_for_docx/figure_10.png",
+    "/Users/daiyue/Documents/Maryland/outputs/research_2026/enso_report_unified_1982_2024/figures/cropped_for_docx/figure_11.png"
+  ],
+  "output_docx": "/Users/daiyue/Documents/Maryland/outputs/research_2026/reports/ENSO发展期_SSTA-OHC不同步_阶段性汇报_赤道带与纬向剖面修正版_统一1982_2024基准_论文图注无粗体版_20260818.docx"
+}

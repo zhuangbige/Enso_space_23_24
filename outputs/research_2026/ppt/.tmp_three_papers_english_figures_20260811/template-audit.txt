@@ -1,0 +1,28 @@
+Source deck: 厄尔尼诺异常暖量到达分配与耦合命运_非阈值重构版_20260810.pptx
+Slide count: 15; canvas: 16:9, 1280 × 720 reference coordinates.
+
+Visual language
+- White background, dark navy body text, blue section labels, and a restrained orange/blue/teal event palette.
+- Claim-led headers occupy the upper 142 px; a full-width colored takeaway bar anchors evidence slides.
+- Scientific plots are large, centered, and supported by a small number of native PowerPoint callout cards.
+- Rounded rectangular cards, thin gray dividers, and generous white space form the core layout grammar.
+
+Typography
+- Chinese narrative: PingFang SC; English figure labels: Arial/Helvetica/DejaVu Sans.
+- Section label ≈19 pt; slide title ≈31–35 pt; card title ≈21–24 pt; body ≈18–22 pt.
+
+Reusable layout families
+- Slide 1: cover.
+- Slide 3: three-card comparison / research arc.
+- Slides 4–6, 9, 12–14: claim header + large figure + optional callout + takeaway.
+- Slides 7, 10, 15: synthesis / answer cards.
+- Slides 8 and 11: native-shape process framework.
+
+Selected use
+- Preserve the source palette, header geometry, card radii, whitespace, and takeaway bars.
+- Duplicate the source frames in output order. Add one Q3 evidence slide by duplicating source slide 12.
+- Reuse source slide 3 for the new three-paper literature comparison.
+
+Assets
+- All scientific graphics are redrawn in Python at 300 dpi with English labels, units, no figure-level title, and no fine-print caption.
+- Speaker notes carry provenance blocks; citations are not placed as tiny visible footer text.

@@ -1,0 +1,17 @@
+sample,target,target_label,interaction,interaction_label,n_years,interaction_beta_sd,bootstrap_ci_low,bootstrap_ci_high,freedman_lane_p,bootstrap_positive_fraction,fdr_q_within_sample
+all_years,precip_response_mjj,Precipitation,tio_x_fep,Tropical Indian Ocean × residual FEP,43,0.04354964832204651,-0.4142533825492638,0.405289995779843,0.7442627868606569,0.615,0.7442627868606569
+all_years,precip_response_mjj,Precipitation,tna_x_fep,Tropical North Atlantic × residual FEP,43,-0.33202762428663973,-0.8180117526523203,0.3321983323950047,0.07739613019349033,0.1477,0.5897038481409264
+all_years,slp_response_mjj,SLP gradient,tio_x_fep,Tropical Indian Ocean × residual FEP,43,-0.19310006828471624,-0.6422155104511007,0.2525055703334946,0.22113894305284737,0.1655,0.5897038481409264
+all_years,slp_response_mjj,SLP gradient,tna_x_fep,Tropical North Atlantic × residual FEP,43,-0.21830594051602742,-0.8301619145502407,0.505031178040963,0.3345332733363332,0.2507,0.6690665466726664
+all_years,tau_response_mjj,Zonal stress,tio_x_fep,Tropical Indian Ocean × residual FEP,43,-0.1141881734528259,-0.6091142409659556,0.3407580993022065,0.455727213639318,0.3124,0.698650781746627
+all_years,tau_response_mjj,Zonal stress,tna_x_fep,Tropical North Atlantic × residual FEP,43,-0.11019098861588586,-0.6368929443425034,0.6806453613813944,0.6113194340282986,0.3579,0.698650781746627
+all_years,coupling_mjj,Composite connection,tio_x_fep,Tropical Indian Ocean × residual FEP,43,-0.07968246890849837,-0.5673107515030372,0.3330763538962131,0.5803709814509275,0.3376,0.698650781746627
+all_years,coupling_mjj,Composite connection,tna_x_fep,Tropical North Atlantic × residual FEP,43,-0.26963266644155925,-0.779360072822614,0.4851977451339739,0.18854057297135143,0.2146,0.5897038481409264
+positive_nino34_mjj,precip_response_mjj,Precipitation,tio_x_fep,Tropical Indian Ocean × residual FEP,23,-0.12316684422752874,-1.0541455229322765,0.9285173703537816,0.49307534623268834,0.3017,0.49307534623268834
+positive_nino34_mjj,precip_response_mjj,Precipitation,tna_x_fep,Tropical North Atlantic × residual FEP,23,-0.5493734125621519,-1.789933897337693,1.4514490792488797,0.0662966851657417,0.2752,0.2086295685215739
+positive_nino34_mjj,slp_response_mjj,SLP gradient,tio_x_fep,Tropical Indian Ocean × residual FEP,23,-0.3319373026307902,-1.489463859726816,1.043246234665504,0.10019499025048748,0.1919,0.2086295685215739
+positive_nino34_mjj,slp_response_mjj,SLP gradient,tna_x_fep,Tropical North Atlantic × residual FEP,23,-0.269677923433018,-1.8519787482535093,1.9103283628635954,0.4430278486075696,0.4497,0.49307534623268834
+positive_nino34_mjj,tau_response_mjj,Zonal stress,tio_x_fep,Tropical Indian Ocean × residual FEP,23,-0.363325405321258,-1.4873603523030683,0.6048387834618072,0.050747462626868654,0.1333,0.2086295685215739
+positive_nino34_mjj,tau_response_mjj,Zonal stress,tna_x_fep,Tropical North Atlantic × residual FEP,23,-0.49217807009369346,-1.9526300915319215,1.3803350258687066,0.12849357532123393,0.2625,0.2086295685215739
+positive_nino34_mjj,coupling_mjj,Composite connection,tio_x_fep,Tropical Indian Ocean × residual FEP,23,-0.2647751828199735,-1.2894520092246606,0.8623982886572463,0.16069196540172992,0.1956,0.21425595386897323
+positive_nino34_mjj,coupling_mjj,Composite connection,tna_x_fep,Tropical North Atlantic × residual FEP,23,-0.49214104561288885,-1.9310748701619147,1.5453956848240986,0.1303934803259837,0.308,0.2086295685215739

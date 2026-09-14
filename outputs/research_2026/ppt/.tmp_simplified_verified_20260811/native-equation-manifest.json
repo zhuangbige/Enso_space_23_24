@@ -1,0 +1,86 @@
+[
+  {
+    "slide": 4,
+    "marker": "EQ04_01",
+    "latex": "H_{300}=\\left\\langle \\rho_0 c_p \\int_0^{300\\,\\mathrm{m}} T\\,dz \\right\\rangle_{\\phi}",
+    "ommlChars": 853
+  },
+  {
+    "slide": 4,
+    "marker": "EQ04_02",
+    "latex": "H'_{300}=H_{300}-\\widehat{C}_m-b_m\\left(y-\\bar{y}_m\\right)",
+    "ommlChars": 893
+  },
+  {
+    "slide": 4,
+    "marker": "EQ04_03",
+    "latex": "\\langle H\\rangle_{\\phi}=\\frac{\\sum_i H_i\\cos\\phi_i}{\\sum_i\\cos\\phi_i}",
+    "ommlChars": 1177
+  },
+  {
+    "slide": 6,
+    "marker": "EQ06_01",
+    "latex": "T'_p=T_p-\\widehat{T}_{m,-e}",
+    "ommlChars": 580
+  },
+  {
+    "slide": 6,
+    "marker": "EQ06_02",
+    "latex": "\\omega_p=\\max\\!\\left(T'_p,0\\right)\\cos\\phi_p\\,\\Delta z_p",
+    "ommlChars": 846
+  },
+  {
+    "slide": 6,
+    "marker": "EQ06_03",
+    "latex": "\\begin{aligned}\\frac{d\\lambda}{dt}&=\\frac{u}{R\\cos\\phi}\\\\[2pt]\\frac{d\\phi}{dt}&=\\frac{v}{R}\\\\[2pt]\\frac{dz}{dt}&=-w\\end{aligned}",
+    "ommlChars": 1178
+  },
+  {
+    "slide": 6,
+    "marker": "EQ06_04",
+    "latex": "\\begin{aligned}\\Delta\\lambda_p&=\\lambda_{\\mathrm{release}}-\\lambda_{\\mathrm{source}}\\\\[2pt]\\sum_{\\Delta\\lambda_p\\leq\\widetilde{\\Delta\\lambda}}\\omega_p&=\\frac{1}{2}\\sum_p\\omega_p\\\\[2pt]f_{\\mathrm{active}}&=\\frac{\\sum_{p\\in\\mathrm{active}}\\omega_p}{\\sum_p\\omega_p}\\end{aligned}",
+    "ommlChars": 2728
+  },
+  {
+    "slide": 8,
+    "marker": "EQ08_01",
+    "latex": "Q_{140^{\\circ}\\mathrm{W}}=\\rho_0c_p\\iint u_n\\left(T-\\bar{T}_b\\right)\\,dA",
+    "ommlChars": 885
+  },
+  {
+    "slide": 8,
+    "marker": "EQ08_02",
+    "latex": "A_{\\mathrm{Jan-Jun}}=\\int_{\\mathrm{Jan}}^{\\mathrm{Jun}}Q'_{140^{\\circ}\\mathrm{W}}(t)\\,dt",
+    "ommlChars": 915
+  },
+  {
+    "slide": 8,
+    "marker": "EQ08_03",
+    "latex": "\\begin{aligned}H'_e(t)&=\\rho_0c_p\\iiint_eT'\\,dV\\\\[4pt]\\Delta H'_e&=H'_e(\\mathrm{Jun})-H'_e(\\mathrm{Jan})\\end{aligned}",
+    "ommlChars": 1816
+  },
+  {
+    "slide": 10,
+    "marker": "EQ10_01",
+    "latex": "\\Delta H'_e=Q'_W+Q'_E+Q'_N+Q'_S+Q'_s+R'",
+    "ommlChars": 1348
+  },
+  {
+    "slide": 10,
+    "marker": "EQ10_02",
+    "latex": "R'=\\Delta H'_e-\\left(Q'_W+Q'_E+Q'_N+Q'_S\\right)-Q'_s",
+    "ommlChars": 1394
+  },
+  {
+    "slide": 10,
+    "marker": "EQ10_03",
+    "latex": "\\begin{aligned}L_H&=-\\Delta H'_e & E_W&=-Q'_W\\\\E_E&=-Q'_E & E_N&=-Q'_N\\\\E_S&=-Q'_S & L_s&=-Q'_s\\end{aligned}",
+    "ommlChars": 2134
+  },
+  {
+    "slide": 12,
+    "marker": "EQ12_01",
+    "latex": "\\begin{aligned}X_r&=X-\\left(a_x+b_xA\\right)\\\\[3pt]Y_r&=Y-\\left(a_y+b_yA\\right)\\\\[3pt]r_{XY\\cdot A}&=\\operatorname{corr}\\!\\left(X_r,Y_r\\right)\\end{aligned}",
+    "ommlChars": 1572
+  }
+]

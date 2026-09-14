@@ -1,0 +1,52 @@
+{
+  "events": [
+    1997,
+    2015,
+    2023
+  ],
+  "soda_baseline": [
+    1980,
+    2024
+  ],
+  "sst_baseline": [
+    1982,
+    2024
+  ],
+  "fep_formula": "FEP' = a_month + b_month * Nino3.4' + residual_FEP",
+  "transition_definition": "First of two consecutive January-June months with both east-minus-west OHC300 and east-minus-west D20 anomalies > 0",
+  "transition_months": {
+    "1997": {
+      "month": 4,
+      "month_name": "Apr"
+    },
+    "2015": {
+      "month": 1,
+      "month_name": "Jan"
+    },
+    "2023": {
+      "month": 5,
+      "month_name": "May"
+    }
+  },
+  "ranges": {
+    "d20_m": [
+      5.092930316925049,
+      287.3560791015625
+    ],
+    "d20_anomaly_m": [
+      -95.05101776123047,
+      163.84805297851562
+    ],
+    "ohc300_event_zonal_anomaly_gj_m2": [
+      -2.9830502590866557,
+      2.3493164925765537
+    ]
+  },
+  "outputs": {
+    "d20_netcdf": "/Users/daiyue/Documents/Maryland/data/derived/research_2026/soda3_d20_equatorial_jan_jun_1980_2024.nc",
+    "event_summary_csv": "/Users/daiyue/Documents/Maryland/data/derived/research_2026/jiang_fep_soda3_transition_1997_2015_2023.csv",
+    "fep_regression_csv": "/Users/daiyue/Documents/Maryland/data/derived/research_2026/jiang_fep_calendar_month_regression_1982_2024.csv",
+    "figure_png": "/Users/daiyue/Documents/Maryland/outputs/research_2026/soda3_fep_transition/jiang_fep_soda3_ohc_d20_1997_2015_2023.png",
+    "figure_pdf": "/Users/daiyue/Documents/Maryland/output/pdf/jiang_fep_soda3_ohc_d20_1997_2015_2023.pdf"
+  }
+}

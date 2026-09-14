@@ -1,0 +1,25 @@
+{
+  "color_limit_degC": 3.5,
+  "seasonal_figure_png": "/Users/daiyue/Documents/Maryland/outputs/research_2026/enso_strength_vertical_profiles_2026/fig_jfm_amj_strong_moderate_difference_2026_vertical_temperature.png",
+  "seasonal_figure_pdf": "/Users/daiyue/Documents/Maryland/outputs/research_2026/enso_strength_vertical_profiles_2026/fig_jfm_amj_strong_moderate_difference_2026_vertical_temperature.pdf",
+  "monthly_figure_png": "/Users/daiyue/Documents/Maryland/outputs/research_2026/enso_strength_vertical_profiles_2026/fig_jan_jun_strong_moderate_difference_2026_vertical_temperature.png",
+  "monthly_figure_pdf": "/Users/daiyue/Documents/Maryland/outputs/research_2026/enso_strength_vertical_profiles_2026/fig_jan_jun_strong_moderate_difference_2026_vertical_temperature.pdf",
+  "derived_netcdf": "/Users/daiyue/Documents/Maryland/outputs/research_2026/enso_strength_vertical_profiles_2026/vertical_profile_comparison_fields.nc",
+  "metrics_csv": "/Users/daiyue/Documents/Maryland/outputs/research_2026/enso_strength_vertical_profiles_2026/vertical_profile_metrics.csv",
+  "similarity_csv": "/Users/daiyue/Documents/Maryland/outputs/research_2026/enso_strength_vertical_profiles_2026/vertical_profile_pattern_similarity.csv",
+  "trajectory_csv": "/Users/daiyue/Documents/Maryland/outputs/research_2026/enso_strength_vertical_profiles_2026/monthly_warm_centroid_trajectory.csv",
+  "cross_product_validation_csv": "/Users/daiyue/Documents/Maryland/outputs/research_2026/enso_strength_vertical_profiles_2026/soda3_godas_overlap_validation.csv",
+  "strong_years": [
+    1982,
+    1991,
+    1997,
+    2009,
+    2015,
+    2023
+  ],
+  "moderate_years": [
+    1986,
+    1994,
+    2002
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "event_years": [
+    1982,
+    1986,
+    1991,
+    1994,
+    1997,
+    2002,
+    2004,
+    2006,
+    2009,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "early_ocean_window": "Jan-Mar(0)",
+  "coupling_window": "May-Jul(0) Jiang-aligned central Pacific zonal-stress response",
+  "routing_window": "Jan-May(+1)",
+  "ocean_domain": "5S-5N, 0-300 m; central 180-140W; east 140W-80W",
+  "coupling_definition": "Primary: Jiang-aligned May-Jul central Pacific zonal-stress response; broad precipitation-SLP-stress mean retained as sensitivity only",
+  "mediation": {
+    "a_central_to_coupling": 0.6200560710471972,
+    "b_coupling_to_ekman_given_central": 0.3543592565133799,
+    "indirect_effect": 0.21972260833289226,
+    "bootstrap_ci_low": -0.1905149182629271,
+    "bootstrap_ci_high": 0.7866874800931468
+  },
+  "h20_sensitivity_n": 12,
+  "limitations": [
+    "event-level observational association",
+    "small n=13",
+    "H20 three-box sensitivity excludes 2023 because the historical monthly extraction ends in 2022"
+  ]
+}

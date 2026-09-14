@@ -1,0 +1,59 @@
+{
+  "scope": "Direct wind-coupling and heat-wind mismatch diagnostics only; no new index/equation/threshold.",
+  "latitude_band": [
+    -10.0,
+    5.0
+  ],
+  "longitude_range": [
+    120.0,
+    280.0
+  ],
+  "reference_years": [
+    1982,
+    2022
+  ],
+  "sources": {
+    "sst": "/Users/daiyue/Documents/Maryland/data/raw/ersstv5_sst_monthly_full.nc",
+    "precipitation": "/Users/daiyue/Documents/Maryland/data/interim/research_2026/gpcp_event_spatial_tropics_1982_202605.nc",
+    "surface_stress": "/Users/daiyue/Documents/Maryland/data/raw/era5/coupling_monthly_1deg",
+    "box_monthly_variables": "/Users/daiyue/Documents/Maryland/data/derived/research_2026/jiang_epcp_mar_oct_direct_physical_variables.csv",
+    "mjj_event_means": "/Users/daiyue/Documents/Maryland/data/derived/research_2026/jiang_epcp_mjj_direct_physical_variable_means.csv"
+  },
+  "signs": {
+    "surface_stress": "positive is eastward/westerly anomaly",
+    "heat_output": "positive is eastward anomalous heat output from the central box"
+  },
+  "diagnostics": {
+    "monthly_rows": 112,
+    "mjj_events": 14,
+    "focus_events": [
+      1997,
+      2015,
+      2023
+    ],
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "field_ranges": {
+      "sst_anomaly_c": [
+        -1.171554814647731,
+        3.534692858985096
+      ],
+      "precip_anomaly_mm_day": [
+        -6.0165544613313315,
+        10.839616279932287
+      ],
+      "eastward_stress_anomaly_nm2": [
+        -0.0552451495538979,
+        0.179149987168286
+      ]
+    }
+  }
+}

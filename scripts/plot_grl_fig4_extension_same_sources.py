@@ -7,7 +7,8 @@ Same-source choices:
 
 The figure is an extension, not a pixel reproduction: the lead-lag window and
 D20 smoothing are trailing windows so that the final plotted year can reach the
-latest available month, currently 2026-05.
+latest available month, currently 2026-06. The output includes a 600-dpi
+two-panel figure and a standalone 600-dpi thermocline panel.
 """
 
 from __future__ import annotations
@@ -30,11 +31,11 @@ OUT_DERIVED = ROOT / "data/derived/research_2026"
 OUT_INTERIM = ROOT / "data/interim/research_2026"
 
 ERSST_URL = "https://psl.noaa.gov/thredds/dodsC/Datasets/noaa.ersst.v5/sst.mnmean.nc"
-ORAS5_TRANSECT = OUT_INTERIM / "oras5_d20_timeseries_equatorial_1960_202605.csv"
+ORAS5_TRANSECT = OUT_INTERIM / "oras5_d20_timeseries_equatorial_1960_202606.csv"
 
 BASELINE_START = 1960
 BASELINE_END = 2024
-LATEST_LABEL = "2026-05"
+LATEST_LABEL = "2026-06"
 
 
 @dataclass(frozen=True)
@@ -88,7 +89,9 @@ def _remove_linear_trend(series: pd.Series, start: int = BASELINE_START, end: in
 
 def build_ersst_residual() -> pd.DataFrame:
     ds = xr.open_dataset(ERSST_URL)
-    sst = ds["sst"].sel(time=slice("1960-01-01", "2026-05-31"))
+    # Start in 1946 so a complete 15-year trailing window can be plotted from
+    # 1960 onward, matching the vertical span of the reference figure.
+    sst = ds["sst"].sel(time=slice("1946-01-01", "2026-06-30"))
     n34 = _area_mean_sst(sst, NINO34)
     fep = _area_mean_sst(sst, FEP)
     df = pd.DataFrame({"nino34_sst": n34, "fep_sst": fep}).dropna().sort_index()
@@ -120,7 +123,7 @@ def build_leadlag_corr(df: pd.DataFrame, lags: np.ndarray) -> pd.DataFrame:
     first_year = int(df["year"].min())
     last_year = int(df["year"].max())
     rows: list[dict] = []
-    for year in range(first_year + 14, last_year + 1):
+    for year in range(max(BASELINE_START, first_year + 14), last_year + 1):
         months = pd.period_range(pd.Period(f"{year-14}-01", freq="M"), pd.Period(f"{year}-12", freq="M"), freq="M")
         for lag in lags:
             tr_vals = []
@@ -144,7 +147,11 @@ def build_leadlag_corr(df: pd.DataFrame, lags: np.ndarray) -> pd.DataFrame:
 def build_oras5_d20_annual() -> pd.DataFrame:
     raw = pd.read_csv(ORAS5_TRANSECT, parse_dates=["time"])
     # Consolidated covers the historical reanalysis period; operational carries 2015-present.
-    raw = raw.loc[((raw["product_type"] == "consolidated") & (raw["year"] <= 2014)) | (raw["product_type"] == "operational")].copy()
+    raw = raw.loc[
+        ((raw["product_type"] == "consolidated") & (raw["year"] <= 2014))
+        | ((raw["product_type"] == "operational") & (raw["year"] >= 2015))
+    ].copy()
+    raw = raw.loc[pd.to_datetime(raw["time"]).le("2026-06-01")].copy()
     raw = raw.loc[raw["d20_m"].notna()].copy()
     raw["lon"] = raw["requested_lon"].astype(float)
     climatology = raw.loc[(raw["year"] >= BASELINE_START) & (raw["year"] <= BASELINE_END)].groupby("lon")["d20_m"].mean()
@@ -165,11 +172,36 @@ def _lon_label(lon: float) -> str:
     return f"{int(360-lon)}°W"
 
 
-def plot(corr_df: pd.DataFrame, annual_d20: pd.DataFrame) -> None:
-    OUT_FIG.mkdir(parents=True, exist_ok=True)
+def _setup_style() -> None:
+    plt.rcParams.update(
+        {
+            "figure.dpi": 180,
+            "savefig.dpi": 600,
+            "font.family": "sans-serif",
+            "font.sans-serif": ["DejaVu Sans", "Helvetica", "Arial"],
+            "font.size": 8.5,
+            "axes.titlesize": 10.5,
+            "axes.labelsize": 9.2,
+            "xtick.labelsize": 7.8,
+            "ytick.labelsize": 7.8,
+            "axes.linewidth": 0.85,
+            "contour.negative_linestyle": "solid",
+            "axes.unicode_minus": False,
+        }
+    )
+
+
+def _prepare_plot_grids(
+    corr_df: pd.DataFrame,
+    annual_d20: pd.DataFrame,
+) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     lags = np.sort(corr_df["lag_month"].unique())
     years = np.sort(corr_df["window_year"].unique())
-    corr_grid = corr_df.pivot(index="window_year", columns="lag_month", values="corr").reindex(index=years, columns=lags).to_numpy()
+    corr_grid = (
+        corr_df.pivot(index="window_year", columns="lag_month", values="corr")
+        .reindex(index=years, columns=lags)
+        .to_numpy()
+    )
     corr_valid = np.isfinite(corr_grid).any(axis=1)
     years_plot = years[corr_valid]
     corr_grid = corr_grid[corr_valid, :]
@@ -184,53 +216,203 @@ def plot(corr_df: pd.DataFrame, annual_d20: pd.DataFrame) -> None:
     d20_valid = np.isfinite(d20_grid).any(axis=1)
     d20_years_plot = d20_years[d20_valid]
     d20_grid = d20_grid[d20_valid, :]
+    return lags, years_plot, corr_grid, lon, d20_years_plot, d20_grid
 
-    fig = plt.figure(figsize=(12.8, 8.0), dpi=170)
-    gs = fig.add_gridspec(1, 2, width_ratios=[1, 1], wspace=0.30)
+
+def _style_time_axis(ax: plt.Axes) -> None:
+    ax.set_ylim(1960, 2026.5)
+    ax.set_yticks(np.arange(1960, 2026, 5))
+    ax.tick_params(direction="out", length=3.0, width=0.8)
+    for y in [1976, 2005]:
+        ax.axhline(y, color="white", ls=(0, (4, 4)), lw=1.3, zorder=6)
+
+
+def plot(corr_df: pd.DataFrame, annual_d20: pd.DataFrame) -> None:
+    OUT_FIG.mkdir(parents=True, exist_ok=True)
+    _setup_style()
+    lags, years_plot, corr_grid, lon, d20_years_plot, d20_grid = _prepare_plot_grids(
+        corr_df, annual_d20
+    )
+
+    corr_levels = np.linspace(-0.9, 0.9, 19)
+    d20_levels = np.arange(-18, 19, 3)
+
+    fig = plt.figure(figsize=(8.4, 9.0))
+    gs = fig.add_gridspec(
+        1,
+        2,
+        width_ratios=[1, 1],
+        left=0.095,
+        right=0.975,
+        top=0.875,
+        bottom=0.17,
+        wspace=0.30,
+    )
     ax1 = fig.add_subplot(gs[0, 0])
     ax2 = fig.add_subplot(gs[0, 1])
 
-    im1 = ax1.contourf(lags, years_plot, corr_grid, levels=np.linspace(-0.9, 0.9, 19), cmap="RdBu_r", extend="both")
-    ax1.axvline(0, color="0.25", ls="--", lw=1.5)
-    for y in [1976, 2005]:
-        ax1.axhline(y, color="white", ls=(0, (4, 4)), lw=1.4)
-    ax1.set_title("(a) Lead-lag correlation\nERSSTv5 T$_{N34}$ and residual FEP T$_R$", weight="bold")
+    im1 = ax1.contourf(
+        lags,
+        years_plot,
+        corr_grid,
+        levels=corr_levels,
+        cmap="RdBu_r",
+        extend="both",
+    )
+    ax1.axvline(0, color="0.20", ls="--", lw=1.25, zorder=7)
+    _style_time_axis(ax1)
+    ax1.set_title(
+        "(a)  Lead–lag correlation\nbetween T$_{N34}$ and residual T$_R$",
+        weight="bold",
+        pad=6,
+    )
     ax1.set_xlabel("Lag time (month)")
-    ax1.set_ylabel("15-yr window end year")
+    ax1.set_ylabel("Time (15-yr trailing-window end year)")
     ax1.set_xlim(-12, 12)
     ax1.set_xticks(np.arange(-12, 13, 2))
-    ax1.text(-8.4, years_plot.min() + 1.7, "T$_{N34}$ lead", weight="bold", ha="center")
-    ax1.text(7.0, years_plot.min() + 1.7, "T$_R$ lead", weight="bold", ha="center")
-    cbar1 = fig.colorbar(im1, ax=ax1, orientation="horizontal", pad=0.085, fraction=0.055)
-    cbar1.set_label("correlation")
+    ax1.text(-8.5, 1961.5, "T$_{N34}$ lead", weight="bold", ha="center", va="bottom")
+    ax1.text(7.2, 1961.5, "T$_R$ lead", weight="bold", ha="center", va="bottom")
+    cbar1 = fig.colorbar(
+        im1,
+        ax=ax1,
+        orientation="horizontal",
+        pad=0.075,
+        fraction=0.045,
+        ticks=[-0.9, -0.6, -0.3, 0, 0.3, 0.6, 0.9],
+    )
+    cbar1.set_label("Correlation")
 
-    im2 = ax2.contourf(lon, d20_years_plot, d20_grid, levels=np.arange(-18, 19, 3), cmap="RdBu_r", extend="both")
-    ax2.contour(lon, d20_years_plot, d20_grid, levels=np.arange(-18, 19, 3), colors="k", linewidths=0.45, alpha=0.75)
-    for y in [1976, 2005]:
-        ax2.axhline(y, color="white", ls=(0, (4, 4)), lw=1.4)
-    ax2.set_title("(b) Mean-removed ORAS5 D20\n10-yr trailing mean", weight="bold")
+    im2 = ax2.contourf(
+        lon,
+        d20_years_plot,
+        d20_grid,
+        levels=d20_levels,
+        cmap="RdBu_r",
+        extend="both",
+    )
+    ax2.contour(
+        lon,
+        d20_years_plot,
+        d20_grid,
+        levels=d20_levels,
+        colors="k",
+        linewidths=0.45,
+        alpha=0.82,
+    )
+    _style_time_axis(ax2)
+    ax2.set_title(
+        "(b)  Mean-removed thermocline\nORAS5 D20, 10-yr trailing mean",
+        weight="bold",
+        pad=6,
+    )
     ax2.set_xlabel("Longitude")
-    ax2.set_ylabel("Year")
-    ax2.set_xlim(130, 280)
+    ax2.set_ylabel("Time (year)")
+    ax2.set_xlim(130, 275)
     xticks = [150, 180, 210, 240, 270]
     ax2.set_xticks(xticks)
     ax2.set_xticklabels([_lon_label(x) for x in xticks])
-    cbar2 = fig.colorbar(im2, ax=ax2, orientation="horizontal", pad=0.085, fraction=0.055)
-    cbar2.set_label("m")
-
-    fig.suptitle("GRL Fig. 4 same-source extension (ERSSTv5 + ORAS5, through 2026-05)", weight="bold", y=0.98)
-    fig.text(
-        0.055,
-        0.025,
-        "SST: NOAA ERSSTv5, anomalies relative to 1960-2024 monthly climatology, linear trend removed using 1960-2024 fit. "
-        "D20: CDS ORAS5 time-series product, nearest native-grid points along 0° from 130°E to 80°W every 5°. "
-        "White dashed lines mark 1976 and 2005 as in Jiang et al. (2026).",
-        fontsize=8,
-        color="0.25",
+    cbar2 = fig.colorbar(
+        im2,
+        ax=ax2,
+        orientation="horizontal",
+        pad=0.075,
+        fraction=0.045,
+        ticks=[-18, -12, -6, 0, 6, 12, 18],
     )
-    fig.savefig(OUT_FIG / "fig12_grl_fig4_same_sources_extended_to_2026.png", bbox_inches="tight", dpi=300)
-    fig.savefig(OUT_FIG / "fig12_grl_fig4_same_sources_extended_to_2026.pdf", bbox_inches="tight")
+    cbar2.set_label("D20 anomaly (m)")
+
+    fig.suptitle(
+        "Jiang et al. (2026) Fig. 4-style same-source extension through June 2026",
+        weight="bold",
+        fontsize=12.2,
+        y=0.965,
+    )
+    fig.text(
+        0.095,
+        0.025,
+        "SST: NOAA ERSSTv5; 1960–2024 monthly climatology and trend removed. "
+        "D20: CDS/ECMWF ORAS5 at 0°, 130°E–85°W every 5°; longitude mean removed over 1960–2024. "
+        "The 2026 endpoints use January–June only. White dashed lines mark 1976 and 2005.",
+        fontsize=7.2,
+        color="0.28",
+        ha="left",
+        va="bottom",
+    )
+    combined_png = OUT_FIG / "fig12_grl_fig4_same_sources_extended_to_202606_600dpi.png"
+    combined_pdf = OUT_FIG / "fig12_grl_fig4_same_sources_extended_to_202606.pdf"
+    fig.savefig(combined_png, bbox_inches="tight", pad_inches=0.12, dpi=600)
+    fig.savefig(combined_pdf, bbox_inches="tight", pad_inches=0.12)
+    # Refresh the legacy paths used by the existing report.
+    fig.savefig(
+        OUT_FIG / "fig12_grl_fig4_same_sources_extended_to_2026.png",
+        bbox_inches="tight",
+        pad_inches=0.12,
+        dpi=600,
+    )
+    fig.savefig(
+        OUT_FIG / "fig12_grl_fig4_same_sources_extended_to_2026.pdf",
+        bbox_inches="tight",
+        pad_inches=0.12,
+    )
     plt.close(fig)
+
+    # Standalone thermocline panel for close inspection and presentation use.
+    fig2, ax = plt.subplots(figsize=(5.6, 8.4))
+    im = ax.contourf(
+        lon,
+        d20_years_plot,
+        d20_grid,
+        levels=d20_levels,
+        cmap="RdBu_r",
+        extend="both",
+    )
+    ax.contour(
+        lon,
+        d20_years_plot,
+        d20_grid,
+        levels=d20_levels,
+        colors="k",
+        linewidths=0.5,
+        alpha=0.85,
+    )
+    _style_time_axis(ax)
+    ax.set_ylim(1980, 2026.5)
+    ax.set_yticks(np.arange(1980, 2026, 5))
+    ax.set_xlim(130, 275)
+    ax.set_xticks(xticks)
+    ax.set_xticklabels([_lon_label(x) for x in xticks])
+    ax.set_xlabel("Longitude")
+    ax.set_ylabel("Time (year)")
+    ax.set_title(
+        "Mean-removed equatorial thermocline\n"
+        "ORAS5 D20, 10-yr trailing mean, 1980–June 2026",
+        weight="bold",
+        pad=8,
+    )
+    cbar = fig2.colorbar(
+        im,
+        ax=ax,
+        orientation="horizontal",
+        pad=0.075,
+        fraction=0.05,
+        ticks=[-18, -12, -6, 0, 6, 12, 18],
+    )
+    cbar.set_label("D20 anomaly (m)")
+    fig2.text(
+        0.13,
+        0.018,
+        "ORAS5 at 0°; mean removed over 1960–2024. "
+        "The 2026 endpoint uses January–June only.",
+        fontsize=7.3,
+        color="0.28",
+        ha="left",
+    )
+    fig2.subplots_adjust(left=0.14, right=0.97, top=0.91, bottom=0.13)
+    d20_png = OUT_FIG / "fig12b_oras5_mean_removed_d20_10yr_to_202606_600dpi.png"
+    d20_pdf = OUT_FIG / "fig12b_oras5_mean_removed_d20_10yr_to_202606.pdf"
+    fig2.savefig(d20_png, bbox_inches="tight", pad_inches=0.12, dpi=600)
+    fig2.savefig(d20_pdf, bbox_inches="tight", pad_inches=0.12)
+    plt.close(fig2)
 
 
 def write_report(sst_df: pd.DataFrame, corr_df: pd.DataFrame, annual_d20: pd.DataFrame) -> None:
@@ -245,7 +427,7 @@ def write_report(sst_df: pd.DataFrame, corr_df: pd.DataFrame, annual_d20: pd.Dat
     report.write_text(
         f"""# GRL Figure 4 same-source extension to 2026
 
-生成日期：2026-06-23
+生成日期：2026-07-28
 
 ## 这次相较上一版改了什么
 
@@ -253,7 +435,7 @@ def write_report(sst_df: pd.DataFrame, corr_df: pd.DataFrame, annual_d20: pd.Dat
 
 - SST：NOAA ERSSTv5；
 - D20 / thermocline depth：CDS ORAS5 `depth_of_20_c_isotherm`；
-- 时间：当前可用到 **{latest_sst} / 2026-05**。
+- 时间：当前可用到 **{latest_sst} / 2026-06**。
 
 因此，这一版更适合放进“沿原文 Fig. 4 继续更新”的汇报。
 
@@ -275,7 +457,7 @@ def write_report(sst_df: pd.DataFrame, corr_df: pd.DataFrame, annual_d20: pd.Dat
 使用 CDS ORAS5 time-series 产品下载赤道太平洋 D20：
 
 - 变量：`depth_of_20_c_isotherm` / `so20chgt`；
-- 点列：0° 纬线，130°E-80°W，每 5° 一个 nearest native-grid point；
+- 点列：0° 纬线，130°E-85°W，每 5° 一个 nearest native-grid point；
 - consolidated：1960-2014；
 - operational：2015-2026；
 - mean-removed：每个经度扣除 1960-2024 平均；
@@ -285,15 +467,17 @@ def write_report(sst_df: pd.DataFrame, corr_df: pd.DataFrame, annual_d20: pd.Dat
 
 - 最新 2026 结束窗口中，正 lag 一侧最大相关为 **r={max_pos['corr']:.2f} at lag +{int(max_pos['lag_month'])} months**；负 lag 一侧最大相关为 **r={max_neg['corr']:.2f} at lag {int(max_neg['lag_month'])} months**。
 - 这说明在当前同源 ERSSTv5 延伸下，近年 residual FEP 领先 Niño3.4 的信号仍然存在，但相关强度不是特别高，应作为机制线索，而不是单独结论。
-- ORAS5 D20 右图现在是真正同源数据，不再是 GODAS 替代。2026 年仍然只有 Jan-May，因此 2026 行代表早期状态，不能当作全年背景。
+- ORAS5 D20 右图现在是真正同源数据，不再是 GODAS 替代。2026 年仍然只有 Jan-Jun，因此 2026 行代表上半年状态，不能当作全年背景。
 
 ## 输出
 
-- 图：`outputs/research_2026/figures/fig12_grl_fig4_same_sources_extended_to_2026.png`
-- PDF：`outputs/research_2026/figures/fig12_grl_fig4_same_sources_extended_to_2026.pdf`
+- 600 dpi 组合图：`outputs/research_2026/figures/fig12_grl_fig4_same_sources_extended_to_202606_600dpi.png`
+- 组合图 PDF：`outputs/research_2026/figures/fig12_grl_fig4_same_sources_extended_to_202606.pdf`
+- 600 dpi D20 单图：`outputs/research_2026/figures/fig12b_oras5_mean_removed_d20_10yr_to_202606_600dpi.png`
+- D20 单图 PDF：`outputs/research_2026/figures/fig12b_oras5_mean_removed_d20_10yr_to_202606.pdf`
 - ERSSTv5 residual 表：`data/derived/research_2026/grl_fig4_same_source_monthly_sst_residual_ersstv5.csv`
 - lead-lag 表：`data/derived/research_2026/grl_fig4_same_source_leadlag_corr_ersstv5_trailing15.csv`
-- ORAS5 D20 点列：`data/interim/research_2026/oras5_d20_timeseries_equatorial_1960_202605.csv`
+- ORAS5 D20 点列：`data/interim/research_2026/oras5_d20_timeseries_equatorial_1960_202606.csv`
 - ORAS5 D20 年度平滑表：`data/derived/research_2026/oras5_d20_annual_mean_removed_10yr.csv`
 
 ## 数据来源
@@ -325,7 +509,8 @@ def main() -> int:
     print(sst_path)
     print(corr_path)
     print(annual_path)
-    print(OUT_FIG / "fig12_grl_fig4_same_sources_extended_to_2026.png")
+    print(OUT_FIG / "fig12_grl_fig4_same_sources_extended_to_202606_600dpi.png")
+    print(OUT_FIG / "fig12b_oras5_mean_removed_d20_10yr_to_202606_600dpi.png")
     print(ROOT / "reports/GRL图4同源数据延伸到2026说明.md")
     return 0
 

@@ -1,0 +1,13 @@
+Communication job: by the end, a research-seminar audience should understand exactly how every quantitative figure in the deck was computed, because each figure is preceded by a one-to-one formula and data-definition slide.
+
+Source deck: 25 slides, 1280 x 720, white scientific-reporting layout with navy headings, blue eyebrow labels, three pastel formula cards, a gray method strip, and a colored takeaway band.
+
+Reusable slide type: source slide 7 is the formula/data pattern. It contains three inherited formula cards, two editable base/subscript/rest formula rows in the first card, a method strip, and a takeaway band. It is duplicated for all 11 newly inserted calculation pages.
+
+Insertion contract: preserve all 25 source slides unchanged. Insert calculation pages immediately before original quantitative figure slides 3, 4, 5, 13, 14, 15, 18, 21, 22, 23, and 24. Conceptual diagrams on original slides 17 and 20 are not treated as computed figures.
+
+Typography and spacing: preserve source slide 7 text frames, fonts, sizes, alignment, insets, card geometry, palette, and spacing. Rewrite inherited text only. Mathematical indices use real typographic subscripts or Unicode subscript characters; visible underscore notation is prohibited.
+
+Scientific constraints: current-study calculations explicitly identify SODA3.15.2, 0-300 m, and the 13-event sample where applicable. Paper-original figures retain the authors' own datasets and equations. No threshold-based warm-water metric is introduced.
+
+Placeholder audit: the source has one master/layout and no visible empty authoring placeholders on the duplicated formula slide. All inherited content-bearing text objects on duplicated formula pages are rewritten.

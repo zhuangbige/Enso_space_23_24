@@ -1,0 +1,26 @@
+{
+  "baseline": [
+    1982,
+    2022
+  ],
+  "events": {
+    "CT": [
+      1982,
+      1986,
+      1997,
+      2006
+    ],
+    "CP": [
+      1991,
+      1994,
+      2002,
+      2004
+    ]
+  },
+  "n_months": 492,
+  "n_events": 8,
+  "bootstrap_samples": 20000,
+  "qnet_component_identity_max_pw": 0.0,
+  "tau_boundary_correlation_min": 0.8908852115585413,
+  "tau_boundary_correlation_max": 0.9205273840142787
+}

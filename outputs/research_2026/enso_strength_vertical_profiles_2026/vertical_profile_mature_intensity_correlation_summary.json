@@ -1,0 +1,44 @@
+{
+  "figure_png": "/Users/daiyue/Documents/Maryland/outputs/research_2026/enso_strength_vertical_profiles_2026/fig_vertical_profile_metrics_vs_mature_nino34_2026.png",
+  "figure_pdf": "/Users/daiyue/Documents/Maryland/outputs/research_2026/enso_strength_vertical_profiles_2026/fig_vertical_profile_metrics_vs_mature_nino34_2026.pdf",
+  "points_csv": "/Users/daiyue/Documents/Maryland/outputs/research_2026/enso_strength_vertical_profiles_2026/vertical_profile_mature_intensity_correlation_points.csv",
+  "statistics_csv": "/Users/daiyue/Documents/Maryland/outputs/research_2026/enso_strength_vertical_profiles_2026/vertical_profile_mature_intensity_correlations.csv",
+  "n_historical_events": 9,
+  "target_year": 2026,
+  "target_outcome_used_in_fit": false,
+  "statistics": [
+    {
+      "predictor_id": "reservoir_depth",
+      "predictor_column": "jfm_warm_reservoir_depth_m",
+      "n_events": 9,
+      "pearson_r": -0.21903362625370232,
+      "spearman_r": -0.21666666666666667,
+      "exact_permutation_p": 0.5582038139329806,
+      "bootstrap_r_ci_low": -0.8375275716622267,
+      "bootstrap_r_ci_high": 0.6869690589594618,
+      "fdr_q": 0.5582038139329806
+    },
+    {
+      "predictor_id": "eastward_transfer",
+      "predictor_column": "warm_centroid_eastward_shift_deg",
+      "n_events": 9,
+      "pearson_r": 0.4755234350519136,
+      "spearman_r": 0.5,
+      "exact_permutation_p": 0.1974481922398589,
+      "bootstrap_r_ci_low": -0.007618135476518634,
+      "bootstrap_r_ci_high": 0.8212585231564751,
+      "fdr_q": 0.29617228835978837
+    },
+    {
+      "predictor_id": "east_50_100m_warming",
+      "predictor_column": "amj_east_50_100m_mean_anomaly_degC",
+      "n_events": 9,
+      "pearson_r": 0.8359990300420218,
+      "spearman_r": 0.8666666666666667,
+      "exact_permutation_p": 0.005693342151675485,
+      "bootstrap_r_ci_low": 0.5876614345646634,
+      "bootstrap_r_ci_high": 0.9774935996242462,
+      "fdr_q": 0.017080026455026456
+    }
+  ]
+}

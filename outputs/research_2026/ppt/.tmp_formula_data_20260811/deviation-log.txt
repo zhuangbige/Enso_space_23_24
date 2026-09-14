@@ -1,0 +1,7 @@
+Inserted six formula/data slides after the literature-summary block.
+
+Initial repeated-clone builds exposed a slide-relationship rendering defect in LibreOffice. The final file therefore imports the original 19-slide deck unchanged and inserts six editable slides assembled from native PowerPoint primitives while matching the deck's established visual system. This is a structural deviation from strict frame cloning, made to ensure stable rendering and editability.
+
+Original-paper diagnostics based on a threshold thermocline are deliberately omitted from the current fixed-layer methodology. The slide notes record this as an exclusion rather than presenting the removed variable.
+
+All displayed formula subscripts use subscript glyphs; visible underscore notation is absent from slides 6-11.

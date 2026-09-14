@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import argparse
 import io
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from zipfile import ZipFile
 
@@ -23,7 +24,7 @@ OUT_INTERIM = ROOT / "data/interim/research_2026"
 
 DATASET = "reanalysis-oras5-timeseries"
 VARIABLE = "depth_of_20_c_isotherm"
-DATE_RANGE = "1960-01-01/2026-05-01"
+DEFAULT_END_DATE = "2026-06-01"
 
 
 def _lon_label(lon: int) -> str:
@@ -39,9 +40,10 @@ def _query_lon(lon: int) -> int:
     return lon if lon <= 180 else lon - 360
 
 
-def _download_one(lon: int, latitude: float, force: bool) -> Path:
+def _download_one(lon: int, latitude: float, end_date: str, force: bool) -> Path:
     OUT_RAW.mkdir(parents=True, exist_ok=True)
-    target = OUT_RAW / f"oras5_d20_eq_{_lon_label(lon)}_1960_202605.zip"
+    end_tag = end_date[:7].replace("-", "")
+    target = OUT_RAW / f"oras5_d20_eq_{_lon_label(lon)}_1960_{end_tag}.zip"
     if target.exists() and target.stat().st_size > 0 and not force:
         print(f"exists: {target}")
         return target
@@ -51,7 +53,7 @@ def _download_one(lon: int, latitude: float, force: bool) -> Path:
     request = {
         "product_type": ["consolidated", "operational"],
         "variable": [VARIABLE],
-        "date": DATE_RANGE,
+        "date": f"1960-01-01/{end_date}",
         "location": {"latitude": latitude, "longitude": _query_lon(lon)},
         "data_format": "csv",
     }
@@ -84,11 +86,17 @@ def _read_zip_csv(path: Path, requested_lon: int) -> pd.DataFrame:
     return out
 
 
-def build_transect(longitudes: list[int], latitude: float, force: bool) -> pd.DataFrame:
+def build_transect(longitudes: list[int], latitude: float, end_date: str, force: bool, workers: int) -> pd.DataFrame:
     frames = []
-    for lon in longitudes:
-        path = _download_one(lon, latitude, force)
-        frames.append(_read_zip_csv(path, lon))
+    with ThreadPoolExecutor(max_workers=max(1, workers)) as pool:
+        futures = {
+            pool.submit(_download_one, lon, latitude, end_date, force): lon
+            for lon in longitudes
+        }
+        for future in as_completed(futures):
+            lon = futures[future]
+            path = future.result()
+            frames.append(_read_zip_csv(path, lon))
 
     all_data = pd.concat(frames, ignore_index=True)
     all_data = all_data.sort_values(["requested_lon", "time", "product_type"])
@@ -104,6 +112,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--lon-start", type=int, default=130)
     parser.add_argument("--lon-end", type=int, default=280)
     parser.add_argument("--lon-step", type=int, default=5)
+    parser.add_argument("--end-date", default=DEFAULT_END_DATE, help="Inclusive final month as YYYY-MM-01.")
+    parser.add_argument("--workers", type=int, default=4, help="Parallel CDS point requests; keep modest to avoid queue pressure.")
     parser.add_argument("--force", action="store_true")
     return parser.parse_args()
 
@@ -111,10 +121,11 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
     longitudes = list(range(args.lon_start, args.lon_end + 1, args.lon_step))
-    transect = build_transect(longitudes, args.latitude, args.force)
+    transect = build_transect(longitudes, args.latitude, args.end_date, args.force, args.workers)
 
     OUT_INTERIM.mkdir(parents=True, exist_ok=True)
-    out_path = OUT_INTERIM / "oras5_d20_timeseries_equatorial_1960_202605.csv"
+    end_tag = args.end_date[:7].replace("-", "")
+    out_path = OUT_INTERIM / f"oras5_d20_timeseries_equatorial_1960_{end_tag}.csv"
     transect.to_csv(out_path, index=False)
     print(out_path)
     return 0

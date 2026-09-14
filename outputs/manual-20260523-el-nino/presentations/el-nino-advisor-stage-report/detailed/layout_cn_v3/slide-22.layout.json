@@ -1,0 +1,2277 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/zl45ah",
+    "id": "zl45ah",
+    "slide": 22,
+    "layoutId": "eeae0df4-99e0-4f39-9912-afc7fcc982f2",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "396bf202-7f1a-4258-8d63-44274bd4b711",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Aptos",
+      "Aptos Display"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "eeae0df4-99e0-4f39-9912-afc7fcc982f2",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "396bf202-7f1a-4258-8d63-44274bd4b711",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "396bf202-7f1a-4258-8d63-44274bd4b711",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/m58z25kb",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#F7F3EA",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/twra5gbq",
+      "id": "2",
+      "bbox": [
+        58,
+        30,
+        360,
+        25
+      ],
+      "geometry": "rect",
+      "text": "附录 B",
+      "textPreview": "附录 B",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Aptos",
+        "color": "#CC5A43",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "附录 B"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "附录 B",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Aptos",
+            "color": "#CC5A43",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "附录 B",
+              "fontSize": 14,
+              "typeface": "Aptos",
+              "color": "#CC5A43",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4byhgn29",
+      "id": "3",
+      "bbox": [
+        58,
+        64,
+        1100,
+        82
+      ],
+      "geometry": "rect",
+      "text": "数据和文献链接",
+      "textPreview": "数据和文献链接",
+      "resolvedFontSize": 29,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 29,
+        "typeface": "Aptos Display",
+        "color": "#1D1B18",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "数据和文献链接"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "数据和文献链接",
+          "resolvedTextStyle": {
+            "fontSize": 29,
+            "typeface": "Aptos Display",
+            "color": "#1D1B18",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "数据和文献链接",
+              "fontSize": 29,
+              "typeface": "Aptos Display",
+              "color": "#1D1B18",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/b2hwfyxo",
+      "id": "4",
+      "bbox": [
+        58,
+        148,
+        1130,
+        1.5
+      ],
+      "geometry": "rect",
+      "fillColor": "#D8D1C4",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mhk3q5o7",
+      "id": "5",
+      "bbox": [
+        70,
+        176,
+        170,
+        48
+      ],
+      "geometry": "rect",
+      "fillColor": "#1D1B18",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.7
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/t83itgfm",
+      "id": "6",
+      "bbox": [
+        79,
+        183,
+        152,
+        38
+      ],
+      "geometry": "rect",
+      "text": "来源",
+      "textPreview": "来源",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "来源"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "来源",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "来源",
+              "fontSize": 12,
+              "typeface": "Aptos",
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4nap4r65",
+      "id": "7",
+      "bbox": [
+        240,
+        176,
+        390,
+        48
+      ],
+      "geometry": "rect",
+      "fillColor": "#1D1B18",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.7
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bat47y1k",
+      "id": "8",
+      "bbox": [
+        249,
+        183,
+        372,
+        38
+      ],
+      "geometry": "rect",
+      "text": "链接",
+      "textPreview": "链接",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "链接"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "链接",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "链接",
+              "fontSize": 12,
+              "typeface": "Aptos",
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mp0bi9s3",
+      "id": "9",
+      "bbox": [
+        630,
+        176,
+        528,
+        48
+      ],
+      "geometry": "rect",
+      "fillColor": "#1D1B18",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.7
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4byhgn29",
+      "id": "10",
+      "bbox": [
+        639,
+        183,
+        510,
+        38
+      ],
+      "geometry": "rect",
+      "text": "用途",
+      "textPreview": "用途",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "用途"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "用途",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "用途",
+              "fontSize": 12,
+              "typeface": "Aptos",
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/twra5gbq",
+      "id": "11",
+      "bbox": [
+        70,
+        224,
+        170,
+        48
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFAF1",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.7
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/m58z25kb",
+      "id": "12",
+      "bbox": [
+        79,
+        231,
+        152,
+        38
+      ],
+      "geometry": "rect",
+      "text": "Peng et al. 2025",
+      "textPreview": "Peng et al. 2025",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Peng et al. 2025"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Peng et al. 2025",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Peng et al. 2025",
+              "fontSize": 12,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bq1oryts",
+      "id": "13",
+      "bbox": [
+        240,
+        224,
+        390,
+        48
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFAF1",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.7
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4nap4r65",
+      "id": "14",
+      "bbox": [
+        249,
+        231,
+        372,
+        38
+      ],
+      "geometry": "rect",
+      "text": "nature.com/articles/s41561-025-01700-9",
+      "textPreview": "nature.com/articles/s41561-025-01700-9",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "nature.com/articles/s41561-025-01700-9"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "nature.com/articles/s41561-025-01700-9",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "nature.com/articles/s41561-025-01700-9",
+              "fontSize": 12,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/t83itgfm",
+      "id": "15",
+      "bbox": [
+        630,
+        224,
+        528,
+        48
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFAF1",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.7
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mhk3q5o7",
+      "id": "16",
+      "bbox": [
+        639,
+        231,
+        510,
+        38
+      ],
+      "geometry": "rect",
+      "text": "原文复现与问题来源",
+      "textPreview": "原文复现与问题来源",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "原文复现与问题来源"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "原文复现与问题来源",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "原文复现与问题来源",
+              "fontSize": 12,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/b2hwfyxo",
+      "id": "17",
+      "bbox": [
+        70,
+        272,
+        170,
+        48
+      ],
+      "geometry": "rect",
+      "fillColor": "#F2ECDF",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.7
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4vmtwra5",
+      "id": "18",
+      "bbox": [
+        79,
+        279,
+        152,
+        38
+      ],
+      "geometry": "rect",
+      "text": "NOAA OISST",
+      "textPreview": "NOAA OISST",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "NOAA OISST"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "NOAA OISST",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "NOAA OISST",
+              "fontSize": 12,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tgfmlkjm",
+      "id": "19",
+      "bbox": [
+        240,
+        272,
+        390,
+        48
+      ],
+      "geometry": "rect",
+      "fillColor": "#F2ECDF",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.7
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xc3ylc7u",
+      "id": "20",
+      "bbox": [
+        249,
+        279,
+        372,
+        38
+      ],
+      "geometry": "rect",
+      "text": "ncei.noaa.gov/products/optimum-interpolation-sst",
+      "textPreview": "ncei.noaa.gov/products/optimum-interpolation-sst",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ncei.noaa.gov/products/optimum-interpolation-sst"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ncei.noaa.gov/products/optimum-interpolation-sst",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ncei.noaa.gov/products/optimum-interpolation-sst",
+              "fontSize": 12,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4r65wjud",
+      "id": "21",
+      "bbox": [
+        630,
+        272,
+        528,
+        48
+      ],
+      "geometry": "rect",
+      "fillColor": "#F2ECDF",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.7
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/f6dcbulw",
+      "id": "22",
+      "bbox": [
+        639,
+        279,
+        510,
+        38
+      ],
+      "geometry": "rect",
+      "text": "海表温度",
+      "textPreview": "海表温度",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "海表温度"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "海表温度",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "海表温度",
+              "fontSize": 12,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mlkjm1cf",
+      "id": "23",
+      "bbox": [
+        70,
+        320,
+        170,
+        48
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFAF1",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.7
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xkf6dcbu",
+      "id": "24",
+      "bbox": [
+        79,
+        327,
+        152,
+        38
+      ],
+      "geometry": "rect",
+      "text": "GPCP",
+      "textPreview": "GPCP",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "GPCP"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "GPCP",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "GPCP",
+              "fontSize": 12,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4zidonyd",
+      "id": "25",
+      "bbox": [
+        240,
+        320,
+        390,
+        48
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFAF1",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.7
+    },
+    {
+      "order": 26,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fepkzupw",
+      "id": "26",
+      "bbox": [
+        249,
+        327,
+        372,
+        38
+      ],
+      "geometry": "rect",
+      "text": "psl.noaa.gov/data/gridded/data.gpcp.html",
+      "textPreview": "psl.noaa.gov/data/gridded/data.gpcp.html",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "psl.noaa.gov/data/gridded/data.gpcp.html"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "psl.noaa.gov/data/gridded/data.gpcp.html",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "psl.noaa.gov/data/gridded/data.gpcp.html",
+              "fontSize": 12,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 27,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mtwra5gb",
+      "id": "27",
+      "bbox": [
+        630,
+        320,
+        528,
+        48
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFAF1",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.7
+    },
+    {
+      "order": 28,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xobm58z2",
+      "id": "28",
+      "bbox": [
+        639,
+        327,
+        510,
+        38
+      ],
+      "geometry": "rect",
+      "text": "降水",
+      "textPreview": "降水",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "降水"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "降水",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "降水",
+              "fontSize": 12,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 29,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/83itgfml",
+      "id": "29",
+      "bbox": [
+        70,
+        368,
+        170,
+        48
+      ],
+      "geometry": "rect",
+      "fillColor": "#F2ECDF",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.7
+    },
+    {
+      "order": 30,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/i5sneloj",
+      "id": "30",
+      "bbox": [
+        79,
+        375,
+        152,
+        38
+      ],
+      "geometry": "rect",
+      "text": "NCEP/NCAR R1",
+      "textPreview": "NCEP/NCAR R1",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "NCEP/NCAR R1"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "NCEP/NCAR R1",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "NCEP/NCAR R1",
+              "fontSize": 12,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 31,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7qpg3ex0",
+      "id": "31",
+      "bbox": [
+        240,
+        368,
+        390,
+        48
+      ],
+      "geometry": "rect",
+      "fillColor": "#F2ECDF",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.7
+    },
+    {
+      "order": 32,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0bi9s36h",
+      "id": "32",
+      "bbox": [
+        249,
+        375,
+        372,
+        38
+      ],
+      "geometry": "rect",
+      "text": "psl.noaa.gov/data/reanalysis/",
+      "textPreview": "psl.noaa.gov/data/reanalysis/",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "psl.noaa.gov/data/reanalysis/"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "psl.noaa.gov/data/reanalysis/",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "psl.noaa.gov/data/reanalysis/",
+              "fontSize": 12,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 33,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pwb2hwfy",
+      "id": "33",
+      "bbox": [
+        630,
+        368,
+        528,
+        48
+      ],
+      "geometry": "rect",
+      "fillColor": "#F2ECDF",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.7
+    },
+    {
+      "order": 34,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ed8v6psf",
+      "id": "34",
+      "bbox": [
+        639,
+        375,
+        510,
+        38
+      ],
+      "geometry": "rect",
+      "text": "风压 fallback",
+      "textPreview": "风压 fallback",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "风压 fallback"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "风压 fallback",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "风压 fallback",
+              "fontSize": 12,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 35,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7y1kre1w",
+      "id": "35",
+      "bbox": [
+        70,
+        416,
+        170,
+        48
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFAF1",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.7
+    },
+    {
+      "order": 36,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wjudg7ad",
+      "id": "36",
+      "bbox": [
+        79,
+        423,
+        152,
+        38
+      ],
+      "geometry": "rect",
+      "text": "ERA5",
+      "textPreview": "ERA5",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ERA5"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ERA5",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ERA5",
+              "fontSize": 12,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 37,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p4r65wju",
+      "id": "37",
+      "bbox": [
+        240,
+        416,
+        390,
+        48
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFAF1",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.7
+    },
+    {
+      "order": 38,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ih4byhgn",
+      "id": "38",
+      "bbox": [
+        249,
+        423,
+        372,
+        38
+      ],
+      "geometry": "rect",
+      "text": "cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+      "textPreview": "cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+              "fontSize": 12,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 39,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/72x4nap4",
+      "id": "39",
+      "bbox": [
+        630,
+        416,
+        528,
+        48
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFAF1",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.7
+    },
+    {
+      "order": 40,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/val87ed8",
+      "id": "40",
+      "bbox": [
+        639,
+        423,
+        510,
+        38
+      ],
+      "geometry": "rect",
+      "text": "single-level u10/SLP 已用；下一步 pressure-level Walker",
+      "textPreview": "single-level u10/SLP 已用；下一步 pressure-level Walker",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "single-level u10/SLP 已用；下一步 pressure-level Walker"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "single-level u10/SLP 已用；下一步 pressure-level Walker",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "single-level u10/SLP 已用；下一步 pressure-level Walker",
+              "fontSize": 12,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 41,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6psfil0r",
+      "id": "41",
+      "bbox": [
+        70,
+        464,
+        170,
+        48
+      ],
+      "geometry": "rect",
+      "fillColor": "#F2ECDF",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.7
+    },
+    {
+      "order": 42,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dcbulwva",
+      "id": "42",
+      "bbox": [
+        79,
+        471,
+        152,
+        38
+      ],
+      "geometry": "rect",
+      "text": "NOAA OLR",
+      "textPreview": "NOAA OLR",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "NOAA OLR"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "NOAA OLR",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "NOAA OLR",
+              "fontSize": 12,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 43,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kre1w7mp",
+      "id": "43",
+      "bbox": [
+        240,
+        464,
+        390,
+        48
+      ],
+      "geometry": "rect",
+      "fillColor": "#F2ECDF",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.7
+    },
+    {
+      "order": 44,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vixczed8",
+      "id": "44",
+      "bbox": [
+        249,
+        471,
+        372,
+        38
+      ],
+      "geometry": "rect",
+      "text": "psl.noaa.gov/data/gridded/data.interp_OLR.html",
+      "textPreview": "psl.noaa.gov/data/gridded/data.interp_OLR.html",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "psl.noaa.gov/data/gridded/data.interp_OLR.html"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "psl.noaa.gov/data/gridded/data.interp_OLR.html",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "psl.noaa.gov/data/gridded/data.interp_OLR.html",
+              "fontSize": 12,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 45,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2x4nap4r",
+      "id": "45",
+      "bbox": [
+        630,
+        464,
+        528,
+        48
+      ],
+      "geometry": "rect",
+      "fillColor": "#F2ECDF",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.7
+    },
+    {
+      "order": 46,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/donyd0z6",
+      "id": "46",
+      "bbox": [
+        639,
+        471,
+        510,
+        38
+      ],
+      "geometry": "rect",
+      "text": "下一步对流验证",
+      "textPreview": "下一步对流验证",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "下一步对流验证"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "下一步对流验证",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "下一步对流验证",
+              "fontSize": 12,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 47,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/k3q5o7qp",
+      "id": "47",
+      "bbox": [
+        70,
+        512,
+        170,
+        48
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFAF1",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.7
+    },
+    {
+      "order": 48,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vu9knih4",
+      "id": "48",
+      "bbox": [
+        79,
+        519,
+        152,
+        38
+      ],
+      "geometry": "rect",
+      "text": "ERSSTv5",
+      "textPreview": "ERSSTv5",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ERSSTv5"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ERSSTv5",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ERSSTv5",
+              "fontSize": 12,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 49,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/29gr2p8n",
+      "id": "49",
+      "bbox": [
+        240,
+        512,
+        390,
+        48
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFAF1",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.7
+    },
+    {
+      "order": 50,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cfa9w3m9",
+      "id": "50",
+      "bbox": [
+        249,
+        519,
+        372,
+        38
+      ],
+      "geometry": "rect",
+      "text": "ncei.noaa.gov/products/extended-reconstructed-sst",
+      "textPreview": "ncei.noaa.gov/products/extended-reconstructed-sst",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ncei.noaa.gov/products/extended-reconstructed-sst"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ncei.noaa.gov/products/extended-reconstructed-sst",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ncei.noaa.gov/products/extended-reconstructed-sst",
+              "fontSize": 12,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 51,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1032lszq",
+      "id": "51",
+      "bbox": [
+        630,
+        512,
+        528,
+        48
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFAF1",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.7
+    },
+    {
+      "order": 52,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/u9knih4b",
+      "id": "52",
+      "bbox": [
+        639,
+        519,
+        510,
+        38
+      ],
+      "geometry": "rect",
+      "text": "长记录稳健性",
+      "textPreview": "长记录稳健性",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "长记录稳健性"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "长记录稳健性",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "长记录稳健性",
+              "fontSize": 12,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 53,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/judg7ads",
+      "id": "53",
+      "bbox": [
+        58,
+        680,
+        1120,
+        26
+      ],
+      "geometry": "rect",
+      "text": "Full source log: docs/data_source_log.md.",
+      "textPreview": "Full source log: docs/data_source_log.md.",
+      "resolvedFontSize": 10.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 10.51,
+        "typeface": "Aptos",
+        "color": "#5D574F",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Full source log: docs/data_source_log.md."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Full source log: docs/data_source_log.md.",
+          "resolvedTextStyle": {
+            "fontSize": 10.51,
+            "typeface": "Aptos",
+            "color": "#5D574F",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Full source log: docs/data_source_log.md.",
+              "fontSize": 10.51,
+              "typeface": "Aptos",
+              "color": "#5D574F"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

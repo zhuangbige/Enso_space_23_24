@@ -1,0 +1,4 @@
+test_id,label,x,y,controls,n_events,partial_r,partial_spearman_r,analytic_p,permutation_p,bootstrap_ci_low,bootstrap_ci_high,loeo_r_min,loeo_r_max,window
+lag_0,Jan-Mar -> AMJ: north partition -> wind-stress response,delta_h20_north_jan_mar_zj,tau_pattern_residual_z_amj,delta_h20_total_jan_mar_zj,13,-0.681197864,-0.565934066,0.0147246508,0.0090198196,-0.943957797,0.0501475715,-0.851040215,-0.528130075,Jan-Mar -> AMJ
+lag_1,Jan-Apr -> MJJ: north partition -> wind-stress response,delta_h20_north_jan_apr_zj,tau_pattern_residual_z_mjj,delta_h20_total_jan_apr_zj,13,-0.565258098,-0.461538462,0.0554599711,0.0456390872,-0.897226337,0.281297131,-0.767392746,-0.428006865,Jan-Apr -> MJJ
+lag_2,Jan-May -> JJA: north partition -> wind-stress response,delta_h20_north_jan_may_zj,tau_pattern_residual_z_jja,delta_h20_total_jan_may_zj,13,-0.523531681,-0.521978022,0.0806625956,0.0690786184,-0.888526523,0.106620444,-0.676661052,-0.424329147,Jan-May -> JJA

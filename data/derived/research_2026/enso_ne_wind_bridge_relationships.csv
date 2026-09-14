@@ -1,0 +1,5 @@
+relationship,predictor,response,partial_r,bootstrap_ci_low,bootstrap_ci_high,controls,n_events
+FEP residual -> northeasterly intrusion,fep_residual_mjj_z,ne850_mjj_z,0.049744114583340916,-0.4401924021959208,0.5492649325172546,east_ocean_state_z_z; early_ec_apr_z,13
+Rain dipole -> northeasterly intrusion,precip_dipole_mjj_z,ne850_mjj_z,0.5133644484508298,-0.1865939243452456,0.9044018472085739,east_ocean_state_z_z; early_ec_apr_z; fep_residual_mjj_z,13
+Northeasterly intrusion -> zonal stress,ne850_mjj_z,tau_response_mjj_z,-0.28176164181333885,-0.6676243915676966,0.23477731000893703,east_ocean_state_z_z; early_ec_apr_z; fep_residual_mjj_z,13
+Northeasterly intrusion -> coupling,ne850_mjj_z,coupling_mjj_z,-0.06182610915806702,-0.5793654280259535,0.6406627188028658,east_ocean_state_z_z; early_ec_apr_z; fep_residual_mjj_z,13

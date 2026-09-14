@@ -1,0 +1,23 @@
+{
+  "events": [
+    1982,
+    1986,
+    1991,
+    1994,
+    1997,
+    2002,
+    2004,
+    2006,
+    2009,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "primary_predictor": "JFM 0-300 m mass-balanced northward anomalous-enthalpy output across 5N",
+  "primary_target": "MJJ Jiang-box northeasterly residual",
+  "h20_or_q20_used": false,
+  "permutations": 20000,
+  "bootstraps": 10000,
+  "causal_status": "strictly leading observational association; mediator not closed"
+}

@@ -1,0 +1,11 @@
+import { FileBlob, PresentationFile } from "@oai/artifact-tool";
+const p = await PresentationFile.importPptx(await FileBlob.load("template-starter.pptx"));
+const c = p.resolve("ch/q9cnmpcj");
+console.log(Object.keys(c));
+console.log(Object.getOwnPropertyNames(Object.getPrototypeOf(c)));
+const s = p.slides.getItem(17);
+console.log("slide keys", Object.keys(s));
+console.log("charts keys", Object.keys(s.charts), Object.getOwnPropertyNames(Object.getPrototypeOf(s.charts)));
+console.log("chart id", c.id, s.charts.items.map((item) => ({ id: item.id, type: item.chartType })));
+console.log("shapes keys", Object.keys(s.shapes), Object.getOwnPropertyNames(Object.getPrototypeOf(s.shapes)));
+console.log(p.help("*", { search: "chart delete remove collection", include: ["index", "examples", "notes"], maxChars: 12000 }).ndjson);

@@ -1,0 +1,289 @@
+validation,year,warm_event,box_group,model,prediction,observed,n_training_years
+leave-one-year-out,1991,True,EP,NMME,-0.2577516508075314,-0.03767737026870677,29
+leave-one-year-out,1991,True,EP,NMME + Mar-Apr total WWV,-0.20792002301826223,-0.03767737026870677,29
+leave-one-year-out,1991,True,EP,NMME + Mar-Apr FEP,-0.26049247895950517,-0.03767737026870677,29
+leave-one-year-out,1991,True,EP,NMME + May-Jun ocean position,-0.13626102078354785,-0.03767737026870677,29
+leave-one-year-out,1991,True,EP,NMME + May-Jun coupling,-0.6824919819367254,-0.03767737026870677,29
+leave-one-year-out,1991,True,EP,NMME + position + coupling,-0.6395799113159474,-0.03767737026870677,29
+leave-one-year-out,1992,False,,NMME,-0.01351781610884443,-0.4680512498080218,29
+leave-one-year-out,1992,False,,NMME + Mar-Apr total WWV,-0.009347160008362368,-0.4680512498080218,29
+leave-one-year-out,1992,False,,NMME + Mar-Apr FEP,0.0235447954511653,-0.4680512498080218,29
+leave-one-year-out,1992,False,,NMME + May-Jun ocean position,0.25992537986476516,-0.4680512498080218,29
+leave-one-year-out,1992,False,,NMME + May-Jun coupling,-0.055899459411444904,-0.4680512498080218,29
+leave-one-year-out,1992,False,,NMME + position + coupling,0.0927419080670067,-0.4680512498080218,29
+leave-one-year-out,1993,False,,NMME,0.28006890740872475,-0.07825953981308542,29
+leave-one-year-out,1993,False,,NMME + Mar-Apr total WWV,0.26333919093801883,-0.07825953981308542,29
+leave-one-year-out,1993,False,,NMME + Mar-Apr FEP,0.2852192509755244,-0.07825953981308542,29
+leave-one-year-out,1993,False,,NMME + May-Jun ocean position,0.44124175794727555,-0.07825953981308542,29
+leave-one-year-out,1993,False,,NMME + May-Jun coupling,0.24252432078119085,-0.07825953981308542,29
+leave-one-year-out,1993,False,,NMME + position + coupling,0.3217224384941454,-0.07825953981308542,29
+leave-one-year-out,1994,True,CP,NMME,-0.5677172535826509,-0.305686434194397,29
+leave-one-year-out,1994,True,CP,NMME + Mar-Apr total WWV,-0.5663081444749045,-0.305686434194397,29
+leave-one-year-out,1994,True,CP,NMME + Mar-Apr FEP,-0.6314100460383729,-0.305686434194397,29
+leave-one-year-out,1994,True,CP,NMME + May-Jun ocean position,-0.5306144946321775,-0.305686434194397,29
+leave-one-year-out,1994,True,CP,NMME + May-Jun coupling,-0.609763529852604,-0.305686434194397,29
+leave-one-year-out,1994,True,CP,NMME + position + coupling,-0.5927798212458002,-0.305686434194397,29
+leave-one-year-out,1995,False,,NMME,-0.5712721103062433,-0.700264298127812,29
+leave-one-year-out,1995,False,,NMME + Mar-Apr total WWV,-0.5933107971081238,-0.700264298127812,29
+leave-one-year-out,1995,False,,NMME + Mar-Apr FEP,-0.577175959422167,-0.700264298127812,29
+leave-one-year-out,1995,False,,NMME + May-Jun ocean position,-0.4915631119502113,-0.700264298127812,29
+leave-one-year-out,1995,False,,NMME + May-Jun coupling,-0.5569124063140954,-0.700264298127812,29
+leave-one-year-out,1995,False,,NMME + position + coupling,-0.5220110780240812,-0.700264298127812,29
+leave-one-year-out,1996,False,,NMME,-0.039767677423598435,-0.3896930860064707,29
+leave-one-year-out,1996,False,,NMME + Mar-Apr total WWV,-0.022301035455389657,-0.3896930860064707,29
+leave-one-year-out,1996,False,,NMME + Mar-Apr FEP,-0.04054383110576419,-0.3896930860064707,29
+leave-one-year-out,1996,False,,NMME + May-Jun ocean position,-0.1268906713268561,-0.3896930860064707,29
+leave-one-year-out,1996,False,,NMME + May-Jun coupling,0.001363189716714449,-0.3896930860064707,29
+leave-one-year-out,1996,False,,NMME + position + coupling,-0.029054930100750713,-0.3896930860064707,29
+leave-one-year-out,1997,True,EP,NMME,0.842043314432586,2.502969508586544,29
+leave-one-year-out,1997,True,EP,NMME + Mar-Apr total WWV,0.8181674397086471,2.502969508586544,29
+leave-one-year-out,1997,True,EP,NMME + Mar-Apr FEP,0.8331832884746028,2.502969508586544,29
+leave-one-year-out,1997,True,EP,NMME + May-Jun ocean position,0.9126679101973135,2.502969508586544,29
+leave-one-year-out,1997,True,EP,NMME + May-Jun coupling,1.6797445501151484,2.502969508586544,29
+leave-one-year-out,1997,True,EP,NMME + position + coupling,1.6774006680834057,2.502969508586544,29
+leave-one-year-out,1998,False,,NMME,0.27259636992805103,0.2948698899110962,29
+leave-one-year-out,1998,False,,NMME + Mar-Apr total WWV,0.0018032632354701118,0.2948698899110962,29
+leave-one-year-out,1998,False,,NMME + Mar-Apr FEP,0.3317218964108902,0.2948698899110962,29
+leave-one-year-out,1998,False,,NMME + May-Jun ocean position,0.19498987876323365,0.2948698899110962,29
+leave-one-year-out,1998,False,,NMME + May-Jun coupling,0.37071699345330156,0.2948698899110962,29
+leave-one-year-out,1998,False,,NMME + position + coupling,0.3314209136177692,0.2948698899110962,29
+leave-one-year-out,1999,False,,NMME,-0.27493395276343635,-0.33367185349419026,29
+leave-one-year-out,1999,False,,NMME + Mar-Apr total WWV,-0.3068013099566059,-0.33367185349419026,29
+leave-one-year-out,1999,False,,NMME + Mar-Apr FEP,-0.26968111205898593,-0.33367185349419026,29
+leave-one-year-out,1999,False,,NMME + May-Jun ocean position,-0.4601348166535092,-0.33367185349419026,29
+leave-one-year-out,1999,False,,NMME + May-Jun coupling,0.07237505679778387,-0.33367185349419026,29
+leave-one-year-out,1999,False,,NMME + position + coupling,9.917492082492148e-05,-0.33367185349419026,29
+leave-one-year-out,2000,False,,NMME,0.07782890988066211,0.07820101676100188,29
+leave-one-year-out,2000,False,,NMME + Mar-Apr total WWV,0.10162385215093504,0.07820101676100188,29
+leave-one-year-out,2000,False,,NMME + Mar-Apr FEP,0.07881246367814175,0.07820101676100188,29
+leave-one-year-out,2000,False,,NMME + May-Jun ocean position,-0.14732997542945364,0.07820101676100188,29
+leave-one-year-out,2000,False,,NMME + May-Jun coupling,0.20815071300618548,0.07820101676100188,29
+leave-one-year-out,2000,False,,NMME + position + coupling,0.1044670737084733,0.07820101676100188,29
+leave-one-year-out,2001,False,,NMME,0.2351857505216025,-0.7873703345289358,29
+leave-one-year-out,2001,False,,NMME + Mar-Apr total WWV,0.23231357042106768,-0.7873703345289358,29
+leave-one-year-out,2001,False,,NMME + Mar-Apr FEP,0.2442920304944578,-0.7873703345289358,29
+leave-one-year-out,2001,False,,NMME + May-Jun ocean position,0.14910408281985582,-0.7873703345289358,29
+leave-one-year-out,2001,False,,NMME + May-Jun coupling,0.15198707143705775,-0.7873703345289358,29
+leave-one-year-out,2001,False,,NMME + position + coupling,0.1394423090312201,-0.7873703345289358,29
+leave-one-year-out,2002,True,borderline,NMME,-0.10900217665509933,0.33491823199060367,29
+leave-one-year-out,2002,True,borderline,NMME + Mar-Apr total WWV,-0.08991415145548565,0.33491823199060367,29
+leave-one-year-out,2002,True,borderline,NMME + Mar-Apr FEP,-0.11502731150119601,0.33491823199060367,29
+leave-one-year-out,2002,True,borderline,NMME + May-Jun ocean position,-0.09531127014380696,0.33491823199060367,29
+leave-one-year-out,2002,True,borderline,NMME + May-Jun coupling,-0.3167863877386562,0.33491823199060367,29
+leave-one-year-out,2002,True,borderline,NMME + position + coupling,-0.30389109542095827,0.33491823199060367,29
+leave-one-year-out,2003,False,,NMME,-0.5805816433207305,0.07380561561543475,29
+leave-one-year-out,2003,False,,NMME + Mar-Apr total WWV,-0.5817958669708193,0.07380561561543475,29
+leave-one-year-out,2003,False,,NMME + Mar-Apr FEP,-0.5808764302003432,0.07380561561543475,29
+leave-one-year-out,2003,False,,NMME + May-Jun ocean position,-0.5544211422030435,0.07380561561543475,29
+leave-one-year-out,2003,False,,NMME + May-Jun coupling,-0.14738438196212988,0.07380561561543475,29
+leave-one-year-out,2003,False,,NMME + position + coupling,-0.1523764849438657,0.07380561561543475,29
+leave-one-year-out,2004,True,CP,NMME,-0.20240351677221288,-0.1833832421036905,29
+leave-one-year-out,2004,True,CP,NMME + Mar-Apr total WWV,-0.19132258317628398,-0.1833832421036905,29
+leave-one-year-out,2004,True,CP,NMME + Mar-Apr FEP,-0.21613819592655156,-0.1833832421036905,29
+leave-one-year-out,2004,True,CP,NMME + May-Jun ocean position,-0.20332153216076215,-0.1833832421036905,29
+leave-one-year-out,2004,True,CP,NMME + May-Jun coupling,-0.4131223275064394,-0.1833832421036905,29
+leave-one-year-out,2004,True,CP,NMME + position + coupling,-0.40570040007581526,-0.1833832421036905,29
+leave-one-year-out,2005,False,,NMME,-0.2937035910979537,-0.5390590174863563,29
+leave-one-year-out,2005,False,,NMME + Mar-Apr total WWV,-0.2314083948858499,-0.5390590174863563,29
+leave-one-year-out,2005,False,,NMME + Mar-Apr FEP,-0.2965272358113661,-0.5390590174863563,29
+leave-one-year-out,2005,False,,NMME + May-Jun ocean position,-0.2219195866416346,-0.5390590174863563,29
+leave-one-year-out,2005,False,,NMME + May-Jun coupling,-0.3303095986714091,-0.5390590174863563,29
+leave-one-year-out,2005,False,,NMME + position + coupling,-0.29678219451256815,-0.5390590174863563,29
+leave-one-year-out,2006,True,borderline,NMME,0.21094409073411205,0.17678328044798386,29
+leave-one-year-out,2006,True,borderline,NMME + Mar-Apr total WWV,0.21000057196312996,0.17678328044798386,29
+leave-one-year-out,2006,True,borderline,NMME + Mar-Apr FEP,0.20089831158269242,0.17678328044798386,29
+leave-one-year-out,2006,True,borderline,NMME + May-Jun ocean position,0.1770477289110648,0.17678328044798386,29
+leave-one-year-out,2006,True,borderline,NMME + May-Jun coupling,0.0820474144832797,0.17678328044798386,29
+leave-one-year-out,2006,True,borderline,NMME + position + coupling,0.07237663453598008,0.17678328044798386,29
+leave-one-year-out,2007,False,,NMME,-0.6618180889761751,-0.5886543039864662,29
+leave-one-year-out,2007,False,,NMME + Mar-Apr total WWV,-0.6791755310727428,-0.5886543039864662,29
+leave-one-year-out,2007,False,,NMME + Mar-Apr FEP,-0.6617860649031904,-0.5886543039864662,29
+leave-one-year-out,2007,False,,NMME + May-Jun ocean position,-0.7442501691257659,-0.5886543039864662,29
+leave-one-year-out,2007,False,,NMME + May-Jun coupling,-0.7149455967284349,-0.5886543039864662,29
+leave-one-year-out,2007,False,,NMME + position + coupling,-0.7464112561027366,-0.5886543039864662,29
+leave-one-year-out,2008,False,,NMME,0.3927410285543915,0.7845664190904889,29
+leave-one-year-out,2008,False,,NMME + Mar-Apr total WWV,0.41517652163201046,0.7845664190904889,29
+leave-one-year-out,2008,False,,NMME + Mar-Apr FEP,0.3603958639616062,0.7845664190904889,29
+leave-one-year-out,2008,False,,NMME + May-Jun ocean position,0.2328819681056963,0.7845664190904889,29
+leave-one-year-out,2008,False,,NMME + May-Jun coupling,0.4049986944891707,0.7845664190904889,29
+leave-one-year-out,2008,False,,NMME + position + coupling,0.31867991006938384,0.7845664190904889,29
+leave-one-year-out,2009,True,borderline,NMME,0.3187739425400082,0.0460341857771267,29
+leave-one-year-out,2009,True,borderline,NMME + Mar-Apr total WWV,0.3211747825229462,0.0460341857771267,29
+leave-one-year-out,2009,True,borderline,NMME + Mar-Apr FEP,0.31598150514586665,0.0460341857771267,29
+leave-one-year-out,2009,True,borderline,NMME + May-Jun ocean position,0.2856856622072613,0.0460341857771267,29
+leave-one-year-out,2009,True,borderline,NMME + May-Jun coupling,-0.15665799234320488,0.0460341857771267,29
+leave-one-year-out,2009,True,borderline,NMME + position + coupling,-0.15446620690272475,0.0460341857771267,29
+leave-one-year-out,2010,False,,NMME,0.03452715214669231,0.14203816972613703,29
+leave-one-year-out,2010,False,,NMME + Mar-Apr total WWV,0.016538934220767854,0.14203816972613703,29
+leave-one-year-out,2010,False,,NMME + Mar-Apr FEP,0.03817959534094598,0.14203816972613703,29
+leave-one-year-out,2010,False,,NMME + May-Jun ocean position,-0.09658738198886654,0.14203816972613703,29
+leave-one-year-out,2010,False,,NMME + May-Jun coupling,-0.18339154965120288,0.14203816972613703,29
+leave-one-year-out,2010,False,,NMME + position + coupling,-0.2361128029405519,0.14203816972613703,29
+leave-one-year-out,2011,False,,NMME,0.35537630489504757,-0.04791311700588263,29
+leave-one-year-out,2011,False,,NMME + Mar-Apr total WWV,0.42115940284756054,-0.04791311700588263,29
+leave-one-year-out,2011,False,,NMME + Mar-Apr FEP,0.3615921401496842,-0.04791311700588263,29
+leave-one-year-out,2011,False,,NMME + May-Jun ocean position,0.2669557922476646,-0.04791311700588263,29
+leave-one-year-out,2011,False,,NMME + May-Jun coupling,0.11747968993227023,-0.04791311700588263,29
+leave-one-year-out,2011,False,,NMME + position + coupling,0.09157072946713135,-0.04791311700588263,29
+leave-one-year-out,2012,False,,NMME,0.2604437073773103,-0.11926069738643896,29
+leave-one-year-out,2012,False,,NMME + Mar-Apr total WWV,0.26330579863846326,-0.11926069738643896,29
+leave-one-year-out,2012,False,,NMME + Mar-Apr FEP,0.27966739706076343,-0.11926069738643896,29
+leave-one-year-out,2012,False,,NMME + May-Jun ocean position,0.1500192719414726,-0.11926069738643896,29
+leave-one-year-out,2012,False,,NMME + May-Jun coupling,-0.31859266482674947,-0.11926069738643896,29
+leave-one-year-out,2012,False,,NMME + position + coupling,-0.35288777728059234,-0.11926069738643896,29
+leave-one-year-out,2013,False,,NMME,-0.18275219543213836,-0.14800740505019272,29
+leave-one-year-out,2013,False,,NMME + Mar-Apr total WWV,-0.1830790637941794,-0.14800740505019272,29
+leave-one-year-out,2013,False,,NMME + Mar-Apr FEP,-0.18912523656688557,-0.14800740505019272,29
+leave-one-year-out,2013,False,,NMME + May-Jun ocean position,-0.2971662018652418,-0.14800740505019272,29
+leave-one-year-out,2013,False,,NMME + May-Jun coupling,-0.27550954515251846,-0.14800740505019272,29
+leave-one-year-out,2013,False,,NMME + position + coupling,-0.32084924704169765,-0.14800740505019272,29
+leave-one-year-out,2014,False,,NMME,0.8568011814077497,0.12003236058364086,29
+leave-one-year-out,2014,False,,NMME + Mar-Apr total WWV,0.8589244080492464,0.12003236058364086,29
+leave-one-year-out,2014,False,,NMME + Mar-Apr FEP,0.8875552411006409,0.12003236058364086,29
+leave-one-year-out,2014,False,,NMME + May-Jun ocean position,0.9759448695723347,0.12003236058364086,29
+leave-one-year-out,2014,False,,NMME + May-Jun coupling,0.31742145238110914,0.12003236058364086,29
+leave-one-year-out,2014,False,,NMME + position + coupling,0.40936158914929593,0.12003236058364086,29
+leave-one-year-out,2015,True,EP,NMME,0.9452028836058047,1.645149139970969,29
+leave-one-year-out,2015,True,EP,NMME + Mar-Apr total WWV,0.911602480374142,1.645149139970969,29
+leave-one-year-out,2015,True,EP,NMME + Mar-Apr FEP,0.891837719415404,1.645149139970969,29
+leave-one-year-out,2015,True,EP,NMME + May-Jun ocean position,1.0773907582493525,1.645149139970969,29
+leave-one-year-out,2015,True,EP,NMME + May-Jun coupling,1.730712557831347,1.645149139970969,29
+leave-one-year-out,2015,True,EP,NMME + position + coupling,1.7326789258650055,1.645149139970969,29
+leave-one-year-out,2016,False,,NMME,-0.3787394888568186,-0.013899978883084696,29
+leave-one-year-out,2016,False,,NMME + Mar-Apr total WWV,-0.6003746943049717,-0.013899978883084696,29
+leave-one-year-out,2016,False,,NMME + Mar-Apr FEP,-0.38283688576686375,-0.013899978883084696,29
+leave-one-year-out,2016,False,,NMME + May-Jun ocean position,-0.3540912635071165,-0.013899978883084696,29
+leave-one-year-out,2016,False,,NMME + May-Jun coupling,0.04263136218234321,-0.013899978883084696,29
+leave-one-year-out,2016,False,,NMME + position + coupling,0.03717962962319823,-0.013899978883084696,29
+leave-one-year-out,2017,False,,NMME,-0.10185689964052443,-0.5890958956148338,29
+leave-one-year-out,2017,False,,NMME + Mar-Apr total WWV,-0.11473611509979836,-0.5890958956148338,29
+leave-one-year-out,2017,False,,NMME + Mar-Apr FEP,-0.02218720798469748,-0.5890958956148338,29
+leave-one-year-out,2017,False,,NMME + May-Jun ocean position,-0.07637345360713715,-0.5890958956148338,29
+leave-one-year-out,2017,False,,NMME + May-Jun coupling,-0.2658990148603767,-0.5890958956148338,29
+leave-one-year-out,2017,False,,NMME + position + coupling,-0.24733162451035787,-0.5890958956148338,29
+leave-one-year-out,2018,True,borderline,NMME,-0.5050625709569938,-0.07300356065444014,29
+leave-one-year-out,2018,True,borderline,NMME + Mar-Apr total WWV,-0.4719252921866664,-0.07300356065444014,29
+leave-one-year-out,2018,True,borderline,NMME + Mar-Apr FEP,-0.5038732507724855,-0.07300356065444014,29
+leave-one-year-out,2018,True,borderline,NMME + May-Jun ocean position,-0.3221537965534207,-0.07300356065444014,29
+leave-one-year-out,2018,True,borderline,NMME + May-Jun coupling,-0.31507563285912427,-0.07300356065444014,29
+leave-one-year-out,2018,True,borderline,NMME + position + coupling,-0.2561948644161966,-0.07300356065444014,29
+leave-one-year-out,2019,True,CP,NMME,-0.20851245763956844,-0.5935995673398589,29
+leave-one-year-out,2019,True,CP,NMME + Mar-Apr total WWV,-0.1987016583403108,-0.5935995673398589,29
+leave-one-year-out,2019,True,CP,NMME + Mar-Apr FEP,-0.2099379256878442,-0.5935995673398589,29
+leave-one-year-out,2019,True,CP,NMME + May-Jun ocean position,-0.06721141646852985,-0.5935995673398589,29
+leave-one-year-out,2019,True,CP,NMME + May-Jun coupling,-0.15714738823626392,-0.5935995673398589,29
+leave-one-year-out,2019,True,CP,NMME + position + coupling,-0.09142911494083031,-0.5935995673398589,29
+leave-one-year-out,2020,False,,NMME,-0.7522216230285728,-0.29289469695444037,29
+leave-one-year-out,2020,False,,NMME + Mar-Apr total WWV,-0.743972678424129,-0.29289469695444037,29
+leave-one-year-out,2020,False,,NMME + Mar-Apr FEP,-0.7505271193303859,-0.29289469695444037,29
+leave-one-year-out,2020,False,,NMME + May-Jun ocean position,-0.7047498667877949,-0.29289469695444037,29
+leave-one-year-out,2020,False,,NMME + May-Jun coupling,-0.2944681099069574,-0.29289469695444037,29
+leave-one-year-out,2020,False,,NMME + position + coupling,-0.2892941258765121,-0.29289469695444037,29
+expanding-window,2003,False,,NMME,-0.9527925678925899,-0.10286227139560822,12
+expanding-window,2003,False,,NMME + Mar-Apr total WWV,-0.9022554713439855,-0.10286227139560822,12
+expanding-window,2003,False,,NMME + Mar-Apr FEP,-0.8588548322465919,-0.10286227139560822,12
+expanding-window,2003,False,,NMME + May-Jun ocean position,-0.47006797498735364,-0.10286227139560822,12
+expanding-window,2003,False,,NMME + May-Jun coupling,-0.42817427350973997,-0.10286227139560822,12
+expanding-window,2003,False,,NMME + position + coupling,-0.00017340510642703714,-0.10286227139560822,12
+expanding-window,2004,True,CP,NMME,-0.2136849941084392,-0.3443607917198799,13
+expanding-window,2004,True,CP,NMME + Mar-Apr total WWV,-0.13539163089897943,-0.3443607917198799,13
+expanding-window,2004,True,CP,NMME + Mar-Apr FEP,0.06329639802574631,-0.3443607917198799,13
+expanding-window,2004,True,CP,NMME + May-Jun ocean position,0.12020883707829542,-0.3443607917198799,13
+expanding-window,2004,True,CP,NMME + May-Jun coupling,-0.6874005984611576,-0.3443607917198799,13
+expanding-window,2004,True,CP,NMME + position + coupling,-0.3355077195240629,-0.3443607917198799,13
+expanding-window,2005,False,,NMME,-0.2642240166384506,-0.61144585661836,14
+expanding-window,2005,False,,NMME + Mar-Apr total WWV,-0.10258875547118905,-0.61144585661836,14
+expanding-window,2005,False,,NMME + Mar-Apr FEP,-0.12724198469780412,-0.61144585661836,14
+expanding-window,2005,False,,NMME + May-Jun ocean position,0.13600527207339147,-0.61144585661836,14
+expanding-window,2005,False,,NMME + May-Jun coupling,-0.4050069884598779,-0.61144585661836,14
+expanding-window,2005,False,,NMME + position + coupling,-0.10618915331934156,-0.61144585661836,14
+expanding-window,2006,True,borderline,NMME,0.40216408610765425,0.2318161919003412,15
+expanding-window,2006,True,borderline,NMME + Mar-Apr total WWV,0.39297211087902456,0.2318161919003412,15
+expanding-window,2006,True,borderline,NMME + Mar-Apr FEP,0.43855682128279505,0.2318161919003412,15
+expanding-window,2006,True,borderline,NMME + May-Jun ocean position,0.482107732793722,0.2318161919003412,15
+expanding-window,2006,True,borderline,NMME + May-Jun coupling,0.1425545503863234,0.2318161919003412,15
+expanding-window,2006,True,borderline,NMME + position + coupling,0.21576124274357805,0.2318161919003412,15
+expanding-window,2007,False,,NMME,-0.6925565058576876,-0.5618571758270283,16
+expanding-window,2007,False,,NMME + Mar-Apr total WWV,-0.7449907951127366,-0.5618571758270283,16
+expanding-window,2007,False,,NMME + Mar-Apr FEP,-0.697705379972668,-0.5618571758270283,16
+expanding-window,2007,False,,NMME + May-Jun ocean position,-0.6829290317763528,-0.5618571758270283,16
+expanding-window,2007,False,,NMME + May-Jun coupling,-0.7128779925758854,-0.5618571758270283,16
+expanding-window,2007,False,,NMME + position + coupling,-0.7052682019839213,-0.5618571758270283,16
+expanding-window,2008,False,,NMME,0.6852071760852922,0.8935012396644186,17
+expanding-window,2008,False,,NMME + Mar-Apr total WWV,0.7489713454008026,0.8935012396644186,17
+expanding-window,2008,False,,NMME + Mar-Apr FEP,0.6632870244021463,0.8935012396644186,17
+expanding-window,2008,False,,NMME + May-Jun ocean position,0.6238743612602076,0.8935012396644186,17
+expanding-window,2008,False,,NMME + May-Jun coupling,0.0942813885246624,0.8935012396644186,17
+expanding-window,2008,False,,NMME + position + coupling,0.11110878291956112,0.8935012396644186,17
+expanding-window,2009,True,borderline,NMME,0.45821910774351415,-0.007540297664069939,18
+expanding-window,2009,True,borderline,NMME + Mar-Apr total WWV,0.4482815946537907,-0.007540297664069939,18
+expanding-window,2009,True,borderline,NMME + Mar-Apr FEP,0.4523462477444239,-0.007540297664069939,18
+expanding-window,2009,True,borderline,NMME + May-Jun ocean position,0.5771892344255127,-0.007540297664069939,18
+expanding-window,2009,True,borderline,NMME + May-Jun coupling,-0.05027089018474333,-0.007540297664069939,18
+expanding-window,2009,True,borderline,NMME + position + coupling,0.0852859603634509,-0.007540297664069939,18
+expanding-window,2010,False,,NMME,0.040779959198538454,0.07964458800198226,19
+expanding-window,2010,False,,NMME + Mar-Apr total WWV,-0.012216323823383108,0.07964458800198226,19
+expanding-window,2010,False,,NMME + Mar-Apr FEP,0.037200373656659,0.07964458800198226,19
+expanding-window,2010,False,,NMME + May-Jun ocean position,0.017864149570372585,0.07964458800198226,19
+expanding-window,2010,False,,NMME + May-Jun coupling,-0.04850761303097391,0.07964458800198226,19
+expanding-window,2010,False,,NMME + position + coupling,-0.05680446234357181,0.07964458800198226,19
+expanding-window,2011,False,,NMME,0.3781274190239665,-0.12403774261474698,20
+expanding-window,2011,False,,NMME + Mar-Apr total WWV,0.4732454960398124,-0.12403774261474698,20
+expanding-window,2011,False,,NMME + Mar-Apr FEP,0.38596711970485764,-0.12403774261474698,20
+expanding-window,2011,False,,NMME + May-Jun ocean position,0.4072991233519858,-0.12403774261474698,20
+expanding-window,2011,False,,NMME + May-Jun coupling,0.12758765997315827,-0.12403774261474698,20
+expanding-window,2011,False,,NMME + position + coupling,0.16258316831855538,-0.12403774261474698,20
+expanding-window,2012,False,,NMME,0.19370383260077137,-0.17498003641764237,21
+expanding-window,2012,False,,NMME + Mar-Apr total WWV,0.1802063680367367,-0.17498003641764237,21
+expanding-window,2012,False,,NMME + Mar-Apr FEP,0.2089152412856447,-0.17498003641764237,21
+expanding-window,2012,False,,NMME + May-Jun ocean position,0.19718527448768605,-0.17498003641764237,21
+expanding-window,2012,False,,NMME + May-Jun coupling,-0.2928850647160651,-0.17498003641764237,21
+expanding-window,2012,False,,NMME + position + coupling,-0.2628804736105682,-0.17498003641764237,21
+expanding-window,2013,False,,NMME,-0.31519227779634934,-0.175076992480784,22
+expanding-window,2013,False,,NMME + Mar-Apr total WWV,-0.3297952022958729,-0.175076992480784,22
+expanding-window,2013,False,,NMME + Mar-Apr FEP,-0.325657424282832,-0.175076992480784,22
+expanding-window,2013,False,,NMME + May-Jun ocean position,-0.2838956263014049,-0.175076992480784,22
+expanding-window,2013,False,,NMME + May-Jun coupling,-0.03174190143485824,-0.175076992480784,22
+expanding-window,2013,False,,NMME + position + coupling,-0.030787882859990158,-0.175076992480784,22
+expanding-window,2014,False,,NMME,0.7346479541014828,0.10340280495142107,23
+expanding-window,2014,False,,NMME + Mar-Apr total WWV,0.7182062234119793,0.10340280495142107,23
+expanding-window,2014,False,,NMME + Mar-Apr FEP,0.7128090667545977,0.10340280495142107,23
+expanding-window,2014,False,,NMME + May-Jun ocean position,1.0174700251881073,0.10340280495142107,23
+expanding-window,2014,False,,NMME + May-Jun coupling,0.4977317924766489,0.10340280495142107,23
+expanding-window,2014,False,,NMME + position + coupling,0.6417170463816102,0.10340280495142107,23
+expanding-window,2015,True,EP,NMME,0.8144143456342445,1.4966375447701723,24
+expanding-window,2015,True,EP,NMME + Mar-Apr total WWV,0.7572240450369793,1.4966375447701723,24
+expanding-window,2015,True,EP,NMME + Mar-Apr FEP,0.7431057097786811,1.4966375447701723,24
+expanding-window,2015,True,EP,NMME + May-Jun ocean position,0.9381995899136144,1.4966375447701723,24
+expanding-window,2015,True,EP,NMME + May-Jun coupling,1.9376838811297992,1.4966375447701723,24
+expanding-window,2015,True,EP,NMME + position + coupling,1.9612546214828617,1.4966375447701723,24
+expanding-window,2016,False,,NMME,-0.745367723173073,-0.28246946334838796,25
+expanding-window,2016,False,,NMME + Mar-Apr total WWV,-0.8845316130032498,-0.28246946334838796,25
+expanding-window,2016,False,,NMME + Mar-Apr FEP,-0.7455182218482376,-0.28246946334838796,25
+expanding-window,2016,False,,NMME + May-Jun ocean position,-0.6156297361815976,-0.28246946334838796,25
+expanding-window,2016,False,,NMME + May-Jun coupling,-0.08144487802899768,-0.28246946334838796,25
+expanding-window,2016,False,,NMME + position + coupling,0.003920310543145699,-0.28246946334838796,25
+expanding-window,2017,False,,NMME,-0.3581101578066725,-0.7775095895620452,26
+expanding-window,2017,False,,NMME + Mar-Apr total WWV,-0.3578855767054217,-0.7775095895620452,26
+expanding-window,2017,False,,NMME + Mar-Apr FEP,-0.31324763176109904,-0.7775095895620452,26
+expanding-window,2017,False,,NMME + May-Jun ocean position,-0.24827661737502418,-0.7775095895620452,26
+expanding-window,2017,False,,NMME + May-Jun coupling,-0.3708735912722679,-0.7775095895620452,26
+expanding-window,2017,False,,NMME + position + coupling,-0.29911625827712734,-0.7775095895620452,26
+expanding-window,2018,True,borderline,NMME,-0.7032887822496404,-0.20706504430525863,27
+expanding-window,2018,True,borderline,NMME + Mar-Apr total WWV,-0.6771395871253294,-0.20706504430525863,27
+expanding-window,2018,True,borderline,NMME + Mar-Apr FEP,-0.7046392711913,-0.20706504430525863,27
+expanding-window,2018,True,borderline,NMME + May-Jun ocean position,-0.4587171996699536,-0.20706504430525863,27
+expanding-window,2018,True,borderline,NMME + May-Jun coupling,-0.39322286051266925,-0.20706504430525863,27
+expanding-window,2018,True,borderline,NMME + position + coupling,-0.2593842220957677,-0.20706504430525863,27
+expanding-window,2019,True,CP,NMME,-0.325096007073775,-0.6455390869625028,28
+expanding-window,2019,True,CP,NMME + Mar-Apr total WWV,-0.31435035387913235,-0.6455390869625028,28
+expanding-window,2019,True,CP,NMME + Mar-Apr FEP,-0.3228127561825314,-0.6455390869625028,28
+expanding-window,2019,True,CP,NMME + May-Jun ocean position,-0.17853038839476987,-0.6455390869625028,28
+expanding-window,2019,True,CP,NMME + May-Jun coupling,-0.20071378052277405,-0.6455390869625028,28
+expanding-window,2019,True,CP,NMME + position + coupling,-0.12785375797508322,-0.6455390869625028,28
+expanding-window,2020,False,,NMME,-0.7522216230285728,-0.29289469695444037,29
+expanding-window,2020,False,,NMME + Mar-Apr total WWV,-0.743972678424129,-0.29289469695444037,29
+expanding-window,2020,False,,NMME + Mar-Apr FEP,-0.7505271193303859,-0.29289469695444037,29
+expanding-window,2020,False,,NMME + May-Jun ocean position,-0.7047498667877949,-0.29289469695444037,29
+expanding-window,2020,False,,NMME + May-Jun coupling,-0.2944681099069574,-0.29289469695444037,29
+expanding-window,2020,False,,NMME + position + coupling,-0.2892941258765121,-0.29289469695444037,29

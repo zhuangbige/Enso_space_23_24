@@ -1,0 +1,39 @@
+{
+  "source": "/Users/daiyue/Documents/Maryland/data/derived/research_2026/soda3_chakravorty_transport_baseline_1980_2022.csv",
+  "baseline": [
+    1980,
+    2022
+  ],
+  "n_months": 516,
+  "events": {
+    "CT": [
+      1982,
+      1986,
+      1997,
+      2006
+    ],
+    "CP": [
+      1991,
+      1994,
+      2002,
+      2004
+    ]
+  },
+  "bootstrap_samples": 20000,
+  "random_seed": 20260803,
+  "standard_deviations": {
+    "zt170_sv": 10.344614824936187,
+    "mt5n_sv": 8.14162730698202,
+    "mt10s_sv": 3.4149751865798956,
+    "wwv": 1.251571764288354,
+    "zt170_q20": 0.358990321905338,
+    "mt5n_q20": 0.259618318327984,
+    "mt10s_q20": 0.10242295725490551
+  },
+  "q20_comparison_rows": 258,
+  "wwv_comparison_rows": 258,
+  "q20_170e_5s5n_max_abs_difference_pw": 2.8973203614057752e-08,
+  "q20_170e_5s5n_correlation": 0.999999999999999,
+  "wwv_max_abs_difference_1e14m3": 4.97066388049916e-08,
+  "wwv_correlation": 0.9999999999999997
+}

@@ -1,0 +1,94 @@
+{
+  "dataset": "SODA3.15.2",
+  "created_by": "build_soda3_ohc_analysis.py",
+  "time_start": "1980-01-15",
+  "time_end": "2024-12-15",
+  "n_months": 540,
+  "baseline": [
+    1980,
+    2024
+  ],
+  "domain": {
+    "lat": [
+      -9.75,
+      9.75
+    ],
+    "lon": [
+      120.25,
+      279.75
+    ]
+  },
+  "depth_center_levels_used_m": [
+    5.03354978561,
+    15.10064983368,
+    25.21935081482,
+    35.35845184326,
+    45.57635116577,
+    55.85324859619,
+    66.26174926758,
+    76.80284881592,
+    87.57695007324,
+    98.62325286865,
+    110.09615325928,
+    122.10665130615,
+    134.90855407715,
+    148.74664306641,
+    164.05375671387,
+    181.31245422363,
+    201.26295471191,
+    224.77725219727,
+    253.06814575195,
+    287.55084228516
+  ],
+  "integration_limits_m": [
+    100.0,
+    300.0
+  ],
+  "constants": {
+    "rho0_kg_m3": 1025.0,
+    "cp0_j_kg_k": 3990.0
+  },
+  "regions": {
+    "basin": [
+      -5.0,
+      5.0,
+      130.0,
+      280.0
+    ],
+    "west": [
+      -5.0,
+      5.0,
+      130.0,
+      180.0
+    ],
+    "central": [
+      -5.0,
+      5.0,
+      180.0,
+      220.0
+    ],
+    "east": [
+      -5.0,
+      5.0,
+      220.0,
+      280.0
+    ],
+    "fep": [
+      -5.0,
+      5.0,
+      270.0,
+      280.0
+    ]
+  },
+  "sources": {
+    "1980-2022": "https://apdrc.soest.hawaii.edu/dods/public_data/SODA/soda_3.15.2/monthly_t",
+    "2023": "http://dsrs.atmos.umd.edu/DATA/soda3.15.2/REGRIDED/ocean/soda3.15.2_mn_ocean_reg_2023.nc",
+    "2024": "http://dsrs.atmos.umd.edu/DATA/soda3.15.2/REGRIDED/ocean/soda3.15.2_mn_ocean_reg_2024.nc"
+  },
+  "notes": [
+    "OHC uses potential temperature and constant reference density/specific heat.",
+    "Cells without a complete water column to the requested integration depth are masked.",
+    "The official annual files contain duplicated time coordinate values; calendar months are assigned by record order.",
+    "Reported Pacific basin and western-box indices begin at 130E to avoid the Maritime Continent coastal-mask boundary."
+  ]
+}

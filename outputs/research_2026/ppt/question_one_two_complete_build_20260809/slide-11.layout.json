@@ -1,0 +1,1953 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/blamyz",
+    "id": "blamyz",
+    "slide": 11,
+    "layoutId": "1636560f-0bb4-477e-bc36-5f737b1d795e",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "91c3fb62-db33-4e19-a094-5f8da4d0190c",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Pacific Heat Arrival",
+    "colors": {
+      "accent1": "#2C7FB8",
+      "accent2": "#D97706",
+      "accent3": "#16877A",
+      "accent4": "#B73A3A",
+      "accent5": "#35566B",
+      "accent6": "#7E5AA6",
+      "bg1": "#FFFFFF",
+      "bg2": "#EDF3F6",
+      "tx1": "#0A2133",
+      "tx2": "#35566B",
+      "dk1": "#0A2133",
+      "dk2": "#35566B",
+      "lt1": "#FFFFFF",
+      "lt2": "#EDF3F6",
+      "hlink": "#2C7FB8",
+      "folHlink": "#16877A"
+    },
+    "typefaces": [
+      "PingFang SC"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "1636560f-0bb4-477e-bc36-5f737b1d795e",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "91c3fb62-db33-4e19-a094-5f8da4d0190c",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "91c3fb62-db33-4e19-a094-5f8da4d0190c",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rmd4va1w",
+      "id": "1",
+      "name": "kicker",
+      "bbox": [
+        54,
+        30,
+        180,
+        32
+      ],
+      "geometry": "rect",
+      "text": "问题二",
+      "textPreview": "问题二",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 22,
+        "typeface": "PingFang SC",
+        "color": "#2C7FB8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "问题二"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "问题二",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "PingFang SC",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "问题二",
+              "fontSize": 22,
+              "typeface": "PingFang SC",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cnm5of2h",
+      "id": "2",
+      "name": "slide-title",
+      "bbox": [
+        54,
+        70,
+        1172,
+        58
+      ],
+      "geometry": "rect",
+      "text": "暖量命运发生方向重组，而不只是强弱变化",
+      "textPreview": "暖量命运发生方向重组，而不只是强弱变化",
+      "resolvedFontSize": 40,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 40,
+        "typeface": "PingFang SC",
+        "color": "#0A2133",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "暖量命运发生方向重组，而不只是强弱变化"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "暖量命运发生方向重组，而不只是强弱变化",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 40,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "暖量命运发生方向重组，而不只是强弱变化",
+              "fontSize": 40,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dofmxkj2",
+      "id": "3",
+      "name": "rule-54-142",
+      "bbox": [
+        54,
+        142,
+        1172,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#B8BCC4",
+      "lineWidth": 1.4
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2x43i5kf",
+      "id": "4",
+      "name": "rule-640-170",
+      "bbox": [
+        640,
+        170,
+        0,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#B8BCC4",
+      "lineWidth": 1.3
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3yd4rq10",
+      "id": "5",
+      "name": "ct-flow-title",
+      "bbox": [
+        54,
+        166,
+        560,
+        40
+      ],
+      "geometry": "rect",
+      "text": "CT：北送后再循环",
+      "textPreview": "CT：北送后再循环",
+      "resolvedFontSize": 29,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 29,
+        "typeface": "PingFang SC",
+        "color": "#D97706",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CT：北送后再循环"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CT：北送后再循环",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 29,
+            "typeface": "PingFang SC",
+            "color": "#D97706",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CT：北送后再循环",
+              "fontSize": 29,
+              "typeface": "PingFang SC",
+              "color": "#D97706",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4jm5kv25",
+      "id": "6",
+      "name": "cp-flow-title",
+      "bbox": [
+        666,
+        166,
+        560,
+        40
+      ],
+      "geometry": "rect",
+      "text": "CP：5°N方向反转",
+      "textPreview": "CP：5°N方向反转",
+      "resolvedFontSize": 29,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 29,
+        "typeface": "PingFang SC",
+        "color": "#2C7FB8",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CP：5°N方向反转"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CP：5°N方向反转",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 29,
+            "typeface": "PingFang SC",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CP：5°N方向反转",
+              "fontSize": 29,
+              "typeface": "PingFang SC",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pkvmt0jq",
+      "id": "7",
+      "name": "ct-surface",
+      "bbox": [
+        288,
+        222,
+        72,
+        92
+      ],
+      "geometry": "upArrow",
+      "fillColor": "#B73A3A",
+      "lineColor": "#B73A3A",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/utk3elk3",
+      "id": "8",
+      "name": "ct-west",
+      "bbox": [
+        52,
+        354,
+        172,
+        66
+      ],
+      "geometry": "leftArrow",
+      "fillColor": "#2C7FB8",
+      "lineColor": "#2C7FB8",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vut4nq1o",
+      "id": "9",
+      "name": "ct-north",
+      "bbox": [
+        500,
+        278,
+        56,
+        86
+      ],
+      "geometry": "upArrow",
+      "fillColor": "#7E5AA6",
+      "lineColor": "#7E5AA6",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7ilg7q5g",
+      "id": "10",
+      "name": "ct-south",
+      "bbox": [
+        292,
+        470,
+        74,
+        92
+      ],
+      "geometry": "upArrow",
+      "fillColor": "#D97706",
+      "lineColor": "#D97706",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6xsfelov",
+      "id": "11",
+      "name": "ct-residual",
+      "bbox": [
+        498,
+        448,
+        112,
+        50
+      ],
+      "geometry": "leftArrow",
+      "fillColor": "#16877A",
+      "lineColor": "#16877A",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tk3y90nm",
+      "id": "12",
+      "name": "ct-receiver",
+      "bbox": [
+        216,
+        318,
+        292,
+        150
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFF0D8",
+      "lineColor": "#D97706",
+      "lineWidth": 2
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sjuxgvm1",
+      "id": "13",
+      "name": "ct-receiver-text",
+      "bbox": [
+        238,
+        354,
+        248,
+        76
+      ],
+      "geometry": "rect",
+      "text": "北侧接收箱\n储量 +0.60 ZJ",
+      "textPreview": "北侧接收箱 | 储量 +0.60 ZJ",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 27,
+        "typeface": "PingFang SC",
+        "color": "#0A2133",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "北侧接收箱"
+          },
+          {
+            "index": 2,
+            "text": "储量 +0.60 ZJ"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "北侧接收箱",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "北侧接收箱",
+              "fontSize": 27,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "储量 +0.60 ZJ",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "储量 +0.60 ZJ",
+              "fontSize": 27,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fmlgbq5c",
+      "id": "14",
+      "name": "ct-equatorial",
+      "bbox": [
+        244,
+        560,
+        236,
+        48
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#DDEFF7",
+      "lineColor": "#2C7FB8",
+      "lineWidth": 1.4
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ulcfi547",
+      "id": "15",
+      "name": "ct-equatorial-text",
+      "bbox": [
+        266,
+        571,
+        192,
+        26
+      ],
+      "geometry": "rect",
+      "text": "赤道东箱",
+      "textPreview": "赤道东箱",
+      "resolvedFontSize": 21.67,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "PingFang SC",
+        "color": "#2C7FB8",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.98,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "赤道东箱"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "赤道东箱",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "PingFang SC",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "赤道东箱",
+              "fontSize": 22,
+              "typeface": "PingFang SC",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ho3yd0ni",
+      "id": "16",
+      "name": "ct-surface-label",
+      "bbox": [
+        208,
+        216,
+        230,
+        30
+      ],
+      "geometry": "rect",
+      "text": "海表失热 1.70",
+      "textPreview": "海表失热 1.70",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "PingFang SC",
+        "color": "#B73A3A",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "海表失热 1.70"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "海表失热 1.70",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "PingFang SC",
+            "color": "#B73A3A",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "海表失热 1.70",
+              "fontSize": 21,
+              "typeface": "PingFang SC",
+              "color": "#B73A3A",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gnuxkvmx",
+      "id": "17",
+      "name": "ct-west-label",
+      "bbox": [
+        54,
+        424,
+        155,
+        58
+      ],
+      "geometry": "rect",
+      "text": "向西越140°W\n1.64",
+      "textPreview": "向西越140°W | 1.64",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "PingFang SC",
+        "color": "#2C7FB8",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "向西越140°W"
+          },
+          {
+            "index": 2,
+            "text": "1.64"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "向西越140°W",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "PingFang SC",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "向西越140°W",
+              "fontSize": 21,
+              "typeface": "PingFang SC",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "1.64",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "PingFang SC",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "1.64",
+              "fontSize": 21,
+              "typeface": "PingFang SC",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vqhwz658",
+      "id": "18",
+      "name": "ct-north-label",
+      "bbox": [
+        494,
+        215,
+        120,
+        58
+      ],
+      "geometry": "rect",
+      "text": "跨12°N\n0.06 ≈ 0",
+      "textPreview": "跨12°N | 0.06 ≈ 0",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "PingFang SC",
+        "color": "#7E5AA6",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "跨12°N"
+          },
+          {
+            "index": 2,
+            "text": "0.06 ≈ 0"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "跨12°N",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "PingFang SC",
+            "color": "#7E5AA6",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "跨12°N",
+              "fontSize": 20,
+              "typeface": "PingFang SC",
+              "color": "#7E5AA6",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "0.06 ≈ 0",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "PingFang SC",
+            "color": "#7E5AA6",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "0.06 ≈ 0",
+              "fontSize": 20,
+              "typeface": "PingFang SC",
+              "color": "#7E5AA6",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ap8f61on",
+      "id": "19",
+      "name": "ct-f5n-label",
+      "bbox": [
+        372,
+        514,
+        168,
+        30
+      ],
+      "geometry": "rect",
+      "text": "跨5°N +2.74",
+      "textPreview": "跨5°N +2.74",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "PingFang SC",
+        "color": "#D97706",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "跨5°N +2.74"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "跨5°N +2.74",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "PingFang SC",
+            "color": "#D97706",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "跨5°N +2.74",
+              "fontSize": 22,
+              "typeface": "PingFang SC",
+              "color": "#D97706",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ylgje9ob",
+      "id": "20",
+      "name": "ct-res-label",
+      "bbox": [
+        440,
+        498,
+        160,
+        28
+      ],
+      "geometry": "rect",
+      "text": "残差 +1.27",
+      "textPreview": "残差 +1.27",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "PingFang SC",
+        "color": "#16877A",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "残差 +1.27"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "残差 +1.27",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "PingFang SC",
+            "color": "#16877A",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "残差 +1.27",
+              "fontSize": 20,
+              "typeface": "PingFang SC",
+              "color": "#16877A",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zmp07epw",
+      "id": "21",
+      "name": "cp-surface",
+      "bbox": [
+        926,
+        222,
+        72,
+        92
+      ],
+      "geometry": "upArrow",
+      "fillColor": "#B73A3A",
+      "lineColor": "#B73A3A",
+      "lineWidth": 0
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/07y1gj6h",
+      "id": "22",
+      "name": "cp-west",
+      "bbox": [
+        674,
+        354,
+        172,
+        66
+      ],
+      "geometry": "rightArrow",
+      "fillColor": "#2C7FB8",
+      "lineColor": "#2C7FB8",
+      "lineWidth": 0
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l87i9o72",
+      "id": "23",
+      "name": "cp-north",
+      "bbox": [
+        1138,
+        278,
+        56,
+        86
+      ],
+      "geometry": "upArrow",
+      "fillColor": "#7E5AA6",
+      "lineColor": "#7E5AA6",
+      "lineWidth": 0
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qhwzapof",
+      "id": "24",
+      "name": "cp-south",
+      "bbox": [
+        930,
+        452,
+        74,
+        106
+      ],
+      "geometry": "downArrow",
+      "fillColor": "#2C7FB8",
+      "lineColor": "#2C7FB8",
+      "lineWidth": 0
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bip03upk",
+      "id": "25",
+      "name": "cp-residual",
+      "bbox": [
+        1136,
+        448,
+        90,
+        50
+      ],
+      "geometry": "leftArrow",
+      "fillColor": "#16877A",
+      "lineColor": "#16877A",
+      "lineWidth": 0
+    },
+    {
+      "order": 26,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cjyhcz65",
+      "id": "26",
+      "name": "cp-receiver",
+      "bbox": [
+        854,
+        318,
+        292,
+        150
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#DDEFF7",
+      "lineColor": "#2C7FB8",
+      "lineWidth": 2
+    },
+    {
+      "order": 27,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dk7i547q",
+      "id": "27",
+      "name": "cp-receiver-text",
+      "bbox": [
+        876,
+        354,
+        248,
+        76
+      ],
+      "geometry": "rect",
+      "text": "北侧接收箱\n储量 −0.26 ZJ",
+      "textPreview": "北侧接收箱 | 储量 −0.26 ZJ",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 27,
+        "typeface": "PingFang SC",
+        "color": "#0A2133",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "北侧接收箱"
+          },
+          {
+            "index": 2,
+            "text": "储量 −0.26 ZJ"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "北侧接收箱",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "北侧接收箱",
+              "fontSize": 27,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "储量 −0.26 ZJ",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "储量 −0.26 ZJ",
+              "fontSize": 27,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 28,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2dwz6p83",
+      "id": "28",
+      "name": "cp-equatorial",
+      "bbox": [
+        882,
+        560,
+        236,
+        48
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFF0D8",
+      "lineColor": "#D97706",
+      "lineWidth": 1.4
+    },
+    {
+      "order": 29,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3e50zupo",
+      "id": "29",
+      "name": "cp-equatorial-text",
+      "bbox": [
+        904,
+        571,
+        192,
+        26
+      ],
+      "geometry": "rect",
+      "text": "赤道东箱",
+      "textPreview": "赤道东箱",
+      "resolvedFontSize": 21.67,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "PingFang SC",
+        "color": "#D97706",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.98,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "赤道东箱"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "赤道东箱",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "PingFang SC",
+            "color": "#D97706",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "赤道东箱",
+              "fontSize": 22,
+              "typeface": "PingFang SC",
+              "color": "#D97706",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 30,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5kvu1wvi",
+      "id": "30",
+      "name": "cp-surface-label",
+      "bbox": [
+        846,
+        216,
+        230,
+        30
+      ],
+      "geometry": "rect",
+      "text": "海表失热 0.68",
+      "textPreview": "海表失热 0.68",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "PingFang SC",
+        "color": "#B73A3A",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "海表失热 0.68"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "海表失热 0.68",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "PingFang SC",
+            "color": "#B73A3A",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "海表失热 0.68",
+              "fontSize": 21,
+              "typeface": "PingFang SC",
+              "color": "#B73A3A",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 31,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4jmtsrux",
+      "id": "31",
+      "name": "cp-west-label",
+      "bbox": [
+        674,
+        424,
+        164,
+        58
+      ],
+      "geometry": "rect",
+      "text": "140°W东向输入\n+0.76",
+      "textPreview": "140°W东向输入 | +0.76",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "PingFang SC",
+        "color": "#2C7FB8",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "140°W东向输入"
+          },
+          {
+            "index": 2,
+            "text": "+0.76"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "140°W东向输入",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "PingFang SC",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "140°W东向输入",
+              "fontSize": 21,
+              "typeface": "PingFang SC",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "+0.76",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "PingFang SC",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "+0.76",
+              "fontSize": 21,
+              "typeface": "PingFang SC",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 32,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jidczmdc",
+      "id": "32",
+      "name": "cp-north-label",
+      "bbox": [
+        1128,
+        215,
+        120,
+        58
+      ],
+      "geometry": "rect",
+      "text": "跨12°N\n0.17 ≈ 0",
+      "textPreview": "跨12°N | 0.17 ≈ 0",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "PingFang SC",
+        "color": "#7E5AA6",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "跨12°N"
+          },
+          {
+            "index": 2,
+            "text": "0.17 ≈ 0"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "跨12°N",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "PingFang SC",
+            "color": "#7E5AA6",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "跨12°N",
+              "fontSize": 20,
+              "typeface": "PingFang SC",
+              "color": "#7E5AA6",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "0.17 ≈ 0",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "PingFang SC",
+            "color": "#7E5AA6",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "0.17 ≈ 0",
+              "fontSize": 20,
+              "typeface": "PingFang SC",
+              "color": "#7E5AA6",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 33,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ih4bqhcr",
+      "id": "33",
+      "name": "cp-f5n-label",
+      "bbox": [
+        698,
+        514,
+        220,
+        30
+      ],
+      "geometry": "rect",
+      "text": "经5°N向南 0.96",
+      "textPreview": "经5°N向南 0.96",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "PingFang SC",
+        "color": "#2C7FB8",
+        "bold": true,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "经5°N向南 0.96"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "经5°N向南 0.96",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "PingFang SC",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "right",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "经5°N向南 0.96",
+              "fontSize": 22,
+              "typeface": "PingFang SC",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "right",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 34,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hgvuxcv6",
+      "id": "34",
+      "name": "cp-res-label",
+      "bbox": [
+        1070,
+        498,
+        150,
+        28
+      ],
+      "geometry": "rect",
+      "text": "残差 +0.81",
+      "textPreview": "残差 +0.81",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "PingFang SC",
+        "color": "#16877A",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "残差 +0.81"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "残差 +0.81",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "PingFang SC",
+            "color": "#16877A",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "残差 +0.81",
+              "fontSize": 20,
+              "typeface": "PingFang SC",
+              "color": "#16877A",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 35,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wfmto7u1",
+      "id": "35",
+      "name": "takeaway-band",
+      "bbox": [
+        54,
+        635,
+        1172,
+        55
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#35566B",
+      "lineColor": "#35566B",
+      "lineWidth": 0
+    },
+    {
+      "order": 36,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vedcv2dg",
+      "id": "36",
+      "name": "takeaway-text",
+      "bbox": [
+        78,
+        644,
+        1124,
+        38
+      ],
+      "geometry": "rect",
+      "text": "CT：北送后向西返回并散热；CP：北侧暖量经5°N向南回到赤道东箱。",
+      "textPreview": "CT：北送后向西返回并散热；CP：北侧暖量经5°N向南回到赤道东箱。",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 25,
+        "typeface": "PingFang SC",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CT：北送后向西返回并散热；CP：北侧暖量经5°N向南回到赤道东箱。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CT：北送后向西返回并散热；CP：北侧暖量经5°N向南回到赤道东箱。",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "PingFang SC",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CT：北送后向西返回并散热；CP：北侧暖量经5°N向南回到赤道东箱。",
+              "fontSize": 25,
+              "typeface": "PingFang SC",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

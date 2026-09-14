@@ -1,0 +1,60 @@
+{
+  "scope": "Direct spatial comparison only; no new index, threshold, regression, or attribution equation.",
+  "events": [
+    1997,
+    2015,
+    2023
+  ],
+  "months": [
+    5,
+    6,
+    7
+  ],
+  "reference_years": [
+    1982,
+    2022
+  ],
+  "sources": {
+    "sst": "/Users/daiyue/Documents/Maryland/data/raw/ersstv5_sst_monthly_full.nc",
+    "precipitation": "/Users/daiyue/Documents/Maryland/data/interim/research_2026/gpcp_event_spatial_tropics_1982_202605.nc",
+    "mean_sea_level_pressure": "/Users/daiyue/Documents/Maryland/data/raw/era5/era5_monthly_single_levels_tropics_1982_2024.nc",
+    "eastward_surface_stress": "/Users/daiyue/Documents/Maryland/data/raw/era5/coupling_monthly_1deg"
+  },
+  "direct_region_means": "/Users/daiyue/Documents/Maryland/data/derived/research_2026/jiang_1997_2015_2023_may_july_direct_region_means.csv",
+  "diagnostics": {
+    "dimensions": {
+      "month": 3,
+      "event_year": 3,
+      "lat": 25,
+      "lon": 180,
+      "msl_lat": 51,
+      "msl_lon": 360,
+      "precip_lat": 12,
+      "precip_lon": 64,
+      "stress_lat": 21,
+      "stress_lon": 161
+    },
+    "variables": {
+      "sst_anomaly_c": {
+        "finite_fraction": 0.7706666666666667,
+        "minimum": -2.244663329905343,
+        "maximum": 4.9212186228523365
+      },
+      "msl_anomaly_hpa": {
+        "finite_fraction": 1.0,
+        "minimum": -4.955653854529373,
+        "maximum": 4.436087761324015
+      },
+      "precip_anomaly_mm_day": {
+        "finite_fraction": 1.0,
+        "minimum": -10.6770938708807,
+        "maximum": 15.57138706699066
+      },
+      "eastward_stress_anomaly_nm2": {
+        "finite_fraction": 1.0,
+        "minimum": -0.2600585874364776,
+        "maximum": 0.1976701201462161
+      }
+    }
+  }
+}

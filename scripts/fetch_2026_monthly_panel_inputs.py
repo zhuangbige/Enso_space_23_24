@@ -20,13 +20,14 @@ ROOT = Path(__file__).resolve().parents[1]
 OISST_DIR = ROOT / "data/interim/research_2026/monthly_panel_inputs"
 ERA5_DIR = ROOT / "data/raw/era5"
 
-MONTHS = ["01", "02", "03", "04", "05"]
+MONTHS = ["01", "02", "03", "04", "05", "06"]
 MONTH_NAMES = {
     "01": "jan",
     "02": "feb",
     "03": "mar",
     "04": "apr",
     "05": "may",
+    "06": "jun",
 }
 
 OISST_BASE = "https://psl.noaa.gov/thredds/ncss/grid/Datasets/noaa.oisst.v2.highres/sst.mon.mean.nc"
@@ -38,13 +39,12 @@ ERA5_GRID = [1.0, 1.0]
 ERA5_REQUESTS = {
     "pressure850_wind": {
         "dataset": "reanalysis-era5-pressure-levels-monthly-means",
-        "target": "era5_monthly_pressure850_wind_tropics_1deg_1980_2026_jan_may.nc",
+        "target": "era5_monthly_pressure850_wind_tropics_1deg_1980_2026_{month_name}.nc",
         "request": {
             "product_type": ["monthly_averaged_reanalysis"],
             "variable": ["u_component_of_wind", "v_component_of_wind"],
             "pressure_level": ["850"],
             "year": ERA5_YEARS,
-            "month": MONTHS,
             "time": ["00:00"],
             "area": ERA5_AREA,
             "grid": ERA5_GRID,
@@ -54,12 +54,11 @@ ERA5_REQUESTS = {
     },
     "single_precip": {
         "dataset": "reanalysis-era5-single-levels-monthly-means",
-        "target": "era5_monthly_precip_tropics_1deg_1980_2026_jan_may.nc",
+        "target": "era5_monthly_precip_tropics_1deg_1980_2026_{month_name}.nc",
         "request": {
             "product_type": ["monthly_averaged_reanalysis"],
             "variable": ["total_precipitation"],
             "year": ERA5_YEARS,
-            "month": MONTHS,
             "time": ["00:00"],
             "area": ERA5_AREA,
             "grid": ERA5_GRID,
@@ -91,10 +90,10 @@ def oisst_url(month: str) -> str:
     return f"{OISST_BASE}?{urlencode(query)}"
 
 
-def fetch_oisst(*, dry_run: bool, force: bool) -> list[Path]:
+def fetch_oisst(months: list[str], *, dry_run: bool, force: bool) -> list[Path]:
     OISST_DIR.mkdir(parents=True, exist_ok=True)
     outputs: list[Path] = []
-    for month in MONTHS:
+    for month in months:
         target = oisst_target(month)
         outputs.append(target)
         if target.exists() and target.stat().st_size > 0 and not force:
@@ -123,9 +122,9 @@ def _extract_if_zip(path: Path) -> None:
     print(f"extracted zip to: {out_dir}")
 
 
-def fetch_era5(name: str, *, dry_run: bool, force: bool) -> Path:
+def fetch_era5(name: str, month: str, *, dry_run: bool, force: bool) -> Path:
     spec = ERA5_REQUESTS[name]
-    target = ERA5_DIR / spec["target"]
+    target = ERA5_DIR / spec["target"].format(month_name=MONTH_NAMES[month])
     if target.exists() and target.stat().st_size > 0 and not force:
         print(f"exists: {target}")
         _extract_if_zip(target)
@@ -133,7 +132,9 @@ def fetch_era5(name: str, *, dry_run: bool, force: bool) -> Path:
     if dry_run:
         print(spec["dataset"])
         print(target)
-        print(spec["request"])
+        request = dict(spec["request"])
+        request["month"] = [month]
+        print(request)
         return target
 
     try:
@@ -142,8 +143,10 @@ def fetch_era5(name: str, *, dry_run: bool, force: bool) -> Path:
         raise SystemExit("cdsapi is not installed in this Python environment.") from exc
 
     ERA5_DIR.mkdir(parents=True, exist_ok=True)
-    print(f"download ERA5 {name}: {target}", flush=True)
-    cdsapi.Client().retrieve(spec["dataset"], spec["request"], str(target))
+    request = dict(spec["request"])
+    request["month"] = [month]
+    print(f"download ERA5 {name} month={month}: {target}", flush=True)
+    cdsapi.Client().retrieve(spec["dataset"], request, str(target))
     _extract_if_zip(target)
     print(target)
     return target
@@ -152,15 +155,23 @@ def fetch_era5(name: str, *, dry_run: bool, force: bool) -> Path:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Fetch inputs for 2026 monthly panel plots.")
     parser.add_argument("--only", choices=("all", "oisst", "era5"), default="all")
+    parser.add_argument(
+        "--months",
+        nargs="+",
+        choices=MONTHS,
+        default=MONTHS,
+        help="Calendar months to fetch, for example --months 06. ERA5 requests are split one month per file.",
+    )
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--force", action="store_true")
     args = parser.parse_args()
 
     if args.only in {"all", "oisst"}:
-        fetch_oisst(dry_run=args.dry_run, force=args.force)
+        fetch_oisst(args.months, dry_run=args.dry_run, force=args.force)
     if args.only in {"all", "era5"}:
-        fetch_era5("pressure850_wind", dry_run=args.dry_run, force=args.force)
-        fetch_era5("single_precip", dry_run=args.dry_run, force=args.force)
+        for month in args.months:
+            fetch_era5("pressure850_wind", month, dry_run=args.dry_run, force=args.force)
+            fetch_era5("single_precip", month, dry_run=args.dry_run, force=args.force)
     return 0
 
 

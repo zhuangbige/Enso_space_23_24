@@ -1,0 +1,13 @@
+source,target,n_events,median_lead_days,ci_low,ci_high,positive_lead_events,positive_lead_fraction,sign_test_one_sided_p
+balance_candidate,sst,11,15.0,-10.0,100.0,6,0.5454545454545454,0.5
+balance_candidate,wind,12,32.5,10.0,72.5,9,0.75,0.072998046875
+balance_candidate,atmos,6,51.5,-21.5,109.5,5,0.8333333333333334,0.109375
+balance_available,sst,11,5.0,-20.0,90.0,6,0.5454545454545454,0.5
+balance_available,wind,12,22.5,0.0,62.5,9,0.75,0.072998046875
+balance_available,atmos,6,41.5,-31.5,99.5,5,0.8333333333333334,0.109375
+transport_candidate,sst,12,50.0,7.5,95.0,10,0.8333333333333334,0.019287109375
+transport_candidate,wind,13,45.0,35.0,55.0,12,0.9230769230769231,0.001708984375
+transport_candidate,atmos,7,64.0,26.0,124.0,7,1.0,0.0078125
+transport_available,sst,12,35.0,-7.5,80.0,8,0.6666666666666666,0.19384765625
+transport_available,wind,13,30.0,20.0,40.0,11,0.8461538461538461,0.01123046875
+transport_available,atmos,7,49.0,11.0,109.0,6,0.8571428571428571,0.0625

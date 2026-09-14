@@ -1,0 +1,16 @@
+factor_id,factor,intervention,response,effect_response_sd,bootstrap_ci_low,bootstrap_ci_high,bootstrap_sign_probability,bootstrap_samples,ridge_alpha
+multi_year_la_nina,Multi-year La Niña memory,+1 training-sample SD,coupling_mjj,-0.009096176989765059,-0.21157862769774918,0.09087689237677249,0.6968,10000,1.0
+multi_year_la_nina,Multi-year La Niña memory,+1 training-sample SD,mature_ec_flavor,0.002082751361987878,-0.045703182721507064,0.08424382741519915,0.5417,10000,1.0
+multi_year_la_nina,Multi-year La Niña memory,+1 training-sample SD,mature_box_type,0.002356646408924745,-0.04931715567898808,0.08254372043936185,0.5713,10000,1.0
+indo_atlantic_heating,Indo-Atlantic total heating,+1 training-sample SD,coupling_mjj,0.0002060195891048222,-0.41770853530043633,0.6213551644609376,0.6369,10000,1.0
+indo_atlantic_heating,Indo-Atlantic total heating,+1 training-sample SD,mature_ec_flavor,-4.71722988996115e-05,-0.23749793373266181,0.05889576340667204,0.6566,10000,1.0
+indo_atlantic_heating,Indo-Atlantic total heating,+1 training-sample SD,mature_box_type,-5.337575614228207e-05,-0.2925277641064468,0.07695481975967394,0.6086,10000,1.0
+npmm,Warm NPMM,+1 training-sample SD,coupling_mjj,0.04757756126814616,-0.3713440814834553,0.36906782483527073,0.636,10000,1.0
+npmm,Warm NPMM,+1 training-sample SD,mature_ec_flavor,-0.010893832721459829,-0.14849203713426554,0.12002705832806013,0.5129,10000,1.0
+npmm,Warm NPMM,+1 training-sample SD,mature_box_type,-0.012326440990994003,-0.12342566831263792,0.14964932829604874,0.5367,10000,1.0
+fep_precip_dipole,FEP meridional rain dipole,+1 training-sample SD,coupling_mjj,0.48802063078297847,-0.02091101596640235,0.8108539589806705,0.9689,10000,1.0
+fep_precip_dipole,FEP meridional rain dipole,+1 training-sample SD,mature_ec_flavor,-0.11174206862785363,-0.4159581471626762,0.18883729040030806,0.6594,10000,1.0
+fep_precip_dipole,FEP meridional rain dipole,+1 training-sample SD,mature_box_type,-0.1264368611461717,-0.32728779375199224,0.1614678370551548,0.722,10000,1.0
+wwb_pulses,High-frequency westerly pulses,+1 training-sample SD,coupling_mjj,0.04274280268655686,-0.6571419807765692,0.38137729473226545,0.6211,10000,1.0
+wwb_pulses,High-frequency westerly pulses,+1 training-sample SD,mature_ec_flavor,-0.009786818199643,-0.14758109001268285,0.18454828682717522,0.5114,10000,1.0
+wwb_pulses,High-frequency westerly pulses,+1 training-sample SD,mature_box_type,-0.01107384702078651,-0.11176383403843515,0.27565870326847075,0.5412,10000,1.0

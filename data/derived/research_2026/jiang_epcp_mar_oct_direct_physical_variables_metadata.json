@@ -1,0 +1,146 @@
+{
+  "analysis_scope": "Direct physical variables only; no new coupling index, ratio, threshold, or empirical equation.",
+  "event_years": [
+    1982,
+    1986,
+    1987,
+    1991,
+    1994,
+    1997,
+    2002,
+    2004,
+    2006,
+    2009,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "focus_event_years": [
+    1997,
+    2015,
+    2023
+  ],
+  "developing_year_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "boxes": {
+    "central": {
+      "lat_min": -10.0,
+      "lat_max": 5.0,
+      "lon_min": 180.0,
+      "lon_max": 220.0
+    },
+    "east": {
+      "lat_min": -10.0,
+      "lat_max": 5.0,
+      "lon_min": 220.0,
+      "lon_max": 280.0
+    }
+  },
+  "sources": {
+    "ohc_and_heat_transport": "/Users/daiyue/Documents/Maryland/data/derived/research_2026/soda3_three_box_ohc_anomaly_budget_monthly.csv",
+    "sst": "/Users/daiyue/Documents/Maryland/data/raw/ersstv5_sst_monthly_full.nc",
+    "precipitation": "/Users/daiyue/Documents/Maryland/data/interim/research_2026/gpcp_event_spatial_tropics_1982_202605.nc",
+    "surface_stress": "/Users/daiyue/Documents/Maryland/data/raw/era5/coupling_monthly_1deg"
+  },
+  "anomaly_baselines": {
+    "soda3": "Existing 1980-2022 same-calendar-month linear expectation in source budget",
+    "ersstv5_gpcp_era5": "1982-2022 same-calendar-month regional linear expectation"
+  },
+  "sign_conventions": {
+    "central_eastward_heat_output_anom_pw": "positive means anomalous heat export eastward from central box",
+    "east_west_boundary_heat_input_anom_pw": "positive means anomalous heat input to eastern box through its western face",
+    "taux": "positive means anomalous eastward/westerly surface stress",
+    "precipitation": "positive means wetter than expected"
+  },
+  "diagnostics": {
+    "n_rows": 112,
+    "n_events": 14,
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "duplicate_event_month_rows": 0,
+    "numeric_nan_count": 0,
+    "ranges": {
+      "central_ohc300_anom_zj": [
+        -3.286142608,
+        10.72685564
+      ],
+      "east_ohc300_anom_zj": [
+        -7.488642835,
+        30.72660591
+      ],
+      "central_eastward_heat_output_anom_pw": [
+        -0.5554269272,
+        1.977516879
+      ],
+      "east_west_boundary_heat_input_anom_pw": [
+        -0.6656188561,
+        2.109993521
+      ],
+      "central_sst_raw_c": [
+        27.697420120239258,
+        29.66464614868164
+      ],
+      "central_sst_anom_c": [
+        -0.47237819345986054,
+        1.633375364230492
+      ],
+      "east_sst_raw_c": [
+        23.950429916381836,
+        28.10855484008789
+      ],
+      "east_sst_anom_c": [
+        -0.8196318583206015,
+        2.72873655179653
+      ],
+      "central_precip_raw_mm_day": [
+        1.3128870725631714,
+        9.09630298614502
+      ],
+      "central_precip_anom_mm_day": [
+        -2.758531609561757,
+        7.1531182388395464
+      ],
+      "east_precip_raw_mm_day": [
+        0.20971326529979706,
+        4.798877716064453
+      ],
+      "east_precip_anom_mm_day": [
+        -1.6321996192898496,
+        2.6211632053247733
+      ],
+      "central_taux_raw_nm2": [
+        -0.08121389226604503,
+        -0.006392783876733032
+      ],
+      "central_taux_anom_nm2": [
+        -0.024475296666679525,
+        0.03864115257021139
+      ],
+      "east_taux_raw_nm2": [
+        -0.06714209379449601,
+        -0.02148012875778969
+      ],
+      "east_taux_anom_nm2": [
+        -0.014066009730729648,
+        0.01605764993525845
+      ]
+    }
+  }
+}

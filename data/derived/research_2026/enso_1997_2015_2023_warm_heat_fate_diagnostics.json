@@ -1,0 +1,129 @@
+{
+  "source_months": 270,
+  "source_start": "1980-01-15",
+  "source_end": "2024-06-15",
+  "primary_baseline": "1980-2014",
+  "sensitivity_baseline": "1982-2022",
+  "event_years": [
+    1997,
+    2015,
+    2023
+  ],
+  "primary_5n_temperature_latitude": 4.75,
+  "sensitivity_5n_temperature_latitude": 4.25,
+  "decay_total_export_boundary_sensitivity_zj": {
+    "1997": -0.019328163070036375,
+    "2015": 0.04376934411014943,
+    "2023": 0.01996534180774301
+  },
+  "baseline_sign_stability": {
+    "1997_development_Jan0_Jun0_q20_140w_east_zj": true,
+    "1997_development_Jan0_Jun0_q20_5n_north_zj": true,
+    "1997_development_Jan0_Jun0_q20_5n_ekman_north_zj": true,
+    "1997_development_Jan0_Jun0_east_surface_loss_zj": true,
+    "1997_development_Jan0_Jun0_east_h20_change_zj": true,
+    "2015_development_Jan0_Jun0_q20_140w_east_zj": true,
+    "2015_development_Jan0_Jun0_q20_5n_north_zj": true,
+    "2015_development_Jan0_Jun0_q20_5n_ekman_north_zj": false,
+    "2015_development_Jan0_Jun0_east_surface_loss_zj": true,
+    "2015_development_Jan0_Jun0_east_h20_change_zj": true,
+    "2023_development_Jan0_Jun0_q20_140w_east_zj": true,
+    "2023_development_Jan0_Jun0_q20_5n_north_zj": false,
+    "2023_development_Jan0_Jun0_q20_5n_ekman_north_zj": true,
+    "2023_development_Jan0_Jun0_east_surface_loss_zj": true,
+    "2023_development_Jan0_Jun0_east_h20_change_zj": true,
+    "1997_decay_Jan1_May1_q20_140w_east_zj": true,
+    "1997_decay_Jan1_May1_q20_5n_north_zj": true,
+    "1997_decay_Jan1_May1_q20_5n_ekman_north_zj": true,
+    "1997_decay_Jan1_May1_east_surface_loss_zj": true,
+    "1997_decay_Jan1_May1_east_h20_change_zj": true,
+    "2015_decay_Jan1_May1_q20_140w_east_zj": true,
+    "2015_decay_Jan1_May1_q20_5n_north_zj": true,
+    "2015_decay_Jan1_May1_q20_5n_ekman_north_zj": true,
+    "2015_decay_Jan1_May1_east_surface_loss_zj": true,
+    "2015_decay_Jan1_May1_east_h20_change_zj": true,
+    "2023_decay_Jan1_May1_q20_140w_east_zj": true,
+    "2023_decay_Jan1_May1_q20_5n_north_zj": true,
+    "2023_decay_Jan1_May1_q20_5n_ekman_north_zj": true,
+    "2023_decay_Jan1_May1_east_surface_loss_zj": true,
+    "2023_decay_Jan1_May1_east_h20_change_zj": true
+  },
+  "all_key_signs_stable": false,
+  "core_decay_signs_stable": true,
+  "contrast_direction_stability": {
+    "1997_minus_2015_development_Jan0_Jun0_q20_140w_east_zj": true,
+    "1997_minus_2023_development_Jan0_Jun0_q20_140w_east_zj": true,
+    "2015_minus_2023_development_Jan0_Jun0_q20_140w_east_zj": true,
+    "1997_minus_2015_development_Jan0_Jun0_east_h20_change_zj": true,
+    "1997_minus_2023_development_Jan0_Jun0_east_h20_change_zj": true,
+    "2015_minus_2023_development_Jan0_Jun0_east_h20_change_zj": true,
+    "1997_minus_2015_decay_Jan1_May1_q20_5n_north_zj": true,
+    "1997_minus_2023_decay_Jan1_May1_q20_5n_north_zj": true,
+    "2015_minus_2023_decay_Jan1_May1_q20_5n_north_zj": true,
+    "1997_minus_2015_decay_Jan1_May1_q20_5n_ekman_north_zj": true,
+    "1997_minus_2023_decay_Jan1_May1_q20_5n_ekman_north_zj": true,
+    "2015_minus_2023_decay_Jan1_May1_q20_5n_ekman_north_zj": true,
+    "1997_minus_2015_decay_Jan1_May1_q20_5n_nonekman_north_zj": true,
+    "1997_minus_2023_decay_Jan1_May1_q20_5n_nonekman_north_zj": true,
+    "2015_minus_2023_decay_Jan1_May1_q20_5n_nonekman_north_zj": true,
+    "1997_minus_2015_decay_Jan1_May1_east_surface_loss_zj": true,
+    "1997_minus_2023_decay_Jan1_May1_east_surface_loss_zj": true,
+    "2015_minus_2023_decay_Jan1_May1_east_surface_loss_zj": true,
+    "1997_minus_2015_decay_Jan1_May1_east_h20_change_zj": true,
+    "1997_minus_2023_decay_Jan1_May1_east_h20_change_zj": true,
+    "2015_minus_2023_decay_Jan1_May1_east_h20_change_zj": true
+  },
+  "all_core_contrast_directions_stable": true,
+  "primary_decay_2015_minus_2023_zj": {
+    "q20_5n_north_zj": 2.1621043443379193,
+    "q20_5n_ekman_north_zj": 0.8978073336439825,
+    "q20_5n_nonekman_north_zj": 1.2642970106939309,
+    "east_surface_loss_zj": 0.7636615308806735,
+    "east_h20_change_zj": -1.9608539207553424
+  },
+  "ekman_fraction_of_total_export_contrast": 0.4152469958238345,
+  "primary_pairwise_decay_contrasts_zj": {
+    "1997_minus_2015": {
+      "q20_5n_north_zj": 2.9279389532379247,
+      "q20_5n_ekman_north_zj": 0.7854929139646933,
+      "q20_5n_nonekman_north_zj": 2.142446039273236,
+      "east_surface_loss_zj": 3.208835144075716,
+      "east_h20_change_zj": 1.3693739810865129
+    },
+    "1997_minus_2023": {
+      "q20_5n_north_zj": 5.0900432975758445,
+      "q20_5n_ekman_north_zj": 1.6833002476086758,
+      "q20_5n_nonekman_north_zj": 3.406743049967167,
+      "east_surface_loss_zj": 3.9724966749563895,
+      "east_h20_change_zj": -0.5914799396688295
+    },
+    "2015_minus_2023": {
+      "q20_5n_north_zj": 2.1621043443379193,
+      "q20_5n_ekman_north_zj": 0.8978073336439825,
+      "q20_5n_nonekman_north_zj": 1.2642970106939309,
+      "east_surface_loss_zj": 0.7636615308806735,
+      "east_h20_change_zj": -1.9608539207553424
+    }
+  },
+  "pairwise_ekman_fraction_of_total_export_contrast": {
+    "1997_minus_2015": 0.268275031177149,
+    "1997_minus_2023": 0.3307045046965229,
+    "2015_minus_2023": 0.4152469958238345
+  },
+  "primary_decay_north_export_order_1997_gt_2015_gt_2023": true,
+  "independent_reproduction_checks": {
+    "q140_n_months": 270,
+    "q140_correlation": 1.0,
+    "q140_max_abs_difference_pw": 4.440892098500626e-16,
+    "q5n_n_months": 258,
+    "q5n_correlation": 0.9998084485528705,
+    "q5n_max_abs_difference_pw": 0.014080745546264095,
+    "q5n_mean_abs_difference_pw": 0.0037256046107495403
+  },
+  "limitations": [
+    "January-June source months only; the mature December is unavailable in this extension subset.",
+    "The eastern storage box is 5S-5N rather than the 10S-5N composite box.",
+    "Salinity is unavailable, so total-minus-Ekman is a non-Ekman remainder, not a geostrophic estimate.",
+    "The 2026 decay season has not occurred and is not inferred from these data."
+  ]
+}

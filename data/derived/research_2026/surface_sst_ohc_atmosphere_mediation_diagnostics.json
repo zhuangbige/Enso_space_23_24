@@ -1,0 +1,57 @@
+{
+  "event_years": [
+    1982,
+    1986,
+    1991,
+    1994,
+    1997,
+    2002,
+    2004,
+    2006,
+    2009,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "n_events": 13,
+  "months": [
+    5,
+    6
+  ],
+  "sst_baseline": [
+    1982,
+    2024
+  ],
+  "atmosphere_baseline": [
+    1980,
+    2024
+  ],
+  "map_domain": {
+    "lat": [
+      -15.0,
+      15.0
+    ],
+    "lon": [
+      120.0,
+      280.0
+    ]
+  },
+  "valid_map_cells": 4647,
+  "primary_pcs": 2,
+  "primary_ridge_alpha": 1.0,
+  "warm_threshold_c": 27.5,
+  "all_event_values_finite": true,
+  "output_files": [
+    "/Users/daiyue/Documents/Maryland/data/derived/research_2026/surface_sst_ohc_atmosphere_mediation_event_table.csv",
+    "/Users/daiyue/Documents/Maryland/data/derived/research_2026/surface_sst_ohc_atmosphere_mediation_loeo_predictions.csv",
+    "/Users/daiyue/Documents/Maryland/data/derived/research_2026/surface_sst_ohc_atmosphere_mediation_model_skill.csv",
+    "/Users/daiyue/Documents/Maryland/data/derived/research_2026/surface_sst_ohc_atmosphere_mediation_increment_tests.csv",
+    "/Users/daiyue/Documents/Maryland/data/derived/research_2026/surface_sst_ohc_atmosphere_mediation_sensitivity.csv",
+    "/Users/daiyue/Documents/Maryland/outputs/research_2026/surface_sst_ohc_atmosphere_mediation/fig_surface_sst_ohc_atmosphere_mediation.png",
+    "/Users/daiyue/Documents/Maryland/outputs/research_2026/surface_sst_ohc_atmosphere_mediation/fig_surface_sst_ohc_atmosphere_mediation.pdf",
+    "/Users/daiyue/Documents/Maryland/outputs/research_2026/surface_sst_ohc_atmosphere_mediation/fig_may_june_sst_pattern_context_1997_2015_2023.png",
+    "/Users/daiyue/Documents/Maryland/outputs/research_2026/surface_sst_ohc_atmosphere_mediation/fig_may_june_sst_pattern_context_1997_2015_2023.pdf",
+    "/Users/daiyue/Documents/Maryland/outputs/research_2026/surface_sst_ohc_atmosphere_mediation/SURFACE_SST_OHC_ATMOSPHERE_MEDIATION_CN.md"
+  ]
+}

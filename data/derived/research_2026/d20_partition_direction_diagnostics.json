@@ -1,0 +1,30 @@
+{
+  "d20_location": "0N, 140W",
+  "partition_definition": "cumulative north H20 change residual conditional on equator+north total H20 change",
+  "baseline": [
+    1982,
+    2022
+  ],
+  "cross_lag_transitions": [
+    "JF -> MA",
+    "FM -> AM",
+    "MA -> MJ"
+  ],
+  "n_events": 13,
+  "event_years": [
+    1982,
+    1986,
+    1991,
+    1994,
+    1997,
+    2002,
+    2004,
+    2006,
+    2009,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "interpretation": "Cross-lag associations do not identify a stable one-way D20-partition direction."
+}

@@ -1,0 +1,571 @@
+{"kind":"deck","id":"pr/hyngsd","name":"Deck"}
+{"kind":"layout","layoutId":"c9343596-ea31-43b2-a9d8-2d30c9682863","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"db26773f-f1f6-4a77-b4e2-90428b414623","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/z7mhly","slide":1,"title":"ENSO暖量到达—去向—耦合命运","textShapes":2}
+{"kind":"shape","id":"sh/tgn6p4fy","slide":1,"bbox":[0,0,18,720]}
+{"kind":"textbox","id":"sh/6twnupg7","slide":1,"text":"ENSO暖量到达—去向—耦合命运","textPreview":"ENSO暖量到达—去向—耦合命运","textChars":16,"textLines":1,"bbox":[76,178,1100,150]}
+{"kind":"textbox","id":"sh/7u5onuxs","slide":1,"text":"从 Chakravorty et al. (2021) 到 SODA3 三问题诊断闭环","textPreview":"从 Chakravorty et al. (2021) 到 SODA3 三问题诊断闭环","textChars":43,"textLines":1,"bbox":[80,360,1040,70]}
+{"kind":"notes","id":"nt/z7mhly","slide":1,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx\n- https://doi.org/10.1029/2020JC017075"}
+{"kind":"slide","id":"sl/daqjlm","slide":2,"title":"研究起点：Chakravorty等（2021）回答了“充放电是否不同”","textShapes":8}
+{"kind":"textbox","id":"sh/b2hcb69s","slide":2,"text":"研究起点：Chakravorty等（2021）回答了“充放电是否不同”","textPreview":"研究起点：Chakravorty等（2021）回答了“充放电是否不同”","textChars":35,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/w3qd4bad","slide":2,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/x4zudgry","slide":2,"bbox":[60,150,520,220]}
+{"kind":"shape","id":"sh/mdoby1sb","slide":2,"bbox":[60,150,9,220]}
+{"kind":"textbox","id":"sh/nyxc769g","slide":2,"text":"原文核心结论","textPreview":"原文核心结论","textChars":6,"textLines":1,"bbox":[88,170,468,48]}
+{"kind":"textbox","id":"sh/oz6d0ba1","slide":2,"text":"CT事件具有更清晰的赤道暖水充—放电演变；CP事件的充放电信号相对较弱。","textPreview":"CT事件具有更清晰的赤道暖水充—放电演变；CP事件的充放电信号相对较弱。","textChars":36,"textLines":1,"bbox":[88,222,468,132]}
+{"kind":"shape","id":"sh/90fu9grm","slide":2,"bbox":[60,395,520,220]}
+{"kind":"shape","id":"sh/69svalsf","slide":2,"bbox":[60,395,9,220]}
+{"kind":"textbox","id":"sh/7u1cjq90","slide":2,"text":"主要方法","textPreview":"主要方法","textChars":4,"textLines":1,"bbox":[88,415,468,48]}
+{"kind":"textbox","id":"sh/relob6x0","slide":2,"text":"SODA2.1.6事件合成、CHI、D20 EOF与归一化暖水输送，比较不同厄尔尼诺类型。","textPreview":"SODA2.1.6事件合成、CHI、D20 EOF与归一化暖水输送，比较不同厄尔尼诺类型。","textChars":45,"textLines":1,"bbox":[88,467,468,132]}
+{"kind":"textbox","id":"sh/qdcn21gf","slide":2,"text":"尚未直接回答","textPreview":"尚未直接回答","textChars":6,"textLines":1,"bbox":[680,155,430,54]}
+{"kind":"textbox","id":"sh/dg36dgfq","slide":2,"text":"• 输送的暖水究竟带走多少能量？\n• 暖量是否真的进入东太平洋？\n• 到达之后从哪里离开、由什么动力控制？","textPreview":"• 输送的暖水究竟带走多少能量？ | • 暖量是否真的进入东太平洋？ | • 到达之后从哪里离开、由什么动力控制？","textChars":53,"textLines":3,"bbox":[680,230,470,280]}
+{"kind":"shape","id":"sh/cfu54byl","slide":2,"bbox":[680,520,470,100]}
+{"kind":"textbox","id":"sh/zilof6xw","slide":2,"text":"标准化输送  →  ZJ级暖量命运","textPreview":"标准化输送  →  ZJ级暖量命运","textChars":17,"textLines":1,"bbox":[698,532,434,76]}
+{"kind":"notes","id":"nt/daqjlm","slide":2,"text":"[Sources]\n- https://doi.org/10.1029/2020JC017075\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/9mahn1","slide":3,"title":"研究如何从“充放电”走到“暖量去哪了”","textShapes":14}
+{"kind":"textbox","id":"sh/8b2lg72x","slide":3,"text":"研究如何从“充放电”走到“暖量去哪了”","textPreview":"研究如何从“充放电”走到“暖量去哪了”","textChars":19,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/7atk72lc","slide":3,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/6pk3exkr","slide":3,"bbox":[100,340,1080,0.1]}
+{"kind":"shape","id":"sh/lob25s3m","slide":3,"bbox":[101,331,18,18]}
+{"kind":"textbox","id":"sh/kn2lcn21","slide":3,"text":"复现","textPreview":"复现","textChars":2,"textLines":1,"bbox":[30,235,160,48]}
+{"kind":"textbox","id":"sh/jm9k3ilg","slide":3,"text":"CT/CP充放电","textPreview":"CT/CP充放电","textChars":8,"textLines":1,"bbox":[20,380,180,92]}
+{"kind":"shape","id":"sh/yl03adkv","slide":3,"bbox":[311,331,18,18]}
+{"kind":"textbox","id":"sh/xkr21s3a","slide":3,"text":"量纲化","textPreview":"量纲化","textChars":3,"textLines":1,"bbox":[240,235,160,48]}
+{"kind":"textbox","id":"sh/wjil8n2p","slide":3,"text":"WWV→H20","textPreview":"WWV→H20","textChars":7,"textLines":1,"bbox":[230,380,180,92]}
+{"kind":"shape","id":"sh/61gf618z","slide":3,"bbox":[526,331,18,18]}
+{"kind":"textbox","id":"sh/r2pgf69k","slide":3,"text":"追踪","textPreview":"追踪","textChars":2,"textLines":1,"bbox":[455,235,160,48]}
+{"kind":"textbox","id":"sh/s3ix8rqp","slide":3,"text":"Qwarm,20三箱","textPreview":"Qwarm,20三箱","textChars":10,"textLines":1,"bbox":[445,380,180,92]}
+{"kind":"shape","id":"sh/t4ryhwra","slide":3,"bbox":[741,331,18,18]}
+{"kind":"textbox","id":"sh/idgf2h8n","slide":3,"text":"归宿","textPreview":"归宿","textChars":2,"textLines":1,"bbox":[670,235,160,48]}
+{"kind":"textbox","id":"sh/jepwbm98","slide":3,"text":"5°N/10°S/散热","textPreview":"5°N/10°S/散热","textChars":11,"textLines":1,"bbox":[660,380,180,92]}
+{"kind":"shape","id":"sh/4zyx4rqt","slide":3,"bbox":[956,331,18,18]}
+{"kind":"textbox","id":"sh/507edwre","slide":3,"text":"个例","textPreview":"个例","textChars":2,"textLines":1,"bbox":[885,235,160,48]}
+{"kind":"textbox","id":"sh/u9wfyh8r","slide":3,"text":"三事件对比","textPreview":"三事件对比","textChars":5,"textLines":1,"bbox":[875,380,180,92]}
+{"kind":"shape","id":"sh/va5w729c","slide":3,"bbox":[1156,331,18,18]}
+{"kind":"textbox","id":"sh/zelcfip4","slide":3,"text":"归因","textPreview":"归因","textChars":2,"textLines":1,"bbox":[1085,235,160,48]}
+{"kind":"textbox","id":"sh/ydcb6doj","slide":3,"text":"海洋预置×风驱","textPreview":"海洋预置×风驱","textChars":7,"textLines":1,"bbox":[1075,380,180,92]}
+{"kind":"textbox","id":"sh/lg3u187u","slide":3,"text":"每一步都把前一步的“有无/强弱”问题推进为可闭合的能量与动力问题。","textPreview":"每一步都把前一步的“有无/强弱”问题推进为可闭合的能量与动力问题。","textChars":33,"textLines":1,"bbox":[120,545,1040,72]}
+{"kind":"notes","id":"nt/9mahn1","slide":3,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx\n- https://doi.org/10.1029/2020JC017075"}
+{"kind":"slide","id":"sl/movm1d","slide":4,"title":"已有研究提供了三块拼图，但尚未把它们闭合","textShapes":9}
+{"kind":"textbox","id":"sh/uxsrylwb","slide":4,"text":"已有研究提供了三块拼图，但尚未把它们闭合","textPreview":"已有研究提供了三块拼图，但尚未把它们闭合","textChars":20,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/h0jat0v2","slide":4,"bbox":[60,106,1160,0.1]}
+{"kind":"textbox","id":"sh/gza90veh","slide":4,"text":"充放电与WWV","textPreview":"充放电与WWV","textChars":7,"textLines":1,"bbox":[70,160,330,70]}
+{"kind":"shape","id":"sh/32lsvqd8","slide":4,"bbox":[70,242,330,0.1]}
+{"kind":"textbox","id":"sh/i1cr25wn","slide":4,"text":"解释赤道暖水体积如何随ENSO充放电，但多用体积或标准化输送。","textPreview":"解释赤道暖水体积如何随ENSO充放电，但多用体积或标准化输送。","textChars":31,"textLines":1,"bbox":[70,270,330,200]}
+{"kind":"textbox","id":"sh/543ax0vy","slide":4,"text":"海洋热量收支","textPreview":"海洋热量收支","textChars":6,"textLines":1,"bbox":[445,160,330,70]}
+{"kind":"shape","id":"sh/43u94ved","slide":4,"bbox":[445,242,330,0.1]}
+{"kind":"textbox","id":"sh/z6hsj6xo","slide":4,"text":"能闭合温盐、表面通量与经向输送，却少有CT/CP及三事件统一比较。","textPreview":"能闭合温盐、表面通量与经向输送，却少有CT/CP及三事件统一比较。","textChars":33,"textLines":1,"bbox":[445,270,330,200]}
+{"kind":"textbox","id":"sh/y58rq1w3","slide":4,"text":"ENSO多样性与2023事件","textPreview":"ENSO多样性与2023事件","textChars":14,"textLines":1,"bbox":[820,160,330,70]}
+{"kind":"shape","id":"sh/k72ts7ed","slide":4,"bbox":[820,242,330,0.1]}
+{"kind":"textbox","id":"sh/l8ba1cvy","slide":4,"text":"揭示2023/24风场与背景异常特殊，但未回答同样FEP先暖为何导向不同暖量命运。","textPreview":"揭示2023/24风场与背景异常特殊，但未回答同样FEP先暖为何导向不同暖量命运。","textChars":41,"textLines":1,"bbox":[820,270,330,200]}
+{"kind":"shape","id":"sh/y5kbqxw7","slide":4,"bbox":[110,525,1060,120]}
+{"kind":"shape","id":"sh/j6tsz2ds","slide":4,"bbox":[110,525,9,120]}
+{"kind":"textbox","id":"sh/8bmtw7ep","slide":4,"text":"本文补上的闭环","textPreview":"本文补上的闭环","textChars":7,"textLines":1,"bbox":[138,537,1008,36]}
+{"kind":"textbox","id":"sh/twvu5cva","slide":4,"text":"在同一SODA3框架中同时量化：暖量到达、到达后的分配、地转—Ekman竞争，以及表面增暖向海气耦合响应的转化效率。","textPreview":"在同一SODA3框架中同时量化：暖量到达、到达后的分配、地转—Ekman竞争，以及表面增暖向海气耦合响应的转化效率。","textChars":58,"textLines":1,"bbox":[138,577,1008,58]}
+{"kind":"notes","id":"nt/movm1d","slide":4,"text":"[Sources]\n- https://doi.org/10.1175/1520-0469(1997)054%3C0811:AEORPF%3E2.0.CO;2\n- https://doi.org/10.1175/1520-0442(2000)013%3C3551:OOWWVC%3E2.0.CO;2\n- https://doi.org/10.1007/s00382-021-06056-5\n- https://doi.org/10.1029/2022JC019576\n- https://doi.org/10.1029/2020JC017075\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/kb0t2o","slide":5,"title":"整项工作收束为三个彼此递进的问题","textShapes":8}
+{"kind":"textbox","id":"sh/crixobep","slide":5,"text":"整项工作收束为三个彼此递进的问题","textPreview":"整项工作收束为三个彼此递进的问题","textChars":16,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/bq9gvqd4","slide":5,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/a5gfmlwj","slide":5,"bbox":[70,150,1140,120]}
+{"kind":"textbox","id":"sh/lwry10v6","slide":5,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[90,164,70,70]}
+{"kind":"textbox","id":"sh/kvihsvul","slide":5,"text":"暖量是否真正到达东太平洋？","textPreview":"暖量是否真正到达东太平洋？","textChars":13,"textLines":1,"bbox":[165,164,1025,92]}
+{"kind":"shape","id":"sh/zu9gzqdg","slide":5,"bbox":[70,300,1140,120]}
+{"kind":"textbox","id":"sh/yt0zqlcv","slide":5,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[90,314,70,70]}
+{"kind":"textbox","id":"sh/107ypwv2","slide":5,"text":"到达后的暖量去了哪里？","textPreview":"到达后的暖量去了哪里？","textChars":11,"textLines":1,"bbox":[165,314,1025,92]}
+{"kind":"shape","id":"sh/0zyxgreh","slide":5,"bbox":[70,450,1140,120]}
+{"kind":"textbox","id":"sh/21cnitkb","slide":5,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[90,464,70,70]}
+{"kind":"textbox","id":"sh/32l4ry1w","slide":5,"text":"相似FEP先暖为何产生不同暖量命运？","textPreview":"相似FEP先暖为何产生不同暖量命运？","textChars":18,"textLines":1,"bbox":[165,464,1025,92]}
+{"kind":"textbox","id":"sh/43u5k3ih","slide":5,"text":"到达  →  分配  →  海气耦合控制","textPreview":"到达  →  分配  →  海气耦合控制","textChars":20,"textLines":1,"bbox":[160,610,960,56]}
+{"kind":"notes","id":"nt/kb0t2o","slide":5,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/mvs3q9","slide":6,"title":"数据体系：海洋主产品负责闭合，独立资料约束海气响应","textShapes":19}
+{"kind":"textbox","id":"sh/rmd4ni1w","slide":6,"text":"数据体系：海洋主产品负责闭合，独立资料约束海气响应","textPreview":"数据体系：海洋主产品负责闭合，独立资料约束海气响应","textChars":25,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/snmlgnih","slide":6,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/dovmpsjm","slide":6,"bbox":[75,150,1130,76]}
+{"kind":"textbox","id":"sh/ihk3at0z","slide":6,"text":"数据","textPreview":"数据","textChars":2,"textLines":1,"bbox":[83,157,219,62]}
+{"kind":"textbox","id":"sh/3it4jy1k","slide":6,"text":"变量","textPreview":"变量","textChars":2,"textLines":1,"bbox":[318,157,314,62]}
+{"kind":"textbox","id":"sh/4j2lc3i5","slide":6,"text":"在本文中的作用","textPreview":"在本文中的作用","textChars":7,"textLines":1,"bbox":[648,157,549,62]}
+{"kind":"shape","id":"sh/5kbml8jq","slide":6,"bbox":[75,226,1130,76]}
+{"kind":"textbox","id":"sh/ut036t03","slide":6,"text":"SODA3.15.2","textPreview":"SODA3.15.2","textChars":10,"textLines":1,"bbox":[83,233,219,62]}
+{"kind":"textbox","id":"sh/vut4fy1o","slide":6,"text":"T、S、u/v、SSH、τ、Qnet","textPreview":"T、S、u/v、SSH、τ、Qnet","textChars":18,"textLines":1,"bbox":[318,233,314,62]}
+{"kind":"textbox","id":"sh/fa5ofets","slide":6,"text":"H20、Qwarm,20、三箱预算、地转/Ekman","textPreview":"H20、Qwarm,20、三箱预算、地转/Ekman","textChars":26,"textLines":1,"bbox":[648,233,549,62]}
+{"kind":"shape","id":"sh/epwn69c7","slide":6,"bbox":[75,302,1130,76]}
+{"kind":"textbox","id":"sh/1cn6hobi","slide":6,"text":"OISST","textPreview":"OISST","textChars":5,"textLines":1,"bbox":[83,309,219,62]}
+{"kind":"textbox","id":"sh/gbe58jud","slide":6,"text":"SST","textPreview":"SST","textChars":3,"textLines":1,"bbox":[318,309,314,62]}
+{"kind":"textbox","id":"sh/3e5ojeto","slide":6,"text":"FEP表面增暖与个例空间结构","textPreview":"FEP表面增暖与个例空间结构","textChars":14,"textLines":1,"bbox":[648,309,549,62]}
+{"kind":"shape","id":"sh/2dwna9c3","slide":6,"bbox":[75,378,1130,76]}
+{"kind":"textbox","id":"sh/pg76lobu","slide":6,"text":"ERA5","textPreview":"ERA5","textChars":4,"textLines":1,"bbox":[83,385,219,62]}
+{"kind":"textbox","id":"sh/ofy5cju9","slide":6,"text":"u850、SLP、应力、热通量","textPreview":"u850、SLP、应力、热通量","textChars":15,"textLines":1,"bbox":[318,385,314,62]}
+{"kind":"textbox","id":"sh/jil47udk","slide":6,"text":"大气闭合、风驱与独立通量检验","textPreview":"大气闭合、风驱与独立通量检验","textChars":14,"textLines":1,"bbox":[648,385,549,62]}
+{"kind":"shape","id":"sh/ihcnypcz","slide":6,"bbox":[75,454,1130,76]}
+{"kind":"textbox","id":"sh/md0rmxwn","slide":6,"text":"GPCP / CPC OLR","textPreview":"GPCP / CPC OLR","textChars":14,"textLines":1,"bbox":[83,461,219,62]}
+{"kind":"textbox","id":"sh/net8f2d8","slide":6,"text":"降水、OLR","textPreview":"降水、OLR","textChars":6,"textLines":1,"bbox":[318,461,314,62]}
+{"kind":"textbox","id":"sh/8z29o7ed","slide":6,"text":"深对流和东西向迁移","textPreview":"深对流和东西向迁移","textChars":9,"textLines":1,"bbox":[648,461,549,62]}
+{"kind":"shape","id":"sh/90bqhcvy","slide":6,"bbox":[75,530,1130,76]}
+{"kind":"textbox","id":"sh/y90ridwb","slide":6,"text":"ORAS5（图件补充）","textPreview":"ORAS5（图件补充）","textChars":11,"textLines":1,"bbox":[83,537,219,62]}
+{"kind":"textbox","id":"sh/za98bidw","slide":6,"text":"OHC","textPreview":"OHC","textChars":3,"textLines":1,"bbox":[318,537,314,62]}
+{"kind":"textbox","id":"sh/0bi9kneh","slide":6,"text":"1997/2023盆地热库存对照","textPreview":"1997/2023盆地热库存对照","textChars":16,"textLines":1,"bbox":[648,537,549,62]}
+{"kind":"notes","id":"nt/mvs3q9","slide":6,"text":"[Sources]\n- https://doi.org/10.1175/JCLI-D-17-0149.1\n- https://doi.org/10.1002/qj.3803\n- https://doi.org/10.1175/JCLI-D-20-0166.1\n- https://doi.org/10.3390/atmos9020138\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/6jjir9","slide":7,"title":"样本与时段：合成、个例和事件统计各回答不同层次","textShapes":19}
+{"kind":"textbox","id":"sh/2lsn21cb","slide":7,"text":"样本与时段：合成、个例和事件统计各回答不同层次","textPreview":"样本与时段：合成、个例和事件统计各回答不同层次","textChars":23,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/pojmdgbm","slide":7,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/4na54bu1","slide":7,"bbox":[70,165,350,210]}
+{"kind":"textbox","id":"sh/fih476tk","slide":7,"text":"4 + 4","textPreview":"4 + 4","textChars":5,"textLines":1,"bbox":[90,179,310,86]}
+{"kind":"textbox","id":"sh/uh8ny1cz","slide":7,"text":"与Chakravorty重叠的CT/CP事件，用于类型合成。","textPreview":"与Chakravorty重叠的CT/CP事件，用于类型合成。","textChars":30,"textLines":1,"bbox":[90,277,310,80]}
+{"kind":"shape","id":"sh/hkjm9wbq","slide":7,"bbox":[465,165,350,210]}
+{"kind":"textbox","id":"sh/gja50bu5","slide":7,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[485,179,310,86]}
+{"kind":"textbox","id":"sh/zel4jqto","slide":7,"text":"1997、2015、2023过程个例，用于机制对照。","textPreview":"1997、2015、2023过程个例，用于机制对照。","textChars":26,"textLines":1,"bbox":[485,277,310,80]}
+{"kind":"shape","id":"sh/edcnalc3","slide":7,"bbox":[860,165,350,210]}
+{"kind":"textbox","id":"sh/g7e94na9","slide":7,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[880,179,310,86]}
+{"kind":"textbox","id":"sh/18nqd8bu","slide":7,"text":"1982—2023暖事件，用于事件级相关和置换统计。","textPreview":"1982—2023暖事件，用于事件级相关和置换统计。","textChars":26,"textLines":1,"bbox":[880,277,310,80]}
+{"kind":"shape","id":"sh/e5cr2dc3","slide":7,"bbox":[150,440,1130,62]}
+{"kind":"textbox","id":"sh/f658bito","slide":7,"text":"阶段","textPreview":"阶段","textChars":2,"textLines":1,"bbox":[158,447,234,48]}
+{"kind":"textbox","id":"sh/s3up03ud","slide":7,"text":"时间窗口","textPreview":"时间窗口","textChars":4,"textLines":1,"bbox":[408,447,314,48]}
+{"kind":"textbox","id":"sh/t43q98by","slide":7,"text":"诊断目标","textPreview":"诊断目标","textChars":4,"textLines":1,"bbox":[738,447,534,48]}
+{"kind":"shape","id":"sh/61c7ytc7","slide":7,"bbox":[150,502,1130,62]}
+{"kind":"textbox","id":"sh/r2l87yts","slide":7,"text":"发展期","textPreview":"发展期","textChars":3,"textLines":1,"bbox":[158,509,234,48]}
+{"kind":"textbox","id":"sh/4zupw3u1","slide":7,"text":"Jan—Jun(0) / Jun—Nov(0)","textPreview":"Jan—Jun(0) / Jun—Nov(0)","textChars":23,"textLines":1,"bbox":[408,509,314,48]}
+{"kind":"textbox","id":"sh/503q5obm","slide":7,"text":"跨140°W输入与东部储热","textPreview":"跨140°W输入与东部储热","textChars":13,"textLines":1,"bbox":[738,509,534,48]}
+{"kind":"shape","id":"sh/lkbed0ze","slide":7,"bbox":[150,564,1130,62]}
+{"kind":"textbox","id":"sh/kj2xkvit","slide":7,"text":"成熟—衰减","textPreview":"成熟—衰减","textChars":5,"textLines":1,"bbox":[158,571,234,48]}
+{"kind":"textbox","id":"sh/zitwbqh8","slide":7,"text":"Dec(0)—May(+1)","textPreview":"Dec(0)—May(+1)","textChars":14,"textLines":1,"bbox":[408,571,314,48]}
+{"kind":"textbox","id":"sh/yhkfil0n","slide":7,"text":"5°N/10°S输出、海表散热与储量下降","textPreview":"5°N/10°S输出、海表散热与储量下降","textChars":20,"textLines":1,"bbox":[738,571,534,48]}
+{"kind":"shape","id":"sh/xgre9gz2","slide":7,"bbox":[150,626,1130,62]}
+{"kind":"textbox","id":"sh/cvixgbih","slide":7,"text":"海气接通","textPreview":"海气接通","textChars":4,"textLines":1,"bbox":[158,633,234,48]}
+{"kind":"textbox","id":"sh/bu9w76hc","slide":7,"text":"Mar—Jun(0)","textPreview":"Mar—Jun(0)","textChars":10,"textLines":1,"bbox":[408,633,314,48]}
+{"kind":"textbox","id":"sh/at0fel0r","slide":7,"text":"FEP—OHC—u850—对流闭合","textPreview":"FEP—OHC—u850—对流闭合","textChars":17,"textLines":1,"bbox":[738,633,534,48]}
+{"kind":"notes","id":"nt/6jjir9","slide":7,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx\n- https://doi.org/10.1029/2020JC017075"}
+{"kind":"slide","id":"sl/hgudx4","slide":8,"title":"H20把暖水体积转化为可比较的阈值相对热含量","textShapes":8}
+{"kind":"textbox","id":"sh/yl4bit87","slide":8,"text":"H20把暖水体积转化为可比较的阈值相对热含量","textPreview":"H20把暖水体积转化为可比较的阈值相对热含量","textChars":22,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/lovato7y","slide":8,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/0nmtk3qd","slide":8,"bbox":[90,145,1100,90]}
+{"kind":"textbox","id":"sh/nqdsvypo","slide":8,"text":"χ₂₀(T) = max(T − Tᵣ, 0),      I₂₀ = 1(T > Tᵣ),      Tᵣ = 20°C","textPreview":"χ₂₀(T) = max(T − Tᵣ, 0),      I₂₀ = 1(T > Tᵣ),      Tᵣ = 20°C","textChars":61,"textLines":1,"bbox":[108,157,1064,66]}
+{"kind":"shape","id":"sh/mp4bmt8j","slide":8,"bbox":[90,270,320,110]}
+{"kind":"textbox","id":"sh/9cfax87u","slide":8,"text":"WWV = ∭ I₂₀ dV","textPreview":"WWV = ∭ I₂₀ dV","textChars":14,"textLines":1,"bbox":[108,282,284,86]}
+{"kind":"textbox","id":"sh/8r6to3q9","slide":8,"text":"×","textPreview":"×","textChars":1,"textLines":1,"bbox":[435,288,50,60]}
+{"kind":"shape","id":"sh/3utsjepk","slide":8,"bbox":[510,270,370,110]}
+{"kind":"textbox","id":"sh/2tkra98z","slide":8,"text":"ΔT̄₂₀ =  ∭χ₂₀dV / ∭I₂₀dV","textPreview":"ΔT̄₂₀ =  ∭χ₂₀dV / ∭I₂₀dV","textChars":24,"textLines":1,"bbox":[528,282,334,86]}
+{"kind":"textbox","id":"sh/k76hsvu9","slide":8,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[900,288,80,60]}
+{"kind":"shape","id":"sh/l8fil0vu","slide":8,"bbox":[970,270,250,110]}
+{"kind":"textbox","id":"sh/y54zqlw3","slide":8,"text":"H₂₀ = ρ₀cₚ ∭χ₂₀ dV","textPreview":"H₂₀ = ρ₀cₚ ∭χ₂₀ dV","textChars":18,"textLines":1,"bbox":[988,282,214,86]}
+{"kind":"textbox","id":"sh/j6x0jqdo","slide":8,"text":"• 20°C由温跃层位移和WWV动力意义决定，不是绝对热力参考态。\n• H20表示20°C阈值以上的相对热含量，单位J或ZJ。","textPreview":"• 20°C由温跃层位移和WWV动力意义决定，不是绝对热力参考态。 | • H20表示20°C阈值以上的相对热含量，单位J或ZJ。","textChars":63,"textLines":2,"bbox":[130,450,1020,140]}
+{"kind":"notes","id":"nt/hgudx4","slide":8,"text":"[Sources]\n- https://doi.org/10.1175/1520-0442(2000)013%3C3551:OOWWVC%3E2.0.CO;2\n- https://doi.org/10.1175/1520-0469(1997)054%3C0811:AEORPF%3E2.0.CO;2\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/7r91au","slide":9,"title":"Qwarm,20量化穿过固定断面的暖水体阈值能量输送","textShapes":18}
+{"kind":"textbox","id":"sh/5s7adkn2","slide":9,"text":"Qwarm,20量化穿过固定断面的暖水体阈值能量输送","textPreview":"Qwarm,20量化穿过固定断面的暖水体阈值能量输送","textChars":26,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/ipwr25ob","slide":9,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/jq5sbapw","slide":9,"bbox":[125,165,1030,130]}
+{"kind":"textbox","id":"sh/svy98z6d","slide":9,"text":"Qwarm,20 = ρ₀cₚ ∬Γ vₙ χ₂₀(T) dA","textPreview":"Qwarm,20 = ρ₀cₚ ∬Γ vₙ χ₂₀(T) dA","textChars":31,"textLines":1,"bbox":[143,177,994,106]}
+{"kind":"shape","id":"sh/tg7ahkny","slide":9,"bbox":[170,350,950,58]}
+{"kind":"textbox","id":"sh/6tgr6po7","slide":9,"text":"量纲因子","textPreview":"量纲因子","textChars":4,"textLines":1,"bbox":[178,357,264,44]}
+{"kind":"textbox","id":"sh/7upsfu5s","slide":9,"text":"单位","textPreview":"单位","textChars":2,"textLines":1,"bbox":[458,357,264,44]}
+{"kind":"textbox","id":"sh/ozu9wv69","slide":9,"text":"物理意义","textPreview":"物理意义","textChars":4,"textLines":1,"bbox":[738,357,374,44]}
+{"kind":"shape","id":"sh/90nq507u","slide":9,"bbox":[170,408,950,58]}
+{"kind":"textbox","id":"sh/5w7epwzm","slide":9,"text":"ρ₀","textPreview":"ρ₀","textChars":2,"textLines":1,"bbox":[178,415,264,44]}
+{"kind":"textbox","id":"sh/kvyxgry1","slide":9,"text":"kg m⁻³","textPreview":"kg m⁻³","textChars":6,"textLines":1,"bbox":[458,415,264,44]}
+{"kind":"textbox","id":"sh/jupwnmhg","slide":9,"text":"海水密度","textPreview":"海水密度","textChars":4,"textLines":1,"bbox":[738,415,374,44]}
+{"kind":"shape","id":"sh/itgve1gv","slide":9,"bbox":[170,466,950,58]}
+{"kind":"textbox","id":"sh/t0retgfi","slide":9,"text":"cₚ","textPreview":"cₚ","textChars":2,"textLines":1,"bbox":[178,473,264,44]}
+{"kind":"textbox","id":"sh/szixkbyx","slide":9,"text":"J kg⁻¹ K⁻¹","textPreview":"J kg⁻¹ K⁻¹","textChars":10,"textLines":1,"bbox":[458,473,264,44]}
+{"kind":"textbox","id":"sh/7y9wr6xc","slide":9,"text":"定压比热","textPreview":"定压比热","textChars":4,"textLines":1,"bbox":[738,473,374,44]}
+{"kind":"shape","id":"sh/6xgfi1g7","slide":9,"bbox":[170,524,950,58]}
+{"kind":"textbox","id":"sh/horexgfu","slide":9,"text":"vₙ χ₂₀ dA","textPreview":"vₙ χ₂₀ dA","textChars":9,"textLines":1,"bbox":[178,531,264,44]}
+{"kind":"textbox","id":"sh/gnixoby9","slide":9,"text":"m³ K s⁻¹","textPreview":"m³ K s⁻¹","textChars":8,"textLines":1,"bbox":[458,531,264,44]}
+{"kind":"textbox","id":"sh/0japgjah","slide":9,"text":"暖水体跨断面输送","textPreview":"暖水体跨断面输送","textChars":8,"textLines":1,"bbox":[738,531,374,44]}
+{"kind":"shape","id":"sh/14jq9or2","slide":9,"bbox":[170,582,950,58]}
+{"kind":"textbox","id":"sh/ehs7e9sr","slide":9,"text":"Qwarm,20","textPreview":"Qwarm,20","textChars":8,"textLines":1,"bbox":[178,589,264,44]}
+{"kind":"textbox","id":"sh/zi187e9w","slide":9,"text":"J s⁻¹ = W","textPreview":"J s⁻¹ = W","textChars":9,"textLines":1,"bbox":[458,589,264,44]}
+{"kind":"textbox","id":"sh/87upk3at","slide":9,"text":"通常以PW表示","textPreview":"通常以PW表示","textChars":7,"textLines":1,"bbox":[738,589,374,44]}
+{"kind":"textbox","id":"sh/983qd8re","slide":9,"text":"它不是传统 ρcₚ∫vT dA 的总海洋热输送。","textPreview":"它不是传统 ρcₚ∫vT dA 的总海洋热输送。","textChars":24,"textLines":1,"bbox":[210,625,860,45]}
+{"kind":"notes","id":"nt/7r91au","slide":9,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx\n- https://doi.org/10.1029/2020JC017075"}
+{"kind":"slide","id":"sl/v0avvk","slide":10,"title":"阈值暖量预算是诊断恒等式，不应写成普通温度守恒方程","textShapes":4}
+{"kind":"textbox","id":"sh/gz250zid","slide":10,"text":"阈值暖量预算是诊断恒等式，不应写成普通温度守恒方程","textPreview":"阈值暖量预算是诊断恒等式，不应写成普通温度守恒方程","textChars":25,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/fyto7u1s","slide":10,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/uxknyp07","slide":10,"bbox":[120,160,1040,120]}
+{"kind":"textbox","id":"sh/twbm5kjm","slide":10,"text":"dH₂₀/dt = ΣΓ FΓ + Qsurface,warm + R₂₀","textPreview":"dH₂₀/dt = ΣΓ FΓ + Qsurface,warm + R₂₀","textChars":37,"textLines":1,"bbox":[138,172,1004,96]}
+{"kind":"shape","id":"sh/sv25wfi1","slide":10,"bbox":[120,320,1040,100]}
+{"kind":"textbox","id":"sh/7ut43u1g","slide":10,"text":"FΓ = −ρ₀cₚ ∬Γ (v·nout) χ₂₀ dA     （FΓ > 0 表示进入箱体）","textPreview":"FΓ = −ρ₀cₚ ∬Γ (v·nout) χ₂₀ dA     （FΓ > 0 表示进入箱体）","textChars":49,"textLines":1,"bbox":[138,332,1004,76]}
+{"kind":"textbox","id":"sh/69knup0v","slide":10,"text":"• χ₂₀(T)是非线性阈值算子。\n• 绝热不可压平流在几乎处处满足链式法则。\n• 混合、扩散、卷挟、强迫导致的跨20°C转换进入R₂₀。","textPreview":"• χ₂₀(T)是非线性阈值算子。 | • 绝热不可压平流在几乎处处满足链式法则。 | • 混合、扩散、卷挟、强迫导致的跨20°C转换进入R₂₀。","textChars":69,"textLines":3,"bbox":[150,475,980,155]}
+{"kind":"notes","id":"nt/v0avvk","slide":10,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/dqaa1x","slide":11,"title":"三箱设计把“向东输送”转化为可闭合的空间收支","textShapes":10}
+{"kind":"textbox","id":"sh/ud4nm147","slide":11,"text":"三箱设计把“向东输送”转化为可闭合的空间收支","textPreview":"三箱设计把“向东输送”转化为可闭合的空间收支","textChars":22,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/h0v6hg3i","slide":11,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/wzm5obmd","slide":11,"bbox":[320,335,110,0.1]}
+{"kind":"shape","id":"sh/j2xojqlo","slide":11,"bbox":[720,335,110,0.1]}
+{"kind":"textbox","id":"sh/i1o7ql43","slide":11,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[405,300,70,70]}
+{"kind":"textbox","id":"sh/54f6lg3u","slide":11,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[805,300,70,70]}
+{"kind":"shape","id":"sh/436psv29","slide":11,"bbox":[80,215,320,250]}
+{"kind":"textbox","id":"sh/r6xonql0","slide":11,"text":"西部蓄水库","textPreview":"西部蓄水库","textChars":5,"textLines":1,"bbox":[105,255,270,64]}
+{"kind":"textbox","id":"sh/65o7ulkf","slide":11,"text":"160°E—180°E","textPreview":"160°E—180°E","textChars":11,"textLines":1,"bbox":[105,340,270,48]}
+{"kind":"shape","id":"sh/cf29c3ix","slide":11,"bbox":[480,215,320,250]}
+{"kind":"textbox","id":"sh/d0bal8z2","slide":11,"text":"中太平洋通道","textPreview":"中太平洋通道","textChars":6,"textLines":1,"bbox":[505,255,270,64]}
+{"kind":"textbox","id":"sh/qdkrat0r","slide":11,"text":"180°—140°W","textPreview":"180°—140°W","textChars":10,"textLines":1,"bbox":[505,340,270,48]}
+{"kind":"shape","id":"sh/betsjyhc","slide":11,"bbox":[880,215,320,250]}
+{"kind":"textbox","id":"sh/03m9g3it","slide":11,"text":"东太平洋受热区","textPreview":"东太平洋受热区","textChars":7,"textLines":1,"bbox":[905,255,270,64]}
+{"kind":"textbox","id":"sh/l4vap8ze","slide":11,"text":"140°W—80°W","textPreview":"140°W—80°W","textChars":10,"textLines":1,"bbox":[905,340,270,48]}
+{"kind":"textbox","id":"sh/y1kret0n","slide":11,"text":"每个箱同时计算：储量倾向、东西边界、5°N/10°S、海表通量和剩余项。","textPreview":"每个箱同时计算：储量倾向、东西边界、5°N/10°S、海表通量和剩余项。","textChars":36,"textLines":1,"bbox":[100,540,1080,70]}
+{"kind":"notes","id":"nt/dqaa1x","slide":11,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/b5ea2y","slide":12,"title":"表面加热和剩余项必须明确各自的物理边界","textShapes":5}
+{"kind":"textbox","id":"sh/wb29szi1","slide":12,"text":"表面加热和剩余项必须明确各自的物理边界","textPreview":"表面加热和剩余项必须明确各自的物理边界","textChars":19,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/vatsju1g","slide":12,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/a9krqp0v","slide":12,"bbox":[90,160,520,115]}
+{"kind":"textbox","id":"sh/98rahkjq","slide":12,"text":"Qsurface,warm = ∬ I₂₀(Ts) Qnet dA","textPreview":"Qsurface,warm = ∬ I₂₀(Ts) Qnet dA","textChars":33,"textLines":1,"bbox":[108,172,484,91]}
+{"kind":"textbox","id":"sh/o7i9ofi5","slide":12,"text":"• 只保留表层温度高于20°C格点的净热通量。\n• 月平均有限表层温度是阈值热源的一阶近似。\n• D20>0仅作暖层足迹敏感性，不作主定义。","textPreview":"• 只保留表层温度高于20°C格点的净热通量。 | • 月平均有限表层温度是阈值热源的一阶近似。 | • D20>0仅作暖层足迹敏感性，不作主定义。","textChars":70,"textLines":3,"bbox":[90,315,520,245]}
+{"kind":"shape","id":"sh/n69sfa1k","slide":12,"bbox":[670,160,520,115]}
+{"kind":"textbox","id":"sh/m50rm50z","slide":12,"text":"R₂₀ = dH₂₀/dt − ΣFΓ − Qsurface,warm","textPreview":"R₂₀ = dH₂₀/dt − ΣFΓ − Qsurface,warm","textChars":35,"textLines":1,"bbox":[688,172,484,91]}
+{"kind":"textbox","id":"sh/t4vat4zu","slide":12,"text":"• 包含垂向/斜压交换、混合、卷挟。\n• 包含跨20°C等温面转换和离散误差。\n• 不能把R₂₀预先命名为某一种洋流。","textPreview":"• 包含垂向/斜压交换、混合、卷挟。 | • 包含跨20°C等温面转换和离散误差。 | • 不能把R₂₀预先命名为某一种洋流。","textChars":59,"textLines":3,"bbox":[670,315,520,245]}
+{"kind":"notes","id":"nt/b5ea2y","slide":12,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/9gxn99","slide":13,"title":"5°N地转输送由海表高度梯度与密度梯度共同决定","textShapes":14}
+{"kind":"textbox","id":"sh/up4bihs7","slide":13,"text":"5°N地转输送由海表高度梯度与密度梯度共同决定","textPreview":"5°N地转输送由海表高度梯度与密度梯度共同决定","textChars":23,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/hsvadwri","slide":13,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/wrmtkrax","slide":13,"bbox":[100,145,420,80]}
+{"kind":"textbox","id":"sh/72ds729g","slide":13,"text":"f v_g = (1/ρ₀) ∂p/∂x","textPreview":"f v_g = (1/ρ₀) ∂p/∂x","textChars":20,"textLines":1,"bbox":[118,157,384,56]}
+{"kind":"shape","id":"sh/m1krehsv","slide":13,"bbox":[570,145,610,80]}
+{"kind":"textbox","id":"sh/9ova9crm","slide":13,"text":"p(d) = ρ₀gη + g∫₀ᵈ ρ′(d′) dd′","textPreview":"p(d) = ρ₀gη + g∫₀ᵈ ρ′(d′) dd′","textChars":29,"textLines":1,"bbox":[588,157,574,56]}
+{"kind":"shape","id":"sh/8nmtg7a1","slide":13,"bbox":[100,270,1080,115]}
+{"kind":"textbox","id":"sh/ryxsj69k","slide":13,"text":"v_g(d) = (g/f)∂η/∂x + [g/(ρ₀f)]∫₀ᵈ ∂ρ′/∂x dd′","textPreview":"v_g(d) = (g/f)∂η/∂x + [g/(ρ₀f)]∫₀ᵈ ∂ρ′/∂x dd′","textChars":45,"textLines":1,"bbox":[118,282,1044,91]}
+{"kind":"shape","id":"sh/6xobq1sz","slide":13,"bbox":[170,445,1020,68]}
+{"kind":"textbox","id":"sh/gve58vid","slide":13,"text":"分量","textPreview":"分量","textChars":2,"textLines":1,"bbox":[178,452,244,54]}
+{"kind":"textbox","id":"sh/hwn6h0jy","slide":13,"text":"压力来源","textPreview":"压力来源","textChars":4,"textLines":1,"bbox":[438,452,314,54]}
+{"kind":"textbox","id":"sh/utwn6lk7","slide":13,"text":"解释","textPreview":"解释","textChars":2,"textLines":1,"bbox":[768,452,414,54]}
+{"kind":"shape","id":"sh/vu54fq1s","slide":13,"bbox":[170,513,1020,68]}
+{"kind":"textbox","id":"sh/87e54b21","slide":13,"text":"SSH地转","textPreview":"SSH地转","textChars":5,"textLines":1,"bbox":[178,520,244,54]}
+{"kind":"textbox","id":"sh/tsnmdgjm","slide":13,"text":"∂η/∂x","textPreview":"∂η/∂x","textChars":5,"textLines":1,"bbox":[438,520,314,54]}
+{"kind":"textbox","id":"sh/m5cn21kb","slide":13,"text":"海面坡度控制的深度一致流","textPreview":"海面坡度控制的深度一致流","textChars":12,"textLines":1,"bbox":[768,520,414,54]}
+{"kind":"shape","id":"sh/76l4b61w","slide":13,"bbox":[170,581,1020,68]}
+{"kind":"textbox","id":"sh/k3u50b25","slide":13,"text":"密度地转","textPreview":"密度地转","textChars":4,"textLines":1,"bbox":[178,588,244,54]}
+{"kind":"textbox","id":"sh/l43m9gjq","slide":13,"text":"∫∂ρ′/∂x dd′","textPreview":"∫∂ρ′/∂x dd′","textChars":11,"textLines":1,"bbox":[438,588,314,54]}
+{"kind":"textbox","id":"sh/1obuh872","slide":13,"text":"斜压密度结构控制的热成风贡献","textPreview":"斜压密度结构控制的热成风贡献","textChars":14,"textLines":1,"bbox":[768,588,414,54]}
+{"kind":"textbox","id":"sh/0n2to3qx","slide":13,"text":"ρ′ = ρ − ρref(d)；若参考密度仅随深度变化，∂ρ′/∂x = ∂ρ/∂x。","textPreview":"ρ′ = ρ − ρref(d)；若参考密度仅随深度变化，∂ρ′/∂x = ∂ρ/∂x。","textChars":44,"textLines":1,"bbox":[150,640,980,42]}
+{"kind":"notes","id":"nt/9gxn99","slide":13,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/fwseuf","slide":14,"title":"Ekman风驱项与地转压力项构成出口动力竞争","textShapes":6}
+{"kind":"textbox","id":"sh/m50z2hcr","slide":14,"text":"Ekman风驱项与地转压力项构成出口动力竞争","textPreview":"Ekman风驱项与地转压力项构成出口动力竞争","textChars":22,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/9sbixwvi","slide":14,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/8r2h4rux","slide":14,"bbox":[90,160,430,100]}
+{"kind":"textbox","id":"sh/z290rmd0","slide":14,"text":"Mᵧ = −τₓ/(ρ₀ f)","textPreview":"Mᵧ = −τₓ/(ρ₀ f)","textChars":15,"textLines":1,"bbox":[108,172,394,76]}
+{"kind":"shape","id":"sh/y10zyhcv","slide":14,"bbox":[570,160,620,100]}
+{"kind":"textbox","id":"sh/l4ritwv6","slide":14,"text":"QEkman = ρ₀cₚ ∫ Mᵧ · χ̄₂₀,E dx","textPreview":"QEkman = ρ₀cₚ ∫ Mᵧ · χ̄₂₀,E dx","textChars":30,"textLines":1,"bbox":[588,172,584,76]}
+{"kind":"textbox","id":"sh/03ih0rul","slide":14,"text":"• τx向东为正，Mᵧ向北为正；北半球西风异常对应向南Ekman输送。\n• 热权重使用Ekman层暖温差平均，是一阶深度积分估算。","textPreview":"• τx向东为正，Mᵧ向北为正；北半球西风异常对应向南Ekman输送。 | • 热权重使用Ekman层暖温差平均，是一阶深度积分估算。","textChars":65,"textLines":2,"bbox":[120,310,1040,120]}
+{"kind":"shape","id":"sh/jyd036tk","slide":14,"bbox":[140,470,1000,100]}
+{"kind":"textbox","id":"sh/ixkja1cz","slide":14,"text":"Qtotal = Qgeo + QEkman + Qres","textPreview":"Qtotal = Qgeo + QEkman + Qres","textChars":29,"textLines":1,"bbox":[158,482,964,76]}
+{"kind":"textbox","id":"sh/kf21s7y1","slide":14,"text":"这是诊断恒等式；Qres包含年龄转、瞬变涡旋、惯性与近似误差。","textPreview":"这是诊断恒等式；Qres包含年龄转、瞬变涡旋、惯性与近似误差。","textChars":31,"textLines":1,"bbox":[180,610,920,48]}
+{"kind":"notes","id":"nt/fwseuf","slide":14,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/t2i0uf","slide":15,"title":"FEP residual分离“最东部增暖”与传统Niño-3.4共同变化","textShapes":9}
+{"kind":"textbox","id":"sh/6ts7654r","slide":15,"text":"FEP residual分离“最东部增暖”与传统Niño-3.4共同变化","textPreview":"FEP residual分离“最东部增暖”与传统Niño-3.4共同变化","textChars":36,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/twjqhk3i","slide":15,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/8vap8fmx","slide":15,"bbox":[115,160,1050,100]}
+{"kind":"textbox","id":"sh/jq18balg","slide":15,"text":"FEP′ₘ = aₘ + bₘ Niño3.4′ₘ + εₘ","textPreview":"FEP′ₘ = aₘ + bₘ Niño3.4′ₘ + εₘ","textChars":30,"textLines":1,"bbox":[133,172,1014,76]}
+{"kind":"shape","id":"sh/yp87254v","slide":15,"bbox":[115,300,1050,100]}
+{"kind":"textbox","id":"sh/lsjqdk36","slide":15,"text":"FEPres,ₘ = FEP′ₘ − (aₘ + bₘ Niño3.4′ₘ)","textPreview":"FEPres,ₘ = FEP′ₘ − (aₘ + bₘ Niño3.4′ₘ)","textChars":38,"textLines":1,"bbox":[133,312,1014,76]}
+{"kind":"shape","id":"sh/krap4fml","slide":15,"bbox":[110,465,330,160]}
+{"kind":"textbox","id":"sh/b2h87ql4","slide":15,"text":"43","textPreview":"43","textChars":2,"textLines":1,"bbox":[130,479,290,64]}
+{"kind":"textbox","id":"sh/a187yl4j","slide":15,"text":"1982—2024，每个日历月独立回归。","textPreview":"1982—2024，每个日历月独立回归。","textChars":20,"textLines":1,"bbox":[130,551,290,64]}
+{"kind":"shape","id":"sh/onmh4b2l","slide":15,"bbox":[475,465,330,160]}
+{"kind":"textbox","id":"sh/povydg36","slide":15,"text":"41","textPreview":"41","textChars":2,"textLines":1,"bbox":[495,479,290,64]}
+{"kind":"textbox","id":"sh/2l4f21kv","slide":15,"text":"OLS回归自由度 n−2。","textPreview":"OLS回归自由度 n−2。","textChars":13,"textLines":1,"bbox":[495,551,290,64]}
+{"kind":"shape","id":"sh/3mdgb6l0","slide":15,"bbox":[840,465,330,160]}
+{"kind":"textbox","id":"sh/gjmx0r2p","slide":15,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[860,479,290,64]}
+{"kind":"textbox","id":"sh/1kvy9w3a","slide":15,"text":"暖事件样本用于机制关系。","textPreview":"暖事件样本用于机制关系。","textChars":12,"textLines":1,"bbox":[860,551,290,64]}
+{"kind":"notes","id":"nt/t2i0uf","slide":15,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/e5wvis","slide":16,"title":"事件统计与换风实验把第三问推进到定量过程归因","textShapes":7}
+{"kind":"textbox","id":"sh/rqdk7ad4","slide":16,"text":"事件统计与换风实验把第三问推进到定量过程归因","textPreview":"事件统计与换风实验把第三问推进到定量过程归因","textChars":22,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/srml0fup","slide":16,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/tsf29kvu","slide":16,"bbox":[70,150,500,230]}
+{"kind":"shape","id":"sh/i14julw7","slide":16,"bbox":[70,150,9,230]}
+{"kind":"textbox","id":"sh/j2dk3qds","slide":16,"text":"13事件统计","textPreview":"13事件统计","textChars":6,"textLines":1,"bbox":[98,170,448,48]}
+{"kind":"textbox","id":"sh/4nmlwved","slide":16,"text":"报告Pearson r、事件bootstrap 95%区间、事件置换p和逐一删除事件后的r范围；p值只作辅助证据。","textPreview":"报告Pearson r、事件bootstrap 95%区间、事件置换p和逐一删除事件后的r范围；p值只作辅助证据。","textChars":57,"textLines":1,"bbox":[98,222,448,142]}
+{"kind":"shape","id":"sh/5ov250vy","slide":16,"bbox":[625,155,585,135]}
+{"kind":"textbox","id":"sh/2xo36pcr","slide":16,"text":"Qrec(i←j) = Qgeo(i) + Qres(i) + QEkman[T(i), τx(j)]","textPreview":"Qrec(i←j) = Qgeo(i) + Qres(i) + QEkman[T(i), τx(j)]","textChars":51,"textLines":1,"bbox":[643,167,549,111]}
+{"kind":"textbox","id":"sh/3yxkfudc","slide":16,"text":"固定海洋温度、地转项和残差，只替换局地5°N风应力。","textPreview":"固定海洋温度、地转项和残差，只替换局地5°N风应力。","textChars":26,"textLines":1,"bbox":[650,315,535,74]}
+{"kind":"shape","id":"sh/jml0vad4","slide":16,"bbox":[170,455,940,150]}
+{"kind":"shape","id":"sh/ilsz25wj","slide":16,"bbox":[170,455,9,150]}
+{"kind":"textbox","id":"sh/5o3ixkva","slide":16,"text":"因果边界","textPreview":"因果边界","textChars":4,"textLines":1,"bbox":[198,467,888,36]}
+{"kind":"textbox","id":"sh/4nuh4fep","slide":16,"text":"该试验不重新积分海洋或大气，也不允许压力场和残差响应新风场；因此是离线反事实敏感性试验，不是完整因果检验。","textPreview":"该试验不重新积分海洋或大气，也不允许压力场和残差响应新风场；因此是离线反事实敏感性试验，不是完整因果检验。","textChars":53,"textLines":1,"bbox":[198,507,888,88]}
+{"kind":"notes","id":"nt/e5wvis","slide":16,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/s0zxp8","slide":17,"title":"问题一证据：暖异常沿赤道向东传播，但次表层支撑强度不同","textShapes":1}
+{"kind":"textbox","id":"sh/14ze5gba","slide":17,"text":"问题一证据：暖异常沿赤道向东传播，但次表层支撑强度不同","textPreview":"问题一证据：暖异常沿赤道向东传播，但次表层支撑强度不同","textChars":27,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/e1ovalcz","slide":17,"bbox":[60,106,1160,0.1]}
+{"kind":"image","id":"im/2tcfytoz","slide":17,"name":"","alt":"1997、2015和2023赤道太平洋OHC向东传播Hovmöller图","bbox":[60,125,1160,550]}
+{"kind":"notes","id":"nt/s0zxp8","slide":17,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/three_questions_figure_package_20260805/01_main_figures/Fig01_eastward_OHC_arrival_hovmoller.png\n- https://doi.org/10.1175/JCLI-D-17-0149.1\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/7splmu","slide":18,"title":"CT与CP都能把暖量送入东部，差别在强度与后续分配","textShapes":3}
+{"kind":"textbox","id":"sh/yl87qtcb","slide":18,"text":"CT与CP都能把暖量送入东部，差别在强度与后续分配","textPreview":"CT与CP都能把暖量送入东部，差别在强度与后续分配","textChars":25,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/l8z6l8v2","slide":18,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/bixofed0","slide":18,"bbox":[930,165,300,420]}
+{"kind":"shape","id":"sh/aho7mtcf","slide":18,"bbox":[930,165,9,420]}
+{"kind":"textbox","id":"sh/xkz6hovq","slide":18,"text":"关键判断","textPreview":"关键判断","textChars":4,"textLines":1,"bbox":[958,185,248,48]}
+{"kind":"textbox","id":"sh/wj6pojul","slide":18,"text":"两组发展期跨140°W输入均为正；因此不能把类型差异写成“CT到达、CP不到达”。\n\n真正差别是东部增热幅度，以及成熟—衰减期5°N与表面散热的分配。","textPreview":"两组发展期跨140°W输入均为正；因此不能把类型差异写成“CT到达、CP不到达”。 |  | 真正差别是东部增热幅度，以及成熟—衰减期5°N与表面散热的分配。","textChars":75,"textLines":3,"bbox":[958,237,248,332]}
+{"kind":"image","id":"im/dsrulwf2","slide":18,"name":"","alt":"CT和CP三箱暖量到达与去向","bbox":[50,130,860,540]}
+{"kind":"notes","id":"nt/7splmu","slide":18,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/three_questions_figure_package_20260805/01_main_figures/Fig02_CT_CP_three_box_arrival_and_fate.png\n- https://doi.org/10.1029/2020JC017075\n- https://doi.org/10.1175/JCLI-D-17-0149.1\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/a0dao2","slide":19,"title":"1997输入最强；2015与2023的发展期到达量十分接近","textShapes":23}
+{"kind":"textbox","id":"sh/bu1oz29g","slide":19,"text":"1997输入最强；2015与2023的发展期到达量十分接近","textPreview":"1997输入最强；2015与2023的发展期到达量十分接近","textChars":29,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/cvaps7q1","slide":19,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/xwjq1crm","slide":19,"bbox":[70,155,1100,72]}
+{"kind":"textbox","id":"sh/yxc7uh87","slide":19,"text":"事件","textPreview":"事件","textChars":2,"textLines":1,"bbox":[78,162,134,58]}
+{"kind":"textbox","id":"sh/zyl83mps","slide":19,"text":"140°W Qwarm,20","textPreview":"140°W Qwarm,20","textChars":14,"textLines":1,"bbox":[228,162,244,58]}
+{"kind":"textbox","id":"sh/kjupwrqx","slide":19,"text":"东部H20变化","textPreview":"东部H20变化","textChars":7,"textLines":1,"bbox":[488,162,234,58]}
+{"kind":"textbox","id":"sh/lk3q5w7i","slide":19,"text":"东部SST","textPreview":"东部SST","textChars":5,"textLines":1,"bbox":[738,162,204,58]}
+{"kind":"textbox","id":"sh/mlc7yh83","slide":19,"text":"东部D20","textPreview":"东部D20","textChars":5,"textLines":1,"bbox":[958,162,204,58]}
+{"kind":"shape","id":"sh/7ml87mpo","slide":19,"bbox":[70,227,1100,72]}
+{"kind":"textbox","id":"sh/by583eps","slide":19,"text":"1997","textPreview":"1997","textChars":4,"textLines":1,"bbox":[78,234,134,58]}
+{"kind":"textbox","id":"sh/qxwru987","slide":19,"text":"+12.13 ZJ","textPreview":"+12.13 ZJ","textChars":9,"textLines":1,"bbox":[228,234,244,58]}
+{"kind":"textbox","id":"sh/dk7q5o7y","slide":19,"text":"+9.29 ZJ","textPreview":"+9.29 ZJ","textChars":8,"textLines":1,"bbox":[488,234,234,58]}
+{"kind":"textbox","id":"sh/cze9wjqd","slide":19,"text":"+0.35°C","textPreview":"+0.35°C","textChars":7,"textLines":1,"bbox":[738,234,204,58]}
+{"kind":"textbox","id":"sh/3u58zepw","slide":19,"text":"+17.27 m","textPreview":"+17.27 m","textChars":8,"textLines":1,"bbox":[958,234,204,58]}
+{"kind":"shape","id":"sh/2twrq98b","slide":19,"bbox":[70,299,1100,72]}
+{"kind":"textbox","id":"sh/pwnq147m","slide":19,"text":"2015","textPreview":"2015","textChars":4,"textLines":1,"bbox":[78,306,134,58]}
+{"kind":"textbox","id":"sh/ove9szq1","slide":19,"text":"+3.30 ZJ","textPreview":"+3.30 ZJ","textChars":8,"textLines":1,"bbox":[228,306,244,58]}
+{"kind":"textbox","id":"sh/nqpsbyp0","slide":19,"text":"+3.53 ZJ","textPreview":"+3.53 ZJ","textChars":8,"textLines":1,"bbox":[488,306,234,58]}
+{"kind":"textbox","id":"sh/mpgr2t8f","slide":19,"text":"+0.98°C","textPreview":"+0.98°C","textChars":7,"textLines":1,"bbox":[738,306,204,58]}
+{"kind":"textbox","id":"sh/ilkbuxsn","slide":19,"text":"+15.09 m","textPreview":"+15.09 m","textChars":8,"textLines":1,"bbox":[958,306,204,58]}
+{"kind":"shape","id":"sh/jmtc3298","slide":19,"bbox":[70,371,1100,72]}
+{"kind":"textbox","id":"sh/4n2tw7at","slide":19,"text":"2023","textPreview":"2023","textChars":4,"textLines":1,"bbox":[78,378,134,58]}
+{"kind":"textbox","id":"sh/5obu5cre","slide":19,"text":"+3.91 ZJ","textPreview":"+3.91 ZJ","textChars":8,"textLines":1,"bbox":[228,378,244,58]}
+{"kind":"textbox","id":"sh/69kbyhsz","slide":19,"text":"+3.88 ZJ","textPreview":"+3.88 ZJ","textChars":8,"textLines":1,"bbox":[488,378,234,58]}
+{"kind":"textbox","id":"sh/radc7m94","slide":19,"text":"+0.93°C","textPreview":"+0.93°C","textChars":7,"textLines":1,"bbox":[738,378,204,58]}
+{"kind":"textbox","id":"sh/sbmd07ap","slide":19,"text":"+12.03 m","textPreview":"+12.03 m","textChars":8,"textLines":1,"bbox":[958,378,204,58]}
+{"kind":"shape","id":"sh/tcvu9cra","slide":19,"bbox":[110,505,1060,130]}
+{"kind":"shape","id":"sh/mt0bmdsf","slide":19,"bbox":[110,505,9,130]}
+{"kind":"textbox","id":"sh/ne9cvi90","slide":19,"text":"问题一的答案","textPreview":"问题一的答案","textChars":6,"textLines":1,"bbox":[138,517,1008,36]}
+{"kind":"textbox","id":"sh/p8fe1gbi","slide":19,"text":"暖量确实通过赤道上层海洋和140°W通道进入东太平洋；1997最强，2015与2023的输入近似。事件分岔不能归因于2023“暖量没来”。","textPreview":"暖量确实通过赤道上层海洋和140°W通道进入东太平洋；1997最强，2015与2023的输入近似。事件分岔不能归因于2023“暖量没来”。","textChars":69,"textLines":1,"bbox":[138,557,1008,68]}
+{"kind":"notes","id":"nt/a0dao2","slide":19,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/three_questions_figure_package_20260805/01_main_figures/Fig03_event_arrival_export_surface_loss.png"}
+{"kind":"slide","id":"sl/i2u0xc","slide":20,"title":"问题二证据：相似到达后，三事件走向强排放—部分排放—近闭合","textShapes":3}
+{"kind":"textbox","id":"sh/bi9kbex4","slide":20,"text":"问题二证据：相似到达后，三事件走向强排放—部分排放—近闭合","textPreview":"问题二证据：相似到达后，三事件走向强排放—部分排放—近闭合","textChars":29,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/wjilkjep","slide":20,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/mdgje9wn","slide":20,"bbox":[930,165,300,420]}
+{"kind":"shape","id":"sh/nepk7ex8","slide":20,"bbox":[930,165,9,420]}
+{"kind":"textbox","id":"sh/ofilgzet","slide":20,"text":"三种命运","textPreview":"三种命运","textChars":4,"textLines":1,"bbox":[958,185,248,48]}
+{"kind":"textbox","id":"sh/9gr294fy","slide":20,"text":"1997：北向输出与海表散热都强。\n\n2015：出口与散热减弱，但仍有净排放。\n\n2023：5°N出口近闭合，海表热损失也最弱。","textPreview":"1997：北向输出与海表散热都强。 |  | 2015：出口与散热减弱，但仍有净排放。 |  | 2023：5°N出口近闭合，海表热损失也最弱。","textChars":64,"textLines":5,"bbox":[958,237,248,332]}
+{"kind":"image","id":"im/snu9gna9","slide":20,"name":"","alt":"1997、2015和2023到达、输出和海表散热对比","bbox":[50,130,860,540]}
+{"kind":"notes","id":"nt/i2u0xc","slide":20,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/three_questions_figure_package_20260805/01_main_figures/Fig03_event_arrival_export_surface_loss.png\n- https://doi.org/10.1175/JCLI-D-17-0149.1\n- https://doi.org/10.1002/qj.3803\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/uzrwjb","slide":21,"title":"CT/CP合成表明：关键分叉位于东部箱5°N北界","textShapes":25}
+{"kind":"textbox","id":"sh/e54nu54n","slide":21,"text":"CT/CP合成表明：关键分叉位于东部箱5°N北界","textPreview":"CT/CP合成表明：关键分叉位于东部箱5°N北界","textChars":24,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/18f6p03e","slide":21,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/0765wvmt","slide":21,"bbox":[60,160,1160,82]}
+{"kind":"textbox","id":"sh/ridojq5c","slide":21,"text":"类型","textPreview":"类型","textChars":2,"textLines":1,"bbox":[68,167,124,68]}
+{"kind":"textbox","id":"sh/6h4nql4r","slide":21,"text":"H20变化","textPreview":"H20变化","textChars":5,"textLines":1,"bbox":[208,167,174,68]}
+{"kind":"textbox","id":"sh/t4v6l0n2","slide":21,"text":"5°N北向输出","textPreview":"5°N北向输出","textChars":7,"textLines":1,"bbox":[398,167,204,68]}
+{"kind":"textbox","id":"sh/sjm5svmx","slide":21,"text":"10°S南向输出","textPreview":"10°S南向输出","textChars":8,"textLines":1,"bbox":[618,167,204,68]}
+{"kind":"textbox","id":"sh/bexovalg","slide":21,"text":"海表热损失","textPreview":"海表热损失","textChars":5,"textLines":1,"bbox":[838,167,184,68]}
+{"kind":"textbox","id":"sh/ado72p4v","slide":21,"text":"预算剩余","textPreview":"预算剩余","textChars":4,"textLines":1,"bbox":[1038,167,174,68]}
+{"kind":"shape","id":"sh/obeh4zqt","slide":21,"bbox":[60,242,1160,82]}
+{"kind":"textbox","id":"sh/pcnid47e","slide":21,"text":"CT","textPreview":"CT","textChars":2,"textLines":1,"bbox":[68,249,124,68]}
+{"kind":"textbox","id":"sh/29wz2p83","slide":21,"text":"−7.86","textPreview":"−7.86","textChars":5,"textLines":1,"bbox":[208,249,174,68]}
+{"kind":"textbox","id":"sh/na50bupo","slide":21,"text":"+2.74","textPreview":"+2.74","textChars":5,"textLines":1,"bbox":[398,249,204,68]}
+{"kind":"textbox","id":"sh/0nuh0fqx","slide":21,"text":"+0.68","textPreview":"+0.68","textChars":5,"textLines":1,"bbox":[618,249,204,68]}
+{"kind":"textbox","id":"sh/18ni9k7i","slide":21,"text":"+3.69","textPreview":"+3.69","textChars":5,"textLines":1,"bbox":[838,249,184,68]}
+{"kind":"textbox","id":"sh/elczy58r","slide":21,"text":"+2.09","textPreview":"+2.09","textChars":5,"textLines":1,"bbox":[1038,249,174,68]}
+{"kind":"shape","id":"sh/fml07apc","slide":21,"bbox":[60,324,1160,82]}
+{"kind":"textbox","id":"sh/sjuhwfql","slide":21,"text":"CP","textPreview":"CP","textChars":2,"textLines":1,"bbox":[68,331,124,68]}
+{"kind":"textbox","id":"sh/dk3i5k76","slide":21,"text":"−3.03","textPreview":"−3.03","textChars":5,"textLines":1,"bbox":[208,331,174,68]}
+{"kind":"textbox","id":"sh/tgvytwza","slide":21,"text":"−0.96","textPreview":"−0.96","textChars":5,"textLines":1,"bbox":[398,331,204,68]}
+{"kind":"textbox","id":"sh/8fmx0rip","slide":21,"text":"−0.48","textPreview":"−0.48","textChars":5,"textLines":1,"bbox":[618,331,204,68]}
+{"kind":"textbox","id":"sh/7edgr6h4","slide":21,"text":"+1.76","textPreview":"+1.76","textChars":5,"textLines":1,"bbox":[838,331,184,68]}
+{"kind":"textbox","id":"sh/6d4fy10j","slide":21,"text":"+0.82","textPreview":"+0.82","textChars":5,"textLines":1,"bbox":[1038,331,174,68]}
+{"kind":"shape","id":"sh/lcvypwzy","slide":21,"bbox":[100,430,330,180]}
+{"kind":"textbox","id":"sh/kb2xwrid","slide":21,"text":"+3.70 ZJ","textPreview":"+3.70 ZJ","textChars":8,"textLines":1,"bbox":[120,444,290,64]}
+{"kind":"textbox","id":"sh/jatwnm18","slide":21,"text":"CT−CP的5°N北向输出差；95%区间[+1.65,+5.65]。","textPreview":"CT−CP的5°N北向输出差；95%区间[+1.65,+5.65]。","textChars":34,"textLines":1,"bbox":[120,516,290,84]}
+{"kind":"shape","id":"sh/y9kfuh0n","slide":21,"bbox":[475,430,330,180]}
+{"kind":"textbox","id":"sh/58fy1gzi","slide":21,"text":"+3.05 ZJ","textPreview":"+3.05 ZJ","textChars":8,"textLines":1,"bbox":[495,444,290,64]}
+{"kind":"textbox","id":"sh/476x8bix","slide":21,"text":"ERA5海表净热损失CT−CP差，95%区间为正。","textPreview":"ERA5海表净热损失CT−CP差，95%区间为正。","textChars":25,"textLines":1,"bbox":[495,516,290,84]}
+{"kind":"shape","id":"sh/md0v2dgf","slide":21,"bbox":[850,430,330,180]}
+{"kind":"textbox","id":"sh/ne9cvix0","slide":21,"text":"≈ 0","textPreview":"≈ 0","textChars":3,"textLines":1,"bbox":[870,444,290,64]}
+{"kind":"textbox","id":"sh/ofid4ny5","slide":21,"text":"10°S项组内区间跨零，不是稳健主出口。","textPreview":"10°S项组内区间跨零，不是稳健主出口。","textChars":20,"textLines":1,"bbox":[870,516,290,84]}
+{"kind":"notes","id":"nt/uzrwjb","slide":21,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx\n- https://doi.org/10.1175/JCLI-D-17-0149.1\n- https://doi.org/10.1002/qj.3803"}
+{"kind":"slide","id":"sl/f6ater","slide":22,"title":"5°N出口由Ekman风驱与地转压力场的竞争决定","textShapes":3}
+{"kind":"textbox","id":"sh/cf2h4jml","slide":22,"text":"5°N出口由Ekman风驱与地转压力场的竞争决定","textPreview":"5°N出口由Ekman风驱与地转压力场的竞争决定","textChars":24,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/re90ve50","slide":22,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/psrit4na","slide":22,"bbox":[930,165,300,420]}
+{"kind":"shape","id":"sh/4rih0zmp","slide":22,"bbox":[930,165,9,420]}
+{"kind":"textbox","id":"sh/3q90ru54","slide":22,"text":"动力分解","textPreview":"动力分解","textChars":4,"textLines":1,"bbox":[958,185,248,48]}
+{"kind":"textbox","id":"sh/2p0zyp4j","slide":22,"text":"1997：Ekman与地转同向排放。\n\n2015：Ekman足以克服南向地转阻力。\n\n2023：地转阻力与2015相近，但Ekman较弱，总出口接近零。","textPreview":"1997：Ekman与地转同向排放。 |  | 2015：Ekman足以克服南向地转阻力。 |  | 2023：地转阻力与2015相近，但Ekman较弱，总出口接近零。","textChars":76,"textLines":5,"bbox":[958,237,248,332]}
+{"kind":"image","id":"im/jyx8rud0","slide":22,"name":"","alt":"三事件5°N总暖量输送的地转、Ekman和残差分解","bbox":[50,130,860,540]}
+{"kind":"notes","id":"nt/f6ater","slide":22,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/three_questions_figure_package_20260805/01_main_figures/Fig04_event_5N_dynamical_decomposition.png\n- https://doi.org/10.1175/JCLI-D-17-0149.1\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/obo3d5","slide":23,"title":"问题二的答案：暖量主要经5°N、海表散热和储量变化重新分配","textShapes":23}
+{"kind":"textbox","id":"sh/ylsbud8r","slide":23,"text":"问题二的答案：暖量主要经5°N、海表散热和储量变化重新分配","textPreview":"问题二的答案：暖量主要经5°N、海表散热和储量变化重新分配","textChars":29,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/lojupsr2","slide":23,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/knatwnqx","slide":23,"bbox":[70,150,1120,70]}
+{"kind":"textbox","id":"sh/bihsji90","slide":23,"text":"事件","textPreview":"事件","textChars":2,"textLines":1,"bbox":[78,157,134,56]}
+{"kind":"textbox","id":"sh/ah8bqd8f","slide":23,"text":"5°N总输出","textPreview":"5°N总输出","textChars":6,"textLines":1,"bbox":[228,157,224,56]}
+{"kind":"textbox","id":"sh/xkzalsr6","slide":23,"text":"海表热损失","textPreview":"海表热损失","textChars":5,"textLines":1,"bbox":[468,157,224,56]}
+{"kind":"textbox","id":"sh/wjqtsnql","slide":23,"text":"东部H20变化","textPreview":"东部H20变化","textChars":7,"textLines":1,"bbox":[708,157,224,56]}
+{"kind":"textbox","id":"sh/nuhsfy94","slide":23,"text":"4.75°N单边估计","textPreview":"4.75°N单边估计","textChars":10,"textLines":1,"bbox":[948,157,234,56]}
+{"kind":"shape","id":"sh/mtobmt8j","slide":23,"bbox":[70,220,1120,70]}
+{"kind":"textbox","id":"sh/8vipcry1","slide":23,"text":"1997","textPreview":"1997","textChars":4,"textLines":1,"bbox":[78,227,134,56]}
+{"kind":"textbox","id":"sh/9wb6lwzm","slide":23,"text":"+3.81 ZJ","textPreview":"+3.81 ZJ","textChars":8,"textLines":1,"bbox":[228,227,224,56]}
+{"kind":"textbox","id":"sh/mt0nahgv","slide":23,"text":"+4.37 ZJ","textPreview":"+4.37 ZJ","textChars":8,"textLines":1,"bbox":[468,227,224,56]}
+{"kind":"textbox","id":"sh/nu9ojmhg","slide":23,"text":"−9.73 ZJ","textPreview":"−9.73 ZJ","textChars":8,"textLines":1,"bbox":[708,227,224,56]}
+{"kind":"textbox","id":"sh/07i587ip","slide":23,"text":"+3.85 ZJ","textPreview":"+3.85 ZJ","textChars":8,"textLines":1,"bbox":[948,227,234,56]}
+{"kind":"shape","id":"sh/l8r6hcza","slide":23,"bbox":[70,290,1120,70]}
+{"kind":"textbox","id":"sh/y50n6x0z","slide":23,"text":"2015","textPreview":"2015","textChars":4,"textLines":1,"bbox":[78,297,134,56]}
+{"kind":"textbox","id":"sh/z69of2hk","slide":23,"text":"+0.88 ZJ","textPreview":"+0.88 ZJ","textChars":8,"textLines":1,"bbox":[228,297,224,56]}
+{"kind":"textbox","id":"sh/k3mpkby9","slide":23,"text":"+1.16 ZJ","textPreview":"+1.16 ZJ","textChars":8,"textLines":1,"bbox":[468,297,224,56]}
+{"kind":"textbox","id":"sh/54v6tgzu","slide":23,"text":"−11.10 ZJ","textPreview":"−11.10 ZJ","textChars":9,"textLines":1,"bbox":[708,297,224,56]}
+{"kind":"textbox","id":"sh/tkr6dwry","slide":23,"text":"+0.92 ZJ","textPreview":"+0.92 ZJ","textChars":8,"textLines":1,"bbox":[948,297,234,56]}
+{"kind":"shape","id":"sh/sji54rqd","slide":23,"bbox":[70,360,1120,70]}
+{"kind":"textbox","id":"sh/ri9ob69s","slide":23,"text":"2023","textPreview":"2023","textChars":4,"textLines":1,"bbox":[78,367,134,56]}
+{"kind":"textbox","id":"sh/6hgn2187","slide":23,"text":"+0.10 ZJ","textPreview":"+0.10 ZJ","textChars":8,"textLines":1,"bbox":[228,367,224,56]}
+{"kind":"textbox","id":"sh/5g769wrm","slide":23,"text":"+0.40 ZJ","textPreview":"+0.40 ZJ","textChars":8,"textLines":1,"bbox":[468,367,224,56]}
+{"kind":"textbox","id":"sh/4fy50rq1","slide":23,"text":"−9.14 ZJ","textPreview":"−9.14 ZJ","textChars":8,"textLines":1,"bbox":[708,367,224,56]}
+{"kind":"textbox","id":"sh/jepo7m9w","slide":23,"text":"−1.24 ZJ","textPreview":"−1.24 ZJ","textChars":8,"textLines":1,"bbox":[948,367,234,56]}
+{"kind":"shape","id":"sh/itgnyh8b","slide":23,"bbox":[120,505,1040,130]}
+{"kind":"shape","id":"sh/hs765crq","slide":23,"bbox":[120,505,9,130]}
+{"kind":"textbox","id":"sh/wry5w7q5","slide":23,"text":"结论边界","textPreview":"结论边界","textChars":4,"textLines":1,"bbox":[148,517,988,36]}
+{"kind":"textbox","id":"sh/mlcbqtkr","slide":23,"text":"10°S不是稳健主出口；2023对5°N通量面温度插值敏感，因此最稳健表述是“出口显著受抑或近闭合”，而不是断言其必然净向南。","textPreview":"10°S不是稳健主出口；2023对5°N通量面温度插值敏感，因此最稳健表述是“出口显著受抑或近闭合”，而不是断言其必然净向南。","textChars":63,"textLines":1,"bbox":[148,557,988,68]}
+{"kind":"notes","id":"nt/obo3d5","slide":23,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/8bo8wr","slide":24,"title":"问题三起点：相似FEP先暖不代表相同次表层海洋状态","textShapes":3}
+{"kind":"textbox","id":"sh/qx83ixwr","slide":24,"text":"问题三起点：相似FEP先暖不代表相同次表层海洋状态","textPreview":"问题三起点：相似FEP先暖不代表相同次表层海洋状态","textChars":25,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/d0zmtsvi","slide":24,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/z214v2do","slide":24,"bbox":[970,170,270,390]}
+{"kind":"shape","id":"sh/e1s3mxc3","slide":24,"bbox":[970,170,9,390]}
+{"kind":"textbox","id":"sh/1ojmxcve","slide":24,"text":"2023的关键异常","textPreview":"2023的关键异常","textChars":9,"textLines":1,"bbox":[998,190,218,48]}
+{"kind":"textbox","id":"sh/03a5o7ut","slide":24,"text":"3—4月FEP最暖，但中太平洋OHC只有+0.50 GJ m⁻²；给定FEP后的OHC残差为−0.61 GJ m⁻²，在13事件中最低。","textPreview":"3—4月FEP最暖，但中太平洋OHC只有+0.50 GJ m⁻²；给定FEP后的OHC残差为−0.61 GJ m⁻²，在13事件中最低。","textChars":68,"textLines":1,"bbox":[998,242,218,302]}
+{"kind":"image","id":"im/psrqlov2","slide":24,"name":"","alt":"FEP、OHC与D20的1997、2015和2023过程对比","bbox":[50,125,900,550]}
+{"kind":"notes","id":"nt/8bo8wr","slide":24,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/three_questions_figure_package_20260805/01_main_figures/Fig05_FEP_subsurface_preconditioning.png\n- https://doi.org/10.1175/JCLI-D-17-0149.1\n- https://doi.org/10.1175/JCLI-D-20-0166.1\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/p2br96","slide":25,"title":"决定性分叉发生在表面增暖之后、深对流东移之前","textShapes":1}
+{"kind":"textbox","id":"sh/xcrm5gf6","slide":25,"text":"决定性分叉发生在表面增暖之后、深对流东移之前","textPreview":"决定性分叉发生在表面增暖之后、深对流东移之前","textChars":22,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/a903ulgf","slide":25,"bbox":[60,106,1160,0.1]}
+{"kind":"image","id":"im/u9svex8b","slide":25,"name":"","alt":"FEP到OHC、D20、u850和OLR闭合的三事件时间线","bbox":[60,125,1160,550]}
+{"kind":"notes","id":"nt/p2br96","slide":25,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/three_questions_figure_package_20260805/01_main_figures/Fig06_FEP_atmospheric_closure.png\n- https://doi.org/10.1002/qj.3803\n- https://doi.org/10.1175/JCLI-D-20-0166.1\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/z57xsn","slide":26,"title":"1997在3月形成暖量释放—西风应力接通，2023明显延迟","textShapes":3}
+{"kind":"textbox","id":"sh/b6tcripo","slide":26,"text":"1997在3月形成暖量释放—西风应力接通，2023明显延迟","textPreview":"1997在3月形成暖量释放—西风应力接通，2023明显延迟","textChars":29,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/w72d0n69","slide":26,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/mh0vudo7","slide":26,"bbox":[60,130,1160,12]}
+{"kind":"shape","id":"sh/n2tcnips","slide":26,"bbox":[535,171,210,14]}
+{"kind":"shape","id":"sh/o32dwn6x","slide":26,"bbox":[85,555,520,90]}
+{"kind":"shape","id":"sh/94bups7i","slide":26,"bbox":[675,555,520,90]}
+{"kind":"textbox","id":"sh/ed0bqt8v","slide":26,"text":"1997：3月中旬释放与西风同步转强","textPreview":"1997：3月中旬释放与西风同步转强","textChars":18,"textLines":1,"bbox":[110,574,470,54]}
+{"kind":"textbox","id":"sh/ze9cjypg","slide":26,"text":"2023：释放先起，5月中旬后才共同接通","textPreview":"2023：释放先起，5月中旬后才共同接通","textChars":20,"textLines":1,"bbox":[700,574,470,54]}
+{"kind":"image","id":"im/4zqpgvax","slide":26,"name":"","alt":"1997与2023五日暖量释放和纬向风应力对比","bbox":[60,130,1160,390]}
+{"kind":"notes","id":"nt/z57xsn","slide":26,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/three_questions_figure_package_20260805/01_main_figures/Fig07_1997_2023_coupled_mechanism_synthesis.png\n- https://doi.org/10.1002/qj.3803\n- https://doi.org/10.1175/JCLI-D-20-0166.1\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/5gcatj","slide":27,"title":"相似FEP暖度下，1997与2023的海洋热库存和次表层倾斜完全不同","textShapes":2}
+{"kind":"textbox","id":"sh/ozux0rml","slide":27,"text":"相似FEP暖度下，1997与2023的海洋热库存和次表层倾斜完全不同","textPreview":"相似FEP暖度下，1997与2023的海洋热库存和次表层倾斜完全不同","textChars":34,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/nylw7m50","slide":27,"bbox":[60,106,1160,0.1]}
+{"kind":"textbox","id":"sh/1w3e5cnu","slide":27,"text":"1997具有更大的可用热库存与更强的东移次表层结构；2023主要表现为表面暖、深层支撑弱。","textPreview":"1997具有更大的可用热库存与更强的东移次表层结构；2023主要表现为表面暖、深层支撑弱。","textChars":45,"textLines":1,"bbox":[105,610,1070,54]}
+{"kind":"image","id":"im/nmdkzu58","slide":27,"name":"","alt":"1997与2023海洋热库存、东移比例、FEP暖度和D20东西倾斜对比","bbox":[60,130,1160,470]}
+{"kind":"notes","id":"nt/5gcatj","slide":27,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/three_questions_figure_package_20260805/01_main_figures/Fig07_1997_2023_coupled_mechanism_synthesis.png\n- https://doi.org/10.1002/qj.3803\n- https://doi.org/10.1175/JCLI-D-20-0166.1\n- https://doi.org/10.3390/atmos9020138\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/dvkr6a","slide":28,"title":"次表层预置决定风场能否持续组织深对流和气压梯度","textShapes":2}
+{"kind":"textbox","id":"sh/wne9ov2d","slide":28,"text":"次表层预置决定风场能否持续组织深对流和气压梯度","textPreview":"次表层预置决定风场能否持续组织深对流和气压梯度","textChars":23,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/vmlsvqls","slide":28,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/5sna103u","slide":28,"bbox":[60,495,1160,20]}
+{"kind":"textbox","id":"sh/4re9sv29","slide":28,"text":"1997在3月同步建立西风、深对流东移和有利气压梯度；2023的响应弱且不连续。","textPreview":"1997在3月同步建立西风、深对流东移和有利气压梯度；2023的响应弱且不连续。","textChars":40,"textLines":1,"bbox":[115,610,1050,54]}
+{"kind":"image","id":"im/3ihw3qt8","slide":28,"name":"","alt":"1997与2023中太平洋西风、深对流、降水迁移和海平面气压梯度对比","bbox":[60,135,1160,455]}
+{"kind":"notes","id":"nt/dvkr6a","slide":28,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/three_questions_figure_package_20260805/01_main_figures/Fig07_1997_2023_coupled_mechanism_synthesis.png\n- https://doi.org/10.1002/qj.3803\n- https://doi.org/10.1175/JCLI-D-20-0166.1\n- https://doi.org/10.3390/atmos9020138\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/90tt5i","slide":29,"title":"13事件统计和局地换风共同锁定“海洋预置—西风—Ekman出口”链条","textShapes":5}
+{"kind":"textbox","id":"sh/v6hozm90","slide":29,"text":"13事件统计和局地换风共同锁定“海洋预置—西风—Ekman出口”链条","textPreview":"13事件统计和局地换风共同锁定“海洋预置—西风—Ekman出口”链条","textChars":34,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/g7q5srql","slide":29,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/i9snu18r","slide":29,"bbox":[930,150,300,240]}
+{"kind":"shape","id":"sh/3a1o369c","slide":29,"bbox":[930,150,9,240]}
+{"kind":"textbox","id":"sh/4ba5wbqx","slide":29,"text":"两条事件联系","textPreview":"两条事件联系","textChars":6,"textLines":1,"bbox":[958,170,248,48]}
+{"kind":"textbox","id":"sh/5wj65gr2","slide":29,"text":"OHC → u850：r=+0.89，95%区间[+0.39,+0.97]。\n\nu850 → 次年Ekman：r=+0.75，95%区间[+0.18,+0.92]。","textPreview":"OHC → u850：r=+0.89，95%区间[+0.39,+0.97]。 |  | u850 → 次年Ekman：r=+0.75，95%区间[+0.18,+0.92]。","textChars":82,"textLines":3,"bbox":[958,222,248,152]}
+{"kind":"shape","id":"sh/ydonix8n","slide":29,"bbox":[930,420,300,200]}
+{"kind":"shape","id":"sh/jex4r29s","slide":29,"bbox":[930,420,9,200]}
+{"kind":"textbox","id":"sh/buxcz2xc","slide":29,"text":"换风结果","textPreview":"换风结果","textChars":4,"textLines":1,"bbox":[958,440,248,48]}
+{"kind":"textbox","id":"sh/atob6xgr","slide":29,"text":"固定2023海洋状态：使用2023风为+0.10 ZJ；换2015风为+0.88 ZJ；换1997风为+2.10 ZJ。","textPreview":"固定2023海洋状态：使用2023风为+0.10 ZJ；换2015风为+0.88 ZJ；换1997风为+2.10 ZJ。","textChars":60,"textLines":1,"bbox":[958,492,248,112]}
+{"kind":"image","id":"im/o7m9kri9","slide":29,"name":"","alt":"13暖事件相关与离线风应力互换试验","bbox":[50,130,860,540]}
+{"kind":"notes","id":"nt/90tt5i","slide":29,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/three_questions_figure_package_20260805/01_main_figures/Fig08_third_question_coupled_attribution.png\n- https://doi.org/10.1175/JCLI-D-17-0149.1\n- https://doi.org/10.1002/qj.3803\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/jwvvm0","slide":30,"title":"问题三的答案：FEP先暖只是表面起点，耦合效率决定暖量命运","textShapes":13}
+{"kind":"textbox","id":"sh/crulkni5","slide":30,"text":"问题三的答案：FEP先暖只是表面起点，耦合效率决定暖量命运","textPreview":"问题三的答案：FEP先暖只是表面起点，耦合效率决定暖量命运","textChars":29,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/bql4b2hk","slide":30,"bbox":[60,106,1160,0.1]}
+{"kind":"textbox","id":"sh/apc3ix0z","slide":30,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[320,330,70,70]}
+{"kind":"textbox","id":"sh/lgnmhczm","slide":30,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[630,330,70,70]}
+{"kind":"textbox","id":"sh/kve5o7i1","slide":30,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[940,330,70,70]}
+{"kind":"shape","id":"sh/zu54f2hg","slide":30,"bbox":[80,220,230,260]}
+{"kind":"textbox","id":"sh/ytwnmx0v","slide":30,"text":"表面触发","textPreview":"表面触发","textChars":4,"textLines":1,"bbox":[100,255,190,52]}
+{"kind":"textbox","id":"sh/9k7mlczi","slide":30,"text":"FEP首先变暖","textPreview":"FEP首先变暖","textChars":7,"textLines":1,"bbox":[104,330,182,110]}
+{"kind":"shape","id":"sh/8jy5s7id","slide":30,"bbox":[390,220,230,260]}
+{"kind":"textbox","id":"sh/29sf69g3","slide":30,"text":"次表层预置","textPreview":"次表层预置","textChars":5,"textLines":1,"bbox":[410,255,190,52]}
+{"kind":"textbox","id":"sh/na1wfuh8","slide":30,"text":"OHC与D20/SSH结构决定可用热库存","textPreview":"OHC与D20/SSH结构决定可用热库存","textChars":20,"textLines":1,"bbox":[414,330,182,110]}
+{"kind":"shape","id":"sh/obax8zyt","slide":30,"bbox":[700,220,230,260]}
+{"kind":"textbox","id":"sh/pcjeh4ze","slide":30,"text":"大气接通","textPreview":"大气接通","textChars":4,"textLines":1,"bbox":[720,255,190,52]}
+{"kind":"textbox","id":"sh/adcfa9gz","slide":30,"text":"深对流东移并建立西风和SLP梯度","textPreview":"深对流东移并建立西风和SLP梯度","textChars":16,"textLines":1,"bbox":[724,330,182,110]}
+{"kind":"shape","id":"sh/belgjehk","slide":30,"bbox":[1010,220,230,260]}
+{"kind":"textbox","id":"sh/cfuxcjy5","slide":30,"text":"出口结果","textPreview":"出口结果","textChars":4,"textLines":1,"bbox":[1030,255,190,52]}
+{"kind":"textbox","id":"sh/xg3ylozq","slide":30,"text":"Ekman能否克服地转阻力","textPreview":"Ekman能否克服地转阻力","textChars":13,"textLines":1,"bbox":[1034,330,182,110]}
+{"kind":"textbox","id":"sh/qh8fypgv","slide":30,"text":"2023的异常不是“表面不暖”，而是FEP暖度与次表层预置严重不匹配，随后西风和出口均弱。","textPreview":"2023的异常不是“表面不暖”，而是FEP暖度与次表层预置严重不匹配，随后西风和出口均弱。","textChars":45,"textLines":1,"bbox":[110,555,1060,70]}
+{"kind":"notes","id":"nt/jwvvm0","slide":30,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/mkvqu5","slide":31,"title":"稳健性检验保留了符号、排序和动力竞争结论","textShapes":26}
+{"kind":"textbox","id":"sh/bqd4v694","slide":31,"text":"稳健性检验保留了符号、排序和动力竞争结论","textPreview":"稳健性检验保留了符号、排序和动力竞争结论","textChars":20,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/crm5obap","slide":31,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/dsvmxgra","slide":31,"bbox":[50,145,1180,64]}
+{"kind":"textbox","id":"sh/yt4nqlsv","slide":31,"text":"事件","textPreview":"事件","textChars":2,"textLines":1,"bbox":[58,152,114,50]}
+{"kind":"textbox","id":"sh/zux4zq90","slide":31,"text":"总量 1980—2014","textPreview":"总量 1980—2014","textChars":12,"textLines":1,"bbox":[188,152,199,50]}
+{"kind":"textbox","id":"sh/0v65sbal","slide":31,"text":"总量 1982—2022","textPreview":"总量 1982—2022","textChars":12,"textLines":1,"bbox":[403,152,199,50]}
+{"kind":"textbox","id":"sh/lwfm1gr6","slide":31,"text":"地转 1980—2014","textPreview":"地转 1980—2014","textChars":12,"textLines":1,"bbox":[618,152,199,50]}
+{"kind":"textbox","id":"sh/mxonulsr","slide":31,"text":"地转 1982—2022","textPreview":"地转 1982—2022","textChars":12,"textLines":1,"bbox":[833,152,199,50]}
+{"kind":"textbox","id":"sh/7yxo3q9c","slide":31,"text":"线性EOS地转","textPreview":"线性EOS地转","textChars":7,"textLines":1,"bbox":[1048,152,174,50]}
+{"kind":"shape","id":"sh/fat8vuxc","slide":31,"bbox":[50,209,1180,64]}
+{"kind":"textbox","id":"sh/e907mpgr","slide":31,"text":"1997","textPreview":"1997","textChars":4,"textLines":1,"bbox":[58,216,114,50]}
+{"kind":"textbox","id":"sh/1cbqx4fi","slide":31,"text":"+3.81","textPreview":"+3.81","textChars":5,"textLines":1,"bbox":[188,216,199,50]}
+{"kind":"textbox","id":"sh/gb2pozyx","slide":31,"text":"+3.85","textPreview":"+3.85","textChars":5,"textLines":1,"bbox":[403,216,199,50]}
+{"kind":"textbox","id":"sh/r698ruxg","slide":31,"text":"+0.59","textPreview":"+0.59","textChars":5,"textLines":1,"bbox":[618,216,199,50]}
+{"kind":"textbox","id":"sh/6507ipgv","slide":31,"text":"+0.73","textPreview":"+0.73","textChars":5,"textLines":1,"bbox":[833,216,199,50]}
+{"kind":"textbox","id":"sh/t8rqt4fm","slide":31,"text":"+0.58","textPreview":"+0.58","textChars":5,"textLines":1,"bbox":[1048,216,174,50]}
+{"kind":"shape","id":"sh/s7ipkzy1","slide":31,"bbox":[50,273,1180,64]}
+{"kind":"textbox","id":"sh/b2d83exk","slide":31,"text":"2015","textPreview":"2015","textChars":4,"textLines":1,"bbox":[58,280,114,50]}
+{"kind":"textbox","id":"sh/q147u9wz","slide":31,"text":"+0.88","textPreview":"+0.88","textChars":5,"textLines":1,"bbox":[188,280,199,50]}
+{"kind":"textbox","id":"sh/mxobmdg7","slide":31,"text":"+1.52","textPreview":"+1.52","textChars":5,"textLines":1,"bbox":[403,280,199,50]}
+{"kind":"textbox","id":"sh/7yxsvihs","slide":31,"text":"−1.28","textPreview":"−1.28","textChars":5,"textLines":1,"bbox":[618,280,199,50]}
+{"kind":"textbox","id":"sh/8z6tonyd","slide":31,"text":"−0.45","textPreview":"−0.45","textChars":5,"textLines":1,"bbox":[833,280,199,50]}
+{"kind":"textbox","id":"sh/90zaxszy","slide":31,"text":"−1.35","textPreview":"−1.35","textChars":5,"textLines":1,"bbox":[1048,280,174,50]}
+{"kind":"shape","id":"sh/u18bqxgj","slide":31,"bbox":[50,337,1180,64]}
+{"kind":"textbox","id":"sh/v2hsz2h4","slide":31,"text":"2023","textPreview":"2023","textChars":4,"textLines":1,"bbox":[58,344,114,50]}
+{"kind":"textbox","id":"sh/w3qts7y9","slide":31,"text":"+0.10","textPreview":"+0.10","textChars":5,"textLines":1,"bbox":[188,344,199,50]}
+{"kind":"textbox","id":"sh/hoza1szu","slide":31,"text":"+0.99","textPreview":"+0.99","textChars":5,"textLines":1,"bbox":[403,344,199,50]}
+{"kind":"textbox","id":"sh/a54ret0z","slide":31,"text":"−1.27","textPreview":"−1.27","textChars":5,"textLines":1,"bbox":[618,344,199,50]}
+{"kind":"textbox","id":"sh/b6dsnyhk","slide":31,"text":"−0.13","textPreview":"−0.13","textChars":5,"textLines":1,"bbox":[833,344,199,50]}
+{"kind":"textbox","id":"sh/tk3etwj2","slide":31,"text":"−1.32","textPreview":"−1.32","textChars":5,"textLines":1,"bbox":[1048,344,174,50]}
+{"kind":"textbox","id":"sh/sjudkbih","slide":31,"text":"• 两种距平基准下总出口均保持1997 > 2015 > 2023。\n• Ekman符号与地转符号不变；线性状态方程不改变地转方向。\n• 事件相关逐一删除后仍保持正相关，极端事件并非唯一支撑。","textPreview":"• 两种距平基准下总出口均保持1997 > 2015 > 2023。 | • Ekman符号与地转符号不变；线性状态方程不改变地转方向。 | • 事件相关逐一删除后仍保持正相关，极端事件并非唯一支撑。","textChars":96,"textLines":3,"bbox":[130,470,1020,155]}
+{"kind":"notes","id":"nt/mkvqu5","slide":31,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/3mryyu","slide":32,"title":"三个问题已经形成论文逻辑链，但边界必须写清楚","textShapes":19}
+{"kind":"textbox","id":"sh/3qxsbyh4","slide":32,"text":"三个问题已经形成论文逻辑链，但边界必须写清楚","textPreview":"三个问题已经形成论文逻辑链，但边界必须写清楚","textChars":22,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/4r6tkjyp","slide":32,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/psfudoza","slide":32,"bbox":[55,145,1165,92]}
+{"kind":"textbox","id":"sh/qtobmtgv","slide":32,"text":"问题","textPreview":"问题","textChars":2,"textLines":1,"bbox":[63,152,189,78]}
+{"kind":"textbox","id":"sh/ruxcfyh0","slide":32,"text":"已解决","textPreview":"已解决","textChars":3,"textLines":1,"bbox":[268,152,354,78]}
+{"kind":"textbox","id":"sh/cv6to3yl","slide":32,"text":"仍保留的边界","textPreview":"仍保留的边界","textChars":6,"textLines":1,"bbox":[638,152,344,78]}
+{"kind":"textbox","id":"sh/dwfuh8z6","slide":32,"text":"判断","textPreview":"判断","textChars":2,"textLines":1,"bbox":[998,152,214,78]}
+{"kind":"shape","id":"sh/ex8bqdgr","slide":32,"bbox":[55,237,1165,92]}
+{"kind":"textbox","id":"sh/zyhcjihc","slide":32,"text":"暖量是否到达","textPreview":"暖量是否到达","textChars":6,"textLines":1,"bbox":[63,244,189,78]}
+{"kind":"textbox","id":"sh/zyx4re9w","slide":32,"text":"140°W、H20、OHC/D20/SSH共同约束","textPreview":"140°W、H20、OHC/D20/SSH共同约束","textChars":25,"textLines":1,"bbox":[268,244,354,78]}
+{"kind":"textbox","id":"sh/yxoni9sb","slide":32,"text":"不是同一水团拉格朗日追踪","textPreview":"不是同一水团拉格朗日追踪","textChars":12,"textLines":1,"bbox":[638,244,344,78]}
+{"kind":"textbox","id":"sh/lkfmtor2","slide":32,"text":"主体解决","textPreview":"主体解决","textChars":4,"textLines":1,"bbox":[998,244,214,78]}
+{"kind":"shape","id":"sh/0z65kjah","slide":32,"bbox":[55,329,1165,92]}
+{"kind":"textbox","id":"sh/bud4nu90","slide":32,"text":"暖量去了哪里","textPreview":"暖量去了哪里","textChars":6,"textLines":1,"bbox":[63,336,189,78]}
+{"kind":"textbox","id":"sh/qt43epsf","slide":32,"text":"5°N、10°S、散热、储量与剩余项","textPreview":"5°N、10°S、散热、储量与剩余项","textChars":18,"textLines":1,"bbox":[268,336,354,78]}
+{"kind":"textbox","id":"sh/dwfmp4rq","slide":32,"text":"剩余项尚未完全物理拆分","textPreview":"剩余项尚未完全物理拆分","textChars":11,"textLines":1,"bbox":[638,336,344,78]}
+{"kind":"textbox","id":"sh/cv65gza5","slide":32,"text":"主要通道解决","textPreview":"主要通道解决","textChars":6,"textLines":1,"bbox":[998,336,214,78]}
+{"kind":"shape","id":"sh/vqh4zy94","slide":32,"bbox":[55,421,1165,92]}
+{"kind":"textbox","id":"sh/ap8nqtsj","slide":32,"text":"为什么命运不同","textPreview":"为什么命运不同","textChars":7,"textLines":1,"bbox":[63,428,189,78]}
+{"kind":"textbox","id":"sh/qxczehg3","slide":32,"text":"三事件过程、13事件统计、局地换风","textPreview":"三事件过程、13事件统计、局地换风","textChars":17,"textLines":1,"bbox":[268,428,354,78]}
+{"kind":"textbox","id":"sh/rylg7mxo","slide":32,"text":"上游唯一根因需模式集合","textPreview":"上游唯一根因需模式集合","textChars":11,"textLines":1,"bbox":[638,428,344,78]}
+{"kind":"textbox","id":"sh/szehgry9","slide":32,"text":"过程归因解决","textPreview":"过程归因解决","textChars":6,"textLines":1,"bbox":[998,428,214,78]}
+{"kind":"shape","id":"sh/d0ny9wfe","slide":32,"bbox":[140,535,1000,125]}
+{"kind":"shape","id":"sh/elwzi1gz","slide":32,"bbox":[140,535,9,125]}
+{"kind":"textbox","id":"sh/fm5gb6xk","slide":32,"text":"不能过度声称","textPreview":"不能过度声称","textChars":6,"textLines":1,"bbox":[168,547,948,36]}
+{"kind":"textbox","id":"sh/0nehkby5","slide":32,"text":"欧拉预算不是同一水团追踪；R₂₀不是单一过程；换风不是完整因果试验；13事件不代表普适定律。","textPreview":"欧拉预算不是同一水团追踪；R₂₀不是单一过程；换风不是完整因果试验；13事件不代表普适定律。","textChars":46,"textLines":1,"bbox":[168,587,948,63]}
+{"kind":"notes","id":"nt/3mryyu","slide":32,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/adt30w","slide":33,"title":"主结论：事件命运取决于暖量到达后的耦合分配","textShapes":8}
+{"kind":"textbox","id":"sh/lofalcjm","slide":33,"text":"主结论：事件命运取决于暖量到达后的耦合分配","textPreview":"主结论：事件命运取决于暖量到达后的耦合分配","textChars":21,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/ylobqxkv","slide":33,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/zmxsj21g","slide":33,"bbox":[65,175,360,300]}
+{"kind":"textbox","id":"sh/8r6twr2x","slide":33,"text":"到达","textPreview":"到达","textChars":2,"textLines":1,"bbox":[85,189,320,86]}
+{"kind":"textbox","id":"sh/9szapcji","slide":33,"text":"CT与CP均可把暖量送入东部；2015与2023输入近似。","textPreview":"CT与CP均可把暖量送入东部；2015与2023输入近似。","textChars":29,"textLines":1,"bbox":[85,287,320,170]}
+{"kind":"shape","id":"sh/mpobuhkr","slide":33,"bbox":[460,175,360,300]}
+{"kind":"textbox","id":"sh/nqxsnm1c","slide":33,"text":"去向","textPreview":"去向","textChars":2,"textLines":1,"bbox":[480,189,320,86]}
+{"kind":"textbox","id":"sh/ovm9kn2t","slide":33,"text":"暖量在5°N、海表散热、储量变化和剩余过程中重新分配。","textPreview":"暖量在5°N、海表散热、储量变化和剩余过程中重新分配。","textChars":27,"textLines":1,"bbox":[480,287,320,170]}
+{"kind":"shape","id":"sh/pwvadsje","slide":33,"bbox":[855,175,360,300]}
+{"kind":"textbox","id":"sh/94vm9wzq","slide":33,"text":"控制","textPreview":"控制","textChars":2,"textLines":1,"bbox":[875,189,320,86]}
+{"kind":"textbox","id":"sh/83m50ry5","slide":33,"text":"次表层预置调制大气接通；局地风驱Ekman决定能否克服地转阻力。","textPreview":"次表层预置调制大气接通；局地风驱Ekman决定能否克服地转阻力。","textChars":32,"textLines":1,"bbox":[875,287,320,170]}
+{"kind":"textbox","id":"sh/7id476hk","slide":33,"text":"2015与2023的直接分水岭：海洋压力场相近，但2015风驱足以打开北向出口，2023不足。","textPreview":"2015与2023的直接分水岭：海洋压力场相近，但2015风驱足以打开北向出口，2023不足。","textChars":47,"textLines":1,"bbox":[100,545,1080,90]}
+{"kind":"notes","id":"nt/adt30w","slide":33,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}
+{"kind":"slide","id":"sl/pdoi4g","slide":34,"title":"下一步不是再堆相关图，而是完成两项决定性边界工作","textShapes":6}
+{"kind":"textbox","id":"sh/pk72lk7i","slide":34,"text":"下一步不是再堆相关图，而是完成两项决定性边界工作","textPreview":"下一步不是再堆相关图，而是完成两项决定性边界工作","textChars":24,"textLines":1,"bbox":[60,34,1160,64]}
+{"kind":"shape","id":"sh/2xg3q5or","slide":34,"bbox":[60,106,1160,0.1]}
+{"kind":"shape","id":"sh/3ypkjapc","slide":34,"bbox":[80,155,520,230]}
+{"kind":"shape","id":"sh/gve1ov61","slide":34,"bbox":[80,155,9,230]}
+{"kind":"textbox","id":"sh/1w72h07m","slide":34,"text":"1  拆分预算剩余项","textPreview":"1  拆分预算剩余项","textChars":10,"textLines":1,"bbox":[108,175,468,48]}
+{"kind":"textbox","id":"sh/etwjmlov","slide":34,"text":"用五日三维热收支继续分离混合、垂向/斜压交换、跨20°C转换和离散误差，判断每一焦耳的最终归宿。","textPreview":"用五日三维热收支继续分离混合、垂向/斜压交换、跨20°C转换和离散误差，判断每一焦耳的最终归宿。","textChars":48,"textLines":1,"bbox":[108,227,468,142]}
+{"kind":"shape","id":"sh/fu5kfqpg","slide":34,"bbox":[680,155,520,230]}
+{"kind":"shape","id":"sh/0rilkz65","slide":34,"bbox":[680,155,9,230]}
+{"kind":"textbox","id":"sh/lsr2t47q","slide":34,"text":"2  受控模式因果检验","textPreview":"2  受控模式因果检验","textChars":11,"textLines":1,"bbox":[708,175,468,48]}
+{"kind":"textbox","id":"sh/p47m94vy","slide":34,"text":"在海洋模式或耦合模式中关闭/替换5°N异常风应力，并做海盆上游因子集合，检验第三问的因果充分性。","textPreview":"在海洋模式或耦合模式中关闭/替换5°N异常风应力，并做海盆上游因子集合，检验第三问的因果充分性。","textChars":48,"textLines":1,"bbox":[708,227,468,142]}
+{"kind":"textbox","id":"sh/o3yl0zed","slide":34,"text":"• 离线粒子或水团标签：连接“到达”与“去向”的拉格朗日轨迹。\n• 多产品与高频断面：降低SODA3同化依赖和2024年通量面插值敏感性。\n• 模式过程指标：把5°N Qwarm,20、压力场—Ekman竞争和海表热损失用于模式评估。","textPreview":"• 离线粒子或水团标签：连接“到达”与“去向”的拉格朗日轨迹。 | • 多产品与高频断面：降低SODA3同化依赖和2024年通量面插值敏感性。 | • 模式过程指标：把5°N Qwarm,20、压力场—Ekman竞争和海表热损失用于模式评估。","textChars":117,"textLines":3,"bbox":[120,455,1040,165]}
+{"kind":"notes","id":"nt/pdoi4g","slide":34,"text":"[Sources]\n- /Users/daiyue/Documents/Maryland/outputs/research_2026/reports/三个核心问题_发现提出回答_完整研究报告_公式严谨性修订版_20260807.docx"}

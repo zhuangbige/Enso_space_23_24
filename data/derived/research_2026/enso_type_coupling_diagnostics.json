@@ -1,0 +1,48 @@
+{
+  "purpose": "ENSO type formation and coupling efficiency, not onset prediction",
+  "historical_expectation_period": "1982-2014",
+  "atmospheric_residual_validation": "calendar-month leave-one-year-out within baseline; fixed baseline for post-2014",
+  "event_years": [
+    1982,
+    1986,
+    1991,
+    1994,
+    1997,
+    2002,
+    2004,
+    2006,
+    2009,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "classic_ep": [
+    1982,
+    1997,
+    2015
+  ],
+  "cp_events": [
+    1994,
+    2004,
+    2019
+  ],
+  "year_2023": {
+    "year": 2023,
+    "group": "2023 weak-coupling EP",
+    "mature_djf_type_index_c": 0.5912532323462436,
+    "mature_djf_nino34_c": 1.831255249442787,
+    "mar_apr_q20_penetration_z": -0.08808754692240188,
+    "mar_apr_d20_penetration_z": -0.28134995368764815,
+    "mar_apr_ocean_penetration_z": -0.18471875030502505,
+    "mar_apr_fep_residual_c": 1.4635090520852778,
+    "may_jun_intensity_coupling_residual_z": -0.2937919879437698,
+    "may_jun_pattern_coupling_residual_z": -0.32001562985215193,
+    "mar_jun_sst_to_precip_residual_z": 0.6778807340167152,
+    "mar_jun_precip_to_slp_residual_z": 0.6212273741651977,
+    "mar_jun_slp_to_tau_residual_z": -0.16359087356582536,
+    "weakest_chain_link": "SLP→wind stress",
+    "weakest_chain_residual_z": -0.16359087356582536,
+    "first_two_month_intensity_mismatch_below_minus0p75": NaN
+  }
+}

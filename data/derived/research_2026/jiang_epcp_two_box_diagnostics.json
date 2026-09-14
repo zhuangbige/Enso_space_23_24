@@ -1,0 +1,258 @@
+{
+  "budget_time_start": "1980-01-15",
+  "budget_time_end": "2024-06-15",
+  "budget_anomaly_baseline": "1980-2022 same-calendar-month linear expectation (upstream product)",
+  "central_box": "10S-5N, 180E-220E, 0-300 m",
+  "east_box": "10S-5N, 220E-280E, 0-300 m",
+  "historical_ep_events": [
+    1982,
+    1986,
+    1997,
+    2015
+  ],
+  "historical_cp_events": [
+    1987,
+    1991,
+    1994,
+    2002,
+    2004,
+    2006,
+    2009,
+    2018,
+    2019
+  ],
+  "target_event": 2023,
+  "primary_phase": "development_MJJ",
+  "bootstrap_samples": 20000,
+  "random_seed": 20260813,
+  "manifest_counts": [
+    {
+      "fep_dominant": false,
+      "mature_type_working": "CP",
+      "n": 12
+    },
+    {
+      "fep_dominant": false,
+      "mature_type_working": "EP",
+      "n": 4
+    },
+    {
+      "fep_dominant": false,
+      "mature_type_working": "unresolved",
+      "n": 1
+    },
+    {
+      "fep_dominant": true,
+      "mature_type_working": "CP",
+      "n": 1
+    },
+    {
+      "fep_dominant": true,
+      "mature_type_working": "EP",
+      "n": 4
+    }
+  ],
+  "shared_face_direction_agreement_fraction": 0.9285714285714286,
+  "classification_limit": "Non-FEP individual labels are a Jiang-consistent working reconstruction; local Supporting Figure S6 is unavailable",
+  "statistics": "Event bootstrap confidence intervals and exact event-label permutation tests",
+  "primary_difference_records": [
+    {
+      "phase": "development_MJJ",
+      "box": "central",
+      "metric": "storage_change_zj",
+      "ep_mean": -1.4692787320000003,
+      "cp_mean": 1.229880034411111,
+      "ep_minus_cp": -2.699158766411111,
+      "exact_two_sided_p": 0.05034965034965035,
+      "n_exact_partitions": 715,
+      "ep_n": 4,
+      "cp_n": 9
+    },
+    {
+      "phase": "development_MJJ",
+      "box": "central",
+      "metric": "west_heat_in_zj",
+      "ep_mean": 0.36704645140273195,
+      "cp_mean": 0.818745329374944,
+      "ep_minus_cp": -0.4516988779722121,
+      "exact_two_sided_p": 0.7440559440559441,
+      "n_exact_partitions": 715,
+      "ep_n": 4,
+      "cp_n": 9
+    },
+    {
+      "phase": "development_MJJ",
+      "box": "central",
+      "metric": "central_eastward_output_zj",
+      "ep_mean": 4.323746723288724,
+      "cp_mean": 0.655349723844864,
+      "ep_minus_cp": 3.6683969994438597,
+      "exact_two_sided_p": 0.011188811188811189,
+      "n_exact_partitions": 715,
+      "ep_n": 4,
+      "cp_n": 9
+    },
+    {
+      "phase": "development_MJJ",
+      "box": "east",
+      "metric": "storage_change_zj",
+      "ep_mean": 4.08008516335,
+      "cp_mean": 1.4407582636111111,
+      "ep_minus_cp": 2.6393268997388883,
+      "exact_two_sided_p": 0.18321678321678322,
+      "n_exact_partitions": 715,
+      "ep_n": 4,
+      "cp_n": 9
+    },
+    {
+      "phase": "development_MJJ",
+      "box": "east",
+      "metric": "west_heat_in_zj",
+      "ep_mean": 4.51796530780548,
+      "cp_mean": 0.7545859747360514,
+      "ep_minus_cp": 3.7633793330694285,
+      "exact_two_sided_p": 0.02097902097902098,
+      "n_exact_partitions": 715,
+      "ep_n": 4,
+      "cp_n": 9
+    }
+  ],
+  "sensitivity_records": [
+    {
+      "sensitivity": "primary_Jiang_event_list",
+      "phase": "development_MJJ",
+      "box": "central",
+      "metric": "storage_change_zj",
+      "ep_n": 4,
+      "cp_n": 9,
+      "ep_mean": -1.4692787320000003,
+      "cp_mean": 1.229880034411111,
+      "ep_minus_cp": -2.699158766411111,
+      "exact_two_sided_p": 0.05034965034965035,
+      "n_exact_partitions": 715
+    },
+    {
+      "sensitivity": "drop_consecutive_1987",
+      "phase": "development_MJJ",
+      "box": "central",
+      "metric": "storage_change_zj",
+      "ep_n": 4,
+      "cp_n": 8,
+      "ep_mean": -1.4692787320000003,
+      "cp_mean": 1.5771968019624998,
+      "ep_minus_cp": -3.0464755339625,
+      "exact_two_sided_p": 0.01616161616161616,
+      "n_exact_partitions": 495
+    },
+    {
+      "sensitivity": "primary_Jiang_event_list",
+      "phase": "development_MJJ",
+      "box": "central",
+      "metric": "central_eastward_output_zj",
+      "ep_n": 4,
+      "cp_n": 9,
+      "ep_mean": 4.323746723288724,
+      "cp_mean": 0.655349723844864,
+      "ep_minus_cp": 3.6683969994438597,
+      "exact_two_sided_p": 0.011188811188811189,
+      "n_exact_partitions": 715
+    },
+    {
+      "sensitivity": "drop_consecutive_1987",
+      "phase": "development_MJJ",
+      "box": "central",
+      "metric": "central_eastward_output_zj",
+      "ep_n": 4,
+      "cp_n": 8,
+      "ep_mean": 4.323746723288724,
+      "cp_mean": 0.5771816718021721,
+      "ep_minus_cp": 3.746565051486552,
+      "exact_two_sided_p": 0.012121212121212121,
+      "n_exact_partitions": 495
+    },
+    {
+      "sensitivity": "primary_Jiang_event_list",
+      "phase": "development_MJJ",
+      "box": "east",
+      "metric": "storage_change_zj",
+      "ep_n": 4,
+      "cp_n": 9,
+      "ep_mean": 4.08008516335,
+      "cp_mean": 1.4407582636111111,
+      "ep_minus_cp": 2.6393268997388883,
+      "exact_two_sided_p": 0.18321678321678322,
+      "n_exact_partitions": 715
+    },
+    {
+      "sensitivity": "drop_consecutive_1987",
+      "phase": "development_MJJ",
+      "box": "east",
+      "metric": "storage_change_zj",
+      "ep_n": 4,
+      "cp_n": 8,
+      "ep_mean": 4.08008516335,
+      "cp_mean": 1.3177167215624999,
+      "ep_minus_cp": 2.7623684417875,
+      "exact_two_sided_p": 0.1919191919191919,
+      "n_exact_partitions": 495
+    },
+    {
+      "sensitivity": "primary_Jiang_event_list",
+      "phase": "development_MJJ",
+      "box": "east",
+      "metric": "west_heat_in_zj",
+      "ep_n": 4,
+      "cp_n": 9,
+      "ep_mean": 4.51796530780548,
+      "cp_mean": 0.7545859747360514,
+      "ep_minus_cp": 3.7633793330694285,
+      "exact_two_sided_p": 0.02097902097902098,
+      "n_exact_partitions": 715
+    },
+    {
+      "sensitivity": "drop_consecutive_1987",
+      "phase": "development_MJJ",
+      "box": "east",
+      "metric": "west_heat_in_zj",
+      "ep_n": 4,
+      "cp_n": 8,
+      "ep_mean": 4.51796530780548,
+      "cp_mean": 0.7523009852863178,
+      "ep_minus_cp": 3.765664322519162,
+      "exact_two_sided_p": 0.030303030303030304,
+      "n_exact_partitions": 495
+    }
+  ],
+  "nearest_historical_mjj_routing_analogues": [
+    {
+      "event_year": 2015,
+      "group": "EP",
+      "routing_distance_to_2023": 0.7723036378610392
+    },
+    {
+      "event_year": 2009,
+      "group": "CP",
+      "routing_distance_to_2023": 0.9392092505199026
+    },
+    {
+      "event_year": 1982,
+      "group": "EP",
+      "routing_distance_to_2023": 0.9847901343638642
+    },
+    {
+      "event_year": 1986,
+      "group": "EP",
+      "routing_distance_to_2023": 1.194315807644567
+    },
+    {
+      "event_year": 1987,
+      "group": "CP",
+      "routing_distance_to_2023": 1.27077732922258
+    },
+    {
+      "event_year": 1997,
+      "group": "EP",
+      "routing_distance_to_2023": 1.3289958169384066
+    }
+  ]
+}

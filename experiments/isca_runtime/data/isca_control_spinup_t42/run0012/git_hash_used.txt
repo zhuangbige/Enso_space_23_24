@@ -1,0 +1,54 @@
+*---commit hash used for fortran code in workdir---*:
+"a290bc376d84d0ee83adbb80eb374b9f629c3534"
+
+
+*---commit hash used for code in GFDL_BASE, including this python module---*:
+"a290bc376d84d0ee83adbb80eb374b9f629c3534"
+
+#### Code compiled from dirty commit ####
+*---git status output (only f90 and inc files)---*:
+ M src/shared/mpp/affinity.c
+
+*---git diff output---*
+diff --git a/src/shared/mosaic/mosaic_util.h b/src/shared/mosaic/mosaic_util.h
+index a719c65..202ac60 100644
+--- a/src/shared/mosaic/mosaic_util.h
++++ b/src/shared/mosaic/mosaic_util.h
+@@ -81,6 +81,7 @@ int getInbound( struct Node node );
+ int length(struct Node *list);
+ struct Node *getNextNode(struct Node *list);
+ struct Node *getNode(struct Node *list, struct Node inNode);
++int isHeadNode(struct Node *list, struct Node nodeIn);
+ int sameNode(struct Node node1, struct Node node2);
+ void deleteNode(struct Node *list);
+ void initNode(struct Node *node);
+diff --git a/src/shared/mpp/affinity.c b/src/shared/mpp/affinity.c
+index a816605..a3f3573 100644
+--- a/src/shared/mpp/affinity.c
++++ b/src/shared/mpp/affinity.c
+@@ -29,6 +29,19 @@
+ #include <errno.h>
+ #include <sys/resource.h>
+ 
++#if defined(__APPLE__)
++
++/* macOS does not expose Linux's sched_getaffinity/sched_setaffinity API.
++ * Report the process as unbound and leave explicit affinity requests as
++ * no-ops; MPI process placement remains under OpenMPI's control.
++ */
++int get_cpu_affinity(void) { return -1; }
++int get_cpu_affinity_(void) { return get_cpu_affinity(); }
++void set_cpu_affinity(int cpu) { (void)cpu; }
++void set_cpu_affinity_(int *cpu) { set_cpu_affinity(*cpu); }
++
++#else
++
+ #if !defined(_GNU_SOURCE) || !defined(__GLIBC__) || __GLIBC__ < 2 || (__GLIBC__ == 2 && __GLIBC_MINOR__ < 30)
+ #include <sys/syscall.h>
+ static
+@@ -87,3 +100,5 @@ void set_cpu_affinity( int cpu )
+ }
+ 
+ void set_cpu_affinity_(int *cpu) { set_cpu_affinity(*cpu); }	/* Fortran interface */
++
++#endif

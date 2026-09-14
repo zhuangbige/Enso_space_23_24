@@ -1,0 +1,1316 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/mtimkh",
+    "id": "mtimkh",
+    "slide": 7,
+    "layoutId": "0b0e7a89-e5ab-4b53-9e37-490b05f7383f",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "22a80a95-20dd-4771-a46d-3ca250a072f1",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Ocean Arrival",
+    "colors": {
+      "accent1": "#087EAD",
+      "accent2": "#D97706",
+      "accent3": "#008A8A",
+      "accent4": "#B63A3A",
+      "accent5": "#075B82",
+      "accent6": "#6A4C93",
+      "bg1": "#FFFFFF",
+      "bg2": "#E7F5FA",
+      "tx1": "#0B1F33",
+      "tx2": "#0B1F33",
+      "dk1": "#0B1F33",
+      "dk2": "#075B82",
+      "lt1": "#FFFFFF",
+      "lt2": "#E7F5FA",
+      "hlink": "#087EAD",
+      "folHlink": "#008A8A"
+    },
+    "typefaces": [
+      "Arial Unicode MS",
+      "PingFang SC"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "0b0e7a89-e5ab-4b53-9e37-490b05f7383f",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "22a80a95-20dd-4771-a46d-3ca250a072f1",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "22a80a95-20dd-4771-a46d-3ca250a072f1",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6l8n2h83",
+      "id": "1",
+      "name": "slide-title",
+      "bbox": [
+        68,
+        42,
+        1144,
+        58
+      ],
+      "geometry": "rect",
+      "text": "到达以后呢？下一步解释2015与2023为何走向不同",
+      "textPreview": "到达以后呢？下一步解释2015与2023为何走向不同",
+      "resolvedFontSize": 38,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 38,
+        "typeface": "PingFang SC",
+        "color": "#0B1F33",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "到达以后呢？下一步解释2015与2023为何走向不同"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "到达以后呢？下一步解释2015与2023为何走向不同",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 38,
+            "typeface": "PingFang SC",
+            "color": "#0B1F33",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "到达以后呢？下一步解释2015与2023为何走向不同",
+              "fontSize": 38,
+              "typeface": "PingFang SC",
+              "color": "#0B1F33",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tojmxw7e",
+      "id": "2",
+      "name": "title-rule",
+      "bbox": [
+        68,
+        108,
+        1144,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#087EAD",
+      "lineWidth": 3
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/snq54rqt",
+      "id": "3",
+      "name": "next-question",
+      "bbox": [
+        92,
+        126,
+        1096,
+        58
+      ],
+      "geometry": "rect",
+      "text": "如果2015和2023都有相近的暖量输入和东部储热，为什么后续出口与海气演变明显不同？",
+      "textPreview": "如果2015和2023都有相近的暖量输入和东部储热，为什么后续出口与海气演变明显不同？",
+      "resolvedFontSize": 26,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 26,
+        "typeface": "PingFang SC",
+        "color": "#0B1F33",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "如果2015和2023都有相近的暖量输入和东部储热，为什么后续出口与海气演变明显不同？"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "如果2015和2023都有相近的暖量输入和东部储热，为什么后续出口与海气演变明显不同？",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 26,
+            "typeface": "PingFang SC",
+            "color": "#0B1F33",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "如果2015和2023都有相近的暖量输入和东部储热，为什么后续出口与海气演变明显不同？",
+              "fontSize": 26,
+              "typeface": "PingFang SC",
+              "color": "#0B1F33",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jih4rmpc",
+      "id": "4",
+      "name": "next-1-number",
+      "bbox": [
+        84,
+        234,
+        64,
+        64
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#087EAD",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ih83yh8r",
+      "id": "5",
+      "name": "next-1-numtext",
+      "bbox": [
+        84,
+        238,
+        64,
+        52
+      ],
+      "geometry": "rect",
+      "text": "1",
+      "textPreview": "1",
+      "resolvedFontSize": 29,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 29,
+        "typeface": "PingFang SC",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "1"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "1",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 29,
+            "typeface": "PingFang SC",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "1",
+              "fontSize": 29,
+              "typeface": "PingFang SC",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5kzmtc7i",
+      "id": "6",
+      "name": "next-1-band",
+      "bbox": [
+        168,
+        220,
+        1038,
+        94
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#E7F5FA",
+      "lineColor": "#087EAD",
+      "lineWidth": 2
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4jq507qx",
+      "id": "7",
+      "name": "next-1-label",
+      "bbox": [
+        192,
+        232,
+        430,
+        32
+      ],
+      "geometry": "rect",
+      "text": "暖量去了哪里？",
+      "textPreview": "暖量去了哪里？",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 23,
+        "typeface": "PingFang SC",
+        "color": "#087EAD",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "暖量去了哪里？"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "暖量去了哪里？",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "typeface": "PingFang SC",
+            "color": "#087EAD",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "暖量去了哪里？",
+              "fontSize": 23,
+              "typeface": "PingFang SC",
+              "color": "#087EAD",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vex4n2pg",
+      "id": "8",
+      "name": "next-1-equation",
+      "bbox": [
+        192,
+        270,
+        620,
+        30
+      ],
+      "geometry": "rect",
+      "text": "dH₂₀/dt = Cₓ + F₁₀S + F₅N + Qsurface,warm + R₂₀",
+      "textPreview": "dH₂₀/dt = Cₓ + F₁₀S + F₅N + Qsurface,warm + R₂₀",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 19,
+        "typeface": "Arial Unicode MS",
+        "color": "#0B1F33",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "dH₂₀/dt = Cₓ + F₁₀S + F₅N + Qsurface,warm + R₂₀"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "dH₂₀/dt = Cₓ + F₁₀S + F₅N + Qsurface,warm + R₂₀",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "typeface": "Arial Unicode MS",
+            "color": "#0B1F33",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "dH₂₀/dt = Cₓ + F₁₀S + F₅N + Qsurface,warm + R₂₀",
+              "fontSize": 19,
+              "typeface": "Arial Unicode MS",
+              "color": "#0B1F33",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/udo3ux8v",
+      "id": "9",
+      "name": "next-1-aim",
+      "bbox": [
+        830,
+        244,
+        346,
+        48
+      ],
+      "geometry": "rect",
+      "text": "区分边界输出、海表热损失与储量变化",
+      "textPreview": "区分边界输出、海表热损失与储量变化",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 20,
+        "typeface": "PingFang SC",
+        "color": "#0B1F33",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "区分边界输出、海表热损失与储量变化"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "区分边界输出、海表热损失与储量变化",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "PingFang SC",
+            "color": "#0B1F33",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "区分边界输出、海表热损失与储量变化",
+              "fontSize": 20,
+              "typeface": "PingFang SC",
+              "color": "#0B1F33",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/k7ex0z2l",
+      "id": "10",
+      "name": "next-2-number",
+      "bbox": [
+        84,
+        354,
+        64,
+        64
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#D97706",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l87y94j6",
+      "id": "11",
+      "name": "next-2-numtext",
+      "bbox": [
+        84,
+        358,
+        64,
+        52
+      ],
+      "geometry": "rect",
+      "text": "2",
+      "textPreview": "2",
+      "resolvedFontSize": 29,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 29,
+        "typeface": "PingFang SC",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "2"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "2",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 29,
+            "typeface": "PingFang SC",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "2",
+              "fontSize": 29,
+              "typeface": "PingFang SC",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/y5wfypkf",
+      "id": "12",
+      "name": "next-2-band",
+      "bbox": [
+        168,
+        340,
+        1038,
+        94
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFF2DD",
+      "lineColor": "#D97706",
+      "lineWidth": 2
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/j65g7u10",
+      "id": "13",
+      "name": "next-2-label",
+      "bbox": [
+        192,
+        352,
+        430,
+        32
+      ],
+      "geometry": "rect",
+      "text": "5°N出口由什么动力组成？",
+      "textPreview": "5°N出口由什么动力组成？",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 23,
+        "typeface": "PingFang SC",
+        "color": "#D97706",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "5°N出口由什么动力组成？"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "5°N出口由什么动力组成？",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "typeface": "PingFang SC",
+            "color": "#D97706",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "5°N出口由什么动力组成？",
+              "fontSize": 23,
+              "typeface": "PingFang SC",
+              "color": "#D97706",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/w3exwf29",
+      "id": "14",
+      "name": "next-2-equation",
+      "bbox": [
+        192,
+        390,
+        620,
+        30
+      ],
+      "geometry": "rect",
+      "text": "Qtotal = Qgeo + QEkman + Qres",
+      "textPreview": "Qtotal = Qgeo + QEkman + Qres",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "Arial Unicode MS",
+        "color": "#0B1F33",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Qtotal = Qgeo + QEkman + Qres"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Qtotal = Qgeo + QEkman + Qres",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Arial Unicode MS",
+            "color": "#0B1F33",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Qtotal = Qgeo + QEkman + Qres",
+              "fontSize": 22,
+              "typeface": "Arial Unicode MS",
+              "color": "#0B1F33",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x4ny5kju",
+      "id": "15",
+      "name": "next-2-aim",
+      "bbox": [
+        830,
+        364,
+        346,
+        48
+      ],
+      "geometry": "rect",
+      "text": "检验地转、Ekman和剩余项的相对贡献",
+      "textPreview": "检验地转、Ekman和剩余项的相对贡献",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 20,
+        "typeface": "PingFang SC",
+        "color": "#0B1F33",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "检验地转、Ekman和剩余项的相对贡献"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "检验地转、Ekman和剩余项的相对贡献",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "PingFang SC",
+            "color": "#0B1F33",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "检验地转、Ekman和剩余项的相对贡献",
+              "fontSize": 20,
+              "typeface": "PingFang SC",
+              "color": "#0B1F33",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/a1wfupkj",
+      "id": "16",
+      "name": "next-3-number",
+      "bbox": [
+        84,
+        474,
+        64,
+        64
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#008A8A",
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/b25g3u1o",
+      "id": "17",
+      "name": "next-3-numtext",
+      "bbox": [
+        84,
+        478,
+        64,
+        52
+      ],
+      "geometry": "rect",
+      "text": "3",
+      "textPreview": "3",
+      "resolvedFontSize": 29,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 29,
+        "typeface": "PingFang SC",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "3"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "3",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 29,
+            "typeface": "PingFang SC",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "3",
+              "fontSize": 29,
+              "typeface": "PingFang SC",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gzih8jit",
+      "id": "18",
+      "name": "next-3-band",
+      "bbox": [
+        168,
+        460,
+        1038,
+        94
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#E6F6F4",
+      "lineColor": "#008A8A",
+      "lineWidth": 2
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h0ryhojy",
+      "id": "19",
+      "name": "next-3-label",
+      "bbox": [
+        192,
+        472,
+        430,
+        32
+      ],
+      "geometry": "rect",
+      "text": "相似FEP先暖为何没有形成相同耦合？",
+      "textPreview": "相似FEP先暖为何没有形成相同耦合？",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 23,
+        "typeface": "PingFang SC",
+        "color": "#008A8A",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "相似FEP先暖为何没有形成相同耦合？"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "相似FEP先暖为何没有形成相同耦合？",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "typeface": "PingFang SC",
+            "color": "#008A8A",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "相似FEP先暖为何没有形成相同耦合？",
+              "fontSize": 23,
+              "typeface": "PingFang SC",
+              "color": "#008A8A",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/54365k76",
+      "id": "20",
+      "name": "next-3-equation",
+      "bbox": [
+        192,
+        510,
+        620,
+        30
+      ],
+      "geometry": "rect",
+      "text": "FEP先暖 → OHC / D20预置 → 深对流与西风 → Ekman出口",
+      "textPreview": "FEP先暖 → OHC / D20预置 → 深对流与西风 → Ekman出口",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "PingFang SC",
+        "color": "#0B1F33",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "FEP先暖 → OHC / D20预置 → 深对流与西风 → Ekman出口"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "FEP先暖 → OHC / D20预置 → 深对流与西风 → Ekman出口",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "PingFang SC",
+            "color": "#0B1F33",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "FEP先暖 → OHC / D20预置 → 深对流与西风 → Ekman出口",
+              "fontSize": 20,
+              "typeface": "PingFang SC",
+              "color": "#0B1F33",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/43upcf6l",
+      "id": "21",
+      "name": "next-3-aim",
+      "bbox": [
+        830,
+        484,
+        346,
+        48
+      ],
+      "geometry": "rect",
+      "text": "判断海洋预置能否转化为持续大气响应",
+      "textPreview": "判断海洋预置能否转化为持续大气响应",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 20,
+        "typeface": "PingFang SC",
+        "color": "#0B1F33",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "判断海洋预置能否转化为持续大气响应"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "判断海洋预置能否转化为持续大气响应",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "PingFang SC",
+            "color": "#0B1F33",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "判断海洋预置能否转化为持续大气响应",
+              "fontSize": 20,
+              "typeface": "PingFang SC",
+              "color": "#0B1F33",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3ilo3ap0",
+      "id": "22",
+      "name": "takeaway",
+      "bbox": [
+        68,
+        628,
+        1144,
+        58
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#075B82",
+      "lineColor": "#075B82",
+      "lineWidth": 0
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ihc7a5of",
+      "id": "23",
+      "name": "takeaway-text",
+      "bbox": [
+        88,
+        635,
+        1104,
+        44
+      ],
+      "geometry": "rect",
+      "text": "阶段性结论：暖量到达东部，但相近到达量不足以决定后续事件命运。",
+      "textPreview": "阶段性结论：暖量到达东部，但相近到达量不足以决定后续事件命运。",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 25,
+        "typeface": "PingFang SC",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "阶段性结论：暖量到达东部，但相近到达量不足以决定后续事件命运。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "阶段性结论：暖量到达东部，但相近到达量不足以决定后续事件命运。",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "PingFang SC",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "阶段性结论：暖量到达东部，但相近到达量不足以决定后续事件命运。",
+              "fontSize": 25,
+              "typeface": "PingFang SC",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

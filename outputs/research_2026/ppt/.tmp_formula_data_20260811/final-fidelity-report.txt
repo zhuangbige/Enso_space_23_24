@@ -1,0 +1,16 @@
+Final file: 厄尔尼诺异常暖量到达分配与耦合命运_公式数据扩展版_20260811.pptx
+Slide count: 25
+Insertion: final slides 6-11
+Preserved source mapping: source 1-5 -> final 1-5; source 6-19 -> final 12-25
+
+LibreOffice pixel comparison:
+- source 1-4 -> final 1-4: mean absolute difference 0.000000
+- source 5 -> final 5: mean absolute difference 0.634577; visually unchanged
+- source 6-19 -> final 12-25: mean absolute difference 0.000000
+
+QA:
+- slides_test.py: passed; no overflow detected
+- LibreOffice render: all 25 slides rendered
+- Visual inspection: all slides present; slides 6-11 have no clipping or duplicated-frame displacement
+- New-slide visible text: no underscore notation
+- Entire visible deck: no removed threshold-thermocline variable

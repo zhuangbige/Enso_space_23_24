@@ -1,0 +1,700 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/sh1esx",
+    "id": "sh1esx",
+    "slide": 1,
+    "layoutId": "0b0e7a89-e5ab-4b53-9e37-490b05f7383f",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "22a80a95-20dd-4771-a46d-3ca250a072f1",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Ocean Arrival",
+    "colors": {
+      "accent1": "#087EAD",
+      "accent2": "#D97706",
+      "accent3": "#008A8A",
+      "accent4": "#B63A3A",
+      "accent5": "#075B82",
+      "accent6": "#6A4C93",
+      "bg1": "#FFFFFF",
+      "bg2": "#E7F5FA",
+      "tx1": "#0B1F33",
+      "tx2": "#0B1F33",
+      "dk1": "#0B1F33",
+      "dk2": "#075B82",
+      "lt1": "#FFFFFF",
+      "lt2": "#E7F5FA",
+      "hlink": "#087EAD",
+      "folHlink": "#008A8A"
+    },
+    "typefaces": [
+      "PingFang SC"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "0b0e7a89-e5ab-4b53-9e37-490b05f7383f",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "22a80a95-20dd-4771-a46d-3ca250a072f1",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "22a80a95-20dd-4771-a46d-3ca250a072f1",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0rexwzid",
+      "id": "1",
+      "name": "deck-title",
+      "bbox": [
+        68,
+        38,
+        1144,
+        62
+      ],
+      "geometry": "rect",
+      "text": "厄尔尼诺暖量是否真正到达东太平洋？",
+      "textPreview": "厄尔尼诺暖量是否真正到达东太平洋？",
+      "resolvedFontSize": 44,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 44,
+        "typeface": "PingFang SC",
+        "color": "#0B1F33",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "厄尔尼诺暖量是否真正到达东太平洋？"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "厄尔尼诺暖量是否真正到达东太平洋？",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 44,
+            "typeface": "PingFang SC",
+            "color": "#0B1F33",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "厄尔尼诺暖量是否真正到达东太平洋？",
+              "fontSize": 44,
+              "typeface": "PingFang SC",
+              "color": "#0B1F33",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zq5wnuhs",
+      "id": "2",
+      "name": "deck-subtitle",
+      "bbox": [
+        68,
+        105,
+        1144,
+        42
+      ],
+      "geometry": "rect",
+      "text": "从 Chakravorty et al.（2021）的 CT/CP 充放电差异开始",
+      "textPreview": "从 Chakravorty et al.（2021）的 CT/CP 充放电差异开始",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 25,
+        "typeface": "PingFang SC",
+        "color": "#075B82",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "从 Chakravorty et al.（2021）的 CT/CP 充放电差异开始"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "从 Chakravorty et al.（2021）的 CT/CP 充放电差异开始",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "PingFang SC",
+            "color": "#075B82",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "从 Chakravorty et al.（2021）的 CT/CP 充放电差异开始",
+              "fontSize": 25,
+              "typeface": "PingFang SC",
+              "color": "#075B82",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ypwvup07",
+      "id": "3",
+      "name": "paper-summary",
+      "bbox": [
+        72,
+        178,
+        380,
+        376
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#E7F5FA",
+      "lineColor": "#087EAD",
+      "lineWidth": 2
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/do3elkz2",
+      "id": "4",
+      "name": "paper-question",
+      "bbox": [
+        104,
+        204,
+        316,
+        38
+      ],
+      "geometry": "rect",
+      "text": "原文问题",
+      "textPreview": "原文问题",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 25,
+        "typeface": "PingFang SC",
+        "color": "#075B82",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "原文问题"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "原文问题",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "PingFang SC",
+            "color": "#075B82",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "原文问题",
+              "fontSize": 25,
+              "typeface": "PingFang SC",
+              "color": "#075B82",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/c3udsfih",
+      "id": "5",
+      "name": "ct-line",
+      "bbox": [
+        106,
+        265,
+        312,
+        122
+      ],
+      "geometry": "rect",
+      "text": "CT：西太平洋蓄热\n→ 赤道东传\n→ 成熟期极向放电",
+      "textPreview": "CT：西太平洋蓄热 | → 赤道东传 | → 成熟期极向放电",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 25,
+        "typeface": "PingFang SC",
+        "color": "#0B1F33",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CT：西太平洋蓄热"
+          },
+          {
+            "index": 2,
+            "text": "→ 赤道东传"
+          },
+          {
+            "index": 3,
+            "text": "→ 成熟期极向放电"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CT：西太平洋蓄热",
+          "lineSpacingPercent": 112000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "PingFang SC",
+            "color": "#0B1F33",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1.12
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CT：西太平洋蓄热",
+              "fontSize": 25,
+              "typeface": "PingFang SC",
+              "color": "#0B1F33",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1.12
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "→ 赤道东传",
+          "lineSpacingPercent": 112000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "PingFang SC",
+            "color": "#0B1F33",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1.12
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "→ 赤道东传",
+              "fontSize": 25,
+              "typeface": "PingFang SC",
+              "color": "#0B1F33",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1.12
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "→ 成熟期极向放电",
+          "lineSpacingPercent": 112000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "PingFang SC",
+            "color": "#0B1F33",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1.12
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "→ 成熟期极向放电",
+              "fontSize": 25,
+              "typeface": "PingFang SC",
+              "color": "#0B1F33",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1.12
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/r2lwjahw",
+      "id": "6",
+      "name": "cp-line",
+      "bbox": [
+        106,
+        423,
+        312,
+        70
+      ],
+      "geometry": "rect",
+      "text": "CP：盆地尺度充放电循环弱",
+      "textPreview": "CP：盆地尺度充放电循环弱",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 23,
+        "typeface": "PingFang SC",
+        "color": "#008A8A",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CP：盆地尺度充放电循环弱"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CP：盆地尺度充放电循环弱",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "typeface": "PingFang SC",
+            "color": "#008A8A",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CP：盆地尺度充放电循环弱",
+              "fontSize": 23,
+              "typeface": "PingFang SC",
+              "color": "#008A8A",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/fu5kbap8",
+      "id": "7",
+      "bbox": [
+        486,
+        172,
+        722,
+        382
+      ],
+      "alt": "Chakravorty et al. (2021) Figure 8 excerpt comparing CT and CP transport and WWV evolution",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "2d1fc491-3d18-4a39-962a-33c87ef10cce",
+        "contentType": "image/png",
+        "byteLength": 116469
+      }
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xk7exoz6",
+      "id": "8",
+      "name": "source",
+      "bbox": [
+        488,
+        566,
+        718,
+        30
+      ],
+      "geometry": "rect",
+      "text": "Source: Chakravorty et al. (2021), their Figure 8.",
+      "textPreview": "Source: Chakravorty et al. (2021), their Figure 8.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 18,
+        "typeface": "PingFang SC",
+        "color": "#0B1F33",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Source: Chakravorty et al. (2021), their Figure 8."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Source: Chakravorty et al. (2021), their Figure 8.",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "PingFang SC",
+            "color": "#0B1F33",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Source: Chakravorty et al. (2021), their Figure 8.",
+              "fontSize": 18,
+              "typeface": "PingFang SC",
+              "color": "#0B1F33",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wzyx4jil",
+      "id": "9",
+      "name": "takeaway",
+      "bbox": [
+        68,
+        628,
+        1144,
+        58
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#087EAD",
+      "lineColor": "#087EAD",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/utsn6pkn",
+      "id": "10",
+      "name": "takeaway-text",
+      "bbox": [
+        88,
+        635,
+        1104,
+        44
+      ],
+      "geometry": "rect",
+      "text": "他们回答了“CT/CP充放电是否不同”，但没有直接量化暖量是否越过140°W。",
+      "textPreview": "他们回答了“CT/CP充放电是否不同”，但没有直接量化暖量是否越过140°W。",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 23,
+        "typeface": "PingFang SC",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "他们回答了“CT/CP充放电是否不同”，但没有直接量化暖量是否越过140°W。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "他们回答了“CT/CP充放电是否不同”，但没有直接量化暖量是否越过140°W。",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "typeface": "PingFang SC",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "他们回答了“CT/CP充放电是否不同”，但没有直接量化暖量是否越过140°W。",
+              "fontSize": 23,
+              "typeface": "PingFang SC",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

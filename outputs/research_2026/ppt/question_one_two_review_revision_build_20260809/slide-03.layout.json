@@ -1,0 +1,1523 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/4ddlgx",
+    "id": "4ddlgx",
+    "slide": 3,
+    "layoutId": "b34381ef-5364-459e-89fa-0f95bfbafe36",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "6db450a5-3eb5-4389-a9b8-408496577a69",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Pacific Heat Arrival",
+    "colors": {
+      "accent1": "#2C7FB8",
+      "accent2": "#D97706",
+      "accent3": "#16877A",
+      "accent4": "#B73A3A",
+      "accent5": "#35566B",
+      "accent6": "#7E5AA6",
+      "bg1": "#FFFFFF",
+      "bg2": "#EDF3F6",
+      "tx1": "#0A2133",
+      "tx2": "#35566B",
+      "dk1": "#0A2133",
+      "dk2": "#35566B",
+      "lt1": "#FFFFFF",
+      "lt2": "#EDF3F6",
+      "hlink": "#2C7FB8",
+      "folHlink": "#16877A"
+    },
+    "typefaces": [
+      "Arial Unicode MS",
+      "PingFang SC"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "b34381ef-5364-459e-89fa-0f95bfbafe36",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "6db450a5-3eb5-4389-a9b8-408496577a69",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "6db450a5-3eb5-4389-a9b8-408496577a69",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fa98raxc",
+      "id": "1",
+      "name": "kicker",
+      "bbox": [
+        54,
+        30,
+        180,
+        32
+      ],
+      "geometry": "rect",
+      "text": "问题一",
+      "textPreview": "问题一",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 22,
+        "typeface": "PingFang SC",
+        "color": "#2C7FB8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "问题一"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "问题一",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "PingFang SC",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "问题一",
+              "fontSize": 22,
+              "typeface": "PingFang SC",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0bipkfyx",
+      "id": "2",
+      "name": "slide-title",
+      "bbox": [
+        54,
+        70,
+        1172,
+        58
+      ],
+      "geometry": "rect",
+      "text": "跨140°W判断越界，东部H₂₀增长判断储存",
+      "textPreview": "跨140°W判断越界，东部H₂₀增长判断储存",
+      "resolvedFontSize": 40,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 40,
+        "typeface": "PingFang SC",
+        "color": "#0A2133",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "跨140°W判断越界，东部H₂₀增长判断储存"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "跨140°W判断越界，东部H₂₀增长判断储存",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 40,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "跨140°W判断越界，东部H₂₀增长判断储存",
+              "fontSize": 40,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1crqt0fi",
+      "id": "3",
+      "name": "rule-54-142",
+      "bbox": [
+        54,
+        142,
+        1172,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#B8BCC4",
+      "lineWidth": 1.4
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2dk7m5g3",
+      "id": "4",
+      "name": "formula-q-label",
+      "bbox": [
+        54,
+        168,
+        300,
+        34
+      ],
+      "geometry": "rect",
+      "text": "断面异常暖量输送",
+      "textPreview": "断面异常暖量输送",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "PingFang SC",
+        "color": "#D97706",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "断面异常暖量输送"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "断面异常暖量输送",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "PingFang SC",
+            "color": "#D97706",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "断面异常暖量输送",
+              "fontSize": 24,
+              "typeface": "PingFang SC",
+              "color": "#D97706",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/net8vaxo",
+      "id": "5",
+      "name": "formula-q",
+      "bbox": [
+        54,
+        208,
+        560,
+        52
+      ],
+      "geometry": "rect",
+      "text": "Qwarm,20 = ρ₀cₚ ∬ vₙ χ₂₀ dA",
+      "textPreview": "Qwarm,20 = ρ₀cₚ ∬ vₙ χ₂₀ dA",
+      "resolvedFontSize": 28,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 28,
+        "typeface": "Arial Unicode MS",
+        "color": "#0A2133",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Qwarm,20 = ρ₀cₚ ∬ vₙ χ₂₀ dA"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Qwarm,20 = ρ₀cₚ ∬ vₙ χ₂₀ dA",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "Arial Unicode MS",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Qwarm,20 = ρ₀cₚ ∬ vₙ χ₂₀ dA",
+              "fontSize": 28,
+              "typeface": "Arial Unicode MS",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/of2pofy9",
+      "id": "6",
+      "name": "formula-h20-label",
+      "bbox": [
+        674,
+        168,
+        330,
+        34
+      ],
+      "geometry": "rect",
+      "text": "固定箱体异常暖量储存",
+      "textPreview": "固定箱体异常暖量储存",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "PingFang SC",
+        "color": "#2C7FB8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "固定箱体异常暖量储存"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "固定箱体异常暖量储存",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "PingFang SC",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "固定箱体异常暖量储存",
+              "fontSize": 24,
+              "typeface": "PingFang SC",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p0bqxkfe",
+      "id": "7",
+      "name": "formula-h20",
+      "bbox": [
+        674,
+        200,
+        552,
+        70
+      ],
+      "geometry": "rect",
+      "text": "χ₂₀ = max(T−20°C, 0)\nH₂₀ = ρ₀cₚ ∭ χ₂₀ dV",
+      "textPreview": "χ₂₀ = max(T−20°C, 0) | H₂₀ = ρ₀cₚ ∭ χ₂₀ dV",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 27,
+        "typeface": "Arial Unicode MS",
+        "color": "#0A2133",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "χ₂₀ = max(T−20°C, 0)"
+          },
+          {
+            "index": 2,
+            "text": "H₂₀ = ρ₀cₚ ∭ χ₂₀ dV"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "χ₂₀ = max(T−20°C, 0)",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "typeface": "Arial Unicode MS",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "χ₂₀ = max(T−20°C, 0)",
+              "fontSize": 27,
+              "typeface": "Arial Unicode MS",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "H₂₀ = ρ₀cₚ ∭ χ₂₀ dV",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "typeface": "Arial Unicode MS",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "H₂₀ = ρ₀cₚ ∭ χ₂₀ dV",
+              "fontSize": 27,
+              "typeface": "Arial Unicode MS",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ihg7algj",
+      "id": "8",
+      "name": "boundary-evidence",
+      "bbox": [
+        54,
+        290,
+        560,
+        82
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFF0D8",
+      "lineColor": "#D97706",
+      "lineWidth": 1.5
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3ipojqx4",
+      "id": "9",
+      "name": "boundary-evidence-text",
+      "bbox": [
+        78,
+        311,
+        512,
+        40
+      ],
+      "geometry": "rect",
+      "text": "Q′₁₄₀W > 0　→　异常暖量越过140°W",
+      "textPreview": "Q′₁₄₀W > 0　→　异常暖量越过140°W",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 25,
+        "typeface": "Arial Unicode MS",
+        "color": "#D97706",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Q′₁₄₀W > 0　→　异常暖量越过140°W"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Q′₁₄₀W > 0　→　异常暖量越过140°W",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "Arial Unicode MS",
+            "color": "#D97706",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Q′₁₄₀W > 0　→　异常暖量越过140°W",
+              "fontSize": 25,
+              "typeface": "Arial Unicode MS",
+              "color": "#D97706",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zetsnql0",
+      "id": "10",
+      "name": "storage-evidence",
+      "bbox": [
+        674,
+        290,
+        552,
+        82
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#DDEFF7",
+      "lineColor": "#2C7FB8",
+      "lineWidth": 1.5
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ydkrel4v",
+      "id": "11",
+      "name": "storage-evidence-text",
+      "bbox": [
+        698,
+        311,
+        504,
+        40
+      ],
+      "geometry": "rect",
+      "text": "ΔH′₂₀,E > 0　→　东部形成异常暖量储存",
+      "textPreview": "ΔH′₂₀,E > 0　→　东部形成异常暖量储存",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 25,
+        "typeface": "Arial Unicode MS",
+        "color": "#2C7FB8",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ΔH′₂₀,E > 0　→　东部形成异常暖量储存"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ΔH′₂₀,E > 0　→　东部形成异常暖量储存",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "Arial Unicode MS",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ΔH′₂₀,E > 0　→　东部形成异常暖量储存",
+              "fontSize": 25,
+              "typeface": "Arial Unicode MS",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lgva9036",
+      "id": "12",
+      "name": "arrow-west-central",
+      "bbox": [
+        360,
+        458,
+        118,
+        38
+      ],
+      "geometry": "rightArrow",
+      "fillColor": "#2C7FB8",
+      "lineColor": "#2C7FB8",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0f29gv2l",
+      "id": "13",
+      "name": "arrow-central-east",
+      "bbox": [
+        804,
+        458,
+        118,
+        38
+      ],
+      "geometry": "rightArrow",
+      "fillColor": "#D97706",
+      "lineColor": "#D97706",
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bqt8jql4",
+      "id": "14",
+      "name": "west-box",
+      "bbox": [
+        62,
+        414,
+        298,
+        116
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#DDEFF7",
+      "lineColor": "#2C7FB8",
+      "lineWidth": 2
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qpkral4j",
+      "id": "15",
+      "name": "central-box",
+      "bbox": [
+        478,
+        414,
+        326,
+        116
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#EDF3F6",
+      "lineColor": "#35566B",
+      "lineWidth": 2
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dcbqlg3a",
+      "id": "16",
+      "name": "east-box",
+      "bbox": [
+        922,
+        414,
+        298,
+        116
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFF0D8",
+      "lineColor": "#D97706",
+      "lineWidth": 2
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cb29cbmp",
+      "id": "17",
+      "name": "west-box-text",
+      "bbox": [
+        82,
+        432,
+        258,
+        76
+      ],
+      "geometry": "rect",
+      "text": "西箱\n160°E—180°",
+      "textPreview": "西箱 | 160°E—180°",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 27,
+        "typeface": "PingFang SC",
+        "color": "#0A2133",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "西箱"
+          },
+          {
+            "index": 2,
+            "text": "160°E—180°"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "西箱",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "西箱",
+              "fontSize": 27,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "160°E—180°",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "160°E—180°",
+              "fontSize": 27,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3m98f6l8",
+      "id": "18",
+      "name": "central-box-text",
+      "bbox": [
+        498,
+        432,
+        286,
+        76
+      ],
+      "geometry": "rect",
+      "text": "中箱\n180°—140°W",
+      "textPreview": "中箱 | 180°—140°W",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 27,
+        "typeface": "PingFang SC",
+        "color": "#0A2133",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "中箱"
+          },
+          {
+            "index": 2,
+            "text": "180°—140°W"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "中箱",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "中箱",
+              "fontSize": 27,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "180°—140°W",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "180°—140°W",
+              "fontSize": 27,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2l0r614n",
+      "id": "19",
+      "name": "east-box-text",
+      "bbox": [
+        942,
+        432,
+        258,
+        76
+      ],
+      "geometry": "rect",
+      "text": "东箱\n140°W—80°W",
+      "textPreview": "东箱 | 140°W—80°W",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 27,
+        "typeface": "PingFang SC",
+        "color": "#0A2133",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "东箱"
+          },
+          {
+            "index": 2,
+            "text": "140°W—80°W"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "东箱",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "东箱",
+              "fontSize": 27,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "140°W—80°W",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "140°W—80°W",
+              "fontSize": 27,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6h0ri1of",
+      "id": "20",
+      "name": "gate-label-180",
+      "bbox": [
+        374,
+        420,
+        92,
+        30
+      ],
+      "geometry": "rect",
+      "text": "180°",
+      "textPreview": "180°",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "PingFang SC",
+        "color": "#2C7FB8",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "180°"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "180°",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "PingFang SC",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "180°",
+              "fontSize": 20,
+              "typeface": "PingFang SC",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ri9sr650",
+      "id": "21",
+      "name": "gate-label-140",
+      "bbox": [
+        808,
+        420,
+        110,
+        30
+      ],
+      "geometry": "rect",
+      "text": "140°W",
+      "textPreview": "140°W",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "PingFang SC",
+        "color": "#D97706",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "140°W"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "140°W",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "PingFang SC",
+            "color": "#D97706",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "140°W",
+              "fontSize": 20,
+              "typeface": "PingFang SC",
+              "color": "#D97706",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sji9kb6l",
+      "id": "22",
+      "name": "method-note-1",
+      "bbox": [
+        54,
+        552,
+        1172,
+        28
+      ],
+      "geometry": "rect",
+      "text": "ρ₀为Boussinesq参考密度；Qwarm,20为PW，按每月实际秒数积分为ZJ。",
+      "textPreview": "ρ₀为Boussinesq参考密度；Qwarm,20为PW，按每月实际秒数积分为ZJ。",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "PingFang SC",
+        "color": "#35566B",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ρ₀为Boussinesq参考密度；Qwarm,20为PW，按每月实际秒数积分为ZJ。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ρ₀为Boussinesq参考密度；Qwarm,20为PW，按每月实际秒数积分为ZJ。",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "PingFang SC",
+            "color": "#35566B",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ρ₀为Boussinesq参考密度；Qwarm,20为PW，按每月实际秒数积分为ZJ。",
+              "fontSize": 18,
+              "typeface": "PingFang SC",
+              "color": "#35566B",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tkratgnq",
+      "id": "23",
+      "name": "method-note-2",
+      "bbox": [
+        54,
+        584,
+        1172,
+        28
+      ],
+      "geometry": "rect",
+      "text": "先计算完整非线性H₂₀与Qwarm,20，再逐日历月去气候态与趋势；区域10°S—5°N、0—300 m。",
+      "textPreview": "先计算完整非线性H₂₀与Qwarm,20，再逐日历月去气候态与趋势；区域10°S—5°N、0—300 m。",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "PingFang SC",
+        "color": "#35566B",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "先计算完整非线性H₂₀与Qwarm,20，再逐日历月去气候态与趋势；区域10°S—5°N、0—300 m。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "先计算完整非线性H₂₀与Qwarm,20，再逐日历月去气候态与趋势；区域10°S—5°N、0—300 m。",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "PingFang SC",
+            "color": "#35566B",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "先计算完整非线性H₂₀与Qwarm,20，再逐日历月去气候态与趋势；区域10°S—5°N、0—300 m。",
+              "fontSize": 18,
+              "typeface": "PingFang SC",
+              "color": "#35566B",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/el0bmlob",
+      "id": "24",
+      "name": "takeaway-band",
+      "bbox": [
+        54,
+        635,
+        1172,
+        55
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#35566B",
+      "lineColor": "#35566B",
+      "lineWidth": 0
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fm9sv65w",
+      "id": "25",
+      "name": "takeaway-text",
+      "bbox": [
+        78,
+        644,
+        1124,
+        38
+      ],
+      "geometry": "rect",
+      "text": "两项共同支持：异常暖量到达并在东部建立暖量库；发展期为Jun(0)—Nov(0)。",
+      "textPreview": "两项共同支持：异常暖量到达并在东部建立暖量库；发展期为Jun(0)—Nov(0)。",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 25,
+        "typeface": "PingFang SC",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "两项共同支持：异常暖量到达并在东部建立暖量库；发展期为Jun(0)—Nov(0)。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "两项共同支持：异常暖量到达并在东部建立暖量库；发展期为Jun(0)—Nov(0)。",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "PingFang SC",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "两项共同支持：异常暖量到达并在东部建立暖量库；发展期为Jun(0)—Nov(0)。",
+              "fontSize": 25,
+              "typeface": "PingFang SC",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

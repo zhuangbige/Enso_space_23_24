@@ -1,0 +1,790 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/ndeu71",
+    "id": "ndeu71",
+    "slide": 8,
+    "layoutId": "eeae0df4-99e0-4f39-9912-afc7fcc982f2",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "396bf202-7f1a-4258-8d63-44274bd4b711",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Aptos",
+      "Aptos Display"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "eeae0df4-99e0-4f39-9912-afc7fcc982f2",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "396bf202-7f1a-4258-8d63-44274bd4b711",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "396bf202-7f1a-4258-8d63-44274bd4b711",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/a1gvy90j",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#F7F3EA",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hoza1gvy",
+      "id": "2",
+      "bbox": [
+        58,
+        30,
+        360,
+        25
+      ],
+      "geometry": "rect",
+      "text": "原文复现 Fig. 2",
+      "textPreview": "原文复现 Fig. 2",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Aptos",
+        "color": "#CC5A43",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "原文复现 Fig. 2"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "原文复现 Fig. 2",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Aptos",
+            "color": "#CC5A43",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "原文复现 Fig. 2",
+              "fontSize": 14,
+              "typeface": "Aptos",
+              "color": "#CC5A43",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/s36hcrmh",
+      "id": "3",
+      "bbox": [
+        58,
+        64,
+        1100,
+        82
+      ],
+      "geometry": "rect",
+      "text": "图中数据名称：赤道太平洋传播、次表层热结构和海洋动力诊断",
+      "textPreview": "图中数据名称：赤道太平洋传播、次表层热结构和海洋动力诊断",
+      "resolvedFontSize": 29,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 29,
+        "typeface": "Aptos Display",
+        "color": "#1D1B18",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "图中数据名称：赤道太平洋传播、次表层热结构和海洋动力诊断"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "图中数据名称：赤道太平洋传播、次表层热结构和海洋动力诊断",
+          "resolvedTextStyle": {
+            "fontSize": 29,
+            "typeface": "Aptos Display",
+            "color": "#1D1B18",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "图中数据名称：赤道太平洋传播、次表层热结构和海洋动力诊断",
+              "fontSize": 29,
+              "typeface": "Aptos Display",
+              "color": "#1D1B18",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/za1gvy90",
+      "id": "4",
+      "bbox": [
+        58,
+        148,
+        1130,
+        1.5
+      ],
+      "geometry": "rect",
+      "fillColor": "#D8D1C4",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/j6tovaho",
+      "id": "5",
+      "bbox": [
+        60,
+        182,
+        600,
+        366
+      ],
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "b86ed710-7279-4c1e-ac59-7c46881c5a6a",
+        "contentType": "image/png",
+        "byteLength": 5386354
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hgn29gr2",
+      "id": "6",
+      "bbox": [
+        694,
+        168,
+        452,
+        118
+      ],
+      "geometry": "rect",
+      "fillColor": "#F5E5DF",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.8
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/svu9knih",
+      "id": "7",
+      "bbox": [
+        708,
+        180,
+        424,
+        22
+      ],
+      "geometry": "rect",
+      "text": "这幅图是什么数据",
+      "textPreview": "这幅图是什么数据",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Aptos",
+        "color": "#2F6F73",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "这幅图是什么数据"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "这幅图是什么数据",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Aptos",
+            "color": "#2F6F73",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "这幅图是什么数据",
+              "fontSize": 14,
+              "typeface": "Aptos",
+              "color": "#2F6F73",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3ylc7u54",
+      "id": "8",
+      "bbox": [
+        708,
+        210,
+        424,
+        68
+      ],
+      "geometry": "rect",
+      "text": "Peng et al. Fig. 2 的赤道剖面和时间-经度诊断，展示海温、次表层热异常、传播特征和风应力相关信号。",
+      "textPreview": "Peng et al. Fig. 2 的赤道剖面和时间-经度诊断，展示海温、次表层热异常、传播特征和风应力相关信号。",
+      "resolvedFontSize": 14.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14.51,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Peng et al. Fig. 2"
+          },
+          {
+            "index": 2,
+            "text": "的赤道剖面和时间-经度诊断，展示海温、次表层热异常、传播特"
+          },
+          {
+            "index": 3,
+            "text": "征和风应力相关信号。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Peng et al. Fig. 2 的赤道剖面和时间-经度诊断，展示海温、次表层热异常、传播特征和风应力相关信号。",
+          "resolvedTextStyle": {
+            "fontSize": 14.51,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Peng et al. Fig. 2 的赤道剖面和时间-经度诊断，展示海温、次表层热异常、传播特征和风应力相关信号。",
+              "fontSize": 14.51,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/adsji5sn",
+      "id": "9",
+      "bbox": [
+        694,
+        302,
+        452,
+        118
+      ],
+      "geometry": "rect",
+      "fillColor": "#EDF3EF",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.8
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/w7mp0bi9",
+      "id": "10",
+      "bbox": [
+        708,
+        314,
+        424,
+        22
+      ],
+      "geometry": "rect",
+      "text": "它反映了什么",
+      "textPreview": "它反映了什么",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Aptos",
+        "color": "#2F6F73",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "它反映了什么"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "它反映了什么",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Aptos",
+            "color": "#2F6F73",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "它反映了什么",
+              "fontSize": 14,
+              "typeface": "Aptos",
+              "color": "#2F6F73",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/psfil0rq",
+      "id": "11",
+      "bbox": [
+        708,
+        344,
+        424,
+        68
+      ],
+      "geometry": "rect",
+      "text": "原文用这组图证明 2023/24 强海温不是偶然表层变暖，而是受到赤道太平洋海洋动力过程支持。",
+      "textPreview": "原文用这组图证明 2023/24 强海温不是偶然表层变暖，而是受到赤道太平洋海洋动力过程支持。",
+      "resolvedFontSize": 14.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14.51,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "原文用这组图证明 2023/24"
+          },
+          {
+            "index": 2,
+            "text": "强海温不是偶然表层变暖，而是受到赤道太平洋海洋动力过程支持"
+          },
+          {
+            "index": 3,
+            "text": "。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "原文用这组图证明 2023/24 强海温不是偶然表层变暖，而是受到赤道太平洋海洋动力过程支持。",
+          "resolvedTextStyle": {
+            "fontSize": 14.51,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "原文用这组图证明 2023/24 强海温不是偶然表层变暖，而是受到赤道太平洋海洋动力过程支持。",
+              "fontSize": 14.51,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e1w7mp0b",
+      "id": "12",
+      "bbox": [
+        694,
+        436,
+        452,
+        118
+      ],
+      "geometry": "rect",
+      "fillColor": "#F5E5DF",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.8
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7mp0bi9s",
+      "id": "13",
+      "bbox": [
+        708,
+        448,
+        424,
+        22
+      ],
+      "geometry": "rect",
+      "text": "对应原文与我的创新",
+      "textPreview": "对应原文与我的创新",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Aptos",
+        "color": "#2F6F73",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "对应原文与我的创新"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "对应原文与我的创新",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Aptos",
+            "color": "#2F6F73",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "对应原文与我的创新",
+              "fontSize": 14,
+              "typeface": "Aptos",
+              "color": "#2F6F73",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wval87ed",
+      "id": "14",
+      "bbox": [
+        708,
+        478,
+        424,
+        68
+      ],
+      "geometry": "rect",
+      "text": "对应原文的海洋动力归因部分。本研究接受这个结论，并把研究焦点转向：既然海洋端足够强，为什么大气端没有同步跟上？",
+      "textPreview": "对应原文的海洋动力归因部分。本研究接受这个结论，并把研究焦点转向：既然海洋端足够强，为什么大气端没有同步跟上？",
+      "resolvedFontSize": 14.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14.51,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "对应原文的海洋动力归因部分。本研究接受这个结论，并把研究焦"
+          },
+          {
+            "index": 2,
+            "text": "点转向：既然海洋端足够强，为什么大气端没有同步跟上？"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "对应原文的海洋动力归因部分。本研究接受这个结论，并把研究焦点转向：既然海洋端足够强，为什么大气端没有同步跟上？",
+          "resolvedTextStyle": {
+            "fontSize": 14.51,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "对应原文的海洋动力归因部分。本研究接受这个结论，并把研究焦点转向：既然海洋端足够强，为什么大气端没有同步跟上？",
+              "fontSize": 14.51,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pg3ex0nu",
+      "id": "15",
+      "bbox": [
+        58,
+        680,
+        1120,
+        26
+      ],
+      "geometry": "rect",
+      "text": "Data: Peng et al. source archive; local Fig2.png; table fig2_equatorial_summary.csv.",
+      "textPreview": "Data: Peng et al. source archive; local Fig2.png; table fig2_equatorial_summary.csv.",
+      "resolvedFontSize": 10.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 10.51,
+        "typeface": "Aptos",
+        "color": "#5D574F",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Data: Peng et al. source archive; local Fig2.png; table fig2_equatorial_summary.csv."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Data: Peng et al. source archive; local Fig2.png; table fig2_equatorial_summary.csv.",
+          "resolvedTextStyle": {
+            "fontSize": 10.51,
+            "typeface": "Aptos",
+            "color": "#5D574F",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Data: Peng et al. source archive; local Fig2.png; table fig2_equatorial_summary.csv.",
+              "fontSize": 10.51,
+              "typeface": "Aptos",
+              "color": "#5D574F"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

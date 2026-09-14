@@ -1,0 +1,478 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/9bxfd7",
+    "id": "9bxfd7",
+    "slide": 10,
+    "layoutId": "b34381ef-5364-459e-89fa-0f95bfbafe36",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "6db450a5-3eb5-4389-a9b8-408496577a69",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Pacific Heat Arrival",
+    "colors": {
+      "accent1": "#2C7FB8",
+      "accent2": "#D97706",
+      "accent3": "#16877A",
+      "accent4": "#B73A3A",
+      "accent5": "#35566B",
+      "accent6": "#7E5AA6",
+      "bg1": "#FFFFFF",
+      "bg2": "#EDF3F6",
+      "tx1": "#0A2133",
+      "tx2": "#35566B",
+      "dk1": "#0A2133",
+      "dk2": "#35566B",
+      "lt1": "#FFFFFF",
+      "lt2": "#EDF3F6",
+      "hlink": "#2C7FB8",
+      "folHlink": "#16877A"
+    },
+    "typefaces": [
+      "PingFang SC"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "b34381ef-5364-459e-89fa-0f95bfbafe36",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "6db450a5-3eb5-4389-a9b8-408496577a69",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "6db450a5-3eb5-4389-a9b8-408496577a69",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/25wjm18z",
+      "id": "1",
+      "name": "answer-kicker",
+      "bbox": [
+        54,
+        42,
+        300,
+        36
+      ],
+      "geometry": "rect",
+      "text": "问题一的回答",
+      "textPreview": "问题一的回答",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "PingFang SC",
+        "color": "#2C7FB8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "问题一的回答"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "问题一的回答",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "PingFang SC",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "问题一的回答",
+              "fontSize": 24,
+              "typeface": "PingFang SC",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/psn2hg7a",
+      "id": "2",
+      "name": "answer-title",
+      "bbox": [
+        54,
+        142,
+        1120,
+        230
+      ],
+      "geometry": "rect",
+      "text": "异常暖量越过140°W，\n并在东太平洋建立暖量库",
+      "textPreview": "异常暖量越过140°W， | 并在东太平洋建立暖量库",
+      "resolvedFontSize": 62,
+      "resolvedTextStyle": {
+        "anchor": 3,
+        "fontSize": 62,
+        "typeface": "PingFang SC",
+        "color": "#0A2133",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "bottom",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "异常暖量越过140°W，"
+          },
+          {
+            "index": 2,
+            "text": "并在东太平洋建立暖量库"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "异常暖量越过140°W，",
+          "lineSpacingPercent": 92000,
+          "resolvedTextStyle": {
+            "fontSize": 62,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 0.92
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "异常暖量越过140°W，",
+              "fontSize": 62,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 0.92
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "并在东太平洋建立暖量库",
+          "lineSpacingPercent": 92000,
+          "resolvedTextStyle": {
+            "fontSize": 62,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 0.92
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "并在东太平洋建立暖量库",
+              "fontSize": 62,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 0.92
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/o7e1obqp",
+      "id": "3",
+      "name": "rule-54-410",
+      "bbox": [
+        54,
+        410,
+        1172,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#B8BCC4",
+      "lineWidth": 1.6
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/f25kb6p8",
+      "id": "4",
+      "name": "answer-1",
+      "bbox": [
+        54,
+        452,
+        1172,
+        44
+      ],
+      "geometry": "rect",
+      "text": "越界证据：140°W东向异常输入为正",
+      "textPreview": "越界证据：140°W东向异常输入为正",
+      "resolvedFontSize": 28,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 28,
+        "typeface": "PingFang SC",
+        "color": "#2C7FB8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "越界证据：140°W东向异常输入为正"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "越界证据：140°W东向异常输入为正",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "PingFang SC",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "越界证据：140°W东向异常输入为正",
+              "fontSize": 28,
+              "typeface": "PingFang SC",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e1wji18n",
+      "id": "5",
+      "name": "answer-2",
+      "bbox": [
+        54,
+        516,
+        1172,
+        44
+      ],
+      "geometry": "rect",
+      "text": "储存证据：东部H₂₀增加；强度为CT > CP，1997 ≫ 2015 ≈ 2023",
+      "textPreview": "储存证据：东部H₂₀增加；强度为CT > CP，1997 ≫ 2015 ≈ 2023",
+      "resolvedFontSize": 28,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 28,
+        "typeface": "PingFang SC",
+        "color": "#D97706",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "储存证据：东部H₂₀增加；强度为CT > CP，1997 ≫ 2015 ≈ 2023"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "储存证据：东部H₂₀增加；强度为CT > CP，1997 ≫ 2015 ≈ 2023",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "PingFang SC",
+            "color": "#D97706",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "储存证据：东部H₂₀增加；强度为CT > CP，1997 ≫ 2015 ≈ 2023",
+              "fontSize": 28,
+              "typeface": "PingFang SC",
+              "color": "#D97706",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/14n2dg7e",
+      "id": "6",
+      "name": "answer-3",
+      "bbox": [
+        54,
+        580,
+        1172,
+        44
+      ],
+      "geometry": "rect",
+      "text": "边界：这是欧拉控制体意义上的到达，不是同一水团的拉格朗日追踪。",
+      "textPreview": "边界：这是欧拉控制体意义上的到达，不是同一水团的拉格朗日追踪。",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 25,
+        "typeface": "PingFang SC",
+        "color": "#35566B",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "边界：这是欧拉控制体意义上的到达，不是同一水团的拉格朗日追踪。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "边界：这是欧拉控制体意义上的到达，不是同一水团的拉格朗日追踪。",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "PingFang SC",
+            "color": "#35566B",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "边界：这是欧拉控制体意义上的到达，不是同一水团的拉格朗日追踪。",
+              "fontSize": 25,
+              "typeface": "PingFang SC",
+              "color": "#35566B",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

@@ -1,0 +1,17 @@
+stage,target,model,features,rmse,baseline_rmse,rmse_skill,correlation
+atmosphere coupling,coupling_mjj,coupling climatology,,1.1112582619675233,1.1112582619675233,0.0,-1.0
+atmosphere coupling,coupling_mjj,ocean + early SST,east_ocean_state_z; early_ec_apr; fep_residual_mjj,0.8638099164391706,1.1112582619675233,0.22267402096991962,0.564544795143688
+atmosphere coupling,coupling_mjj,+ multi-year La Nina,east_ocean_state_z; early_ec_apr; fep_residual_mjj; multi_year_la_nina_memory,0.8753906860617874,1.1112582619675233,0.2122527084641187,0.5542772202891545
+atmosphere coupling,coupling_mjj,+ Indo-Atlantic,east_ocean_state_z; early_ec_apr; fep_residual_mjj; indo_atlantic_total_heating,0.9402977633427456,1.1112582619675233,0.15384407430374092,0.4771600803642202
+atmosphere coupling,coupling_mjj,+ NPMM,east_ocean_state_z; early_ec_apr; fep_residual_mjj; npmm_fma,0.9148157689140822,1.1112582619675233,0.17677483243691028,0.5116113766109858
+atmosphere coupling,coupling_mjj,+ rain dipole,east_ocean_state_z; early_ec_apr; fep_residual_mjj; precip_dipole_mjj,0.7123144161779567,1.1112582619675233,0.35900191651508806,0.7441029652355358
+atmosphere coupling,coupling_mjj,+ WWB pulses,east_ocean_state_z; early_ec_apr; fep_residual_mjj; wwb_stochastic_impulse,0.8875495998059969,1.1112582619675233,0.2013111351500254,0.5396066841134028
+atmosphere coupling,coupling_mjj,all candidate factors,east_ocean_state_z; early_ec_apr; fep_residual_mjj; multi_year_la_nina_memory; indo_atlantic_total_heating; npmm_fma; precip_dipole_mjj; wwb_stochastic_impulse,0.9284415028749288,1.1112582619675233,0.16451329573821194,0.5770528049264363
+mature type,mature_ec_flavor,April persistence,early_ec_apr,1.1405296041863306,1.1405296041863306,0.0,-0.13758483173466624
+mature type,mature_ec_flavor,+ ocean gate,early_ec_apr; east_ocean_state_z,0.7969837842760615,1.1405296041863306,0.30121604792131584,0.632772621648147
+mature type,mature_ec_flavor,+ coupling,early_ec_apr; coupling_mjj,1.2729951060277873,1.1405296041863306,-0.11614385225533841,-0.1196287574372103
+mature type,mature_ec_flavor,+ ocean + coupling,early_ec_apr; east_ocean_state_z; coupling_mjj,0.9036388904405369,1.1405296041863306,0.20770238043474087,0.5052451696223608
+mature type,mature_box_type,April persistence,early_ec_apr,1.0005055585710951,1.0005055585710951,0.0,-0.26116676328288635
+mature type,mature_box_type,+ ocean gate,early_ec_apr; east_ocean_state_z,0.5640447242224742,1.0005055585710951,0.43624028933129244,0.764130665788128
+mature type,mature_box_type,+ coupling,early_ec_apr; coupling_mjj,1.0094578628822795,1.0005055585710951,-0.008947780683967288,-0.021317068764720375
+mature type,mature_box_type,+ ocean + coupling,early_ec_apr; east_ocean_state_z; coupling_mjj,0.6071252925336219,1.0005055585710951,0.3931814897653264,0.7277034115837056

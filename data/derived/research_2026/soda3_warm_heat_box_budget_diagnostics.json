@@ -1,0 +1,74 @@
+{
+  "events": [
+    1982,
+    1986,
+    1991,
+    1994,
+    1997,
+    2002,
+    2004,
+    2006,
+    2009,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "box": {
+    "west_lon_e": 160.0,
+    "east_lon_e": 180.0,
+    "lat_bounds": [
+      -5.0,
+      5.0
+    ],
+    "depth_max_m": 300.0
+  },
+  "warm_heat_definition": "rho0*Cp0*max(T-20C,0)",
+  "budget_equation": "dH20/dt = Q20_160E - Q20_180E + residual",
+  "budget_statistics": {
+    "correlation": 0.48831531339306894,
+    "correlation_ci_low": 0.3688407488492202,
+    "correlation_ci_high": 0.5838978241750582,
+    "intercept_pw": 0.0395439676345713,
+    "slope": 0.3816492760894365,
+    "slope_ci_low": 0.2550236478617684,
+    "slope_ci_high": 0.5138550356326468
+  },
+  "quality_control": {
+    "volume_monthly_reconstruction_max_abs_error_sv": 1.0658141036401503e-14,
+    "d20_monthly_reconstruction_max_abs_error_m": 2.842170943040401e-14,
+    "pentad_interval_min_days": 5.0,
+    "pentad_interval_median_days": 5.0,
+    "pentad_interval_max_days": 5.0,
+    "m_anom_sv_monthly_reconstruction_max_abs_error": 1.0658141036401503e-14,
+    "q20_anom_pw_monthly_reconstruction_max_abs_error": 2.220446049250313e-16,
+    "d20_anom_m_monthly_reconstruction_max_abs_error": 2.842170943040401e-14,
+    "ssh_anom_m_monthly_reconstruction_max_abs_error": 1.1102230246251565e-16,
+    "sst_anom_c_monthly_reconstruction_max_abs_error": 4.274358644806853e-15,
+    "feature_missing_counts": {
+      "centroid_change15day_deg": 49,
+      "d20_200_tendency5_m_day": 13,
+      "d20_220_minus_200_tendency5_m_day": 13,
+      "d20_pressure_accel_1e8_ms2": 0,
+      "east_fraction_15day": 18,
+      "east_west_gradient_change15day_gj_m2": 39,
+      "m160_minus_m180_sv": 0,
+      "m180_minus_m220_sv": 0,
+      "m180_x_d20_slope_sv_m": 0,
+      "positive_taux_mean15_nm2": 26,
+      "season_cos": 0,
+      "season_sin": 0,
+      "ssh_220_minus_200_tendency5_m_day": 13,
+      "taux_change5_nm2": 13,
+      "taux_variability15_nm2": 26,
+      "warm_volume_transport_sv_anom": 0,
+      "wind_accel_1e8_ms2": 0
+    },
+    "common_complete_rows_future5": 408
+  },
+  "interpretation_limits": [
+    "The residual is not assigned to a single process without meridional, vertical and diabatic boundary terms.",
+    "Five-degree longitude sampling is tested with neighboring box boundaries but is not a full grid-cell finite-volume budget.",
+    "Predictive models use only contemporaneous or trailing budget terms; the future residual is diagnostic only."
+  ]
+}

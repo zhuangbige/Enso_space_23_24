@@ -1,0 +1,116 @@
+{
+  "baseline": "1980-2024 calendar-month linear detrended",
+  "events": [
+    1982,
+    1986,
+    1991,
+    1994,
+    1997,
+    2002,
+    2004,
+    2006,
+    2009,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "era5_events": [
+    1982,
+    1986,
+    1991,
+    1997,
+    2002,
+    2004,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "west_longitudes_e": [
+    150.0,
+    155.0,
+    160.0,
+    165.0,
+    170.0
+  ],
+  "central_longitudes_e": [
+    190.0,
+    195.0,
+    200.0,
+    205.0,
+    210.0
+  ],
+  "distance_m": 4447797.06578235,
+  "n_pentads": 471,
+  "n_era5_pentads": 362,
+  "direct_zero_balance_accuracy": 0.5095541401273885,
+  "direct_zero_balance_balanced_accuracy": 0.512610547002948,
+  "direct_zero_balance_positive_fraction": 0.4692144373673036,
+  "observed_q180_positive_fraction": 0.5477707006369427,
+  "coupling_threshold": {
+    "threshold_c": 0.18566374047050138,
+    "threshold_ci_low_c": -0.03341121548212492,
+    "threshold_ci_high_c": 0.365407553329324,
+    "raw_logit_slope_per_c": 1.8808068212057174,
+    "positive_slope_bootstrap_fraction": 1.0,
+    "n_events": 10,
+    "n_pentads": 362
+  },
+  "correlations": {
+    "west_heat_vs_pressure": {
+      "pearson_r": 0.7195409777241246,
+      "spearman_r": 0.7259329613814743,
+      "ci_low": 0.4685356482211242,
+      "ci_high": 0.8871068763340558,
+      "n_events": 13,
+      "n_pentads": 471
+    },
+    "west_heat_vs_soda_wind": {
+      "pearson_r": -0.29183690770998283,
+      "spearman_r": -0.2867315859711826,
+      "ci_low": -0.4356744046578641,
+      "ci_high": -0.08729983792062708,
+      "n_events": 13,
+      "n_pentads": 471
+    },
+    "west_heat_vs_era5_wind": {
+      "pearson_r": -0.3865140930309401,
+      "spearman_r": -0.3601551985192495,
+      "ci_low": -0.5551255053562485,
+      "ci_high": -0.10302628728461692,
+      "n_events": 10,
+      "n_pentads": 362
+    },
+    "net_accel_vs_q180": {
+      "pearson_r": 0.12748546019967827,
+      "spearman_r": 0.11878739712560381,
+      "ci_low": -0.01991619891619742,
+      "ci_high": 0.26418245516000827,
+      "n_events": 13,
+      "n_pentads": 471
+    },
+    "sst_gradient_vs_era5_wind": {
+      "pearson_r": 0.5395449693513077,
+      "spearman_r": 0.5147286435395947,
+      "ci_low": 0.32235251633707,
+      "ci_high": 0.6552180217305177,
+      "n_events": 10,
+      "n_pentads": 362
+    }
+  },
+  "sensitivity": {
+    "net_q_r_min": 0.08160080622000061,
+    "net_q_r_max": 0.18532319543428674,
+    "zero_line_balanced_accuracy_min": 0.5011737089201878,
+    "zero_line_balanced_accuracy_max": 0.5228190850529534
+  },
+  "quality_control": {
+    "q20_pw_anom_monthly_reconstruction_max_abs_error": 2.220446049250313e-16,
+    "warm_heat_section_gj_per_m_anom_monthly_reconstruction_max_abs_error": 9.313225746154785e-10,
+    "d20_m_anom_monthly_reconstruction_max_abs_error": 2.842170943040401e-14,
+    "ssh_m_anom_monthly_reconstruction_max_abs_error": 1.1102230246251565e-16,
+    "sst_c_anom_monthly_reconstruction_max_abs_error": 4.274358644806853e-15,
+    "taux_monthly_reconstruction_max_abs_error": 6.938893903907228e-18
+  }
+}

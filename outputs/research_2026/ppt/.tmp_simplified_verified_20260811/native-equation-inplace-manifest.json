@@ -1,0 +1,184 @@
+[
+  {
+    "slide": 4,
+    "shape": "chakravorty-formula-data-text-30",
+    "target": "H₃₀₀ = ⟨ρ₀cₚ∫₀³⁰⁰ T dz⟩ᵩ",
+    "latex": "H_{300}=\\left\\langle\\rho_0c_p\\int_0^{300\\,\\mathrm{m}}T\\,dz\\right\\rangle_{\\phi}",
+    "ommlChars": 853
+  },
+  {
+    "slide": 4,
+    "shape": "chakravorty-formula-data-text-33",
+    "target": "H′₃₀₀ = H₃₀₀ − Ĉₘ − bₘ(y−ȳₘ)",
+    "latex": "H'_{300}=H_{300}-\\widehat C_m-b_m\\left(y-\\bar y_m\\right)",
+    "ommlChars": 893
+  },
+  {
+    "slide": 4,
+    "shape": "chakravorty-formula-data-text-37",
+    "target": "⟨H⟩ᵩ = ΣᵢHᵢcosφᵢ / Σᵢcosφᵢ",
+    "latex": "\\langle H\\rangle_{\\phi}=\\frac{\\sum_iH_i\\cos\\phi_i}{\\sum_i\\cos\\phi_i}",
+    "ommlChars": 1177
+  },
+  {
+    "slide": 6,
+    "shape": "chakravorty-formula-data-text-30",
+    "target": "T′ₚ = Tₚ − T̂ₘ,₋ₑ",
+    "latex": "T'_p=T_p-\\widehat T_{m,-e}",
+    "ommlChars": 580
+  },
+  {
+    "slide": 6,
+    "shape": "chakravorty-formula-data-text-33",
+    "target": "ωₚ = max(T′ₚ,0)cosφₚΔzₚ",
+    "latex": "\\omega_p=\\max\\!\\left(T'_p,0\\right)\\cos\\phi_p\\,\\Delta z_p",
+    "ommlChars": 846
+  },
+  {
+    "slide": 6,
+    "shape": "chakravorty-formula-data-text-37",
+    "target": "dλ/dt = u/(Rcosφ)",
+    "latex": "\\frac{d\\lambda}{dt}=\\frac{u}{R\\cos\\phi}",
+    "ommlChars": 488
+  },
+  {
+    "slide": 6,
+    "shape": "chakravorty-formula-data-text-37",
+    "target": "dφ/dt = v/R",
+    "latex": "\\frac{d\\phi}{dt}=\\frac{v}{R}",
+    "ommlChars": 406
+  },
+  {
+    "slide": 6,
+    "shape": "chakravorty-formula-data-text-37",
+    "target": "dz/dt = −w",
+    "latex": "\\frac{dz}{dt}=-w",
+    "ommlChars": 285
+  },
+  {
+    "slide": 6,
+    "shape": "chakravorty-formula-data-text-40",
+    "target": "Δλₚ = λᵣₑₗₑₐₛₑ − λₛₒᵤᵣcₑ",
+    "latex": "\\Delta\\lambda_p=\\lambda_{\\mathrm{release}}-\\lambda_{\\mathrm{source}}",
+    "ommlChars": 581
+  },
+  {
+    "slide": 6,
+    "shape": "chakravorty-formula-data-text-40",
+    "target": "加权中位数：累计ωₚ达到0.5Σωₚ",
+    "latex": "\\sum_{\\Delta\\lambda_p\\leq\\widetilde{\\Delta\\lambda}}\\omega_p=\\frac{1}{2}\\sum_p\\omega_p",
+    "ommlChars": 1146
+  },
+  {
+    "slide": 6,
+    "shape": "chakravorty-formula-data-text-40",
+    "target": "活动轨迹权重占比：Σωₚ,active / Σωₚ",
+    "latex": "f_{\\mathrm{active}}=\\frac{\\sum_{p\\in\\mathrm{active}}\\omega_p}{\\sum_p\\omega_p}",
+    "ommlChars": 1002
+  },
+  {
+    "slide": 8,
+    "shape": "chakravorty-formula-data-text-30",
+    "target": "Q₁₄₀W = ρ₀cₚ ∬uₙ(T−T̄ᵦ)dA",
+    "latex": "Q_{140^{\\circ}\\mathrm{W}}=\\rho_0c_p\\iint u_n\\left(T-\\bar T_b\\right)\\,dA",
+    "ommlChars": 885
+  },
+  {
+    "slide": 8,
+    "shape": "chakravorty-formula-data-text-33",
+    "target": "Aᴶᵃⁿ–ᴶᵘⁿ = ∫Q′₁₄₀W(t)dt",
+    "latex": "A_{\\mathrm{Jan-Jun}}=\\int_{\\mathrm{Jan}}^{\\mathrm{Jun}}Q'_{140^{\\circ}\\mathrm{W}}(t)\\,dt",
+    "ommlChars": 915
+  },
+  {
+    "slide": 8,
+    "shape": "chakravorty-formula-data-text-37",
+    "target": "H′ₑ(t) = ρ₀cₚ∭ₑT′dV",
+    "latex": "H'_e(t)=\\rho_0c_p\\iiint_eT'\\,dV",
+    "ommlChars": 807
+  },
+  {
+    "slide": 8,
+    "shape": "chakravorty-formula-data-text-37",
+    "target": "ΔH′ₑ = H′ₑ(Jun) − H′ₑ(Jan)",
+    "latex": "\\Delta H'_e=H'_e(\\mathrm{Jun})-H'_e(\\mathrm{Jan})",
+    "ommlChars": 888
+  },
+  {
+    "slide": 10,
+    "shape": "chakravorty-formula-data-text-30",
+    "target": "ΔH′ₑ = Q′W + Q′E + Q′N + Q′S + Q′ₛ + R′",
+    "latex": "\\Delta H'_e=Q'_W+Q'_E+Q'_N+Q'_S+Q'_s+R'",
+    "ommlChars": 1348
+  },
+  {
+    "slide": 10,
+    "shape": "chakravorty-formula-data-text-33",
+    "target": "R′ = ΔH′ₑ − ΣQ′ − Q′ₛ",
+    "latex": "R'=\\Delta H'_e-\\left(Q'_W+Q'_E+Q'_N+Q'_S\\right)-Q'_s",
+    "ommlChars": 1394
+  },
+  {
+    "slide": 10,
+    "shape": "chakravorty-formula-data-text-37",
+    "target": "储热损失 = −ΔH′ₑ",
+    "latex": "\\text{储热损失}=-\\Delta H'_e",
+    "ommlChars": 419
+  },
+  {
+    "slide": 10,
+    "shape": "chakravorty-formula-data-text-37",
+    "target": "向西返回 = −Q′W",
+    "latex": "\\text{向西返回}=-Q'_W",
+    "ommlChars": 363
+  },
+  {
+    "slide": 10,
+    "shape": "chakravorty-formula-data-text-37",
+    "target": "向东输出 = −Q′E",
+    "latex": "\\text{向东输出}=-Q'_E",
+    "ommlChars": 363
+  },
+  {
+    "slide": 10,
+    "shape": "chakravorty-formula-data-text-37",
+    "target": "向北输出 = −Q′N",
+    "latex": "\\text{向北输出}=-Q'_N",
+    "ommlChars": 363
+  },
+  {
+    "slide": 10,
+    "shape": "chakravorty-formula-data-text-37",
+    "target": "向南输出 = −Q′S",
+    "latex": "\\text{向南输出}=-Q'_S",
+    "ommlChars": 363
+  },
+  {
+    "slide": 10,
+    "shape": "chakravorty-formula-data-text-37",
+    "target": "海表散热 = −Q′ₛ",
+    "latex": "\\text{海表散热}=-Q'_s",
+    "ommlChars": 363
+  },
+  {
+    "slide": 12,
+    "shape": "chakravorty-formula-data-text-30",
+    "target": "Xᵣ = X − (aₓ + bₓA)",
+    "latex": "X_r=X-\\left(a_x+b_xA\\right)",
+    "ommlChars": 497
+  },
+  {
+    "slide": 12,
+    "shape": "chakravorty-formula-data-text-33",
+    "target": "Yᵣ = Y − (aᵧ + bᵧA)",
+    "latex": "Y_r=Y-\\left(a_y+b_yA\\right)",
+    "ommlChars": 497
+  },
+  {
+    "slide": 12,
+    "shape": "chakravorty-formula-data-text-34",
+    "target": "rₓᵧ·A = corr(Xᵣ,Yᵣ)",
+    "latex": "r_{XY\\cdot A}=\\operatorname{corr}\\!\\left(X_r,Y_r\\right)",
+    "ommlChars": 579
+  }
+]

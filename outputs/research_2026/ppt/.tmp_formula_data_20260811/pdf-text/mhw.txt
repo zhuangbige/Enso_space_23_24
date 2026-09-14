@@ -1,0 +1,1490 @@
+Coupled air-sea interaction drove and sustained the
+2013–2016 North Paci c Marine Heatwave
+Wenrui Jiang
+
+
+
+ Johns Hopkins University https://orcid.org/0009-0000-7319-9469
+Gael Forget
+ Massachusetts Institute of Technology https://orcid.org/0000-0002-4234-056X
+Yuanyuan Song
+ Massachusetts Institute of Technology https://orcid.org/0000-0003-0810-0930
+Thomas Haine
+ Johns Hopkins University https://orcid.org/0000-0001-8231-2419
+
+
+
+Article
+
+Keywords:
+
+Posted Date: October 13th, 2025
+
+DOI: https://doi.org/10.21203/rs.3.rs-7762242/v1
+
+License:   This work is licensed under a Creative Commons Attribution 4.0 International License.
+Read Full License
+
+Additional Declarations: There is NO Competing Interest.
+ Coupled air-sea interaction drove and sustained the 2013–2016
+                North Pacific Marine Heatwave
+            Wenrui Jiang, Gaël Forget, Yuanyuan Song, Thomas W. N. Haine
+                                           October 1, 2025
+
+                                                Abstract
+         The 2013–2016 marine heatwave (MHW) in the Northeastern Pacific ranks among the most
+     intense extratropical ocean warming events on record. Its complex evolution has complicated
+     efforts to understand underlying dynamics, which are crucial for predicting future MHWs. There-
+     fore, we track the MHW using a novel Lagrangian heat budget method that allows us to quantify
+     processes driving the MHW evolution. Three dimensional particle trajectories separate the MHW
+     into northern and southern components. The northern half was sustained by weakened Ekman
+     heat transport across the North Pacific Current and reduced wintertime surface heat loss. The
+     southern half was driven by weakened Ekman upwelling caused by reduced alongshore winds over
+     the California Current. A persistent low sea level pressure (SLP) over the central Pacific altered
+     wind patterns, moving heat and moisture poleward, and ultimately caused the MHW. Elevated
+     surface temperature, in turn, boosted the SLP anomaly, completing a positive feedback loop.
+
+
+1    Introduction
+A significant increase in sea surface temperature (SST) emerged during the winter of 2013–2014 (1) ,
+evolving into a record-breaking marine heatwave (MHW) in the Northeast Pacific (NEP) Ocean that
+persisted until early 2016 (2) . This event extended from the Gulf of Alaska (GOA) to the California
+Current region (CC), with peak SST anomalies exceeding 3◦ C (3,2) . The intensity and persistence of
+the MHW led to widespread ecological disruption (4) , including extensive kelp forest loss along the
+California coast (5,6) , a large-scale toxic algal bloom (7) , and elevated whale entanglement rates (8) ,
+resulting in economic losses of hundreds of millions of dollars (9) .
+    Although MHWs are typically defined by SST anomalies, recent studies have highlighted the im-
+portance of tracking heat anomaly in three spatial dimensions (3D) over time (10,11) . Subsurface tem-
+perature extremes often persist longer than their surface counterparts and contribute to the overall
+longevity of a MHW (12,13,14,15) . For example, the 2019–2020 NEP MHW was largely confined to the
+top 50 m and lasted less than a year (16) , whereas the 2013–2016 warm anomaly extended beyond 150
+m depth and persisted for more than two years (15) . Such deep penetration also emphasizes the role
+of ocean heat transport relative to surface heat flux (17,18) , underscoring the need for a 3D Lagrangian
+view of the MHW life cycle (19,10,11) .
+    Under anthropogenic climate change, MHWs have become more frequent and intense in recent
+decades (20,21,22,23) . Each region and event is driven by a distinct combination of changes in surface
+heat fluxes, ocean mixing, and transport processes (24,25,23) . To better understand the evolution of a
+MHW, it is crucial to diagnose the timing, location, and relative importance of these drivers. However,
+such diagnostic analyses remain challenging with existing approaches.
+    Remote atmospheric teleconnections originating from the tropics (3) , mid-latitudes (26) , and the
+Arctic (22) have been shown to create favorable atmospheric conditions for ocean warming in the NEP.
+Previous studies have also shown that SST anomalies in the NEP can trigger remote atmospheric
+responses, including droughts (27,28) and cold winters (29,30,31,32) . Yet, the role of local atmospheric
+feedbacks—through which SST anomalies modulate their own drivers—remains largely unexamined.
+    Understanding the dynamics of the 2013–2016 MHW requires an integrative framework that resolves
+its evolving 3D structure and shifts in multiple coupled air-sea mechanisms over time. In this study,
+we conduct Lagrangian heat budget analyses (33) based on the closed heat budget from the Estimating
+the Circulation and Climate of the Ocean, Version 4 release 4 (ECCO4) global reanalysis (34,35,25) .
+
+
+                                                     1
+           (a)          2014-02            (b)          2014-12            (c)          2015-04            (d)          2015-11
+    60°N                            60°N                            60°N                            60°N                            4
+    50°N                            50°N                            50°N                            50°N
+    40°N                            40°N                            40°N                            40°N                            3
+    30°N                            30°N                            30°N                            30°N
+    20°N                            20°N                            20°N                            20°N                            2
+    10°N                            10°N                            10°N                            10°N
+      0°                              0°                              0°                              0°                            1
+                 180°       120°W                180°       120°W                180°       120°W                180°       120°W
+                                                                                                                                    0   C
+           (e)                             (f)                             (g)                             (h)
+                                                                                                                                        1
+    60°N                            60°N                            60°N                            60°N
+    50°N                            50°N                            50°N                            50°N                                2
+    40°N                            40°N                            40°N                            40°N
+    30°N                            30°N                            30°N                            30°N                                3
+    20°N                            20°N                            20°N                            20°N
+    10°N                            10°N                            10°N                            10°N                                4
+      0°                              0°                              0°                              0°
+                 180°       120°W                180°       120°W                180°       120°W                180°       120°W
+           (i)                             (j)                             (k)                             (l)
+    60°N                            60°N                            60°N                            60°N                            150
+    50°N                            50°N                            50°N                            50°N                            100
+                                                                                                                                            mol m
+    40°N                            40°N                            40°N                            40°N
+    30°N                            30°N                            30°N                            30°N
+    20°N                            20°N                            20°N                            20°N                            50
+    10°N                            10°N                            10°N                            10°N
+      0°                              0°                              0°                              0°                            0
+                 180°       120°W                180°       120°W                180°       120°W                180°       120°W
+
+
+Figure 1: Temperal evolution of NEP MHW. (a–d) Monthly-averaged SST anomaly from OISST, (e–h)
+monthly-averaged upper 150 m temperature anomaly from ECCO4, and (i–l) snapshots of vertically-
+integrated passive tracer concentration being tracked backwards in time from release on March 1, 2016.
+Contour levels for panels (a–d) are 1◦ C (purple), 2◦ C (green), and 3◦ C (yellow); for panels (e–h), the
+contour level is 1.25◦ C. Contours in panels (i–l) denote integrated tracer concentrations of 1 mol · m
+(dark purple), 10 mol · m (purple), 50 mol · m (green), and 100 mol · m (yellow). Panels (i–l) also show a
+(randomly-selected) subset of Lagrangian particle locations being tracked backwards in time; northern
+MHW (N-MHW) particles are green, and southern MHW (S-MHW) particles are blue.
+
+
+Our integrative approach allows us to follow the warm water and quantify the distinct processes that
+amplified or dissipated the MHW across different regions during 2013–2016.
+
+
+2    Results
+Evolution of the MHW SST anomaly is shown in Fig. 1a–d, based on the Optimum Interpolation Sea
+Surface Temperature (OISST) dataset (see also Figs. E.1, E.2). A warm SST anomaly first emerged
+in the winter of 2013 (Figs. E.1a–c, E.2a–c). In early 2014, an SST anomaly north of 30◦ N reached
+its peak, and another warm anomaly gradually developed along the California Current (Fig. 1a-b).
+The northern anomaly persisted until a relatively cool phase from autumn 2014 through spring 2015,
+followed by a period of rapid warming. Meanwhile, the southern anomaly continued to intensify and
+expand offshore (Fig. 1c-d). Both anomalies eventually weakened in early 2016 (Figs. E.1o–p, E.2o–p).
+The difference in timing and spatial separation between the northern and southern anomalies implies
+that they are likely influenced by distinct mechanisms.
+    Given that the MHW penetrated deep into the ocean and carried substantial thermal inertia (15,13) ,
+an analysis of upper ocean heat content (OHC) provides a more complete characterization than SST
+alone (36,14,37) . OISST agrees well with ECCO4 (Figs. E.1, E.2), which justifies the assessment of
+the subsurface temperature anomaly averaged over the top 150 m (Fig. 1e–h). Although it closely
+correlates with SST, the averaged OHC anomaly more clearly reveals eastward propagation with
+the general circulation (Fig. E.3). To investigate the nature of this propagation, Fig. 1i–l (see also
+Fig. E.4, E.5, E.6) displays the concentration of a passive tracer and the locations of Lagrangian
+particles that were injected into the MHW (see Methods) and advected eastward along the North
+Pacific Current (NPC). The center of tracer distribution (yellow contours) moves eastward faster than
+the center of the depth-integrated temperature anomaly (black contours in Fig. 1e–h). This shows
+
+
+                                                                     2
+that the MHW is neither stationary nor purely Lagrangian.
+    The water masses represented by the particles injected north (south) of 30◦ N are referred to as
+N-MHW (S-MHW). Minimal mixing between N-MHW (green particles) and S-MHW (blue particles)
+demonstrates the lack of a shared origin (Fig. 1i–l), and again, suggests distinct life cycles that further
+motivate separate Lagrangian budget analyses. Notably, N-MHW and S-MHW represent time-evolving
+Lagrangian volumes that record the history of water parcels, which differ conceptually from common
+definitions of MHWs based on an instantaneous temperature threshold (37) .
+
+2.1    Lagrangian budget attribution
+The Lagrangian heat budget (see Methods Section 4.4) quantifies relative contributions of surface
+heating, advection, and diffusion (Figs. 2–3). The N-MHW experienced persistently high temperature
+during two periods: December 2013 to October 2014, and March 2015 to November 2015 (Fig. 2a).
+Over timescales of a few months, temperature variability is strongly influenced by anomalous surface
+heating (Q′ , due to surface turbulent and radiative fluxes). Q′ is responsible for both rapid warming
+events and rapid cooling episodes (late 2014 and early 2016) that strongly damped the temperature
+anomaly. On longer timescales, however, anomalous advection (−A(U ′ , Θ), advection by anomalous
+velocity across mean temperature gradients) acts to sustain the accumulated heat, while temporal
+fluctuations in surface heating tend to average out. Until early 2016, anomalous advection remained
+consistently positive, sustaining the heat content anomaly and offsetting the cooling effect of surface
+fluxes over maturity/decay periods (blue-shaded periods in Fig. 2a). Vertical diffusion is strongly
+anti-correlated with surface heating, acting to redistribute heat from the surface to the ocean interior.
+Overall, vertical diffusion and other processes play minor roles compared to anomalous advection and
+surface heating.
+    Fig. 2b–i show how anomalous advection and surface heating affect the N-MHW spatially. Within
+the GOA (highlighted by the grey box), anomalous advection provided constant localized heating
+within GOA (grey box) over both growth (red-shaded) and maturity/decay (blue-shaded) periods
+(Fig. 2b–e). In contrast, surface heating exhibits greater spatial uniformity but stronger temporal vari-
+ability, with widespread heating during growth periods (Fig. 2f, h) and cooling over maturity/decay
+periods (Fig. 2g, i). Noticeably, the widespread decrease in seasonal heat loss drove the sharp anoma-
+lous warming during the winter of 2014–2015, as shown in Fig. 2a, h.
+    Similar to the N-MHW, anomalous advection and surface heating contribute most to the evolution
+of the warm anomaly in S-MHW (Fig. 3a). Damping by Q′ again dominated the decay phase after
+November 2015 (blue-shaded). However, during the growth phase before November 2015 (red-shaded),
+Q′ played a much smaller role in S-MHW than in N-MHW, while anomalous advection accounted for
+most of the heat content increase. This warming was strongly concentrated in the CC upwelling zone
+(oblique cyan boxes in Fig. 3b, c). As shown in Fig. 3d, surface heating warmed the ocean north
+of 30◦ N while cooling occured south of it. This spatial cancellation of surface heating resulted in a
+relatively weak net contribution to the S-MHW.
+
+2.2    Prolonged heat accumulation by anomalous Ekman transport
+Persistent accumulation of heat from anomalous advection in GOA (grey box in Fig. 2b–e) contributes
+to the growth of N-MHW and offsets surface cooling (e.g., Fig. 2g, i). The definition of the GOA
+region closely aligns with the SST front along the NPC, as shown in the grey box in Fig. 4a–b, where
+a steep meridional temperature gradient is evident from tightly packed isotherms.
+    The shading in Fig. 4a–b represents a proxy overturning stream function (see Methods section 4.5),
+whose vertical derivative reflects the meridional velocity. The persistent heating from anomalous advec-
+tion occurred mainly during the two-year period starting October 2013. Over this period, the thermal
+structure remained qualitatively similar to the climatology (Fig. 4a–b). However, the proxy over-
+turning stream function indicates a pronounced contraction of the Ekman-driven overturning cell (38)
+beneath the grey-shaded region. Under normal conditions, eastward winds induce equatorward Ekman
+transport, which cools the GOA surface (38) . This transport was substantially reduced (less negative)
+during the study period, leading to anomalous warming through advection. The reduction in equator-
+ward Ekman transport—approximately 0.3 Sv (Fig. 4c)—is comparable in magnitude to the observed
+decline in the proxy stream function in the upper 50 m (Fig. 4b). Weakened surface zonal wind velocity
+(and associated wind stress) drives this reduced equatorward transport (Fig. 4h).
+
+
+                                                    3
+    Pronounced warming of S-MHW was confined to the coastline, beginning in April 2014 and con-
+tinuing through mid-2016. As shown in Fig. 4d, under normal conditions, southward alongshore winds
+generate offshore Ekman transport, inducing strong upwelling that brings cold subsurface water to the
+surface, thereby cooling the upper ocean (39) . During the two years since April 2014, this overturning
+cell in the CC region was substantially weakened (Fig. 4e). The cell carried about 1 Sv less transport
+and became vertically confined to the upper 100 m. Anomalous onshore transport (i.e., a reduction
+in offshore flow) depicted in Fig. 4f was attributed to a decrease in southward alongshore wind stress
+(Fig. 4i). The weakened offshore transport led to diminished upwelling and, consequently, a reduction
+in cooling. As surface temperatures rose due to reduced upwelling, vertical stratification increased
+(Fig. 4d–e), further inhibiting upwelling and compounding the warming effect (39) .
+    Fig. 4g connects the averaged sea level pressure (SLP) anomaly with the anomalous surface wind
+patterns responsible for the Ekman-driven warming (i.e., reduced cooling) in both the GOA and
+CC regions. This large-scale SLP anomaly (∼ 5000 km in diameter, exceeding the typical Rossby
+radius (40) ) generated the anomalous wind in both GOA and CC via geostrophic balance. Thus, this
+SLP anomaly ultimately drove the warming observed in both the N-MHW and S-MHW regions.
+
+2.3    Wintertime heating of anomalous surface heat flux
+While anomalous advection contributes to prolonged accumulation of heat, surface heating plays an
+important role in wintertime strengthening of N-MHW (Fig. 2a). The net surface heat flux in ERA5
+closely resembles that of ECCO4 (not shown) and clearly highlights the two warming episodes during
+the winters of 2013-2014 (Fig. E.9) and 2014-2015 (Fig. 5a). In both events, the anomalous surface
+warming (i.e., reduced heat loss) was primarily driven by anomalous latent heat flux, sensible heat
+flux, and longwave radiation, with latent heat emerging as the principal contributor. This subsection
+focuses on the second N-MHW warming episode in the winter of 2014-2015. Similar analyses for the
+first warming episode are provided in Figs. E.9 and E.10 (see also Ref. (1) ).
+    In late 2014, SST remained anomalously high, as shown in Fig. 1b. This implies that the reduction
+in heat loss was likely driven by anomalous atmospheric or radiative conditions. Surface wind speed,
+air temperature, and humidity (dew point) influence the latent and sensible heat fluxes. Atmospheric
+cloud cover, temperature, and moisture profiles affect the surface radiative fluxes. Compared with
+total radiative fluxes, clear-sky conditions exhibit only minor differences, implying that clouds play a
+limited role in retaining heat (Fig. E.7). The warming region experienced an increase in wind speed
+(Fig. E.8a), which, in isolation, would enhance surface turbulent heat loss—opposite to the observed
+decrease—suggesting that the reduction in heat loss is primarily driven by thermodynamic variables.
+    Figure. 5b–g reveal strong spatial correlations among anomalous heat flux, temperature, and hu-
+midity patterns. Lateral advection was the primary driver of the anomalous thermodynamic structure
+over the warming region (Fig. E.8a, c). Strong poleward heat and vapor transport aligns closely with
+elevated surface air temperature and dew point temperature (Fig. 5f–g), as well as increased column-
+integrated temperature and vapor content (Fig E.8b,d). The Aleutian Low was particularly intense
+and far south during the winter of 2014-2015, as indicated by the negative SLP anomalies (dashed
+contours) in Fig. 5f–g. Winds associated with this low SLP system transported warm, moist air from
+lower latitudes into the region of interest, consistent with the lateral flux vectors. These findings
+suggest that the anomalously strong Aleutian Low was ultimately responsible for the surface warming
+observed during the winter of 2014-2015.
+
+
+3     Discussion
+Using a Lagrangian budget integration method, we demonstrate, both causally and quantitatively, that
+anomalous oceanic advection across the NPC temperature front and the CC are the primary drivers
+of the 2013–2016 MHW in the subpolar and subtropical NEP, respectively. Reduction in surface
+ocean heat loss (i.e., positive anomalous heat fluxes) contributed significantly to the rapid wintertime
+strenghtening of the N-MHW during the winters of 2013-2014 and 2014-2015. By contrast, during
+the decay phase of the MHW, enhanced surface heat loss acts as the primary mechanism eroding the
+MHW.
+    Anomalous heat advection is instrumental to the MHW growth and sustainance both at the GOA
+temperature front and at the CC upwelling zone (grey and cyan boxes in Fig. 2 and 3, respectively).
+
+
+                                                   4
+In both regions, wind stress induces heat transport that leads to heat accumulation (Figs. 2a, 3b, and
+5c, f). Improved heat transport estimates in these regions are therefore essential for monitoring and
+predicting future MHWs. In addition, atmospheric conditions in GOA also strongly influence surface
+heat flux, through the opening of a corridor for atmospheric heat and moisture flux (Fig. 5).
+     By following Lagrangian particles, we conclude that N-MHW and S-MHW do not share a common
+origin and are kinematically independent. Their concurrence was due to a shared dynamical driver—a
+low SLP anomaly in the central Pacific. In the GOA, it induced a decrease in zonal wind stress along
+the mean NPC temperature front that reduced Ekman cooling. In the winter of 2014, this low SLP
+anomaly (a deep, southward Aleutian Low) further strengthened and moved large amounts of heat
+and moisture from lower latitudes to the GOA, causing anomalously elevated atmospheric heat and
+moisture content, which then suppressed surface latent, sensible, and longwave heat loss of the N-
+MHW. Along the California coast, the SLP low caused a decline in alongshore wind stress, weakening
+the CC upwelling system, reducing cooling and thereby contributing to the S-MHW.
+     A warm SST anomaly along the eastern boundary of the Pacific, spanning the latitude range of
+both the S-MHW and N-MHW, is frequently identified as a signature of the Pacific Decadal Oscillation
+(PDO) (41,42) , which has also been linked to Aleutian low (43,44) . Despite the similarities, there are
+important distinctions between the 2013–2016 MHW and typical positive PDO events. In a typical
+PDO positive phase, a strong and widespread cold anomaly dominates the central Pacific and covers
+an area larger than the warm anomaly along the eastern boundary (42) . Such a cold anomaly is largely
+absent in the MHW, only emerging near its end (Fig. E.1), and, in fact, the PDO phase in 2014 is
+negative (42) . More importantly, the ocean heat content anomaly associated with the MHW greatly
+exceeds that of typical positive PDO events in both intensity and spatial extent. A typical warm
+anomaly linked to a positive PDO spans 5–10 degrees of longitude and reaches a peak SST anomaly
+of ∼ 0.6◦ C (one standard deviation) (42) , whereas the MHW covers 20–30 degrees of longitude (Fig. 1)
+and reaches a peak SST anomaly of ∼ 3◦ C. As a result, the MHW exerts a stronger influence on
+atmospheric conditions.
+     The large heat inertia of the MHW also means that the transport of the anomaly by the ocean
+current plays a greater role in the MHW than in a typical PDO event. Dynamically, this introduces
+the ocean transport time scale and allows non-local feedbacks (17) (which are elucidated by our La-
+grangian approach). For example, the Ekman transport induced heating observed along the NPC
+occurs upstream of the primary SST anomalies.
+     It is plausible that causality between the MHW and the SLP low also operates in the opposite
+direction: the extensive warm SST anomaly may have contributed to the observed SLP low (45,46) . As
+shown in Figs. 1 and 5, the peak temperature (∼ 0.6◦ C), rate of heat loss (∼ 20 W/m2 ), and size
+(∼ 107 km2 ) of the MHW’s SST anomaly is comparable to El Niño events (47,48) , which are known to
+induce significant SLP lows above their warm SST anomalies (49) . We hypothesize that the MHW exerts
+a similar influence on the atmosphere. Indeed, based on reanalysis products, coupled climate models,
+and atmospheric models forced by prescribed SST, previous works (32,50,31,51) concluded that the second
+empirical orthogonal function (EOF) of SST, which has a similar spatial pattern to the MHW, can
+induce a low pressure in central Pacific similar to that observed in 2014–2015. This completes the
+last step of a positive feedback loop reminiscent of the winds-evaporation-SST positive feedback (45) ,
+as illustrated in Fig. 6. At the expense of temporarily losing heat through surface flux (e.g. Fig. 2g),
+the marine heatwave warms the surface air and drives a SLP low. By inducing anomalous Ekman
+transports and surface fluxes, the low SLP more than compensates for the original heat loss.
+     If a positive feedback loop can thus reinforce MHWs in the NEP, one might expect events in 2013–
+2016 to occur more frequently. The rarity of such events may be explained by two factors. First, while
+local SST anomalies can significantly influence atmospheric circulation, the strength and position of
+SLP anomalies are also influenced by other climate modes, including, crucially, the El Nino-Southern
+Oscillation, remote SST forcing, and the seasonal cycle (50,22,3,26) . Thus, the positive feedback loop
+efficiency may depend on the timing of the MHW relative to those other climate modes. Second,
+warm SST anomalies enhance heat loss to the atmosphere via increased evaporation, sensible heat
+flux, and upward longwave radiation, thus forming a competing negative feedback (45,52) . When the
+heat anomaly has larger thermal inertia, this damping process operates over a longer timescale (18) .
+The multi-year persistence of the 2013–2016 MHW likely thus resulted from a combination of favorable
+timing and an unusually large heat content anomaly.
+     It is plausible that the negative SST feedback will become less effective in a warmer climate.
+
+
+
+                                                   5
+With increased humidity and greenhouse gas concentrations, longwave radiative damping of warm
+anomalies becomes less efficient (53) . As a result, the air-sea coupled system may become more effective
+in amplifying climate fluctuations and driving future extremes.
+
+
+4     Data and Methods
+4.1    Data
+The main dataset used in this study is the ECCO4 state estimate reanalysis (Estimating the Circu-
+lation and Climate of the Ocean, Version 4, release 4), which is unique in providing a comprehensive
+heat budget estimate that has been brought into statistical agreement with many in-situ and satellite
+data sets (34,54,55,35,23) . This combination of features make ECCO4 a powerful tool to interpret ob-
+served thermohaline variability and attribute it to known physical mechanisms such as air-sea fluxes,
+advection, or diffusion (56,57,54,58) .
+    ECCO4 flow fields and tracer transport estimates enable Lagrangian analyses that track water
+mass pathways and transformation rates (59,60,61) . The ability to rerun ECCO4 enables powerful meth-
+ods to analyze driving mechanisms and impacts. These include the MITgcm adjoint, passive tracer
+simulations, and perturbed forcing experiments (34,54,55,62,63,64,65,38) . In this paper, we take advantage
+of these capabilities, and especially of the heat budgets and flow fields.
+    To delineate marine heatwaves, we use daily SST data from the Optimum Interpolation Sea Surface
+Temperature (OISST) product. OISST combines satellite observations, ship and buoy measurements,
+and employs optimum interpolation to provide globally gridded SST fields at 0.25° spatial resolu-
+tion (66,67,68) . OISST is commonly used for marine heatwave detection (24,14,25) . Good agreement
+between OISST and ECCO4 for marine heat wave metrics was recently reported in a study which also
+highlights the unique insights provided by ECCO4’s closed heat budgets in this context (25) (see also
+Figs. E.1, E.2).
+    To further investigate the atmospheric forcing associated with the marine heatwave, we utilize the
+ERA5 reanalysis (69,70) . Combining ERA5 with OISST provides a full set of air-sea heat flux esti-
+mates (turbulent: latent and sensible; and radiative: longwave and shortwave) that can be compared
+with ECCO4 estimates of these quantities. ERA5 also allows us to diagnose vertically integrated
+atmospheric moisture and heat transports.
+
+4.2    Temperature Tendency Equation in ECCO
+In ECCO, temporal changes in heat content within each grid cell are explained up to machine precision
+by external (surface) forcing and the convergence of advective, and diffusive fluxes (34,71,72) . This forms
+the basis of the temperature tendency equation, which offers a physically grounded explanation for
+observed temperature variations. Using both the heat and volume budgets, we express the (potential)
+temperature tendency equation as in Eq. 1.
+       ∂Θ
+           + A(U, Θ) = Dh (K, Θ) + Dv (K, Θ) + Q(Θ) + δN A ,                                            (1)
+        ∂t
+       ∂Θ
+           + A(U, Θ) = Dh (K, Θ) + Dv (K, Θ) + Q(Θ) + δN A − A(U ′ , Θ′ ) + A(U ′ , Θ),                 (2)
+        ∂t
+      ∂Θ′                                                                                   
+           + A(U, Θ′ ) = Dh (K, Θ)′ + Dv (K, Θ)′ + Q(Θ)′ + δN ′                           ′
+                                                                A + A(U , Θ ) + −A(U , Θ) ,
+                                                                          ′  ′                          (3)
+       ∂t                | {z } | {z }             | {z }    |{z}    | {z } |           {z  }
+                           Horizontal    Vertical        Surface    NA      Rectified    Anomalous
+                           diffusion     diffusion       Heating   advec-   advection     advection
+                                                                    tion
+
+where δN A = A(U, Θ) − A(U, Θ) and the operators are defined as follows. First, the equation for
+∂t is obtained by combining the heat content change
+                                                   (∆H) and volume change (∆V ) between time
+∂Θ
+                                     
+t0 and t1 according to (t1 − t0 ) ∂Θ      ρcp − Θ∆V /V0 , where ρ is the density, cp is the specific
+                                          ∆H
+                                  ∂t =
+heat capacity, and V0 is the volume at rest. Next, we apply the same rule to advection, diffusion,
+and forcing divergence terms, diagnosed exactly by MITgcm (online), and thus obtain the divergence
+of advective flux A, the horizontal (vertical) convergence of diffusive flux Dh (Dv ), and the external
+
+
+                                                     6
+(surface) heating Q. Finally, using the same advective scheme as ECCO4, we recompute the advection
+term offline, A(U, Θ), using daily mean temperature and flow fields.
+    Θ is the (potential) temperature, U is the sum of Eulerian velocity and eddy bolus velocity (73) , K
+is diapycnal plus isopycnal diffusivity (74) , Q is diabatic heating (radiative and turbulent fluxes across
+the sea surface, plus geothermal heating at the sea floor), and δN A represents the not attributed (NA)
+component of advection. Since Q is concentrated at the surface, we also refer to it as surface heating.
+    The overlines (∗) in Equations (2) and (3) denote the climatological mean seasonal cycle. To focus
+on temperature anomalies (Θ′ = Θ − Θ), as needed to study the MHW, we calculate the anomaly
+between Equation (1) and its mean seasonal climatology (1992 to 2017, Equation (2)). This leads
+to the temperature anomaly tendency equation (Equation (3)). An important consideration is that
+Equation (3) is suitable for Lagrangian calculations because its left hand side is a valid material
+derivative for U (as opposed to U or U ′ ). Also note that Dh′ and Dv′ should be interpreted as an
+anomaly in diffusive flux convergence – not as diffusion acting on Θ′ because, for example, K varies
+in the mixed layer. Similarly, the upward longwave component within Q′ non-linearly depends on the
+value of Θ – not just on Θ′ . For more detail, we refer the reader to Ref. (33) .
+
+4.3    Definition of MHW and passive tracer experiment
+The MHW is defined as the largest contiguous volume with a temperature anomaly exceeding 1.5◦ C
+within the Northeastern Pacific (NEP), bounded by 20◦ N to 60◦ N and 180◦ W to 90◦ W. Nominally, we
+set the depth limit at 200 m, but the MHW only reaches a depth of approximately 150 m (Fig. E.6).
+To track the MHW, we conduct a series of passive tracer experiments using the ECCO Modeling
+Utilities (EMU) under no-flux boundary conditions (62) . The passive tracer is transported using the
+same advection and diffusion scheme as heat, but using weekly-mean flow fields and diffusivities.
+    At the beginning of each month in 2014 and 2015, we perform forward passive tracer experiments by
+initializing the tracer within the MHW region at that time with a uniform concentration of 1 mol/m3 .
+Each of these 24 experiments, corresponding to different initialization times, is run until March 1,
+2016, with the resulting tracer fields representing Lagrangian snapshots of the evolving MHW. We
+then combine the passive tracer fields by taking a maximum of all the resulting tracer concentration in
+each grid box. The resulting composite distribution represents the Lagrangian volume of all water that
+participated in the height of the MHW in 2014 and 2015. After excluding grid cells with concentrations
+lower than 0.1 mol m−3 (< 10% of the release concentration), this tracer distribution is used to initialize
+the Lagrangian particle simulation described in Section 4.4.
+    Adjoint (backward-in-time) tracer simulations are a valuable, complementary tool for cross-validating
+particle trajectory calculations. Using the combined tracer distribution as the initial condition, we run
+the adjoint tracer simulation using EMU (62) backward from March 1, 2016, to September 1, 2014.
+Comparisons between the adjoint tracer distributions and the corresponding particle locations are
+presented in Figs. 1i–l, E.4, E.6.
+
+4.4    Lagrangian budget method
+ Following Ref. (33) , we construct interpolated space-time fields of temperature, velocity, forcings, and
+ flux divergences based on Equation (3). Particles are advected by the three-dimensional velocity field
+⃗u, interpolated from U . Trajectories are computed using the Python package seaduck (75) , which
+ implements the piecewise-stationary trajectory scheme (76) . Temperature changes experienced by the
+ particles can be explained by the temporal integration of the interpolated right-hand-side terms of
+ Equation (3) along particle trajectories. This approach, referred to as the Lagrangian budget, is used
+ here to establish causal links between the temperature changes observed in the MHW and upstream
+ processes (33) . The velocity, temperature, forcing, and divergence fields are updated daily based on the
+ daily ECCO4 output.
+     Based on the combined passive tracer distribution described in Section 4.3, Lagrangian particles
+ are released on March 1, 2016, and simulated backward in time to September 1, 2013. Particle
+ locations at selected times are shown in Fig. 1i–l, with the adjoint passive tracer distribution (see
+ also Fig. E.4, E.5, E.6). A budget analysis is performed for each particle using seaduck (75) , with the
+ contributions of individual processes summed over all particles and presented as space-time integrals
+ following Ref. (33) .
+
+
+
+                                                    7
+4.5    Proxy stream function
+In Fig. 4, proxy stream functions are used to provide an intuitive representation of the circulation in
+GOA and CC. For GOA, the proxy stream function is calculated by vertically integrating the meridional
+velocity. For CC, since the cooling is driven by vertical transport, the proxy stream function is defined
+in a offshore-alongshore axis and is obtained by integrating the vertical velocity along the onshore
+direction. In both regions, the selected velocity component corresponds to the flow crossing the mean
+isothermal surfaces, thus capturing the warming effect of anomalous circulation.
+
+
+Data Availability
+All code used for data processing, calculation, and plotting in this study is openly available in the
+GitHub repository accessible at https://github.com/MaceKuailv/NEP_MHW_supp_code/.
+
+
+References
+ [1] Nicholas A. Bond, Meghan F. Cronin, Howard Freeland, and Nathan Mantua. Causes and impacts
+     of the 2014 warm anomaly in the NE Pacific. Geophys. Res. Lett., 42(9):3414–3420, May 2015.
+ [2] Chelle L. Gentemann, Melanie R. Fewings, and Marisol García-Reyes. Satellite sea surface tem-
+     peratures along the West Coast of the United States during the 2014–2016 Northeast Pacific
+     marine heat wave. Geophys. Res. Lett., 44(1):312–319, January 2017.
+ [3] Emanuele Di Lorenzo and Nathan Mantua. Multi-year persistence of the 2014/15 North Pacific
+     marine heatwave. Nat. Clim. Change., 6(11):1042–1047, November 2016.
+ [4] Leticia Cavole, Alyssa Demko, Rachel Diner, Ashlyn Giddings, Irina Koester, Camille Pagniello,
+     May-Linn Paulsen, Arturo Ramirez-Valdez, Sarah Schwenck, Nicole Yen, Michelle Zill, and Pe-
+     ter Franks. Biological impacts of the 2013–2015 warm-water anomaly in the Northeast Pacific:
+     Winners, losers, and the future. Oceanography, 29(2), 2016.
+ [5] L. Rogers-Bennett and C. A. Catton. Marine heat wave and multiple stressors tip bull kelp forest
+     to sea urchin barrens. Sci. Rep., 9(1), October 2019.
+
+ [6] Kathryn E. Smith, Margot Aubin, Michael T. Burrows, Karen Filbee-Dexter, Alistair J. Hobday,
+     Neil J. Holbrook, Nathan G. King, Pippa J. Moore, Alex Sen Gupta, Mads Thomsen, Thomas
+     Wernberg, Edward Wilson, and Dan A. Smale. Global impacts of marine heatwaves on coastal
+     foundation species. Nat. Commun., 15(1), June 2024.
+ [7] Ryan M. McCabe, Barbara M. Hickey, Raphael M. Kudela, Kathi A. Lefebvre, Nicolaus G. Adams,
+     Brian D. Bill, Frances M. D. Gulland, Richard E. Thomson, William P. Cochlan, and Vera L.
+     Trainer. An unprecedented coastwide toxic algal bloom linked to anomalous ocean conditions.
+     Geophys. Res. Lett., 43(19), October 2016.
+ [8] Jarrod A. Santora, Nathan J. Mantua, Isaac D. Schroeder, John C. Field, Elliott L. Hazen,
+     Steven J. Bograd, William J. Sydeman, Brian K. Wells, John Calambokidis, Lauren Saez, Dan
+     Lawson, and Karin A. Forney. Habitat compression and ecosystem shifts as potential links between
+     marine heatwave and record whale entanglements. Nat. Commun., 11(1), January 2020.
+ [9] Kathryn E. Smith, Michael T. Burrows, Alistair J. Hobday, Alex Sen Gupta, Pippa J. Moore,
+     Mads Thomsen, Thomas Wernberg, and Dan A. Smale. Socioeconomic impacts of marine heat-
+     waves: Global issues and opportunities. Science, 374(6566), October 2021.
+
+[10] Neil J. Holbrook, Alex Sen Gupta, Eric C. J. Oliver, Alistair J. Hobday, Jessica A. Benthuysen,
+     Hillary A. Scannell, Dan A. Smale, and Thomas Wernberg. Keeping pace with marine heatwaves.
+     Nat. Rev. Earth Environ., 1(9):482–493, September 2020.
+[11] Nicolas Gruber, Philip W. Boyd, Thomas L. Frölicher, and Meike Vogt. Biogeochemical extremes
+     and compound events in the ocean. Nature, 600(7889):395–407, December 2021.
+
+
+                                                   8
+[12] Ronan McAdam, Simona Masina, and Silvio Gualdi. Seasonal forecasting of subsurface marine
+     heatwaves. Commun. Earth Environ., 4(1), June 2023.
+[13] Eike E. Köhn, Meike Vogt, Matthias Münnich, and Nicolas Gruber. On the vertical structure
+     and propagation of marine heatwaves in the Eastern Pacific. J. Geophys. Res. Oceans, 129(1),
+     January 2024.
+
+[14] H. A. Scannell, G. C. Johnson, L. Thompson, J. M. Lyman, and S. C. Riser. Subsurface
+     evolution and persistence of marine heatwaves in the Northeast Pacific. Geophys. Res. Lett.,
+     47(23):e2020GL090548, 2020. e2020GL090548 2020GL090548.
+[15] Ying Zhang, Yan Du, Ming Feng, and Alistair J. Hobday. Vertical structures of marine heatwaves.
+     Nat. Commun., 14(1):6483, October 2023.
+
+[16] Ziyan Chen, Jian Shi, Qinyu Liu, Hui Chen, and Chun Li. A persistent and intense marine
+     heatwave in the Northeast Pacific during 2019–2020. Geophys. Res. Lett., 48(13), July 2021.
+[17] R. Saravanan and James C. McWilliams. Advective ocean–atmosphere interaction: An analytical
+     stochastic model with implications for decadal variability. J. Climate, 11(2):165–188, February
+     1998.
+[18] Claude Frankignoul, Peter Müller, and Eduardo Zorita. A simple model of the decadal response
+     of the ocean to stochastic wind forcing. J. Phys. Oceanogr., 27(8):1533–1546, 1997.
+[19] Antonietta Capotondi, Regina R. Rodrigues, Alex Sen Gupta, Jessica A. Benthuysen, Clara Deser,
+     Thomas L. Frölicher, Nicole S. Lovenduski, Dillon J. Amaya, Natacha Le Grix, Tongtong Xu,
+     Juliet Hermes, Neil J. Holbrook, Cristian Martinez-Villalobos, Simona Masina, Mathew Koll
+     Roxy, Amandine Schaeffer, Robert W. Schlegel, Kathryn E. Smith, and Chunzai Wang. A global
+     overview of marine heatwaves in a changing climate. Commun. Earth Environ., 5(1):701, Novem-
+     ber 2024.
+[20] Xianglin Ren, Wei Liu, Robert J. Allen, and Se-Yong Song. Distinct anthropogenic greenhouse
+     gas and aerosol induced marine heatwaves. Environ. Res.: Climate, 3(1):015004, January 2024.
+     Publisher: IOP Publishing.
+[21] Marta Marcos, Angel Amores, Miguel Agulles, Jon Robson, and Xiangbo Feng.
+     Global warming drives a threefold increase in persistence and 1◦ C rise in intensity
+     of marine heatwaves.     Proc. Nat. Acad. Sci., 122(16):e2413505122, 2025.  _eprint:
+     https://www.pnas.org/doi/pdf/10.1073/pnas.2413505122.
+[22] Huan-Huan Chen, Yuntao Wang, Xichen Li, Liying Wan, Yeping Yuan, Yunwei Yan, Charles
+     Hannah, and Fei Chai. Arctic warming as a potential trigger for the warm blob in the northeast
+     Pacific. npj clim. atmos. sci., 8(1):111, March 2025.
+[23] Tianyun Dong, Zhenzhong Zeng, Ming Pan, Dashan Wang, Yuntian Chen, Lili Liang, Shuai Yang,
+     Yubin Jin, Shuxin Luo, Shijing Liang, Xiaowen Huang, Dongzhi Zhao, Alan D. Ziegler, Deliang
+     Chen, Laurent Z. X. Li, Tianjun Zhou, and Dongxiao Zhang. Record-breaking 2023 marine
+     heatwaves. Science, 389(6758):369–374, July 2025.
+[24] N. J. Holbrook, H. A. Scannell, A. Sen Gupta, J. A. Benthuysen, M. Feng, E. C. J. Oliver, L. V.
+     Alexander, M. T. Burrows, M. G. Donat, A. J. Hobday, P. J. Moore, M. S. Thomsen, T. Wernberg,
+     and D. A. Smale. A global assessment of marine heatwaves and their drivers. Nat. Commun.,
+     10:2624, 2019.
+[25] J. Sala, D. Giglio, A. Capotondi, T. Sukianto, and M. Kuusela. Leading dynamical processes of
+     global marine heatwaves. EGUsphere, 2025:1–24, 2025.
+
+[26] Jian Shi, Hao Huang, Alexey V. Fedorov, Neil J. Holbrook, Yu Zhang, Ruiqiang Ding, Yongyue
+     Luo, Shengpeng Wang, Jiajie Chen, Xi Hu, Qinyu Liu, Fei Huang, and Xiaopei Lin. North-
+     east Pacific warm blobs sustained via extratropical atmospheric teleconnections. Nat. Commun.,
+     15(1):2832, April 2024.
+
+
+                                                 9
+[27] É. Beaudin, E. Di Lorenzo, A. J. Miller, H. Seo, and Y. Joh. Impact of extratropical Northeast
+     Pacific SST on U.S. West Coast precipitation. Geophys. Res. Lett., 50(3), February 2023.
+[28] Hui Shi, Marisol García-Reyes, Michael G. Jacox, Ryan R. Rykaczewski, Bryan A. Black, Steven J.
+     Bograd, and William J. Sydeman. Co-occurrence of California drought and Northeast Pacific
+     marine heatwaves under climate change. Geophys. Res. Lett., 48(17), August 2021.
+[29] Yujing Zhang, Jian Shi, Yuxin Chen, and Fei Huang. Intraseasonal relationship of winter tempera-
+     tures in North America and warm sea surface temperatures in the Northeast Pacific. Atmos. Res.,
+     313:107773, January 2025.
+[30] Kai Ji, Ruiqiang Ding, and Linlu Mei. The synergistic effect of the North Pacific and the North
+     Tropical Atlantic sea surface temperature on winter–spring cold events in Eastern North America.
+     npj clim. atmos. sci., 8(1), May 2025.
+[31] Dennis L. Hartmann. Pacific sea surface temperature and the winter of 2014. Geophys. Res. Lett.,
+     42(6):1894–1902, March 2015.
+[32] Kai Ji and Ruiqiang Ding. Interannual impact of the Victoria mode on the winter-spring surface
+     air temperature over Eurasia and North America. npj clim. atmos. sci., 6(1), August 2023.
+[33] Wenrui Jiang and Thomas W N Haine. Tracer budgets on lagrangian trajectories. J. Advances
+     Model. Earth Sys., January 2025.
+[34] G. Forget, J.-M. Campin, P. Heimbach, C. N. Hill, R. M. Ponte, and C. Wunsch. ECCO version
+     4: an integrated framework for non-linear inverse modeling and global ocean state estimation.
+     Geosci. Mod. Dev., 8(10):3071–3104, 2015.
+[35] Ichiro Fukumori, Ou Wang, Ian Fenty, Gael Forget, Patrick Heimbach, and Rui Ponte. Ecco
+     version 4 release 4. Technical report, NASA, 2020.
+[36] Michael A. Alexander, Clara Deser, and Michael S. Timlin. The reemergence of sst anomalies in
+     the North Pacific ocean. J. Climate, 12(8):2419–2433, August 1999.
+[37] Eric CJ Oliver, Jessica A Benthuysen, Sofia Darmaraki, Markus G Donat, Alistair J Hobday,
+     Neil J Holbrook, Robert W Schlegel, and Alex Sen Gupta. Marine heatwaves. Ann. Rev. Mar. Sci.,
+     13(1):313–342, 2021.
+[38] Christopher L. Follett, Stephanie Dutkiewicz, Gael Forget, B. B. Cael, and Michael J. Follows.
+     Moving ecological and biogeochemical transitions across the North Pacific. Limnol. Oceanogr.,
+     66(6):2442–2454, 2021.
+[39] Emanuele Di Lorenzo, Arthur J. Miller, Niklas Schneider, and James C. McWilliams. The warming
+     of the California Current System: Dynamics and ecosystem implications. J. Phys. Oceanogr.,
+     35(3):336–362, March 2005.
+[40] Geoffrey K. Vallis. Atmospheric and Oceanic Fluid Dynamics: Fundamentals and Large-Scale
+     Circulation. Cambridge University Press, June 2017.
+[41] Nathan J. Mantua and Steven R. Hare. The Pacific Decadal Oscillation. J. Oceanogr., 58(1):35–44,
+     2002.
+[42] Matthew Newman, Michael A. Alexander, Toby R. Ault, Kim M. Cobb, Clara Deser, Emanuele
+     Di Lorenzo, Nathan J. Mantua, Arthur J. Miller, Shoshiro Minobe, Hisashi Nakamura, Niklas
+     Schneider, Daniel J. Vimont, Adam S. Phillips, James D. Scott, and Catherine A. Smith. The
+     Pacific Decadal Oscillation, revisited. J. Climate, 29(12):4399–4427, June 2016.
+[43] Arthur J Miller, Daniel R Cayan, Tim P Barnett, Nicholas E Graham, and Josef M Oberhuber.
+     Interdecadal variability of the Pacific Ocean: model response to observed heat flux and wind stress
+     anomalies. Clim. Dyn., 9(6):287–302, March 1994.
+[44] Michael A. Alexander and James D. Scott. The role of Ekman ocean heat transport in the northern
+     hemisphere response to ENSO. J. Climate, 21(21):5688–5707, November 2008.
+
+
+                                                  10
+[45] Shang-Ping Xie. A Dynamic ocean–atmosphere model of the tropical Atlantic decadal variability.
+     J. Climate, 12(1):64–70, January 1999.
+[46] Xi Hu, Jian Shi, Xiaohui Ma, Yanjing Tang, and Zhao Jing. Oceanic feedback to the atmosphere
+     for anomalous sst events peaking in early winter in the northeast pacific. Geophys. Res. Lett.,
+     52(10), May 2025.
+
+[47] Michelle L. L’Heureux, Ken Takahashi, Andrew B. Watkins, Anthony G. Barnston, Emily J.
+     Becker, Tom E. Di Liberto, Felicity Gamble, Jon Gottschalck, Michael S. Halpert, Boyin Huang,
+     Kobi Mosquera-Vásquez, and Andrew T. Wittenberg. Observing and predicting the 2015/16 El
+     Niño. Bull. Amer. Meteor. Soc., 98(7):1363–1382, July 2017.
+[48] Shineng Hu and Alexey V. Fedorov. The extreme El Niño of 2015–2016 and the end of global
+     warming hiatus. Geophys. Res. Lett., 44(8):3816–3824, April 2017.
+[49] Kevin E. Trenberth and Julie M. Caron. The Southern Oscillation revisited: Sea level pressures,
+     surface temperatures, and precipitation. J. Climate, 13(24):4358–4365, December 2000.
+[50] Dillon J. Amaya, Arthur J. Miller, Shang-Ping Xie, and Yu Kosaka. Physical drivers of the
+     summer 2019 North Pacific marine heatwave. Nat. Commun., 11(1), April 2020.
+[51] Zeng-Zhen Hu, Arun Kumar, Bhaskar Jha, Jieshun Zhu, and Bohua Huang. Persistence and
+     predictions of the remarkable warm anomaly in the Northeastern Pacific Ocean during 2014–16.
+     J. Climate, 30(2):689–702, January 2017.
+[52] Claude Frankignoul. Sea surface temperature anomalies, planetary waves and air-sea feedback in
+     the middle latitudes. Rev. Geophys., 23(4):357–390, 1985.
+[53] Y. Tsushima, A. Abe-Ouchi, and S. Manabe. Radiative damping of annual variation in global
+     mean surface temperature: comparison between observed and simulated feedback. Clim. Dyn.,
+     24(6):591–597, March 2005.
+
+[54] G. Forget and R.M. Ponte. The partition of regional sea level variability. Prog. Oceanogr., 137,
+     2015.
+[55] G. Forget, D. Ferreira, and X. Liang. On the observability of turbulent transport rates by Argo:
+     supporting evidence from an inversion experiment. Ocean Sci., 11(5):839–853, 2015.
+[56] K. Speer and G. Forget. Global distribution and formation of mode waters, volume 103. 2013.
+
+[57] M.W. Buckley, R.M. Ponte, G. Forget, and P. Heimbach. Low-frequency SST and upper-ocean
+     heat content variability in the North Atlantic. J. Climate, 27(13), 2014.
+[58] Dafydd Gwyn Evans, John Toole, Gael Forget, Jan D Zika, Alberto C Naveira Garabato,
+     A J George Nurser, and Lisan Yu. Recent wind-driven variability in Atlantic water mass dis-
+     tribution and meridional overturning circulation. J. Phys. Oceanogr., 0(0):null, 2017.
+[59] Louise Rousselet, Paola Cessi, and Gael Forget. Routes of the upper branch of the Atlantic
+     Meridional Overturning Circulation according to an ocean state estimate. Geophys. Res. Lett.,
+     47(18):e2020GL089137, 2020. e2020GL089137 10.1029/2020GL089137.
+[60] Louise Rousselet, Paola Cessi, and Gael Forget. Coupling of the mid-depth and abyssal compo-
+     nents of the global overturning circulation according to a state estimate. Sci. Adv., 7(21):eabf5478,
+     2021.
+[61] Gael Forget. IndividualDisplacements.jl: a julia package to simulate and study particle displace-
+     ments within the climate system. J. Open Source Softw., 6(60):2813, 2021.
+
+[62] Ichiro Fukumori, Ou Wang, William Llovel, Ian Fenty, and Gael Forget. A near-uniform fluctua-
+     tion of ocean bottom pressure and sea level across the deep ocean basins of the Arctic Ocean and
+     the Nordic Seas. Prog. Oceanogr., 134:152–172, 2015.
+
+
+
+                                                   11
+[63] Daniel C. Jones, Gael Forget, Bablu Sinha, Simon A. Josey, Emma J. D. Boland, Andrew J. S.
+     Meijers, and Emily Shuckburgh. Local and remote influences on the heat content of the Labrador
+     Sea: An adjoint sensitivity study. J. Geophys. Res. Oceans, 123(4):2646–2667, 2018.
+[64] Daniel C. Jones, Emma Boland, Andrew J. S. Meijers, Gael Forget, Simon Josey, Jean-Baptiste
+     Sallée, and Emily Shuckburgh. The sensitivity of Southeast Pacific heat distribution to local and
+     remote changes in ocean properties. J. Phys. Oceanogr., 50(3):773 – 790, 2020.
+[65] Yavor Kostov, Helen L Johnson, David P Marshall, Patrick Heimbach, Gael Forget, N Penny
+     Holliday, M Susan Lozier, Feili Li, Helen R Pillar, and Timothy Smith. Distinct sources of
+     interannual subtropical and subpolar Atlantic overturning variability. Nat. Geosci., 14(7):491–
+     495, 2021.
+
+[66] Richard W. Reynolds, Thomas M. Smith, Chunying Liu, Dudley B. Chelton, Kenneth S. Casey,
+     and Michael G. Schlax. Daily high-resolution-blended analyses for sea surface temperature. J. Cli-
+     mate, 20 (22)(22):5473–5496, November 2007.
+[67] Viva Banzon, Thomas M. Smith, Toshio Mike Chin, Chunying Liu, and William Hankins. A
+     long-term record of blended satellite and in situ sea-surface temperature for climate monitoring,
+     modeling and environmental studies. Earth Syst. Sci. Data, 8(1):165–176, 2016.
+[68] Boyin Huang, Chunying Liu, Viva F. Banzon, Eric Freeman, Garrett Graham, William Hankins,
+     Thomas M. Smith, and Huai-Min Zhang. NOAA 0.25-degree daily optimum interpolation sea
+     surface temperature (OISST), version 2.1, 2020.
+
+[69] Copernicus Climate Change Service. ERA5 monthly averaged data on single levels from 1940 to
+     present, 2019.
+[70] Hans Hersbach, Bill Bell, Paul Berrisford, Shoji Hirahara, András Horányi, Joaquín Muñoz-
+     Sabater, Julien Nicolas, Carole Peubey, Raluca Radu, Dinand Schepers, Adrian Simmons, Cornel
+     Soci, Saleh Abdalla, Xavier Abellan, Gianpaolo Balsamo, Peter Bechtold, Gionata Biavati, Jean
+     Bidlot, Massimo Bonavita, Giovanna De Chiara, Per Dahlgren, Dick Dee, Michail Diamantakis,
+     Rossana Dragani, Johannes Flemming, Richard Forbes, Manuel Fuentes, Alan Geer, Leo Haim-
+     berger, Sean Healy, Robin J. Hogan, Elías Hólm, Marta Janisková, Sarah Keeley, Patrick Laloyaux,
+     Philippe Lopez, Cristina Lupu, Gabor Radnoti, Patricia de Rosnay, Iryna Rozum, Freja Vamborg,
+     Sebastien Villaume, and Jean-Noël Thépaut. The ERA5 global reanalysis. Q. J. R. Meteorol. Soc.,
+     146(730):1999–2049, June 2020.
+
+[71] Christopher G Piecuch. A note on practical evaluation of budgets in ecco version 4 release 3.
+     Technical report, MIT, 2017.
+[72] Gaël Forget and David Ferreira. Global ocean heat transport dominated by heat export from the
+     tropical Pacific. Nat. Geosci., 2019.
+
+[73] Peter R. Gent and James C. Mcwilliams. Isopycnal mixing in ocean circulation models.
+     J. Phys. Oceanogr., 20(1):150–155, January 1990.
+[74] M H Redi. Oceanic isopycnal mixing by coordinate rotation. J. Phys. Oceanogr., 12:1154–1158,
+     1982.
+[75] Wenrui Jiang, Thomas W. N. Haine, and Mattia Almansi. Seaduck: A python package for Eulerian
+     and Lagrangian interpolation on ocean datasets. J. Open Source Softw., 8:5967, 12 2023.
+[76] Kristofer Döös, Bror Jönsson, and Joakim Kjellsson. Evaluation of oceanic and atmospheric
+     trajectory schemes in the TRACMASS trajectory model v6.0. Geosci. Mod. Dev., 10:1733–1749,
+     5 2017.
+
+
+
+
+                                                  12
+                                (a)
+                         1.50
+                                        Anomalous Advection                                                                                    1.75
+                                        Vertical Diffusion
+                         1.25           Horizontal diffusion
+                                        Rectified Advection                                                                                    1.50
+                         1.00           NA Advection
+                                        External Heating                                                                                       1.25
+
+
+
+
+                                                                                                                                                                Temperature Anomaly ( C)
+                                        Error
+
+
+
+
+Cumulative Change ( C)
+                         0.75           Temperature Anomaly
+                                                                                                                                               1.00
+                         0.50
+                                                                                                                                               0.75
+                         0.25
+                                                                                                                                               0.50
+                         0.00
+                                                                                                                                               0.25
+                         0.25
+                                                                                                                                               0.00
+                         0.50
+                                                                                                                                                       0.25
+                         0.75
+                                      2013-10 2014-01 2014-04 2014-07 2014-10 2015-01 2015-04 2015-07 2015-10 2016-01 2016-04
+                                (b)                            (c)                     (d)                       (e)
+
+
+                                                                                                                                          Anomalous Advection
+                         60°N
+                         50°N
+                         40°N
+                         30°N
+
+
+                                (f)                            (g)                     (h)                       (i)
+
+
+                                                                                                                                          External Heating
+                         60°N
+                         50°N
+                         40°N
+                         30°N
+                                      180°            120°W          180°      120°W         180°        120°W         180°       120°W
+                                  2013-09 to 2014-02            2014-02 to 2014-12      2014-12 to 2015-04         2015-04 to 2016-03
+                                                 4                      2          0                 2                        4
+                                                                                108J/m2
+
+
+
+Figure 2: Lagrangian heat budget of N-MHW. (a) Time series of particle-averaged temperature
+anomaly (red line) and cumulative contribution from each right-hand-side term of Equation (3). The
+spread area around each line shows the range of plus or minus one standard error for the sample mean.
+The dotted line shows the residual incurred during budget analysis. (b–i) Map of contribution from
+anomalous advection (b–e) and surface heating (f–i) in the four periods, which are highlighted by red
+(growth) and blue (maturity/decay) polygons. The grey box in panels (b–e) denotes the longitude-
+latitude region spanning 158◦ W to 138◦ W and 32◦ N to 45◦ N. The magenta box in panels (f–i) covers
+the area from 125◦ W to 160◦ W and 35◦ N to 60◦ N.
+
+
+
+
+                                                                                 13
+                                (a)
+                          2.0          Anomalous Advection                                                                          2.0
+                                       Vertical Diffusion
+                                       Horizontal diffusion
+                                                                                                                                    1.5
+
+
+
+
+                                                                                                                                                       Temperature Anomaly ( C)
+                          1.5          Rectified Advection
+
+
+
+
+ Cumulative Change ( C)
+                                       NA Advection
+                          1.0          External Heating                                                                             1.0
+                                       Error
+                                       Temperature Anomaly                                                                          0.5
+                          0.5
+                          0.0                                                                                                       0.0
+                          0.5                                                                                                              0.5
+                          1.0                                                                                                              1.0
+                                     2013-10 2014-01 2014-04 2014-07 2014-10 2015-01 2015-04 2015-07 2015-10 2016-01 2016-04
+                            (b)                                                     (c)
+
+
+
+                                                                                                                                 Anomalous Advection
+                           40°N
+
+                           30°N
+                           20°N
+                           10°N
+                                0°
+
+                            (d)                                                     (e)
+                           40°N
+
+
+
+                                                                                                                                 External Heating
+                           30°N
+                           20°N
+                           10°N
+                                0°
+                                      160°W   140°W     120°W   100°W   80°W              160°W   140°W   120°W   100°W   80°W
+                                               2013-09 to 2015-11                                 2015-11 to 2016-03
+
+                                                4                2                0                2               4
+                                                                               108J/m2
+
+
+
+Figure 3: Lagrangian heat budget of S-MHW. (a) Time series of particle averaged temperature anomaly
+and cumulative contribution from each right-hand-side term of Equation (3) for S-MHW, similar to
+Fig. 2a. (b–c) Spatial map of contribution from anomalous advection and (d–e) surface heating similar
+to Fig. 2b–i. The cyan box in panels (b–c) denotes the CC upwelling zone, with corners at (120◦ W,
+39.5◦ N), (102.5◦ W, 22.5◦ N), (116.6◦ W, 10.55◦ N), and (134.1◦ W, 29.2◦ N).
+
+
+
+
+                                                                               14
+                                                                                                                                              Cumulative Northward Ekman
+                            (a)         Climatology          (b) Average of two years since 2013-10                                   (c)         Transport Anomaly
+                        0                                                                                                   4
+                                                                                                                                        0.6
+                       50                                                                                                   2
+                                                                                                        0
+          Depth (m)                                                                                  Lx z vdz (Sv)
+                                                                                                                                        0.4
+                      100                                                                                                           Sv yr
+                                                                                                             ′
+
+                                                                                                                            0
+                                                                                                                                        0.2
+                      150                                                                                                       2
+
+                                                                                                                                4       0.0
+                      200
+                                  20          30       40              20           30         40                                              2014       2015       2016
+                                          Latitude                           Latitude                                                         Cumulative Offshore Ekman
+                            (d)         Climatology          (e) Average of two years since 2014-04                                   (f)        Transport Anomaly
+                        0                                                                                                   1.5
+                                                                                                                            1.0         0.6
+                       50
+                                                                                                        0
+                                                                                                     Ly x wdx (Sv)
+                                                                                                                            0.5
+
+          Depth (m)
+                                                                                                             ′
+                                                                                                                                        0.4
+                      100                                                                                                   0.0     Sv yr
+                      150
+                                                       0.0                                                                      0.5 0.2
+                                                                                                                                1.0
+                                                                                                                                1.5
+                                                                                                                                        0.0
+                      200
+                         2000         1500    1000
+                                       Distance (km)  500     0 2000    1500     1000
+                                                                            Distance (km)
+                                                                                    0.3
+                                                                                            500     0
+                                                                                                                  0.9                          2014       2015       2016
+
+                        0.0                                                                                                                    5
+                                                                                                                                              (h)      9 u10     0.5m2/s
+
+                            (g)                                          0.6                                                1.5
+                                                                                                                              50°N
+                                                                                                                                    6       7
+                                                                                               0.3                     0.6 45°N 98 11 10
+                      0.3                                                                1 m/s0.0                                                12 14
+                                                                                                                              40°N 13
+                                                                                                                      1.0
+              50°N                                                                                                                                       1
+                                                       0.3
+                                                                       0.0     0.3                                            35°N 17
+                                                                                                                                          20    18 16 1 5
+                                                                                                                                                       9
+                                                                                                                      0.5 30°N
+                                                                                                                                     23 2 21
+                                                                                                        Wind0 Speed (m/s)
+              40°N
+                                             1.8                                                                           . 6
+                                                                                                                        0 21960 160°W    2151 1 4 140°W22
+                                                       1.5                                                            0.0                      2
+                                                                                                                                     (i) u10sin v10cos
+              30°N                                                                                        .3
+                                                                                                                                14 15
+                                                                                                                               40°N  16 1 13 0.5m2/s
+                                                                                                                        0.5
+                                                                                                                               35°N         7
+              20°N
+                                                     1.2                                                                        221 19 18
+                                                                                                                                2
+                                                                                                                               30°N
+                                        0.6                      0.9                                                0.01.0 25°N              20
+              10°N0.3
+                                                                                                                               20°N24               23
+                                         160°W          140°W          120°W              100°W                     0.3         26
+                                                                                                                               15°N            25     28
+                                                                                                                        1.5
+                                                                                                                               10°N 27
+                                                                                         0.3                        0.0         27 135°W26 120°W      105°W
+                                                                                                                                                  25 24
+                                                                                                                                    27
+                                  5                     10                     15                          20                                       25               30
+                                                                                    Temperature ( C)
+
+
+
+
+Figure 4: Diagnostics of warming due to anomalous advection. (a-b) Time-mean proxy stream function
+(shading; see Methods) and temperature contours (with 1◦ C spacing) over (a) the whole ECCO period
+(climatology) and (b) October 2013 to September 2015. The grey box indicates the same region
+defined in Fig. 2b–e in the upper 50 m. (c) Cumulative northward Ekman transport anomaly across
+40◦ N, between 138◦ W and 158◦ W. (d-e) Time-mean proxy stream function (shading; see Methods)
+and temperature contours over (d) the whole ECCO period and (e) April 2014 to March 2016. (f)
+Cumulative offshore Ekman transport anomaly in CC across the midline. (g) Anomalous 10 m wind
+(arrows) and SLP (contours, in hPa) averaged over 2014–2015, superimposed on climatological mean
+SST (shading). (h–i) Anomalous 10 m zonal (h) and alongshore (i) wind (shadings), the vertically
+integrated Ekman velocity vectors (arrows), and the climatological mean SST over the ECCO4 period
+(contours, with 1◦ C spacing). Quantities plotted in (h) and (i) are averaged over two-year periods
+since October 2013 and April 2014, respectively. (a–f) are based on ECCO4, while (g–i) are derived
+from ERA5.
+
+
+
+
+                                                                                          15
+                                    (a)
+                               40                                                                                                           Latent heat flux
+                                                                                                                                            Net long-wave radiation flux
+                               20
+                                                                                                                                            Net short-wave radiation flux
+                                                                                                                                            Sensible heat flux
+                                                                                                                                            Total heat flux
+                       W/m2     0
+
+                               20
+
+                               40
+
+                                             0            1            4             7           0              1          4          7            0          1           4
+                                          3-1         4-0           4-0          4-0         4-1            5-0        5-0        5-0          5-1        6-0         6-0
+                                    201           201          201           201         201            201        201        201          201        201         201
+                              (b)          Latent heat flux          (c)       Sensible heat flux        (d) Net long-wave radiation flux (e) Net short-wave radiation flux
+                          60°N                                      60°N                                60°N                                 60°N
+                          50°N            0.0      4.5              50°N
+                                                                                                     1.5
+                                                                                                        50°N     0.0                         50°N
+                                                                                                                                                                         1.5
+5                         40°N                                      40°N                                40°N                                 40°N
+                          30°N                          1.5         30°N                                30°N                       1.4.55    30°N
+                                                                                                                                                                                            4.5
+                 6.0                      180°            120°W              180°               120°W              180°              120°W               180°        120°W
+          1.5                                                                     1.5
+                                           30                  20               3.0  10                  0                    10                    20     3.0      30
+                                    (f)     2 metre dewpoint temperature                                W/m2 (g)          2 metre temperature
+                                                                           100kg m 1s 1         3          0.0                                   62.0× 1010W/m       3         0.0                  6.0
+    4.5         3.0
+                          60°N                                  4.5                             2      60°N                                       3.0                2                              3.0
+                                                              1.5                                                         3.06.0 1.5                                                   3.06.0
+                                                                                                1                                                                    1
+                          50°N      3.0                                                                50°N    3.0
+                                                                                                0    C                                                               0   C
+                          40°N                                                                       1 40°N                        97..05      4.5                       1                 97..05   4.5
+    1.5                                                 4 1.5                                                                      4
+            0.0           30°N                          3..05                                        2 30°N
+                                                                                                                     0.0           3..05                                 2
+                                                                                                                                                                                     0.0
+                         0.0                                                                 1.5     3 0.0                                   1.5                   1.5   3                        1.5
+                                                 180°                          120°W                                   180°                               120°W
+
+
+
+
+           Figure 5: Diagnostics of warming due to surface heat fluxes. (a) Time series of anomalous surface
+           heat fluxes, averaged in the N-MHW magenta box defined in Fig. 2f–i, including longwave radiation,
+           shortwave radiation, sensible, latent heat, and their total. (b–e) Anomalous surface heat fluxes averaged
+           from December 2014 to January 2015 (highlighted period in (a)). (f–g) Anomalous (f) 2-meter dewpoint
+           temperature and (g) 2-meter temperature averaged over the same period (shadings). The vertically
+           integrated water vapor flux and heat flux anomalies are shown as arrows in (f) and (g), overlaid on
+           SLP anomaly (contours with 0.3 hPa spacing).
+
+
+
+
+                                                                                                     16
+                           Wind speed at
+                           GOA and CC                         Surface air
+                                                             Temperature
+
+                               Poleward heat                   Surface dew
+                               and moisture                       point
+                                                                                 Ekman SST
+                                 transport
+                                                                                   Cooling
+                                                                 Column
+                                                                 heat and
+                                                                 moisture
+                                                                              Latent,
+                                                   Causation                 sensible,
+                                                   Correlation+plausible     radiative
+                                                   causality
+                                                   Enhance                    cooling
+                                                   Suppress
+                       Aleutian Low                Oceanic
+
+                                                   Atmospheric
+
+                                                   Radiative
+
+
+
+
+                                               SST/marine
+                                               heat content
+
+
+
+Figure 6: Schematic of the feedback mechanism of MHW persistence and enhancement. The light
+blue, orange, and dark blue arrows refer to atmospheric, radiative, and oceanic processes, respectively.
+The dashed arrows denote relations that exhibit strong correlation and plausible mechanism but, to
+date, remains to be better quantified.
+
+
+
+
+                                                     17
+Extended Data Figures
+
+
+
+
+                        18
+       (a)          2013-09                (b)          2013-11                 (c)          2014-01                (d)          2014-03
+60°N                                60°N                                 60°N                                60°N
+50°N                                50°N                                 50°N                                50°N
+40°N                                40°N                                 40°N                                40°N
+30°N                                30°N                                 30°N                                30°N
+20°N                                20°N                                 20°N                                20°N
+  0°                                  0°                                   0°                                  0°
+             180°       120°W                    180°       120°W                     180°       120°W                    180°       120°W
+       (e)          2014-05                (f)          2014-07                 (g)          2014-09                (h)          2014-11
+60°N                                60°N                                 60°N                                60°N
+50°N                                50°N                                 50°N                                50°N
+40°N                                40°N                                 40°N                                40°N
+30°N                                30°N                                 30°N                                30°N
+20°N                                20°N                                 20°N                                20°N
+  0°                                  0°                                   0°                                  0°
+             180°       120°W                    180°       120°W                     180°       120°W                    180°       120°W
+       (i)          2015-01                (j)          2015-03                 (k)          2015-05                (l)          2015-07
+60°N                                60°N                                 60°N                                60°N
+50°N                                50°N                                 50°N                                50°N
+40°N                                40°N                                 40°N                                40°N
+30°N                                30°N                                 30°N                                30°N
+20°N                                20°N                                 20°N                                20°N
+  0°                                  0°                                   0°                                  0°
+             180°       120°W                    180°       120°W                     180°       120°W                    180°       120°W
+       (m)          2015-09                (n)          2015-11                 (o)          2016-01                (p)          2016-03
+60°N                                60°N                                 60°N                                60°N
+50°N                                50°N                                 50°N                                50°N
+40°N                                40°N                                 40°N                                40°N
+30°N                                30°N                                 30°N                                30°N
+20°N                                20°N                                 20°N                                20°N
+  0°                                  0°                                   0°                                  0°
+             180°       120°W                    180°       120°W                     180°       120°W                    180°       120°W
+
+
+              4                 3          2                 1           0                   1           2                3                4
+                                                                         C
+
+             Figure E.1: Monthly mean SST anomaly maps from OISST, similar to Fig. 1a–d.
+
+
+
+
+                                                                    19
+       (a)          2013-09                (b)          2013-11                 (c)          2014-01                (d)          2014-03
+60°N                                60°N                                 60°N                                60°N
+50°N                                50°N                                 50°N                                50°N
+40°N                                40°N                                 40°N                                40°N
+30°N                                30°N                                 30°N                                30°N
+20°N                                20°N                                 20°N                                20°N
+  0°                                  0°                                   0°                                  0°
+             180°       120°W                    180°       120°W                     180°       120°W                    180°       120°W
+       (e)          2014-05                (f)          2014-07                 (g)          2014-09                (h)          2014-11
+60°N                                60°N                                 60°N                                60°N
+50°N                                50°N                                 50°N                                50°N
+40°N                                40°N                                 40°N                                40°N
+30°N                                30°N                                 30°N                                30°N
+20°N                                20°N                                 20°N                                20°N
+  0°                                  0°                                   0°                                  0°
+             180°       120°W                    180°       120°W                     180°       120°W                    180°       120°W
+       (i)          2015-01                (j)          2015-03                 (k)          2015-05                (l)          2015-07
+60°N                                60°N                                 60°N                                60°N
+50°N                                50°N                                 50°N                                50°N
+40°N                                40°N                                 40°N                                40°N
+30°N                                30°N                                 30°N                                30°N
+20°N                                20°N                                 20°N                                20°N
+  0°                                  0°                                   0°                                  0°
+             180°       120°W                    180°       120°W                     180°       120°W                    180°       120°W
+       (m)          2015-09                (n)          2015-11                 (o)          2016-01                (p)          2016-03
+60°N                                60°N                                 60°N                                60°N
+50°N                                50°N                                 50°N                                50°N
+40°N                                40°N                                 40°N                                40°N
+30°N                                30°N                                 30°N                                30°N
+20°N                                20°N                                 20°N                                20°N
+  0°                                  0°                                   0°                                  0°
+             180°       120°W                    180°       120°W                     180°       120°W                    180°       120°W
+
+
+              4                 3          2                 1           0                   1           2                3                4
+                                                                         C
+
+              Figure E.2: Monthly mean SST anomaly maps from ECCO4, similar to Fig. E.1
+
+
+
+
+                                                                    20
+         (a)          2013-09                (b)          2013-11                 (c)          2014-01                (d)          2014-03
+  60°N                                60°N                                 60°N                                60°N
+  50°N                                50°N                                 50°N                                50°N
+  40°N                                40°N                                 40°N                                40°N
+  30°N                                30°N                                 30°N                                30°N
+  20°N                                20°N                                 20°N                                20°N
+    0°                                  0°                                   0°                                  0°
+               180°       120°W                    180°       120°W                     180°       120°W                    180°       120°W
+         (e)          2014-05                (f)          2014-07                 (g)          2014-09                (h)          2014-11
+  60°N                                60°N                                 60°N                                60°N
+  50°N                                50°N                                 50°N                                50°N
+  40°N                                40°N                                 40°N                                40°N
+  30°N                                30°N                                 30°N                                30°N
+  20°N                                20°N                                 20°N                                20°N
+    0°                                  0°                                   0°                                  0°
+               180°       120°W                    180°       120°W                     180°       120°W                    180°       120°W
+         (i)          2015-01                (j)          2015-03                 (k)          2015-05                (l)          2015-07
+  60°N                                60°N                                 60°N                                60°N
+  50°N                                50°N                                 50°N                                50°N
+  40°N                                40°N                                 40°N                                40°N
+  30°N                                30°N                                 30°N                                30°N
+  20°N                                20°N                                 20°N                                20°N
+    0°                                  0°                                   0°                                  0°
+               180°       120°W                    180°       120°W                     180°       120°W                    180°       120°W
+         (m)          2015-09                (n)          2015-11                 (o)          2016-01                (p)          2016-03
+  60°N                                60°N                                 60°N                                60°N
+  50°N                                50°N                                 50°N                                50°N
+  40°N                                40°N                                 40°N                                40°N
+  30°N                                30°N                                 30°N                                30°N
+  20°N                                20°N                                 20°N                                20°N
+    0°                                  0°                                   0°                                  0°
+               180°       120°W                    180°       120°W                     180°       120°W                    180°       120°W
+
+
+                4                 3          2                 1           0                   1           2                3                4
+                                                                           C
+
+Figure E.3: Monthly mean temperature anomaly averaged in the upper 150 m from ECCO4, similar
+to Fig. 1e–h.
+
+
+
+
+                                                                      21
+             (a)          2013-09                   (b)           2013-11                      (c)          2014-01                                (d)          2014-03
+   60°N                                     60°N                                        60°N                                               60°N
+   50°N                                     50°N                                        50°N                                               50°N
+   40°N                                     40°N                                        40°N                                               40°N
+   30°N                                     30°N                                        30°N                                               30°N
+   20°N                                     20°N                                        20°N                                               20°N
+     0°                                       0°                                          0°                                                 0°
+                   180°       120°W                        180°         120°W                        180°         120°W                                  180°       120°W
+             (e)          2014-05                   (f)           2014-07                      (g)          2014-09                                (h)          2014-11
+   60°N                                     60°N                                        60°N                                               60°N
+   50°N                                     50°N                                        50°N                                               50°N
+   40°N                                     40°N                                        40°N                                               40°N
+   30°N                                     30°N                                        30°N                                               30°N
+   20°N                                     20°N                                        20°N                                               20°N
+     0°                                       0°                                          0°                                                 0°
+                   180°       120°W                        180°         120°W                        180°         120°W                                  180°       120°W
+             (i)          2015-01                   (j)           2015-03                      (k)          2015-05                                (l)          2015-07
+   60°N                                     60°N                                        60°N                                               60°N
+   50°N                                     50°N                                        50°N                                               50°N
+   40°N                                     40°N                                        40°N                                               40°N
+   30°N                                     30°N                                        30°N                                               30°N
+   20°N                                     20°N                                        20°N                                               20°N
+     0°                                       0°                                          0°                                                 0°
+                   180°       120°W                        180°         120°W                        180°         120°W                                  180°       120°W
+             (m)          2015-09                   (n)           2015-11                      (o)          2016-01                                (p)          2016-03
+   60°N                                     60°N                                        60°N                                               60°N
+   50°N                                     50°N                                        50°N                                               50°N
+   40°N                                     40°N                                        40°N                                               40°N
+   30°N                                     30°N                                        30°N                                               30°N
+   20°N                                     20°N                                        20°N                                               20°N
+     0°                                       0°                                          0°                                                 0°
+                   180°       120°W                        180°         120°W                        180°         120°W                                  180°       120°W
+
+
+         0                    20            40                         60             80                     100                          120                   140
+                                                                                  mol m
+
+Figure E.4: Snapshots of vertical integrated passive tracer concentration and Lagrangian particle
+distributions, similar to Fig. 1i–l. Both tracer and particles are released in the combined MHW in
+March 2016, and simulated backward in time.
+
+
+
+
+                                                                      (b)                                                       (c)
+         (a)                                                      0                                                        0
+  60°N
+                                                                50                                                         50
+  50°N
+
+                                                   Depth (m)                                                  Depth (m)
+  40°N                                                         100                                                        100
+  30°N
+  20°N                                                         150                                                        150
+  10°N
+    0°
+                                                               200                                                        200
+                   180°             120°W
+                                                                            150     200        250                                    0           20        40              60
+                                                                                  Longitude                                                        Latitude
+
+
+Figure E.5: Trajectories of randomly selected particles representing N-MHW (blue, 140 particles) and
+S-MHW (green, 60 particles) in the longitude-latitude (a), longitude-depth (b), and latitude-depth
+planes (c). Particles are released in the combined MHW in March 2016, and simulated backward to
+September 2014 (see Methods).
+
+
+
+                                                                                   22
+                  (a)     2013-09                  (b)     2013-11                     (c)     2014-01                 (d)     2014-03
+             0                                0                                    0                              0
+
+            100                              100                              100                                100
+
+            200                              200                              200                                200
+                        180         120 W                180         120 W                   180         120 W               180         120 W
+                  (e)     2014-05                  (f)     2014-07                     (g)     2014-09                 (h)     2014-11
+             0                                0                                    0                              0
+
+            100                              100                              100                                100
+
+            200                              200                              200                                200
+
+Depth (m)
+                        180         120 W                180         120 W                   180         120 W               180         120 W
+                  (i)     2015-01                  (j)     2015-03                     (k)     2015-05                 (l)     2015-07
+             0                                0                                    0                              0
+
+            100                              100                              100                                100
+
+            200                              200                              200                                200
+                        180         120 W                180         120 W                   180         120 W               180         120 W
+                  (m)     2015-09                  (n)     2015-11                     (o)     2016-01                 (p)     2016-03
+             0                                0                                    0                              0
+
+            100                              100                              100                                100
+
+            200                              200                              200                                200
+                        180         120 W                180         120 W                   180         120 W               180         120 W
+
+
+              0.0                      0.2                      0.4                          0.6                 0.8                       1.0
+                                                                             mol
+
+   Figure E.6: Vertical sections of passive tracer concentration (shading, at 45◦ N), virtual particle loca-
+   tions (particle position between 44.9◦ N and 45.1◦ N), and the temperature anomaly (contour at 1.5◦ C,
+   at 45◦ N).
+
+
+
+
+                                                                         23
+                  Net long-wave radiation flux
+         40       Net long-wave radiation flux, clear sky
+                  Net short-wave radiation flux
+                  Net short-wave radiation flux, clear sky
+         20
+
+  W m2    0
+
+         20
+
+         40
+                   0     1     4     7     0     1     4     7     0     1      4
+            0 1 3-1 014-0 014-0 014-0 014-1 015-0 015-0 015-0 015-1 016-0 016-0
+          2          2     2     2     2     2     2     2     2     2     2
+
+Figure E.7: Time series of radiative fluxes (solid lines, downward fluxes are positive) and the corre-
+sponding clear sky flux (dotted lines) averaged in the cyan box in Fig. 2, similar to Fig. 5a.
+
+
+
+
+                                                             24
+    (a)          Column integrated latent energy            1e7                             (b)             Vertical averaged temperature
+                                                                   1.5                                                                                   3
+    60°N                                                           1.0                       60°N                                                        2
+                                                                   0.5                                                                                   1
+    50°N                                                                                     50°N
+                                                                   0.0         J/m 2                                                                     0   C
+    40°N                                                               0.5                   40°N                                                            1
+    30°N                                                               1.0                   30°N                                                            2
+                                                                       1.5                                                                                   3
+                 180°                             120°W                                                    180°                             120°W
+    (c)    Vertical integral of divergence of moisture flux 1e 5                            (d) Vertical integral of divergence of thermal energy flux
+                                                                                                                                                         1000
+    60°N                                                           4                         60°N                                                        750
+                                                                                                                                                         500
+                                                                   2
+                                                                                                                                                         250
+                                                                           kg m 2s 2
+    50°N                                                                                     50°N
+                                                                   0                                                                                     0        W m2
+    40°N                                                                                     40°N                                                          250
+                                                                       2
+                                                                                                                                                           500
+    30°N                                                               4                     30°N                                                          750
+                                                                                                                                                           1000
+                 180°                             120°W                                                    180°                             120°W
+    (e)                  10m wind speed                                                     (f)              10m wind speed-climatology
+                                                                   3                                                                                     10.0
+    60°N                                                           2                         60°N                                                        7.5
+                                                                                                                                                         5.0
+                                                                   1                                                                                     2.5
+    50°N                                                                                     50°N
+                                                                   0   m/s                                                                               0.0     m/s
+    40°N                                                               1                     40°N                                                          2.5
+                                                                                                                                                           5.0
+    30°N                                                               2                     30°N                                                          7.5
+                                                                       3                                                                                   10.0
+                 180°                             120°W                                                    180°                             120°W
+
+
+Figure E.8: Column integrated thermodynamic variables (a-d) and anomalous wind speed (e) that
+influence surface heat flux but are not included in Fig. 5. Negative divergences of lateral heat and
+moisture flux (c–d) cause increase in column integrated latent energy (a) and vertically integrated
+temperature (b), which help to trap longwave radiation (Fig. 5d) and are positively correlated with
+surface air temperature and dew point (Fig. 5f–g). Higher wind speed (e) facilitates surface turbulent
+heat loss (Fig. 5 b–c). For comparison, Panel (f) shows the climatological mean wind speed of Decem-
+ber, January, and February.
+
+
+
+
+                                                                                       25
+                                     (a)
+                                40                                                                                                          Latent heat flux
+                                                                                                                                            Net long-wave radiation flux
+                                20
+                                                                                                                                            Net short-wave radiation flux
+                                                                                                                                            Sensible heat flux
+                                                                                                                                            Total heat flux
+                        W/m2     0
+
+                                20
+
+                                40
+
+                                              0            1              4             7           0              1          4          7            0          1           4
+                                           3-1         4-0             4-0          4-0         4-1            5-0        5-0        5-0          5-1        6-0         6-0
+                                     201           201           201            201         201            201        201        201          201        201         201
+                               (b)          Latent heat flux           (c)        Sensible heat flux        (d) Net long-wave radiation flux (e) Net short-wave radiation flux
+                            60°N                                       60°N                                60°N                                60°N
+                            50°N                          3.0          50°N                                50°N                       3.0      50°N
+                                                                                     6.0 1
+                                                                                                                                                                  1.5
+                            40°N                                       40°N                                40°N                                40°N
+                6.0   6.0   30°N                                       30°N                .5              30°N                                30°N
+                                                                                                                                                      4.5
+                                         70180°
+                                           .05
+                                                           120°W                180°               120°W              180°
+                                                                                                                    0.0
+                                                                                                                                       120°W               180°         120°W
+
+                                             30
+                                                               1.520                    10                  0
+                                                                                                                  1.5
+                                                                                                                                 10
+                                                                                                                                        1.5           20                30
+                                                                                                                                                                                 1.5
+                                     (f)     2 metre dewpoint temperature                                  W/m2 (g)          2 metre temperature
+                                                                              100kg m 1s 1         3                                                  2 × 1010W/m        3
+                                             .5                                                                       4.5
+                            60°N
+                                           44.5                        9.0                         2      60°N                                 9.0                       2
+                                                                              6.0                  1                                   3.0             6.0               1             3.0
+                            50°N                                                                          50°N
+                                                                  3.07.5                                                                    3.07.5
+                                                                                                   0                                                                     0
+                                                    0.0
+                                                                                                        C                                                                    C
+0                           40°N .5                                                                     1 40°N                                                               1
+                                     1
+                                                                                                                                                  1.5
+          1.5            1.5                                                 1.5                        1.5
+                       0.0 30°N                                                                         2 30°N 1.5                                                           2   1.5         1.
+    0.0                                      0.0                 0.0                                    3                                                                    3
+                                                  180°                            120°W                                   180°                              120°W
+
+
+
+
+                 Figure E.9: Analysis of the warming from surface heat flux similar to Fig. 5, but for October, November,
+                 and December of 2013. A high SLP system near the Alaskan coast is ultimately responsible for this
+                 warming.
+
+
+
+
+                                                                                                        26
+    (a)          Column integrated latent energy            1e7                             (b)             Vertical averaged temperature
+                                                                   1.5                                                                                   3
+    60°N                                                           1.0                       60°N                                                        2
+                                                                   0.5                                                                                   1
+    50°N                                                                                     50°N
+                                                                   0.0         J/m 2                                                                     0   C
+    40°N                                                               0.5                   40°N                                                            1
+    30°N                                                               1.0                   30°N                                                            2
+                                                                       1.5                                                                                   3
+                 180°                             120°W                                                    180°                             120°W
+    (c)    Vertical integral of divergence of moisture flux 1e 5                            (d) Vertical integral of divergence of thermal energy flux
+                                                                                                                                                         1000
+    60°N                                                           4                         60°N                                                        750
+                                                                                                                                                         500
+                                                                   2
+                                                                                                                                                         250
+                                                                           kg m 2s 2
+    50°N                                                                                     50°N
+                                                                   0                                                                                     0        W m2
+    40°N                                                                                     40°N                                                          250
+                                                                       2
+                                                                                                                                                           500
+    30°N                                                               4                     30°N                                                          750
+                                                                                                                                                           1000
+                 180°                             120°W                                                    180°                             120°W
+    (e)                  10m wind speed                                                     (f)              10m wind speed-climatology
+                                                                   3                                                                                     10.0
+    60°N                                                           2                         60°N                                                        7.5
+                                                                                                                                                         5.0
+                                                                   1                                                                                     2.5
+    50°N                                                                                     50°N
+                                                                   0   m/s                                                                               0.0     m/s
+    40°N                                                               1                     40°N                                                          2.5
+                                                                                                                                                           5.0
+    30°N                                                               2                     30°N                                                          7.5
+                                                                       3                                                                                   10.0
+                 180°                             120°W                                                    180°                             120°W
+
+
+Figure E.10: Column integrated thermodynamic variables (a-d) and anomalous wind speed (e) that
+influence surface heat flux but are not included in Fig. E.9, similar to Fig. E.8. Panel (f) shows the
+climatological mean wind speed of October, November, and December.
+
+
+
+
+                                                                                       27
+

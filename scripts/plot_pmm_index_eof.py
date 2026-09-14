@@ -26,6 +26,7 @@ import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+from matplotlib.patches import Rectangle
 
 
 INPUT = ROOT / "data/interim/research_2026/pmm_inputs"
@@ -71,12 +72,12 @@ def setup_style() -> None:
             "savefig.dpi": 300,
             "font.family": "sans-serif",
             "font.sans-serif": ["DejaVu Sans", "Helvetica", "Arial"],
-            "font.size": 9.4,
-            "axes.titlesize": 10.4,
-            "axes.labelsize": 9.2,
-            "xtick.labelsize": 8.5,
-            "ytick.labelsize": 8.5,
-            "legend.fontsize": 8.1,
+            "font.size": 10.8,
+            "axes.titlesize": 12.0,
+            "axes.labelsize": 10.8,
+            "xtick.labelsize": 9.6,
+            "ytick.labelsize": 9.6,
+            "legend.fontsize": 9.4,
             "axes.linewidth": 0.82,
             "axes.unicode_minus": False,
         }
@@ -393,7 +394,32 @@ def add_vectors(ax: plt.Axes, lon: np.ndarray, lat: np.ndarray, u: np.ndarray, v
         headwidth=3.0,
         scale=9,
     )
-    ax.quiverkey(q, 0.82, 0.93, 0.8, "0.8 m/s", labelpos="E", coordinates="axes", fontproperties={"size": 7.2})
+    # Match the monthly map convention: whiten a compact lower-right area,
+    # then draw the reference arrow and its magnitude inside the panel.
+    ax.add_patch(
+        Rectangle(
+            (0.79, 0.015),
+            0.205,
+            0.255,
+            transform=ax.transAxes,
+            facecolor="white",
+            edgecolor="0.28",
+            linewidth=0.65,
+            zorder=8,
+        )
+    )
+    key_artist = ax.quiverkey(
+        q,
+        0.892,
+        0.17,
+        0.8,
+        r"0.8 m s$^{-1}$",
+        labelpos="S",
+        coordinates="axes",
+        labelsep=0.035,
+        fontproperties={"size": 8.0},
+    )
+    key_artist.set_zorder(10)
 
 
 def plot_patterns(out: dict[str, object]) -> None:
@@ -406,12 +432,14 @@ def plot_patterns(out: dict[str, object]) -> None:
     variance_sst = float(out["variance_sst"])
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    fig = plt.figure(figsize=(13.8, 8.8), constrained_layout=True)
-    gs = fig.add_gridspec(2, 2, height_ratios=[1.0, 0.85])
+    # Match the report's full-width, moderately wide figure system.  The maps
+    # stay large; only surplus vertical whitespace is removed.
+    fig = plt.figure(figsize=(13.8, 7.1), constrained_layout=True)
+    gs = fig.add_gridspec(2, 2, height_ratios=[1.0, 0.72])
     ax1 = fig.add_subplot(gs[0, 0])
     ax2 = fig.add_subplot(gs[0, 1])
     ax3 = fig.add_subplot(gs[1, :])
-    fig.suptitle("PMM-like EOF diagnostics from OISST SST and ERA5 10 m wind", weight="bold")
+    fig.suptitle("PMM-like EOF diagnostics from OISST SST and ERA5 10 m wind", fontsize=16.0, weight="bold")
 
     mesh1 = ax1.pcolormesh(lon, lat, out["sst_joint"], cmap="RdBu_r", vmin=-0.6, vmax=0.6, shading="auto")
     add_vectors(ax1, lon, lat, out["u_joint"], out["v_joint"])
@@ -443,6 +471,7 @@ def plot_patterns(out: dict[str, object]) -> None:
         -0.01,
         "Method: OISST v2.1 SST and ERA5 10 m wind, 120E-80W and 20S-30N, 1 degree grid. "
         "Monthly anomalies are computed against 1982-2025, linearly detrended, and linearly regressed on Niño-3.4 before EOF analysis. "
+        r"The joint panel's wind-vector reference is 0.8 m s$^{-1}$. "
         "This is a local PMM-like diagnostic, not the official NOAA PMM index.",
         fontsize=8.3,
         color="0.30",
@@ -459,22 +488,22 @@ def plot_2026_focus(out: dict[str, object]) -> None:
     x = np.arange(len(current))
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    fig, ax = plt.subplots(figsize=(8.8, 4.4), constrained_layout=True)
+    fig, ax = plt.subplots(figsize=(10.8, 4.55), constrained_layout=True)
     ax.axhline(0, color="0.25", lw=0.75)
     ax.bar(x - 0.18, current["joint"], width=0.36, color="#1f4e79", label="Joint SST+wind")
     ax.bar(x + 0.18, current["sst"], width=0.36, color="#b35c2e", label="SST-only")
     ax.set_xticks(x)
     ax.set_xticklabels(labels)
     ax.set_ylabel("Standardized index")
-    ax.set_title("2026 Jan-May PMM-like index")
+    ax.set_title("2026 Jan-May PMM-like index", fontsize=16.0, weight="bold")
     ax.legend(frameon=False)
     ymin = min(0.0, float(current[["joint", "sst"]].min().min()))
     ymax = max(0.0, float(current[["joint", "sst"]].max().max()))
     ax.set_ylim(ymin - 0.18 * max(1.0, abs(ymin)), ymax + 0.22 * max(1.0, abs(ymax)))
     for xi, y in zip(x - 0.18, current["joint"]):
-        ax.text(xi, y + (0.08 if y >= 0 else -0.14), f"{y:.2f}", ha="center", va="bottom" if y >= 0 else "top", fontsize=7.4)
+        ax.text(xi, y + (0.08 if y >= 0 else -0.14), f"{y:.2f}", ha="center", va="bottom" if y >= 0 else "top", fontsize=9.6)
     for xi, y in zip(x + 0.18, current["sst"]):
-        ax.text(xi, y + (0.08 if y >= 0 else -0.14), f"{y:.2f}", ha="center", va="bottom" if y >= 0 else "top", fontsize=7.4)
+        ax.text(xi, y + (0.08 if y >= 0 else -0.14), f"{y:.2f}", ha="center", va="bottom" if y >= 0 else "top", fontsize=9.6)
     fig.text(
         0.01,
         -0.02,

@@ -1,0 +1,818 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/cp855s",
+    "id": "cp855s",
+    "slide": 16,
+    "layoutId": "eeae0df4-99e0-4f39-9912-afc7fcc982f2",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "396bf202-7f1a-4258-8d63-44274bd4b711",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Aptos",
+      "Aptos Display"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "eeae0df4-99e0-4f39-9912-afc7fcc982f2",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "396bf202-7f1a-4258-8d63-44274bd4b711",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "396bf202-7f1a-4258-8d63-44274bd4b711",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/i5sneloj",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#F7F3EA",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pwb2hwfy",
+      "id": "2",
+      "bbox": [
+        58,
+        30,
+        360,
+        25
+      ],
+      "geometry": "rect",
+      "text": "新研究发现 4",
+      "textPreview": "新研究发现 4",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Aptos",
+        "color": "#CC5A43",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "新研究发现 4"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "新研究发现 4",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Aptos",
+            "color": "#CC5A43",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "新研究发现 4",
+              "fontSize": 14,
+              "typeface": "Aptos",
+              "color": "#CC5A43",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0bi9s36h",
+      "id": "3",
+      "bbox": [
+        58,
+        64,
+        1100,
+        82
+      ],
+      "geometry": "rect",
+      "text": "图中数据名称：外海盆暖异常指数与早期耦合探索图",
+      "textPreview": "图中数据名称：外海盆暖异常指数与早期耦合探索图",
+      "resolvedFontSize": 29,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 29,
+        "typeface": "Aptos Display",
+        "color": "#1D1B18",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "图中数据名称：外海盆暖异常指数与早期耦合探索图"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "图中数据名称：外海盆暖异常指数与早期耦合探索图",
+          "resolvedTextStyle": {
+            "fontSize": 29,
+            "typeface": "Aptos Display",
+            "color": "#1D1B18",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "图中数据名称：外海盆暖异常指数与早期耦合探索图",
+              "fontSize": 29,
+              "typeface": "Aptos Display",
+              "color": "#1D1B18",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7y1kre1w",
+      "id": "4",
+      "bbox": [
+        58,
+        148,
+        1130,
+        1.5
+      ],
+      "geometry": "rect",
+      "fillColor": "#D8D1C4",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/r2p8nqxs",
+      "id": "5",
+      "bbox": [
+        60,
+        184,
+        350,
+        280
+      ],
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "36da4318-94e8-4c26-a8b2-6356958c4643",
+        "contentType": "image/png",
+        "byteLength": 112562
+      }
+    },
+    {
+      "order": 6,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/kjm1cfa9",
+      "id": "6",
+      "bbox": [
+        430,
+        184,
+        350,
+        280
+      ],
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "292dd2ad-a094-435f-8e8d-90a4f53a42ac",
+        "contentType": "image/png",
+        "byteLength": 164903
+      }
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wjudg7ad",
+      "id": "7",
+      "bbox": [
+        814,
+        170,
+        382,
+        126
+      ],
+      "geometry": "rect",
+      "fillColor": "#F5E5DF",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.8
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/72x4nap4",
+      "id": "8",
+      "bbox": [
+        828,
+        182,
+        354,
+        22
+      ],
+      "geometry": "rect",
+      "text": "这幅图是什么数据",
+      "textPreview": "这幅图是什么数据",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Aptos",
+        "color": "#2F6F73",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "这幅图是什么数据"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "这幅图是什么数据",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Aptos",
+            "color": "#2F6F73",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "这幅图是什么数据",
+              "fontSize": 14,
+              "typeface": "Aptos",
+              "color": "#2F6F73",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ih4byhgn",
+      "id": "9",
+      "bbox": [
+        828,
+        212,
+        354,
+        76
+      ],
+      "geometry": "rect",
+      "text": "左图是 OISST 计算的热带北大西洋、西太暖池、海陆洲和热带印度洋海温差值；右图是早期 composite-based 耦合探索图。",
+      "textPreview": "左图是 OISST 计算的热带北大西洋、西太暖池、海陆洲和热带印度洋海温差值；右图是早期 composite-based 耦合探索图。",
+      "resolvedFontSize": 14.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14.51,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "左图是 OISST"
+          },
+          {
+            "index": 2,
+            "text": "计算的热带北大西洋、西太暖池、海陆洲和热带印度洋"
+          },
+          {
+            "index": 3,
+            "text": "海温差值；右图是早期 composite-based 耦合探索图。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "左图是 OISST 计算的热带北大西洋、西太暖池、海陆洲和热带印度洋海温差值；右图是早期 composite-based 耦合探索图。",
+          "resolvedTextStyle": {
+            "fontSize": 14.51,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "左图是 OISST 计算的热带北大西洋、西太暖池、海陆洲和热带印度洋海温差值；右图是早期 composite-based 耦合探索图。",
+              "fontSize": 14.51,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/032lszqt",
+      "id": "10",
+      "bbox": [
+        814,
+        312,
+        382,
+        126
+      ],
+      "geometry": "rect",
+      "fillColor": "#EDF3EF",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.8
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tovahoza",
+      "id": "11",
+      "bbox": [
+        828,
+        324,
+        354,
+        22
+      ],
+      "geometry": "rect",
+      "text": "它反映了什么",
+      "textPreview": "它反映了什么",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Aptos",
+        "color": "#2F6F73",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "它反映了什么"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "它反映了什么",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Aptos",
+            "color": "#2F6F73",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "它反映了什么",
+              "fontSize": 14,
+              "typeface": "Aptos",
+              "color": "#2F6F73",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ixczed8v",
+      "id": "12",
+      "bbox": [
+        828,
+        354,
+        354,
+        76
+      ],
+      "geometry": "rect",
+      "text": "2023 春夏外海盆和西太暖池明显偏暖，同时旧版探索图也提示太平洋大气响应偏弱。现在主结论以回归预期矩阵为准，这页作为背景和稳健性线索。",
+      "textPreview": "2023 春夏外海盆和西太暖池明显偏暖，同时旧版探索图也提示太平洋大气响应偏弱。现在主结论以回归预期矩阵为准，这页作为背景和稳健性线索。",
+      "resolvedFontSize": 14.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14.51,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "2023"
+          },
+          {
+            "index": 2,
+            "text": "春夏外海盆和西太暖池明显偏暖，同时旧版探索图也提"
+          },
+          {
+            "index": 3,
+            "text": "示太平洋大气响应偏弱。现在主结论以回归预期矩阵为"
+          },
+          {
+            "index": 4,
+            "text": "准，这页作为背景和稳健性线索。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "2023 春夏外海盆和西太暖池明显偏暖，同时旧版探索图也提示太平洋大气响应偏弱。现在主结论以回归预期矩阵为准，这页作为背景和稳健性线索。",
+          "resolvedTextStyle": {
+            "fontSize": 14.51,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "2023 春夏外海盆和西太暖池明显偏暖，同时旧版探索图也提示太平洋大气响应偏弱。现在主结论以回归预期矩阵为准，这页作为背景和稳健性线索。",
+              "fontSize": 14.51,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bi9s36hc",
+      "id": "13",
+      "bbox": [
+        814,
+        454,
+        382,
+        126
+      ],
+      "geometry": "rect",
+      "fillColor": "#F5E5DF",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 0.8
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0fepkzup",
+      "id": "14",
+      "bbox": [
+        828,
+        466,
+        354,
+        22
+      ],
+      "geometry": "rect",
+      "text": "对应原文与我的创新",
+      "textPreview": "对应原文与我的创新",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Aptos",
+        "color": "#2F6F73",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "对应原文与我的创新"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "对应原文与我的创新",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Aptos",
+            "color": "#2F6F73",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "对应原文与我的创新",
+              "fontSize": 14,
+              "typeface": "Aptos",
+              "color": "#2F6F73",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p0bi9s36",
+      "id": "15",
+      "bbox": [
+        828,
+        496,
+        354,
+        76
+      ],
+      "geometry": "rect",
+      "text": "原文用 AGCM 提示外海盆可能抵消太平洋响应；本页说明 2023 发展季确实存在异常暖的外海盆背景。",
+      "textPreview": "原文用 AGCM 提示外海盆可能抵消太平洋响应；本页说明 2023 发展季确实存在异常暖的外海盆背景。",
+      "resolvedFontSize": 14.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14.51,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "原文用 AGCM"
+          },
+          {
+            "index": 2,
+            "text": "提示外海盆可能抵消太平洋响应；本页说明 2023"
+          },
+          {
+            "index": 3,
+            "text": "发展季确实存在异常暖的外海盆背景。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "原文用 AGCM 提示外海盆可能抵消太平洋响应；本页说明 2023 发展季确实存在异常暖的外海盆背景。",
+          "resolvedTextStyle": {
+            "fontSize": 14.51,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "原文用 AGCM 提示外海盆可能抵消太平洋响应；本页说明 2023 发展季确实存在异常暖的外海盆背景。",
+              "fontSize": 14.51,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/i9s36hcr",
+      "id": "16",
+      "bbox": [
+        58,
+        680,
+        1120,
+        26
+      ],
+      "geometry": "rect",
+      "text": "Tables: external_basin_seasonal_summary.csv; asynchronous_coupling_efficiency.csv.",
+      "textPreview": "Tables: external_basin_seasonal_summary.csv; asynchronous_coupling_efficiency.csv.",
+      "resolvedFontSize": 10.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 10.51,
+        "typeface": "Aptos",
+        "color": "#5D574F",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Tables: external_basin_seasonal_summary.csv; asynchronous_coupling_efficiency.csv."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Tables: external_basin_seasonal_summary.csv; asynchronous_coupling_efficiency.csv.",
+          "resolvedTextStyle": {
+            "fontSize": 10.51,
+            "typeface": "Aptos",
+            "color": "#5D574F",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Tables: external_basin_seasonal_summary.csv; asynchronous_coupling_efficiency.csv.",
+              "fontSize": 10.51,
+              "typeface": "Aptos",
+              "color": "#5D574F"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

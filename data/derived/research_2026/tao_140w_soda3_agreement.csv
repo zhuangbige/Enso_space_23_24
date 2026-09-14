@@ -1,0 +1,6 @@
+metric,observation_column,soda3_column,window,n_years,first_year,last_year,correlation_r,bootstrap_ci_low,bootstrap_ci_high,two_sided_year_permutation_p,slope_obs_per_soda_unit
+TAO current-meter local Q20 proxy,current_meter_local_q20_proxy_c_m2_s,q20_220e_pw,March-April annual mean,23,1983,2020,0.9056415087861742,0.7542945703438039,0.9676158942411409,4.999750012499375e-05,270.65517659851685
+TAO ADCP local Q20 proxy,adcp_local_q20_proxy_c_m2_s,q20_220e_pw,March-April annual mean,27,1992,2022,0.8589708276259254,0.706898246829151,0.9381882474713542,4.999750012499375e-05,228.68216277506744
+TAO current-meter upper current,current_meter_upper_current_cm_s,q20_220e_pw,March-April annual mean,23,1983,2020,0.572449471831462,0.3529423011991396,0.7620407149416395,0.0032998350082495873,25.434015645072733
+TAO ADCP upper current,adcp_upper_current_cm_s,q20_220e_pw,March-April annual mean,30,1991,2022,0.6297958242005279,0.3755941511957001,0.8292378978677948,9.99950002499875e-05,42.727717104423654
+TAO D20,tao_d20_m,d20_m,March-April annual mean,36,1983,2022,0.9055588865957984,0.830846396127804,0.9498980224597962,4.999750012499375e-05,1.2153898797433023

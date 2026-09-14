@@ -1,0 +1,29 @@
+region,year,group,primary_sample,first_positive_ssta_month,first_positive_soda_surface_month,first_positive_ohc_month,ohc_minus_ssta_onset_lag_months,any_surface_positive_ohc_negative,any_soda_surface_positive_ohc_negative,mismatch_months,n_mismatch_months,strict_2023_sequence,robust_2023_sequence,strict_same_product_sequence,robust_same_product_sequence,at_least_feb2023_raw_strength,at_least_feb2023_standardized_contrast,max_standardized_contrast_during_mismatch
+east_140W_80W,1982,classic EP,True,1.0,6.0,2.0,1.0,True,False,1,1,False,False,False,False,True,True,0.29203816738329136
+east_140W_80W,1986,other warm,True,,,6.0,,False,False,,0,False,False,False,False,False,False,
+east_140W_80W,1987,CP consecutive sensitivity,False,1.0,1.0,1.0,0.0,False,False,,0,False,False,False,False,False,False,
+east_140W_80W,1991,other warm,True,5.0,3.0,1.0,-4.0,False,False,,0,False,False,False,False,False,False,
+east_140W_80W,1994,CP,True,1.0,,,,True,False,1,1,False,False,False,False,True,True,0.4535305232534208
+east_140W_80W,1997,classic EP,True,5.0,4.0,2.0,-3.0,False,False,,0,False,False,False,False,False,False,
+east_140W_80W,2002,other warm,True,3.0,3.0,1.0,-2.0,True,True,5,1,False,False,False,False,True,True,0.48646914670136
+east_140W_80W,2004,CP,True,1.0,1.0,1.0,0.0,False,False,,0,False,False,False,False,False,False,
+east_140W_80W,2006,other warm,True,,,5.0,,False,False,,0,False,False,False,False,False,False,
+east_140W_80W,2009,other warm,True,5.0,5.0,5.0,0.0,False,False,,0,False,False,False,False,False,False,
+east_140W_80W,2015,classic EP,True,1.0,1.0,1.0,0.0,False,False,,0,False,False,False,False,False,False,
+east_140W_80W,2018,other warm,True,6.0,6.0,4.0,-2.0,False,False,,0,False,False,False,False,False,False,
+east_140W_80W,2019,CP,True,1.0,1.0,1.0,0.0,True,True,6,1,False,False,False,False,True,True,0.3683058061114326
+east_140W_80W,2023,2023 weak-coupling EP,True,2.0,3.0,3.0,1.0,True,False,2,1,True,True,False,False,True,True,0.08259983046519082
+fep_90W_80W,1982,classic EP,True,5.0,6.0,6.0,1.0,True,False,5,1,True,False,False,False,False,False,0.12066651404420516
+fep_90W_80W,1986,other warm,True,,,,,False,False,,0,False,False,False,False,False,False,
+fep_90W_80W,1987,CP consecutive sensitivity,False,1.0,1.0,1.0,0.0,False,False,,0,False,False,False,False,False,False,
+fep_90W_80W,1991,other warm,True,3.0,3.0,1.0,-2.0,False,False,,0,False,False,False,False,False,False,
+fep_90W_80W,1994,CP,True,,,,,False,False,,0,False,False,False,False,False,False,
+fep_90W_80W,1997,classic EP,True,3.0,3.0,2.0,-1.0,False,False,,0,False,False,False,False,False,False,
+fep_90W_80W,2002,other warm,True,2.0,3.0,1.0,-1.0,True,True,5,1,False,False,False,False,True,True,0.6393978195463271
+fep_90W_80W,2004,CP,True,1.0,,1.0,0.0,True,False,2,1,False,False,False,False,False,False,0.32182305301033687
+fep_90W_80W,2006,other warm,True,2.0,,6.0,4.0,True,False,2,1,False,False,False,False,True,True,1.320891875420294
+fep_90W_80W,2009,other warm,True,5.0,5.0,5.0,0.0,False,False,,0,False,False,False,False,False,False,
+fep_90W_80W,2015,classic EP,True,1.0,4.0,1.0,0.0,False,False,,0,False,False,False,False,False,False,
+fep_90W_80W,2018,other warm,True,,,,,False,False,,0,False,False,False,False,False,False,
+fep_90W_80W,2019,CP,True,1.0,1.0,1.0,0.0,False,True,,0,False,False,False,False,False,False,
+fep_90W_80W,2023,2023 weak-coupling EP,True,2.0,2.0,3.0,1.0,True,True,2,1,True,True,True,True,True,True,0.39261472256351976

@@ -1,0 +1,222 @@
+{
+  "method": {
+    "target": "detrended mature DJF OISST Nino3 minus Nino4",
+    "deep_route": "Mar-Apr SODA3 Q20 and D20 at 140W",
+    "surface_route": "Mar-Apr FEP SST residual after fold-specific removal of contemporaneous Nino3.4",
+    "validation": "fold-specific detrending, FEP regression, scaling and ridge fitting",
+    "ridge_alpha": 1.0
+  },
+  "event_loeo": {
+    "+ Q20 at 140W": {
+      "rmse_skill": 0.5510072038896989,
+      "prediction_observation_r": 0.8761607737464608,
+      "fdr_q": 0.010449477526123694
+    },
+    "+ D20 at 140W": {
+      "rmse_skill": 0.3610995764721687,
+      "prediction_observation_r": 0.728279192137829,
+      "fdr_q": 0.029698515074246288
+    },
+    "+ deep TSI": {
+      "rmse_skill": 0.6318761666136594,
+      "prediction_observation_r": 0.9216326728692595,
+      "fdr_q": 0.005499725013749312
+    },
+    "+ western WWV": {
+      "rmse_skill": 0.057690401023070326,
+      "prediction_observation_r": 0.21674228123981548,
+      "fdr_q": 0.3469826508674566
+    },
+    "+ FEP route (OISST)": {
+      "rmse_skill": 0.1818908479506206,
+      "prediction_observation_r": 0.49618719757831714,
+      "fdr_q": 0.14478026098695065
+    },
+    "+ FEP route (ERSST)": {
+      "rmse_skill": 0.10853656989715155,
+      "prediction_observation_r": 0.35220357130054286,
+      "fdr_q": 0.2569593742535095
+    },
+    "+ dual-route maximum": {
+      "rmse_skill": 0.3465705504779998,
+      "prediction_observation_r": 0.7648964410115402,
+      "fdr_q": 0.0926310827315777
+    },
+    "+ dual-route maximum (ERSST)": {
+      "rmse_skill": 0.329280972924193,
+      "prediction_observation_r": 0.7437565924330162,
+      "fdr_q": 0.0926310827315777
+    },
+    "+ two routes separately": {
+      "rmse_skill": 0.607685666951395,
+      "prediction_observation_r": 0.9077313782114491,
+      "fdr_q": 0.005499725013749312
+    },
+    "+ Bjerknes chain": {
+      "rmse_skill": 0.041064934178566825,
+      "prediction_observation_r": 0.2194722387878111,
+      "fdr_q": 0.3469826508674566
+    },
+    "+ dual route + chain": {
+      "rmse_skill": 0.33205404205926425,
+      "prediction_observation_r": 0.7256537272665097,
+      "fdr_q": 0.0926310827315777
+    }
+  },
+  "all_year_walkforward": {
+    "+ Q20 at 140W": {
+      "rmse_skill": -0.07218281284456696,
+      "prediction_observation_r": -0.09095105394569054,
+      "fdr_q": 0.883640817959102
+    },
+    "+ D20 at 140W": {
+      "rmse_skill": -0.007656558406475389,
+      "prediction_observation_r": 0.05713575962787003,
+      "fdr_q": 0.883640817959102
+    },
+    "+ deep TSI": {
+      "rmse_skill": -0.06182526078751871,
+      "prediction_observation_r": -0.008081120849827952,
+      "fdr_q": 0.883640817959102
+    },
+    "+ western WWV": {
+      "rmse_skill": -0.035576172158266584,
+      "prediction_observation_r": -0.3016323328014024,
+      "fdr_q": 0.936753162341883
+    },
+    "+ FEP route (OISST)": {
+      "rmse_skill": -0.030691462664675262,
+      "prediction_observation_r": 0.0976769533301017,
+      "fdr_q": 0.883640817959102
+    },
+    "+ FEP route (ERSST)": {
+      "rmse_skill": -0.025569717279576798,
+      "prediction_observation_r": 0.03696465633858061,
+      "fdr_q": 0.883640817959102
+    },
+    "+ dual-route maximum": {
+      "rmse_skill": -0.03193185647920527,
+      "prediction_observation_r": 0.07770660382780445,
+      "fdr_q": 0.883640817959102
+    },
+    "+ dual-route maximum (ERSST)": {
+      "rmse_skill": -0.03222751387245215,
+      "prediction_observation_r": 0.07499407993467531,
+      "fdr_q": 0.883640817959102
+    },
+    "+ two routes separately": {
+      "rmse_skill": -0.057670090406707786,
+      "prediction_observation_r": 0.07535594661985465,
+      "fdr_q": 0.883640817959102
+    },
+    "+ Bjerknes chain": {
+      "rmse_skill": -0.12155984661095887,
+      "prediction_observation_r": -0.0799570110628778,
+      "fdr_q": 0.883640817959102
+    },
+    "+ dual route + chain": {
+      "rmse_skill": -0.09270998068110492,
+      "prediction_observation_r": 0.0001912056859873718,
+      "fdr_q": 0.883640817959102
+    }
+  },
+  "event_chronological": {
+    "+ Q20 at 140W": {
+      "rmse_skill": 0.5196491993334977,
+      "prediction_observation_r": 0.9117651210741686,
+      "fdr_q": 0.01858907054647268
+    },
+    "+ D20 at 140W": {
+      "rmse_skill": 0.34145157182420294,
+      "prediction_observation_r": 0.7550139403770293,
+      "fdr_q": 0.041431261770244816
+    },
+    "+ deep TSI": {
+      "rmse_skill": 0.5778386482509714,
+      "prediction_observation_r": 0.8964682441548557,
+      "fdr_q": 0.01858907054647268
+    },
+    "+ western WWV": {
+      "rmse_skill": -0.07444746715114325,
+      "prediction_observation_r": -0.05701606052611952,
+      "fdr_q": 0.6668966551672417
+    },
+    "+ FEP route (OISST)": {
+      "rmse_skill": 0.05544655474915694,
+      "prediction_observation_r": 0.7149428166921813,
+      "fdr_q": 0.4920191490425479
+    },
+    "+ FEP route (ERSST)": {
+      "rmse_skill": -0.030929299759006268,
+      "prediction_observation_r": 0.6475876129650159,
+      "fdr_q": 0.6668966551672417
+    },
+    "+ dual-route maximum": {
+      "rmse_skill": 0.5528892920412838,
+      "prediction_observation_r": 0.860316156048575,
+      "fdr_q": 0.01858907054647268
+    },
+    "+ dual-route maximum (ERSST)": {
+      "rmse_skill": 0.5576689292233087,
+      "prediction_observation_r": 0.8632395508865178,
+      "fdr_q": 0.01858907054647268
+    },
+    "+ two routes separately": {
+      "rmse_skill": 0.5409041129387786,
+      "prediction_observation_r": 0.9143438267155192,
+      "fdr_q": 0.01858907054647268
+    },
+    "+ Bjerknes chain": {
+      "rmse_skill": -0.155146267466181,
+      "prediction_observation_r": 0.6875945852612331,
+      "fdr_q": 0.7675116244187791
+    },
+    "+ dual route + chain": {
+      "rmse_skill": 0.26280203003840896,
+      "prediction_observation_r": 0.8481908803688034,
+      "fdr_q": 0.24717335561793338
+    }
+  },
+  "nested_event_selection": {
+    "rmse_c": 0.3913030908162161,
+    "baseline_rmse_c": 1.0068309485681897,
+    "rmse_skill": 0.6113517454219234,
+    "prediction_observation_r": 0.9121443599838782,
+    "paired_improvement_p": 0.0006999650017499125,
+    "bootstrap_skill_ci_low": 0.45575576199983536,
+    "bootstrap_skill_ci_high": 0.8067634723446492,
+    "selected_model_counts": {
+      "+ two routes separately": 1,
+      "+ deep TSI": 12
+    }
+  },
+  "deep_route_nonextreme": {
+    "n_events": 10,
+    "rmse_skill": 0.2314934446434438,
+    "prediction_observation_r": 0.6165366631912894
+  },
+  "dual_route_nonextreme": {
+    "n_events": 10,
+    "rmse_skill": 0.30420278263486145,
+    "prediction_observation_r": 0.7351183632698591
+  },
+  "event_2023": {
+    "+ deep TSI": {
+      "prediction_c": 0.015460801806238895,
+      "observed_c": 0.9059989811565714
+    },
+    "+ FEP route (OISST)": {
+      "prediction_c": 0.8319087524972397,
+      "observed_c": 0.9059989811565714
+    },
+    "+ dual-route maximum": {
+      "prediction_c": 1.367861301542258,
+      "observed_c": 0.9059989811565714
+    }
+  },
+  "oras5_independent_april_d20": {
+    "sample_r": 0.7965240656262105,
+    "loeo_skill": 0.5401010177947068,
+    "fdr_q": 0.0055997200139993
+  }
+}

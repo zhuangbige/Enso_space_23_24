@@ -1,0 +1,29 @@
+{
+  "events": [
+    1982,
+    1986,
+    1991,
+    1994,
+    1997,
+    2002,
+    2004,
+    2006,
+    2009,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "n_events": 13,
+  "baseline": [
+    1980,
+    2022
+  ],
+  "arrival_window": "Jan15-Jun15 event year",
+  "fate_window": "Jan15-May15 following year",
+  "max_budget_closure_error_zj": 5.599998686989238e-09,
+  "bootstrap_samples": 20000,
+  "permutation_samples": 20000,
+  "primary_dynamic_outcome": "mass-balanced non-H20 northward anomalous enthalpy output",
+  "causal_status": "time-ordered observational diagnostic; not causal attribution"
+}

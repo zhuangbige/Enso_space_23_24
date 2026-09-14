@@ -1,0 +1,20 @@
+priority,phase,experiment_id,model_class,base_state,indo_atlantic_level,fep_residual_level,npmm_level,ocean_gate_level,wind_regime,members_per_cell,integration_window,primary_contrast,status
+P0,AGCM,AG_IA0_FEP0,AGCM,2023 SST with selected anomalies removed,off,off,observed,observed,free,30,March-August,baseline for IA x FEP factorial,ready_for_model
+P0,AGCM,AG_IA0_FEP1,AGCM,2023 SST with selected anomalies removed,off,observed,observed,observed,free,30,March-August,FEP effect without remote heating,ready_for_model
+P0,AGCM,AG_IA1_FEP0,AGCM,2023 SST with selected anomalies removed,observed,off,observed,observed,free,30,March-August,remote-heating effect without residual FEP,ready_for_model
+P0,AGCM,AG_IA1_FEP1,AGCM,observed 2023 global SST,observed,observed,observed,observed,free,30,March-August,observed joint state and IA x FEP interaction,ready_for_model
+P1,AGCM,AG_NPMM0,AGCM,2023 SST with cold NPMM removed,observed,observed,neutral,observed,free,30,March-August,NPMM control of convection and equatorial wind,ready_for_model
+P1,AGCM,AG_DIPOLE0,AGCM,2023 SST plus idealized heating correction,observed,observed,observed,observed,free,30,May-July,cancel 6-10N rain deficit while retaining equatorial heating,ready_for_model
+P0,COUPLED,CG_OM1_WM1,coupled,2023 atmosphere-ocean initial condition,observed,observed,observed,low,adverse,15,March-February,ocean gate x wind regime surface,ready_for_model
+P0,COUPLED,CG_OM1_W0,coupled,2023 atmosphere-ocean initial condition,observed,observed,observed,low,neutral,15,March-February,ocean gate x wind regime surface,ready_for_model
+P0,COUPLED,CG_OM1_WP1,coupled,2023 atmosphere-ocean initial condition,observed,observed,observed,low,favorable,15,March-February,ocean gate x wind regime surface,ready_for_model
+P0,COUPLED,CG_O0_WM1,coupled,2023 atmosphere-ocean initial condition,observed,observed,observed,neutral,adverse,15,March-February,ocean gate x wind regime surface,ready_for_model
+P0,COUPLED,CG_O0_W0,coupled,2023 atmosphere-ocean initial condition,observed,observed,observed,neutral,neutral,15,March-February,ocean gate x wind regime surface,ready_for_model
+P0,COUPLED,CG_O0_WP1,coupled,2023 atmosphere-ocean initial condition,observed,observed,observed,neutral,favorable,15,March-February,ocean gate x wind regime surface,ready_for_model
+P0,COUPLED,CG_OP1_WM1,coupled,2023 atmosphere-ocean initial condition,observed,observed,observed,high,adverse,15,March-February,ocean gate x wind regime surface,ready_for_model
+P0,COUPLED,CG_OP1_W0,coupled,2023 atmosphere-ocean initial condition,observed,observed,observed,high,neutral,15,March-February,ocean gate x wind regime surface,ready_for_model
+P0,COUPLED,CG_OP1_WP1,coupled,2023 atmosphere-ocean initial condition,observed,observed,observed,high,favorable,15,March-February,ocean gate x wind regime surface,ready_for_model
+P1,COUPLED,CF_NM1_W0,coupled,2023 atmosphere-ocean initial condition,observed,observed,cold,observed,no_added_pulse,20,March-February,NPMM x WWB confirmation,ready_for_model
+P1,COUPLED,CF_NM1_WP1,coupled,2023 atmosphere-ocean initial condition,observed,observed,cold,observed,added_wwb,20,March-February,NPMM x WWB confirmation,ready_for_model
+P1,COUPLED,CF_N0_W0,coupled,2023 atmosphere-ocean initial condition,observed,observed,neutral,observed,no_added_pulse,20,March-February,NPMM x WWB confirmation,ready_for_model
+P1,COUPLED,CF_N0_WP1,coupled,2023 atmosphere-ocean initial condition,observed,observed,neutral,observed,added_wwb,20,March-February,NPMM x WWB confirmation,ready_for_model

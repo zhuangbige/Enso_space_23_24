@@ -1,0 +1,59 @@
+{
+  "storage_definitions": {
+    "h20": "rho0*Cp*integral(max(T-20C,0)dV), 0-300 m",
+    "q500": "rho0*Cp*integral(T dV), 0-500 m",
+    "domain": "5S-5N, 140W-80W",
+    "anomaly": "same-calendar-month linear detrend, 1980-2014"
+  },
+  "monthly_anomaly_correlations": {
+    "h20_vs_q300": 0.988628150904405,
+    "h20_vs_q500": 0.9828174633864585,
+    "q300_vs_q500": 0.9953902605219641
+  },
+  "monthly_standard_deviation_zj": {
+    "h20": 3.244760056862592,
+    "q300": 6.487024570447791,
+    "q500": 7.133480908450107
+  },
+  "event_development_correlations_13events": {
+    "pearson_h20_vs_q500": 0.9624867072686814,
+    "spearman_h20_vs_q500": 0.9725274725274725
+  },
+  "development_2015_2023_closeness": {
+    "h20_absolute_difference_zj": 0.35374928757031654,
+    "h20_fraction_of_pair_mean": 0.09554889231355188,
+    "q500_absolute_difference_zj": 0.03187253966390813,
+    "q500_fraction_of_pair_mean": 0.004943293781988171
+  },
+  "development_order": {
+    "h20_descending": [
+      1997,
+      2023,
+      2015
+    ],
+    "q500_descending": [
+      1997,
+      2023,
+      2015
+    ]
+  },
+  "decay_order_most_negative_first": {
+    "h20": [
+      2015,
+      1997,
+      2023
+    ],
+    "q500": [
+      2015,
+      1997,
+      2023
+    ]
+  },
+  "all_three_event_phase_signs_match": true,
+  "validation_against_existing_h20": {
+    "n_months": 270,
+    "correlation": 1.0,
+    "max_absolute_difference_zj": 5.000000058430487e-08,
+    "mean_absolute_difference_zj": 1.2529629564336683e-08
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "olr_source": "https://psl.noaa.gov/thredds/dodsC/Datasets/cpc_blended_olr-2.5deg/olr.day.anom.nc",
+  "soi_source": "https://www.cpc.ncep.noaa.gov/data/indices/soi",
+  "equatorial_soi_source": "https://www.cpc.ncep.noaa.gov/data/indices/reqsoi.for",
+  "olr_latest_date": "2026-07-24",
+  "olr_anomaly_baseline": "1991-2020 daily climatology",
+  "years": [
+    2015,
+    2023,
+    2026
+  ],
+  "months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "valid_olr_days": {
+    "2015": [
+      31,
+      28,
+      31,
+      30,
+      31,
+      30
+    ],
+    "2023": [
+      31,
+      28,
+      31,
+      30,
+      31,
+      30
+    ],
+    "2026": [
+      31,
+      27,
+      31,
+      30,
+      31,
+      30
+    ]
+  },
+  "regions": {
+    "indonesia_120e_170e": {
+      "lat_min": -5.0,
+      "lat_max": 5.0,
+      "lon_min_east": 120.0,
+      "lon_max_east": 170.0
+    },
+    "central_pacific_170e_140w": {
+      "lat_min": -5.0,
+      "lat_max": 5.0,
+      "lon_min_east": 170.0,
+      "lon_max_east": 220.0
+    },
+    "central_pacific_precip_box_180_140w": {
+      "lat_min": -5.0,
+      "lat_max": 5.0,
+      "lon_min_east": 180.0,
+      "lon_max_east": 220.0
+    },
+    "east_central_pacific_140w_110w": {
+      "lat_min": -5.0,
+      "lat_max": 5.0,
+      "lon_min_east": 220.0,
+      "lon_max_east": 250.0
+    }
+  },
+  "sign_conventions": {
+    "olr": "negative denotes enhanced high-cloud/deep-convection signal",
+    "soi": "negative denotes an El Nino-like Tahiti-Darwin pressure pattern",
+    "equatorial_soi": "negative denotes an El Nino-like equatorial pressure pattern"
+  }
+}

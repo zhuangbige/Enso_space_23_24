@@ -1,0 +1,26 @@
+{
+  "event_count": 13,
+  "event_years": [
+    1982,
+    1986,
+    1991,
+    1994,
+    1997,
+    2002,
+    2004,
+    2006,
+    2009,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "climatology": "1982-2024",
+  "ridge_alpha": 1.0,
+  "bootstrap_samples": 10000,
+  "permutation_samples": 30000,
+  "wwb_source": "/Users/daiyue/Documents/Maryland/data/interim/research_2026/soda3_5day_wwb_stress_1982_2023_event_years.csv",
+  "wwb_transport_best_lag_days": 0,
+  "gpcp_shape_checked": true,
+  "agcm_experiment_count": 10
+}

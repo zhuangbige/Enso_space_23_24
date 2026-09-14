@@ -1,0 +1,7 @@
+sample,x,y,r,ci_low,ci_high,leave_one_out_min,leave_one_out_max,n_blocks
+eight_events_decay,tau5n_220_270e_westward_mean_nm2,soda_north_export_zj,0.890885212,,,0.852276454,0.961375831,8
+eight_events_decay,tau5n_220_275e_westward_mean_nm2,soda_north_export_zj,0.904683386,,,0.884560405,0.967916041,8
+eight_events_decay,tau5n_220_280e_westward_mean_nm2,soda_north_export_zj,0.920527384,,,0.904244628,0.970375587,8
+eight_events_decay,era5_qnet_loss_zj,soda_surface_loss_zj,0.942305953,,,0.843176137,0.962139143,8
+all_years_Dec_to_May,era5_tau5n_westward_sm3_nm2,soda_east_north_export_sm3_pw,0.714790087,0.562932993,0.821704419,,,40
+all_years_Dec_to_May,era5_qnet_loss_sm3_pw,soda_east_surface_loss_sm3_pw,0.916519154,0.84160663,0.954675698,,,40

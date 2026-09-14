@@ -1,0 +1,5 @@
+effect,estimate,bootstrap_ci_low,bootstrap_ci_high,controls,interpretation
+a_u850_to_tau,0.4610036682,-0.238588025,0.7674542182,arrival_140w_heat_in_zj,"exploratory statistical bridge, not causal mediation"
+b_tau_to_north,0.6986621364,0.03784542753,1.094319312,arrival_140w_heat_in_zj,"exploratory statistical bridge, not causal mediation"
+indirect_ab,0.3220858077,-0.1137038841,0.7527171092,arrival_140w_heat_in_zj,"exploratory statistical bridge, not causal mediation"
+direct_u850,0.09303823231,-0.4191921782,0.7960322943,arrival_140w_heat_in_zj,"exploratory statistical bridge, not causal mediation"

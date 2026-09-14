@@ -1,0 +1,86 @@
+{
+  "events": [
+    1982,
+    1986,
+    1991,
+    1994,
+    1997,
+    2002,
+    2004,
+    2006,
+    2009,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "baseline": "1980-2024 calendar-month linear detrended",
+  "response": "future five-day tendency of Date-Line warm-volume transport",
+  "correlations": {
+    "ssh_net_vs_m_future5": {
+      "pearson_r": 0.35378178047603936,
+      "spearman_r": 0.38044539223898904,
+      "ci_low": 0.2859615220835189,
+      "ci_high": 0.4299822815231567,
+      "n_events": 13,
+      "n_pentads": 458
+    },
+    "ssh_net_vs_m_future10": {
+      "pearson_r": 0.2726404987398162,
+      "spearman_r": 0.2716850119631396,
+      "ci_low": 0.1952780768588635,
+      "ci_high": 0.3544217893110102,
+      "n_events": 13,
+      "n_pentads": 445
+    },
+    "d20_net_vs_m_future5": {
+      "pearson_r": 0.31897706867088854,
+      "spearman_r": 0.3382410554544121,
+      "ci_low": 0.2521683210773737,
+      "ci_high": 0.3838257199110833,
+      "n_events": 13,
+      "n_pentads": 458
+    },
+    "ssh_net_vs_q_future5": {
+      "pearson_r": 0.361105760097945,
+      "spearman_r": 0.38667700397248067,
+      "ci_low": 0.28877131276461987,
+      "ci_high": 0.4421261664425965,
+      "n_events": 13,
+      "n_pentads": 458
+    }
+  },
+  "ssh_balance_raw": {
+    "intercept_sv_day": -0.2906559467363395,
+    "raw_season_sin": 0.4681095446720398,
+    "standardized_season_sin": 0.08898486819974304,
+    "raw_season_cos": -0.25469487397588497,
+    "standardized_season_cos": -0.1151178642870126,
+    "raw_warm_volume_transport_sv_anom": -0.030064506587667343,
+    "standardized_warm_volume_transport_sv_anom": -0.33059138699323654,
+    "raw_pressure_accel_1e8_ms2": 0.054680180709911104,
+    "standardized_pressure_accel_1e8_ms2": 0.39668344144792755,
+    "raw_wind_accel_1e8_ms2": 0.06996992173012477,
+    "standardized_wind_accel_1e8_ms2": 0.3993006729965159
+  },
+  "d20_balance_raw": {
+    "intercept_sv_day": -0.26283305216632025,
+    "raw_season_sin": 0.5750220642433228,
+    "standardized_season_sin": 0.10930830866626536,
+    "raw_season_cos": -0.12896860601872562,
+    "standardized_season_cos": -0.05829167369247705,
+    "raw_warm_volume_transport_sv_anom": -0.03045606420291337,
+    "standardized_warm_volume_transport_sv_anom": -0.3348969815232678,
+    "raw_d20_pressure_accel_1e8_ms2": 0.1121315267543164,
+    "standardized_d20_pressure_accel_1e8_ms2": 0.341690036126798,
+    "raw_wind_accel_1e8_ms2": 0.06242490706085942,
+    "standardized_wind_accel_1e8_ms2": 0.35624317970923763
+  },
+  "quality_control": {
+    "volume_monthly_reconstruction_max_abs_error_sv": 1.0658141036401503e-14,
+    "d20_monthly_reconstruction_max_abs_error_m": 2.842170943040401e-14,
+    "pentad_interval_min_days": 5.0,
+    "pentad_interval_median_days": 5.0,
+    "pentad_interval_max_days": 5.0
+  }
+}

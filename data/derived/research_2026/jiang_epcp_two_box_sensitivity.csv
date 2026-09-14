@@ -1,0 +1,9 @@
+sensitivity,phase,box,metric,ep_n,cp_n,ep_mean,cp_mean,ep_minus_cp,exact_two_sided_p,n_exact_partitions
+primary_Jiang_event_list,development_MJJ,central,storage_change_zj,4,9,-1.469278732,1.229880034,-2.699158766,0.05034965035,715
+drop_consecutive_1987,development_MJJ,central,storage_change_zj,4,8,-1.469278732,1.577196802,-3.046475534,0.01616161616,495
+primary_Jiang_event_list,development_MJJ,central,central_eastward_output_zj,4,9,4.323746723,0.6553497238,3.668396999,0.01118881119,715
+drop_consecutive_1987,development_MJJ,central,central_eastward_output_zj,4,8,4.323746723,0.5771816718,3.746565051,0.01212121212,495
+primary_Jiang_event_list,development_MJJ,east,storage_change_zj,4,9,4.080085163,1.440758264,2.6393269,0.1832167832,715
+drop_consecutive_1987,development_MJJ,east,storage_change_zj,4,8,4.080085163,1.317716722,2.762368442,0.1919191919,495
+primary_Jiang_event_list,development_MJJ,east,west_heat_in_zj,4,9,4.517965308,0.7545859747,3.763379333,0.02097902098,715
+drop_consecutive_1987,development_MJJ,east,west_heat_in_zj,4,8,4.517965308,0.7523009853,3.765664323,0.0303030303,495

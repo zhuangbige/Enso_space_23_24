@@ -1,0 +1,643 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/0ta2ay",
+    "id": "0ta2ay",
+    "slide": 2,
+    "layoutId": "eeae0df4-99e0-4f39-9912-afc7fcc982f2",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "396bf202-7f1a-4258-8d63-44274bd4b711",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Aptos",
+      "Aptos Display"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "eeae0df4-99e0-4f39-9912-afc7fcc982f2",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "396bf202-7f1a-4258-8d63-44274bd4b711",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "396bf202-7f1a-4258-8d63-44274bd4b711",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hcrmhk3q",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#F7F3EA",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/al87ed8b",
+      "id": "2",
+      "bbox": [
+        58,
+        30,
+        360,
+        25
+      ],
+      "geometry": "rect",
+      "text": "总判断",
+      "textPreview": "总判断",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Aptos",
+        "color": "#CC5A43",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "总判断"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "总判断",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Aptos",
+            "color": "#CC5A43",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "总判断",
+              "fontSize": 14,
+              "typeface": "Aptos",
+              "color": "#CC5A43",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/z61032ls",
+      "id": "3",
+      "bbox": [
+        58,
+        64,
+        1100,
+        82
+      ],
+      "geometry": "rect",
+      "text": "目前主线已经从“复现原文”推进到“分季节预期响应偏弱”的新问题",
+      "textPreview": "目前主线已经从“复现原文”推进到“分季节预期响应偏弱”的新问题",
+      "resolvedFontSize": 29,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 29,
+        "typeface": "Aptos Display",
+        "color": "#1D1B18",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "目前主线已经从“复现原文”推进到“分季节预期响应偏弱”的新问题"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "目前主线已经从“复现原文”推进到“分季节预期响应偏弱”的新问题",
+          "resolvedTextStyle": {
+            "fontSize": 29,
+            "typeface": "Aptos Display",
+            "color": "#1D1B18",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "目前主线已经从“复现原文”推进到“分季节预期响应偏弱”的新问题",
+              "fontSize": 29,
+              "typeface": "Aptos Display",
+              "color": "#1D1B18",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sfil0rqd",
+      "id": "4",
+      "bbox": [
+        58,
+        148,
+        1130,
+        1.5
+      ],
+      "geometry": "rect",
+      "fillColor": "#D8D1C4",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h0fepkzu",
+      "id": "5",
+      "bbox": [
+        76,
+        178,
+        1040,
+        132
+      ],
+      "geometry": "rect",
+      "fillColor": "#F5E5DF",
+      "lineColor": "#D8D1C4",
+      "lineWidth": 1
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/a9w3m94f",
+      "id": "6",
+      "bbox": [
+        98,
+        202,
+        996,
+        92
+      ],
+      "geometry": "rect",
+      "text": "原文证明 2023/24 强厄尔尼诺主要由海洋动力生成，但同时暴露出一个关键异常：海温很强，大气端的风、气压和降水响应却偏弱。",
+      "textPreview": "原文证明 2023/24 强厄尔尼诺主要由海洋动力生成，但同时暴露出一个关键异常：海温很强，大气端的风、气压和降水响应却偏弱。",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "原文证明 2023/24"
+          },
+          {
+            "index": 2,
+            "text": "强厄尔尼诺主要由海洋动力生成，但同时暴露出一个关键异常：海温很强，大气端的风、气压和降水响应却"
+          },
+          {
+            "index": 3,
+            "text": "偏弱。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "原文证明 2023/24 强厄尔尼诺主要由海洋动力生成，但同时暴露出一个关键异常：海温很强，大气端的风、气压和降水响应却偏弱。",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "原文证明 2023/24 强厄尔尼诺主要由海洋动力生成，但同时暴露出一个关键异常：海温很强，大气端的风、气压和降水响应却偏弱。",
+              "fontSize": 21,
+              "typeface": "Aptos",
+              "color": "#1D1B18",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zupwb2hw",
+      "id": "7",
+      "bbox": [
+        92,
+        359,
+        7,
+        7
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#CC5A43",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/obm58z25",
+      "id": "8",
+      "bbox": [
+        112,
+        350,
+        960,
+        66
+      ],
+      "geometry": "rect",
+      "text": "本研究接着问：这种弱响应最早从哪个季节出现？是全年平均现象，还是发展季 AMJ/JJA 就已经发生？",
+      "textPreview": "本研究接着问：这种弱响应最早从哪个季节出现？是全年平均现象，还是发展季 AMJ/JJA 就已经发生？",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "本研究接着问：这种弱响应最早从哪个季节出现？是全年平均现象，还是发展季 AMJ/JJA 就已经发生？"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "本研究接着问：这种弱响应最早从哪个季节出现？是全年平均现象，还是发展季 AMJ/JJA 就已经发生？",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "本研究接着问：这种弱响应最早从哪个季节出现？是全年平均现象，还是发展季 AMJ/JJA 就已经发生？",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hwfyxobm",
+      "id": "9",
+      "bbox": [
+        92,
+        429,
+        7,
+        7
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#CC5A43",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/t83itgfm",
+      "id": "10",
+      "bbox": [
+        112,
+        420,
+        960,
+        66
+      ],
+      "geometry": "rect",
+      "text": "目前阶段性结果显示：2023 年春夏 Niño-3 海表温度驱动已经建立，但 ERA5 风压、GPCP 降水和 CPC OLR 对流响应都低于历史 Niño-3 回归关系预期。",
+      "textPreview": "目前阶段性结果显示：2023 年春夏 Niño-3 海表温度驱动已经建立，但 ERA5 风压、GPCP 降水和 CPC OLR 对流响应都低于历史 Niño-3 回归关系预期。",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "目前阶段性结果显示：2023 年春夏 Niño-3 海表温度驱动已经建立，但 ERA5 风压、GPCP 降水和 CPC OLR"
+          },
+          {
+            "index": 2,
+            "text": "对流响应都低于历史 Niño-3 回归关系预期。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "目前阶段性结果显示：2023 年春夏 Niño-3 海表温度驱动已经建立，但 ERA5 风压、GPCP 降水和 CPC OLR 对流响应都低于历史 Niño-3 回归关系预期。",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "目前阶段性结果显示：2023 年春夏 Niño-3 海表温度驱动已经建立，但 ERA5 风压、GPCP 降水和 CPC OLR 对流响应都低于历史 Niño-3 回归关系预期。",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4nap4r65",
+      "id": "11",
+      "bbox": [
+        92,
+        499,
+        7,
+        7
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#CC5A43",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/b2hwfyxo",
+      "id": "12",
+      "bbox": [
+        112,
+        490,
+        960,
+        66
+      ],
+      "geometry": "rect",
+      "text": "因此，新研究的入口不是再证明 2023/24 是强厄尔尼诺，而是解释为什么强海温没有触发典型强厄尔尼诺式的大气耦合。",
+      "textPreview": "因此，新研究的入口不是再证明 2023/24 是强厄尔尼诺，而是解释为什么强海温没有触发典型强厄尔尼诺式的大气耦合。",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Aptos",
+        "color": "#1D1B18",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "因此，新研究的入口不是再证明 2023/24 是强厄尔尼诺，而是解释为什么强海温没有触发典型强厄尔尼诺式的大气耦合。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "因此，新研究的入口不是再证明 2023/24 是强厄尔尼诺，而是解释为什么强海温没有触发典型强厄尔尼诺式的大气耦合。",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#1D1B18",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "因此，新研究的入口不是再证明 2023/24 是强厄尔尼诺，而是解释为什么强海温没有触发典型强厄尔尼诺式的大气耦合。",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#1D1B18"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mhk3q5o7",
+      "id": "13",
+      "bbox": [
+        58,
+        680,
+        1120,
+        26
+      ],
+      "geometry": "rect",
+      "text": "Synthesis from reproduced Peng et al. figures and data/derived/research seasonal diagnostics.",
+      "textPreview": "Synthesis from reproduced Peng et al. figures and data/derived/research seasonal diagnostics.",
+      "resolvedFontSize": 10.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 10.51,
+        "typeface": "Aptos",
+        "color": "#5D574F",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Synthesis from reproduced Peng et al. figures and data/derived/research seasonal diagnostics."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Synthesis from reproduced Peng et al. figures and data/derived/research seasonal diagnostics.",
+          "resolvedTextStyle": {
+            "fontSize": 10.51,
+            "typeface": "Aptos",
+            "color": "#5D574F",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Synthesis from reproduced Peng et al. figures and data/derived/research seasonal diagnostics.",
+              "fontSize": 10.51,
+              "typeface": "Aptos",
+              "color": "#5D574F"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

@@ -1,0 +1,605 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/8y8962",
+    "id": "8y8962",
+    "slide": 2,
+    "layoutId": "1636560f-0bb4-477e-bc36-5f737b1d795e",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "91c3fb62-db33-4e19-a094-5f8da4d0190c",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Pacific Heat Arrival",
+    "colors": {
+      "accent1": "#2C7FB8",
+      "accent2": "#D97706",
+      "accent3": "#16877A",
+      "accent4": "#B73A3A",
+      "accent5": "#35566B",
+      "accent6": "#7E5AA6",
+      "bg1": "#FFFFFF",
+      "bg2": "#EDF3F6",
+      "tx1": "#0A2133",
+      "tx2": "#35566B",
+      "dk1": "#0A2133",
+      "dk2": "#35566B",
+      "lt1": "#FFFFFF",
+      "lt2": "#EDF3F6",
+      "hlink": "#2C7FB8",
+      "folHlink": "#16877A"
+    },
+    "typefaces": [
+      "PingFang SC"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "1636560f-0bb4-477e-bc36-5f737b1d795e",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "91c3fb62-db33-4e19-a094-5f8da4d0190c",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "91c3fb62-db33-4e19-a094-5f8da4d0190c",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/up0bu5sr",
+      "id": "1",
+      "name": "kicker",
+      "bbox": [
+        54,
+        30,
+        180,
+        32
+      ],
+      "geometry": "rect",
+      "text": "问题一",
+      "textPreview": "问题一",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 22,
+        "typeface": "PingFang SC",
+        "color": "#2C7FB8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "问题一"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "问题一",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "PingFang SC",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "问题一",
+              "fontSize": 22,
+              "typeface": "PingFang SC",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hsru50bi",
+      "id": "2",
+      "name": "slide-title",
+      "bbox": [
+        54,
+        70,
+        1172,
+        58
+      ],
+      "geometry": "rect",
+      "text": "已有研究证明充放电差异，但终点没有推进到140°W",
+      "textPreview": "已有研究证明充放电差异，但终点没有推进到140°W",
+      "resolvedFontSize": 40,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 40,
+        "typeface": "PingFang SC",
+        "color": "#0A2133",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "已有研究证明充放电差异，但终点没有推进到140°W"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "已有研究证明充放电差异，但终点没有推进到140°W",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 40,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "已有研究证明充放电差异，但终点没有推进到140°W",
+              "fontSize": 40,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/writwvax",
+      "id": "3",
+      "name": "rule-54-142",
+      "bbox": [
+        54,
+        142,
+        1172,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#B8BCC4",
+      "lineWidth": 1.4
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ju9c7ato",
+      "id": "4",
+      "name": "prior-claim",
+      "bbox": [
+        54,
+        186,
+        400,
+        42
+      ],
+      "geometry": "rect",
+      "text": "Chakravorty et al. (2021)",
+      "textPreview": "Chakravorty et al. (2021)",
+      "resolvedFontSize": 28,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 28,
+        "typeface": "PingFang SC",
+        "color": "#2C7FB8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Chakravorty et al. (2021)"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Chakravorty et al. (2021)",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "PingFang SC",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Chakravorty et al. (2021)",
+              "fontSize": 28,
+              "typeface": "PingFang SC",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/it0by5s3",
+      "id": "5",
+      "name": "prior-body",
+      "bbox": [
+        54,
+        248,
+        420,
+        280
+      ],
+      "geometry": "rect",
+      "text": "CT\n西太平洋蓄热 → 赤道东传 → 成熟期极向放电\n\nCP\n盆地尺度充放电循环较弱",
+      "textPreview": "CT | 西太平洋蓄热 → 赤道东传 → 成熟期极向放电 |  | CP | 盆地尺度充放电循环较弱",
+      "resolvedFontSize": 28,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 28,
+        "typeface": "PingFang SC",
+        "color": "#0A2133",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 6,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CT"
+          },
+          {
+            "index": 2,
+            "text": "西太平洋蓄热 → 赤道东传 →"
+          },
+          {
+            "index": 3,
+            "text": "成熟期极向放电"
+          },
+          {
+            "index": 4,
+            "text": ""
+          },
+          {
+            "index": 5,
+            "text": "CP"
+          },
+          {
+            "index": 6,
+            "text": "盆地尺度充放电循环较弱"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CT",
+          "lineSpacingPercent": 108000,
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1.08
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CT",
+              "fontSize": 28,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1.08
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "西太平洋蓄热 → 赤道东传 → 成熟期极向放电",
+          "lineSpacingPercent": 108000,
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1.08
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "西太平洋蓄热 → 赤道东传 → 成熟期极向放电",
+              "fontSize": 28,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1.08
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "CP",
+          "lineSpacingPercent": 108000,
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1.08
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CP",
+              "fontSize": 28,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1.08
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "盆地尺度充放电循环较弱",
+          "lineSpacingPercent": 108000,
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1.08
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "盆地尺度充放电循环较弱",
+              "fontSize": 28,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1.08
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5wbu9kbe",
+      "id": "6",
+      "name": "figure-frame",
+      "bbox": [
+        500,
+        174,
+        726,
+        394
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F7FAFB",
+      "lineColor": "#B8BCC4",
+      "lineWidth": 1.2
+    },
+    {
+      "order": 7,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/pgze187y",
+      "id": "7",
+      "bbox": [
+        520,
+        194,
+        686,
+        354
+      ],
+      "alt": "Chakravorty et al. 2021 Figure 8 showing normalized zonal and meridional warm-water transports and WWV for CT and CP El Nino",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "dc4b9cab-c612-4284-90e1-2856bb8c9d22",
+        "contentType": "image/png",
+        "byteLength": 116469
+      }
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zypcv6t4",
+      "id": "8",
+      "name": "takeaway-band",
+      "bbox": [
+        54,
+        635,
+        1172,
+        55
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#2C7FB8",
+      "lineColor": "#2C7FB8",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yxgbmlcz",
+      "id": "9",
+      "name": "takeaway-text",
+      "bbox": [
+        78,
+        644,
+        1124,
+        38
+      ],
+      "geometry": "rect",
+      "text": "本文把问题向东推进：暖量是否继续越过140°W，并在东部被储存？",
+      "textPreview": "本文把问题向东推进：暖量是否继续越过140°W，并在东部被储存？",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 25,
+        "typeface": "PingFang SC",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "本文把问题向东推进：暖量是否继续越过140°W，并在东部被储存？"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "本文把问题向东推进：暖量是否继续越过140°W，并在东部被储存？",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "PingFang SC",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "本文把问题向东推进：暖量是否继续越过140°W，并在东部被储存？",
+              "fontSize": 25,
+              "typeface": "PingFang SC",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

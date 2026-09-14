@@ -1,0 +1,78 @@
+CT/CP arrival robustness
+{
+  "metric": "q140_east_zj",
+  "ct_mean": 6.252577092499999,
+  "cp_mean": 2.969812365,
+  "ct_minus_cp": 3.282764727499999,
+  "bootstrap_ci_low": -0.23070211249999995,
+  "bootstrap_ci_high": 6.770345534999999,
+  "exact_permutation_p": 0.22857142857142856,
+  "leave_one_event_difference_min": 2.1220338016666664,
+  "leave_one_event_difference_max": 4.562194551666666
+}
+{
+  "metric": "east_h20_growth_zj",
+  "ct_mean": 7.809139075,
+  "cp_mean": 3.7136376925000003,
+  "ct_minus_cp": 4.0955013825,
+  "bootstrap_ci_low": 1.2241041975000004,
+  "bootstrap_ci_high": 6.9975796599999995,
+  "exact_permutation_p": 0.08571428571428572,
+  "leave_one_event_difference_min": 3.043731274166667,
+  "leave_one_event_difference_max": 4.983274640833333
+}
+Without 1997: Q140 CT=5.183 CP=2.970 ratio=1.745
+Without 1997: storage CT=7.095 CP=3.714 ratio=1.911
+
+Q3 robustness
+{
+  "row_type": "primary",
+  "test_id": "partition_apr_to_tau_after_early_d20_arrival",
+  "n_events": 13,
+  "partial_r_recomputed": -0.6793878434367462,
+  "partial_spearman_recomputed": -0.489010989010989,
+  "permutation_p": 0.0106197876,
+  "bootstrap_ci_low": -0.973328237,
+  "bootstrap_ci_high": 0.12998472,
+  "loeo_r_min": -0.813778561,
+  "loeo_r_max": -0.531221302,
+  "bh_fdr_q_across_d20_family": 0.1168176636,
+  "theil_sen_slope_partial_residuals": -0.49365566347759704,
+  "cooks_threshold_4_over_n": 0.3076923076923077,
+  "max_cooks_year": 2019,
+  "max_cooks_d": 0.46852911204834286,
+  "n_cooks_above_4_over_n": 2
+}
+Top Cook's D events
+[
+  {
+    "year": 2019,
+    "cooks_d": 0.46852911204834286,
+    "leverage": 0.4185978686684658,
+    "residual": 0.8605422361286064
+  },
+  {
+    "year": 1982,
+    "cooks_d": 0.42665011430983646,
+    "leverage": 0.39814111989196854,
+    "residual": -0.8716414533207915
+  },
+  {
+    "year": 2015,
+    "cooks_d": 0.25891347287454136,
+    "leverage": 0.4074132863566825,
+    "residual": 0.6609025509732191
+  },
+  {
+    "year": 1991,
+    "cooks_d": 0.08706092863225487,
+    "leverage": 0.4054735253842249,
+    "residual": -0.38541390755653837
+  },
+  {
+    "year": 2006,
+    "cooks_d": 0.08101031725223624,
+    "leverage": 0.2784356097826097,
+    "residual": 0.544513507006102
+  }
+]

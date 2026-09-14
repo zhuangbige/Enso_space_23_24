@@ -1,0 +1,764 @@
+RESEARCH ARTICLE                            Revisiting the Recharge and Discharge Processes for
+10.1029/2020JC017075
+                                            Different Flavors of El Niño
+Key Points:
+                                            Soumi Chakravorty1         , Renellys C. Perez2      , C. Gnanaseelan3       , and Bruce T. Anderson4
+• The Simple Ocean Data Assimilation
+   system is used to study the              1
+                                             Cooperative Institute for Marine and Atmospheric Studies, University of Miami, Miami, FL, USA, 2NOAA Atlantic
+   composite behavior of eastern- and
+                                            Oceanographic and Meteorological Laboratory, Miami, FL, USA, 3Indian Institute of Tropical Meteorology, Ministry of
+   central-Pacific El Niño events
+• Tropical Pacific subsurface recharge-    Earth Sciences, Pune, India, 4Department of Earth and Environment, Boston University, Boston, MA, USA
+   discharge processes are significantly
+   different for cold eastern- and
+   central-Pacific El Niño events           Abstract El Niño-related sea surface temperature (SST) anomalies over the tropical Pacific Ocean
+• Positive subsurface heat content
+                                            impact global climates, but these impacts differ substantially for conventional cold tongue El Niño (CT El
+   anomalies are a not a precursor
+   of central Pacific El Niño events,       Niño) and the central Pacific El Niño (CP El Niño) events. This study is motivated by the need for a better
+   making them far less predictable         understanding of the recharge/discharge processes associated with these two different flavors of El Niño.
+                                            Composite analysis based on improved CT and CP El Niño identification methods applied to the Simple
+Correspondence to:                          Ocean Data Assimilation demonstrates that the recharge/discharge processes are active during CT El Niño
+S. Chakravorty,                             events. In contrast, for CP El Niño events, the recharge/discharge processes do not play a significant role.
+soumi.chakravorty@noaa.gov;                 Prior to a CT El Niño, warm water accumulates over the western Pacific due to off-equatorial anticyclonic
+soumi.chakravortyhb@gmail.com
+                                            wind stress curl. The onset of a CT El Niño is closely associated with the formation of a cyclonic
+                                            atmospheric circulation over the northwest Pacific in the winter and spring, which induces westerly wind
+Citation:
+                                            anomalies in the equatorial western Pacific and initiates eastward warm water transport. This leads to
+Chakravorty, S., Perez, R. C.,
+Gnanaseelan, C., & Anderson, B. T.
+                                            peak warming in the eastern equatorial Pacific the following winter, followed by the poleward discharge
+(2021). Revisiting the recharge and         of warm water. This quasi-cyclical behavior provides a measure of predictability. In contrast, the CP El
+discharge processes for different flavors   Niño events do not show a precursor subsurface warming signal along the tropical Pacific thermocline.
+of El Niño. Journal of Geophysical
+Research: Oceans, 126, e2020JC017075.
+                                            Instead, modest warm SST anomalies appear in boreal summer and peak in the fall, with weak subsurface
+https://doi.org/10.1029/2020JC017075        warming mainly in the fall during CP El Niños. Hence, CP El Niños are less predictable in terms of an
+                                            equatorial thermocline precursor than CT El Niño events.
+Received 14 DEC 2020
+Accepted 16 OCT 2021
+                                            Plain Language Summary The El Niño-Southern Oscillation (ENSO) is the largest source of
+                                            year-to-year climate variability. ENSO has a pronounced influence on regional and global circulation and
+Author Contributions:                       precipitation patterns and thus has considerable worldwide socio-economical impacts. El Niño, the warm
+Formal analysis: Soumi Chakravorty
+                                            phase of ENSO, exhibits modulation in the longitudinal location of its maximum warming, creating what
+Funding acquisition: Renellys C.
+Perez, C. Gnanaseelan                       is referred to as ENSO diversity. For conventional El Niño events, maximum surface warming is located in
+Validation: Renellys C. Perez, C.           the eastern equatorial Pacific, for which subsurface warming along the tropical Pacific has proven to serve
+Gnanaseelan, Bruce T. Anderson
+                                            as a predictor several months in advance. Previous studies disagree on whether this subsurface warming is
+Writing – original draft: Soumi
+Chakravorty                                 similarly essential for El Niño events that have peak surface warming in the central Pacific. We developed
+Writing – review & editing: Soumi           an improved method for identifying these two types of El Niño in an ocean reanalysis product. Using this
+Chakravorty, Renellys C. Perez, C.
+                                            improved method, we find no clear evidence of a subsurface warming precursor for the central Pacific
+Gnanaseelan, Bruce T. Anderson
+                                            El Niño events along the equator. This lack of a tropical subsurface precursor limits our ability to predict
+                                            these types of El Niño events.
+
+
+                                            1. Introduction
+                                            The El Niño-Southern Oscillation (ENSO) is the most energetic air-sea coupled process on interannual
+                                            time scales and profoundly impacts the global climate. ENSO is characterized by an irregular (2–7 years)
+                                            oscillation of warm and cold sea surface temperature (SST) anomalies over the eastern and central
+                                            equatorial Pacific. During the ENSO warm phase (El Niño), the tropical Pacific Ocean (TPO) and over-
+                                            lying atmosphere couple through the Bjerknes feedback mechanism (Bjerknes, 1969). The weakening
+                                            of the zonal (i.e., east-west) SST gradient over the equatorial Pacific weakens the tropical easterly trade
+© 2021 American Geophysical Union.          winds, further weakening the zonal SST gradient. However, this positive feedback cannot describe the
+All Rights Reserved. This article has       turnabout of El Nino and its transition to the La Niña (ENSO cold phase). To explain the dynamics of
+been contributed to by US Government
+employees and their work is in the          the ENSO cycle, Wyrtki (1975, 1985) developed the “buildup and draining” hypothesis. According to this
+public domain in the USA.                   hypothesis, the excessively strong easterly trade winds build up warm water in the western equatorial
+
+
+CHAKRAVORTY ET AL.                                                                                                                                       1 of 15
+                     Journal of Geophysical Research: Oceans                                               10.1029/2020JC017075
+
+
+                         Pacific. During an El Niño, this warm water discharges eastward and then poleward along the American
+                         coast to the subtropics, thereby terminating the El Niño. The next El Niño event cannot occur until an-
+                         other “buildup” of warm water occurs, but there is no required connection between successive El Niño
+                         events.
+
+                         Jin (1997) extended this “buildup and draining” hypothesis and proposed a conceptual self-sustained re-
+                         charge oscillator model. According to Jin (1997), the non-equilibrium between the zonally averaged ther-
+                         mocline depth and meridional volume transport (due to wind stress forcing) over the TPO serves as the
+                         memory of the coupled system. Prior to an El Niño, equatorial easterly winds generate two off-equatorial
+                         anticyclones, driving the equatorward water transport (convergence) and recharging the TPO with warm
+                         water. During an El Niño, westerly wind anomalies and the associated cyclonic wind stress curl discharge
+                         this warm water poleward (divergence) and lead to a shallower than normal zonal-mean thermocline (Mei-
+                         nen & McPhaden 2000, 2001). In addition to this meridional advective feedback, the eastward advection of
+                         positive (negative) subsurface heat content is recognized as an important process for the development of El
+                         Niño (La Niña) events (Jin & An, 1999; Picaut et al., 1997).
+
+                         It is well known now that different flavors of ENSO exist in the tropical Pacific (e.g., Capotondi et al., 2015;
+                         Kug et al., 2009; Wang & Weisberg, 2000). One expression of this ENSO diversity is the longitudinal varia-
+                         tion in the central location of SST warming. During the canonical or cold tongue (CT) El Niño events, the
+                         SST warming first appears in the eastern equatorial Pacific and extends westward. But some years, warm
+                         SST anomalies develop over the central equatorial Pacific (Capotondi et al., 2015; Timmermann et al., 2018;
+                         Wang, 1995), unlike the traditional El Niño. This second flavor of El Niño has been given various names in
+                         the literature, including the “‘El Niño Modoki” (Ashok et al., 2007), warm pool El Niño (Kug et al., 2009),
+                         with central Pacific (CP) El Niño (Yeh et al., 2009) being the most commonly used. While some literature
+                         considers ENSO positioning as a continuum of events (Cai et al., 2014; Capotondi et al., 2015; Fedorov
+                         et al., 2015; Johnson, 2013; Xie & Jin, 2018; Takahashi et al., 2011), others argue that multiple ENSO fla-
+                         vors exist (e.g., Johnson, 2013; Lee et al., 2014, 2018; Newman et al., 2011) and that two distinct flavors are
+                         most prominent: CT and CP El Niños (Ashok et al., 2007; Capotondi et al., 2015; Ham & Kug, 2012; Kao &
+                         Yu, 2009; Ren & Jin, 2011).
+
+                         Importantly, atmospheric teleconnections are distinct for different flavors of El Niño events (Kar-
+                         nauskas, 2013) due to their distinct spatial footprints related to the longitudinal position of SST warming
+                         and diabatic heating. The Intertropical Convergence Zone typically migrates equatorward from its mean
+                         position during CT El Niños but not during CP El Niños (Hu & Fedorov, 2018). Precipitation patterns across
+                         the globe exhibit differing relationships with the CT and CP El Niños (Feng et al., 2010; Karori et al., 2013;
+                         Lee et al., 2018; Wen et al., 2020; Xu et al., 2013, 2019). For example, CP El Niños have a more significant
+                         influence on East Asian summer monsoons during the developing phase, while CT El Niños exert a more
+                         substantial impact on Asian summer monsoons during the decaying phase (Yuan & Yang, 2012). Although
+                         CP El Niños are typically weaker than CT El Niño events (Capotondi et al., 2015), interest in CP El Niño
+                         events has also been fueled by the fact that they have become more frequent in occurrence during the late
+                         20th century and early 21st century compared to the early 20th century (Freund et al., 2019; Lee & McPhad-
+                         en, 2010; McPhaden et al., 2012; Yeh et al., 2009).
+
+                         There is no consensus yet about whether the recharge-discharge (Jin, 1997) process is active during both
+                         types of El Niños, nor whether an equatorial heat content precursor exists for both types of El Niño. Some
+                         studies documented significant similarities (Feng et al., 2018; Ren & Jin, 2013; Singh & Delcroix, 2013) in
+                         the subsurface variations between these two types of El Niño events and claimed that tropical Pacific ther-
+                         mocline variations could be a precursor of both types of El Niño (Wen et al., 2014). Others have uncovered
+                         differences (Capotondi et al., 2015; Kug et al., 2009; Yuan & Yang, 2012) in the equatorial thermocline
+                         feedback of these two El Niño flavors. Specifically, Kug et al. (2009) found that tropical Pacific thermocline
+                         feedbacks play a significant role in the evolution of CT El Niño events. In contrast, the zonal advection of
+                         the mean SST by zonal current anomalies plays a vital role in CP El Niño events.
+
+                         These seemingly conflicting findings may simply be an artifact of how CT and CP El Niño events have been
+                         defined in previous studies and may also be sensitive to which methods are used for analysis. For exam-
+                         ple, Kug et al. (2009) determined El Niño types using the Niño3 (SST anomalies averaged over 5°N–5°S,
+
+
+
+CHAKRAVORTY ET AL.                                                                                                               2 of 15
+                     Journal of Geophysical Research: Oceans                                               10.1029/2020JC017075
+
+
+                         150°W–90°W) and Niño4 (SST anomalies averaged over 5°N–5°S, 160°E−150°W) SST indices, which are
+                         highly correlated and may not be suitable for identifying diverse ENSO patterns. In contrast, Ren and
+                         Jin (2013) developed two new indices NCT and NCP to separate El Niño events into the two primary types
+                         and examined their evolution through regression analysis. However, we find here that the regression meth-
+                         ods used in Ren and Jin (2013) for the NCT and NCP indices do not robustly separate the CT and CP El Niño
+                         events (see Section 2.2). In comparison, Singh and Delcroix (2013) used cluster analysis of sea level anom-
+                         alies to isolate specific events and claimed that significant positive equatorial heat content anomalies are
+                         associated with both CP and CT El Niños. However, using sea level anomalies instead of SST anomalies in
+                         their cluster analysis may only represent the different modes of sea level variability and does not isolate
+                         the variability associated with the two El Niño types. As a result, this cluster analysis approach can lead to
+                         some sea level anomaly patterns commonly associated with the different phases of CT El Niño events to be
+                         misidentified as CP El Niño events. Thus, this type of partitioning may unduly influence composite results
+                         (e.g., Tan & Zhou, 2018).
+
+                         Given these seemingly contradictory results, we will revisit the partitioning of the two types of El Niños
+                         with more care, focus on how the events are preconditioned, and examine the temporal evolution of the re-
+                         charge–discharge processes associated with each event. Here, we primarily use the output from the Simple
+                         Ocean Data Assimilation (SODA; Carton & Giese, 2008) to examine the seasonal evolution of subsurface
+                         processes from the previous winter to the mature phase for both El Niño flavors. Section 2 describes the
+                         SODA reanalysis and ancillary datasets used in this analysis and the methodology to identify the two types
+                         of El Niños and construct the composites. Similarities and differences between CT and CP El Niño compos-
+                         ites are discussed in Section 3.1. An analysis of ENSO phase diagrams and the spatial structure of the center
+                         of heat indices (CHIs) are also presented in Sections 3.2 and 3.3, respectively, to better highlight differences
+                         in the development of CT and CP El Niño events in SODA. A discussion of the EOF modes of TPO sub-
+                         surface variability is provided in Section 3.4. In Section 3.5, we examine the zonal and meridional volume
+                         transports for both types of El Niño events with an eye toward how they influence the temporal evolution
+                         of those events. Lastly, we summarize the results in Section 4.
+
+
+
+                         2. Data Sets and Methodology
+                         2.1. SODA
+
+                         The analysis shown in this paper mainly uses SODA (Carton & Giese, 2008) version 2.1.6, available from
+                         1958 to 2008. For this version of SODA, the Parallel Ocean Program (Smith et al., 1992) model is forced with
+                         atmospheric data from the European Center for Medium-Range Weather Forecasts (ECMWF) Re-Analysis
+                         (ERA-40; Uppala et al., 2005) from January 1958 to December 2001 and then by QuikSCAT wind stress data
+                         for the remainder of the simulation (Risien & Chelton, 2008). To verify whether our results are robust and
+                         appear in longer SODA simulations, we repeat the analysis on SODA version 2.2.4 for 1901–2008, which
+                         uses 20CRv2c wind (Compo et al., 2011). Note, we excluded the first 40 years (1871–1900) of the SODA 2.2.4
+                         output as the observations assimilated during that time period are very sparse (Giese & Ray, 2011).
+
+                         The ENSO variability and frequency in SODA 2.1.6 and SODA 2.2.4 simulations are consistent with ob-
+                         servations (Chakravorty et al., 2014; Giese & Ray, 2011). Specifically, SODA temperatures compare very
+                         well with expendable bathythermograph (XBT) observations. Further, these simulations have realistic rep-
+                         resentations of ENSO diversity (Chattopadhyay et al., 2019; Ray & Giese, 2012).
+
+
+
+                         2.2. Identifying CT and CP El Niño Events
+
+                         To focus on interannual variability, we first remove the seasonal climatology and linear trend and apply a
+                         three-month running mean low-pass filter to all SODA time-series data. Next, we modify the methodology
+                         of Ren and Jin (2013) to get a more precise separation between CT and CP El Niño events. Following Ren
+                         and Jin (2011), we calculated NCT and NCP indices by performing a simple weighted combination of the
+                         area-averaged Niño3 (N3, 5°N–5°S, 150°W–90°W) and Niño4 (N4, 5°N–5°S, 160°E−150°W) SST anomaly
+                         using the following two Equations 1 and 2.
+
+
+
+CHAKRAVORTY ET AL.                                                                                                               3 of 15
+                     Journal of Geophysical Research: Oceans                                                  10.1029/2020JC017075
+
+
+
+
+                         Figure 1. Simple ocean data assimilation (SODA) (a) Niño3.4 SST anomalies (black line), high-frequency (HF) HF-NCT
+                         (cyan line), HF-NCP (green line), center of heat index (CHI) warm (red shading), and CHI cold (blue shading) indices
+                         (see Section 2.2). The pink and gray vertical bars, respectively, denote the selected Cold Tongue (CT) El Niño and
+                         Central Pacific (CP) El Niño years. (b) 15-month lead-lag correlation between HF-NCT and HF-NCP indices.
+
+
+
+                           N3   N 4 ,
+                         NCT
+                         (1)
+
+                           N 4   N3
+                         NCP
+                         (2)
+
+                         when N3 × N4 > 0 then α = 2/5, else α = 0
+
+                         α is the parameter of this transformation (Ren & Jin, 2013). Then, to extract only interannual (high-frequency)
+                         variability, we high-pass filtered (HF) the NCT and NCP time series using a 6-year and 8-year cutoff, respectively.
+                         Figure 1a shows a time series of HF-NCT and HF-NCP indices (cyan and green lines, respectively) calculated
+                         from SODA 2.1.6. Ren and Jin (2011) claim that these indices separate the CT El Niño and CP El Niño events
+                         clearly. Although the simultaneous (zero-lag) correlation (Figure 1b) between the two indices is indeed low
+
+
+
+CHAKRAVORTY ET AL.                                                                                                                    4 of 15
+                     Journal of Geophysical Research: Oceans                                                10.1029/2020JC017075
+
+
+                         (r ∼ 0.16), we found that the indices are significantly correlated at non-zero lags (Figure 1b), confirming that
+                         these indices are not entirely independent of one another in SODA. Although not shown, we find similar lagged
+                         co-variability between these indices when computed from the historical observed SST data from the Hadley
+                         Centre (HadISST, provided by the Met Office Hadley Centre), suggesting that lead-lag regression/correlation
+                         analysis using these two indices is not well suited to isolate the time evolution of distinct CT and CP El Niños.
+
+                         We compare NCT and NCP indices with the surface center of heat index (CHI, red and blue shading in Fig-
+                         ure 1), which allows the longitudinal center of SST anomalies to vary as a function of time and hence is not
+                         geographically fixed (Giese & Ray, 2011; Ray & Giese, 2012). Surface CHI is defined as the first moment of
+                         the equatorial Pacific SST anomalies (integrated between 5°S and 5°N and 120°E–80°W). If the area over
+                         which SST anomalies exceed 0.5°C is greater than or equal to the area of the Niño3.4 box for five consec-
+                         utive months, then the warming event qualifies as an El Niño event. We find that not all positive HF-NCP
+                         and HF-NCT values are associated with significant warming (positive CHI, red shading in Figure 1a) in the
+                         equatorial Pacific and hence would have been improperly identified as warm events (e.g., 1990, 2001 would
+                         have registered as warm events using HF-NCP but not using CHI). Thus, for our study, we identify the CT
+                         El Niño years as the years where HF-NCT and CHI warm indices are above 0.8°C for at least five months.
+                         CP Niño events are similarly chosen as the years where HF-NCP and CHI warm indices are above 0.8°C at
+                         least five consecutive months and are not already characterized as CT El Niño years. Note, with these added
+                         constraints, CP and CT events can be uniquely and objectively identified.
+
+                         With this methodology, we find that in SODA 2.1.6, there are eight CT El Niño years: 1963, 1965, 1972, 1976,
+                         1982, 1986, 1997, 2006 (pink shades in Figure 1a) and eight CP El Niño years: 1958, 1969, 1977, 1979, 1991,
+                         1994, 2002, 2004 (gray shades in Figure 1a). Note, when we apply this methodology to a longer SODA sim-
+                         ulation (1901–2008), SODA 2.2.4, we recover the exact partitioning of ENSO events during the time period
+                         of overlap from 1958 to 2008 (not shown). Over the full-time period of the SODA 2.2.4 simulation, 16 events
+                         are identified as CT El Niños, and 11 as CP El Niño events. This suggests the increase in the frequency of CP
+                         El Niños relative to CT El Niños in recent years, which is consistent with the shift in recent decades toward
+                         more CP El Niño events (Freund et al., 2019). These events identified in both SODA simulations agree well
+                         with the historical HadISST El Niño record from 1900-2008 (Meyers et al., 2007). From now on, we will
+                         focus on the analysis of fields from the SODA 2.1.6 (hereafter referred to as SODA).
+
+
+                         2.3. Composite Analysis
+
+                         We have constructed the SODA CT and CP El Niño composites during the year before the El Niño (Year[−1]),
+                         the year that leads to the mature phase of El Niño (Year[0] identified in Section 2.2), and the year after the
+                         El Niño peak (Year[1]) averaged across the eight CT El Niño and eight CP El Niño events. For the seasonal
+                         (3-month average) means, DJF corresponds to December–January–February, MAM corresponds to March-
+                         April-May, JJA corresponds to June–July–August, and SON corresponds September-October-November.
+                         Statistical significance for the composites is determined using a two-tailed Student’s t-test, and values sig-
+                         nificant at 95% confidence and greater are denoted with colored shading.
+
+
+                         3. Results
+                         3.1. CT and CP El Nino Composites
+
+                         To understand the evolution of the TPO associated with CT and CP El Niño events, we carried out a composite
+                         analysis on the various surface and subsurface variables. Figure 2 shows the seasonal composites of SST and
+                         surface wind stress anomalies, which lead to a mature CT El Niño (Figures 2a–2f) and CP El Niño (Figures 2g–
+                         2l) in SODA. An organized evolution of SST and wind stress anomaly patterns are observed over the TPO before
+                         the mature phase of the CT El Niño (left panels in Figure 2). During winter of the Year(−1), a surface cooling
+                         pattern is present along the equatorial Pacific in response to enhanced easterly trades in this region, consistent
+                         with a weak La Niña state (Figures 2a and 2b). In DJF(−1/0), a cyclonic atmospheric circulation is seen over
+                         the off-equatorial northwest Pacific, the southern branch of which induces equatorial westerly anomalies in
+                         the west Pacific (Figure 2c). By MAM(0), the La Niña type anomalies are replaced by warm SST anomalies in
+                         the eastern Pacific, which set up the Bjerknes feedback (Figure 2d). The warm eastern Pacific further strength-
+                         ens the westerly wind anomalies in the central equatorial Pacific in spring and summer (Figures 2d and 2e) and
+
+
+CHAKRAVORTY ET AL.                                                                                                                 5 of 15
+                               Journal of Geophysical Research: Oceans                                                          10.1029/2020JC017075
+
+
+
+
+Figure 2. Composite of simple ocean data assimilation (SODA) sea surface temperature (SST) (°C, shaded) and wind stress (Nm−2, vectors) anomalies for (left
+panels, a–f) Cold Tongue (CT) El Niño and (right panels, g–l) Central Pacific (CP) El Niño events during JJA(−1), SON(−1), DJF(−1/0), MAM(0), JJA(0), and
+SON(0). Color shading (vectors) show SST (wind stress) values that are significant with 95% confidence. See Section 2.2 for the list of years used for the SODA
+composites.
+
+
+                                        enhances the east Pacific warming, which leads to a mature CT El Niño by winter of the Year(0) (Figure 2f).
+                                        Note that the center of the western Pacific cyclonic circulation pattern shifts eastward during that time.
+
+                                        In contrast, for the CP El Niño, the SST and wind stress anomalies in TPO are not well-organized prior to
+                                        MAM(0) (Figures 2g–2i), indicating the lack of a robust tropical precursor for CP El Niño events. During
+                                        MAM(0) (Figure 2j), weak warming commences over the central equatorial Pacific due to the westerly wind
+                                        stress anomaly in that region. These SST and wind anomalies intensify in the subsequent seasons and lead
+                                        to a composite CP El Niño (Figures 2k and 2l); however, the anomalies are much less dramatic and localized
+                                        than for the composite CT El Niño (Figures 2d–2f).
+
+                                        The evolution of subsurface temperature anomalies along the equatorial Pacific (averaged over 3°S–3°N)
+                                        is shown in Figure 3 for both flavors of El Niño. A year before the mature CT El Niño event, the subsur-
+                                        face warming near the climatological depth of the 20°C isotherm (D20, which serves as a proxy for the
+                                        mean thermocline depth, red line in Figure 3) reflects the substantial warm water accumulation in the
+
+
+CHAKRAVORTY ET AL.                                                                                                                                       6 of 15
+                     Journal of Geophysical Research: Oceans                                                   10.1029/2020JC017075
+
+
+
+
+                         Figure 3. Depth-longitude plots of equatorial Pacific (averaged over 3°S–3°N) subsurface temperature (°C, shaded)
+                         anomalies and the depth of climatological 20°C thermocline ([m], red line) for the Simple Ocean Data Assimilation
+                         (SODA) (left panels, a–e) Cold Tongue (CT) El Niño and (right panels, f–j) Central Pacific (CP) El Niño composites
+                         during SON(−1), DJF(−1/0), MAM(0), JJA(0), and SON(0). Color shading shows the values significant with 95%
+                         confidence.
+
+
+                         western Pacific (SON[−1], Figure 3a). These warm waters eventually migrate eastward and upward along
+                         the zonally tilted thermocline (Figures 3a–3e) and warm the surface layer of the eastern equatorial Pacific
+                         in MAM(0). Similar processes are not active, and the warm water accumulation is insignificant during the
+                         CP El Niño events (Figures 3f–3j). The central Pacific warming during the CP El Niño becomes apparent in
+                         MAM(0) and JJA(0) (Figures 2j, 2k and 3h–3i). This warming is confined in the upper 100 m and is centered
+                         near 135°W (Figure 3i). In SON(0), though there is weak warming in the eastern Pacific along the thermo-
+                         cline (Figure 3j), the warming remains mostly confined to the upper layer of the central equatorial Pacific
+                         (Figures 2l and 3j). The magnitude of the surface and subsurface warming is significantly weaker in the CP
+                         El Niño composite than it is for the CT El Niño composite (compare left and right panels of Figures 2 and 3).
+
+                         To delve further into the analysis, we also examine the monthly evolution of SODA subsurface heat content
+                         (vertically integrated from surface to D20), wind stress, and wind stress curl in Figure 4 from Dec(−1) to
+                         Apr(0). In the CT El Niño composite, the presence of two off-equatorial anticyclones (a negative anomaly in
+                         NH and a positive anomaly in SH, blue contours in Figure 4a) is evident during Dec(−1). These anticyclon-
+                         ic wind-stress curls, by inducing Ekman downwelling, deepen the thermocline and accumulate the warm
+                         water in western TPO. Simultaneously in the far west Pacific, a prominent anomalous cyclonic circulation
+                         (positive wind stress curl) appears north of the equator (between 120°E and 140°E and centered at 10°N,
+                         Figure 4b), the southern branch of which induces equatorial westerly anomalies in the western Pacific. By
+                         Feb(0), this northwest Pacific cyclone shifts eastward and associated equatorial westerly anomalies cross
+
+
+CHAKRAVORTY ET AL.                                                                                                                     7 of 15
+                     Journal of Geophysical Research: Oceans                                                   10.1029/2020JC017075
+
+
+
+
+                         Figure 4. Monthly composite of simple ocean data assimilation (SODA) subsurface heat content (109 Jm−2, shaded),
+                         wind stress (Nm−2, vectors) and wind stress curl (10−8 N m−3, contours) anomalies for (left panels, a–e) Cold Tongue
+                         (CT) El Niño and (right panels, f–j) Central Pacific (CP) El Niño during from Dec(−1) to Apr(0). Color shading shows
+                         the values significant at 95% confidence.
+
+
+                         165°E. These winds push the accumulated warm water eastward and initiate the eastward transport of sub-
+                         surface warming from the west Pacific along the equatorial waveguide (Figure 4c). In Mar(0)–Apr(0), the
+                         entire equatorial thermocline becomes deeper than normal due to the accumulation of warm water over the
+                         central and eastern equatorial Pacific (Figures 4d and 4e). The thermocline deepens further in the eastern
+                         equatorial Pacific as the surface warming in the eastern Pacific initiates the Bjerknes feedback mechanism
+                         (1969). In contrast, the composite of CP El Niño does not exhibit a significant subsurface warming signal in
+                         the equatorial Pacific during these five months (Figures 4f–4j).
+
+
+                         3.2. ENSO Phase Diagrams
+
+                         The dependence of Niño3.4 SST anomalies on tropical Pacific upper ocean heat content changes can be
+                         further examined using phase diagrams to convey the broader aspects of the cyclic nature and tropical
+                         preconditioning of the ENSO cycle. The phase diagram is simply a plot of Niño3.4 SST anomalies versus
+                         warm water volume (WWV, the volume of water warmer than 20°C integrated over the region 5°N−5°S,
+                         120°E−80°W) anomalies, which illustrates the lead-lag relationship between the magnitude of WWV
+                         changes along the equator and the magnitude of subsequent SST anomalies in the Niño3.4 region. Figure 5
+                         shows the temporal evolution of the composite value of Niño3.4 SST and WWV anomalies in SODA for the
+                         CT and CP El Niño from 2 years before the mature phase of El Niño (Year[−2]) to the decaying year of El
+                         Niño (Year[1]). During the CT El Niño composite (Figure 5a), the near-circular phase-orbit is consistent
+
+
+CHAKRAVORTY ET AL.                                                                                                                      8 of 15
+                               Journal of Geophysical Research: Oceans                                                        10.1029/2020JC017075
+
+
+
+
+Figure 5. Phase diagrams of the Niño3.4 sea surface temperature (SST) anomalies (°C, along the x-axis) and warm water volume (WWV) anomalies (1014 m3)
+averaged over 5°N–5°S, 120°E–80°W along the y-axis for the (a) CT-El Niño and (b) CP El Niño composites in simple ocean data assimilation (SODA). The
+blue, red, green and purple lines represent the composite evolution during Year(−2), Year(−1), Year(0), and Year(1), respectively. Dots denote each monthly
+composite value.
+
+
+                                       with Jin’s (1997) recharge-discharge model. It implies that the variation of the Niño3.4 SST is highly cor-
+                                       related with WWV anomalies over the equatorial Pacific, with WWV variability leading the Niño3.4 SST
+                                       variability by several months. The sequence of this phase diagram is as follows: the first quadrant (with
+                                       negative SST and positive WWV anomalies) represents the recharge phase, the second quadrant (with pos-
+                                       itive SST and positive WWV anomalies) represents the El Niño state, the third quadrant (with positive SST
+                                       and negative WWV anomalies) represents the discharge phase, and the fourth quadrant (with negative
+                                       SST and negative WWV anomalies) represents the La Niña state (Meinen & McPhaden, 2000). The larger
+                                       the magnitude of WWV anomalies in the TPO, the stronger the amplitude of SST anomalies in the eastern
+                                       equatorial Pacific during CT El Niño events. The preponderance of values in the first quadrant of the phase
+                                       diagram (Figure 5a) suggests the long persistence of near-neutral conditions before a warm El Niño phase.
+                                       It demonstrates that the initiation of an El Niño event requires a trigger consistent with Figure 2 in Kess-
+                                       ler (2002). The relatively smooth phase transition from El Niño to La Niña in Year(1) (positive to negative
+                                       SSTA in Figure 5a, the purple line moving from quadrant three to quadrant four) is evident for the CT ENSO
+                                       composite. However, the deviation from a circular shape represents the asymmetry in the ENSO system.
+                                       In particular, the magnitude of negative SST anomalies (cold) is weaker during the La Niña event than the
+                                       magnitude of positive SST anomalies (warm) during the preceding CT El Niño event. Note that the phase
+                                       diagrams for individual CT El Niño events (not shown) behave similarly to the composite.
+
+                                       In contrast, the CP El Niño composite features a quasi-elliptical phase orbit that is mainly confined to the
+                                       second (positive SST and WWV anomaly) quadrant (Figure 5b) and indicates the rapid adjustment between
+                                       SST and WWV anomalies over the tropical Pacific during these events. Figure 5b also suggests that the CP
+                                       El Niños in Year(0) (green line) do not systematically lead to La Niñas in Year(1) (purple line).
+
+                                       We similarly examined the phase diagrams using the Niño3/4 index and found fairly similar orbital mo-
+                                       tions (not shown). Our phase diagram results confirm that WWV changes in the equatorial Pacific (Cane
+                                       et al., 1986; Wyrtki 1975, 1985) are helpful predictors of CT Niño events but poor predictors of CP Niño
+                                       events given the nearly concurrent WWV and SST changes.
+
+
+
+
+CHAKRAVORTY ET AL.                                                                                                                                    9 of 15
+                              Journal of Geophysical Research: Oceans                                                       10.1029/2020JC017075
+
+
+
+
+                                                                                     
+
+
+Figure 6. Scatter plots of simple ocean data assimilation (SODA) (a) Surface CHI amplitudes versus longitudes, (b) Sub-CHI depths versus longitudes, red
+symbols indicate warm months associated with CT El Niño years, and yellow symbols indicate CP El Niño years. Gray symbols are the annual climatological
+depth of the 20°C isotherm for particular longitude. Scatter plots of the seasonal mean (SON(−1), DJF(−1/0), MAM(0), JJA(0) and SON(0)) sub-CHI depth-
+longitude plots for individually (c) CT El Niño and (d) CP El Niño events.
+
+
+                                       3.3. Center of Heat Index (CHI)
+
+                                       The conventional El Niño indices (e.g., Niño3, Niño4, and Niño3.4) are unable to reflect the complex spatial
+                                       structure of SST and subsurface temperature anomalies during diverse El Niño events because of their fixed
+                                       areas of interest (zonal limits for Niño3.4 index are shown by black lines in Figures 6a and 6b). By contrast,
+                                       analysis of the surface CHI (defined in Section 2.2; Giese & Ray, 2011; Ray & Giese, 2012) provides the joint
+                                       distribution of the longitude and the CHI-amplitude of different El Niño events. We constructed the subsur-
+                                       face CHI (Sub-CHI, Ray & Giese, 2012) to augment the information obtained from the surface CHI index.
+                                       Sub-CHI is the first moment of equatorial subsurface temperature anomalies (averaged over 2°S–2°N) equal
+                                       or greater than 1°C and contains information about the depth of maximum warming (Giese & Ray, 2011).
+                                       We only considered the values of Sub-CHI corresponding to times when the surface CHI is also greater
+                                       than 0.5°C in an area equal to or greater than the area of the Niño3.4 box. Figure 6a shows the amplitude
+                                       versus longitude scatter plot of monthly surface CHI for CT El Niño (red triangles) and CP El Niño (yellow
+                                       dots) events (as defined in Section 2.2). This figure indicates that in SODA, the location of CHIs for CT El
+                                       Niño events (red triangles) is centered in the eastern Pacific between 140°W and 90°W, with the strongest
+                                       warming (CHI amplitudes between 1.5°C and 3°C) mainly concentrated east of 130°W. In the case of CP El
+                                       Niño events (yellow dots), the warming is confined in the longitude range 170°W–130°W (central Pacific),
+                                       and the amplitude of the warming is considerably weaker (with a maximum amplitude of 1.5°C).
+
+                                       Figure 6b shows the sub-CHI longitude versus sub-CHI depth distribution relative to the climatological
+                                       mean depth of the thermocline (here D20). This analysis illustrates that the subsurface warming in CT
+
+
+CHAKRAVORTY ET AL.                                                                                                                                 10 of 15
+                     Journal of Geophysical Research: Oceans                                                     10.1029/2020JC017075
+
+
+
+
+                         Figure 7. The first two leading EOF modes (a), (b) of simple ocean data assimilation (SODA) D20 (meters) and (c)
+                         Their corresponding principal components, PC-1 (red line), PC-2 (blue line) are overlaid onto the Niño3.4 (black
+                         dashed line) indices from years 1958 to 2008. The pink and gray vertical bars denote the selected cold tongue (CT) El
+                         Niño and Central Pacific (CP) El Niño years, respectively. Temporal evolution of D20 for PC-1 and PC-2, Niño3.4 SST
+                         index, and WWV index from Jun Year(−1) to May Year(1) for the (d) CT El Niño and (e) CP El Niño composites.
+
+
+                         El Niño events tends to lie close to the mean thermocline (gray dots in Figure 6b). In contrast, subsurface
+                         warming in CP El Niño events lies well above the mean thermocline and mainly concentrates in the central
+                         equatorial Pacific. Figures 6c and 6d illustrates the temporal evolution of Sub-CHI as a function of depth
+                         for the two flavors of El Niño in three-month averages from SON(−1) to SON(0). This figure indicates a
+                         coherent eastward propagation and shallowing of Sub-CHI with time during the evolution of the CT El
+                         Niños (Figure 6c). However, similar coherent evolution is notably absent during CP El Niños (Figure 6d).
+
+
+                         3.4. Leading Modes of Thermocline Variability in the TPO
+
+                         The dominant patterns of thermocline variability over TPO are identified using EOF analysis applied to the
+                         SODA D20 anomalies. Figures 7a and 7b shows the first two leading EOF modes of SODA D20 anomalies in
+                         the tropical Pacific and the corresponding principal component (PC) time series (Figure 7c). The first EOF
+                         mode reveals an east-west “tilting mode” (Meinen & McPhaden, 2000). It shows a zonal “dipole” pattern of
+
+
+CHAKRAVORTY ET AL.                                                                                                                      11 of 15
+                              Journal of Geophysical Research: Oceans                                                        10.1029/2020JC017075
+
+
+
+
+Figure 8. Temporal evolution of normalized (with respect to standard deviation) zonal transport across 170°E (averaged between 10°S and 5°N), meridional
+transport across 5°N and 10°S (averaged between 140°E and 80°W longitude range), and warm water volume (WWV) index are also compared for (a) Cold
+tongue (CT) El Niño and (b) Central Pacific El Niño (CP) El Niño composites. Zonal (meridional) transport is defined, so that positive indicates eastward
+(equatorward) transport.
+
+
+                                       subsurface heat content which is highly correlated (r ∼ 0.8, significant at the 95% level) with the Niño3.4.
+                                       The second EOF mode (Figure 7b) is a “monopole” of positive D20 anomalies (Meinen & McPhaden, 2000).
+                                       It is highly correlated with WWV anomalies (r = 0.94, significant at the 95% level) and represents the re-
+                                       charge phase.
+
+                                       Figures 7d and 7e shows the SODA CT and CP El Niño composites of D20 PC-1, PC-2, along with Niño3.4
+                                       SST and WWV anomalies. The changes in WWV over TPO for CT El Niño closely follow the evolution of
+                                       D20 PC-2 (dash blue and solid red line, respectively, in Figure 7c). The WWV over the TPO begins to in-
+                                       crease gradually during the previous winter of CT El Niño. On the other hand, the D20 PC-2, Niño3.4, and
+                                       WWV evolution during the CP El Niños do not vary significantly, and the anomalies are all substantially
+                                       weaker (Figure 7e).
+
+
+
+                                       3.5. Zonal and Meridional Heat Transports
+
+                                       The Jin (1997) recharge oscillator theory asserts that warm water buildup over the tropical Pacific is driven
+                                       by the meridional upper ocean heat transport due to wind stress curl. Subsequent studies (Bosc & Del-
+                                       croix, 2008; Lu et al., 2016; Meinen & McPhaden, 2001), however, have shown that the eastward zonal heat
+                                       transport also plays a vital role in the buildup of warm water over the central equatorial Pacific (Weisberg
+                                       & Wang, 1997) during El Niño events. In this section, we intend to examine the influence of zonal and me-
+                                       ridional heat transport on the changes in WWV over the equatorial Pacific before and during the CT and
+                                       CP El Niño events.
+
+                                       Figure 8 shows the normalized zonal heat transport across 170°E and meridional heat transport at 5°N and
+                                       10°S (both vertically integrated from the surface to the time-varying 20°C isotherm depth), as well as the
+                                       normalized WWV anomalies. Figure 8a shows that in the winter prior to CT El Niño events, the accumu-
+                                       lation of warm water in the TPO is associated with the equatorward meridional transport of warm water
+                                       (defined here as positive) across 5°N in the northern hemisphere and 10°S in the southern hemisphere. CT
+                                       El Niño events start with the rapid buildup in WWV over the equatorial Pacific, which coincides with the
+                                       eastward zonal transport of warm water at 170°E (Figure 8a, blue dashed and black lines, respectively) in
+                                       the Years (−1) and (0). During the mature phase of El Niño, the TPO is discharged by the poleward meridi-
+                                       onal transport (defined here as negative) of the warm water. Note, from Aug(0) onwards, the rapid poleward
+                                       discharge is evident in the northern hemisphere. However, equatorward meridional transport across 10°S
+                                       (Figure 8a) suggests that recharge persists for another season in the southern hemisphere. The poleward
+                                       meridional transport discharges the warm water and finally leads to a La Niña in Year(1).
+
+
+CHAKRAVORTY ET AL.                                                                                                                                  12 of 15
+                     Journal of Geophysical Research: Oceans                                            10.1029/2020JC017075
+
+
+                         On the other hand, no sustainable, significant eastward zonal transport (black line in Figure 8b) or equa-
+                         torward meridional transport (red and cyan lines in Figure 8b) are evident during the year preceding
+                         (Year[−1]) the CP El Niño, and the WWV anomalies remain weak throughout this time period (blue dashed
+                         line in Figure 8b). During the peak phase of CP El Niño, the westerly wind anomaly over the central Pa-
+                         cific generates very weak equator-ward meridional transport followed by eastward transport along 170°E
+                         (Figure 8b), which is not significant. These results support our claim that while the CT El Niño warming is
+                         associated with the subsurface recharging and discharging of warm water over the TPO, but that equatorial
+                         recharge-discharge cannot explain the CP Cl Niño warming.
+
+
+                         4. Summary and Discussion
+                         This study focuses on El Niño diversity concerning the recharge-discharge process and warm water precon-
+                         ditioning using SODA reanalysis data. Past studies (e.g., Cane & Zebiak, 1985; Meinen & McPhaden, 2000;
+                         Wyrtki, 1985) have reported the importance of increasing warm water volume in the equatorial Pacific
+                         (recharge) as a precursor of El Niño events. The seasonal evolution of surface and subsurface anomalies
+                         associated with CT and CP El Niño are shown using the SODA data set. Our analysis reveals that the re-
+                         charge-discharge process is exclusively related to the CT El Niño events. In contrast, the accumulation of
+                         warm water in the TPO prior to CP El Niño is insignificant.
+
+                         Seasonal composites of CT El Niño evolution show the organized SST and wind anomaly patterns in the
+                         TPO before the initiation of the event. Weak La Niña conditions prevail in the preceding year of the CT
+                         El Niño (from JJA[−1] to DJF[−1/0]). The stronger than normal easterlies form two off-equatorial anticy-
+                         clones and via wind-stress curl induced Ekman downwelling accumulate warm water in the west Pacific. In
+                         DJF(−1/0), a cyclonic circulation appears in the northwest Pacific, the southern branch of which induces
+                         an equatorial westerly in the far western Pacific. In MAM(0), the northwest Pacific cyclonic circulation
+                         shifts eastward and the associated equatorial westerly wind stress anomalies pushes the western TPO warm
+                         water toward the eastern Pacific. Eventually, it generates the well-known CT El Niño SST signature in sub-
+                         sequent months. In contrast, during CP El Niño events, wind and SST anomaly patterns are not significant
+                         until the summer of Year(0). Rather, the CP El Niño warm anomalies appear locally in the upper ocean of
+                         the central Pacific in JJA(0), and the anomalies are much weaker and shallower than they are during CT El
+                         Niño events.
+
+                         The surface and subsurface CHI analysis shows distinct separation in the longitudinal position and depth
+                         of the peak warming between CT and CP El Niños. The heat content anomalies are deeper and centered
+                         further eastward in the CT El Niños than in the CP El Niños. The presence of subsurface warming provides
+                         an equatorial thermocline precursor signal for CT El Niño events, and thus it is more predictable with a
+                         lead time of approximately one year. The phase orbit diagrams show different relations between eastern
+                         Pacific SST and TPO thermocline anomalies for CT and CP El Niño events. The near-circular phase orbits
+                         associated with CT El Niño events illustrate the oscillatory behavior of these events. Analysis of zonal and
+                         meridional heat transports shows an abrupt increase of WWV during the previous winter of the mature
+                         phase of El Niño that is mainly associated with the eastward transport of the warm water from the west to
+                         the east Pacific along the equatorial waveguide. On the other hand, the reduction of WWV during and after
+                         the mature phase of CT El Niño is driven by poleward transport.
+
+                         In contrast, for CP El Niño events, the quasi-elliptical phase diagram suggests the rapid adjustment be-
+                         tween TPO SST and equatorial thermocline anomalies, thus the absence of a lead-lag correlation between
+                         them. The lack of significant warm water buildup prior to these events supports our claim that the tropical
+                         subsurface precursor is absent in CP El Niños. This makes the CP El Niño events less predictable in terms
+                         of an equatorial thermocline precursor. It is important to note that we do not rule out the predictability
+                         of CP El Niños that arises from extratropical Pacific atmospheric forcing, such as through the Pacific me-
+                         ridional mode or trade wind charging mechanism (Anderson et al., 2015; Chakravorty et al., 2021; Pegion
+                         et al., 2020; Timmermann et al., 2018). We recognize that extratropical precursors might be the reason for
+                         the good prediction skill of CP El Niño events in hindcast simulations (Sun et al., 2018).
+
+                         In conclusion, this study finds that the recharge/discharge cycle is an integral component or feature of CT
+                         El Niño events. The recharge/discharge process does not play any significant role in CP El Niño events.
+
+
+CHAKRAVORTY ET AL.                                                                                                           13 of 15
+                                   Journal of Geophysical Research: Oceans                                                                         10.1029/2020JC017075
+
+
+
+                                          Data Availability Statement
+                                          SODA model fields were obtained from https://www.soda.umd.edu.
+
+
+
+Acknowledgments                           References
+This work was supported by DST grants
+(Inspire Faculty Award/2016/DST/          Anderson, G., & Perez, R. C. (2015). ENSO and non-ENSO induced charging and discharging of the equatorial Pacific. Climate Dynamics,
+INSPIRE/04/2015/000769), India (S.           45(9–10), 2309–2327. https://doi.org/10.1007/s00382-015-2472-x
+Chakravorty) and NSF grants AGS-          Ashok, K., Behera, S. K., Rao, S. A., Weng, H. Y., & Yamagata, T. (2007). El Niño Modoki and its possible teleconnection. Journal of Geo-
+1547137 (S. Chakravorty, R. C. Perez)        physical Research, 112, C11007. https://doi.org/10.1029/2006jc003798
+and AGS-1547412 (B. T. Anderson). SC      Bjerknes, J. (1969). Atmospheric teleconnections from the equatorial Pacific[J]. Monthly Weather Review, 97(3), 163–172. https://doi.org/1
+and R. C. Perez acknowledge support          0.1175/1520-0493(1969)097<0163:atftep>2.3.co;2
+from the NOAA/Atlantic Oceanograph-       Bosc, C., & Delcroix, T. (2008). Observed equatorial Rossby waves and ENSO-related warm water volume changes in the equatorial Pacific
+ic and Meteorological Laboratory. S.         Ocean. Journal of Geophysical Research, 113, C06003. https://doi.org/10.1029/2007JC004613
+Chakravorty was supported under the       Cai, W., Coauthors, S., Lengaigne, M., van Rensch, P., Collins, M., Vecchi, G., et al. (2014). Increasing frequency of extreme ElNiño events
+auspices of the Cooperative Institute        due to greenhouse warming. Nature Climate Change, 4, 111–116. https://doi.org/10.1038/nclimate2100
+for Marine and Atmospheric Studies        Cane, F., & Zebiak, S. E. (1985). A Theory for El Niño and the Southern Oscillation. Science, 228(4703), 1085–1087. https://doi.org/10.1126/
+(CIMAS), a Cooperative Institute of the      science.228.4703.1085
+University of Miami and NOAA, coop-       Cane, M. A., Zebiak, S. E., & Dolan, S. C. (1986). Experimental forecasts of El Niño. Nature, 321, 827–832. https://doi.org/10.1038/321827a0
+erative agreement NA20OAR4320472          Capotondi, A., Wittenberg, A. T., Newman, M., Di Lorenzo, E., Yu, J.-Y., Braconnot, P., et al. (2015). Understanding ENSO diversity. BAMS,
+and IISER, Pune, India. C. Gnanaseelan       96, 921–938. https://doi.org/10.1175/bams-d-13-00117.1
+acknowledges the support of Director,     Carton, J. A., & Giese, B. S. (2008). A reanalysis of ocean climate using simple ocean data assimilation (SODA). Monthly Weather Review,
+IITM and Ministry of Earth Sciences,         136, 2999–3017. https://doi.org/10.1175/2007mwr1978.1
+Govt. of India. The authors also thank    Chakravorty, S., Chowdary, J. S., & Gnanaseelan, C. (2014). Epochal changes in the seasonal evolution of tropical Indian Ocean warming
+Dr. M. Kersalé and the external review-      associated with El Niño. Climate Dynamics, 42, 805–822. https://doi.org/10.1007/s00382-013-1666-3
+ers for their helpful comments.           Chakravorty, S., Perez, R. C., Anderson, B. T., Giese, B. S., Larson, S. M., & Pivotti, V. (2020). Testing the trade wind charging mechanism
+                                             and its influence on ENSO variability. Journal of Climate, 33(17), 7391–7411. https://doi.org/10.1175/JCLI-D-19-0727.1
+                                          Chakravorty, S., Perez, R. C., Anderson, B. T., Larson, S. M., Giese, B. S., & Pivotti, V. (2021). Ocean dynamics are key to extratropical forc-
+                                             ing of El Niño. Journal of Climate, 34(21), 8739–8753. https://doi.org/10.1175/JCLI10.1175/jcli-d-20-0933.1
+                                          Chattopadhyay, R., Dixit, S. A., & Goswami, B. N. (2019). A Modal Rendition of ENSO Diversity. Scientific Reports, 9, 14014. https://doi.
+                                             org/10.1038/s41598-019-50409-4
+                                          Compo, G. P., Coauthors, J. S., Sardeshmukh, P. D., Matsui, N., Allan, R. J., Yin, X., et al. (2011). The twentieth century reanalysis project.
+                                             Quarterly Journal of the Royal Meteorological Society, 137, 1–28. https://doi.org/10.1002/qj.776
+                                          Fedorov, A. V., Hu, S., Lengaigne, M., & Guilyardi, E. (2015). The impact of westerly wind bursts and ocean initial state on the develop-
+                                             ment, and diversity of El Niño events. Climate Dynamics, 44(5-6), 1381–1401. https://doi.org/10.1007/s00382-014-2126-4
+                                          Feng, J., Jin, F., Hu, D., & Guan, S. (2018). Oceanic processes of upper ocean heat content associated with two types of ENSO. Journal of
+                                             Oceanography, 74, 219–238. https://doi.org/10.1007/s10872-017-0452-y
+                                          Feng, J., Wang, L., Chen, W., Fong, S. K., & Leong, K. C. (2010). Different impacts of two types of Pacific Ocean warming on Southeast
+                                             Asian rainfall during boreal winter. Journal of Geophysical Research, 115, D24122. https://doi.org/10.1029/2010jd014761
+                                          Freund, M. B., Henley, B. J., Karoly, D. J., McGregor, H. V., Abram, N. J., & Dommenget, D. (2019). Higher frequency of Central Pacific
+                                             El Niño events in recent decades relative to past centuries. Nature Geoscience, 12, 450–455. https://doi.org/10.1038/s41561-019-0353-3
+                                          Giese, B. S., & Ray, S. (2011). El Niño variability in simple ocean data assimilation (SODA), 1871-2008. Journal of Geophysical Research,
+                                             116, C02024. https://doi.org/10.1029/2010JC006695
+                                          Ham, Y., & Kug, J. (2012). How well do current climate models simulate two types of El Niño? Climate Dynamics, 39, 383–398. https://doi.
+                                             org/10.1007/s00382-011-1157-3
+                                          Hu, S., & Fedorov, A. V. (2018). Cross-equatorial winds control El Niño diversity and change. Nature Climate Change, 8(9), 798–802.
+                                             https://doi.org/10.1038/s41558-018-0248-0
+                                          Jin, F.-F. (1997). An equatorial ocean recharge paradigm for ENSO. Part I: Conceptual model. Journal of the Atmospheric Sciences, 54,
+                                             811–829. https://doi.org/10.1175/1520-0469(1997)054<0811:aeorpf>2.0.co;2
+                                          Jin, F.-F., & An, S.-I. (1999). Thermocline and zonal advective feedbacks within the equatorial ocean recharge oscillator model for ENSO.
+                                             Geophysical Research Letters, 26, 2989–2992. https://doi.org/10.1029/1999GL002297
+                                          Johnson, N. C. (2013). How many ENSO flavors can we distinguish? Journal of Climate, 26, 4816–4827. https://doi.org/10.1175/
+                                             jcli-d-12-00649.1
+                                          Kao, H. Y., & Yu, J. Y. (2009). Contrasting eastern-Pacific and central-Pacific types of ENSO. Journal of Climate, 22(3), 615–632. https://
+                                             doi.org/10.1175/2008jcli2309.1
+                                          Karnauskas, K. B. (2013). Can we distinguish canonical El Niño from Modoki? Geophysical Research Letters, 4019, 5246–5251. https://doi.
+                                             org/10.1002/grl.51007
+                                          Karori, M. A., Li, J., & Jin, F.-F. (2013). The asymmetric influence of the two types of El Niño and La Niña on summer rainfall over South-
+                                             east China. Journal of Climate, 26, 4567–4582. https://doi.org/10.1175/jcli-d-12-00324.1
+                                          Kessler, D. (2002). Is ENSO a cycle or a series of events? Geophysical Research Letters, 29(23), 40-1–40-4. https://doi.org/10.1029/2002GL015924
+                                          Kug, J. S., Jin, F. F., & An, S. I. (2009). Two types of El Niño events: Cold tongue El Niño and warm pool El Niño. Journal of Climate, 22,
+                                             1499–1515. https://doi.org/10.1175/2008JCLI2624.1
+                                          Lee, S. K., DiNezio, P. N., Chung, E. S., Yeh, S. W., Wittenberg, A. T., & Wang, C. (2014). Spring persistence, transition, and resurgence of
+                                             El Niño. Geophysical Research Letters, 41(23), 8578–8585. https://doi.org/10.1002/2014gl062484
+                                          Lee, S.-K., Lopez, H., Chung, E.-S., DiNezio, P., Yeh, S.-W., & Wittenberg, A. T. (2018). On the fragile relationship between El Niño and
+                                             California rainfall. Geophysical Research Letters, 45, 907–915. https://doi.org/10.1002/2017GL076197
+                                          Lee, T., & McPhaden, M. J. (2010). Increasing intensity of El Niño in the central-equatorial Pacific. Geophysical Research Letters, 37,
+                                             L14603. https://doi.org/10.1029/2010GL044007
+                                          Lu, Z., Liu, Z., & Zhu, J. (2016). Abrupt intensification of ENSO forced by deglacial ice-sheet retreat in CCSM3. Climate Dynamics, 46,
+                                             1877–1891. https://doi.org/10.1007/s00382-015-2681-3
+
+
+
+
+CHAKRAVORTY ET AL.                                                                                                                                                             14 of 15
+                     Journal of Geophysical Research: Oceans                                                                     10.1029/2020JC017075
+
+
+                         McPhaden, M. J. (2012). A 21st century shift in the relationship between ENSO SST and warm water volume anomalies. Geophysical Re-
+                            search Letters, 39. https://doi.org/10.1029/2012gl051826
+                         Meinen, C. S., & McPhaden, M. J. (2000). Observations of warm water volume changes in the equatorial Pacific and their relationship
+                            to El Niño and La Niña. Journal of Climate, 13, 3551–3559. https://doi.org/10.1175/1520-0442(2000)013<3551:OOWWVC>2.0.CO;2
+                         Meinen, C. S., & McPhaden, M. J. (2001). Warm water displacements in the equatorial Pacific during 1993–1999. Journal of Physical Ocean-
+                            ography, 31, 1324–1345. https://doi.org/10.1175/1520-0485(2001)031<1324:iviwwv>2.0.co;2
+                         Meyers, G., McIntosh, P., Lidia, P., & Mike, P. (2007). The years of El Niño, La Niña, and interactions with the tropical Indian Ocean. Jour-
+                            nal of Climate, 20, 2872–2880. https://doi.org/10.1175/jcli4152.1
+                         Newman, M., Shin, S.-I., & Alexander, M. A. (2011). Natural variation in ENSO flavors. Geophysical Research Letters, 38, 14. https://doi.
+                            org/10.1029/2011gl047658
+                         Pegion, K., Selman, C. M., Larson, S., Furtado, J. C., & Becker, E. J. (2020). The impact of the extratropics on ENSO diversity and predicta-
+                            bility. Climate Dynamics, 54, 4469–4484. https://doi.org/10.1007/s00382-020-05232-3
+                         Picaut, J., Masia, F., & du Penhoat, Y. (1997). An advective–reflective conceptual model for the oscillatory nature of the ENSO. Science, 277,
+                            663–666. https://doi.org/10.1126/science.277.5326.663
+                         Ray, S., & Giese, B. S. (2012). Historical changes in El Niño and La Niña characteristics in an ocean reanalysis. Journal of Geophysical
+                            Research, 117, C11007. https://doi.org/10.1029/2012JC008031
+                         Ren, H.-L., & Jin, F.-F. (2011). Niño indices for two types of ENSO. Geophysical Research Letters, 38, L04704. https://doi.
+                            org/10.1029/2010GL046031
+                         Ren, H.-L., & Jin, F.-F. (2013). Recharge oscillator mechanisms in two types of ENSO. Journal of Climate, 26(17), 6506–6523. https://doi.
+                            org/10.1175/JCLI-D-12-00601.1
+                         Risien, C. M., & Chelton, D. B. (2008). A global climatology of surface wind and wind stress fields from eight years of QuikSCAT Scatter-
+                            ometer data. Journal of Physical Oceanography, 38, 2379–2413. https://doi.org/10.1175/2008jpo3881.1
+                         Singh, A., & Delcroix, T. (2013). Eastern and central Pacific ENSO and their relationships to the recharge/discharge oscillator paradigm.
+                            Deep-Sea Research I, 82, 32–43. https://doi.org/10.1016/j.dsr.2013.08.002
+                         Smith, R., Dukowicz, J., & Malone, R. (1992). Parallel ocean general circulation modeling. Physica D, 60, 38–61. https://doi.
+                            org/10.1016/0167-2789(92)90225-c
+                         Sun, Q., Bo, W. U., Zhou, T. J., & Yan, Z. X. (2018). ENSO hindcast skill of the IAP-DecPreS near-term climate prediction system: Compar-
+                            ison of full field and anomaly initialization. Atmospheric and Oceanic Science Letters, 11(1), 54–62. https://doi.org/10.1080/16742834.
+                            2018.1411753
+                         Takahashi, K., Montecinos, A., Goubanova, K., & Dewitte, B. (2011). ENSO regimes: Reinterpreting the canonical and Modoki El Niño.
+                            Geophysical Research Letters, 38, L10704. https://doi.org/10.1029/2011gl047364
+                         Tan, S., & Zhou, H. (2018). The observed impacts of the two types of El Niño on the North Equatorial Countercurrent in the Pacific Ocean.
+                            Geophysical Research Letters, 45, 10–493, https://doi.org/10.1029/2018GL079273
+                         Timmermann, A., An, S., Kug, J., Jin, F.-F., Cai, W., Capotondi, A., et al. (2018). El Niño-Southern oscillation complexity. Nature, 559,
+                            535–545. https://doi.org/10.1038/s41586-018-0252-6
+                         Uppala, S. M., Kållberg, P. W., Simmons, A. J., Andrae, U., Costa Bechtold, V. D., Fiorino, M., et al. (2005). The ERA-40 re-analysis. Quar-
+                            terly Journal of the Royal Meteorological Society, 131, 2961–3012. https://doi.org/10.1256/qj.04.176
+                         Wang, B. (1995). Interdecadal changes in El Niño onset in the last four decades. Journal of Climate,8, 267–285. https://doi.org/10.1175/15
+                            20-0442(1995)008,0267:ICIENO.2.0.CO;2
+                         Wang, C., & Weisberg, R. H. (2000). The 1997–98 El Niño evolution relative to previous El Niño events. Journal of Climate, 13, 488–501.
+                            https://doi.org/10.1175/1520-0442(2000)013<0488:tenoer>2.0.co;2
+                         Weisberg, R. H., & Wang, C. (1997). Slow variability in the equatorial west-central Pacific in relation to ENSO. Journal of Climate, 10,
+                            1998–2017. https://doi.org/10.1175/1520-0442(1997)010<1998:svitew>2.0.co;2
+                         Wen, C., Kumar, A., Xue, Y., & McPhaden, M. J. (2014). Changes in tropical Pacific thermocline depth and their relationship to ENSO after
+                            1999. Journal of Climate, 27, 7230–7249. https://doi.org/10.1175/jcli-d-13-00518.1
+                         Wen, N., Li, L., & Luo, J. (2020). Direct impacts of different types of El Niño in developing summer on East Asian precipitation. Climate
+                            Dynamics, 55, 1087–1104. https://doi.org/10.1007/s00382-020-05315-1
+                         Wyrtki, K. (1975). El Niño—The dynamic response of the equatorial Pacific Ocean to atmospheric forcing[J]. Journal of Physical Oceanog-
+                            raphy, 5, 572–584. https://doi.org/10.1175/1520-0485(1975)005<0572:entdro>2.0.co;2
+                         Wyrtki, K. (1985). Water displacements in the Pacific and the genesis of El Niño cycles. Journal of Geophysical Research, 90, 7129–7132.
+                            https://doi.org/10.1029/jc090ic04p07129
+                         Xie, R., & Jin, F.-F. (2018). Two leading ENSO modes and El Niño Types in the Zebiak–Cane Model. Journal of Climate.
+                         Xu, K., Huang, Q., Tam, C., Wang, W., Chen, S., & Zhu, C. (2019). Roles of tropical SST patterns during two types of ENSO in modulating
+                            wintertime rainfall over southern China. Climate Dynamics, 52, 523–538. https://doi.org/10.1007/s00382-018-4170-y
+                         Xu, K., Zhu, C., & He, J. (2013). Two types of El Niño-related Southern oscillation and their different impacts on global land precipitation.
+                            Advances in Atmospheric Sciences, 30, 1743–1757. https://doi.org/10.1007/s00376-013-2272-3
+                         Yeh, S., Kug, J., Dewitte, B., Kwon, M.-H., Kirtman, B. P., & Jin, F.-F. (2009). El Niño in a changing climate. Nature, 461, 511–514. https://
+                            doi.org/10.1038/nature08316
+                         Yuan, Y., & Yang, S. (2012). Impacts of different types of El Niño on the East Asian climate: Focus on ENSO cycles. Journal of Climate, 25,
+                            7702–7722. https://doi.org/10.1175/jcli-d-11-00576.1
+
+
+
+
+CHAKRAVORTY ET AL.                                                                                                                                          15 of 15
+

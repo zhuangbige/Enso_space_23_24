@@ -1,0 +1,21 @@
+Source deck:
+- /Users/daiyue/Documents/Maryland/outputs/research_2026/ppt/厄尔尼诺异常暖量到达分配与耦合命运_逐图公式版_20260811.pptx
+
+Local budget evidence:
+- /Users/daiyue/Documents/Maryland/data/derived/research_2026/soda3_three_box_ohc_anomaly_budget_events.csv
+- /Users/daiyue/Documents/Maryland/data/derived/research_2026/soda3_three_box_ohc_anomaly_budget_monthly.csv
+- /Users/daiyue/Documents/Maryland/data/derived/research_2026/soda3_three_box_ohc_anomaly_face_reference_sensitivity.csv
+- /Users/daiyue/Documents/Maryland/scripts/analyze_soda3_three_box_ohc_anomaly_budget.py
+
+Local Q3 evidence:
+- /Users/daiyue/Documents/Maryland/data/derived/research_2026/nonh20_third_question_relationships.csv
+- /Users/daiyue/Documents/Maryland/data/derived/research_2026/nonh20_early_north_to_jiang_relationships.csv
+- /Users/daiyue/Documents/Maryland/data/derived/research_2026/nonh20_third_question_loeo_models.csv
+- /Users/daiyue/Documents/Maryland/data/derived/research_2026/nonh20_third_question_mediation_summary.csv
+- /Users/daiyue/Documents/Maryland/outputs/research_2026/ppt/.tmp_per_figure_formulas_20260811/audit_q3_robustness.py
+
+Scientific interpretation added in this revision:
+- Net surface heat flux is already explicit in the budget and is not assigned to the residual.
+- Total lateral heat convergence and the residual are invariant to a constant reference-temperature shift, while allocation among individual faces is reference-sensitive.
+- Candidate unresolved terms include the 300 m bottom vertical flux, vertical mixing/diffusion, SODA assimilation increments, and monthly temporal discretization mismatch.
+- Q3 correlations are treated as statistical constraints. The NE850-to-central-stress bridge is downgraded because its bootstrap interval crosses zero and its magnitude weakens strongly when 2015 is removed.

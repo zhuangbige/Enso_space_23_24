@@ -1,0 +1,5 @@
+- All output slides intentionally use source slide 1 as the imported theme-bearing frame. The scientific content frames in the source deck contain threshold-specific definitions and conclusions that must be removed.
+- The original blue/orange palette, white canvas, dark-navy typography, thin divider, and conclusion-band idiom are retained.
+- All legacy charts and raster figures are replaced by Python/Matplotlib exports based on current local derived datasets.
+- Figure titles and small in-figure annotations are removed; statistical values and interpretation are placed in slide text.
+- The new Jiang et al. preprint is used as a methodological starting point only. North-Pacific mechanisms are not asserted as direct ENSO mechanisms.

@@ -1,0 +1,6 @@
+response,response_label,group,unit,fit_start_year,fit_end_year,n_years,slope_per_degC,intercept,residual_sigma,fit_r
+precip,Equatorial Pacific rainfall,primary,mm day-1,1982,2023,42,1.144205233617788,-0.0251626546182633,0.5666460492820988,0.8428863883136196
+slp_drive,West-minus-east SLP drive,primary,hPa,1982,2023,42,1.0047051074666375,-0.017655760749471335,0.4184129477889343,0.8810663950740596
+wind_stress,Central-western Pacific zonal wind stress,primary,N m-2,1982,2023,42,0.009570758373758469,-0.0003480605192130659,0.008453412241222412,0.6599010655735568
+ncep_near_surface_wind,NCEP central-western Pacific near-surface wind,peng_analog,m s-1,1982,2023,42,0.7527170857340125,-0.03846315068234109,0.7978408304409506,0.5905975825360881
+ncep_minus_soi,NCEP minus-SOI-like pressure response,peng_analog,standardized index,1982,2023,42,1.0815949549083406,-0.025412535178578662,0.9258294445224196,0.6715248862518184

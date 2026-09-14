@@ -1,0 +1,137 @@
+{"kind":"deck","id":"pr/7oo6me","name":"Deck"}
+{"kind":"layout","layoutId":"dbbf0cb2-2d96-4781-a6ad-d056ec6f7fba","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"30bc7977-8e5f-4901-9b3d-be496aebce93","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/4si38p","slide":1,"title":"2026 年当前 ENSO/FEP 事件的实时气象诊断","textShapes":7}
+{"kind":"textbox","id":"sh/9knih4by","slide":1,"name":"deck-title","text":"2026 年当前 ENSO/FEP 事件的实时气象诊断","textPreview":"2026 年当前 ENSO/FEP 事件的实时气象诊断","textChars":27,"textLines":1,"bbox":[72,116,900,132]}
+{"kind":"textbox","id":"sh/2t83itgf","slide":1,"name":"deck-subtitle","text":"从 2023/24 海气脱耦问题出发：海温先行，风压滞后恢复，降水/对流仍不稳定","textPreview":"从 2023/24 海气脱耦问题出发：海温先行，风压滞后恢复，降水/对流仍不稳定","textChars":40,"textLines":1,"bbox":[76,276,850,92]}
+{"kind":"shape","id":"sh/re1w7mp0","slide":1,"name":"badge-当前数据版","bbox":[76,402,150,34]}
+{"kind":"textbox","id":"sh/kb6xkf6d","slide":1,"text":"当前数据版","textPreview":"当前数据版","textChars":5,"textLines":1,"bbox":[86,409,130,22]}
+{"kind":"shape","id":"sh/9w3m94fu","slide":1,"name":"badge-ERA5 + OISST + GPCP + OLR","bbox":[250,402,290,34]}
+{"kind":"textbox","id":"sh/25kb6xkf","slide":1,"text":"ERA5 + OISST + GPCP + OLR","textPreview":"ERA5 + OISST + GPCP + OLR","textChars":25,"textLines":1,"bbox":[260,409,270,22]}
+{"kind":"shape","id":"sh/rqd4vmtw","slide":1,"bbox":[992,0,288,720]}
+{"kind":"textbox","id":"sh/kjm1cfa9","slide":1,"name":"purpose-title","text":"汇报目标","textPreview":"汇报目标","textChars":4,"textLines":1,"bbox":[1028,126,190,40]}
+{"kind":"textbox","id":"sh/94fu18jq","slide":1,"name":"purpose-body","text":"把 2023/24 的“海洋强、大气弱”问题迁移到 2026 当前事件，用同一条数据链检查大气响应是否同步。","textPreview":"把 2023/24 的“海洋强、大气弱”问题迁移到 2026 当前事件，用同一条数据链检查大气响应是否同步。","textChars":54,"textLines":1,"bbox":[1028,180,190,248]}
+{"kind":"textbox","id":"sh/1orytsvu","slide":1,"name":"date","text":"Yue Dai | 2026-06-22","textPreview":"Yue Dai | 2026-06-22","textChars":20,"textLines":1,"bbox":[76,650,480,24]}
+{"kind":"notes","id":"nt/4si38p","slide":1,"text":""}
+{"kind":"slide","id":"sl/xsv0fx","slide":2,"title":"从 2023/24 问题到 2026 实时检验","textShapes":7}
+{"kind":"textbox","id":"sh/1032lszq","slide":2,"name":"title-2","text":"从 2023/24 问题到 2026 实时检验","textPreview":"从 2023/24 问题到 2026 实时检验","textChars":23,"textLines":1,"bbox":[56,40,1110,70]}
+{"kind":"shape","id":"sh/u9knih4b","slide":2,"name":"rule-112","bbox":[56,112,1168,1]}
+{"kind":"textbox","id":"sh/judg7ads","slide":2,"name":"footer-2","text":"第 2 页 | 研究逻辑","textPreview":"第 2 页 | 研究逻辑","textChars":12,"textLines":1,"bbox":[56,684,930,22]}
+{"kind":"textbox","id":"sh/c7u54zid","slide":2,"name":"footer-tag-2","text":"ENSO/FEP 2026 diagnostic","textPreview":"ENSO/FEP 2026 diagnostic","textChars":24,"textLines":1,"bbox":[980,684,240,22]}
+{"kind":"shape","id":"sh/1orytsvu","slide":2,"name":"left-callout","bbox":[66,150,530,410]}
+{"kind":"textbox","id":"sh/u18jqh0f","slide":2,"name":"left-callout-title","text":"原始问题","textPreview":"原始问题","textChars":4,"textLines":1,"bbox":[84,166,494,30]}
+{"kind":"textbox","id":"sh/jm1cfa9w","slide":2,"name":"left-callout-body","text":"Peng et al. (2025) 强调 2023/24 强厄尔尼诺主要由海洋动力过程生成，但它同时暴露出一个更适合继续做的问题：为什么强海温异常没有引发同等强度的风场、气压、降水和遥相关响应？","textPreview":"Peng et al. (2025) 强调 2023/24 强厄尔尼诺主要由海洋动力过程生成，但它同时暴露出一个更适合继续做的问题：为什么强海温异常没有引发同等强度的风场、气压、降水和遥相关响应？","textChars":98,"textLines":1,"bbox":[84,204,494,344]}
+{"kind":"shape","id":"sh/cvixczed","slide":2,"name":"right-callout","bbox":[650,150,530,410]}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":2,"name":"right-callout-title","text":"2026 的作用","textPreview":"2026 的作用","textChars":8,"textLines":1,"bbox":[668,166,494,30]}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":2,"name":"right-callout-body","text":"2026 年初到春季提供了一个实时对照案例：东太平洋/FEP 海温率先增暖后，低层风、海平面气压、降水和对流是否同步跟上？目前 ERA5 结果显示：风压在春季开始恢复，但降水/对流仍最滞后。","textPreview":"2026 年初到春季提供了一个实时对照案例：东太平洋/FEP 海温率先增暖后，低层风、海平面气压、降水和对流是否同步跟上？目前 ERA5 结果显示：风压在春季开始恢复，但降水/对流仍最滞后。","textChars":95,"textLines":1,"bbox":[668,204,494,344]}
+{"kind":"notes","id":"nt/xsv0fx","slide":2,"text":""}
+{"kind":"slide","id":"sl/317tsf","slide":3,"title":"数据链和缩写说明","textShapes":5}
+{"kind":"textbox","id":"sh/wra5gbq1","slide":3,"name":"title-3","text":"数据链和缩写说明","textPreview":"数据链和缩写说明","textChars":8,"textLines":1,"bbox":[56,40,1110,70]}
+{"kind":"shape","id":"sh/36hcrmhk","slide":3,"name":"rule-112","bbox":[56,112,1168,1]}
+{"kind":"textbox","id":"sh/eloj2t83","slide":3,"name":"footer-3","text":"第 3 页 | 数据说明","textPreview":"第 3 页 | 数据说明","textChars":12,"textLines":1,"bbox":[56,684,930,22]}
+{"kind":"textbox","id":"sh/l0rqd4vm","slide":3,"name":"footer-tag-3","text":"ENSO/FEP 2026 diagnostic","textPreview":"ENSO/FEP 2026 diagnostic","textChars":24,"textLines":1,"bbox":[980,684,240,22]}
+{"kind":"shape","id":"sh/7u54zido","slide":3,"name":"anom-callout","bbox":[72,585,1128,76]}
+{"kind":"textbox","id":"sh/ed8bat47","slide":3,"name":"anom-callout-title","text":"异常定义","textPreview":"异常定义","textChars":4,"textLines":1,"bbox":[90,595,1092,24]}
+{"kind":"textbox","id":"sh/psfil0rq","slide":3,"name":"anom-callout-body","text":"2026 异常 = 2026 某月或某时段平均值 − 1982-2022 同月气候态。MAM 表示 3-5 月，Apr-May 表示 4-5 月。完整 AMJ 仍需等待 2026 年 6 月月平均数据。","textPreview":"2026 异常 = 2026 某月或某时段平均值 − 1982-2022 同月气候态。MAM 表示 3-5 月，Apr-May 表示 4-5 月。完整 AMJ 仍需等待 2026 年 6 月月平均数据。","textChars":101,"textLines":1,"bbox":[90,623,1092,28]}
+{"kind":"table","id":"tb/1cfa9w3m","slide":3,"name":"glossary-table","rows":8,"cols":3,"preview":"缩写 | 含义 | 本报告中的用途","bbox":[70,138,1140,420]}
+{"kind":"notes","id":"nt/317tsf","slide":3,"text":""}
+{"kind":"slide","id":"sl/5jgx7k","slide":4,"title":"海温端：FEP 和东太平洋在春季率先增暖","textShapes":5}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":4,"name":"title-4","text":"海温端：FEP 和东太平洋在春季率先增暖","textPreview":"海温端：FEP 和东太平洋在春季率先增暖","textChars":20,"textLines":1,"bbox":[56,40,1110,70]}
+{"kind":"shape","id":"sh/nih4byhg","slide":4,"name":"rule-112","bbox":[56,112,1168,1]}
+{"kind":"textbox","id":"sh/yxobm58z","slide":4,"name":"footer-4","text":"第 4 页 | 图：OISST 指数和 FEP residual","textPreview":"第 4 页 | 图：OISST 指数和 FEP residual","textChars":32,"textLines":1,"bbox":[56,684,930,22]}
+{"kind":"textbox","id":"sh/9cvixcze","slide":4,"name":"footer-tag-4","text":"ENSO/FEP 2026 diagnostic","textPreview":"ENSO/FEP 2026 diagnostic","textChars":24,"textLines":1,"bbox":[980,684,240,22]}
+{"kind":"shape","id":"sh/r65wjudg","slide":4,"name":"note-4","bbox":[824,150,356,380]}
+{"kind":"textbox","id":"sh/ylc7u54z","slide":4,"name":"note-4-title","text":"这幅图表示什么","textPreview":"这幅图表示什么","textChars":7,"textLines":1,"bbox":[842,166,320,30]}
+{"kind":"textbox","id":"sh/90je9cvi","slide":4,"name":"note-4-body","text":"数据名称：NOAA OISST v2.1 月平均海表温度异常。\n\n读图重点：2026 年 2 月以后，FEP 与 Niño1+2 附近暖异常快速增强。FEP residual 为正，说明沿岸东太平洋暖异常相对热带太平洋整体更突出。\n\n与研究主线的关系：先确认“海温端确实先动了”，再检查大气是否同步响应。","textPreview":"数据名称：NOAA OISST v2.1 月平均海表温度异常。 |  | 读图重点：2026 年 2 月以后，FEP 与 Niño1+2 附近暖异常快速增强。FEP residual 为正，说明沿岸东太平洋暖异常相对热带太平洋整体更突出。 |  | 与研究主线的关系：先确认...","textChars":152,"textLines":5,"bbox":[842,204,320,314]}
+{"kind":"image","id":"im/d4vmtwra","slide":4,"name":"","geometry":"rect","alt":"FEP SST residual time series","bbox":[62,132,720,500]}
+{"kind":"notes","id":"nt/5jgx7k","slide":4,"text":""}
+{"kind":"slide","id":"sl/8eia1d","slide":5,"title":"海温与降水：暖异常清楚，但赤道降水没有整齐跟上","textShapes":5}
+{"kind":"textbox","id":"sh/qpg3ex0n","slide":5,"name":"title-5","text":"海温与降水：暖异常清楚，但赤道降水没有整齐跟上","textPreview":"海温与降水：暖异常清楚，但赤道降水没有整齐跟上","textChars":23,"textLines":1,"bbox":[56,40,1110,70]}
+{"kind":"shape","id":"sh/xczed8v6","slide":5,"name":"rule-112","bbox":[56,112,1168,1]}
+{"kind":"textbox","id":"sh/8v6psfil","slide":5,"name":"footer-5","text":"第 5 页 | 图：OISST SST + GPCP 降水","textPreview":"第 5 页 | 图：OISST SST + GPCP 降水","textChars":29,"textLines":1,"bbox":[56,684,930,22]}
+{"kind":"textbox","id":"sh/fyxobm58","slide":5,"name":"footer-tag-5","text":"ENSO/FEP 2026 diagnostic","textPreview":"ENSO/FEP 2026 diagnostic","textChars":24,"textLines":1,"bbox":[980,684,240,22]}
+{"kind":"shape","id":"sh/x4nap4r6","slide":5,"name":"note-5","bbox":[824,150,356,380]}
+{"kind":"textbox","id":"sh/8jqh0fep","slide":5,"name":"note-5-title","text":"这幅图表示什么","textPreview":"这幅图表示什么","textChars":7,"textLines":1,"bbox":[842,166,320,30]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":5,"name":"note-5-body","text":"数据名称：OISST 海表温度异常和 GPCP 月降水异常。\n\n读图重点：MAM 与 Apr-May 的东太平洋/FEP 偏暖明显，但 GPCP 降水增强中心偏向西太平洋和赤道以北；赤道中东太平洋没有形成连续强正降水带。\n\n创新点：把 2023/24 的“海温-降水不同步”问题迁移到 2026 实时个例。","textPreview":"数据名称：OISST 海表温度异常和 GPCP 月降水异常。 |  | 读图重点：MAM 与 Apr-May 的东太平洋/FEP 偏暖明显，但 GPCP 降水增强中心偏向西太平洋和赤道以北；赤道中东太平洋没有形成连续强正降水带。 |  | 创新点：把 2023/24 的“海...","textChars":153,"textLines":5,"bbox":[842,204,320,314]}
+{"kind":"image","id":"im/za1gvy90","slide":5,"name":"","geometry":"rect","alt":"OISST and GPCP spatial anomaly maps","bbox":[62,132,720,500]}
+{"kind":"notes","id":"nt/8eia1d","slide":5,"text":""}
+{"kind":"slide","id":"sl/xtabfh","slide":6,"title":"对流独立检验：OLR 支持降水中心空间错位","textShapes":5}
+{"kind":"textbox","id":"sh/t83itgfm","slide":6,"name":"title-6","text":"对流独立检验：OLR 支持降水中心空间错位","textPreview":"对流独立检验：OLR 支持降水中心空间错位","textChars":21,"textLines":1,"bbox":[56,40,1110,70]}
+{"kind":"shape","id":"sh/mhk3q5o7","slide":6,"name":"rule-112","bbox":[56,112,1168,1]}
+{"kind":"textbox","id":"sh/b2hwfyxo","slide":6,"name":"footer-6","text":"第 6 页 | 图：CPC Blended OLR anomaly","textPreview":"第 6 页 | 图：CPC Blended OLR anomaly","textChars":33,"textLines":1,"bbox":[56,684,930,22]}
+{"kind":"textbox","id":"sh/4byhgn29","slide":6,"name":"footer-tag-6","text":"ENSO/FEP 2026 diagnostic","textPreview":"ENSO/FEP 2026 diagnostic","textChars":24,"textLines":1,"bbox":[980,684,240,22]}
+{"kind":"shape","id":"sh/m58z25kb","slide":6,"name":"note-6","bbox":[824,150,356,380]}
+{"kind":"textbox","id":"sh/bq1oryts","slide":6,"name":"note-6-title","text":"这幅图表示什么","textPreview":"这幅图表示什么","textChars":7,"textLines":1,"bbox":[842,166,320,30]}
+{"kind":"textbox","id":"sh/47y1kre1","slide":6,"name":"note-6-body","text":"数据名称：CPC Blended OLR 日异常时段平均。\n\n读图重点：OLR 负异常代表深对流增强，正异常代表对流偏弱。2026 春季对流增强更偏西太平洋/中太平洋北侧，赤道中东太平洋没有典型强厄尔尼诺式的大范围增强对流。\n\n作用：避免只依赖 GPCP，给“降水/对流仍滞后或错位”增加独立约束。","textPreview":"数据名称：CPC Blended OLR 日异常时段平均。 |  | 读图重点：OLR 负异常代表深对流增强，正异常代表对流偏弱。2026 春季对流增强更偏西太平洋/中太平洋北侧，赤道中东太平洋没有典型强厄尔尼诺式的大范围增强对流。 |  | 作用：避免只依赖 GPCP，给...","textChars":149,"textLines":5,"bbox":[842,204,320,314]}
+{"kind":"image","id":"im/8z25kb6x","slide":6,"name":"","geometry":"rect","alt":"CPC OLR anomaly maps","bbox":[62,132,720,500]}
+{"kind":"notes","id":"nt/xtabfh","slide":6,"text":""}
+{"kind":"slide","id":"sl/m25746","slide":7,"title":"ERA5 风压新证据：春季风场和气压开始恢复","textShapes":5}
+{"kind":"textbox","id":"sh/5sneloj2","slide":7,"name":"title-7","text":"ERA5 风压新证据：春季风场和气压开始恢复","textPreview":"ERA5 风压新证据：春季风场和气压开始恢复","textChars":22,"textLines":1,"bbox":[56,40,1110,70]}
+{"kind":"shape","id":"sh/u54zidon","slide":7,"name":"rule-112","bbox":[56,112,1168,1]}
+{"kind":"textbox","id":"sh/nqxs72x4","slide":7,"name":"footer-7","text":"第 7 页 | 图：ERA5 10 m 风和 MSLP","textPreview":"第 7 页 | 图：ERA5 10 m 风和 MSLP","textChars":27,"textLines":1,"bbox":[56,684,930,22]}
+{"kind":"textbox","id":"sh/czed8v6p","slide":7,"name":"footer-tag-7","text":"ENSO/FEP 2026 diagnostic","textPreview":"ENSO/FEP 2026 diagnostic","textChars":24,"textLines":1,"bbox":[980,684,240,22]}
+{"kind":"shape","id":"sh/ytsvu9kn","slide":7,"name":"note-7","bbox":[824,150,356,380]}
+{"kind":"textbox","id":"sh/neloj2t8","slide":7,"name":"note-7-title","text":"这幅图表示什么","textPreview":"这幅图表示什么","textChars":7,"textLines":1,"bbox":[842,166,320,30]}
+{"kind":"textbox","id":"sh/gn29gr2p","slide":7,"name":"note-7-body","text":"数据名称：ERA5 10 m 风异常和平均海平面气压异常。\n\n读图重点：MAM 和 Apr-May 赤道中西太平洋出现偏西风异常，热带中东太平洋气压偏低，Tahiti-Darwin 压差开始转为更厄尔尼诺型。\n\n相较旧判断：NCEP 只到 2 月时只能说明年初不同步；ERA5 1-5 月显示春季风压并非持续无响应，而是滞后恢复。","textPreview":"数据名称：ERA5 10 m 风异常和平均海平面气压异常。 |  | 读图重点：MAM 和 Apr-May 赤道中西太平洋出现偏西风异常，热带中东太平洋气压偏低，Tahiti-Darwin 压差开始转为更厄尔尼诺型。 |  | 相较旧判断：NCEP 只到 2 月时只能说明年...","textChars":165,"textLines":5,"bbox":[842,204,320,314]}
+{"kind":"image","id":"im/4vmtwra5","slide":7,"name":"","geometry":"rect","alt":"ERA5 surface wind and MSLP maps","bbox":[62,132,720,500]}
+{"kind":"notes","id":"nt/m25746","slide":7,"text":""}
+{"kind":"slide","id":"sl/mr1urj","slide":8,"title":"ERA5 低层风、降水与垂直运动：响应恢复并不同步","textShapes":5}
+{"kind":"textbox","id":"sh/54zidony","slide":8,"name":"title-8","text":"ERA5 低层风、降水与垂直运动：响应恢复并不同步","textPreview":"ERA5 低层风、降水与垂直运动：响应恢复并不同步","textChars":25,"textLines":1,"bbox":[56,40,1110,70]}
+{"kind":"shape","id":"sh/udg7adsj","slide":8,"name":"rule-112","bbox":[56,112,1168,1]}
+{"kind":"textbox","id":"sh/nyd0z610","slide":8,"name":"footer-8","text":"第 8 页 | 图：ERA5 降水、u850、omega850","textPreview":"第 8 页 | 图：ERA5 降水、u850、omega850","textChars":31,"textLines":1,"bbox":[56,684,930,22]}
+{"kind":"textbox","id":"sh/cvixczed","slide":8,"name":"footer-tag-8","text":"ENSO/FEP 2026 diagnostic","textPreview":"ENSO/FEP 2026 diagnostic","textChars":24,"textLines":1,"bbox":[980,684,240,22]}
+{"kind":"shape","id":"sh/upwb2hwf","slide":8,"name":"note-8","bbox":[824,150,356,380]}
+{"kind":"textbox","id":"sh/nap4r65w","slide":8,"name":"note-8-title","text":"这幅图表示什么","textPreview":"这幅图表示什么","textChars":7,"textLines":1,"bbox":[842,166,320,30]}
+{"kind":"textbox","id":"sh/c7u54zid","slide":8,"name":"note-8-body","text":"数据名称：ERA5 总降水、850 hPa 纬向风、850 hPa 垂直速度。\n\n读图重点：u850 在 MAM/Apr-May 已转为偏西风，说明低层风分支开始跟上；但降水增强中心仍偏西/偏北，中太平洋降水和 omega850 没有表现为稳定强上升响应。\n\n关键结论：风压分支恢复早于降水/对流分支。","textPreview":"数据名称：ERA5 总降水、850 hPa 纬向风、850 hPa 垂直速度。 |  | 读图重点：u850 在 MAM/Apr-May 已转为偏西风，说明低层风分支开始跟上；但降水增强中心仍偏西/偏北，中太平洋降水和 omega850 没有表现为稳定强上升响应。 |  |...","textChars":151,"textLines":5,"bbox":[842,204,320,314]}
+{"kind":"image","id":"im/kzupwb2h","slide":8,"name":"","geometry":"rect","alt":"ERA5 precipitation u850 omega maps","bbox":[62,132,720,500]}
+{"kind":"notes","id":"nt/mr1urj","slide":8,"text":""}
+{"kind":"slide","id":"sl/zjozvp","slide":9,"title":"经度-时间图：年初偏东风，春季风压恢复，降水滞后","textShapes":5}
+{"kind":"textbox","id":"sh/jm1cfa9w","slide":9,"name":"title-9","text":"经度-时间图：年初偏东风，春季风压恢复，降水滞后","textPreview":"经度-时间图：年初偏东风，春季风压恢复，降水滞后","textChars":24,"textLines":1,"bbox":[56,40,1110,70]}
+{"kind":"shape","id":"sh/c7u54zid","slide":9,"name":"rule-112","bbox":[56,112,1168,1]}
+{"kind":"textbox","id":"sh/1orytsvu","slide":9,"name":"footer-9","text":"第 9 页 | 图：ERA5 赤道 Hovmoller","textPreview":"第 9 页 | 图：ERA5 赤道 Hovmoller","textChars":27,"textLines":1,"bbox":[56,684,930,22]}
+{"kind":"textbox","id":"sh/u9knih4b","slide":9,"name":"footer-tag-9","text":"ENSO/FEP 2026 diagnostic","textPreview":"ENSO/FEP 2026 diagnostic","textChars":24,"textLines":1,"bbox":[980,684,240,22]}
+{"kind":"shape","id":"sh/cfa9w3m9","slide":9,"name":"note-9","bbox":[824,150,356,380]}
+{"kind":"textbox","id":"sh/1032lszq","slide":9,"name":"note-9-title","text":"这幅图表示什么","textPreview":"这幅图表示什么","textChars":7,"textLines":1,"bbox":[842,166,320,30]}
+{"kind":"textbox","id":"sh/udg7adsj","slide":9,"name":"note-9-body","text":"数据名称：ERA5 赤道平均 u10、u850、降水和 omega850 异常。\n\n读图重点：1-2 月中太平洋风场为明显偏东风；3-5 月中西太平洋风场逐渐转偏西。降水在 1-4 月仍大范围偏弱，5 月才出现更多局地恢复。\n\n这张图最直接支持“阶段性恢复”而不是“全程脱耦”。","textPreview":"数据名称：ERA5 赤道平均 u10、u850、降水和 omega850 异常。 |  | 读图重点：1-2 月中太平洋风场为明显偏东风；3-5 月中西太平洋风场逐渐转偏西。降水在 1-4 月仍大范围偏弱，5 月才出现更多局地恢复。 |  | 这张图最直接支持“阶段性恢复”...","textChars":139,"textLines":5,"bbox":[842,204,320,314]}
+{"kind":"image","id":"im/a1gvy90j","slide":9,"name":"","geometry":"rect","alt":"ERA5 equatorial Hovmoller","bbox":[62,132,720,500]}
+{"kind":"notes","id":"nt/zjozvp","slide":9,"text":""}
+{"kind":"slide","id":"sl/34204p","slide":10,"title":"关键数值：2026 当前事件呈现阶段性耦合恢复","textShapes":5}
+{"kind":"textbox","id":"sh/58z25kb6","slide":10,"name":"title-10","text":"关键数值：2026 当前事件呈现阶段性耦合恢复","textPreview":"关键数值：2026 当前事件呈现阶段性耦合恢复","textChars":23,"textLines":1,"bbox":[56,40,1110,70]}
+{"kind":"shape","id":"sh/yhgn29gr","slide":10,"name":"rule-112","bbox":[56,112,1168,1]}
+{"kind":"textbox","id":"sh/n29gr2p8","slide":10,"name":"footer-10","text":"第 10 页 | 表：ERA5 区域统计","textPreview":"第 10 页 | 表：ERA5 区域统计","textChars":20,"textLines":1,"bbox":[56,684,930,22]}
+{"kind":"textbox","id":"sh/gbq1oryt","slide":10,"name":"footer-tag-10","text":"ENSO/FEP 2026 diagnostic","textPreview":"ENSO/FEP 2026 diagnostic","textChars":24,"textLines":1,"bbox":[980,684,240,22]}
+{"kind":"shape","id":"sh/y90je9cv","slide":10,"name":"takeaway-table","bbox":[74,600,1120,78]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":10,"name":"takeaway-table-title","text":"一句话判断","textPreview":"一句话判断","textChars":5,"textLines":1,"bbox":[92,610,1084,24]}
+{"kind":"textbox","id":"sh/cbulwval","slide":10,"name":"takeaway-table-body","text":"判断：海温/FEP 先行；1-2 月风压和降水不同步；3-5 月风压恢复；降水/对流仍最滞后。","textPreview":"判断：海温/FEP 先行；1-2 月风压和降水不同步；3-5 月风压恢复；降水/对流仍最滞后。","textChars":47,"textLines":1,"bbox":[92,638,1084,30]}
+{"kind":"table","id":"tb/4zidonyd","slide":10,"name":"key-numbers-table","rows":9,"cols":4,"preview":"时段 | 指标 | 异常值 | 含义","bbox":[62,138,1156,438]}
+{"kind":"notes","id":"nt/34204p","slide":10,"text":""}
+{"kind":"slide","id":"sl/2s9bb1","slide":11,"title":"相较前一版，ERA5 改变了我们能说的话","textShapes":7}
+{"kind":"textbox","id":"sh/1gvy90je","slide":11,"name":"title-11","text":"相较前一版，ERA5 改变了我们能说的话","textPreview":"相较前一版，ERA5 改变了我们能说的话","textChars":20,"textLines":1,"bbox":[56,40,1110,70]}
+{"kind":"shape","id":"sh/qtcj6tov","slide":11,"name":"rule-112","bbox":[56,112,1168,1]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":11,"name":"footer-11","text":"第 11 页 | 阶段判断","textPreview":"第 11 页 | 阶段判断","textChars":13,"textLines":1,"bbox":[56,684,930,22]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":11,"name":"footer-tag-11","text":"ENSO/FEP 2026 diagnostic","textPreview":"ENSO/FEP 2026 diagnostic","textChars":24,"textLines":1,"bbox":[980,684,240,22]}
+{"kind":"shape","id":"sh/xs72x4na","slide":11,"name":"left-callout","bbox":[66,150,530,410]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":11,"name":"left-callout-title","text":"前一版能说什么","textPreview":"前一版能说什么","textChars":7,"textLines":1,"bbox":[84,166,494,30]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":11,"name":"left-callout-body","text":"基于 OISST、GPCP、OLR 和 NCEP 1-2 月资料，前一版主要能说明：2026 年初海温已经转暖，但低层风、气压和降水还没有同步响应。由于 NCEP 风压资料只到 2 月，不能判断春季以后是否继续弱响应。","textPreview":"基于 OISST、GPCP、OLR 和 NCEP 1-2 月资料，前一版主要能说明：2026 年初海温已经转暖，但低层风、气压和降水还没有同步响应。由于 NCEP 风压资料只到 2 月，不能判断春季以后是否继续弱响应。","textChars":109,"textLines":1,"bbox":[84,204,494,344]}
+{"kind":"shape","id":"sh/8jqh0fep","slide":11,"name":"right-callout","bbox":[650,150,530,410]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":11,"name":"right-callout-title","text":"现在能说什么","textPreview":"现在能说什么","textChars":6,"textLines":1,"bbox":[668,166,494,30]}
+{"kind":"textbox","id":"sh/1w7mp0bi","slide":11,"name":"right-callout-body","text":"ERA5 1-5 月补齐后，结论更精细：年初不同步是真实存在的；但 3-5 月风场和气压开始恢复到更厄尔尼诺型。仍然最值得追踪的是降水、OLR 和垂直运动，它们表现出滞后、偏北或空间破碎。","textPreview":"ERA5 1-5 月补齐后，结论更精细：年初不同步是真实存在的；但 3-5 月风场和气压开始恢复到更厄尔尼诺型。仍然最值得追踪的是降水、OLR 和垂直运动，它们表现出滞后、偏北或空间破碎。","textChars":94,"textLines":1,"bbox":[668,204,494,344]}
+{"kind":"notes","id":"nt/2s9bb1","slide":11,"text":""}
+{"kind":"slide","id":"sl/hym4rp","slide":12,"title":"下一步：把 2026 做成与 2023/24 同口径的对照","textShapes":6}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":12,"name":"title-12","text":"下一步：把 2026 做成与 2023/24 同口径的对照","textPreview":"下一步：把 2026 做成与 2023/24 同口径的对照","textChars":29,"textLines":1,"bbox":[56,40,1110,70]}
+{"kind":"shape","id":"sh/1gvy90je","slide":12,"name":"rule-112","bbox":[56,112,1168,1]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":12,"name":"footer-12","text":"第 12 页 | 下一步计划","textPreview":"第 12 页 | 下一步计划","textChars":14,"textLines":1,"bbox":[56,684,930,22]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":12,"name":"footer-tag-12","text":"ENSO/FEP 2026 diagnostic","textPreview":"ENSO/FEP 2026 diagnostic","textChars":24,"textLines":1,"bbox":[980,684,240,22]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":12,"name":"next-step-bullets","text":"• 等待 2026 年 6 月 ERA5 月平均，正式生成 AMJ 2026，而不是只用 MAM 或 Apr-May 近似。\n• 把 ERA5 风压结果接入前面 2023/24 的 response-ratio / observed-vs-expected 框架，用同一公式比较 2023 与 2026。\n• 用同一套 ERA5 变量回算 2023/24 AMJ/JJA，避免不同资料集造成的结论差异。\n• 加入 200 hPa divergence 或 velocity potential，补 Walker circulation 上层分支。\n• 继续保留 OLR 和 GPCP 双约束，判断降水/对流中心是否从偏北/偏西转向赤道中东太平洋。","textPreview":"• 等待 2026 年 6 月 ERA5 月平均，正式生成 AMJ 2026，而不是只用 MAM 或 Apr-May 近似。 | • 把 ERA5 风压结果接入前面 2023/24 的 response-ratio / observed-vs-expected 框架，用同一...","textChars":323,"textLines":5,"bbox":[78,148,1080,298]}
+{"kind":"shape","id":"sh/xs72x4na","slide":12,"name":"workline","bbox":[78,490,1080,104]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":12,"name":"workline-title","text":"可作为开题后的明确工作线","textPreview":"可作为开题后的明确工作线","textChars":12,"textLines":1,"bbox":[96,500,1044,24]}
+{"kind":"textbox","id":"sh/fyxobm58","slide":12,"name":"workline-body","text":"题目可以从“2023/24 强厄尔尼诺海气脱耦”扩展为“发展季海温、风压、降水和 Walker 环流的不等时响应：2023/24 复现与 2026 实时对照”。","textPreview":"题目可以从“2023/24 强厄尔尼诺海气脱耦”扩展为“发展季海温、风压、降水和 Walker 环流的不等时响应：2023/24 复现与 2026 实时对照”。","textChars":80,"textLines":1,"bbox":[96,528,1044,56]}
+{"kind":"notes","id":"nt/hym4rp","slide":12,"text":""}
+{"kind":"slide","id":"sl/d7v4o5","slide":13,"title":"数据链接与本地文件位置","textShapes":4}
+{"kind":"textbox","id":"sh/v6psfil0","slide":13,"name":"title-13","text":"数据链接与本地文件位置","textPreview":"数据链接与本地文件位置","textChars":11,"textLines":1,"bbox":[56,40,1110,70]}
+{"kind":"shape","id":"sh/knih4byh","slide":13,"name":"rule-112","bbox":[56,112,1168,1]}
+{"kind":"textbox","id":"sh/d8bat47y","slide":13,"name":"footer-13","text":"第 13 页 | 数据来源页","textPreview":"第 13 页 | 数据来源页","textChars":14,"textLines":1,"bbox":[56,684,930,22]}
+{"kind":"textbox","id":"sh/29gr2p8n","slide":13,"name":"footer-tag-13","text":"ENSO/FEP 2026 diagnostic","textPreview":"ENSO/FEP 2026 diagnostic","textChars":24,"textLines":1,"bbox":[980,684,240,22]}
+{"kind":"textbox","id":"sh/kf6dcbul","slide":13,"text":"注：所有异常均相对于 1982-2022 同月气候态；2026 的完整 AMJ 仍需等待 6 月月平均数据。","textPreview":"注：所有异常均相对于 1982-2022 同月气候态；2026 的完整 AMJ 仍需等待 6 月月平均数据。","textChars":54,"textLines":1,"bbox":[66,632,1120,44]}
+{"kind":"table","id":"tb/65wjudg7","slide":13,"name":"source-table","rows":8,"cols":3,"preview":"类别 | 数据/文件 | 链接或路径","bbox":[62,138,1158,480]}
+{"kind":"notes","id":"nt/d7v4o5","slide":13,"text":""}

@@ -1,0 +1,13 @@
+event_class,n,phase,quantity,ohc_tref0_mean_zj,ohc_tref10_mean_zj,ohc_tref20_mean_zj,ohc_sign_stable_across_references,h20_same_window_mean_zj
+CT,4,development_Jan0_Jun0,east_storage_change,8.30037572,8.30037572,8.30037572,True,4.67141221
+CT,4,development_Jan0_Jun0,140w_eastward_transport,23.5143948,14.428919,5.34344313,True,5.57376447
+CT,4,decay_Jan1_May1,east_storage_change,-8.81748211,-8.81748211,-8.81748211,True,-5.2277061
+CT,4,decay_Jan1_May1,5n_northward_transport,6.43659739,5.09472086,3.75284434,True,2.34099003
+CT,4,decay_Jan1_May1,5n_ekman_transport,5.07207911,3.46759002,1.86310092,True,1.85284588
+CT,4,decay_Jan1_May1,surface_heat_loss,2.35439287,2.35439287,2.35439287,True,2.35439287
+CP,4,development_Jan0_Jun0,east_storage_change,-0.374834769,-0.374834769,-0.374834769,True,0.167785723
+CP,4,development_Jan0_Jun0,140w_eastward_transport,-15.7678887,-7.36349868,1.04089133,False,-1.58910736
+CP,4,decay_Jan1_May1,east_storage_change,-6.99113331,-6.99113331,-6.99113331,True,-3.48884041
+CP,4,decay_Jan1_May1,5n_northward_transport,-5.48914937,-2.81875291,-0.148356424,True,-1.0388478
+CP,4,decay_Jan1_May1,5n_ekman_transport,0.0626495879,0.218465111,0.374280633,True,0.361392609
+CP,4,decay_Jan1_May1,surface_heat_loss,1.0051073,1.0051073,1.0051073,True,1.0051073

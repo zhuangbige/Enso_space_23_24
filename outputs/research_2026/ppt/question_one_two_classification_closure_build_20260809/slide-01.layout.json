@@ -1,0 +1,405 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/pzhou1",
+    "id": "pzhou1",
+    "slide": 1,
+    "layoutId": "a365fc2b-b4a1-4ab1-af3c-ce0ef9337966",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "19beb2b3-63b0-4aac-9fab-0487c42d43c6",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Pacific Heat Arrival",
+    "colors": {
+      "accent1": "#2C7FB8",
+      "accent2": "#D97706",
+      "accent3": "#16877A",
+      "accent4": "#B73A3A",
+      "accent5": "#35566B",
+      "accent6": "#7E5AA6",
+      "bg1": "#FFFFFF",
+      "bg2": "#EDF3F6",
+      "tx1": "#0A2133",
+      "tx2": "#35566B",
+      "dk1": "#0A2133",
+      "dk2": "#35566B",
+      "lt1": "#FFFFFF",
+      "lt2": "#EDF3F6",
+      "hlink": "#2C7FB8",
+      "folHlink": "#16877A"
+    },
+    "typefaces": [
+      "PingFang SC"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "a365fc2b-b4a1-4ab1-af3c-ce0ef9337966",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "19beb2b3-63b0-4aac-9fab-0487c42d43c6",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "19beb2b3-63b0-4aac-9fab-0487c42d43c6",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hgvydon2",
+      "id": "1",
+      "name": "cover-kicker",
+      "bbox": [
+        54,
+        42,
+        760,
+        36
+      ],
+      "geometry": "rect",
+      "text": "SODA3 · CT/CP · 1997/2015/2023",
+      "textPreview": "SODA3 · CT/CP · 1997/2015/2023",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "PingFang SC",
+        "color": "#2C7FB8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "SODA3 · CT/CP · 1997/2015/2023"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "SODA3 · CT/CP · 1997/2015/2023",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "PingFang SC",
+            "color": "#2C7FB8",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "SODA3 · CT/CP · 1997/2015/2023",
+              "fontSize": 24,
+              "typeface": "PingFang SC",
+              "color": "#2C7FB8",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ud4f294b",
+      "id": "2",
+      "name": "cover-title",
+      "bbox": [
+        54,
+        168,
+        1050,
+        220
+      ],
+      "geometry": "rect",
+      "text": "厄尔尼诺异常暖量的\n到达与去向",
+      "textPreview": "厄尔尼诺异常暖量的 | 到达与去向",
+      "resolvedFontSize": 70,
+      "resolvedTextStyle": {
+        "anchor": 3,
+        "fontSize": 70,
+        "typeface": "PingFang SC",
+        "color": "#0A2133",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "bottom",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "厄尔尼诺异常暖量的"
+          },
+          {
+            "index": 2,
+            "text": "到达与去向"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "厄尔尼诺异常暖量的",
+          "lineSpacingPercent": 92000,
+          "resolvedTextStyle": {
+            "fontSize": 70,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 0.92
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "厄尔尼诺异常暖量的",
+              "fontSize": 70,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 0.92
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "到达与去向",
+          "lineSpacingPercent": 92000,
+          "resolvedTextStyle": {
+            "fontSize": 70,
+            "typeface": "PingFang SC",
+            "color": "#0A2133",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 0.92
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "到达与去向",
+              "fontSize": 70,
+              "typeface": "PingFang SC",
+              "color": "#0A2133",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 0.92
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vedwbe5w",
+      "id": "3",
+      "name": "rule-54-435",
+      "bbox": [
+        54,
+        435,
+        620,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#2C7FB8",
+      "lineWidth": 5
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4jmx83md",
+      "id": "4",
+      "name": "cover-subtitle",
+      "bbox": [
+        54,
+        475,
+        1120,
+        58
+      ],
+      "geometry": "rect",
+      "text": "问题一：是否越过140°W？　问题二：跨过5°N后去了哪里？",
+      "textPreview": "问题一：是否越过140°W？　问题二：跨过5°N后去了哪里？",
+      "resolvedFontSize": 32,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 32,
+        "typeface": "PingFang SC",
+        "color": "#35566B",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "问题一：是否越过140°W？　问题二：跨过5°N后去了哪里？"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "问题一：是否越过140°W？　问题二：跨过5°N后去了哪里？",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 32,
+            "typeface": "PingFang SC",
+            "color": "#35566B",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "问题一：是否越过140°W？　问题二：跨过5°N后去了哪里？",
+              "fontSize": 32,
+              "typeface": "PingFang SC",
+              "color": "#35566B",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/54vyhony",
+      "id": "5",
+      "name": "cover-answer",
+      "bbox": [
+        54,
+        565,
+        1140,
+        58
+      ],
+      "geometry": "rect",
+      "text": "回答：到达了；CT北送后主要向西再循环并向海表失热。",
+      "textPreview": "回答：到达了；CT北送后主要向西再循环并向海表失热。",
+      "resolvedFontSize": 30,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 30,
+        "typeface": "PingFang SC",
+        "color": "#D97706",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "回答：到达了；CT北送后主要向西再循环并向海表失热。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "回答：到达了；CT北送后主要向西再循环并向海表失热。",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "typeface": "PingFang SC",
+            "color": "#D97706",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "回答：到达了；CT北送后主要向西再循环并向海表失热。",
+              "fontSize": 30,
+              "typeface": "PingFang SC",
+              "color": "#D97706",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

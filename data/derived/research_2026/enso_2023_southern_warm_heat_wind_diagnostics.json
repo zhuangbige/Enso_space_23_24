@@ -1,0 +1,30 @@
+{
+  "analysis_version": "20260818_v1",
+  "heat_baseline": [
+    1980,
+    2024
+  ],
+  "transport_baseline": [
+    1980,
+    2022
+  ],
+  "wind_baseline": [
+    1982,
+    2024
+  ],
+  "all_year_rows": 774,
+  "event_rows": 18,
+  "full_pacific_rows": 270,
+  "transport10_rows": 18,
+  "counterfactual_rows": 24,
+  "max_5s_decomposition_error_pw": 0.0,
+  "2023_jf_southness_mjm3": 6.559923115196952,
+  "2023_jf_southward_ekman_m2s": 1.8881268963235653,
+  "2023_jf_partial_curl_1e8_nm3": 2.415458968296807,
+  "2023_jf_southward_q20_5s_total_pw": -0.08362544673777754,
+  "2023_jf_southward_q20_5s_ekman_pw": 0.2194348123473437,
+  "2023_jf_southward_q20_5s_residual_pw": -0.30306025908512124,
+  "transport_sign_convention": "positive southward",
+  "curl_definition": "ERA5 zonal-stress contribution -d(tau_x)/dy; not full stress curl",
+  "5s_temperature_face": "one-sided tracer temperature at 4.75S"
+}

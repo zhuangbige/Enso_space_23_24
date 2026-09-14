@@ -1,0 +1,140 @@
+project:
+  name: ENSO type-transition and atmospheric-connection perturbation matrix
+  scientific_question: >-
+    Once the ocean has an east-Pacific-favorable heat-content state, which
+    atmospheric conditions determine whether Bjerknes feedback connects and
+    whether the mature event becomes EP-like rather than CP-like?
+  reference_event: 2023
+  anomaly_climatology: 1982-2024
+  status: model-agnostic design and P0 SST forcing complete; AGCM common-state spin-up in progress
+
+review_informed_revision:
+  spring_window: >-
+    Treat March-June as a transition window. April is retained only as the
+    first positive checkpoint in the exhaustive monthly scan, not as a
+    universal threshold.
+  atmospheric_gate_definition: >-
+    Do not collapse rainfall, SLP, zonal stress, and WWB into one fitted
+    atmospheric-gate index. Report the convective-pressure branch, the
+    equatorial wind-stress branch, and stochastic bridges separately to avoid
+    endpoint leakage and overfitting in the 13-event sample.
+  model_scope: >-
+    The prescribed-SST AGCM cannot switch a dynamical ocean gate. Ocean-gate
+    failure and mature EP/CP conversion are therefore reserved for the coupled
+    ocean-gate by wind-regime experiment.
+
+common_diagnostics:
+  atmosphere:
+    - precipitation and OLR over 5S-5N, 180-80W
+    - 850-hPa wind and sea-level pressure
+    - surface zonal wind stress over 5S-5N, 135E-120W
+    - FEP meridional rain dipole: equatorial minus 6-10N
+    - 3-7N northeasterly intrusion over 180-130W
+  ocean:
+    - upper-300-m heat content
+    - D20 and sea-surface height
+    - 140W eastward Q20 transport
+    - equatorial Kelvin-wave propagation speed
+    - mixed-layer zonal advection, entrainment and surface-flux terms
+  outcome:
+    - MJJ atmospheric-connection residual
+    - DJF E/C flavor coordinate
+    - DJF Nino3 minus Nino4
+    - DJF Nino3.4 amplitude
+
+classification_rule:
+  ep_consistent: E/C > 0 and Nino3-minus-Nino4 > 0
+  cp_consistent: E/C < 0 and Nino3-minus-Nino4 < 0
+  ambiguous: the two type metrics have opposite signs
+  robust_conversion: >-
+    Both type metrics change sign in the same direction and the ensemble
+    95-percent interval excludes zero.
+
+agcm_factorial:
+  purpose: Diagnose why a prescribed 2023-like SST state does or does not produce equatorial westerlies.
+  integration: March-August
+  ensemble_members_per_cell: 30
+  prepared_forcing:
+    file: forcing/ersstv5_2023_agcm_ia_fep_factorial_mar_aug.nc
+    source: NOAA ERSSTv5
+    grid: 2-degree latitude-longitude
+    primary_ia_definition: total 2023 anomaly relative to the 1982-2024 calendar-month climatology
+    independent_ia_sensitivity: trend, Nino3.4, and E-minus-C flavor removed
+    residual_fep_definition: >-
+      5S-5N, 90W-80W seed residual after removing trend, Nino3.4, and
+      E-minus-C flavor, expanded to its tapered eastern-Pacific SST footprint
+    model_integration_completed: false
+  factorial:
+    indo_atlantic:
+      off: Remove tropical Indian and Atlantic SST anomalies outside the Pacific.
+      observed: Retain observed 2023 tropical Indian and Atlantic SST anomalies.
+    residual_fep:
+      off: Remove the SST component orthogonal to Nino3.4 and the E/C pattern.
+      observed: Retain the observed 2023 residual-FEP SST component.
+  cells:
+    - AG_IA0_FEP0
+    - AG_IA0_FEP1
+    - AG_IA1_FEP0
+    - AG_IA1_FEP1
+  interaction_contrast: >-
+    (AG_IA1_FEP1 - AG_IA1_FEP0) -
+    (AG_IA0_FEP1 - AG_IA0_FEP0)
+  mechanism_addons:
+    AG_NPMM0: Remove the cold NPMM SST pattern while retaining other 2023 anomalies.
+    AG_DIPOLE0: >-
+      Apply an idealized heating correction that cancels the 6-10N rain
+      deficit without removing equatorial FEP heating.
+
+coupled_ocean_wind_factorial:
+  purpose: Test whether ocean heat position and atmospheric wind state jointly determine mature ENSO type.
+  initialization: 1 March 2023 atmosphere-ocean state
+  integration: March-February
+  ensemble_members_per_cell: 15
+  ocean_gate:
+    low: -1 training-event SD in March-April 140W Q20/D20 gate
+    neutral: 0 training-event SD
+    high: +1 training-event SD
+  wind_regime:
+    adverse: -1 SD WWB and +1 SD 3-7N northeasterly intrusion
+    neutral: no imposed stress tendency
+    favorable: +1 SD WWB and -1 SD northeasterly intrusion
+  balancing_requirement: >-
+    Ocean perturbations must conserve basin-integrated heat content to first
+    order by redistributing, rather than creating, upper-ocean heat.
+  ocean_gate_failure_test: >-
+    The low-gate member shifts upper-ocean heat westward and weakens Q20/D20
+    east of 140W while retaining basin-integrated heat. The high-gate member
+    shifts the same heat eastward. Directly clamping the eastern thermocline to
+    climatology is avoided because it would introduce an unbalanced dynamical
+    shock and confound the Kelvin-wave adjustment.
+  primary_test: >-
+    Whether the high-ocean plus favorable-wind cell is EP-consistent and
+    differs from both single-factor high cells.
+
+coupled_npmm_wwb_confirmation:
+  purpose: Test state dependence of stochastic westerly forcing.
+  integration: March-February
+  ensemble_members_per_cell: 20
+  factorial:
+    npmm:
+      cold: Observed 2023 cold NPMM state
+      neutral: Cold NPMM component removed
+    wwb:
+      no_added_pulse: Free coupled evolution with no imposed pulse
+      added_wwb: >-
+        A 10-day positive zonal stress pulse over 5S-5N, 135E-180, repeated
+        with three start dates (1 April, 15 April and 1 May)
+  required_check: >-
+    A claimed interaction must retain its sign across all three WWB start
+    dates and in both mature-type metrics.
+
+analysis:
+  effect_estimator: ensemble-mean factorial contrasts
+  uncertainty:
+    - member bootstrap
+    - false-discovery-rate correction across the pre-declared primary endpoints
+    - sensitivity to the three WWB start dates
+  stopping_rule: >-
+    Do not add more factors until the P0 ocean-gate by wind-regime matrix
+    establishes a reproducible type shift or rules it out at the chosen
+    perturbation amplitude.

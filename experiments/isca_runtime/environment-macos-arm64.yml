@@ -1,0 +1,17 @@
+name: isca_macos_arm64
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - setuptools
+  - pip
+  - f90nml
+  - fortran-compiler
+  - netcdf-fortran=4.6.*
+  - openmpi=4.*
+  - numpy
+  - pandas
+  - xarray
+  - jinja2
+  - sh
+  - tqdm

@@ -1,0 +1,49 @@
+{
+  "source": "/Users/daiyue/Documents/Maryland/data/derived/research_2026/soda3_three_box_warm_heat_budget_terms_1980_2022.csv",
+  "n_months": 516,
+  "boxes": {
+    "west": [
+      160.0,
+      180.0
+    ],
+    "central": [
+      180.0,
+      220.0
+    ],
+    "east": [
+      220.0,
+      280.0
+    ],
+    "latitude": [
+      -10.0,
+      5.0
+    ]
+  },
+  "events": {
+    "CT": [
+      1982,
+      1986,
+      1997,
+      2006
+    ],
+    "CP": [
+      1991,
+      1994,
+      2002,
+      2004
+    ]
+  },
+  "bootstrap_samples": 20000,
+  "processed_closure_max_abs_pw": 1.1102230246251565e-16,
+  "q20_validation_min_correlation": 0.9999999999999991,
+  "q20_validation_max_abs_difference_pw": 4.035082112885391e-08,
+  "q20_160e_comparison_n": 258,
+  "q20_160e_correlation": 1.0,
+  "q20_160e_max_abs_difference_pw": 2.9150975411340596e-08,
+  "q20_180e_comparison_n": 258,
+  "q20_180e_correlation": 1.0000000000000002,
+  "q20_180e_max_abs_difference_pw": 4.035082112885391e-08,
+  "q20_220e_comparison_n": 258,
+  "q20_220e_correlation": 0.9999999999999991,
+  "q20_220e_max_abs_difference_pw": 3.822355998384097e-08
+}

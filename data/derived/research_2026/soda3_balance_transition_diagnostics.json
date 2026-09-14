@@ -1,0 +1,37 @@
+{
+  "events": [
+    1982,
+    1986,
+    1991,
+    1994,
+    1997,
+    2002,
+    2004,
+    2006,
+    2009,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "primary_run_length_pentads": 3,
+  "transport_candidate_definition": "first three consecutive positive future-five-day Date-Line warm-volume transport tendencies",
+  "transport_available_definition": "fourth transport state, 15 days after candidate onset",
+  "east_sst_definition": "SODA3 140W-120W anomaly positive for three pentads with at least two positive five-day tendencies",
+  "westerly_onset_definition": "post-February SODA3 central stress: first two pentads positive and at least four of six positive",
+  "independent_atmosphere_definition": "first Mar-Jun month with ERA5 u850 anomaly >0 and OLR anomaly <0; plotted at month midpoint",
+  "quality_control": {
+    "volume_monthly_reconstruction_max_abs_error_sv": 1.0658141036401503e-14,
+    "d20_monthly_reconstruction_max_abs_error_m": 2.842170943040401e-14,
+    "pentad_interval_min_days": 5.0,
+    "pentad_interval_median_days": 5.0,
+    "pentad_interval_max_days": 5.0,
+    "sst_monthly_reconstruction_max_abs_error_c": 4.274358644806853e-15,
+    "sst_pentad_interval_median_days": 5.0
+  },
+  "caveats": [
+    "The reduced D20-wind-transport balance is a proxy, not a closed momentum budget.",
+    "Monthly ERA5+OLR onset has approximately plus/minus 15-day timing uncertainty.",
+    "Onset rules are diagnostic; only the transport-available date is interpreted operationally."
+  ]
+}

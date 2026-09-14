@@ -1,0 +1,39 @@
+{
+  "era5_monthly_records": 301,
+  "era5_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "primary_risk_rows": 146,
+  "durable_risk_rows": 191,
+  "events_primary": [
+    1982,
+    1986,
+    1991,
+    1997,
+    2002,
+    2004,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "events_durable": [
+    1982,
+    1986,
+    1991,
+    1997,
+    2002,
+    2004,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "atmospheric_gate": "negative fold-specific residual NE850 over 3N-7N, 180E-130W, lagged one completed calendar month"
+}

@@ -1,0 +1,19 @@
+{
+  "source": "CDS ORAS5 time-series",
+  "variable": "depth_of_20_c_isotherm",
+  "latitude": "0 degrees",
+  "longitude_range": "130E-85W",
+  "longitude_step_degrees": 5,
+  "time_range": "1980-01 to 2026-06",
+  "record_count": 16740,
+  "month_count": 558,
+  "longitude_count": 30,
+  "anomaly_method": "At each longitude and calendar month, subtract the 1980-2014 climatology and remove the linear trend fitted over 1980-2014.",
+  "positive_sign": "D20 deepening",
+  "negative_sign": "D20 shoaling",
+  "color_limit_m": 60.0,
+  "input": "/Users/daiyue/Documents/Maryland/data/interim/research_2026/oras5_d20_timeseries_equatorial_1960_202606.csv",
+  "derived_csv": "/Users/daiyue/Documents/Maryland/data/derived/research_2026/oras5_equatorial_d20_monthly_anomaly_1980_202606_detrended_1980_2014.csv",
+  "png": "/Users/daiyue/Documents/Maryland/outputs/research_2026/oras5_d20_hovmoller/oras5_equatorial_d20_anomaly_hovmoller_1980_202606.png",
+  "pdf": "/Users/daiyue/Documents/Maryland/outputs/research_2026/oras5_d20_hovmoller/oras5_equatorial_d20_anomaly_hovmoller_1980_202606.pdf"
+}

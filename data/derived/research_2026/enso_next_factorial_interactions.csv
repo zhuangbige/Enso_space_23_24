@@ -1,0 +1,10 @@
+matrix_id,matrix_title,interaction,target,interaction_coefficient_response_sd,bootstrap_ci_low,bootstrap_ci_high,bootstrap_sign_probability,bootstrap_samples,ridge_alpha
+A_NPMM_x_WWB,NPMM × high-frequency WWB,NPMM × WWB,coupling_mjj,0.4239158393653552,-0.03614527334413019,0.7076146306748481,0.9535,10000,1.0
+A_NPMM_x_WWB,NPMM × high-frequency WWB,NPMM × WWB,mature_ec_flavor,-0.10482579212409843,-0.4084220928351829,0.3489117278111692,0.5123,10000,1.0
+A_NPMM_x_WWB,NPMM × high-frequency WWB,NPMM × WWB,mature_box_type,0.03236721220300271,-0.34222372177284227,0.30978617667607994,0.6852,10000,1.0
+B_IA_x_FEP,Indo-Atlantic heating × residual FEP,Indo-Atlantic × residual FEP,coupling_mjj,0.2410522836158062,-0.3359839669462847,0.6294494923108382,0.7896,10000,1.0
+B_IA_x_FEP,Indo-Atlantic heating × residual FEP,Indo-Atlantic × residual FEP,mature_ec_flavor,-0.273885047606879,-0.5062843972576629,0.18313439996848765,0.8318,10000,1.0
+B_IA_x_FEP,Indo-Atlantic heating × residual FEP,Indo-Atlantic × residual FEP,mature_box_type,-0.09090717694138897,-0.35412515452130555,0.23394419248053952,0.6361,10000,1.0
+C_OCEAN_x_WIND,April ocean gate × wind regime,Ocean × favorable-wind regime (Ocean×WWB − Ocean×NE),coupling_mjj,0.7430463124546828,-0.06757894759037758,0.8898145848294593,0.9476,10000,1.0
+C_OCEAN_x_WIND,April ocean gate × wind regime,Ocean × favorable-wind regime (Ocean×WWB − Ocean×NE),mature_ec_flavor,-0.20465844417210075,-0.5715001404271953,0.39418219319852615,0.5211,10000,1.0
+C_OCEAN_x_WIND,April ocean gate × wind regime,Ocean × favorable-wind regime (Ocean×WWB − Ocean×NE),mature_box_type,-0.18646889947852732,-0.4960575907484701,0.29841644372915777,0.5242,10000,1.0

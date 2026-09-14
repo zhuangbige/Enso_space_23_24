@@ -1,0 +1,63 @@
+{
+  "physical_qa": {
+    "raw_total_closure_max_abs_pw": 5.551115123125783e-17,
+    "raw_geo_component_closure_max_abs_pw": 6.106226635438361e-16,
+    "temperature_min_c": 8.97549057006836,
+    "temperature_max_c": 30.662609100341797,
+    "salinity_min_psu": 30.175844192504883,
+    "salinity_max_psu": 35.280372619628906,
+    "velocity_max_abs_ms": 0.572324275970459,
+    "taux_max_abs_nm2": 0.09368835389614105
+  },
+  "primary_baseline": "1980-2014",
+  "sensitivity_baseline": "1982-2022",
+  "baseline_sign_stability": {
+    "1997_total_zj": true,
+    "1997_ekman_zj": true,
+    "1997_geo_eos80_zj": true,
+    "1997_geo_ssh_eos80_zj": true,
+    "1997_geo_density_eos80_zj": true,
+    "1997_residual_eos80_zj": true,
+    "2015_total_zj": true,
+    "2015_ekman_zj": true,
+    "2015_geo_eos80_zj": true,
+    "2015_geo_ssh_eos80_zj": true,
+    "2015_geo_density_eos80_zj": true,
+    "2015_residual_eos80_zj": true,
+    "2023_total_zj": true,
+    "2023_ekman_zj": true,
+    "2023_geo_eos80_zj": true,
+    "2023_geo_ssh_eos80_zj": true,
+    "2023_geo_density_eos80_zj": true,
+    "2023_residual_eos80_zj": true
+  },
+  "all_component_signs_stable": true,
+  "linear_minus_eos80_geostrophic_zj": {
+    "1997": -0.01597756048641663,
+    "2015": -0.07639674615644276,
+    "2023": -0.04838960609044274
+  },
+  "event_total_minus_bridge_total_zj": {
+    "1997": -0.03900237891444336,
+    "2015": -0.038932437072989545,
+    "2023": 1.334618857602997
+  },
+  "event_component_closure_zj": {
+    "1997": 1.1449174941446927e-16,
+    "2015": 0.0,
+    "2023": -4.440892098500626e-16
+  },
+  "event_component_closure_max_abs_zj": 4.440892098500626e-16,
+  "historical_raw_total_validation": {
+    "max_abs_pw": 2.7505131783289727e-09,
+    "mean_abs_pw": 7.393688875611925e-10,
+    "correlation": 0.9999999999999997
+  },
+  "limitations": [
+    "Three target events are process cases, not an inferential sample.",
+    "January-May excludes the mature December because the extended common subset is Jan-Jun.",
+    "Geostrophic/Ekman decomposition is kinematic; pressure fields can themselves respond to wind forcing.",
+    "Residual includes ageostrophic currents, transients, nonlinearities, and approximation error.",
+    "The sign of the small 2023/24 total is sensitive to centered-face versus one-sided boundary temperature; outlet suppression is more robust than transport direction."
+  ]
+}

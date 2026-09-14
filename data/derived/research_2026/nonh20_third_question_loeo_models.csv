@@ -1,0 +1,7 @@
+model_id,target,predictors,n_predictors,in_sample_r2,loeo_rmse_z,loeo_correlation
+north_arrival,decay_northward_output_zj,arrival_140w_heat_in_zj,1,0.5292212714,0.751723343,0.6259682249
+north_arrival_u850,decay_northward_output_zj,arrival_140w_heat_in_zj+u850_cwp_mj_ms,2,0.6103496134,0.6983339378,0.6976795986
+north_arrival_tau,decay_northward_output_zj,arrival_140w_heat_in_zj+decay_tau5n_westward_nm2,2,0.788102967,0.5543241135,0.8224373552
+north_arrival_u850_tau,decay_northward_output_zj,arrival_140w_heat_in_zj+u850_cwp_mj_ms+decay_tau5n_westward_nm2,3,0.7913120197,0.6150201185,0.7892416117
+surface_arrival,decay_surface_loss_zj,arrival_140w_heat_in_zj,1,0.4033597799,0.926028973,0.3495908058
+surface_arrival_sst,decay_surface_loss_zj,arrival_140w_heat_in_zj+decay_east_sst_anom_c,2,0.6527863821,0.7720186254,0.6206327666

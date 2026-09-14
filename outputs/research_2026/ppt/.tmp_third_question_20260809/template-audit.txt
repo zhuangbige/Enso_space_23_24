@@ -1,0 +1,11 @@
+Source deck: 厄尔尼诺异常暖量到达与去向_审查修订版_20260809.pptx
+Structure: 16 source slides, 1280×720, white research-report canvas. The source uses slide-local editable shapes and charts while preserving imported master/layout relationships.
+Reusable patterns selected:
+- Slide 16: large question/answer divider with four statement lines and a colored bridge band.
+- Slide 8: evidence page with a large native-chart region, two right-side metric panels, and a bottom takeaway band.
+- Slide 9: equation/pathway header, paired diagnostic blocks, paired interpretation boxes, and a bottom takeaway band.
+- Slide 10: large answer divider with three concise evidence statements.
+Typography: PingFang SC for Chinese titles/body, Arial Unicode MS/Calibri where inherited. Existing sizes, weights, line spacing, insets, and vertical anchors are retained.
+Color/spacing: navy title, blue section kicker, orange/blue/green/red evidence accents, 54 px outer margin, rule at y≈142 on body slides, 55 px takeaway band near bottom.
+Assets/claims: no new external web assets. Added claims and charts are based on the local SODA3/ERA5 derived CSVs and analysis scripts listed in speaker-note [Sources] blocks.
+Insertion contract: preserve source slides 1–16 exactly, then append six slides copied from source slides 16, 8, 8, 8, 9, and 10. All copied inherited content slots are explicitly rewritten or replaced; no blank inherited placeholders are left behind.

@@ -1,0 +1,27 @@
+{
+  "definition": "rho Cp integral[v(T-Tref)]dA; fixed target temperature and non-Ekman transport; donor 5N tau_x anomaly only",
+  "phase": "Jan(+1)-May(+1)",
+  "baseline": "calendar-month climatology and linear trend, 1980-2014",
+  "actual_seconds_weighting": true,
+  "max_abs_control_closure_error_zj": 3.813439342081892e-09,
+  "control_errors_zj": {
+    "tref00_1997": -3.0847981946635628e-09,
+    "tref00_2015": -5.539191327841309e-10,
+    "tref00_2023": 2.6943993702843727e-09,
+    "tref10_1997": 3.199982501200793e-10,
+    "tref10_2015": 3.7631925353664997e-10,
+    "tref10_2023": 2.761279205287792e-09,
+    "tref20_1997": 8.598393108627533e-10,
+    "tref20_2015": -3.813439342081892e-09,
+    "tref20_2023": 2.8195199508473934e-09
+  },
+  "direction_checks": {
+    "tref00_2015_weakened_by_2023_wind": true,
+    "tref00_2023_strengthened_by_2015_wind": true,
+    "tref10_2015_weakened_by_2023_wind": true,
+    "tref10_2023_strengthened_by_2015_wind": true,
+    "tref20_2015_weakened_by_2023_wind": true,
+    "tref20_2023_strengthened_by_2015_wind": true
+  },
+  "all_direction_checks_pass": true
+}

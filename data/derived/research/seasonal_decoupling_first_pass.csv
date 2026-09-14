@@ -1,0 +1,37 @@
+metric,season,value_2023,value_comparable,difference_2023_minus_comparable,notes
+nino3_sst_oisst,AMJ,0.9744937462722861,0.6921499897415176,0.2823437565307685,Raw OISST Nino-3 seasonal anomaly
+nino3_sst_oisst,JJA,1.732580761734141,1.4239266014231478,0.30865416031099335,Raw OISST Nino-3 seasonal anomaly
+nino3_sst_oisst,SON,2.1475770547398376,2.481016940907782,-0.3334398861679442,Raw OISST Nino-3 seasonal anomaly
+nino3_sst_oisst,DJF,1.8982147448374451,2.636948190291101,-0.7387334454536558,Raw OISST Nino-3 seasonal anomaly
+cwp_u_ncep_sig995,Jun-Jan,0.25268724639025214,2.7903478792055787,-2.5376606328153266,NCEP proxy; seasonal decomposition pending monthly atmospheric cache
+soi_like_ncep,Jun-Jan,-0.6399209755244186,-2.7095999870899115,2.069679011565493,NCEP proxy; seasonal decomposition pending monthly atmospheric cache
+cwp_u_ncep_sig995,AMJ,-0.694973962132568,1.606212038261039,-2.301186000393607,NCEP monthly proxy seasonal decomposition
+cwp_u_ncep_sig995,JJA,-0.3118587914793037,2.2643886470644996,-2.5762474385438034,NCEP monthly proxy seasonal decomposition
+cwp_u_ncep_sig995,SON,0.7677979123175712,3.486106144683637,-2.718308232366066,NCEP monthly proxy seasonal decomposition
+cwp_u_ncep_sig995,DJF,0.1707257765650921,2.22812304305592,-2.0573972664908275,NCEP monthly proxy seasonal decomposition
+soi_like_ncep,AMJ,-0.5056437121874447,-1.6386389810400284,1.1329952688525835,NCEP monthly proxy seasonal decomposition
+soi_like_ncep,JJA,-0.8058343950060589,-2.357277471421892,1.5514430764158331,NCEP monthly proxy seasonal decomposition
+soi_like_ncep,SON,-1.077711784035576,-2.613815310527002,1.536103526491426,NCEP monthly proxy seasonal decomposition
+soi_like_ncep,DJF,-0.6451999546955752,-3.559489210057412,2.9142892553618367,NCEP monthly proxy seasonal decomposition
+gpcp_precip_central_pacific_180_140w,jun_dec,1.7609998079488143,4.856665359316075,-3.0956655513672606,Raw GPCP equatorial Pacific precipitation
+gpcp_precip_central_pacific_180_140w,jan_apr_next,1.056373708926868,5.821780774477355,-4.7654070655504865,Raw GPCP equatorial Pacific precipitation
+gpcp_precip_eastern_pacific_140w_100w,jun_dec,0.580707184265042,2.553252306371912,-1.97254512210687,Raw GPCP equatorial Pacific precipitation
+gpcp_precip_eastern_pacific_140w_100w,jan_apr_next,1.0272696061576603,5.445413788149277,-4.418144181991616,Raw GPCP equatorial Pacific precipitation
+gpcp_precip_full_tropical_pacific_120e_80w,jun_dec,1.3577595629229722,1.9067780153769758,-0.5490184524540036,Raw GPCP equatorial Pacific precipitation
+gpcp_precip_full_tropical_pacific_120e_80w,jan_apr_next,1.0771971056784402,2.446861607775734,-1.3696645020972937,Raw GPCP equatorial Pacific precipitation
+oisst_sst_maritime_continent,AMJ,0.4319521875535178,-0.1146890488942331,0.5466412364477509,Raw OISST external-basin SST anomaly
+oisst_sst_maritime_continent,JJA,0.3558999318973086,-0.3208788245179303,0.676778756415239,Raw OISST external-basin SST anomaly
+oisst_sst_maritime_continent,SON,0.24705269965274232,-0.3893792313319852,0.6364319309847275,Raw OISST external-basin SST anomaly
+oisst_sst_maritime_continent,DJF,0.6284280568292561,0.164695201050827,0.46373285577842904,Raw OISST external-basin SST anomaly
+oisst_sst_tropical_indian_ocean,AMJ,0.46775204171923096,0.02955790915343176,0.4381941325657992,Raw OISST external-basin SST anomaly
+oisst_sst_tropical_indian_ocean,JJA,0.5205940681568748,0.11939622460959932,0.4011978435472755,Raw OISST external-basin SST anomaly
+oisst_sst_tropical_indian_ocean,SON,0.6218735948762332,0.26327372329872506,0.3585998715775081,Raw OISST external-basin SST anomaly
+oisst_sst_tropical_indian_ocean,DJF,0.9342136430147624,0.4409417779237354,0.493271865091027,Raw OISST external-basin SST anomaly
+oisst_sst_tropical_north_atlantic,AMJ,0.9778101601072203,-0.13174798921374,1.1095581493209603,Raw OISST external-basin SST anomaly
+oisst_sst_tropical_north_atlantic,JJA,1.1596375968660624,-0.1899535240859823,1.3495911209520446,Raw OISST external-basin SST anomaly
+oisst_sst_tropical_north_atlantic,SON,1.0797015514220074,-0.08205923675804604,1.1617607881800533,Raw OISST external-basin SST anomaly
+oisst_sst_tropical_north_atlantic,DJF,1.2290742243521795,0.059474994549184534,1.169599229802995,Raw OISST external-basin SST anomaly
+oisst_sst_western_pacific_warm_pool,AMJ,0.5611707167951607,-0.165328761393813,0.7264994781889738,Raw OISST external-basin SST anomaly
+oisst_sst_western_pacific_warm_pool,JJA,0.4372050920896046,-0.44409942598634405,0.8813045180759487,Raw OISST external-basin SST anomaly
+oisst_sst_western_pacific_warm_pool,SON,0.18296572960741506,-0.5723330513421685,0.7552987809495836,Raw OISST external-basin SST anomaly
+oisst_sst_western_pacific_warm_pool,DJF,0.4862433680282005,-0.18735814082873778,0.6736015088569383,Raw OISST external-basin SST anomaly

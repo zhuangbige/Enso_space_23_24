@@ -64,11 +64,6 @@ REFERENCES = [
         "https://www.nature.com/articles/s43247-025-02584-8",
     ),
     (
-        "Stronger and prolonged ENSO in Early Eocene warmth",
-        "Nature Communications (2025)",
-        "https://www.nature.com/articles/s41467-025-59263-7",
-    ),
-    (
         "Global climate mode resonance due to rapidly intensifying ENSO",
         "Nature Communications (2025)",
         "https://www.nature.com/articles/s41467-025-64619-0",

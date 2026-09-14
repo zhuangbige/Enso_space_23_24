@@ -1,0 +1,6 @@
+output,description,baseline
+/Users/daiyue/Documents/Maryland/data/interim/research_2026/monthly_panel_inputs/monthly_2026_detrended_fields_1980_2014.npz,Compiled 2026 January-June detrended fields for monthly panel plots.,ERA5/ORAS5 1980-2014; OISST effective 1982-2014
+/Users/daiyue/Documents/Maryland/data/derived/research_2026/monthly_2026_oras5_d20_detrended_1980_2014.csv,ORAS5 equatorial D20 monthly detrended anomalies for January-June 2026.,1980-2014
+/Users/daiyue/Documents/Maryland/outputs/research_2026/monthly_panels_1980_2025_detrended/fig_2026_monthly_ssta_u850_detrended_1980_2014.png,OISST SSTA + ERA5 u/v850 wind monthly panels.,monthly climatology plus linear detrending; OISST effective 1982-2014
+/Users/daiyue/Documents/Maryland/outputs/research_2026/monthly_panels_1980_2025_detrended/fig_2026_monthly_era5_precip_u850_detrended_1980_2014.png,ERA5 precipitation + ERA5 u/v850 wind monthly panels.,1980-2014
+/Users/daiyue/Documents/Maryland/outputs/research_2026/monthly_panels_1980_2025_detrended/fig_2026_monthly_d20_u850_detrended_1980_2014.png,ORAS5 equatorial D20 + ERA5 equatorial u850 monthly panels.,1980-2014

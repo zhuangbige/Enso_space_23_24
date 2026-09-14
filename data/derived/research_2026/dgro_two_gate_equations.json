@@ -1,0 +1,174 @@
+{
+  "purpose": "diagnostic zero surfaces, not a forecast",
+  "ocean_gate": {
+    "target": "m180_tendency_future5",
+    "features": [
+      "season_sin",
+      "season_cos",
+      "warm_volume_transport_sv_anom",
+      "d20_pressure_accel_1e8_ms2",
+      "wind_accel_1e8_ms2"
+    ],
+    "equation": "(y-y_mean)/y_scale = beta0 + sum(beta_i*(x_i-x_mean_i)/x_scale_i)",
+    "zero_surface_rhs": 0.03452325262272236,
+    "y_mean": -0.05295288315120424,
+    "y_scale": 1.533832392036895,
+    "standardized_intercept": -5.690377258986355e-17,
+    "standardized_coefficients": {
+      "season_sin": 0.10930830866626547,
+      "season_cos": -0.05829167369247682,
+      "warm_volume_transport_sv_anom": -0.33489698152326797,
+      "d20_pressure_accel_1e8_ms2": 0.3416900361267975,
+      "wind_accel_1e8_ms2": 0.35624317970923747
+    },
+    "x_mean": {
+      "season_sin": 0.6582495533048547,
+      "season_cos": 0.03277338361714962,
+      "warm_volume_transport_sv_anom": 0.5290810513884535,
+      "d20_pressure_accel_1e8_ms2": -1.5448036397934863,
+      "wind_accel_1e8_ms2": 0.3994208080618486
+    },
+    "x_scale": {
+      "season_sin": 0.29157250647714067,
+      "season_cos": 0.6932668348961171,
+      "warm_volume_transport_sv_anom": 16.866126720557425,
+      "d20_pressure_accel_1e8_ms2": 4.6739330197104,
+      "wind_accel_1e8_ms2": 8.753194104839196
+    },
+    "raw_intercept": -0.2628330521663208,
+    "raw_coefficients": {
+      "season_sin": 0.5750220642433234,
+      "season_cos": -0.12896860601872512,
+      "warm_volume_transport_sv_anom": -0.030456064202913385,
+      "d20_pressure_accel_1e8_ms2": 0.11213152675431623,
+      "wind_accel_1e8_ms2": 0.062424907060859396
+    },
+    "n_events": 13,
+    "n_pentads": 458
+  },
+  "atmosphere_anomaly_gate": {
+    "target": "taux_anom_nm2",
+    "features": [
+      "season_sin",
+      "season_cos",
+      "sst_c_anom_c",
+      "sst_c_minus_w_anom_c",
+      "west_warm_section_anom_gj_m",
+      "warm_volume_transport_sv_anom",
+      "d20_w_minus_c_anom_m"
+    ],
+    "equation": "(y-y_mean)/y_scale = beta0 + sum(beta_i*(x_i-x_mean_i)/x_scale_i)",
+    "zero_surface_rhs": -0.03944471419967886,
+    "y_mean": 0.0005928915927367503,
+    "y_scale": 0.01503095166909784,
+    "standardized_intercept": -2.7737122683077525e-18,
+    "standardized_coefficients": {
+      "season_sin": 0.09550547085216433,
+      "season_cos": 0.027042775708887364,
+      "sst_c_anom_c": 0.35799562047936623,
+      "sst_c_minus_w_anom_c": 0.15819395507283035,
+      "west_warm_section_anom_gj_m": -0.021118012019644174,
+      "warm_volume_transport_sv_anom": 0.22436195681537718,
+      "d20_w_minus_c_anom_m": 0.046726118457739794
+    },
+    "x_mean": {
+      "season_sin": 0.641803226680425,
+      "season_cos": 0.0043279271317105674,
+      "sst_c_anom_c": 0.0857106135231903,
+      "sst_c_minus_w_anom_c": -0.09746316532748861,
+      "west_warm_section_anom_gj_m": 227681.9091322101,
+      "warm_volume_transport_sv_anom": 0.5170481205919768,
+      "d20_w_minus_c_anom_m": -3.5061914676472266
+    },
+    "x_scale": {
+      "season_sin": 0.30366956586124716,
+      "season_cos": 0.7041694980890464,
+      "sst_c_anom_c": 0.5426833612921085,
+      "sst_c_minus_w_anom_c": 0.5304888767511036,
+      "west_warm_section_anom_gj_m": 398487.06817482127,
+      "warm_volume_transport_sv_anom": 16.84002542597867,
+      "d20_w_minus_c_anom_m": 10.303921179689805
+    },
+    "raw_intercept": -0.0025398052994278428,
+    "raw_coefficients": {
+      "season_sin": 0.004727303220004739,
+      "season_cos": 0.0005772454725483402,
+      "sst_c_anom_c": 0.00991557002293576,
+      "sst_c_minus_w_anom_c": 0.004482291330226655,
+      "west_warm_section_anom_gj_m": -7.9657244454277e-10,
+      "warm_volume_transport_sv_anom": 0.0002002594202781712,
+      "d20_w_minus_c_anom_m": 6.816220892753092e-05
+    },
+    "n_events": 13,
+    "n_pentads": 471
+  },
+  "atmosphere_total_gate": {
+    "target": "taux_central_nm2",
+    "features": [
+      "season_sin",
+      "season_cos",
+      "sst_c_anom_c",
+      "sst_c_minus_w_anom_c",
+      "west_warm_section_anom_gj_m",
+      "warm_volume_transport_sv_anom",
+      "d20_w_minus_c_anom_m"
+    ],
+    "equation": "(y-y_mean)/y_scale = beta0 + sum(beta_i*(x_i-x_mean_i)/x_scale_i)",
+    "zero_surface_rhs": 2.6065204922811187,
+    "y_mean": -0.043210401485364154,
+    "y_scale": 0.016577810001235864,
+    "standardized_intercept": 1.0786242830512165e-15,
+    "standardized_coefficients": {
+      "season_sin": 0.23142781752981573,
+      "season_cos": -0.2538831603562979,
+      "sst_c_anom_c": 0.4794525928572491,
+      "sst_c_minus_w_anom_c": -0.05557665848934804,
+      "west_warm_section_anom_gj_m": 0.028482011367686497,
+      "warm_volume_transport_sv_anom": 0.1734992734567969,
+      "d20_w_minus_c_anom_m": 0.0299360215589377
+    },
+    "x_mean": {
+      "season_sin": 0.641803226680425,
+      "season_cos": 0.0043279271317105674,
+      "sst_c_anom_c": 0.0857106135231903,
+      "sst_c_minus_w_anom_c": -0.09746316532748861,
+      "west_warm_section_anom_gj_m": 227681.9091322101,
+      "warm_volume_transport_sv_anom": 0.5170481205919768,
+      "d20_w_minus_c_anom_m": -3.5061914676472266
+    },
+    "x_scale": {
+      "season_sin": 0.30366956586124716,
+      "season_cos": 0.7041694980890464,
+      "sst_c_anom_c": 0.5426833612921085,
+      "sst_c_minus_w_anom_c": 0.5304888767511036,
+      "west_warm_section_anom_gj_m": 398487.06817482127,
+      "warm_volume_transport_sv_anom": 16.84002542597867,
+      "d20_w_minus_c_anom_m": 10.303921179689805
+    },
+    "raw_intercept": -0.05290691776741714,
+    "raw_coefficients": {
+      "season_sin": 0.012634016771252518,
+      "season_cos": -0.0059770081014894685,
+      "sst_c_anom_c": 0.014646245962033613,
+      "sst_c_minus_w_anom_c": -0.0017367739934201502,
+      "west_warm_section_anom_gj_m": 1.1849051339839219e-09,
+      "warm_volume_transport_sv_anom": 0.00017079772256650789,
+      "d20_w_minus_c_anom_m": 4.8163574715146444e-05
+    },
+    "n_events": 13,
+    "n_pentads": 471
+  },
+  "gate_scales": {
+    "ocean_observed": 1.5347461727255254,
+    "ocean_reduced_ro": 0.7990675068456154,
+    "stress_anomaly": 0.0150426403440185,
+    "total_stress": 0.04628134160721182
+  },
+  "quality_control": {
+    "volume_monthly_reconstruction_max_abs_error_sv": 1.0658141036401503e-14,
+    "d20_monthly_reconstruction_max_abs_error_m": 2.842170943040401e-14,
+    "pentad_interval_min_days": 5.0,
+    "pentad_interval_median_days": 5.0,
+    "pentad_interval_max_days": 5.0
+  }
+}

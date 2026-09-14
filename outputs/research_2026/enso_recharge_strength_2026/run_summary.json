@@ -1,0 +1,25 @@
+{
+  "baseline": "1982-2024",
+  "longitude_range": "135E-85W at 0 latitude",
+  "historical_strength_index": "NOAA/CPC RONI, ERSSTv6",
+  "primary_strong_group": [
+    1982,
+    1986,
+    1991,
+    1997,
+    2009,
+    2015
+  ],
+  "moderate_group": [
+    1994,
+    2002,
+    2023
+  ],
+  "proxy_validation": {
+    "n_months": 516,
+    "correlation": 0.9410795015127656,
+    "equator_on_three_lat_slope": 1.40613923415093,
+    "equator_on_three_lat_intercept_m": 1.4594028243044083e-14,
+    "equator_rmse_vs_three_lat_m": 4.89263089624112
+  }
+}

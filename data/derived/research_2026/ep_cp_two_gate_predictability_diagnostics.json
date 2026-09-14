@@ -1,0 +1,163 @@
+{
+  "method": {
+    "primary_target": "following DJF OISST Nino3 minus Nino4 anomaly",
+    "warm_event_rule": "NOAA ONI >= 0.5 C for at least five consecutive overlapping seasons",
+    "n_warm_events": 13,
+    "walk_forward_test_years": [
+      2000,
+      2023
+    ],
+    "event_validation": "leave one warm episode out, ridge alpha=1",
+    "gate_rule": "two consecutive January-June months"
+  },
+  "gate_timing_relationship": {
+    "correlation": 0.13045501588079908,
+    "two_sided_permutation_p": 0.688165591720414,
+    "n": 13
+  },
+  "event_predictor_correlations": {
+    "FEP residual Jan-Jun": {
+      "correlation": 0.4076483349230228,
+      "two_sided_permutation_p": 0.16349182540872956,
+      "n": 13,
+      "bh_fdr_q_across_five_predictors": 0.16349182540872956
+    },
+    "OHC E-W May-Jun": {
+      "correlation": 0.5462351729331583,
+      "two_sided_permutation_p": 0.04139793010349482,
+      "n": 13,
+      "bh_fdr_q_across_five_predictors": 0.06899655017249137
+    },
+    "D20 E-W May-Jun": {
+      "correlation": 0.678213722764135,
+      "two_sided_permutation_p": 0.015999200039998,
+      "n": 13,
+      "bh_fdr_q_across_five_predictors": 0.042497875106244684
+    },
+    "u850 May-Jun": {
+      "correlation": 0.67707179715835,
+      "two_sided_permutation_p": 0.016999150042497874,
+      "n": 13,
+      "bh_fdr_q_across_five_predictors": 0.042497875106244684
+    },
+    "-OLR May-Jun": {
+      "correlation": 0.5087512130937234,
+      "two_sided_permutation_p": 0.06339683015849208,
+      "n": 13,
+      "bh_fdr_q_across_five_predictors": 0.0792460376981151
+    }
+  },
+  "best_walk_forward": {
+    "month": 5,
+    "model": "+ FEP residual",
+    "n_test": 24,
+    "rmse_c": 0.4563829424616976,
+    "persistence_rmse_c": 0.49163439317055446,
+    "rmse_skill_vs_persistence": 0.07170257247773082,
+    "skill_ci_2p5": 0.0013759078550880232,
+    "skill_ci_97p5": 0.1700530895998541,
+    "correlation": 0.3890309869391089,
+    "sign_accuracy": 0.5416666666666666,
+    "paired_improvement_p_one_sided": 0.032219355612887746,
+    "bh_fdr_q_across_model_month_tests": 0.7144057118857623
+  },
+  "best_event_loeo": {
+    "month": 1,
+    "model": "Atmosphere gate",
+    "n_test": 13,
+    "rmse_c": 0.7080187350961211,
+    "persistence_rmse_c": 0.9917741582856412,
+    "rmse_skill_vs_persistence": 0.28610890979455783,
+    "skill_ci_2p5": 0.0445237769231278,
+    "skill_ci_97p5": 0.4388447628824938,
+    "correlation": 0.5367489678098357,
+    "sign_accuracy": 0.6923076923076923,
+    "paired_improvement_p_one_sided": 0.042059158816823664,
+    "bh_fdr_q_across_model_month_tests": 0.6629147417051658
+  },
+  "event_labels": [
+    {
+      "event_year": 1982,
+      "mature_djf_type_index_c": 1.9616163592317963,
+      "mature_flavor": "EP-like",
+      "full_two_gate_month": NaN
+    },
+    {
+      "event_year": 1986,
+      "mature_djf_type_index_c": 0.2594687696983253,
+      "mature_flavor": "EP-like",
+      "full_two_gate_month": NaN
+    },
+    {
+      "event_year": 1991,
+      "mature_djf_type_index_c": 0.24132426843822566,
+      "mature_flavor": "EP-like",
+      "full_two_gate_month": NaN
+    },
+    {
+      "event_year": 1994,
+      "mature_djf_type_index_c": -0.23776197150240344,
+      "mature_flavor": "CP-like",
+      "full_two_gate_month": NaN
+    },
+    {
+      "event_year": 1997,
+      "mature_djf_type_index_c": 2.178809645816081,
+      "mature_flavor": "EP-like",
+      "full_two_gate_month": 4.0
+    },
+    {
+      "event_year": 2002,
+      "mature_djf_type_index_c": -0.02956808603483907,
+      "mature_flavor": "mixed/borderline",
+      "full_two_gate_month": NaN
+    },
+    {
+      "event_year": 2004,
+      "mature_djf_type_index_c": -0.5320306849194137,
+      "mature_flavor": "CP-like",
+      "full_two_gate_month": NaN
+    },
+    {
+      "event_year": 2006,
+      "mature_djf_type_index_c": 0.013688885792369376,
+      "mature_flavor": "mixed/borderline",
+      "full_two_gate_month": NaN
+    },
+    {
+      "event_year": 2009,
+      "mature_djf_type_index_c": -0.02138121543569582,
+      "mature_flavor": "mixed/borderline",
+      "full_two_gate_month": NaN
+    },
+    {
+      "event_year": 2015,
+      "mature_djf_type_index_c": 1.0733631493689113,
+      "mature_flavor": "EP-like",
+      "full_two_gate_month": 3.0
+    },
+    {
+      "event_year": 2018,
+      "mature_djf_type_index_c": -0.014769390823995346,
+      "mature_flavor": "mixed/borderline",
+      "full_two_gate_month": NaN
+    },
+    {
+      "event_year": 2019,
+      "mature_djf_type_index_c": -0.6118560852654653,
+      "mature_flavor": "CP-like",
+      "full_two_gate_month": 1.0
+    },
+    {
+      "event_year": 2023,
+      "mature_djf_type_index_c": 0.5912532323462436,
+      "mature_flavor": "EP-like",
+      "full_two_gate_month": 5.0
+    }
+  ],
+  "published_classification_crosscheck": {
+    "n_available": 7,
+    "n_agree": 7,
+    "source": "Beniche et al. (2024), Supplementary Fig. S4"
+  }
+}

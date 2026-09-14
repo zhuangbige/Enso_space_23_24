@@ -1,0 +1,157 @@
+{
+  "events": [
+    1982,
+    1986,
+    1991,
+    1994,
+    1997,
+    2002,
+    2004,
+    2006,
+    2009,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "release_definition": "- trailing 5-day tendency of T>20C heat content in 5S-5N, 0-300m, 160E-180E; 15-day rolling mean",
+  "targets": {
+    "wind20d": "persistent SODA3 central-Pacific westerly onset within 20 days",
+    "monthly_wind": "first March-June month with ERA5 u850 anomaly > 0",
+    "monthly_convection": "first March-June month with CPC OLR anomaly < 0",
+    "monthly_joint": "first March-June month with both conditions"
+  },
+  "quality_control": {
+    "n_events": 13,
+    "n_pentads": 471,
+    "interval_min_days": 5.0,
+    "interval_median_days": 5.0,
+    "interval_max_days": 5.0,
+    "prior_wind_lag_median_days": 5.0
+  },
+  "release_coefficients": [
+    {
+      "outcome": "wind20d",
+      "model": "heat_plus_release",
+      "median_standardized_release_coefficient": 0.2491193461590536,
+      "positive_fold_fraction": 1.0
+    },
+    {
+      "outcome": "wind20d",
+      "model": "heat_plus_release_and_wind",
+      "median_standardized_release_coefficient": 0.12346601578995,
+      "positive_fold_fraction": 1.0
+    },
+    {
+      "outcome": "monthly_wind",
+      "model": "heat_plus_release",
+      "median_standardized_release_coefficient": -0.1546078385723021,
+      "positive_fold_fraction": 0.07692307692307693
+    },
+    {
+      "outcome": "monthly_wind",
+      "model": "heat_plus_release_and_wind",
+      "median_standardized_release_coefficient": -0.13932714131803023,
+      "positive_fold_fraction": 0.07692307692307693
+    },
+    {
+      "outcome": "monthly_convection",
+      "model": "heat_plus_release",
+      "median_standardized_release_coefficient": -0.7758142745007218,
+      "positive_fold_fraction": 0.0
+    },
+    {
+      "outcome": "monthly_convection",
+      "model": "heat_plus_release_and_wind",
+      "median_standardized_release_coefficient": -0.9738347645147835,
+      "positive_fold_fraction": 0.0
+    },
+    {
+      "outcome": "monthly_joint",
+      "model": "heat_plus_release",
+      "median_standardized_release_coefficient": -0.39781695402529366,
+      "positive_fold_fraction": 0.0
+    },
+    {
+      "outcome": "monthly_joint",
+      "model": "heat_plus_release_and_wind",
+      "median_standardized_release_coefficient": -0.5324167226245454,
+      "positive_fold_fraction": 0.0
+    }
+  ],
+  "lag_windows_days": [
+    [
+      0,
+      20
+    ],
+    [
+      20,
+      40
+    ],
+    [
+      40,
+      60
+    ]
+  ],
+  "lag_release_coefficients": [
+    {
+      "outcome": "monthly_wind",
+      "window_days": "0-20",
+      "median_standardized_release_coefficient": -0.23317987426487102,
+      "positive_fold_fraction": 0.0
+    },
+    {
+      "outcome": "monthly_wind",
+      "window_days": "20-40",
+      "median_standardized_release_coefficient": 0.653642629813415,
+      "positive_fold_fraction": 1.0
+    },
+    {
+      "outcome": "monthly_wind",
+      "window_days": "40-60",
+      "median_standardized_release_coefficient": -0.5751529788097757,
+      "positive_fold_fraction": 0.0
+    },
+    {
+      "outcome": "monthly_convection",
+      "window_days": "0-20",
+      "median_standardized_release_coefficient": -0.6453305348759529,
+      "positive_fold_fraction": 0.0
+    },
+    {
+      "outcome": "monthly_convection",
+      "window_days": "20-40",
+      "median_standardized_release_coefficient": 0.8934302891506122,
+      "positive_fold_fraction": 1.0
+    },
+    {
+      "outcome": "monthly_convection",
+      "window_days": "40-60",
+      "median_standardized_release_coefficient": 0.634665817375619,
+      "positive_fold_fraction": 1.0
+    },
+    {
+      "outcome": "monthly_joint",
+      "window_days": "0-20",
+      "median_standardized_release_coefficient": -0.1325934473442909,
+      "positive_fold_fraction": 0.15384615384615385
+    },
+    {
+      "outcome": "monthly_joint",
+      "window_days": "20-40",
+      "median_standardized_release_coefficient": 0.3583671294178352,
+      "positive_fold_fraction": 1.0
+    },
+    {
+      "outcome": "monthly_joint",
+      "window_days": "40-60",
+      "median_standardized_release_coefficient": 0.23098533711659794,
+      "positive_fold_fraction": 0.9230769230769231
+    }
+  ],
+  "limits": [
+    "SODA3 wind stress is an atmospheric forcing field, not an independent atmosphere model response.",
+    "Monthly OLR timing is represented by the midpoint of the first qualifying month.",
+    "LOEO is cross-event hindcast validation, not an operational forecast demonstration."
+  ]
+}

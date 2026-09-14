@@ -1,0 +1,17 @@
+outcome,training_events,test_year,model,selected_ridge,mse,delta_mse_vs_base
+m180_tendency_future5,1982-2009 event years,2015,base,100.0,2.1992633610898067,0.0
+m180_tendency_future5,1982-2009 event years,2018,base,100.0,1.794976008836622,0.0
+m180_tendency_future5,1982-2009 event years,2019,base,100.0,1.8729361803265727,0.0
+m180_tendency_future5,1982-2009 event years,2023,base,100.0,2.3695093735639277,0.0
+m180_tendency_future5,1982-2009 event years,2015,upstream_convergence_only,100.0,1.9788705002983864,-0.2203928607914203
+m180_tendency_future5,1982-2009 event years,2018,upstream_convergence_only,100.0,1.6136638105900771,-0.18131219824654488
+m180_tendency_future5,1982-2009 event years,2019,upstream_convergence_only,100.0,1.7307912948799924,-0.14214488544658033
+m180_tendency_future5,1982-2009 event years,2023,upstream_convergence_only,100.0,2.114744670922301,-0.2547647026416269
+m180_tendency_future5,1982-2009 event years,2015,wind_change_only,100.0,2.1318452016951466,-0.06741815939466012
+m180_tendency_future5,1982-2009 event years,2018,wind_change_only,100.0,1.8282571503320606,0.03328114149543859
+m180_tendency_future5,1982-2009 event years,2019,wind_change_only,100.0,1.8444156111165109,-0.028520569210061852
+m180_tendency_future5,1982-2009 event years,2023,wind_change_only,100.0,2.2252227588963427,-0.14428661466758497
+m180_tendency_future5,1982-2009 event years,2015,upstream_plus_wind_change,100.0,1.9172641860571409,-0.2819991750326658
+m180_tendency_future5,1982-2009 event years,2018,upstream_plus_wind_change,100.0,1.651475906990987,-0.143500101845635
+m180_tendency_future5,1982-2009 event years,2019,upstream_plus_wind_change,100.0,1.6978976605152865,-0.17503851981128626
+m180_tendency_future5,1982-2009 event years,2023,upstream_plus_wind_change,100.0,2.010013020946852,-0.3594963526170756

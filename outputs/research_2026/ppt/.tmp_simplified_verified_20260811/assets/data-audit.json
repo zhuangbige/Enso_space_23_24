@@ -1,0 +1,95 @@
+{
+  "arrival": {
+    "1997": {
+      "inflow_zj": 16.95640595,
+      "ohc_gain_zj": 17.31754541
+    },
+    "2015": {
+      "inflow_zj": 8.48760368,
+      "ohc_gain_zj": 8.604799183
+    },
+    "2023": {
+      "inflow_zj": 9.903187024,
+      "ohc_gain_zj": 11.11554695
+    }
+  },
+  "trajectory": {
+    "1997": {
+      "median_eastward_deg": 29.983107932136814,
+      "active_weight_fraction": 0.6206348651759142
+    },
+    "2015": {
+      "median_eastward_deg": 21.02336270126517,
+      "active_weight_fraction": 0.6379708821012113
+    },
+    "2023": {
+      "median_eastward_deg": 17.654947997177857,
+      "active_weight_fraction": 0.7453743068384711
+    }
+  },
+  "partition": {
+    "1997": {
+      "storage_loss_zj": 21.7564058,
+      "westward_return_zj": 9.517265773,
+      "northward_output_zj": 5.703367138,
+      "southward_output_zj": 0.9770782138,
+      "eastward_export_zj": 0.1212720518,
+      "surface_loss_zj": 4.913400194,
+      "residual_zj": -0.5240224289
+    },
+    "2015": {
+      "storage_loss_zj": 19.88532307,
+      "westward_return_zj": 8.647413675,
+      "northward_output_zj": 2.990211536,
+      "southward_output_zj": 0.05239057736,
+      "eastward_export_zj": 0.3015686107,
+      "surface_loss_zj": 1.508469573,
+      "residual_zj": -6.385269096
+    },
+    "2023": {
+      "storage_loss_zj": 15.95425708,
+      "westward_return_zj": 9.450645758,
+      "northward_output_zj": 2.165581439,
+      "southward_output_zj": -0.722921236,
+      "eastward_export_zj": 0.1687825911,
+      "surface_loss_zj": 0.4654415672,
+      "residual_zj": -4.426726958
+    }
+  },
+  "q3": {
+    "early_north_to_ne925": {
+      "partial_r": 0.6796797189,
+      "permutation_p": 0.007299635018,
+      "x_unit": "ZJ",
+      "y_unit": "m s-1"
+    },
+    "stress_to_north": {
+      "partial_r": 0.7415531028,
+      "permutation_p": 0.004999750012,
+      "x_unit": "N m-2",
+      "y_unit": "ZJ"
+    },
+    "sst_to_surface": {
+      "partial_r": 0.6465693631,
+      "permutation_p": 0.01604919754,
+      "x_unit": "degC",
+      "y_unit": "ZJ"
+    }
+  },
+  "residual_summary": {
+    "fraction_of_loss": {
+      "1997": 0.02408589147109951,
+      "2015": 0.3211046193980695,
+      "2023": 0.2774636848211048
+    }
+  },
+  "source_files": [
+    "/Users/daiyue/Documents/Maryland/data/derived/research_2026/soda3_ohc300_anomaly_hovmoller_1997_2015_2023.csv",
+    "/Users/daiyue/Documents/Maryland/data/derived/research_2026/soda3_temp_anomaly_lagrangian_pilot_summary.csv",
+    "/Users/daiyue/Documents/Maryland/data/derived/research_2026/soda3_three_box_ohc_anomaly_budget_events.csv",
+    "/Users/daiyue/Documents/Maryland/data/derived/research_2026/nonh20_early_north_to_jiang_event_table.csv",
+    "/Users/daiyue/Documents/Maryland/data/derived/research_2026/nonh20_early_north_to_jiang_relationships.csv",
+    "/Users/daiyue/Documents/Maryland/data/derived/research_2026/nonh20_third_question_event_table.csv",
+    "/Users/daiyue/Documents/Maryland/data/derived/research_2026/nonh20_third_question_relationships.csv"
+  ]
+}

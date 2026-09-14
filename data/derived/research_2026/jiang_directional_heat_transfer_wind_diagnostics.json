@@ -1,0 +1,33 @@
+{
+  "scope": "Direct physical terms only; no new coupling or routing index.",
+  "budget_definition": "dOHC'/dt = corrected lateral enthalpy convergence' + surface heat flux' + unresolved contribution",
+  "sign_convention": "Positive directional values follow the output column labels; negative values indicate the opposite direction.",
+  "integration": "Month-centre trapezoidal integration, matching the existing Jiang event-budget audit.",
+  "n_events": 14,
+  "events": [
+    1982,
+    1986,
+    1987,
+    1991,
+    1994,
+    1997,
+    2002,
+    2004,
+    2006,
+    2009,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "mjj_reproduction_max_abs_error_zj": {
+    "storage_change_zj": 5.000000413701855e-10,
+    "west_input_zj": 4.847997558954376e-10,
+    "eastward_output_zj": 4.515201545984837e-10,
+    "southward_output_zj": 4.4864001402800113e-10,
+    "northward_output_zj": 4.305602541165854e-10,
+    "surface_loss_zj": 4.632001449067502e-10
+  },
+  "phase_table": "/Users/daiyue/Documents/Maryland/data/derived/research_2026/jiang_directional_heat_transfer_wind_direct_phases.csv",
+  "relation_table": "/Users/daiyue/Documents/Maryland/data/derived/research_2026/jiang_early_direction_mjj_wind_direct_relations.csv"
+}

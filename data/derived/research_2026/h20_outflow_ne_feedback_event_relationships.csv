@@ -1,0 +1,7 @@
+test_id,label,x,y,n_events,pearson_r,permutation_p,bootstrap_ci_low,bootstrap_ci_high,bh_fdr_q
+event_q_to_h20,FMA Q5N -> Jan-Jun north H20 change,q5n_fma_zj,h20_north_jan_to_jun_zj,12,0.670476025,0.0149328356,0.241257517,0.914329681,0.0895970134
+event_q_to_sst,FMA Q5N -> MJJ north SST,q5n_fma_zj,sst_north_mjj_c,13,-0.42837691,0.146161795,-0.781454397,0.0980928053,0.321655945
+event_q_to_rain,FMA Q5N -> MJJ rain dipole,q5n_fma_zj,precip_dipole_mjj_mmday,13,-0.251765068,0.406319789,-0.629377045,0.129747628,0.581420619
+event_q_to_ne,FMA Q5N -> MJJ NE925,q5n_fma_zj,ne925_mjj_ms,13,0.414679018,0.160827972,-0.0507519829,0.828805689,0.321655945
+event_h20_to_ne,MJJ north H20 -> MJJ NE925,h20_north_mjj_gjm2,ne925_mjj_ms,12,-0.177654353,0.584913836,-0.717015727,0.629985646,0.584913836
+event_sst_to_ne,MJJ north SST -> MJJ NE925,sst_north_mjj_c,ne925_mjj_ms,13,-0.216096212,0.484517183,-0.776983715,0.468144993,0.581420619

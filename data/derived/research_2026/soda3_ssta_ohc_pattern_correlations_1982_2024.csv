@@ -1,0 +1,17 @@
+region,predictor,predictor_label,outcome,n_events,spearman_rho,permutation_p_two_sided,n_permutations
+fep_90W_80W,joint_positive_month_count,Number of co-positive months,mature_djf_nino34_c,13,0.45064377830157626,0.12398876011239887,100000
+fep_90W_80W,longest_joint_positive_run_months,Longest co-positive run,mature_djf_nino34_c,13,0.5711900173429282,0.044319556804431955,100000
+fep_90W_80W,jan_jun_positive_product_sum,Integrated positive SSTA×OHC,mature_djf_nino34_c,13,0.5515855335818465,0.05472945270547294,100000
+fep_90W_80W,jan_jun_mean_ssta_c,January--June mean SSTA,mature_djf_nino34_c,13,0.6263736263736264,0.025309746902530975,100000
+fep_90W_80W,jan_jun_mean_ohc300_gj_m2,January--June mean OHC,mature_djf_nino34_c,13,0.521978021978022,0.07110928890711093,100000
+fep_90W_80W,june_ssta_c,June SSTA,mature_djf_nino34_c,13,0.7362637362637363,0.005469945300546995,100000
+fep_90W_80W,june_ohc300_gj_m2,June OHC,mature_djf_nino34_c,13,0.7692307692307693,0.002989970100298997,100000
+fep_90W_80W,june_joint_warmth_z,June joint warmth score,mature_djf_nino34_c,13,0.7582417582417582,0.0034599654003459965,100000
+east_140W_80W,joint_positive_month_count,Number of co-positive months,mature_djf_nino34_c,13,0.41243349595148543,0.16169838301616984,100000
+east_140W_80W,longest_joint_positive_run_months,Longest co-positive run,mature_djf_nino34_c,13,0.43775445089229886,0.13934860651393485,100000
+east_140W_80W,jan_jun_positive_product_sum,Integrated positive SSTA×OHC,mature_djf_nino34_c,13,0.5966941897186163,0.035609643903560965,100000
+east_140W_80W,jan_jun_mean_ssta_c,January--June mean SSTA,mature_djf_nino34_c,13,0.510989010989011,0.07685923140768593,100000
+east_140W_80W,jan_jun_mean_ohc300_gj_m2,January--June mean OHC,mature_djf_nino34_c,13,0.45054945054945056,0.12589874101258988,100000
+east_140W_80W,june_ssta_c,June SSTA,mature_djf_nino34_c,13,0.8241758241758241,0.0008499915000849992,100000
+east_140W_80W,june_ohc300_gj_m2,June OHC,mature_djf_nino34_c,13,0.8406593406593407,0.0005999940000599994,100000
+east_140W_80W,june_joint_warmth_z,June joint warmth score,mature_djf_nino34_c,13,0.8571428571428571,0.00034999650003499967,100000

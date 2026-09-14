@@ -1,0 +1,33 @@
+{
+  "time_start": "1980-01-15",
+  "time_end": "2024-06-15",
+  "baseline": [
+    1980,
+    2022
+  ],
+  "events_available": [
+    1982,
+    1986,
+    1991,
+    1994,
+    1997,
+    2002,
+    2004,
+    2006,
+    2009,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "budget_definition": "dOHC'/dt = corrected boundary enthalpy convergence' + surface heat flux' + residual'",
+  "west_max_corrected_volume_error_sv": 1.065814104e-14,
+  "west_max_mass_correction_m_s": 0.0220550944,
+  "west_max_total_reference_spread_zj": 3.967985939823393e-09,
+  "central_max_corrected_volume_error_sv": 1.421085472e-14,
+  "central_max_mass_correction_m_s": 0.01677071331,
+  "central_max_total_reference_spread_zj": 3.846938767537722e-09,
+  "east_max_corrected_volume_error_sv": 3.552713679e-14,
+  "east_max_mass_correction_m_s": 0.0147245715,
+  "east_max_total_reference_spread_zj": 3.347413901622076e-09
+}

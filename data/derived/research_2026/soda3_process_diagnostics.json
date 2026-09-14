@@ -1,0 +1,115 @@
+{
+  "baseline": [
+    1980,
+    2024
+  ],
+  "event_count": 13,
+  "walkforward_years": [
+    2000,
+    2023
+  ],
+  "best_event_correlation": {
+    "feature": "wwv_centroid_deg_e",
+    "label": "Warm-volume centroid",
+    "correlation_with_djf_nino3_minus_nino4": 0.7745023728088364,
+    "two_sided_permutation_p": 0.006099695015249237,
+    "n_events": 13,
+    "bh_fdr_q_across_ten_predictors": 0.02383214172624702
+  },
+  "best_walkforward_skill": {
+    "month": 6,
+    "model": "+ SSH gradient",
+    "n_test": 24,
+    "rmse_c": 0.4955055710166859,
+    "persistence_rmse_c": 0.5096924019021087,
+    "rmse_skill_vs_persistence": 0.027834103142364564,
+    "skill_ci_2p5": -0.2533502676723408,
+    "skill_ci_97p5": 0.25711591447796855,
+    "correlation": 0.23194431019458184,
+    "sign_accuracy": 0.375,
+    "paired_improvement_p_one_sided": 0.42287885605719716,
+    "bh_fdr_q_across_model_month_tests": 0.9934503274836258
+  },
+  "best_event_loeo_skill": {
+    "month": 5,
+    "model": "+ east WWV fraction",
+    "n_test": 13,
+    "rmse_c": 0.41302860880173303,
+    "persistence_rmse_c": 0.7895855117282298,
+    "rmse_skill_vs_persistence": 0.4769045243779817,
+    "skill_ci_2p5": 0.15439098395021592,
+    "skill_ci_97p5": 0.7111793345836775,
+    "correlation": 0.9017103084367392,
+    "sign_accuracy": 0.8461538461538461,
+    "paired_improvement_p_one_sided": 0.010299485025748713,
+    "bh_fdr_q_across_model_month_tests": 0.16002836221825276
+  },
+  "fdr_significant_event_correlations": [
+    {
+      "feature": "wwv_centroid_deg_e",
+      "label": "Warm-volume centroid",
+      "correlation_with_djf_nino3_minus_nino4": 0.7745023728088364,
+      "two_sided_permutation_p": 0.006099695015249237,
+      "n_events": 13,
+      "bh_fdr_q_across_ten_predictors": 0.02383214172624702
+    },
+    {
+      "feature": "wwv_east_fraction",
+      "label": "East WWV fraction",
+      "correlation_with_djf_nino3_minus_nino4": 0.7460760404890303,
+      "two_sided_permutation_p": 0.010849457527123643,
+      "n_events": 13,
+      "bh_fdr_q_across_ten_predictors": 0.027123643817809108
+    },
+    {
+      "feature": "vadv_east_kmonth",
+      "label": "Vertical advection",
+      "correlation_with_djf_nino3_minus_nino4": 0.7256457053070571,
+      "two_sided_permutation_p": 0.006349682515874206,
+      "n_events": 13,
+      "bh_fdr_q_across_ten_predictors": 0.02383214172624702
+    },
+    {
+      "feature": "barrier_east_m",
+      "label": "Barrier-layer thickness",
+      "correlation_with_djf_nino3_minus_nino4": 0.7494717746156915,
+      "two_sided_permutation_p": 0.007149642517874106,
+      "n_events": 13,
+      "bh_fdr_q_across_ten_predictors": 0.02383214172624702
+    },
+    {
+      "feature": "ssh_ew_m",
+      "label": "SSH east minus west",
+      "correlation_with_djf_nino3_minus_nino4": 0.6562839553009508,
+      "two_sided_permutation_p": 0.017949102544872756,
+      "n_events": 13,
+      "bh_fdr_q_across_ten_predictors": 0.03589820508974551
+    }
+  ],
+  "fdr_significant_walkforward_tests": [],
+  "fdr_significant_event_loeo_tests": [],
+  "event_2023_may_june": {
+    "wwv_centroid_deg_e": 2.970838887238415,
+    "wwv_east_fraction": 0.022077129999589218,
+    "ohc300_east_tendency_wm2": 70.3124457032104,
+    "hadv_east_kmonth": 0.07544591787596294,
+    "vadv_east_kmonth": 0.4177464952306967,
+    "surface_heating_east_kmonth": -0.7951602852393915,
+    "barrier_east_m": 0.9413474881549897,
+    "ssh_ew_m": 0.051334498118197375,
+    "taux_central_nm2": -0.0024141426972105508,
+    "u_50_150_central_ms": 0.0430556291311284
+  },
+  "event_1997_may_june": {
+    "wwv_centroid_deg_e": 6.627261533429532,
+    "wwv_east_fraction": 0.06496004275761769,
+    "ohc300_east_tendency_wm2": 156.50447091418803,
+    "hadv_east_kmonth": 0.18007907704531506,
+    "vadv_east_kmonth": 0.4801798663436435,
+    "surface_heating_east_kmonth": -1.0747193691324184,
+    "barrier_east_m": 3.8897145417222116,
+    "ssh_ew_m": 0.14887526441661775,
+    "taux_central_nm2": 0.023300436945049248,
+    "u_50_150_central_ms": 0.008611464913565264
+  }
+}

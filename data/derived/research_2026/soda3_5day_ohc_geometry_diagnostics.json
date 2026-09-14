@@ -1,0 +1,44 @@
+{
+  "event_years": [
+    1982,
+    1986,
+    1991,
+    1994,
+    1997,
+    2002,
+    2004,
+    2006,
+    2009,
+    2015,
+    2018,
+    2019,
+    2023
+  ],
+  "primary_onset_definition": {
+    "search_start_month": 3,
+    "first_two_pentads_positive": true,
+    "positive_pentads_in_30_days": 4,
+    "window_pentads": 6
+  },
+  "risk_start_month": 2,
+  "forecast_horizon_days": 20,
+  "minimum_positive_heat_pj_m": 0.25,
+  "risk_rows": 146,
+  "events_with_primary_onset": 13,
+  "durable_onset_definition": {
+    "positive_pentads": 8,
+    "window_pentads": 12
+  },
+  "events_with_durable_onset": 11,
+  "matched_analysis": {
+    "matched_pentads": 38,
+    "unique_event_pairs": 18,
+    "higher_east_fraction_future_stress_mean_difference_nm2": 0.0032930297733974523,
+    "higher_east_fraction_future_stress_ci": [
+      -0.008115526007097338,
+      0.015744852020991778
+    ],
+    "directional_fraction_future_stress_positive": 0.6578947368421053,
+    "higher_east_fraction_onset_probability_difference": 0.19074074074074077
+  }
+}

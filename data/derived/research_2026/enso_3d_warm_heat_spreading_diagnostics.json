@@ -1,0 +1,28 @@
+{
+  "analysis_version": "20260818_v2",
+  "event_count": 13,
+  "monthly_rows": 78,
+  "relationship_rows": 12,
+  "sensitivity_rows": 8,
+  "ocean_baseline": [
+    1980,
+    2024
+  ],
+  "moving_window_half_width_deg": 10.0,
+  "common_full_depth_column_mask": true,
+  "max_vertical_layer_closure_gjm2": 6.661338147750939e-16,
+  "primary_partial_r": -0.8095002447999241,
+  "primary_partial_spearman_r": -0.7582417582417583,
+  "primary_permutation_p": 0.0010998900109989002,
+  "primary_fdr_q": 0.0032996700329967006,
+  "primary_bootstrap_ci": [
+    -0.9518802868074275,
+    -0.29509972670964096
+  ],
+  "primary_loeo_range": [
+    -0.8431160642891866,
+    -0.7489564804616324
+  ],
+  "sign_convention": "positive broadening residual means more off-equatorial OHC at fixed three-band total",
+  "causal_limit": "diagnostic association; not a diffusion or coupled-model attribution"
+}

@@ -1,0 +1,62 @@
+{
+  "n_events": 13,
+  "n_events_with_two_pentad_actual_westerly": 1,
+  "events_with_two_pentad_actual_westerly": [
+    1997
+  ],
+  "primary_predictor": "Mar-Apr maximum 15-day 0-300 m OHC anomaly",
+  "primary_outcome": "May-Jun maximum 15-day actual zonal wind stress",
+  "pearson_r": 0.7377565650956,
+  "pearson_parametric_p": 0.003994043141709132,
+  "pearson_permutation_p": 0.008659826803463931,
+  "pearson_bootstrap_95pct_ci": [
+    0.05101332382074517,
+    0.9333953202275187
+  ],
+  "spearman_rho": 0.5989010989010989,
+  "spearman_p": 0.03055411417293787,
+  "linear_slope_nm2_per_gj_m2": 0.013760395653020244,
+  "linear_slope_bootstrap_95pct_ci": [
+    0.0011006970720340483,
+    0.020520024708479332
+  ],
+  "pearson_without_1997": 0.3972634307469802,
+  "pearson_loeo_range": [
+    0.3972634307469802,
+    0.823403628686345
+  ],
+  "candidate_breakpoint_gj_m2": 0.6563777285772263,
+  "breakpoint_bootstrap_90pct_ci_gj_m2": [
+    0.15177865870961535,
+    0.7422824384893763,
+    1.4180323598665314
+  ],
+  "breakpoint_loeo_range_gj_m2": [
+    0.5528394045447893,
+    0.837754880632674
+  ],
+  "linear_bic": -124.67500246489637,
+  "segmented_bic": -122.7994422163255,
+  "bic_linear_minus_segmented": -1.8755602485708636,
+  "linear_loeo_rmse_nm2": 0.009632432144668171,
+  "segmented_nested_loeo_rmse_nm2": 0.009678538301338661,
+  "training_mean_loeo_rmse_nm2": 0.010894361315139753,
+  "segmented_rmse_improvement_percent": -0.4786554006093963,
+  "linear_loeo_skill_vs_training_mean": 0.21824914077215318,
+  "segmented_loeo_skill_vs_training_mean": 0.2107474445866171,
+  "segmented_low_ohc_slope_nm2_per_gj_m2": -0.00023898508054039352,
+  "segmented_high_ohc_slope_nm2_per_gj_m2": 0.019805545197296076,
+  "threshold_stability_tests": {
+    "loeo_rmse_improvement_ge_10pct": false,
+    "loeo_breakpoint_range_le_one_third_xrange": true,
+    "bootstrap_90pct_width_le_one_third_xrange": false,
+    "bic_improvement_ge_2": false
+  },
+  "stable_numerical_threshold_accepted": false,
+  "bootstrap_replicates_used": 2878,
+  "interpretation": "continuous ocean checkpoint; numerical breakpoint is not stable",
+  "data_source": "SODA3.15.2 five-day reanalysis",
+  "domain": "5S-5N, 180-140W; 0-300 m",
+  "monthly_alignment_max_error_gj_m2": 2.220446049250313e-16,
+  "stress_independence_caveat": "SODA3 zonal wind stress is an atmospheric forcing field, not an independent response observation."
+}

@@ -1,0 +1,5 @@
+test_id,label,x,y,controls,n_events,partial_r,partial_spearman_r,analytic_p,permutation_p,bootstrap_ci_low,bootstrap_ci_high,loeo_r_min,loeo_r_max,window
+window_jan_mar,Jan-Mar north H20 change -> MJJ wind-stress response,north_h20_change_jan_mar_zj,jiang_tau_response_mjj_z,q140_mar_apr_z,13,-0.464556363,-0.384615385,0.128119388,0.107637847,-0.832282756,0.477633337,-0.626195681,-0.23509846,Jan-Mar
+window_jan_apr,Jan-Apr north H20 change -> MJJ wind-stress response,north_h20_change_jan_apr_zj,jiang_tau_response_mjj_z,q140_mar_apr_z,13,-0.7300447,-0.71978022,0.00702480851,0.0050598988,-0.942045438,0.0314146998,-0.875274727,-0.661254403,Jan-Apr
+window_jan_may,Jan-May north H20 change -> MJJ wind-stress response,north_h20_change_jan_may_zj,jiang_tau_response_mjj_z,q140_mar_apr_z,13,-0.707628715,-0.598901099,0.0100395186,0.0081598368,-0.931151847,-0.048677117,-0.847719004,-0.646989285,Jan-May
+window_jan_jun,Jan-Jun north H20 change -> MJJ wind-stress response,north_h20_change_jan_jun_zj,jiang_tau_response_mjj_z,q140_mar_apr_z,13,-0.630542765,-0.653846154,0.0279379082,0.0201395972,-0.864103334,-0.0729453868,-0.718967223,-0.548060579,Jan-Jun

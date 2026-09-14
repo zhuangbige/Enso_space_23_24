@@ -1,0 +1,68 @@
+{
+  "n_months": 540,
+  "time_start": "1980-01-15",
+  "time_end": "2024-12-15",
+  "latitude_bounds": [
+    -10.0,
+    5.0
+  ],
+  "minimum_valid_cell_fraction": 0.9922222222222222,
+  "wet_area_西箱_1e12_m2": 3.695189276063043,
+  "wet_area_中箱_1e12_m2": 7.390378552126086,
+  "wet_area_东箱_1e12_m2": 10.999217977165735,
+  "baseline": [
+    1980,
+    2014
+  ],
+  "boxes_degrees_east": {
+    "西箱": [
+      160.0,
+      180.0
+    ],
+    "中箱": [
+      180.0,
+      220.0
+    ],
+    "东箱": [
+      220.0,
+      280.0
+    ]
+  },
+  "primary_post_arrival_window": "post_Jul_Sep",
+  "absolute_ohc_reference": "0 degC",
+  "primary_comparison": "area-mean OHC because box areas differ",
+  "east_abs_gjm2_JAS": [
+    22.484361134242864,
+    21.788947029873146,
+    21.358213380589262
+  ],
+  "west_abs_gjm2_JAS": [
+    25.419778923075892,
+    26.28064308803803,
+    27.22115091629085
+  ],
+  "east_anom_gjm2_JAS": [
+    2.190711328909701,
+    1.5570231701856292,
+    1.1537232745220318
+  ],
+  "west_anom_gjm2_JAS": [
+    -1.153028478610975,
+    -0.9290144987405405,
+    -0.2715511971951414
+  ],
+  "figure_exists": true,
+  "domain_sensitivity_east_absolute_order": {
+    "10S–5N": [
+      1997,
+      2015,
+      2023
+    ],
+    "5S–5N": [
+      1997,
+      2015,
+      2023
+    ]
+  },
+  "domain_sensitivity_same_east_order": true
+}

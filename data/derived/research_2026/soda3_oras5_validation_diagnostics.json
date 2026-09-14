@@ -1,0 +1,147 @@
+{
+  "primary_confirmatory_test": {
+    "predictor": "ORAS5 May east-of-dateline D20-volume fraction",
+    "correlation": 0.7193120952701422,
+    "one_sided_permutation_p": 0.0095995200239988,
+    "n_events": 13
+  },
+  "consolidated_stream_sensitivity": {
+    "correlation": 0.7368614488332614,
+    "one_sided_permutation_p": 0.02589870506474676,
+    "n_events": 9
+  },
+  "mean_matched_monthly_correlation": 0.9543110901481329,
+  "monthly_consistency": [
+    {
+      "feature": "redistribution_centroid",
+      "label": "Warm-volume centroid",
+      "monthly_correlation_soda3_oras5": 0.955381952588683,
+      "year_block_permutation_p": 4.999750012499375e-05,
+      "n_months": 270
+    },
+    {
+      "feature": "east_fraction",
+      "label": "East warm-volume fraction",
+      "monthly_correlation_soda3_oras5": 0.9534594315483262,
+      "year_block_permutation_p": 4.999750012499375e-05,
+      "n_months": 270
+    },
+    {
+      "feature": "d20_ew",
+      "label": "D20 east minus west",
+      "monthly_correlation_soda3_oras5": 0.96286783357188,
+      "year_block_permutation_p": 4.999750012499375e-05,
+      "n_months": 270
+    },
+    {
+      "feature": "ohc300_ew",
+      "label": "OHC300 east minus west",
+      "monthly_correlation_soda3_oras5": 0.9675911305995394,
+      "year_block_permutation_p": 4.999750012499375e-05,
+      "n_months": 270
+    },
+    {
+      "feature": "ohc300_east_tendency",
+      "label": "Eastern OHC tendency",
+      "monthly_correlation_soda3_oras5": 0.9156402230618904,
+      "year_block_permutation_p": 4.999750012499375e-05,
+      "n_months": 268
+    },
+    {
+      "feature": "ssh_ew",
+      "label": "SSH east minus west",
+      "monthly_correlation_soda3_oras5": 0.9661877801201991,
+      "year_block_permutation_p": 4.999750012499375e-05,
+      "n_months": 270
+    },
+    {
+      "feature": "taux_central",
+      "label": "Central-Pacific stress",
+      "monthly_correlation_soda3_oras5": 0.9590492795464121,
+      "year_block_permutation_p": 4.999750012499375e-05,
+      "n_months": 270
+    }
+  ],
+  "oras_event_correlations": [
+    {
+      "source": "ORAS",
+      "feature": "oras_ohc300_east_tendency_wm2_anom",
+      "label": "Eastern OHC tendency",
+      "correlation_with_djf_nino3_minus_nino4": 0.7745636855571167,
+      "two_sided_permutation_p": 0.0014499275036248187,
+      "n_events": 13,
+      "event_set": "all_13_oras_family",
+      "bh_fdr_q_within_family": 0.006199690015499225
+    },
+    {
+      "source": "ORAS",
+      "feature": "oras_d20_centroid_deg_e_anom",
+      "label": "D20-volume centroid",
+      "correlation_with_djf_nino3_minus_nino4": 0.7745577348083691,
+      "two_sided_permutation_p": 0.004949752512374382,
+      "n_events": 13,
+      "event_set": "all_13_oras_family",
+      "bh_fdr_q_within_family": 0.013199340032998351
+    },
+    {
+      "source": "ORAS",
+      "feature": "oras_d20_east_fraction_anom",
+      "label": "East D20-volume fraction",
+      "correlation_with_djf_nino3_minus_nino4": 0.7654371845690374,
+      "two_sided_permutation_p": 0.007499625018749062,
+      "n_events": 13,
+      "event_set": "all_13_oras_family",
+      "bh_fdr_q_within_family": 0.014999250037498125
+    },
+    {
+      "source": "ORAS",
+      "feature": "oras_mld03_east_m_anom",
+      "label": "Eastern MLD 0.03",
+      "correlation_with_djf_nino3_minus_nino4": 0.7581735391834936,
+      "two_sided_permutation_p": 0.0015499225038748063,
+      "n_events": 13,
+      "event_set": "all_13_oras_family",
+      "bh_fdr_q_within_family": 0.006199690015499225
+    },
+    {
+      "source": "ORAS",
+      "feature": "oras_d20_ew_m_anom",
+      "label": "D20 east minus west",
+      "correlation_with_djf_nino3_minus_nino4": 0.6783935250290251,
+      "two_sided_permutation_p": 0.015149242537873106,
+      "n_events": 13,
+      "event_set": "all_13_oras_family",
+      "bh_fdr_q_within_family": 0.021265603386497342
+    },
+    {
+      "source": "ORAS",
+      "feature": "oras_ssh_ew_m_anom",
+      "label": "SSH east minus west",
+      "correlation_with_djf_nino3_minus_nino4": 0.6593890008607313,
+      "two_sided_permutation_p": 0.015949202539873007,
+      "n_events": 13,
+      "event_set": "all_13_oras_family",
+      "bh_fdr_q_within_family": 0.021265603386497342
+    },
+    {
+      "source": "ORAS",
+      "feature": "oras_ohc300_ew_jm2_anom",
+      "label": "OHC300 east minus west",
+      "correlation_with_djf_nino3_minus_nino4": 0.5535474067699474,
+      "two_sided_permutation_p": 0.041997900104994754,
+      "n_events": 13,
+      "event_set": "all_13_oras_family",
+      "bh_fdr_q_within_family": 0.047997600119994
+    },
+    {
+      "source": "ORAS",
+      "feature": "oras_taux_central_nm2_anom",
+      "label": "Central-Pacific stress",
+      "correlation_with_djf_nino3_minus_nino4": 0.423244275383994,
+      "two_sided_permutation_p": 0.14869256537173142,
+      "n_events": 13,
+      "event_set": "all_13_oras_family",
+      "bh_fdr_q_within_family": 0.14869256537173142
+    }
+  ]
+}

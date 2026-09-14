@@ -1,0 +1,62 @@
+{
+  "leave_two_out": {
+    "pairs": 78,
+    "minimum_partial_r": 0.33048804941325627,
+    "fifth_percentile": 0.5320000000612253,
+    "median": 0.7277210559173577,
+    "fraction_positive": 1.0,
+    "fraction_above_0p5": 0.9487179487179487,
+    "lowest_pairs": [
+      {
+        "removed_event_1": 1997,
+        "removed_event_2": 2015,
+        "leave_two_out_partial_r": 0.33048804941325627
+      },
+      {
+        "removed_event_1": 1982,
+        "removed_event_2": 2018,
+        "leave_two_out_partial_r": 0.40282437160063167
+      },
+      {
+        "removed_event_1": 1982,
+        "removed_event_2": 1994,
+        "leave_two_out_partial_r": 0.48701613326429594
+      },
+      {
+        "removed_event_1": 1982,
+        "removed_event_2": 2023,
+        "leave_two_out_partial_r": 0.49233626233355543
+      }
+    ]
+  },
+  "expanding_window": {
+    "n_test": 18,
+    "models": [
+      {
+        "model": "Spring type persistence",
+        "rmse": 0.7328385050255551,
+        "prediction_observation_r": 0.0334572441494401,
+        "update_skill_relative_to_model": 0.5637248431725155
+      },
+      {
+        "model": "Spring Nino3.4 only",
+        "rmse": 0.5599949187216917,
+        "prediction_observation_r": -0.2599352517647526,
+        "update_skill_relative_to_model": 0.42906761647217995
+      },
+      {
+        "model": "NMME",
+        "rmse": 0.4339516512845908,
+        "prediction_observation_r": 0.6821041287863047,
+        "update_skill_relative_to_model": 0.2632376607790172
+      },
+      {
+        "model": "NMME + May-Jun coupling",
+        "rmse": 0.3197192337092433,
+        "prediction_observation_r": 0.8337534407899709,
+        "update_skill_relative_to_model": 0.0
+      }
+    ]
+  },
+  "interpretation": "The rain-dipole link is sign-stable but not uniformly above 0.5; the weakest deletion removes 1997 and 2015. The forecast update beats persistence and Nino3.4-only, but remains a May-June observational update rather than a pure March forecast."
+}
