@@ -1,0 +1,41 @@
+{
+  "baseline": "1982-2014 calendar-month linear expectation; CPC OLR native anomaly",
+  "flux_sign": "positive means ocean-to-atmosphere heat loss",
+  "month_counts": {
+    "2015": 12,
+    "2023": 12
+  },
+  "missing_target_values": 0,
+  "arrival_values": [
+    {
+      "year": 2015,
+      "transport_140w_zj": 8.49,
+      "east_ohc_gain_zj": 8.6
+    },
+    {
+      "year": 2023,
+      "transport_140w_zj": 9.9,
+      "east_ohc_gain_zj": 11.12
+    }
+  ],
+  "mjj_key_values": {
+    "2015": {
+      "sst_east_raw_c": 27.88404909769694,
+      "sst_east_anom_c": 1.1691395802931244,
+      "latent_loss_anom_wm2": 5.957892043858048,
+      "net_ocean_loss_anom_wm2": 13.97500555492016,
+      "minus_olr_cp_wm2": 17.750466165561306,
+      "precip_central_anom_mmday": 3.5573450730304756,
+      "tau_cwp_anom_nm2": 0.029242197153786464
+    },
+    "2023": {
+      "sst_east_raw_c": 27.89649772644043,
+      "sst_east_anom_c": 1.1238391356884538,
+      "latent_loss_anom_wm2": 0.09244886461752817,
+      "net_ocean_loss_anom_wm2": 1.1894405676907613,
+      "minus_olr_cp_wm2": 4.7542225361996024,
+      "precip_central_anom_mmday": 2.2318398856507877,
+      "tau_cwp_anom_nm2": 0.007878884713377618
+    }
+  }
+}
