@@ -1,0 +1,60 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>sLIM基准与空间扩展</title><style>
+body{max-width:1120px;margin:40px auto;padding:0 28px;font:17px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;color:#243542;background:#f8fafc}
+h1{font-size:29px;line-height:1.4}p{white-space:normal}table{border-collapse:collapse;margin:22px 0;width:100%;background:white}th,td{padding:9px;border-bottom:1px solid #d5dce4;text-align:right}th:first-child{text-align:left}
+figure{margin:38px 0;background:white;padding:18px;border-radius:10px}img{width:100%;height:auto}figcaption{color:#4a5c6c;font-size:15px}a{color:#226a9d}.callout{padding:20px;border-left:5px solid #c57b22;background:#fff8ec}
+</style><h1>已恢复sLIM，但当前初态仍不足以重现三次事件</h1>
+<p class="callout">保留西、中、东三区WWV26的四状态模型能够表达空间配置，但明显低估年末海温，尤其未重现2015年的持续增强。下一步应定位未解释过程；目前不能将初态替换解释为已成立的事件归因。</p><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>1月距平</th>
+      <th>OND模拟</th>
+      <th>OND观测</th>
+      <th>2—12月RMSE</th>
+      <th>持续性RMSE</th>
+    </tr>
+    <tr>
+      <th>year</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1997</th>
+      <td>-0.534</td>
+      <td>0.632</td>
+      <td>2.231</td>
+      <td>1.062</td>
+      <td>1.956</td>
+    </tr>
+    <tr>
+      <th>2015</th>
+      <td>0.558</td>
+      <td>0.151</td>
+      <td>2.615</td>
+      <td>1.572</td>
+      <td>1.255</td>
+    </tr>
+    <tr>
+      <th>2023</th>
+      <td>-0.636</td>
+      <td>0.327</td>
+      <td>1.922</td>
+      <td>1.082</td>
+      <td>1.853</td>
+    </tr>
+  </tbody>
+</table><figure><img src="Fig13_slim_native_sst.png"><figcaption>原配海温自由模拟。主模型保留三区WWV26。阴影为200次两年块正权重参数敏感性的2.5—97.5百分位，不含发展期随机扰动，不是完整预测区间。所有主图海温均为OISST；D20对照在这里也换为OISST，ERSST旧基准另列表。</figcaption></figure><figure><img src="Fig14_slim_native_wwv.png"><figcaption>与海温同一原配模拟的三区WWV26。各面板使用共同体积单位和纵轴；黑线为SODA3诊断，并非直接观测。WWV26为瞬时σθ=26面以上体积，区域统一9°S—9°N。</figcaption></figure><figure><img src="Fig15_slim_seasonal_coefficients.png"><figcaption>四状态模型海温方程的季节系数及估计器敏感性。蓝线为二阶扰动估计，虚线为同一组矩方程的精确求解。这些是给定其他状态后的统计系数，尚不能命名为独立输送过程的物理反馈；不宜把大系数直接解释为强因果作用。</figcaption></figure><figure><img src="Fig16_slim_representation_sensitivity.png"><figcaption>每条灰线覆盖预先指定的去趋势/不去趋势与扰动/精确求解四种设置，圆点为主预处理和估计器；并非置信区间。全部状态方案仍低估年底海温。旧ERSST基准与OISST真值略有不同，分别评分并保留在表中。</figcaption></figure><figure><img src="Fig17_slim_error_timing.png"><figcaption>把每个月原配状态方程的残差传播到OND，按月份加总可严格重建观测与自由模拟之差。月份表示残差进入的目标月。该分解只定位后续诊断时段，不将残差直接称为西风爆发、海表热通量或外强迫。未来残差未喂入自由模拟。</figcaption></figure><p>三案例 sLIM 基准与最小空间扩展：当前结果与下一步</p>
+<p>本轮确实恢复了项目已有的 Chen &amp; Jin (2021) sLIM 估计器。上一轮直接月传播ridge模型仍单独保留，不能称为sLIM结果。本轮没有重复解释其3×3替换矩阵，也没有在原配不足时新增实际事件归因。</p>
+<p>模型层次：<br>旧基准是ERSST Niño3.4 + GODAS平均D20；资料桥接为OISST Niño3.4 +同一D20；暖水基准为OISST Niño3.4 +总WWV26；最小空间主模型为 x=[T,V_W,V_C,V_E]。它保留全部三区配置，总量是三区之和，不能再作为独立状态重复加入。Niño3−Niño4及三区50—150m温度只作预先指定的复杂度敏感性。本轮没有增加PMM。<br>dx/dt=L(t)x；L(t)=L0+Lc1 cos(2πt)+Lc2 cos(4πt)+Ls1 sin(2πt)+Ls2 sin(4πt)，t单位为年。无外加随机扰动的积分，只检验给定初态后的确定性演变。海温—风关系未在本轮作为独立动力状态重新拟合，因此结果不能自动代表完整风反馈。</p>
+<p>训练为1982—2024剔除1996—1998、2014—2016、2022—2024后的34年408个月。分别在1982—1995、1999—2013、2017—2021三段内部插值、求导、计算滞后矩，再按有效点数汇总。不能跨缺口插值，72步/年的插值点也不是独立观测。气候态、趋势、尺度全部在训练样本中估计；主方案沿用旧sLIM的先同月去均值、后单条线性去趋势顺序。展示恢复为1982—2022同月距平。所有案例用同一参数；输入为已知整月1月均值，1月以后没有观测风或海洋强迫。训练含非目标事件的较晚年份，所以是目标排除的回溯研究，非当年实时预报。</p>
+<p>四状态主模型结果（海温单位°C）：<br>       1月距平  OND模拟  OND观测  2—12月RMSE  持续性RMSE<br>year                                         <br>1997 -0.534  0.632  2.231      1.062    1.956<br>2015  0.558  0.151  2.615      1.572    1.255<br>2023 -0.636  0.327  1.922      1.082    1.853</p>
+<p>1997/2023能模拟从冷到暖的方向，却远低于实际幅度；2015从1月到OND反而减弱，其RMSE劣于1月距平持续性。把总WWV换成三区WWV，在1997/2023没有一致改善。不能宣称“空间配置已经解释事件差异”。精确矩求解、仅年周期、不去趋势、增加SST型态和次表层温度，均未恢复三个案例的年末强增暖。负结果不证明海洋初态没有作用，也不否定sLIM用于季节系数估计；它说明当前初态—线性确定性系统不足以独立解释这些极端事件的具体演变。</p>
+<p>估计器和数值诊断：<br>连续样本上，新分段实现与原有代码的系数最大差为3.6e-15；排除年份任意扰动后系数变化为0.0。单位变换、完整配置坐标变换、积分步长收敛均通过。主模型滞后协方差条件数26.4，完整矩系统条件数79.5，全年传播谱半径0.301。这些数值检查不等于物理机制已验证。<br>二阶修正/一阶季节项的范数比约0.66，扰动估计对完整矩方程的相对残差约0.27；精确解仍显著改变部分季节系数与预报。因此不能把本轮季节系数当作无误差的过程常数。增加至8状态后，滞后协方差条件数约312，尚未换来原配演变改善。<br>主模型月残差的1/2/3月海温相关为0.08/0.08/0.12。这只是训练样本内诊断，未证明所有状态的残差为白噪声。<br>200次两年块正指数权重重新估计预处理与参数，全年谱半径范围0.134—0.449。OND海温的2.5—97.5百分位为：<br>      0.025  0.975<br>year              <br>1997  0.242  0.982<br>2015 -0.129  0.345<br>2023 -0.134  0.824<br>此范围是有限样本参数敏感性，不含发展期随机扰动、模式误差或初态观测误差，不能据此声称观测事件概率为零。论文中的随机RO用于长期统计与季节锁相；本轮确定性原配检验承担的是不同问题，不把两者的成功标准混同。</p>
+<p>下一步应优先解释原配失配时段，而不是继续按目标结果挑状态或给每个事件换参数。向OND传播后的最大三个净正残差进入月份：<br>1997年：8月（+0.85°C）、3月（+0.39°C）、7月（+0.36°C）<br>2015年：7月（+0.57°C）、2月（+0.49°C）、10月（+0.43°C）<br>2023年：6月（+0.39°C）、8月（+0.37°C）、11月（+0.28°C）<br>这个恒等分解只定位时段，不能据此直接归因为西风爆发。沿用已选路线，先核对这些阶段的海温—西风关系，再结合三区WWV26、垂直温度结构及输送判断哪些过程当前状态没有表达。对流诊断留给海温—风关系仍解释不清的阶段。过程系数分解还需把输送转换为与海温区域、层次一致的温度倾向；PW/Sv不能直接代入°C/月方程。</p>
+<p>本阶段完成的是基准、最小空间扩展与适用性检查。四状态可以作为保留三区信息的最简参照，但当前不是已经验证的因果实验平台。初态替换的物理归因保持待检验；上一阶段探索性替换结果保留，不因换用sLIM而自动获得验证。</p>
+<p>参考：Chen &amp; Jin (2021), 10.1175/JCLI-D-20-0874.1；Chen &amp; Jin (2022), 10.1029/2021GL097603；Chen et al. (2015), 10.1175/JCLI-D-14-00134.1。<br></p><p>理论方法：<a href="https://doi.org/10.1175/JCLI-D-20-0874.1">Chen &amp; Jin 2021</a>；<a href="https://doi.org/10.1029/2021GL097603">Chen &amp; Jin 2022</a>；<a href="https://doi.org/10.1175/JCLI-D-14-00134.1">Chen等2015</a>。</p></html>

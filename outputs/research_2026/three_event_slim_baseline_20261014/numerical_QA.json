@@ -1,0 +1,80 @@
+{
+  "training_months": 408,
+  "original_data_months": 516,
+  "training_years": [
+    1982,
+    1983,
+    1984,
+    1985,
+    1986,
+    1987,
+    1988,
+    1989,
+    1990,
+    1991,
+    1992,
+    1993,
+    1994,
+    1995,
+    1999,
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021
+  ],
+  "excluded_years": [
+    1996,
+    1997,
+    1998,
+    2014,
+    2015,
+    2016,
+    2022,
+    2023,
+    2024
+  ],
+  "original_estimator_qa": {
+    "exact_known_operator_max_error": 4.996003610813204e-16,
+    "perturbation_known_operator_max_error": 0.0006359962351547288,
+    "rk4_24_vs_48_synthetic": 2.273670141050843e-11
+  },
+  "continuous_equivalence_perturb2": 3.552713678800501e-15,
+  "continuous_equivalence_exact": 3.552713678800501e-15,
+  "segments": [
+    {
+      "start": "1982-01-01",
+      "end": "1995-12-01",
+      "months": 168
+    },
+    {
+      "start": "1999-01-01",
+      "end": "2013-12-01",
+      "months": 180
+    },
+    {
+      "start": "2017-01-01",
+      "end": "2021-12-01",
+      "months": 60
+    }
+  ],
+  "excluded_value_coefficient_change": 0.0,
+  "units_forecast_error": 8.881784197001252e-16,
+  "rk4_24_48_error": 5.498953514759819e-10,
+  "original_integrator_error": 4.440892098500626e-16,
+  "full_configuration_coordinate_invariance": 4.218847493575595e-15
+}

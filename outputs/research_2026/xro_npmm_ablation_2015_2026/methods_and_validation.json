@@ -1,0 +1,236 @@
+{
+  "inputs": [
+    {
+      "path": "data/raw/ersstv5_sst_monthly_full.nc",
+      "sha256": "8c6f6590b933918fe3628ef0bc2c51995cac5a22e4c8b42e6ab67fa50395ff9f"
+    },
+    {
+      "path": "data/raw/godas/authoritative_recharge_sections/pmel_tao_wwv.dat",
+      "sha256": "66b6de30237054decf18c846a88f265156015dd7fa8bde8f6cbb1e2468b490c6"
+    }
+  ],
+  "boxes": {
+    "Nino34": [
+      -5,
+      5,
+      190,
+      240
+    ],
+    "NPMM": [
+      10,
+      25,
+      200,
+      240
+    ],
+    "SPMM": [
+      -25,
+      -15,
+      250,
+      270
+    ],
+    "IOB": [
+      -20,
+      20,
+      40,
+      100
+    ],
+    "IODw": [
+      -10,
+      10,
+      50,
+      70
+    ],
+    "IODe": [
+      -10,
+      0,
+      90,
+      110
+    ],
+    "SIODe": [
+      -30,
+      -5,
+      90,
+      120
+    ],
+    "SIODw": [
+      -25,
+      -10,
+      65,
+      85
+    ],
+    "TNA": [
+      5,
+      25,
+      305,
+      345
+    ],
+    "ATL3": [
+      -3,
+      3,
+      340,
+      360
+    ],
+    "SASD_SW": [
+      -45,
+      -35,
+      300,
+      360
+    ],
+    "SASD_NE": [
+      -30,
+      -20,
+      320,
+      380
+    ]
+  },
+  "coverage": {
+    "Nino34": {
+      "nlat": 5,
+      "nlon": 26,
+      "min_valid_ocean_cells": 130
+    },
+    "NPMM": {
+      "nlat": 8,
+      "nlon": 21,
+      "min_valid_ocean_cells": 168
+    },
+    "SPMM": {
+      "nlat": 5,
+      "nlon": 11,
+      "min_valid_ocean_cells": 55
+    },
+    "IOB": {
+      "nlat": 21,
+      "nlon": 31,
+      "min_valid_ocean_cells": 562
+    },
+    "IODw": {
+      "nlat": 11,
+      "nlon": 11,
+      "min_valid_ocean_cells": 120
+    },
+    "IODe": {
+      "nlat": 6,
+      "nlon": 11,
+      "min_valid_ocean_cells": 60
+    },
+    "SIODe": {
+      "nlat": 13,
+      "nlon": 16,
+      "min_valid_ocean_cells": 191
+    },
+    "SIODw": {
+      "nlat": 8,
+      "nlon": 10,
+      "min_valid_ocean_cells": 80
+    },
+    "TNA": {
+      "nlat": 10,
+      "nlon": 20,
+      "min_valid_ocean_cells": 198
+    },
+    "ATL3": {
+      "nlat": 3,
+      "nlon": 11,
+      "min_valid_ocean_cells": 33
+    },
+    "SASD_SW": {
+      "nlat": 5,
+      "nlon": 31,
+      "min_valid_ocean_cells": 152
+    },
+    "SASD_NE": {
+      "nlat": 6,
+      "nlon": 31,
+      "min_valid_ocean_cells": 171
+    }
+  },
+  "sst_end": "2026-06-01",
+  "wwv_end": "2026-07-01",
+  "official_source": {
+    "author": "Sen Zhao",
+    "source": "https://github.com/senclimate/XRO",
+    "version": "1.0.1",
+    "source_checkout_commit": "3031b16e728c5aaf389627cb5a8d6199912919d4",
+    "local_source": "/Users/daiyue/Documents/New project_XRO/XRO",
+    "files": [
+      {
+        "file": "XRO/core.py",
+        "sha256": "247da576c32b354540237b7ae51a800bb5696df59d42acd700deee5c251fea85"
+      },
+      {
+        "file": "XRO/stats.py",
+        "sha256": "d050eb18c91018ba567e90e08a2fea8275f51973f89d646b0d7ae2f1371c6c05"
+      },
+      {
+        "file": "XRO/visual.py",
+        "sha256": "3e3afd2b9043d70ad822c7a733ded8ca9da00982c77ea1e29bef8f6b9d52f334"
+      },
+      {
+        "file": "XRO/__init__.py",
+        "sha256": "de816bb4d043a6dbd9c6b9f137a433190e32f3aa3c945893205823d2f45d1d12"
+      },
+      {
+        "file": "LICENSE",
+        "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94"
+      },
+      {
+        "file": "pyproject.toml",
+        "sha256": "db55d188c3d1fe2072b2cc86776fca6c8a1bd375bc1ae8ff8a3ce2a5e9bd144d"
+      }
+    ],
+    "changes": "No changes to copied upstream files."
+  },
+  "parameters": {
+    "ac_order": 2,
+    "is_forward": true,
+    "maskb": [
+      "IOD"
+    ],
+    "maskNT": [
+      "T2",
+      "TH"
+    ],
+    "maskNH": [],
+    "maskc": [],
+    "noise_type": "zero",
+    "nstep": 10,
+    "lead_months": 12
+  },
+  "preprocessing": "Each year: monthly climatology and quadratic trend on 1980 through previous December only.",
+  "data_application": "ERSSTv5 regional SST indices and raw PMEL WWV; not a reproduction of the paper ORAS5 scores.",
+  "PMM_definition": "NPMM 10–25N,160–120W regional SST; no regression of ENSO removed. Differs from earlier joint EOF.",
+  "ablation_definitions": {
+    "XRO_noNPMM_refit": "Remove NPMM input/state and refit all remaining equations, including residual parameters.",
+    "XRO_NPMM_init0": "Keep full coefficients; set ONLY initial NPMM anomaly to zero; it evolves and can be regenerated.",
+    "XRO_cut_NPMM_to_T": "Keep full coefficients except NPMM-source/Nino34-tendency linear coefficients at all seasons.",
+    "XRO_cut_NPMM_to_H": "Keep full coefficients except NPMM-source/WWV-tendency linear coefficients at all seasons.",
+    "XRO_cut_all_NPMM_out": "Cut all off-diagonal outgoing NPMM links, including routes through other modes.",
+    "NRO": "Same official nonlinear and seasonal core trained using only Nino34/WWV.",
+    "NRO_NPMM": "Same core trained using only Nino34/WWV/NPMM."
+  },
+  "limitations": [
+    "Historical reanalysis vintages/publication latency not represented.",
+    "Zero-noise solution is not a nonlinear stochastic ensemble mean.",
+    "Model interventions do not establish real-world causal effects.",
+    "Future observed PMM never supplied; post-2026-June SST skill unavailable."
+  ],
+  "validation": {
+    "future_perturbation_fit_max_difference": 0.0,
+    "march2015_step10_vs20_max_T_difference_C": 0.0022705707516061935,
+    "official_public_api_parity": true,
+    "cut_all_outgoing_P0_effect_on_ENSO": 0.0,
+    "nonfinite_forecast_rows": 0,
+    "upstream_fit_warning_counts": {
+      "invalid value encountered in power": 502,
+      "invalid value encountered in log": 154
+    }
+  },
+  "runtime_seconds": 29.108503103256226,
+  "sources": [
+    "https://github.com/senclimate/XRO",
+    "https://www.nature.com/articles/s41586-024-07534-6",
+    "https://raw.githubusercontent.com/senclimate/XRO/main/XRO/state.py"
+  ],
+  "audit_status": "2026-10-14 核查：本轮输入与前处理尚未验证为可靠XRO基准；消融数值只作为敏感性试验记录。详见 audit_20261014/audit_notes_cn.txt。"
+}

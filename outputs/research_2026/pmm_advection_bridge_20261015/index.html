@@ -1,0 +1,87 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><title>PMM与平流：证据桥梁</title><style>body{font-family:system-ui,sans-serif;max-width:1200px;margin:40px auto;padding:0 24px;color:#203040;line-height:1.8;background:#f6f8fa}section{background:white;padding:24px;margin:28px 0;border-radius:10px}img{width:100%}h1{font-size:30px}h2{font-size:22px}table{font-size:11px;border-collapse:collapse}td,th{padding:5px;border:1px solid #ddd}.data{overflow:auto}.claim{border-left:5px solid #326b8e;padding:10px 22px;background:#eaf1f5}</style>
+<h1>PMM预报结果与异常纬向平流：现有证据如何连接</h1>
+<p>2026-10-15｜整合已有数据和图件，未重新拟合模型，也未新增因果归因。</p>
+<div class="claim"><b>核心桥梁：</b>PMM扩展模型对1997/2015上调海温并改善回报，对2023下调并加重低估；实际诊断中2023夏季异常纬向平流增暖较弱。两者支持检验PMM相关风场对动力增暖的调制，但平流偏弱本身不能解释预报技巧为何下降。后者还取决于基准偏差、修正量级以及其他过程的抵消。</div>
+<h2>可以直接用于结果之间的过渡段</h2><p>加入PMM后，1997、2015事件的回报RMSE分别下降13.0%和19.2%，2023则增加30.2%。这一差异对应于模型对前两次事件的海温上调及对2023的下调。为识别这些修正可能对应的海洋过程，我们进一步比较三次事件的局地温度倾向。结果显示，2023年7—9月异常纬向平流增暖贡献稳健地弱于1997和2015，但海表冷却代理项也较弱。因此，PMM扩展模型中的降温修正与较弱动力增暖在方向上相容，其预报技巧下降则提示仍需检验模型是否过度抑制增暖，或未充分表示其他过程的抵消；现有结果尚不能判定是哪一种。</p>
+<h2>证据边界与下一步</h2><p>三事件预报采用冻结的2002—2024参数：1997为后期参数回推，2015/2023在拟合期内，是回顾性个例技巧。加入PMM也重新估计T/h子矩阵，模型间差值不能全称为PMM直接效应。每事件25个重叠配对仅有9个不同目标季节。过程量是Niño3.4固定层温度倾向，预报量是季节SST，两者不直接相减或用净倾向比例归因。</p>
+<p>最小后续检验：固定增广模型的其他系数，比较完整模型与切断PMM→T/h的逐月差异；另用同一背景下的PMM、风应力、异常流速和平流项检验时序。直接诊断模型是否恢复平流过程，并比较海表项和未解析项；当前没有PMM归因风场、流场或平流反事实，不拟合只有三个事件的相关线。</p><section><h2>1. 桥接总图（新增）</h2><p>预报误差 → 海温修正方向 → 夏季异常纬向平流 → 其他温度倾向。上排为既有预报表，下排为最新过程表。</p><a href="Bridge01_skill_correction_advection.png"><img src="Bridge01_skill_correction_advection.png" alt="1. 桥接总图（新增）"></a></section><section><h2>2. 逐月桥接图（新增）</h2><p>三列固定1997、2015、2023；上排预报轨迹，中排赤道风应力，下排局地平流与海表项。阴影为7—9月。逐月对应是机制线索，尚未构成PMM→风→流的归因。</p><a href="Bridge02_forecast_wind_advection_timing.png"><img src="Bridge02_forecast_wind_advection_timing.png" alt="2. 逐月桥接图（新增）"></a></section><section><h2>3. 已有 Fig18：海温—风应力经度时间图</h2><p>展示风应力的空间位置和持续性，可置于预报结果与平流诊断之间。月平均不能识别西风爆发。</p><a href="../three_event_process_followup_20261015/Fig18_airsea_space_time_context.png"><img src="../three_event_process_followup_20261015/Fig18_airsea_space_time_context.png" alt="3. 已有 Fig18：海温—风应力经度时间图"></a></section><section><h2>4. 已有 Fig24：局地温度与过程完整时序</h2><p>展示前一年到发展年，检查春季建立、夏季减弱及未解析倾向。</p><a href="../three_event_temperature_tendency_20261015/Fig24_matched_local_process_history.png"><img src="../three_event_temperature_tendency_20261015/Fig24_matched_local_process_history.png" alt="4. 已有 Fig24：局地温度与过程完整时序"></a></section><section><h2>5. 已有 Fig25：春夏温度倾向分解</h2><p>说明2023平流偏弱同时海表冷却较弱；未解析项较大，不能将弱增暖归结为单一过程。</p><a href="../three_event_temperature_tendency_20261015/Fig25_common_season_process_comparison.png"><img src="../three_event_temperature_tendency_20261015/Fig25_common_season_process_comparison.png" alt="5. 已有 Fig25：春夏温度倾向分解"></a></section><section><h2>6. 已有 Fig29：平流结果稳健性</h2><p>30/50/75 m与两种趋势处理均保留2023相对偏弱。绝对正负号不稳健。</p><a href="../three_event_temperature_tendency_20261015/Fig29_zonal_advection_robustness.png"><img src="../three_event_temperature_tendency_20261015/Fig29_zonal_advection_robustness.png" alt="6. 已有 Fig29：平流结果稳健性"></a></section><h2>桥接汇总数据</h2><p>skill_percent = 100 × (1 − RMSE_PMM / RMSE_RO)；正值为改善。mean_forecast_correction为25个配对平均，非JAS单季修正。过程单位°C/标准月。</p><div class="data"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>RMSE_RO</th>
+      <th>RMSE_PMM</th>
+      <th>skill_percent</th>
+      <th>mean_forecast_correction</th>
+      <th>bias_RO</th>
+      <th>bias_PMM</th>
+      <th>advection_mean</th>
+      <th>advection_detrend</th>
+      <th>horizontal_total</th>
+      <th>surface_proxy</th>
+      <th>unresolved</th>
+      <th>net_tendency</th>
+    </tr>
+    <tr>
+      <th>event</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1997</th>
+      <td>0.6176</td>
+      <td>0.5376</td>
+      <td>12.9542</td>
+      <td>0.0824</td>
+      <td>-0.5257</td>
+      <td>-0.4433</td>
+      <td>0.1547</td>
+      <td>0.1406</td>
+      <td>0.3631</td>
+      <td>-0.3343</td>
+      <td>0.3215</td>
+      <td>0.3503</td>
+    </tr>
+    <tr>
+      <th>2015</th>
+      <td>0.7675</td>
+      <td>0.6200</td>
+      <td>19.2218</td>
+      <td>0.1320</td>
+      <td>-0.6794</td>
+      <td>-0.5474</td>
+      <td>0.1105</td>
+      <td>0.1673</td>
+      <td>0.3518</td>
+      <td>-0.4433</td>
+      <td>0.4270</td>
+      <td>0.3355</td>
+    </tr>
+    <tr>
+      <th>2023</th>
+      <td>0.3485</td>
+      <td>0.4536</td>
+      <td>-30.1587</td>
+      <td>-0.0982</td>
+      <td>-0.2967</td>
+      <td>-0.3949</td>
+      <td>-0.0503</td>
+      <td>0.0381</td>
+      <td>0.1669</td>
+      <td>-0.2522</td>
+      <td>0.3103</td>
+      <td>0.2250</td>
+    </tr>
+  </tbody>
+</table></div><p><a href="bridge_summary.csv">下载CSV</a> · <a href="Bridge01_skill_correction_advection.pdf">总图PDF</a> · <a href="Bridge02_forecast_wind_advection_timing.pdf">时序图PDF</a></p></html>

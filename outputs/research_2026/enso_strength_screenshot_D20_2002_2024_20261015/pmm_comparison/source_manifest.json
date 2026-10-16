@@ -1,0 +1,23 @@
+{
+  "sha256": {
+    "data/raw/climate_indices/standard_pmm_20261014/PMM_uw.txt": "04268780d66982c1048a7f099934d67834aaad5668f2336dbf6f4b489d375a98",
+    "outputs/research_2026/enso_strength_screenshot_D20_2002_2024_20261015/models_and_preprocessing.json": "27790df839c47ff61b69f06546218f3c245f65a243707d3eaa9562efa3afa24f",
+    "outputs/research_2026/enso_strength_screenshot_D20_2002_2024_20261015/monthly_forecasts.csv": "832e3a978a35d043067f05e1438244a4f1ab46234188a621b57dc41b07f1825d",
+    "outputs/research_2026/enso_strength_screenshot_D20_2002_2024_20261015/primary_event_summary.csv": "a17c27d2821a436da5480d4364b9814b69597c32d17f2b67832e0f4804662580",
+    "outputs/research_2026/enso_strength_screenshot_D20_2002_2024_20261015/development_year_summary.csv": "23d76ed5754ce97bab565c53a711e9ad47f1780fe90f89329612672977480786",
+    "outputs/research_2026/enso_strength_screenshot_D20_2002_2024_20261015/event_catalog.csv": "d8ae846a6d3d53f0619300ec58b6802274775793b636905333e6d102990b24ed",
+    "outputs/research_2026/enso_strength_screenshot_D20_2002_2024_20261015/forecast_model_states.csv": "311350d0eb7338c96b11aef407214f646029dd6ba263c24184ca6c389a47dda5",
+    "scripts/compare_event_pmm_2002_2024.py": "933a73c47be59006b411d9cf7b35900edd6af0790e73436e1bc8db4fe4dd5fbc",
+    "data/raw/climate_indices/standard_pmm_20261014/method_uw.html": "2e9c4223b83a1f2083438bdab17ade35cb62538ed80172558586d4fe3dd71fb5",
+    "data/raw/climate_indices/standard_pmm_20261014/source_manifest.json": "694829dbb97e222a2586ffdd16d05a7dbbe7331877ab6d528a60d9dca10cf2f8"
+  },
+  "source_url": "https://www.aos.wisc.edu/dvimont/MModes/RealTime/PMM.txt",
+  "observed_variable": "PMM-SST, supplied monthly index",
+  "unit": "degree_C, SST-mode projection amplitude",
+  "unit_reference": "https://psl.noaa.gov/data/timeseries/month/PMM/",
+  "fitting_reference": "2002-2024",
+  "model_mean": 0.1557608695652173,
+  "model_std_ddof0": 3.156618157014473,
+  "extra_smoothing": false,
+  "event_weighting": "development years within episode first, then equal episodes"
+}

@@ -1,0 +1,40 @@
+{
+  "old_two_model_coefficient_max_error": 1.5543122344752192e-15,
+  "old_scale_max_error": 8.881784197001252e-16,
+  "old_240_seasonal_values_max_error": 3.552713678800501e-15,
+  "both_legacy_models_reproduced": true,
+  "saved_score_max_error": 4.618527782440651e-14,
+  "saved_monthly_rows": 750,
+  "saved_seasonal_rows": 375,
+  "group_score_rows": 384,
+  "event_score_rows": 1248,
+  "saved_score_and_bootstrap_reconstruction": "passed",
+  "saved_operator_forecast_max_error": 2.220446049250313e-16,
+  "saved_preprocessing_max_error": 1.7763568394002505e-15,
+  "saved_models_count": 2,
+  "full_516_month_training_period_verified": true,
+  "seasonal_forecast_rows": 600,
+  "scored_seasonal_pairs": 375,
+  "observation_plot_rows": 225,
+  "rolling_mean_max_error": 4.440892098500626e-16,
+  "event_weighting_max_error": 4.440892098500626e-16,
+  "old_observation_match_max_error": 1.7763568394002505e-15,
+  "observation_Jan1982_has_Dec1981": true,
+  "plotted_center_leads": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "scored_center_leads": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}

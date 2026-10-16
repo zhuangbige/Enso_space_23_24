@@ -1,0 +1,54 @@
+{
+  "source_sha256": {
+    "outputs/research_2026/three_event_summer_current_dynamics_20261015/inputs/ocean_1997.npz": "4e80123a121860337f31c78dcb43706aa7598b74427c169962e74dfa57293276",
+    "outputs/research_2026/three_event_summer_current_dynamics_20261015/inputs/ocean_1997_source.json": "fb64508a63d93be2e6d5e8acd6874cb73af5ab870f1576f1b3f4a6b1baaceb5e",
+    "outputs/research_2026/three_event_summer_current_dynamics_20261015/inputs/ocean_2015.npz": "1fe25acee50e6e9467907d2f02f31f83185f797e4a0d7d8f16769f66c17fde0b",
+    "outputs/research_2026/three_event_summer_current_dynamics_20261015/inputs/ocean_2015_source.json": "81ecc9f3153d87a9e10bed84ca8c65b1c001169fba0182018ac76dd5f5a9d1f0",
+    "outputs/research_2026/three_event_summer_current_dynamics_20261015/inputs/ocean_2023.npz": "dbc5700d3f154cc0d3a1037846fb6d7d4f98382c172f3f233bcb771d30148f3c",
+    "outputs/research_2026/three_event_summer_current_dynamics_20261015/inputs/ocean_2023_source.json": "44c5582cbf4fcade0e9a04b3ede343821e4c1a3e4ba3950a61d15ebbee942468"
+  },
+  "events": [
+    1997,
+    2015,
+    2023
+  ],
+  "months": [
+    7,
+    8,
+    9
+  ],
+  "longitude_degrees_east": 220,
+  "latitude_edges_degrees": [
+    -9,
+    9
+  ],
+  "local_latitude_markers_degrees": [
+    -5,
+    5
+  ],
+  "native_velocity_face_matches_transport_definition": true,
+  "source_provenance_hashes_match": true,
+  "raw_monthly_transport_max_error_sv": {
+    "1997": 3.552713678800501e-15,
+    "2015": 3.552713678800501e-15,
+    "2023": 7.105427357601002e-15
+  },
+  "JAS_velocity_contribution_errors_sv": {
+    "1997_0_50": 1.7763568394002505e-15,
+    "1997_50_150": 0.0,
+    "1997_150_sigma26": 0.0,
+    "1997_all": 0.0,
+    "2015_0_50": 0.0,
+    "2015_50_150": 4.440892098500626e-16,
+    "2015_150_sigma26": 2.220446049250313e-16,
+    "2015_all": 0.0
+  },
+  "common_valid_fraction_0_300m": 1.0,
+  "difference_formed_before_monthly_mean": true,
+  "no_filling_no_smoothing": true,
+  "color_limit_m_s": 0.5,
+  "fraction_beyond_color_limit": {
+    "1997": 0.019444444444444445,
+    "2015": 0.0
+  }
+}

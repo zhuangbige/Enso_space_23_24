@@ -1,0 +1,66 @@
+{
+  "pmm_source": "https://www.aos.wisc.edu/dvimont/MModes/RealTime/PMM.txt",
+  "method_source": "https://www.aos.wisc.edu/dvimont/MModes/PMM.html",
+  "pmm_definition": "Published canonical MCA SST/wind expansion coefficients; NCEP-NCAR SST and 10m wind; fixed 1950–2005 patterns; not PMM_RAW.",
+  "pmm_source_sha256": "04268780d66982c1048a7f099934d67834aaad5668f2336dbf6f4b489d375a98",
+  "pmm_observed_end": "2026-02-01",
+  "oras5_observed_end": "2026-09-01",
+  "noaa_crosscheck": [
+    {
+      "variable": "PMM_SST",
+      "overlap_months": 928,
+      "noaa_last": "2025-04-01",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "variable": "PMM_wind",
+      "overlap_months": 928,
+      "noaa_last": "2025-04-01",
+      "max_absolute_difference": 0.0
+    }
+  ],
+  "pmm_model_preprocessing": "Subtract each prior-year training mean only. Existing linear RO scales all states by their training standard deviation. No extra ENSO removal, smoothing, or trend subtraction of the published PMM.",
+  "th_preprocessing": "Unchanged prior experiment: monthly climatology and linear trend from training years, display background restored to 1982–2014 climatology.",
+  "model_training": "1982–previous December, refit annually, all model variants use the same T/H and dates",
+  "coefficient_models": {
+    "RO": [
+      "Nino34",
+      "WWV"
+    ],
+    "RO_SST": [
+      "Nino34",
+      "WWV",
+      "PMM_SST"
+    ],
+    "RO_wind": [
+      "Nino34",
+      "WWV",
+      "PMM_wind"
+    ],
+    "RO_both": [
+      "Nino34",
+      "WWV",
+      "PMM_SST",
+      "PMM_wind"
+    ]
+  },
+  "historical_evaluation": "Available folds 2006–2026; aggregate and bootstrap 2015–2024 starts, after frozen preprocessing selection; 120 monthly starts per lead.",
+  "limitations": [
+    "Published PMM stops February 2026: no March/May 2026 initialization.",
+    "Current-vintage reanalysis and published indices; historical release delays and all upstream preprocessing vintages were not reconstructed.",
+    "Fixed MCA pattern period includes years through 2005, so no earlier forecasts are presented as out of sample.",
+    "Post-selection uncertainty uses only ten initialization years; overlapping targets and multiple lead/component tests limit significance claims.",
+    "Nonlinear results use the XRO numerical core for 2/3/4-state models, not the complete ten-state XRO."
+  ],
+  "qa": {
+    "baseline_RO_max_difference": 1.7763568394002505e-15,
+    "max_initial_state_difference": 1.7763568394002505e-15,
+    "post_init_perturbation_linear_2015_max_difference": 0.0,
+    "post_init_perturbation_nonlinear_2015_max_difference": 0.0,
+    "post_init_perturbation_linear_2026_max_difference": 0.0,
+    "post_init_perturbation_nonlinear_2026_max_difference": 0.0,
+    "matched_model_target_dates": true,
+    "forecast_values_finite": true
+  },
+  "runtime_seconds": 21.489119052886963
+}

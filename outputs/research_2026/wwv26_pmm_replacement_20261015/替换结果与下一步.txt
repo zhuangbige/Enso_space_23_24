@@ -1,0 +1,73 @@
+D20已替换为全盆地WWV26｜2026-10-15
+
+2026-10-15: user-requested D20 -> total WWV26 replacement. Written before new fits.
+RO-WWV26=[ERSST Niño3.4, total WWV26]; RO-WWV26+PMM adds standard PMM-SST.
+Retain [ERSST Niño3.4, GODAS D20] +/- PMM as matched controls, not the main ocean state.
+Total WWV26=sum of west/central/east original density-layer volumes; unit 1e14 m3;
+instantaneous sigma_theta=26 interface, 9S--9N, 120E--80W. Do not sum total and
+three boxes as independent predictors. No new spatial-WWV model this round.
+Retain ERSST, the original PMM forecast SST source, rather than change to OISST.
+Official PMM-SST is only centered on training samples; no second ENSO removal.
+Data common span 1982--2024, 516 months. Primary: all nine target/adjacent years
+1996--98, 2014--16, 2022--24 excluded from all fitted means/trends/scales/operators.
+408 training months, disjoint segments; never interpolate or lag across gaps.
+Secondary: common 2002--2024 training period, retrospective (1997 backward;
+2015/2023 in sample). Both use training-only monthly means, optional linear trend.
+This secondary is a new matched control, not an exact replication of the old
+1991--2020 climatology/trend-through-April-2025 setup. Do not splice its scores.
+Primary preprocessing detrended; no-trend retained. Estimator perturb2 primary,
+exact moment solution sensitivity. Annual+semiannual harmonics, 72 steps/year,
+existing sLIM mean lag6/seasonal lag1. No tuning, regularization or event scaling.
+Display: source-specific 1982--2022 monthly climatology, does not enter fitting.
+Five starts February--June per event; 9 months deterministic free integration.
+Centered seasonal forecasts center leads 1--8; score common center leads 1--5,
+25 overlapping pairs and 9 unique target centers. Month leads1--9 scored separately.
+Full model vs outgoing PMM->SST/ocean coefficient cut; all other coefficients and
+initial states fixed. Report separately from refitted no-PMM model comparison.
+QA: state identity/units, held-out preprocessing and parameter exclusion, RK4,
+unit scaling, cut behavior, initial states, saved score reconstruction.
+No new advection fit or PMM causal attribution. Existing process figures unchanged.
+All results retained even if previous three-event skill signs fail to reproduce.
+Not real-time validation: future non-event data and published fixed PMM pattern used.
+
+主估计结果（RMSE为°C，skill为相对各自无PMM基准的RMSE下降百分比）：
+    protocol         model  event     RMSE      bias        r  PMM_skill_percent  mean_T_correction
+   heldout34           d20   1997 0.648862 -0.568382 0.892107           0.000000           0.000000
+   heldout34           d20   2015 0.995892 -0.891162 0.606595           0.000000           0.000000
+   heldout34           d20   2023 0.630565 -0.568527 0.852960           0.000000           0.000000
+   heldout34       d20_PMM   1997 0.602882 -0.526976 0.907041           7.086260           0.041405
+   heldout34       d20_PMM   2015 0.854453 -0.765532 0.750759          14.202234           0.125630
+   heldout34       d20_PMM   2023 0.783054 -0.703018 0.751659         -24.182857          -0.134491
+   heldout34   d20_PMM_cut   1997 0.622648 -0.544640 0.900122           4.039909           0.023742
+   heldout34   d20_PMM_cut   2015 1.001145 -0.895696 0.600831          -0.527386          -0.004534
+   heldout34   d20_PMM_cut   2023 0.618165 -0.557429 0.859344           1.966588           0.011098
+   heldout34         wwv26   1997 0.741309 -0.661988 0.934050           0.000000           0.000000
+   heldout34         wwv26   2015 1.063460 -0.967557 0.615583           0.000000           0.000000
+   heldout34         wwv26   2023 0.833683 -0.764872 0.777462           0.000000           0.000000
+   heldout34     wwv26_PMM   1997 0.745219 -0.660299 0.932539          -0.527531           0.001688
+   heldout34     wwv26_PMM   2015 0.989301 -0.903969 0.695637           6.973377           0.063588
+   heldout34     wwv26_PMM   2023 0.927530 -0.841527 0.667753         -11.257005          -0.076655
+   heldout34 wwv26_PMM_cut   1997 0.745158 -0.664254 0.934161          -0.519217          -0.002267
+   heldout34 wwv26_PMM_cut   2015 1.069213 -0.972346 0.608336          -0.540984          -0.004789
+   heldout34 wwv26_PMM_cut   2023 0.836397 -0.766971 0.774544          -0.325539          -0.002099
+fit2002_2024           d20   1997 0.566757 -0.480887 0.902218           0.000000           0.000000
+fit2002_2024           d20   2015 0.728237 -0.644752 0.799399           0.000000           0.000000
+fit2002_2024           d20   2023 0.316500 -0.270526 0.949469           0.000000           0.000000
+fit2002_2024       d20_PMM   1997 0.484957 -0.395398 0.916598          14.433000           0.085489
+fit2002_2024       d20_PMM   2015 0.572647 -0.505570 0.900683          21.365331           0.139181
+fit2002_2024       d20_PMM   2023 0.434654 -0.381363 0.918142         -37.331465          -0.110836
+fit2002_2024   d20_PMM_cut   1997 0.491274 -0.401012 0.916098          13.318339           0.079875
+fit2002_2024   d20_PMM_cut   2015 0.730654 -0.645811 0.793305          -0.331838          -0.001060
+fit2002_2024   d20_PMM_cut   2023 0.251111 -0.203284 0.961647          20.660097           0.067242
+fit2002_2024         wwv26   1997 0.249928 -0.200056 0.982248           0.000000           0.000000
+fit2002_2024         wwv26   2015 0.711321 -0.631862 0.813941           0.000000           0.000000
+fit2002_2024         wwv26   2023 0.413241 -0.375528 0.948866           0.000000           0.000000
+fit2002_2024     wwv26_PMM   1997 0.253431 -0.205230 0.982583          -1.401732          -0.005174
+fit2002_2024     wwv26_PMM   2015 0.673454 -0.604163 0.846460           5.323499           0.027699
+fit2002_2024     wwv26_PMM   2023 0.452187 -0.402546 0.922327          -9.424626          -0.027018
+fit2002_2024 wwv26_PMM_cut   1997 0.265407 -0.216840 0.980544          -6.193530          -0.016784
+fit2002_2024 wwv26_PMM_cut   2015 0.715843 -0.634341 0.807591          -0.635615          -0.002479
+fit2002_2024 wwv26_PMM_cut   2023 0.422370 -0.383825 0.945504          -2.209270          -0.008296
+
+图件安排：W1的WWV26行作为新的预报主图；D20行仅作为同口径对照。旧+13/+19/−30%属于旧D20设定，不自动继承到WWV26。已有局地平流诊断保持不变。
+最后一步：用同一ERSST、总WWV26、PMM状态及事件剔除训练口径，比较有/无PMM对实际平流项的条件重建；再核对模型内部PMM通道修正的时序。本轮只完成海洋状态替换与预报检验，未运行这一过程桥接试验。

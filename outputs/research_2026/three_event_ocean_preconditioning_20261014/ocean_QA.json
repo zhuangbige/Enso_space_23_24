@@ -1,0 +1,24 @@
+{
+  "three_region_sum_max_relative_error": 3.378377652855436e-16,
+  "shared_internal_gates": "one calculation used with opposite signs by adjacent regions",
+  "case_months": 72,
+  "baseline_years": [
+    1982,
+    2022
+  ],
+  "section_minimum_coverage": {
+    "u120": 0.7356100459280431,
+    "u180": 1,
+    "u220": 1,
+    "u280": 0.7437127019745483,
+    "west_south": 0.8217712480207013,
+    "west_north": 0.8985488381855142,
+    "central_south": 1,
+    "central_north": 1,
+    "east_south": 1,
+    "east_north": 0.9525725060216563
+  },
+  "d26_source": "audited full-density-surface cached fields, not old regional volume tables",
+  "heat_reference_temperature_C": 0.0,
+  "heat_terms_complete_anomaly": false
+}

@@ -1,0 +1,10 @@
+From the Maryland project root, using Python with numpy/pandas/matplotlib:
+python scripts/analyze_enso_strength_fullperiod_d20.py
+python scripts/analyze_enso_strength_fullperiod_d20.py --validate-only
+python scripts/analyze_enso_strength_fullperiod_d20.py --report-only
+
+All four figures and the report are included in the main entry point.
+Old leave-one-event-out/WWV26 outputs are never overwritten.
+group_scores.csv and event_scores.csv include overall, lead, init and init_lead views.
+The original 2002--2024 implementation is only a numerical regression audit;
+the two models used in all new predictions are fit over 1982--2024.

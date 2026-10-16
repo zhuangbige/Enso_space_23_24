@@ -1,0 +1,32 @@
+[
+  {
+    "path": "data/raw/ersstv5_sst_monthly_full.nc",
+    "bytes": 155851678,
+    "sha256": "8c6f6590b933918fe3628ef0bc2c51995cac5a22e4c8b42e6ab67fa50395ff9f"
+  },
+  {
+    "path": "outputs/research_2026/IRI_RO_PMM_Maryland_bridge_20261014/official_PMM.csv",
+    "bytes": 20571,
+    "sha256": "3c6accbbca21371fd4e53a50f783da157ccfedc1e49c203f1f78070e7c728c63"
+  },
+  {
+    "path": "outputs/research_2026/three_event_ocean_preconditioning_20261014/ocean_monthly_anomalies.csv",
+    "bytes": 141585,
+    "sha256": "1f0bb3a1cc6146a1e31f1604b8fbcbfb8bcfe3355bac4906f3b5ec701644acd1"
+  },
+  {
+    "path": "outputs/research_2026/three_event_ocean_preconditioning_20261014/atmosphere_anomaly_and_reference.csv",
+    "bytes": 182103,
+    "sha256": "530266fdc39934a372809ee138c5823f3fcaba076e32cc4eff677c601f0cacc0"
+  },
+  {
+    "path": "scripts/screen_external_background_transport.py",
+    "bytes": 13405,
+    "sha256": "655e35b42c0998853163e18e2238381c0673df698a1afa3d10835f833310171a"
+  },
+  {
+    "path": "outputs/research_2026/external_background_experiments_20261015/实验约定_先于计算.txt",
+    "bytes": 4639,
+    "sha256": "ee0a28c497db107dc5121cfe12ccbd82598590fdc17b5e07e7c91e73c2b9fc7d"
+  }
+]

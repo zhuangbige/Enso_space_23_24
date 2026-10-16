@@ -1,0 +1,722 @@
+[
+  {
+    "key": "30m_three_wwv_detrend_perturb2",
+    "state_operator_error": 0.0,
+    "component_sum_error": 1.7763568394002505e-14,
+    "segments": [
+      {
+        "start": "1982-01-01",
+        "end": "1995-12-01",
+        "months": 168
+      },
+      {
+        "start": "1999-01-01",
+        "end": "2013-12-01",
+        "months": 180
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2021-12-01",
+        "months": 60
+      }
+    ],
+    "original_months": 408,
+    "lag1_interpolated_count": 2427,
+    "lag6_interpolated_count": 2412,
+    "lag_cov_condition": 25.90235893818697,
+    "full_moment_condition": 76.39113024908309,
+    "first_order_norm": 7.729261559009888,
+    "second_order_norm": 4.518777829493952,
+    "second_first_norm_ratio": 0.5846325415429211,
+    "relative_moment_residual": 0.22594221075206625
+  },
+  {
+    "key": "30m_three_wwv_detrend_exact",
+    "state_operator_error": 0.0,
+    "component_sum_error": 1.8207657603852567e-14,
+    "segments": [
+      {
+        "start": "1982-01-01",
+        "end": "1995-12-01",
+        "months": 168
+      },
+      {
+        "start": "1999-01-01",
+        "end": "2013-12-01",
+        "months": 180
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2021-12-01",
+        "months": 60
+      }
+    ],
+    "original_months": 408,
+    "lag1_interpolated_count": 2427,
+    "lag6_interpolated_count": 2412,
+    "lag_cov_condition": 25.90235893818697,
+    "full_moment_condition": 76.39113024908309,
+    "second_first_norm_ratio": null,
+    "relative_moment_residual": 2.542355850618501e-16
+  },
+  {
+    "key": "30m_total_wwv_detrend_perturb2",
+    "state_operator_error": 1.5543122344752192e-15,
+    "component_sum_error": 2.3869795029440866e-15,
+    "segments": [
+      {
+        "start": "1982-01-01",
+        "end": "1995-12-01",
+        "months": 168
+      },
+      {
+        "start": "1999-01-01",
+        "end": "2013-12-01",
+        "months": 180
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2021-12-01",
+        "months": 60
+      }
+    ],
+    "original_months": 408,
+    "lag1_interpolated_count": 2427,
+    "lag6_interpolated_count": 2412,
+    "lag_cov_condition": 2.5858503707005993,
+    "full_moment_condition": 8.082694004843962,
+    "first_order_norm": 2.4704638880116967,
+    "second_order_norm": 0.9524960862569034,
+    "second_first_norm_ratio": 0.3855535354631315,
+    "relative_moment_residual": 0.1310125116051422
+  },
+  {
+    "key": "30m_total_wwv_detrend_exact",
+    "state_operator_error": 1.3322676295501878e-15,
+    "component_sum_error": 2.525757381022231e-15,
+    "segments": [
+      {
+        "start": "1982-01-01",
+        "end": "1995-12-01",
+        "months": 168
+      },
+      {
+        "start": "1999-01-01",
+        "end": "2013-12-01",
+        "months": 180
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2021-12-01",
+        "months": 60
+      }
+    ],
+    "original_months": 408,
+    "lag1_interpolated_count": 2427,
+    "lag6_interpolated_count": 2412,
+    "lag_cov_condition": 2.5858503707005993,
+    "full_moment_condition": 8.082694004843962,
+    "second_first_norm_ratio": null,
+    "relative_moment_residual": 1.5073999528178537e-16
+  },
+  {
+    "key": "30m_three_wwv_mean_perturb2",
+    "state_operator_error": 0.0,
+    "component_sum_error": 3.019806626980426e-14,
+    "segments": [
+      {
+        "start": "1982-01-01",
+        "end": "1995-12-01",
+        "months": 168
+      },
+      {
+        "start": "1999-01-01",
+        "end": "2013-12-01",
+        "months": 180
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2021-12-01",
+        "months": 60
+      }
+    ],
+    "original_months": 408,
+    "lag1_interpolated_count": 2427,
+    "lag6_interpolated_count": 2412,
+    "lag_cov_condition": 24.53651842143412,
+    "full_moment_condition": 65.05763030152721,
+    "first_order_norm": 7.7520519731754165,
+    "second_order_norm": 3.953095833630013,
+    "second_first_norm_ratio": 0.509941864077923,
+    "relative_moment_residual": 0.22488926163857426
+  },
+  {
+    "key": "30m_three_wwv_mean_exact",
+    "state_operator_error": 0.0,
+    "component_sum_error": 3.11972669919669e-14,
+    "segments": [
+      {
+        "start": "1982-01-01",
+        "end": "1995-12-01",
+        "months": 168
+      },
+      {
+        "start": "1999-01-01",
+        "end": "2013-12-01",
+        "months": 180
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2021-12-01",
+        "months": 60
+      }
+    ],
+    "original_months": 408,
+    "lag1_interpolated_count": 2427,
+    "lag6_interpolated_count": 2412,
+    "lag_cov_condition": 24.53651842143412,
+    "full_moment_condition": 65.05763030152721,
+    "second_first_norm_ratio": null,
+    "relative_moment_residual": 1.8514404554415376e-16
+  },
+  {
+    "key": "30m_total_wwv_mean_perturb2",
+    "state_operator_error": 6.661338147750939e-16,
+    "component_sum_error": 7.327471962526033e-15,
+    "segments": [
+      {
+        "start": "1982-01-01",
+        "end": "1995-12-01",
+        "months": 168
+      },
+      {
+        "start": "1999-01-01",
+        "end": "2013-12-01",
+        "months": 180
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2021-12-01",
+        "months": 60
+      }
+    ],
+    "original_months": 408,
+    "lag1_interpolated_count": 2427,
+    "lag6_interpolated_count": 2412,
+    "lag_cov_condition": 2.3817233564979077,
+    "full_moment_condition": 7.476303539418523,
+    "first_order_norm": 2.549330460778908,
+    "second_order_norm": 0.9892283311469858,
+    "second_first_norm_ratio": 0.38803456294353567,
+    "relative_moment_residual": 0.13325307968701813
+  },
+  {
+    "key": "30m_total_wwv_mean_exact",
+    "state_operator_error": 6.661338147750939e-16,
+    "component_sum_error": 6.8833827526759706e-15,
+    "segments": [
+      {
+        "start": "1982-01-01",
+        "end": "1995-12-01",
+        "months": 168
+      },
+      {
+        "start": "1999-01-01",
+        "end": "2013-12-01",
+        "months": 180
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2021-12-01",
+        "months": 60
+      }
+    ],
+    "original_months": 408,
+    "lag1_interpolated_count": 2427,
+    "lag6_interpolated_count": 2412,
+    "lag_cov_condition": 2.3817233564979077,
+    "full_moment_condition": 7.476303539418523,
+    "second_first_norm_ratio": null,
+    "relative_moment_residual": 1.774963191152055e-16
+  },
+  {
+    "key": "50m_three_wwv_detrend_perturb2",
+    "state_operator_error": 0.0,
+    "component_sum_error": 2.020605904817785e-14,
+    "segments": [
+      {
+        "start": "1982-01-01",
+        "end": "1995-12-01",
+        "months": 168
+      },
+      {
+        "start": "1999-01-01",
+        "end": "2013-12-01",
+        "months": 180
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2021-12-01",
+        "months": 60
+      }
+    ],
+    "original_months": 408,
+    "lag1_interpolated_count": 2427,
+    "lag6_interpolated_count": 2412,
+    "lag_cov_condition": 25.914584644610375,
+    "full_moment_condition": 75.5381776303697,
+    "first_order_norm": 7.674898422889844,
+    "second_order_norm": 4.068820429779731,
+    "second_first_norm_ratio": 0.5301464860622468,
+    "relative_moment_residual": 0.21136224739316026
+  },
+  {
+    "key": "50m_three_wwv_detrend_exact",
+    "state_operator_error": 0.0,
+    "component_sum_error": 2.2093438190040615e-14,
+    "segments": [
+      {
+        "start": "1982-01-01",
+        "end": "1995-12-01",
+        "months": 168
+      },
+      {
+        "start": "1999-01-01",
+        "end": "2013-12-01",
+        "months": 180
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2021-12-01",
+        "months": 60
+      }
+    ],
+    "original_months": 408,
+    "lag1_interpolated_count": 2427,
+    "lag6_interpolated_count": 2412,
+    "lag_cov_condition": 25.914584644610375,
+    "full_moment_condition": 75.5381776303697,
+    "second_first_norm_ratio": null,
+    "relative_moment_residual": 2.4027148489313463e-16
+  },
+  {
+    "key": "50m_total_wwv_detrend_perturb2",
+    "state_operator_error": 1.9984014443252818e-15,
+    "component_sum_error": 4.6629367034256575e-15,
+    "segments": [
+      {
+        "start": "1982-01-01",
+        "end": "1995-12-01",
+        "months": 168
+      },
+      {
+        "start": "1999-01-01",
+        "end": "2013-12-01",
+        "months": 180
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2021-12-01",
+        "months": 60
+      }
+    ],
+    "original_months": 408,
+    "lag1_interpolated_count": 2427,
+    "lag6_interpolated_count": 2412,
+    "lag_cov_condition": 2.7435980522827776,
+    "full_moment_condition": 8.45080623143004,
+    "first_order_norm": 2.4461908361960414,
+    "second_order_norm": 0.9565955859626516,
+    "second_first_norm_ratio": 0.39105517517603383,
+    "relative_moment_residual": 0.1247453052108971
+  },
+  {
+    "key": "50m_total_wwv_detrend_exact",
+    "state_operator_error": 2.220446049250313e-15,
+    "component_sum_error": 5.773159728050814e-15,
+    "segments": [
+      {
+        "start": "1982-01-01",
+        "end": "1995-12-01",
+        "months": 168
+      },
+      {
+        "start": "1999-01-01",
+        "end": "2013-12-01",
+        "months": 180
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2021-12-01",
+        "months": 60
+      }
+    ],
+    "original_months": 408,
+    "lag1_interpolated_count": 2427,
+    "lag6_interpolated_count": 2412,
+    "lag_cov_condition": 2.7435980522827776,
+    "full_moment_condition": 8.45080623143004,
+    "second_first_norm_ratio": null,
+    "relative_moment_residual": 8.556769603773882e-17
+  },
+  {
+    "key": "50m_three_wwv_mean_perturb2",
+    "state_operator_error": 0.0,
+    "component_sum_error": 1.7985612998927536e-14,
+    "segments": [
+      {
+        "start": "1982-01-01",
+        "end": "1995-12-01",
+        "months": 168
+      },
+      {
+        "start": "1999-01-01",
+        "end": "2013-12-01",
+        "months": 180
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2021-12-01",
+        "months": 60
+      }
+    ],
+    "original_months": 408,
+    "lag1_interpolated_count": 2427,
+    "lag6_interpolated_count": 2412,
+    "lag_cov_condition": 24.06003402889369,
+    "full_moment_condition": 62.52176220245562,
+    "first_order_norm": 7.600159482201815,
+    "second_order_norm": 3.475719762459908,
+    "second_first_norm_ratio": 0.45732195101950274,
+    "relative_moment_residual": 0.2093023664222517
+  },
+  {
+    "key": "50m_three_wwv_mean_exact",
+    "state_operator_error": 0.0,
+    "component_sum_error": 1.687538997430238e-14,
+    "segments": [
+      {
+        "start": "1982-01-01",
+        "end": "1995-12-01",
+        "months": 168
+      },
+      {
+        "start": "1999-01-01",
+        "end": "2013-12-01",
+        "months": 180
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2021-12-01",
+        "months": 60
+      }
+    ],
+    "original_months": 408,
+    "lag1_interpolated_count": 2427,
+    "lag6_interpolated_count": 2412,
+    "lag_cov_condition": 24.06003402889369,
+    "full_moment_condition": 62.52176220245562,
+    "second_first_norm_ratio": null,
+    "relative_moment_residual": 2.7068936039076125e-16
+  },
+  {
+    "key": "50m_total_wwv_mean_perturb2",
+    "state_operator_error": 3.1086244689504383e-15,
+    "component_sum_error": 3.1086244689504383e-15,
+    "segments": [
+      {
+        "start": "1982-01-01",
+        "end": "1995-12-01",
+        "months": 168
+      },
+      {
+        "start": "1999-01-01",
+        "end": "2013-12-01",
+        "months": 180
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2021-12-01",
+        "months": 60
+      }
+    ],
+    "original_months": 408,
+    "lag1_interpolated_count": 2427,
+    "lag6_interpolated_count": 2412,
+    "lag_cov_condition": 2.5520614409982696,
+    "full_moment_condition": 7.93345173250312,
+    "first_order_norm": 2.544830956780276,
+    "second_order_norm": 0.9945998750945371,
+    "second_first_norm_ratio": 0.3908314115892815,
+    "relative_moment_residual": 0.12806893174382128
+  },
+  {
+    "key": "50m_total_wwv_mean_exact",
+    "state_operator_error": 3.552713678800501e-15,
+    "component_sum_error": 3.9968028886505635e-15,
+    "segments": [
+      {
+        "start": "1982-01-01",
+        "end": "1995-12-01",
+        "months": 168
+      },
+      {
+        "start": "1999-01-01",
+        "end": "2013-12-01",
+        "months": 180
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2021-12-01",
+        "months": 60
+      }
+    ],
+    "original_months": 408,
+    "lag1_interpolated_count": 2427,
+    "lag6_interpolated_count": 2412,
+    "lag_cov_condition": 2.5520614409982696,
+    "full_moment_condition": 7.93345173250312,
+    "second_first_norm_ratio": null,
+    "relative_moment_residual": 1.9181042238245564e-16
+  },
+  {
+    "key": "75m_three_wwv_detrend_perturb2",
+    "state_operator_error": 0.0,
+    "component_sum_error": 1.2989609388114332e-14,
+    "segments": [
+      {
+        "start": "1982-01-01",
+        "end": "1995-12-01",
+        "months": 168
+      },
+      {
+        "start": "1999-01-01",
+        "end": "2013-12-01",
+        "months": 180
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2021-12-01",
+        "months": 60
+      }
+    ],
+    "original_months": 408,
+    "lag1_interpolated_count": 2427,
+    "lag6_interpolated_count": 2412,
+    "lag_cov_condition": 24.41410384604003,
+    "full_moment_condition": 73.69577401520893,
+    "first_order_norm": 7.76291747976577,
+    "second_order_norm": 3.629274096849101,
+    "second_first_norm_ratio": 0.46751419248097004,
+    "relative_moment_residual": 0.2027520823765288
+  },
+  {
+    "key": "75m_three_wwv_detrend_exact",
+    "state_operator_error": 0.0,
+    "component_sum_error": 1.887379141862766e-14,
+    "segments": [
+      {
+        "start": "1982-01-01",
+        "end": "1995-12-01",
+        "months": 168
+      },
+      {
+        "start": "1999-01-01",
+        "end": "2013-12-01",
+        "months": 180
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2021-12-01",
+        "months": 60
+      }
+    ],
+    "original_months": 408,
+    "lag1_interpolated_count": 2427,
+    "lag6_interpolated_count": 2412,
+    "lag_cov_condition": 24.41410384604003,
+    "full_moment_condition": 73.69577401520893,
+    "second_first_norm_ratio": null,
+    "relative_moment_residual": 2.3238723978383473e-16
+  },
+  {
+    "key": "75m_total_wwv_detrend_perturb2",
+    "state_operator_error": 1.915134717478395e-15,
+    "component_sum_error": 3.774758283725532e-15,
+    "segments": [
+      {
+        "start": "1982-01-01",
+        "end": "1995-12-01",
+        "months": 168
+      },
+      {
+        "start": "1999-01-01",
+        "end": "2013-12-01",
+        "months": 180
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2021-12-01",
+        "months": 60
+      }
+    ],
+    "original_months": 408,
+    "lag1_interpolated_count": 2427,
+    "lag6_interpolated_count": 2412,
+    "lag_cov_condition": 3.082522689599196,
+    "full_moment_condition": 9.670626950482745,
+    "first_order_norm": 2.594893684344654,
+    "second_order_norm": 1.0313317886582547,
+    "second_first_norm_ratio": 0.3974466448781387,
+    "relative_moment_residual": 0.12333038329404437
+  },
+  {
+    "key": "75m_total_wwv_detrend_exact",
+    "state_operator_error": 1.915134717478395e-15,
+    "component_sum_error": 3.1086244689504383e-15,
+    "segments": [
+      {
+        "start": "1982-01-01",
+        "end": "1995-12-01",
+        "months": 168
+      },
+      {
+        "start": "1999-01-01",
+        "end": "2013-12-01",
+        "months": 180
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2021-12-01",
+        "months": 60
+      }
+    ],
+    "original_months": 408,
+    "lag1_interpolated_count": 2427,
+    "lag6_interpolated_count": 2412,
+    "lag_cov_condition": 3.082522689599196,
+    "full_moment_condition": 9.670626950482745,
+    "second_first_norm_ratio": null,
+    "relative_moment_residual": 2.315808005385546e-16
+  },
+  {
+    "key": "75m_three_wwv_mean_perturb2",
+    "state_operator_error": 0.0,
+    "component_sum_error": 9.769962616701378e-15,
+    "segments": [
+      {
+        "start": "1982-01-01",
+        "end": "1995-12-01",
+        "months": 168
+      },
+      {
+        "start": "1999-01-01",
+        "end": "2013-12-01",
+        "months": 180
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2021-12-01",
+        "months": 60
+      }
+    ],
+    "original_months": 408,
+    "lag1_interpolated_count": 2427,
+    "lag6_interpolated_count": 2412,
+    "lag_cov_condition": 22.53101871294166,
+    "full_moment_condition": 58.77109718425701,
+    "first_order_norm": 7.717537295017244,
+    "second_order_norm": 3.0848700659766926,
+    "second_first_norm_ratio": 0.3997220807690052,
+    "relative_moment_residual": 0.20079941564798404
+  },
+  {
+    "key": "75m_three_wwv_mean_exact",
+    "state_operator_error": 0.0,
+    "component_sum_error": 9.769962616701378e-15,
+    "segments": [
+      {
+        "start": "1982-01-01",
+        "end": "1995-12-01",
+        "months": 168
+      },
+      {
+        "start": "1999-01-01",
+        "end": "2013-12-01",
+        "months": 180
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2021-12-01",
+        "months": 60
+      }
+    ],
+    "original_months": 408,
+    "lag1_interpolated_count": 2427,
+    "lag6_interpolated_count": 2412,
+    "lag_cov_condition": 22.53101871294166,
+    "full_moment_condition": 58.77109718425701,
+    "second_first_norm_ratio": null,
+    "relative_moment_residual": 1.9518372192495629e-16
+  },
+  {
+    "key": "75m_total_wwv_mean_perturb2",
+    "state_operator_error": 5.828670879282072e-16,
+    "component_sum_error": 4.107825191113079e-15,
+    "segments": [
+      {
+        "start": "1982-01-01",
+        "end": "1995-12-01",
+        "months": 168
+      },
+      {
+        "start": "1999-01-01",
+        "end": "2013-12-01",
+        "months": 180
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2021-12-01",
+        "months": 60
+      }
+    ],
+    "original_months": 408,
+    "lag1_interpolated_count": 2427,
+    "lag6_interpolated_count": 2412,
+    "lag_cov_condition": 2.8942154309854238,
+    "full_moment_condition": 9.352585245026685,
+    "first_order_norm": 2.7057744327272975,
+    "second_order_norm": 1.0572177109666085,
+    "second_first_norm_ratio": 0.39072647674513694,
+    "relative_moment_residual": 0.1272280532592578
+  },
+  {
+    "key": "75m_total_wwv_mean_exact",
+    "state_operator_error": 6.661338147750939e-16,
+    "component_sum_error": 4.6629367034256575e-15,
+    "segments": [
+      {
+        "start": "1982-01-01",
+        "end": "1995-12-01",
+        "months": 168
+      },
+      {
+        "start": "1999-01-01",
+        "end": "2013-12-01",
+        "months": 180
+      },
+      {
+        "start": "2017-01-01",
+        "end": "2021-12-01",
+        "months": 60
+      }
+    ],
+    "original_months": 408,
+    "lag1_interpolated_count": 2427,
+    "lag6_interpolated_count": 2412,
+    "lag_cov_condition": 2.8942154309854238,
+    "full_moment_condition": 9.352585245026685,
+    "second_first_norm_ratio": null,
+    "relative_moment_residual": 1.1852599375035036e-16
+  }
+]

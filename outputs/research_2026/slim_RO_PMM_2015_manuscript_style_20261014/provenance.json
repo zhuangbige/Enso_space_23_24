@@ -1,0 +1,49 @@
+{
+  "code": {
+    "path": "/Users/daiyue/Documents/Maryland/scripts/forecast_slim_pmm_2015_manuscript_style.py",
+    "sha256": "c0b9661c59cf14f3083c9f68d85a400f6e21c6e45af993cbe97b05094c0a84d8"
+  },
+  "input_files": [
+    {
+      "path": "/Users/daiyue/Documents/Maryland/data/derived/research_2026/paper_ro_baseline_20261014/raw_indices.csv",
+      "sha256": "91559d974dfbdbdd9546afb94b31d18e287659ef13d385ed4f92e7c77ea0c82d"
+    },
+    {
+      "path": "/Users/daiyue/Documents/Maryland/data/raw/climate_indices/standard_pmm_20261014/PMM_uw.txt",
+      "sha256": "04268780d66982c1048a7f099934d67834aaad5668f2336dbf6f4b489d375a98"
+    },
+    {
+      "path": "/Users/daiyue/Documents/Maryland/outputs/research_2026/manuscript_RO_exact_period_20261014/observations_detrended_2002Jan_2025Apr.csv",
+      "sha256": "e0590df0b57c1ec66655691eb9a775cb93dbe78b340a7795813f346234546f67"
+    },
+    {
+      "path": "/Users/daiyue/Documents/Maryland/scripts/paper_ro_slim.py",
+      "sha256": "35607bb643f2d6d486c11cd5afd4806168c1db23c43e6ccba1b34b01358017b9"
+    },
+    {
+      "path": "/Users/daiyue/Documents/Maryland/outputs/research_2026/slim_RO_PMM_2015_manuscript_style_20261014/protocol_before_run.txt",
+      "sha256": "2f02788870d800f4ff5fc513a048fa77c074158c01ad78d38221284e21eb5f5c"
+    }
+  ],
+  "plotting_limits": {
+    "T": [
+      -0.5,
+      3.5
+    ],
+    "H": [
+      -20.0,
+      10.0
+    ],
+    "x": [
+      -0.5,
+      5.0
+    ],
+    "y": [
+      -4.0,
+      1.5
+    ]
+  },
+  "lead0_excluded_from_scores": true,
+  "paper_like_does_not_mean_author_exact_replication": true,
+  "pmm_main_choice": "standard MCA SST index; retained before run"
+}

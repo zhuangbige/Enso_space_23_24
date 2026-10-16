@@ -1,0 +1,26 @@
+原稿图4同时间段复现核查（2026-10-14）
+
+本轮只检验原稿RO基准，不使用PMM、不分析2026。
+时间严格对应：观测2002年1月—2025年4月（280月），拟合2002年1月—2024年12月（276月），异常参考1991—2020。线性去趋势在原稿分析时段2002年1月—2025年4月估计。
+图4a只显示原稿图4b列出的19个事件及原稿相同的3类颜色、2—6月起报、1—9月提前期；没有额外加入2012/2013/2019等中性年份预报。
+原稿未明确RO初值月与签发月关系、RO月值与季平均关系，因此保留六种有明确含义的时间处理核查；没有按最接近原图的一组改写主结果。包含lead0的组有实况初值，不属于独立提前1个月预报；平滑状态可能包含初值后的实况，均只作原图定义诊断。
+
+各时间处理与原稿19个印刷评分的对比：
+                                 rule  event_pattern_correlation  mean_absolute_r_difference  max_absolute_r_difference    r2015  min_pairs
+              T_smoothed_state_FebJun                   0.946335                    0.111288                   0.452425 0.517998         45
+           both_smoothed_state_FebJun                   0.949252                    0.104610                   0.413394 0.540713         45
+      issue_FebJun_forward3mo_targets                   0.958261                    0.090908                   0.378560 0.308922         45
+     state_FebJun_centered3mo_targets                   0.942432                    0.100942                   0.504932 0.443514         45
+state_FebJun_lead0_8_INCLUDES_INITIAL                   0.924995                    0.146960                   0.464931 0.539949         45
+         state_FebJun_monthly_lead1_9                   0.942089                    0.108964                   0.510137 0.452043         45
+
+主结果还不能称为严格复现。2015数值较接近，但2002等事件仍有明显差异；应同时看图4a曲线幅度和图4b全部事件评分。
+黑色观测线的像素核查更接近三个月平均而非纯月值，但受原图分辨率、月份定位及数据版本影响，此证据不能单独确认作者的平滑定义。像素提取没有进入模型拟合、气候态、趋势或振幅校正。
+图4c是RO与IRI多模式技能的比较，缺少作者使用的IRI集合预报档案，不能只靠RO计算复现；没有制造IRI数据。
+
+额外插值敏感性：固定时段、只将五天插值改为cubic spline，2015相关从0.452变为0.404，2002仍约0.147。改整块协方差解后2002也仅约0.17，未解决最大偏差。详见interpolation_event_scores.csv。
+需要作者资料才能闭合的差距：原始处理后T/h序列、季节RO系数、初值/提前期/季平均的日期对应、五天插值和季节估计细节。
+来源：用户提供manuscript.pdf第4–6页方法、第12页图4；sLIM按其引用Chen & Jin (2021)附录A5–A7实现。
+主要对照图：figure4_original_vs_reconstruction.png；纯重画图：figure4_reconstruction.png；观测核查：observed_reference_check.png。
+数值：time_definition_event_scores.csv（逐事件）、time_definition_summary.csv（总体）、RO_forecasts_exact_period.csv（逐预报）。
+代码：scripts/reproduce_manuscript_fig4.py；scripts/diagnose_manuscript_observation_curve.py。

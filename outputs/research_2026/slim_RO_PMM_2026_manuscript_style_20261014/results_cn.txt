@@ -1,0 +1,50 @@
+2026 年 RO + PMM 分析（2026-10-14 数据快照）
+
+主要结果：RO 加入重建 PMM-SST 后，T RMSE 1.219 → 1.061 °C（改善 13.0%）；h RMSE 9.091 → 8.116 m（改善 10.7%）。联合归一化 RMSE 改善 11.3%。
+切断同一扩展模型中的 PMM→T/h 通道后，T/h RMSE 回升到 1.179 °C / 8.796 m。这支持 PMM 通道在本次轨迹中有贡献，但不能把相对 RO 的全部改善都归为单一因果效应。
+保留原官方 PMM 模型、只更换 2026 起报输入的敏感性试验，T/h RMSE 均改善约 9.3%—9.4%，改善方向一致。两种模型仍明显低估实际增暖和热量积累：PMM 有增益，但尚不能解释 2026 年完整演变。
+
+来源误差敏感性：将所有起报 PMM 同向加/减历史独立检验的一个 RMSE（1.113 指数单位），T RMSE 范围 1.017—1.105 °C，h RMSE 7.853—8.382 m。这是确定性的输入扰动检验，不是置信区间，也不覆盖所有结构误差。
+
+主分析沿用原稿：sLIM 拟合 2002—2024，年周期+半年周期，二阶摄动解；T/h 气候态 1991—2020，去趋势系数固定于 2002-01—2025-04。
+h 是 GODAS 5S—5N、120E—80W 海域平均 D20，单位 m；不是体积单位的 WWV。
+
+数据截止：Niño3.4 2026-09-01；h 2026-08-01；官方 PMM 2026-02；ERSSTv5 重建 PMM-SST 2026-09-01。
+官方 PMM 原始 NCEP/NCAR R1 在 2026-03 停更，因此不存在同源后续月度更新。本次为独立标注的 ERSSTv5 海温投影重建序列。ERA5 尚在服务端排队，后续月份的 PMM-wind/四变量扩展不填补、不评分；官方 1—2 月仍保留风指数对照。
+
+重建：NCEP R1 海洋 SST/10m u,v，175E—95W、21S—32N，全球网格对齐的 2×3 合并；去季节、线性趋势，3 个月平滑后回归去除 CTI，再 sqrt(cosφ) 加权及 SST—(u,v) MCA。模态和预处理基期固定为 1950—2005。
+ERSSTv5 先插值到 R1 网格（SST 沿岸缺测按最近海洋格点填补，再使用固定 R1 海陆掩膜），用自身 1950—2005 季节/趋势/CTI 系数，投影到冻结的 R1 海温模态；月度投影不平滑。仅用 1950—2005 官方序列做线性尺度校准。PMM-SST 的后续投影只需海温，不需重新估计风场模态。
+官方实现未公开所有边界、去趋势参考期与归一化细节，因此本结果不能声称逐值复制官方 PMM；2006 年之后只作独立时间段一致性检验。
+
+三组对照：
+1. official_JanFeb：原有官方 PMM 模型及官方 1—2 月起报。
+2. frozen_official_model_reconstructed_input：原有官方 PMM 模型，2026 起报输入替换为重建值，作为衔接敏感性。
+3. consistent_reconstruction（主图）：历史和 2026 都用同一重建序列，按相同 2002—2024 窗口重新估计扩展 sLIM；RO 的系数与原有模型逐值一致。
+
+主图为 2—6 月五个起报，每个向前自由积分 9 个月。评分排除 lead=0，只使用已发布观测：T 共 25 个起报—目标配对，h/联合指标共 20 个。不同起报有重叠，不能视作独立样本，不能据此做普遍技能显著性声明。
+初始化使用整月均值，观测产品有发布延迟和事后修订；这是以 2026 为参数样本外的回溯自由演变分析，不是当月 1 日实时发布的预报。未观测月份保留为预测，未补造真值，也未加入评分。
+
+历史重建检验：
+               source                period component   n        r     RMSE          bias  normalized_RMSE  sign_agreement
+   R1_original_source calibration_1950_2005       SST 672 0.985987 0.490626  3.965082e-16         0.166821        0.967262
+   R1_original_source calibration_1950_2005      Wind 672 0.997461 0.390396  3.172066e-17         0.071216        0.964286
+   R1_original_source     heldout_2006_2024       SST 228 0.987190 0.606340 -2.716069e-01         0.179661        0.951754
+   R1_original_source     heldout_2006_2024      Wind 228 0.998249 1.108082 -1.053503e+00         0.191859        0.947368
+   R1_original_source  heldout_2025_2026Feb       SST  14 0.995634 0.721609 -6.968906e-01         0.364671        0.928571
+   R1_original_source  heldout_2025_2026Feb      Wind  14 0.998782 1.300126 -1.281104e+00         0.332690        1.000000
+ERSSTv5_fixed_R1_mode calibration_1950_2005       SST 672 0.942852 0.979989  1.903239e-16         0.333213        0.895833
+ERSSTv5_fixed_R1_mode     heldout_2006_2024       SST 228 0.948643 1.112805 -2.969796e-01         0.329728        0.907895
+ERSSTv5_fixed_R1_mode  heldout_2025_2026Feb       SST  14 0.958876 0.589290  1.780083e-01         0.297803        0.928571
+
+2026 主分析：
+                 protocol      model initializations  T_n   T_RMSE    T_bias      T_r  H_n   H_RMSE    H_bias       H_r  TH_n  TH_normalized_RMSE  T_RMSE_improvement_pct  H_RMSE_improvement_pct  TH_normalized_RMSE_improvement_pct
+consistent_reconstruction         RO         Feb-Jun   25 1.219068 -1.019997 0.651644   20 9.091146 -8.387176 -0.167758    20            1.461128                0.000000                0.000000                            0.000000
+consistent_reconstruction     RO_SST         Feb-Jun   25 1.061061 -0.865031 0.714020   20 8.116265 -7.390962  0.018862    20            1.295899               12.961268               10.723412                           11.308277
+consistent_reconstruction RO_SST_cut         Feb-Jun   25 1.178915 -0.982485 0.670681   20 8.795712 -8.098281 -0.105256    20            1.413762                3.293735                3.249680                            3.241721
+
+来源：
+https://www.aos.wisc.edu/dvimont/MModes/
+https://psl.noaa.gov/news/2026/r1datanotice.html
+https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-monthly-means
+https://psl.noaa.gov/data/gridded/data.godas.html
+https://psl.noaa.gov/data/gridded/data.noaa.ersst.v5.html

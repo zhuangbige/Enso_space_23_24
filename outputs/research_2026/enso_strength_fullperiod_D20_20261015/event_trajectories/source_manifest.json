@@ -1,0 +1,17 @@
+{
+  "source_directory": "/Users/daiyue/Documents/Maryland/outputs/research_2026/enso_strength_fullperiod_D20_20261015",
+  "sha256": {
+    "monthly_forecasts.csv": "3f88f8984f2984ad6cf5bc6574c5d6cedff5076e8a4e2f0becc08b2fae661c1d",
+    "event_catalog.csv": "355ce18aae3297c6a09ff78721ef4003af0f043a02c6694b520562459df96fb7",
+    "inputs_absolute.csv": "31db34efffc39a372ea0155081d644dd2926a26593de21777a2154cbec71db71",
+    "display_climatology.csv": "b45b89eec862c8cfd0e076c0c8f4a4b7f2e88cda9a2d6a4dbf264596c0d1593f",
+    "event_summary.csv": "813f404bbb91db1ee7a63aa98c74942ca173fcb7918d54e57f7bee8c0e79c6f0",
+    "analysis_protocol.json": "feee766fa420b1e71f5b63d9ee8704f17a0bed3579a9cf112eb4809a7ed30a2c",
+    "models_and_preprocessing.json": "b963e2a829feaff4b8363860c8619726722ed1133e751e5c4dcbdfbde6c19abb"
+  },
+  "plotting_script": "/Users/daiyue/Documents/Maryland/scripts/plot_enso_event_trajectories.py",
+  "plotting_script_sha256": "acb6dd2cc6fb26fcf146967fb6f2b7d1eceb9fb353e79cde22bb95167fa12dee",
+  "matplotlib": "3.10.9",
+  "numpy": "2.3.5",
+  "pandas": "3.0.3"
+}

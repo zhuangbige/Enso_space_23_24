@@ -1,0 +1,305 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>全时段D20 sLIM：强中弱平均轨迹与PMM增益</title>
+<style>body{font-family:system-ui,-apple-system,"PingFang SC",sans-serif;background:#f4f5f6;color:#25323a;line-height:1.8;margin:0}
+main{max-width:1280px;margin:36px auto;padding:0 24px}section{background:white;padding:26px;margin:22px 0;border-radius:12px}
+h1{font-size:30px}h2{font-size:22px}img{width:100%;height:auto}a{color:#256c94}.sub{color:#526675}
+table{width:100%;border-collapse:collapse;font-size:14px}td,th{padding:8px 10px;border-bottom:1px solid #e2e6e9;text-align:right}
+td:first-child,th:first-child{text-align:left}.scroll{overflow:auto}</style><main>
+<p class="sub">1982—2024连续全时段 · D20 · 13次事件 · 两套固定模型 · 样本内起报比较</p>
+<h1>先拟合完整时段，再比较各起报节点加入PMM的变化</h1>
+<section><h2>强、中、弱：Niño3.4平均轨迹</h2><img src="Fig4_strength_mean_Nino34_trajectories.png" alt="强中弱平均多起报轨迹">
+<p>强、中、弱各自平均，保留2、3、4、5、6月五个起报节点。黑色粗线为观测，蓝色虚线为RO，橙色实线为RO＋PMM；空心点标示共同初态。横轴1为发展年1月，13为次年1月。持续事件先在事件内部平均两个发展年，再进行组内事件等权平均。未作时间平滑；平均曲线展示演变，技巧表则保留逐事件误差后再汇总，二者不能混算。</p><p><a href="Fig4_strength_mean_Nino34_trajectories.pdf">PDF</a> · <a href="Fig4_strength_mean_Nino34_trajectories.svg">SVG</a> ·
+<a href="mean_trajectory_group_forecasts.csv">平均预测数据</a> · <a href="mean_trajectory_group_observations.csv">平均观测数据</a></p></section>
+<section><h2>月平均主结果</h2><p>全部组：RMSE 0.696 → 0.683°C，提升率 +1.92%；8/13 次事件改善；95%事件重采样区间 [-9.35%, +12.51%]。</p><p>强组：RMSE 0.750 → 0.771°C，提升率 -2.82%；4/7 次事件改善；95%事件重采样区间 [-17.26%, +11.30%]。</p><p>中组：RMSE 0.735 → 0.634°C，提升率 +13.74%；2/3 次事件改善；95%事件重采样区间 [-6.27%, +52.28%]。</p><p>弱组：RMSE 0.497 → 0.479°C，提升率 +3.44%；2/3 次事件改善；95%事件重采样区间 [-12.39%, +27.38%]。</p><p>变差事件：2023-2024（-40.60%）、2009-2010（-14.29%）、2006-2007（-12.39%）、2002-2003（-6.27%）、1986-1988（-1.55%）。</p>
+<p>提前1—9个月；事件等权；RMSE和偏差单位°C；正提升率表示改善。</p><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>组别</th>
+      <th>事件数</th>
+      <th>RO_RMSE</th>
+      <th>加PMM_RMSE</th>
+      <th>提升率</th>
+      <th>区间</th>
+      <th>改善事件</th>
+      <th>RO偏差</th>
+      <th>加PMM偏差</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>全部</td>
+      <td>13</td>
+      <td>0.696</td>
+      <td>0.683</td>
+      <td>+1.9%</td>
+      <td>[-9.4%, +12.5%]</td>
+      <td>8/13</td>
+      <td>-0.503</td>
+      <td>-0.465</td>
+    </tr>
+    <tr>
+      <td>强</td>
+      <td>7</td>
+      <td>0.750</td>
+      <td>0.771</td>
+      <td>-2.8%</td>
+      <td>[-17.3%, +11.3%]</td>
+      <td>4/7</td>
+      <td>-0.534</td>
+      <td>-0.531</td>
+    </tr>
+    <tr>
+      <td>中</td>
+      <td>3</td>
+      <td>0.735</td>
+      <td>0.634</td>
+      <td>+13.7%</td>
+      <td>[-6.3%, +52.3%]</td>
+      <td>2/3</td>
+      <td>-0.586</td>
+      <td>-0.467</td>
+    </tr>
+    <tr>
+      <td>弱</td>
+      <td>3</td>
+      <td>0.497</td>
+      <td>0.479</td>
+      <td>+3.4%</td>
+      <td>[-12.4%, +27.4%]</td>
+      <td>2/3</td>
+      <td>-0.345</td>
+      <td>-0.307</td>
+    </tr>
+  </tbody>
+</table></div></section>
+<section><h2>各强度组的 RMSE 与 PMM 增益随提前期变化</h2><img src="Fig1_skill_by_lead.png" alt="各强度组的 RMSE 与 PMM 增益随提前期变化"><p><a href="Fig1_skill_by_lead.pdf">PDF</a> · <a href="Fig1_skill_by_lead.svg">SVG</a> · <a href="Fig1_source.csv">图源数据</a></p></section><section><h2>全部 13 次事件：RO 与 RO＋PMM 的误差和增益</h2><img src="Fig2_all_event_improvements.png" alt="全部 13 次事件：RO 与 RO＋PMM 的误差和增益"><p><a href="Fig2_all_event_improvements.pdf">PDF</a> · <a href="Fig2_all_event_improvements.svg">SVG</a> · <a href="Fig2_source.csv">图源数据</a></p></section><section><h2>起报月份 × 提前期：强、中、弱三组的 PMM 增益</h2><img src="Fig3_initialization_lead_skill.png" alt="起报月份 × 提前期：强、中、弱三组的 PMM 增益"><p><a href="Fig3_initialization_lead_skill.pdf">PDF</a> · <a href="Fig3_initialization_lead_skill.svg">SVG</a> · <a href="Fig3_source.csv">图源数据</a></p></section><!-- event-trajectories:start --><section><h2>全部13次事件：逐事件多起报图</h2>
+<p>每个事件独立出图；1986—88和2014—16各分两个发展年面板。每个面板均保留2—6月五起报。</p>
+<p><a href="event_trajectories/index.html">打开全部事件图册</a> ·
+<a href="event_trajectories/all_events_13pages.pdf">合并PDF</a> ·
+<a href="event_trajectories/all_events_overview.png">全部事件总览</a> ·
+<a href="event_trajectories/all_event_figures.zip">全部单图ZIP</a></p></section><!-- event-trajectories:end --><section><h2>全部事件逐一核对</h2><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>事件</th>
+      <th>等级</th>
+      <th>ONI峰值</th>
+      <th>起报年</th>
+      <th>RO_RMSE</th>
+      <th>加PMM_RMSE</th>
+      <th>提升率</th>
+      <th>RO偏差</th>
+      <th>加PMM偏差</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1982-1983</td>
+      <td>强</td>
+      <td>2.2</td>
+      <td>1982</td>
+      <td>0.655</td>
+      <td>0.587</td>
+      <td>+10.40%</td>
+      <td>-0.379</td>
+      <td>-0.302</td>
+    </tr>
+    <tr>
+      <td>1986-1988</td>
+      <td>强</td>
+      <td>1.7</td>
+      <td>1986,1987</td>
+      <td>0.656</td>
+      <td>0.666</td>
+      <td>-1.55%</td>
+      <td>-0.442</td>
+      <td>-0.386</td>
+    </tr>
+    <tr>
+      <td>1991-1992</td>
+      <td>强</td>
+      <td>1.7</td>
+      <td>1991</td>
+      <td>0.644</td>
+      <td>0.634</td>
+      <td>+1.59%</td>
+      <td>-0.449</td>
+      <td>-0.418</td>
+    </tr>
+    <tr>
+      <td>1994-1995</td>
+      <td>中</td>
+      <td>1.1</td>
+      <td>1994</td>
+      <td>0.952</td>
+      <td>0.758</td>
+      <td>+20.34%</td>
+      <td>-0.820</td>
+      <td>-0.655</td>
+    </tr>
+    <tr>
+      <td>1997-1998</td>
+      <td>强</td>
+      <td>2.4</td>
+      <td>1997</td>
+      <td>0.707</td>
+      <td>0.658</td>
+      <td>+6.85%</td>
+      <td>-0.592</td>
+      <td>-0.551</td>
+    </tr>
+    <tr>
+      <td>2002-2003</td>
+      <td>中</td>
+      <td>1.3</td>
+      <td>2002</td>
+      <td>0.720</td>
+      <td>0.765</td>
+      <td>-6.27%</td>
+      <td>-0.598</td>
+      <td>-0.646</td>
+    </tr>
+    <tr>
+      <td>2004-2005</td>
+      <td>弱</td>
+      <td>0.7</td>
+      <td>2004</td>
+      <td>0.591</td>
+      <td>0.531</td>
+      <td>+10.10%</td>
+      <td>-0.502</td>
+      <td>-0.433</td>
+    </tr>
+    <tr>
+      <td>2006-2007</td>
+      <td>弱</td>
+      <td>0.9</td>
+      <td>2006</td>
+      <td>0.523</td>
+      <td>0.588</td>
+      <td>-12.39%</td>
+      <td>-0.377</td>
+      <td>-0.442</td>
+    </tr>
+    <tr>
+      <td>2009-2010</td>
+      <td>强</td>
+      <td>1.6</td>
+      <td>2009</td>
+      <td>0.905</td>
+      <td>1.034</td>
+      <td>-14.29%</td>
+      <td>-0.772</td>
+      <td>-0.878</td>
+    </tr>
+    <tr>
+      <td>2014-2016</td>
+      <td>强</td>
+      <td>2.8</td>
+      <td>2014,2015</td>
+      <td>0.948</td>
+      <td>0.766</td>
+      <td>+19.20%</td>
+      <td>-0.522</td>
+      <td>-0.354</td>
+    </tr>
+    <tr>
+      <td>2018-2019</td>
+      <td>中</td>
+      <td>1.0</td>
+      <td>2018</td>
+      <td>0.441</td>
+      <td>0.211</td>
+      <td>+52.28%</td>
+      <td>-0.341</td>
+      <td>-0.100</td>
+    </tr>
+    <tr>
+      <td>2019-2020</td>
+      <td>弱</td>
+      <td>0.7</td>
+      <td>2019</td>
+      <td>0.342</td>
+      <td>0.248</td>
+      <td>+27.38%</td>
+      <td>-0.157</td>
+      <td>-0.046</td>
+    </tr>
+    <tr>
+      <td>2023-2024</td>
+      <td>强</td>
+      <td>2.1</td>
+      <td>2023</td>
+      <td>0.669</td>
+      <td>0.940</td>
+      <td>-40.60%</td>
+      <td>-0.585</td>
+      <td>-0.829</td>
+    </tr>
+  </tbody>
+</table></div></section>
+<section><h2>三个月平均补充</h2><p>中心提前1—5个月；首窗含共同起报月。</p><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>组别</th>
+      <th>事件数</th>
+      <th>RO_RMSE</th>
+      <th>加PMM_RMSE</th>
+      <th>提升率</th>
+      <th>区间</th>
+      <th>改善事件</th>
+      <th>RO偏差</th>
+      <th>加PMM偏差</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>全部</td>
+      <td>13</td>
+      <td>0.447</td>
+      <td>0.444</td>
+      <td>+0.6%</td>
+      <td>[-9.3%, +9.8%]</td>
+      <td>8/13</td>
+      <td>-0.297</td>
+      <td>-0.273</td>
+    </tr>
+    <tr>
+      <td>强</td>
+      <td>7</td>
+      <td>0.479</td>
+      <td>0.497</td>
+      <td>-3.7%</td>
+      <td>[-17.0%, +7.7%]</td>
+      <td>4/7</td>
+      <td>-0.299</td>
+      <td>-0.295</td>
+    </tr>
+    <tr>
+      <td>中</td>
+      <td>3</td>
+      <td>0.471</td>
+      <td>0.426</td>
+      <td>+9.6%</td>
+      <td>[-4.6%, +55.6%]</td>
+      <td>2/3</td>
+      <td>-0.379</td>
+      <td>-0.310</td>
+    </tr>
+    <tr>
+      <td>弱</td>
+      <td>3</td>
+      <td>0.327</td>
+      <td>0.313</td>
+      <td>+4.3%</td>
+      <td>[-13.0%, +16.1%]</td>
+      <td>2/3</td>
+      <td>-0.209</td>
+      <td>-0.185</td>
+    </tr>
+  </tbody>
+</table></div></section>
+<section><h2>拟合和起报方式</h2><p>先用1982年1月至2024年12月的516个连续月份拟合，包含全部暖、冷和中性阶段；RO=[ERSST Niño3.4, GODAS平均D20]，RO＋PMM增加官方PMM-SST。D20为5°S—5°N、120°E—80°W的面积加权20°C等温线深度，单位m。整个分析只有两套正式模型，各自拟合一次，然后所有事件及起报月份共用固定系数。沿用原复现的1991—2020同月气候态、线性去趋势、年/半年谐波、二阶扰动估计及RK4积分；新分析的趋势、尺度及PMM均值均在1982—2024期内估计，不保留旧复现延至2025年4月的趋势端点。不再排除事件，也不按强度另拟合模型。75个起报来自15个发展年的2—6月，分别由当月观测初态自由积分9个月，起报后不输入未来观测。恢复趋势后，在1991—2020同月海温距平坐标中展示及评分。主结果为提前1—9个月共675个配对预测；先计算各事件MSE和偏差，再对事件等权，MSE平均后开方。提升率=100×(1−RMSE_RO＋PMM/RMSE_RO)。1986—88、2014—16各含两个发展年，但统计时各占一个事件。</p><p>这是全时段拟合后的样本内起报比较，目标事件参与参数拟合；不称为参数样本外检验或当时实时预报。</p><p>PMM作为起报时的第三个状态，随后与海温和D20共同演变。比较的是独立拟合的两状态和三状态系统；没有在某条既有RO轨迹中途切换系数。</p><p>事件强度只用于事后分组。固定本地ONI版本按发布一位小数识别，包含2019—20弱事件；超强并入强组。</p><p>5000次配对bootstrap以整个事件为单位，固定两套模型不重拟合。中、弱组各仅3次事件，区间描述本组离散程度；不代表独立样本外泛化能力。</p><p>图与评分均保留PMM带来的正负变化。三个月平均为中心提前1—5个月的补充，首个平均窗含起报月。</p>
+<p>此前WWV26逐事件留出结果保存在原目录，已不作为本轮主结果。</p></section>
+<section><h2>数值验证</h2><p>已复核旧2002—2024本地复现：预处理最大差3.55e-15，系数最大差8.88e-16。正式分析只有2套模型，每套516个连续月份；与分段核心在全样本掩膜下的系数差1.55e-15。初态误差0.00e+00，固定模型和初态后修改未来观测的预报差0.00e+00；RK4步长加密最大差3.04e-09，保存表独立重算评分差4.44e-14。年度传播谱半径0.4165—0.5014，不稳定模型0套。</p></section><section><h2>下载结果</h2><p><a href="results_cn.txt">中文结果</a> · <a href="event_catalog.csv">事件分类</a> · <a href="monthly_forecasts.csv">全部起报预测</a> · <a href="event_scores.csv">逐事件全部评分</a> · <a href="group_scores.csv">分组全部评分</a> · <a href="group_summary.csv">分组汇总</a> · <a href="seasonal_forecasts.csv">三个月平均预测</a> · <a href="models_and_preprocessing.json">两套模型和预处理参数</a> · <a href="fitted_period_states.csv">连续516个月拟合状态</a> · <a href="forecast_model_states.csv">逐起报全部状态演变</a> · <a href="training_period.csv">统一拟合时段</a> · <a href="protocol_before_run.txt">计算口径</a> · <a href="numerical_QA.json">数值核验</a> · <a href="mean_trajectory_QA.json">合成核验</a> · <a href="source_manifest.json">来源校验值</a> · <a href="reproduce.txt">复现命令</a></p></section>
+</main></html>

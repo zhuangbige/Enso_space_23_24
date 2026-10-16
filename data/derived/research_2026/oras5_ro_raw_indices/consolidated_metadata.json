@@ -1,0 +1,50 @@
+{
+  "Nino34": {
+    "variable": "sosstsst",
+    "units": "C",
+    "nlat": 41,
+    "nlon": 201,
+    "region": {
+      "south": -5,
+      "north": 5,
+      "west_0_360": 190,
+      "east_0_360": 240
+    },
+    "min_valid_cells": 8241,
+    "max_valid_cells": 8241,
+    "min": 24.13585803062375,
+    "max": 29.480045224655907
+  },
+  "WWV": {
+    "variable": "so20chgt",
+    "units": "m",
+    "nlat": 41,
+    "nlon": 641,
+    "region": {
+      "south": -5,
+      "north": 5,
+      "west_0_360": 120,
+      "east_0_360": 280
+    },
+    "min_valid_cells": 25018,
+    "max_valid_cells": 25018,
+    "min": 94.45446418609619,
+    "max": 141.73541736916874
+  },
+  "NPMM": {
+    "variable": "sosstsst",
+    "units": "C",
+    "nlat": 61,
+    "nlon": 161,
+    "region": {
+      "south": 10,
+      "north": 25,
+      "west_0_360": 200,
+      "east_0_360": 240
+    },
+    "min_valid_cells": 9778,
+    "max_valid_cells": 9778,
+    "min": 22.867321575913426,
+    "max": 26.95190271443616
+  }
+}

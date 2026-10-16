@@ -1,0 +1,8 @@
+Three-case research diagnostics, not a replication of all Chen (2015) results.
+Run analyze_three_event_ocean_preconditioning.py, then plot_report_three_event_ocean_preconditioning.py.
+Use the existing scientific Python runtime with numpy, pandas, xarray, scipy, gsw, h5netcdf and matplotlib.
+Ocean geometry routines imported from analyze_chen2015_reanalysis.py; regional definitions, baseline and reference exclusions are newly calculated.
+No historical output is overwritten. NetCDF exports use the scipy engine.
+Common 1982-2022 anomalies; wind reference uses 1982-2024 minus 1996-98, 2014-16, 2022-24.
+Monthly-center volume integration uses actual elapsed seconds. Shared gates cancel by construction; unresolved budget terms remain explicit.
+No new dynamical model has been run.

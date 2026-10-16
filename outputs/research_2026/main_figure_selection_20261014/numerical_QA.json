@@ -1,0 +1,31 @@
+{
+  "no_refit": true,
+  "main_figures": 6,
+  "ppt_figures": 8,
+  "all_rendered_from_existing_results": true,
+  "physical_events": [
+    1997,
+    2015,
+    2023
+  ],
+  "forecast_events": [
+    2015,
+    2023,
+    2026
+  ],
+  "physical_baseline": "1980-2022 same-month mean",
+  "atmospheric_baseline": "1982-2022 same-month linear expectation",
+  "forecast_verification_counts": {
+    "2015": 25,
+    "2023": 25,
+    "2026": 19
+  },
+  "required_support": [
+    "FigS01_past_only_training",
+    "FigS04_PMM_reconstruction"
+  ],
+  "source_atmos_sha256": "e1bd59252f99551f04acd9197da1d3a59849f682beeb3d0a504d0bec5f15c96b",
+  "new_13event_causal_regression_claimed": false,
+  "visual_QA": "All 6 paper figures and all 8 PPT figures inspected; final PPT04 and FigS01 corrections re-inspected. No label collisions found.",
+  "delivery_date": "2026-10-14"
+}

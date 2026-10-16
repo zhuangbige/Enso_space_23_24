@@ -1,0 +1,32 @@
+{
+  "phase_xlim": [
+    -1.0,
+    4.0
+  ],
+  "phase_ylim": [
+    -2.5,
+    3.5
+  ],
+  "sst_ylim": [
+    -1.0,
+    3.5
+  ],
+  "sst_skill_pairs": 25,
+  "correlations": {
+    "RO": 0.6516442277801349,
+    "RO_SST": 0.7140204039094025
+  },
+  "rmse_degC": {
+    "RO": 1.2190680329597947,
+    "RO_SST": 1.0610613547741432
+  },
+  "rendering_only": true,
+  "reference": "User-provided 2015 manuscript-style figure",
+  "input_sha256": {
+    "forecasts_2026.csv": "53b7f0d9857582b3224d7dc2439a96f3447202b40862e165d43e5f4ad44ea947",
+    "event_scores_2026.csv": "06e9a9aa80b97ca971f85e3351c1dde994b63bc51d4776815ef5d462a3b889fc",
+    "processed_states_consistent_reconstruction.csv": "377298f88d5681186445044eab024a25af33756debb9890c2a9b17d90fbaae13",
+    "models_and_preprocessing.json": "ab08fbaf67acb880a2729ded23ebae817223810b5b9781422058026c9f329511",
+    "numerical_QA.json": "c98eda26dbae5eca98c5022e1aff015cf5985ba0724710d43c663c2ed990c850"
+  }
+}

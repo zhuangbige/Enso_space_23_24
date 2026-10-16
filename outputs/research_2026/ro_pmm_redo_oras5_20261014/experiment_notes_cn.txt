@@ -1,0 +1,79 @@
+RO 与 RO＋PMM 重做及核查（2026-10-14）
+
+已完成内容：
+1. 保留旧版线性RO的方程、年度正余弦项、训练期标准差缩放、ridge alpha=1与月积分方法；没有为了追随2015实况更换这套估计器。
+2. 在相同模型中分别替换WWV、Niño3.4及PMM输入，复现旧预报以核对来源。
+3. 取得未经去气候态/去趋势的ORAS5区域月均值。原始资料1979年1月–2026年9月；模型统一从1982年开始，以便保留早期SST–风PMM的完整训练期。
+4. 对不去趋势/线性/二次去趋势三个选项，使用2000–2013每月起报、1–12月提前期、仅截至2014年12月的实况检验；依据二状态RO的T/H标准化联合均方误差选择。
+5. 选择阶数1，即线性去趋势；方案冻结后重跑2015、2026和历史起报。选择过程中没有看2015/2026预测效果或PMM增益。
+6. 额外采用官方XRO核心的非线性RO作为独立对照；两状态与三状态使用相同非线性项和季节结构。它不是对旧线性模型的悄悄替换。
+7. 两年均完成1/3/5月起报的时间序列及横轴Niño3.4、纵轴WWV代理量相图，提供PNG和矢量PDF。
+
+旧模型核查：
+旧RO确实使用线性而非二次去趋势，不能把上次XRO的二次趋势问题直接套到它身上。
+原有绘图时间和积分没有发现错位；问题是换用OISST/PMEL及自定义PMM后，未先建立与ORAS5一致的数据基准就解释增益。
+用旧输入重新执行旧模型，与存档预报的最大差为1.94e-15，确认没有悄悄修改模型来追求好看的曲线。
+2015年3月起报，保持旧SST–风PMM与线性估计器：旧输入Niño3.4 RMSE 1.211°C，仅替换官方示例WWV为1.060°C；再替换Niño3.4为0.827°C；再改用区域NPMM为0.915°C。
+这些是参考数据诊断，不能把改变多个输入后的改善都解释为PMM贡献。官方示例已预处理，可能包含后期信息。
+
+正式重跑的输入和含义：
+T=ORAS5 5S–5N、170W–120W SST；H=ORAS5 5S–5N、120E–80W平均D20；区域NPMM=ORAS5 10–25N、160W–120W SST。
+H是WWV代理量，单位m，并非PMEL的总体积10^14 m³；图中已明确注明，不能直接比较两者数值大小。
+原来的PMM分支仍用先前的OISST/ERA5联合SST–风EOF，在每个训练期内重新估计，并回归剔除Niño3.4影响。它与区域SST型NPMM、标准MCA PMM都不是同一个指数。
+PMM定义澄清：联合EOF分支输入为海温SST、10米纬向风u10和经向风v10，海洋表层信息已经包含；称为“风PMM”不准确。区域NPMM分支仅使用区域SST。两者均为代理指标，本实验未分别构建标准MCA的PMM-SST和PMM-wind两个展开系数。
+标准PMM包含海温与近地面风的耦合，NOAA分别提供PMM SST及PMM Wind指数：https://psl.noaa.gov/data/timeseries/month/PMM/ 。H则表示赤道次表层充放电状态，与PMM的海温部分不是同一个量。
+RO只含T/H；RO+PMM或RO+NPMM分别含T/H/P。两模型都重新拟合，训练期、预处理和方程结构一致。起报后P自己演化，不使用未来实测P。
+训练：2015用1982–2014；2026用1982–2025。起报值为该月整月平均，仅在月底以后可用；历史数据发布时滞和修订版本未模拟。
+CDS consolidated产品用于2014年及以前，operational用于2015年以后，沿用上游实时XRO数据接口的产品拼接；产品强迫/同化系统差异是资料限制。
+
+图形异常基准：
+模型在只用训练期估计的月气候态和线性趋势残差上拟合。绘图时把所移除背景加回，统一到1982–2014年月气候态异常，2015和2026使用同一显示零点。
+预测和验证实况使用同一可逆变换，RMSE不因显示零点而改变。旧图内部观测与预报也使用相同基准；这次主要把两年及不同模型的显示基准统一，不能把原问题说成坐标画错。
+2026年T/H均已验证至9月；起报后的验证长度：1月起报8个月、3月起报6个月、5月起报4个月，不能把它当作完整12个月或冬季峰值验证。
+
+保留旧线性RO，新的原始ORAS5输入下：
+2015年1月起报 H，验证12个月：RO RMSE=8.376m；RO+原PMM=5.800m（下降30.8%）；RO+区域NPMM=6.269m（下降25.1%）。
+2015年1月起报 T，验证12个月：RO RMSE=2.173°C；RO+原PMM=1.820°C（下降16.2%）；RO+区域NPMM=1.794°C（下降17.5%）。
+2015年3月起报 H，验证12个月：RO RMSE=4.998m；RO+原PMM=5.681m（下降-13.7%）；RO+区域NPMM=5.802m（下降-16.1%）。
+2015年3月起报 T，验证12个月：RO RMSE=1.644°C；RO+原PMM=1.068°C（下降35.0%）；RO+区域NPMM=1.093°C（下降33.5%）。
+2015年5月起报 H，验证12个月：RO RMSE=4.143m；RO+原PMM=4.628m（下降-11.7%）；RO+区域NPMM=5.123m（下降-23.7%）。
+2015年5月起报 T，验证12个月：RO RMSE=1.039°C；RO+原PMM=0.873°C（下降16.0%）；RO+区域NPMM=0.684°C（下降34.2%）。
+2026年1月起报 H，验证8个月：RO RMSE=7.454m；RO+原PMM=6.300m（下降15.5%）；RO+区域NPMM=6.381m（下降14.4%）。
+2026年1月起报 T，验证8个月：RO RMSE=1.615°C；RO+原PMM=1.527°C（下降5.4%）；RO+区域NPMM=1.505°C（下降6.9%）。
+2026年3月起报 H，验证6个月：RO RMSE=7.252m；RO+原PMM=4.432m（下降38.9%）；RO+区域NPMM=5.133m（下降29.2%）。
+2026年3月起报 T，验证6个月：RO RMSE=1.580°C；RO+原PMM=1.353°C（下降14.3%）；RO+区域NPMM=1.410°C（下降10.7%）。
+2026年5月起报 H，验证4个月：RO RMSE=5.039m；RO+原PMM=4.905m（下降2.7%）；RO+区域NPMM=1.758m（下降65.1%）。
+2026年5月起报 T，验证4个月：RO RMSE=0.943°C；RO+原PMM=0.930°C（下降1.4%）；RO+区域NPMM=0.737°C（下降21.9%）。
+
+如何解释：
+加入PMM对两年3月起报的温度预测有帮助，但2015年的H误差增大；不能把温度RMSE下降写成整个充放电过程都预测成功。
+两状态和三状态RO在春季起报后仍显著低估2015与2026增暖。正确对齐数据并不保证简单模型能达到完整XRO的技巧。
+用户截图是十状态完整XRO与删除NPMM后九状态XRO的对照，保留了其他海盆模态；它不是RO和RO+PMM。已用完全一致的官方参考数据、1982–2014训练期、同一非线性核心重新比较2/3/10状态，见reference_2state_3state_10state_march2015。
+对预处理选择之外的2015–2024起报进行三年连续块自助检验：原PMM分支的温度及H增益区间均跨零；区域NPMM的H在3/6个月提前期出现正增益区间，但只有10个起报年份、且检验多个提前期，不能夸大为普遍规律。
+
+验证：
+{
+  "post_init_raw_perturbation_forecast_max_difference": 0.0,
+  "disconnected_third_state_max_difference": 0.0,
+  "unchanged_linear_model_vs_archived_forecasts_max_difference": 1.942890293094024e-15
+}
+气候态、趋势、缩放与动力系数按起报年截断；源数据月份连续、单位正确、海洋格点掩膜稳定。全部输出均有限值；不按观测结果调整轨迹或剔除差的起报。
+原始数据来源、区域边界、样本数、SHA256见data/derived/research_2026/oras5_ro_raw_indices/source_and_validation.json。
+
+文件索引：
+raw_oras5_linear_time_series_init_01/03/05.png/pdf：保留旧线性模型、统一原始数据的两年时间序列。
+raw_oras5_linear_phase_space_init_01/03/05.png/pdf：对应相图。
+raw_oras5_nonlinear_*：独立非线性RO对照。
+supplied_ORAS5_diagnostic_*：作者预处理示例资料上的参考诊断。
+event_incremental_skill.csv / event_phase_space_skill.csv：事件误差与二维相空间误差。
+pre2015_preprocessing_validation.csv：完全在2015之前完成的前处理选择。
+postselection_2015_2024_paired_bootstrap.csv：未参与前处理选择的起报年增益区间。
+simple_baseline_forecasts.csv：持续性和模型零异常参考。
+
+复现：使用scripts/fetch_oras5_ro_raw_indices.py取得原始区域指数；执行scripts/redo_ro_pmm_on_oras5.py，再执行scripts/finalize_ro_pmm_redo.py。
+
+来源：
+https://github.com/senclimate/XRO
+https://raw.githubusercontent.com/senclimate/XRO/main/XRO/state.py
+https://cds.climate.copernicus.eu/datasets/reanalysis-oras5
+https://www.nature.com/articles/s41586-024-07534-6

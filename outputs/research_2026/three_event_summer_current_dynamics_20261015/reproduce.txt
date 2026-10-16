@@ -1,0 +1,35 @@
+三事件夏季流速诊断复现
+
+运行目录：/Users/daiyue/Documents/Maryland
+Python：/opt/anaconda3/bin/python
+依赖：numpy、pandas、scipy、gsw、xarray、h5netcdf、matplotlib；下载另需requests、fsspec、h5py、aiohttp。
+所有命令建议设置 OPENBLAS_NUM_THREADS=1。
+
+1. 只需首次执行的资料准备（本次均已完成）：
+   /opt/anaconda3/bin/python scripts/fetch_three_event_summer_dynamics.py --workers 3
+   /opt/anaconda3/bin/python scripts/analyze_three_event_summer_dynamics.py --extract
+   已存在的43个surface子集和43个ocean提取缓存会直接复用；不会重下全球文件。
+
+2. 分析与解析场测试：
+   /opt/anaconda3/bin/python scripts/analyze_three_event_summer_dynamics.py
+   可单独运行 --tests-only 或 --section-only。
+
+3. 独立核验与新旧背景桥接：
+   /opt/anaconda3/bin/python scripts/validate_three_event_summer_dynamics.py
+
+4. 两张机制图与中文HTML报告（不会重做统计）：
+   MPLCONFIGDIR=/private/tmp/maryland_summer_dynamics_mpl /opt/anaconda3/bin/python scripts/report_three_event_summer_dynamics.py
+
+当前结果入口：index.html；文字结论：结果与解释.txt。
+protocol_before_run.txt为计算前约定。section_QA.json、local_QA.json、analytic_tests.json与validation.json为核验。
+所有绝对时点按已核验年度文件年份＋12个月顺序、月中15日标记；新增资料源时间坐标与原缓存逐年核对。
+
+重要边界：
+- 此处是重网格月资料上的部分动量收支重建，不是原生MOM输出预算。
+- SSH包含大气压力负载，wt是穿越坐标面速度；没有重复加入气压或直接套用wt。
+- 主异常使用1982—2024全部43年。区分原34年背景改变与共同掩膜改变，见background_and_mask_bridge_*.csv。
+- 断面对称分解采用每对事件的平均速度/层厚。去趋势敏感性使用统一同月参考分解，见section_reference_sensitivity_monthly.csv；两种分配约定不可混称完全相同的流速/厚度归因。
+- 局地过程与动量趋势敏感性是对既有诊断序列移除完整时段线性趋势。每一设置的流速倾向重新按其流速异常和真实月间隔求导。
+- 各项诊断积分具有很大抵消；单项积分不是关闭其他反馈后的反事实速度。积分离散误差单列，残差没有被命名为任何单一物理过程。
+- ERA5与SODA并非独立因果验证。保存的CWP风应力列只作背景，不与Niño3.4列混用。
+- 三事件及六种敏感性设置不视为独立推断样本；本次未作新模型拟合或事件显著性检验。

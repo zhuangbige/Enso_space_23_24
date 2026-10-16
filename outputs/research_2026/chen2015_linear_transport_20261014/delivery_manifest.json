@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-14",
+  "files": [
+    {
+      "path": "outputs/research_2026/chen2015_linear_transport_20261014/event_JanMay_integrals.csv",
+      "bytes": 20315,
+      "sha256": "d75193784e0ca3272356713c8ab3b90ae8f85b86584c4741af8522a225de846f"
+    },
+    {
+      "path": "outputs/research_2026/chen2015_linear_transport_20261014/main_result_full_JanMay.csv",
+      "bytes": 187,
+      "sha256": "34ba01af878a280550ae760aa26bb28a28e113df0e418a97e70a504fb8a65437"
+    },
+    {
+      "path": "outputs/research_2026/chen2015_linear_transport_20261014/numerical_QA.json",
+      "bytes": 3610,
+      "sha256": "d032e64373746a94109bf63589cbb69394f8ef92f7e3070ad784985722cefd76"
+    },
+    {
+      "path": "outputs/research_2026/chen2015_linear_transport_20261014/results_and_methods_cn.txt",
+      "bytes": 4789,
+      "sha256": "29ba8df7a835d2c637ad32c7467747fba819bdc406fcc1223ce7763fd2f39e49"
+    },
+    {
+      "path": "outputs/research_2026/chen2015_linear_transport_20261014/two_term_heat_transport_2015_2023.svg",
+      "bytes": 76130,
+      "sha256": "40f32d68df1ae2df12869e4a0b4eb327795237bed2df7ccb638132444ef6e9e6"
+    },
+    {
+      "path": "outputs/research_2026/chen2015_linear_transport_20261014/two_term_monthly_main.csv",
+      "bytes": 107485,
+      "sha256": "4d3bae8a68934b30493b8b87d2a6382e59964aec84ea832fb878580bdbf3e6f0"
+    },
+    {
+      "path": "outputs/research_2026/chen2015_linear_transport_20261014/two_term_longitude_month_2015_2023.svg",
+      "bytes": 508057,
+      "sha256": "34c738c122481e1297abc54e42ac93936bc192fbf6da7fd7307ca2662bf97657"
+    },
+    {
+      "path": "outputs/research_2026/chen2015_linear_transport_20261014/retained_terms_2016_2024_sections.nc",
+      "bytes": 608552,
+      "sha256": "bb1cb555ac28e0c501251bd7c70b80251dabae51a38c286d42f88b35511e71c7"
+    },
+    {
+      "path": "outputs/research_2026/chen2015_linear_transport_20261014/two_term_longitude_month_2015_2023.png",
+      "bytes": 231726,
+      "sha256": "c2dc228888a778d2daf87f590744d5be0f275a25c5dd42329fad0d42ae035a5d"
+    },
+    {
+      "path": "outputs/research_2026/chen2015_linear_transport_20261014/two_term_monthly_with_sensitivity.csv",
+      "bytes": 321495,
+      "sha256": "dddc4cbecb750145b6cc5ddd273dc70cec54daba4b7238299420a4b69a5458f6"
+    },
+    {
+      "path": "outputs/research_2026/chen2015_linear_transport_20261014/calendar_month_phase_integrals.csv",
+      "bytes": 915,
+      "sha256": "aefe436652f13754e03fd69bc671144bc1f46ec6f6d444152ef8d8698804e543"
+    },
+    {
+      "path": "outputs/research_2026/chen2015_linear_transport_20261014/2015_2023_JanMay_summary.csv",
+      "bytes": 3314,
+      "sha256": "2804281bc9f71bc7f022db114993bba9263564900d9f8c60cebad38b85a7ab4a"
+    },
+    {
+      "path": "outputs/research_2026/chen2015_linear_transport_20261014/two_term_heat_transport_2015_2023.png",
+      "bytes": 434707,
+      "sha256": "0d748d31b277232ba30f37e72bb3c0360d2e33a4434915b13e84494c8c06a5cc"
+    },
+    {
+      "path": "data/raw/chen2015_linear_transport_20261014/source_manifest.json",
+      "bytes": 905,
+      "sha256": "486baa6ec5bd9d3cf914e5b54a05c4a097648820de49d1b7c1bffeac6ce88638"
+    },
+    {
+      "path": "data/raw/chen2015_linear_transport_20261014/soda3_5n_geostrophic_section_2024_jan_may.nc",
+      "bytes": 161437,
+      "sha256": "ea7b99389e8cd31e815e6902043584b9157f42dd6b4af73a87c53392f2f86b39"
+    },
+    {
+      "path": "data/raw/chen2015_linear_transport_20261014/soda3_5n_geostrophic_sections_1980_2022.nc",
+      "bytes": 7692672,
+      "sha256": "ca4f01b631fca592d18a23a6b29fc31f77971b9c1a99f493398bb8128af164dd"
+    },
+    {
+      "path": "scripts/analyze_chen2015_linear_heat_transport.py",
+      "bytes": 12108,
+      "sha256": "63f0196eedb6fb2724f56e89a2505eec18b37a6b005addc95665c81886e81123"
+    },
+    {
+      "path": "scripts/plot_report_chen2015_linear_heat_transport.py",
+      "bytes": 14035,
+      "sha256": "8cd381c9d20684aa32cb9368337f4993c81198c0539af269cc4773f051227fd3"
+    }
+  ],
+  "verified_hashes": true,
+  "file_count": 18,
+  "bytes": 10202439
+}

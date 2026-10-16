@@ -1,0 +1,33 @@
+{
+  "design": "full_period_in_sample",
+  "start": "2002-01-01",
+  "end": "2024-12-01",
+  "training_months": 276,
+  "climatology": "1991-2020",
+  "trend_start": "2002-01-01",
+  "trend_end": "2025-04-01",
+  "ocean_state": "GODAS mean D20 (m)",
+  "model_count": 2,
+  "event_exclusion": false,
+  "reference": "legacy screenshot",
+  "only_protocol_change": "none; only compare 2002--2024 events",
+  "plotted_center_leads": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "primary_scored_center_leads": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "curve_average": "centered 3-month",
+  "rmse_change_sign": "negative means improvement"
+}

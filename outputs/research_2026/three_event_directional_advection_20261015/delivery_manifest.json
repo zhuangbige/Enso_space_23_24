@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "original_data_preserved": true,
+  "no_new_downloads_or_models": true,
+  "checks": [
+    "analytic and independent gradients",
+    "original 43-year advection reproduction",
+    "nonlinear and directional identities",
+    "regional sum and saved map integrals",
+    "PDF visual inspection and book pixel identity"
+  ],
+  "files_sha256": {
+    "outputs/research_2026/three_event_directional_advection_20261015/input_manifest.json": "1988d72472e636a7e2e5dee28817fe38bb3fe89f64867ec265e7bc856cea87e9",
+    "outputs/research_2026/three_event_directional_advection_20261015/结果与解释.txt": "3a178630b6e77b00b68cee93f77a4807291e5d31fefd43aeb878891a46413309",
+    "outputs/research_2026/three_event_directional_advection_20261015/index.html": "76e461607d6831851ef1d0693fc7af77464691d3b5e2e6bb7ebc9f811e1fac0f",
+    "outputs/research_2026/three_event_directional_advection_20261015/regional_pair_seasons.csv": "34541f479829128e9621e0a85212ad88e9225de8ceeaf7a54188fe29476464d3",
+    "outputs/research_2026/three_event_directional_advection_20261015/directional_spatial.nc": "7a0be179cc2a7206d8f5acc0c3f006a4658dd1d8d8021f72cc4eb21b25328b52",
+    "outputs/research_2026/three_event_directional_advection_20261015/source_and_runtime_manifest.json": "3856c872f97d3ca4a9d611ab6f46e517d0c89388d1642a996af4586f1227dd04",
+    "outputs/research_2026/three_event_directional_advection_20261015/protocol_before_run.txt": "4f155f97572387fc27b694151678a45ee62926f03946db58f813f1cc2aadace3",
+    "outputs/research_2026/three_event_directional_advection_20261015/directional_case_monthly.csv": "fa26838421b0f5beb84099abb40baeeb809cab6c1b2d68369432f67727748544",
+    "outputs/research_2026/three_event_directional_advection_20261015/regional_monthly.csv": "d1ad3f0f3bfcb6ede8ee4252b3804767bd013c2980e856370ce8c7398384f312",
+    "outputs/research_2026/three_event_directional_advection_20261015/independent_validation.json": "5693aa86cd35d4f094aa3f4dfa19e3c85e18e556e22f95a4834fdfb14f26ead4",
+    "outputs/research_2026/three_event_directional_advection_20261015/region_volume_fractions.csv": "2c6be2b529f61a99a75fd8b9a8128399a41c1c6854569241ff6c8bdaeea30a36",
+    "outputs/research_2026/three_event_directional_advection_20261015/directional_case_seasons.csv": "f43aca9b6e6028a98f769e6ac9ee43702ba2d84bd29d30f0772a241f42b1ba48",
+    "outputs/research_2026/three_event_directional_advection_20261015/regional_case_seasons.csv": "a5be13895af4531a75f0dda480a24f77579ccc19a02314efe806da8fba7a2c3d",
+    "outputs/research_2026/three_event_directional_advection_20261015/directional_monthly.csv": "a5689eb58401256d2930776e8de30bec3e5cc597255efb24fe3615fdc0391711",
+    "outputs/research_2026/three_event_directional_advection_20261015/validation.json": "143380fe2d7ea5cb784f6095d3df42f85254892a9799a8ae559edf70bdd6662a",
+    "outputs/research_2026/three_event_directional_advection_20261015/regional_case_monthly.csv": "16b47b24e10477923492db25370a0bff7a1ec4208fe8a0a348abfea1fe507eb1",
+    "outputs/research_2026/three_event_directional_advection_20261015/正文建议段落.txt": "dc0dec5397371ee75db89a4b3adbab279425a31fa87aac1e649b471287287a30",
+    "outputs/research_2026/three_event_directional_advection_20261015/reproduce.txt": "5a32c93b3ad68cc8a17cb53d0dcd9a74b4f83c0c0dc65758cd408d18045f6d59",
+    "outputs/research_2026/three_event_directional_advection_20261015/directional_pair_seasons.csv": "96c550f7b7d81917ee7c524d094f246fd7320f499888737bfd5cf9a8ea25d027",
+    "outputs/research_2026/three_event_scientific_figures_20261015/M4_transport_current_advection.pdf": "73b6119a9bd2676258b0b307f2bdde49aacffc082e20d548473d8df42f2bc20f",
+    "outputs/research_2026/three_event_scientific_figures_20261015/three_event_figure_book.pdf": "40c01d99ac54e4afc892b0f935f276b96cc131dd53e149773a24a85ce0f04c18"
+  }
+}

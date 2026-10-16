@@ -1,0 +1,83 @@
+{
+  "no_model_refit": true,
+  "no_new_significance_test": true,
+  "source_hashes": {
+    "atmospheric_hovmoller.nc": "e1bd59252f99551f04acd9197da1d3a59849f682beeb3d0a504d0bec5f15c96b",
+    "three_event_D26_hovmoller.nc": "d150d63d640d3eedca543f75a2984837a5fa9e1a302c5f3b589a995e254ebc19",
+    "atmospheric_spatial.nc": "1241dd0c17cfdcafb61d187f5861b7cc5d8c91f4c526ae6031fdbe6ef2fee1a0",
+    "monthly_anomalies.csv": "39d03bb1328e8a78d7aff8430eb6fd88fb00381f97b2b887d27423fdef6b5f21",
+    "event_volume_budget.csv": "e850b84f8d47df7a7ae43787606a2d0242c6d7101c012439a129370e0503b92b",
+    "two_term_heat_monthly.csv": "8f48e43acac7b946c8a83c2ef88b034734fa32cfde830c328e1115fce2a8620b",
+    "main_event_comparison.csv": "f5c2ab69a550867b827d88d5123c77e53ffb4dc7fc771ae8855c0e1065ba218c",
+    "overall_metrics.csv": "1d6f4e9bf796730d65ac49c1da0df4b5b99a09ac35a305c7c49e76b9a1e2b26d",
+    "RO_PMM_seasonal_full_trajectories.csv": "522483438286a12647b63c4d23aa4a6772372aa8fec3d3e1ae631e021bfbe9a9",
+    "observations.csv": "409155d1be28f1e7dc273504d5171a9de2fccf2d6f066fbf2651d62dc2381f6f"
+  },
+  "budget_sum_errors": {
+    "1997": 0.0,
+    "2015": -2.220446049250313e-16,
+    "2023": 4.440892098500626e-16
+  },
+  "arrival_errors": {
+    "1997": 0.0,
+    "2015": 0.0,
+    "2023": 0.0
+  },
+  "figures": [
+    {
+      "file": "figures/Fig01_air_sea_evolution.png",
+      "svg": "figures/Fig01_air_sea_evolution.svg",
+      "title": "海气演变：事件列、变量行"
+    },
+    {
+      "file": "figures/Fig02_WWV26_domains_evolution.png",
+      "svg": "figures/Fig02_WWV26_domains_evolution.svg",
+      "title": "暖水储备：区域定义与充放电时序"
+    },
+    {
+      "file": "figures/Fig03_arrival_redistribution.png",
+      "svg": "figures/Fig03_arrival_redistribution.svg",
+      "title": "到达与去向：横向点图明确输入、输出与残差"
+    },
+    {
+      "file": "figures/Fig04_convection_stress_maps.png",
+      "svg": "figures/Fig04_convection_stress_maps.svg",
+      "title": "新增空间证据：降水底色与稀疏风应力等值线"
+    },
+    {
+      "file": "figures/Fig05_two_term_heat_timing.png",
+      "svg": "figures/Fig05_two_term_heat_timing.svg",
+      "title": "两项输送：累计量与月际时序并重"
+    },
+    {
+      "file": "figures/Fig06_forecasts_correlation_RMSE.png",
+      "svg": "figures/Fig06_forecasts_correlation_RMSE.svg",
+      "title": "预报合并图：观测轨迹、相关系数与RMSE"
+    },
+    {
+      "file": "figures/Supp01_2026_extension.png",
+      "svg": "figures/Supp01_2026_extension.svg",
+      "title": "补充：2026独立展示观测截止与重建PMM"
+    },
+    {
+      "file": "figures/Supp02_all_metrics.png",
+      "svg": "figures/Supp02_all_metrics.svg",
+      "title": "补充：三事件相关、RMSE与系统偏差完整比较"
+    },
+    {
+      "file": "figures/Palette_guide.png",
+      "svg": "figures/Palette_guide.svg",
+      "title": "统一配色与编码规则"
+    }
+  ],
+  "d26_exceeds_120m_cells": 1,
+  "physical_baseline": "1980–2022 calendar-month mean, no detrending",
+  "atmospheric_baseline": "1982–2022 same-calendar-month linear expectation",
+  "selected_map_months": [
+    5,
+    6
+  ],
+  "selection_reason": "Shared development months before the June arrival integral endpoint; July retained in original full matrix.",
+  "visual_QA": "All six main figures, two supplementary figures and palette inspected. Corrected longitude-label collisions, budget legend, map colorbar/footer spacing, 2026 model-label margin and common WWV range.",
+  "source_data_unchanged": true
+}

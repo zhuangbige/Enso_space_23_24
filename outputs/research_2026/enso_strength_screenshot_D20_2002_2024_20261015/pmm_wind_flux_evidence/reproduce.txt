@@ -1,0 +1,7 @@
+Data: frozen local ERA5 u10/v10 + ERSSTv5 + NCEP-NCAR R1 LHTFL.
+Runtime used: /opt/anaconda3/bin/python (h5netcdf); ecCodes available from project .venv for archived land mask.
+
+/opt/anaconda3/bin/python scripts/fetch_pmm_wind_flux_evidence.py
+/opt/anaconda3/bin/python scripts/analyze_pmm_wind_flux_evidence.py
+/opt/anaconda3/bin/python scripts/report_pmm_wind_flux_evidence.py
+/opt/anaconda3/bin/python scripts/validate_pmm_wind_flux_evidence.py

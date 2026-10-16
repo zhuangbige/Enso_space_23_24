@@ -1,0 +1,15 @@
+{
+  "analysis_python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "xarray": "2026.9.0",
+    "gsw": "3.6.23",
+    "seawater": "3.3.5",
+    "matplotlib": "3.11.2",
+    "netCDF4": "1.7.4"
+  },
+  "fetch_runtime": "/opt/anaconda3/bin/python; requires requests, h5py, fsspec",
+  "reproduction": "fetch_chen2015_reanalysis.py; fetch_chen2015_deep_west.py; analyze_chen2015_reanalysis.py; report_chen2015_reanalysis.py; export_chen2015_reanalysis.py; plot_chen2015_reanalysis.py",
+  "report_check_prerequisite": "check_chen2015_north_gate_reference.py generates the independently averaged section control before report validation"
+}

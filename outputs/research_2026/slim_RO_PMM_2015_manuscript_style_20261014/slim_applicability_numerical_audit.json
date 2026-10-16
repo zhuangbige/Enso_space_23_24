@@ -1,0 +1,71 @@
+{
+  "protocol": "paper_2002_2024",
+  "input_sha256": {
+    "outputs/research_2026/slim_RO_PMM_2015_manuscript_style_20261014/models_and_preprocessing.json": "57f1ee5a600f866e81ebc3f1737ef03a959dd90f321d1fc88057c06ee5e53bed",
+    "outputs/research_2026/slim_RO_PMM_2015_manuscript_style_20261014/processed_states.csv": "ac21d0019e435f0640f0a23623799ed36fe1a31bbb1365bc05e4006045e498d9",
+    "scripts/paper_ro_slim.py": "35607bb643f2d6d486c11cd5afd4806168c1db23c43e6ccba1b34b01358017b9"
+  },
+  "interpretation": [
+    "Numerical diagnostics only; not an independent forecast validation or proof of physical adequacy.",
+    "Annual propagator spectral radius < 1 means asymptotic stability of the fitted periodic deterministic model; transient growth remains possible.",
+    "Full moment-system solution uses the same harmonics, interpolation and separate mean/seasonal lags as the perturbation estimate. It is not truth.",
+    "Forecast RMS differences compare two solvers, not either solver against observations.",
+    "Correction norm ratio is measured in standardized coordinates and is not a universal rejection threshold.",
+    "No sample-size adequacy, residual-noise closure or resampling robustness claim follows from these checks.",
+    "Input models, forecasts, figures, fitting windows and preprocessing are unchanged."
+  ],
+  "results": [
+    {
+      "model": "RO",
+      "states": 2,
+      "monthly_training_values": 276,
+      "scalar_drift_coefficients": 20,
+      "lag_covariance_condition": 1.1884372032117243,
+      "second_first_correction_norm_ratio": 0.5956836738349598,
+      "annual_propagator_spectral_radius": 0.4044257437639999,
+      "full_moment_system_condition": 8.384064671039518,
+      "perturb_vs_full_relative_coefficient_norm": 0.3218013179414089,
+      "perturb_vs_full_T_forecast_rms_difference_C": 0.2801527569517296,
+      "perturb_vs_full_h_forecast_rms_difference_m": 1.312469602243917
+    },
+    {
+      "model": "RO_SST",
+      "states": 3,
+      "monthly_training_values": 276,
+      "scalar_drift_coefficients": 45,
+      "lag_covariance_condition": 1.467605506762753,
+      "second_first_correction_norm_ratio": 0.5516571925023638,
+      "annual_propagator_spectral_radius": 0.3385081167143342,
+      "full_moment_system_condition": 9.901774542263073,
+      "perturb_vs_full_relative_coefficient_norm": 0.32181748843485963,
+      "perturb_vs_full_T_forecast_rms_difference_C": 0.2688078008857834,
+      "perturb_vs_full_h_forecast_rms_difference_m": 1.3902799434597743
+    },
+    {
+      "model": "RO_wind",
+      "states": 3,
+      "monthly_training_values": 276,
+      "scalar_drift_coefficients": 45,
+      "lag_covariance_condition": 2.304771407643891,
+      "second_first_correction_norm_ratio": 0.5136982456185306,
+      "annual_propagator_spectral_radius": 0.38486683748580724,
+      "full_moment_system_condition": 9.91369191291925,
+      "perturb_vs_full_relative_coefficient_norm": 0.20490041344290646,
+      "perturb_vs_full_T_forecast_rms_difference_C": 0.2596933800897415,
+      "perturb_vs_full_h_forecast_rms_difference_m": 1.3142521865455863
+    },
+    {
+      "model": "RO_both",
+      "states": 4,
+      "monthly_training_values": 276,
+      "scalar_drift_coefficients": 80,
+      "lag_covariance_condition": 10.406821468570111,
+      "second_first_correction_norm_ratio": 0.8254811812194524,
+      "annual_propagator_spectral_radius": 0.3644316248007291,
+      "full_moment_system_condition": 19.6580709649045,
+      "perturb_vs_full_relative_coefficient_norm": 0.32187089605898783,
+      "perturb_vs_full_T_forecast_rms_difference_C": 0.2681033637923222,
+      "perturb_vs_full_h_forecast_rms_difference_m": 1.4379468124118073
+    }
+  ]
+}

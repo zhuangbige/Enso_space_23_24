@@ -1,0 +1,64 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><title>D20平流重建</title><style>body{font-family:system-ui,sans-serif;max-width:1300px;margin:35px auto;padding:0 24px;line-height:1.8;color:#26384a}img{width:100%}table{font-size:12px;border-collapse:collapse}td,th{padding:5px;border:1px solid #ddd}pre{white-space:pre-wrap}a{color:#246b96}</style><h1>预报和平流重建统一用D20</h1><p>两组状态为[SST, D20]与[SST, D20, PMM]。平流物理诊断没有改变；本轮改变的是重建它的状态变量。预报与过程响应共享34年训练期及三个留出窗口。</p><h2>1. 同口径D20预报</h2><a href="D0_D20_PMM_forecasts.png"><img src="D0_D20_PMM_forecasts.png"></a><p><a href="D0_D20_PMM_forecasts.pdf">PDF</a></p><h2>2. D20平流与海表项重建</h2><a href="D1_D20_PMM_process_reconstruction.png"><img src="D1_D20_PMM_process_reconstruction.png"></a><p><a href="D1_D20_PMM_process_reconstruction.pdf">PDF</a></p><h2>3. PMM增量是否稳定</h2><a href="D2_process_skill_sensitivity.png"><img src="D2_process_skill_sensitivity.png"></a><p><a href="D2_process_skill_sensitivity.pdf">PDF</a></p><h2>连接两组结果</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>event</th>
+      <th>SST_forecast_skill_pct</th>
+      <th>advection_reconstruction_skill_pct</th>
+      <th>surface_reconstruction_skill_pct</th>
+      <th>JAS_diagnosed_q</th>
+      <th>JAS_D20_q</th>
+      <th>JAS_D20_PMM_q</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1997</td>
+      <td>7.0863</td>
+      <td>-0.4539</td>
+      <td>-13.8631</td>
+      <td>0.1547</td>
+      <td>0.0438</td>
+      <td>0.0602</td>
+    </tr>
+    <tr>
+      <td>2015</td>
+      <td>14.2022</td>
+      <td>-16.8783</td>
+      <td>-6.5194</td>
+      <td>0.1105</td>
+      <td>-0.0954</td>
+      <td>-0.1015</td>
+    </tr>
+    <tr>
+      <td>2023</td>
+      <td>-24.1829</td>
+      <td>25.2318</td>
+      <td>-0.5900</td>
+      <td>-0.0503</td>
+      <td>-0.1135</td>
+      <td>-0.0806</td>
+    </tr>
+  </tbody>
+</table><p>正百分比表示RMSE下降。预报与条件重建属于不同问题，不能直接比较百分比大小来分配因果贡献。</p><p><a href="D20重建结果说明.txt">结果说明</a> · <a href="process_scores.csv">全部过程评分</a></p><details><summary>方法与边界</summary><pre>2026-10-15: user correction: retain D20 forecasts and use D20 for process reconstruction.
+States: [ERSST Niño3.4, GODAS mean D20] vs [ERSST Niño3.4, GODAS mean D20, standard PMM-SST].
+No WWV26 predictor in this experiment. Retain original diagnosed local q=-u&#x27; dTbar/dx,
+Niño3.4 fixed 0--50m; 30/75m sensitivities. Surface flux proxy is a comparison process.
+Shared 1982--2024 monthly chronology and exclusion of 1996--98, 2014--16, 2022--24.
+408 training months/108 held-out months. Reuse saved D20 state operators, preprocessing,
+scales and forecast trajectories from the matched-control calculation. They do not
+depend on WWV26; verify all state columns and freshly estimated operators.
+Response preprocessing: training-only monthly mean, then optional linear trend.
+Project each response with identical segmented lag6 mean/lag1 seasonal sLIM moments,
+annual+semiannual harmonics. Response units C/standard-month throughout; not d(SST)/dt.
+Primary perturb2+detrend+50m. Exact solution, no trend, other depths are retained.
+Same-state OLS diagnostic is predeclared sensitivity, not a new dynamical forecast.
+Use observed states for conditional reconstruction. It is not an initialized forecast.
+Restore response background for plotted physical monthly-mean process anomalies.
+Report RMSE and MSE skill against zero of the processed response, separately from
+forecast RMSE skill. No sum-to-SST-derivative or full-budget closure is imposed.
+Score training, all held-out windows, each development year, and each JAS separately.
+Do not infer significance from three events or three summer months.
+Conditional difference decomposes into direct PMM term and changed SST/D20 coefficients;
+this algebra is not causal mediation. Forecast PMM-path cuts remain model-internal tests.
+No post-hoc variant selection, new WWB analysis, or physical causal attribution.
+</pre></details></html>

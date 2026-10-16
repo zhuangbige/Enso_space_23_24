@@ -1,0 +1,4 @@
+此目录存放绘图脚本快照。执行版本位于项目 scripts/，从该位置运行以正确定位项目根目录。
+本图包保存全部图、图注与主要汇总数据，完整重绘仍依赖项目内原始分析输出目录；ZIP并非完全独立的原始数据归档。
+绘图依赖 numpy、pandas、xarray、scipy、matplotlib、Pillow 和项目 scripts/plot_chen2015_reanalysis.py。
+本轮仅重排已有结果，没有重新拟合预报或重新做机制归因。

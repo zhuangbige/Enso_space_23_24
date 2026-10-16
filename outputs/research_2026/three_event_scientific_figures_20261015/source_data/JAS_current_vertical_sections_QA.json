@@ -1,0 +1,15 @@
+{
+  "existing_upper_8_levels_max_error_m_s": {
+    "1997": 0.0,
+    "2015": 0.0,
+    "2023": 0.0
+  },
+  "source_sha256": {
+    "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_1997.npz": "fc33c672c2e976fefe2abde8e66ff6b9a1ceecd2a3973bf185af838a4c8b467b",
+    "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2015.npz": "0ad09e6225d20eb94d1c291eb09d0ed4f96bb19e4af095f585c30ca9e98046cd",
+    "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2023.npz": "8ed0ec515196ed4c72fd73823ca3d30ddc84224ffeeac06889ab551b3687f98d"
+  },
+  "latitude_band": "5S-5N cosine-weighted; joint finite mask for all 3 events and JAS months",
+  "definition": "JAS mean u(2023)-u(control); common monthly climatology cancels exactly",
+  "depth_display": "native centers to 300m; no new layer-integrated budget"
+}

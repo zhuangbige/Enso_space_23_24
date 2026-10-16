@@ -1,0 +1,14 @@
+From the Maryland project root, with numpy, pandas and matplotlib installed:
+  .venv/bin/python scripts/analyze_enso_strength_pmm_skill.py
+  .venv/bin/python scripts/analyze_enso_strength_pmm_skill.py --validate-only
+  .venv/bin/python -m unittest discover -s tests -p test_enso_strength_pmm_skill.py -v
+  .venv/bin/python scripts/analyze_enso_strength_pmm_skill.py --report-only
+
+The first command regenerates this dedicated output folder only. Numerical
+protocol and source hashes are saved before fitting. Existing three-event
+outputs and model code are unchanged. See protocol_before_run.txt for all
+definitions. group_scores.csv contains overall / lead / init / init_lead
+views, for monthly main and seasonal supplemental scores. Zero in a
+coordinate column means aggregation over that dimension, not lead0 scoring.
+Both forecasts are columns in each row of monthly_forecasts.csv so paired
+samples cannot silently diverge. Event-level MSE values are in event_scores.csv.

@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "saved_product_checks_max_C_month": {
+    "x_three_components": 2.220446049250313e-16,
+    "y_three_components": 1.942890293094024e-16,
+    "xy_sum": 2.0816681711721685e-16,
+    "original_horizontal_total": 9.71445146547012e-17,
+    "original_nonlinear_total": 1.1102230246251565e-16,
+    "season_AMJ": 1.1102230246251565e-16,
+    "season_JAS": 1.3183898417423734e-16,
+    "saved_spatial_integral": 1.249000902703301e-16,
+    "saved_six_region_integral": 8.673617379884035e-17
+  },
+  "JAS_y_negative_in_all_settings": true,
+  "JAS_y_larger_magnitude_than_x": 11,
+  "setting_comparisons": 12,
+  "settings_are_not_independent_samples": true,
+  "regional_sensitivity": {
+    "1997_north_y_velocity": {
+      "min": -0.0935574799537287,
+      "max": -0.0313998998494965,
+      "negative_settings": 6,
+      "settings": 6
+    },
+    "1997_south_y_temperature": {
+      "min": -0.0646488102415297,
+      "max": -0.0494096837496447,
+      "negative_settings": 6,
+      "settings": 6
+    },
+    "2015_north_y_velocity": {
+      "min": -0.1162604723337957,
+      "max": -0.0953386811398043,
+      "negative_settings": 6,
+      "settings": 6
+    },
+    "2015_south_y_temperature": {
+      "min": -0.0791915597524442,
+      "max": -0.0598710554593411,
+      "negative_settings": 6,
+      "settings": 6
+    }
+  }
+}

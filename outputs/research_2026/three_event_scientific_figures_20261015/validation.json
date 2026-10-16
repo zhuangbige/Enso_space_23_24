@@ -1,0 +1,670 @@
+{
+  "scope": "5 main + 2 supporting figures",
+  "figure_builder_does_not_fit_models": true,
+  "color_limits": {
+    "sst_anomaly": {
+      "limit": 4.0,
+      "fraction_beyond_limit": 0.0005208333333333333,
+      "extends": true
+    },
+    "tau_anomaly": {
+      "limit": 0.08,
+      "fraction_beyond_limit": 0.0006038647342995169,
+      "extends": true
+    }
+  },
+  "text_outside_page": {
+    "M1_air_sea_evolution": [],
+    "M2_JFM_configuration": [],
+    "M3_transport_persistence": [],
+    "S1_wind_reference": [],
+    "S2_local_process_limits": [],
+    "M4_transport_current_advection": [],
+    "M5_wind_current_momentum": []
+  },
+  "JFM_configuration": {
+    "events": [
+      1997,
+      2015,
+      2023
+    ],
+    "months": [
+      1,
+      2,
+      3
+    ],
+    "seasonal_volume_matches_existing_quarter_table": true,
+    "regional_sum_equals_basin": true,
+    "baseline": "1982-2022 unchanged",
+    "map_is_isopycnal_depth_anomaly_not_SST": true,
+    "block_front_is_latitude_mean_not_front_edge_latitude": true,
+    "terminology_reference": "Chen et al. 2015, Fig. 16, p. 3802",
+    "reference_doi": "10.1175/JCLI-D-14-00134.1",
+    "shared_scales_across_events": true,
+    "colorbar_extensions_mark_out_of_range_values": true,
+    "top_levels_m": [
+      -50,
+      -45,
+      -40,
+      -35,
+      -30,
+      -25,
+      -20,
+      -15,
+      -10,
+      -5,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50
+    ],
+    "front_levels_C": [
+      -4.0,
+      -3.5,
+      -3.0,
+      -2.5,
+      -2.0,
+      -1.5,
+      -1.0,
+      -0.5,
+      -0.25,
+      0.25,
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0,
+      3.5,
+      4.0
+    ],
+    "top_colors": [
+      "#43246f",
+      "#434ca0",
+      "#2c6eae",
+      "#177cae",
+      "#1498c1",
+      "#25b0d3",
+      "#5ac6df",
+      "#91dbe8",
+      "#c2edf2",
+      "#ffffff",
+      "#fff3aa",
+      "#ffe35a",
+      "#ffca2c",
+      "#ffab20",
+      "#f5821a",
+      "#eb5c17",
+      "#d93812",
+      "#b91d13",
+      "#8d0912"
+    ],
+    "front_colors": [
+      "#242066",
+      "#39358a",
+      "#504ba8",
+      "#6763bd",
+      "#8580cf",
+      "#a7a1df",
+      "#c6c0ed",
+      "#e3dff5",
+      "#ffffff",
+      "#ffe0dc",
+      "#ffb1a8",
+      "#ff8074",
+      "#f55045",
+      "#e72729",
+      "#c80d20",
+      "#a90018",
+      "#790012"
+    ],
+    "color_ranges_by_event": {
+      "1997": {
+        "isopycnal_depth_anomaly_m": {
+          "min": -245.84830654733548,
+          "max": 95.14086157325808,
+          "display_limit": 50,
+          "fraction_beyond_limits": 0.005488668555240793
+        },
+        "temperature_anomaly_C": {
+          "min": -3.13987317241128,
+          "max": 2.449258184641623,
+          "display_limit": 4,
+          "fraction_beyond_limits": 0.0
+        }
+      },
+      "2015": {
+        "isopycnal_depth_anomaly_m": {
+          "min": -89.79979575552592,
+          "max": 261.172351868172,
+          "display_limit": 50,
+          "fraction_beyond_limits": 0.0027443342776203965
+        },
+        "temperature_anomaly_C": {
+          "min": -2.265551921129339,
+          "max": 2.2126622118384405,
+          "display_limit": 4,
+          "fraction_beyond_limits": 0.0
+        }
+      },
+      "2023": {
+        "isopycnal_depth_anomaly_m": {
+          "min": -33.523245679653755,
+          "max": 664.032176444201,
+          "display_limit": 50,
+          "fraction_beyond_limits": 0.004957507082152974
+        },
+        "temperature_anomaly_C": {
+          "min": -1.5400494208964588,
+          "max": 4.247177171812928,
+          "display_limit": 4,
+          "fraction_beyond_limits": 0.0028125
+        }
+      }
+    }
+  },
+  "source_hashes_unchanged": true,
+  "basin_equals_sum_of_regions": true,
+  "seasonal_means_match_saved_quarter_table": true,
+  "budget_arithmetic_checked": true,
+  "paper_final": true,
+  "current_section_validation": {
+    "existing_upper_8_levels_max_error_m_s": {
+      "1997": 0.0,
+      "2015": 0.0,
+      "2023": 0.0
+    },
+    "source_sha256": {
+      "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_1997.npz": "fc33c672c2e976fefe2abde8e66ff6b9a1ceecd2a3973bf185af838a4c8b467b",
+      "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2015.npz": "0ad09e6225d20eb94d1c291eb09d0ed4f96bb19e4af095f585c30ca9e98046cd",
+      "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2023.npz": "8ed0ec515196ed4c72fd73823ca3d30ddc84224ffeeac06889ab551b3687f98d"
+    },
+    "latitude_band": "5S-5N cosine-weighted; joint finite mask for all 3 events and JAS months",
+    "definition": "JAS mean u(2023)-u(control); common monthly climatology cancels exactly",
+    "depth_display": "native centers to 300m; no new layer-integrated budget"
+  },
+  "figures": 7,
+  "case_count": 3,
+  "inference": "descriptive case comparison; no new significance tests or causal claims",
+  "gallery_delivery": {
+    "pdf_pages": 7,
+    "main_figures": 5,
+    "supporting_figures": 2,
+    "first_five_pdf_page_contents_unchanged": [],
+    "paper_final_assembled_from_current_figures": true,
+    "gallery_article_order": [
+      "M1_air_sea_evolution",
+      "M2_JFM_configuration",
+      "M3_transport_persistence",
+      "S1_wind_reference",
+      "S2_local_process_limits",
+      "M4_transport_current_advection",
+      "M5_wind_current_momentum"
+    ],
+    "missing_local_links": [],
+    "individual_figure_formats_checked": 21,
+    "final_group_replaces_old_S3": true
+  },
+  "visual_pdf_review": {
+    "status": "PASS: M4 full zonal/meridional-advection panels rendered and checked; other six pages match the previously reviewed book",
+    "page_numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "newly_reviewed_page_numbers": [
+      6
+    ],
+    "unchanged_book_page_numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ]
+  },
+  "JFM_color_revision": {
+    "plotted_field_values_unchanged": true,
+    "JFM_volumes_unchanged": true,
+    "source_inputs_unchanged": true,
+    "other_figure_files_unchanged": 24,
+    "other_figure_sha256": {
+      "M1_air_sea_evolution.png": "774964c1d102682a12f431be7e488a68c32b84b2ef4d40827b390454a825a93d",
+      "M1_air_sea_evolution.pdf": "c60dd78f45b3e40c200af7fea0efc1dae74480ca05e3aa8bdf79091e771f74b6",
+      "M1_air_sea_evolution.svg": "64b856e3ade52c49eaaaa038f08f7d5320b905d5380e50681e26cfeb8496ed53",
+      "presentation/M1_air_sea_evolution.png": "15b9e944aa297f37d83b421b3ace79e328d1337667a8a760c4e20de3b01454eb",
+      "M3_transport_persistence.png": "c1f89790f64cc624e5d142c2f2e7e17a0fcb50afc9e3d09e79bd6a759c4ae9a4",
+      "M3_transport_persistence.pdf": "6ed5599659a68616b5755d85ad01791cd259439da8adb800b3f68518cb36938b",
+      "M3_transport_persistence.svg": "efd5adc5214cc84b25eeef21211ea0bba5359dc3329824521261803514ec6269",
+      "presentation/M3_transport_persistence.png": "5aea85713e03003fe2b3aab198f696a8768e498a7f2648fb9aa709aa7b734ade",
+      "S1_wind_reference.png": "ec3c8f9dc4afa2439fab5b75f3e869b14464a973861ab802a84fc1e0bf2183c4",
+      "S1_wind_reference.pdf": "c0a03194532fc6b22555e494e13762cdefc29118132dd57f145b7be5933f60c0",
+      "S1_wind_reference.svg": "b7b70373efb0e12f296eb79db2bb8d0dfee50a03c6c959a64f061be480620fb9",
+      "presentation/S1_wind_reference.png": "cf3208711509d87eb20b5db2438b786edda660b97e74bcec28e0bdc7fa129581",
+      "S2_local_process_limits.png": "8a789d218bf72d5d2a1c15fd87890f1d36f035e7c53c5a80d2aa9788fd258a40",
+      "S2_local_process_limits.pdf": "49b83df558bc3a84bc015741dd5b81e06bbc85b4acab4d1ee1d2e0b7bc623464",
+      "S2_local_process_limits.svg": "caf9eb1f04bb46f34274a66ae77590f949add1aa7dfccd469a4a9969bdf4268c",
+      "presentation/S2_local_process_limits.png": "9f47b37737045c5067717b30f0f838624a406f1158f8705886ecccc2d4c42dc1",
+      "M4_transport_current_advection.png": "27e18a2c137f6a25942309f6bec939a3d328c440417117c5ee2337519ea057f8",
+      "M4_transport_current_advection.pdf": "32e4aca408af44b172a557ac05e665fdc5e48640f45fb6c7fde32f388948e6d8",
+      "M4_transport_current_advection.svg": "3efb54c0b82e73c8d5c8941eaace3ecb5206d191b7e05f293281001199ca85bd",
+      "presentation/M4_transport_current_advection.png": "475d0140eb9190c562b74e3c674bdb13e2de940c2e934954be21a395b8c12b83",
+      "M5_wind_current_momentum.png": "33ad967057e5ed796fa733d6b23e7cdc507b80ec9029f8fc18e5331bb4346ca6",
+      "M5_wind_current_momentum.pdf": "9e0522fa8e8aa5fdccd95c3d4ae6ea75afb16b5105a2fe6b5be6f20890fffcf2",
+      "M5_wind_current_momentum.svg": "4625acd6e989831d517e2108605fbbb868cfe9c4946ec59a838b245380442b7c",
+      "presentation/M5_wind_current_momentum.png": "5aee831ba51ea2dd2eb047ce89e4cb3993e912f49d577907c93760f1c4c9539c"
+    },
+    "only_updated_figure": "M2_JFM_configuration",
+    "paper_checked": "Chen et al. 2015, Fig. 16, p. 3802",
+    "reference_url": "https://coda.oc.ntu.edu.tw/research/papers/2015_Chen_STC.pdf"
+  },
+  "M4_current_color_scale": {
+    "limits_m_s": [
+      -0.5,
+      0.5
+    ],
+    "normalization": "linear; unchanged",
+    "palette": "current_blue_white_red",
+    "same_palette_and_norm_for_all_six_fields": true,
+    "background_gradient_contours_C_per_1000km": [
+      -1.0,
+      -0.5
+    ],
+    "contour_labels_per_level_per_panel": 1,
+    "depth_boundaries_m": [
+      50,
+      150
+    ]
+  },
+  "M4_color_revision": {
+    "only_updated_figure": "M4_transport_current_advection",
+    "source_fields_and_diagnostics_unchanged": true,
+    "source_sha256": {
+      "outputs/research_2026/three_event_summer_current_dynamics_20261015/case_monthly.csv": "498592204869b4d63eb89a4847bf92edd6f99e8f49e680c42c5fa56be49318bd",
+      "outputs/research_2026/three_event_summer_current_dynamics_20261015/case_seasons.csv": "f0e0f1e9f623fd72137c5f652512046a704198f369d54bb0e746f081bfe8c219",
+      "outputs/research_2026/three_event_summer_current_dynamics_20261015/section_pair_seasons.csv": "f29289100dfbbe606018a88ebd74af3df511bc0e7c5acb33ab071efe9917c1a6",
+      "outputs/research_2026/three_event_summer_current_dynamics_20261015/wind_product_comparison.csv": "29c6f6f7cb99a8d17bf23b20c62374ef229f3a5aa5fd075afe9ceed96b3d6d7b",
+      "outputs/research_2026/three_event_summer_current_dynamics_20261015/spatial_diagnostics.nc": "82b1927dd84e6302286fa2de912e6ae5629213e87b4e7325ddd94726fa9f34e3",
+      "outputs/research_2026/three_event_scientific_figures_20261015/source_data/JAS_current_vertical_sections.npz": "a3e58a9bdb5eeb7c1cdc49c669c9d3ea58c645a2542b4d293a3382f96c8daaac",
+      "outputs/research_2026/three_event_scientific_figures_20261015/source_data/JAS_140W_meridional_current_sections.nc": "a7eaea108aaffbb4b9aa257536225f87370d78b2a82d2512edaaaaee20684c93",
+      "outputs/research_2026/three_event_summer_current_dynamics_20261015/inputs/ocean_1997.npz": "4e80123a121860337f31c78dcb43706aa7598b74427c169962e74dfa57293276",
+      "outputs/research_2026/three_event_summer_current_dynamics_20261015/inputs/ocean_2015.npz": "1fe25acee50e6e9467907d2f02f31f83185f797e4a0d7d8f16769f66c17fde0b",
+      "outputs/research_2026/three_event_summer_current_dynamics_20261015/inputs/ocean_2023.npz": "dbc5700d3f154cc0d3a1037846fb6d7d4f98382c172f3f233bcb771d30148f3c",
+      "outputs/research_2026/three_event_directional_advection_20261015/directional_pair_seasons.csv": "96c550f7b7d81917ee7c524d094f246fd7320f499888737bfd5cf9a8ea25d027",
+      "outputs/research_2026/three_event_directional_advection_20261015/directional_case_monthly.csv": "fa26838421b0f5beb84099abb40baeeb809cab6c1b2d68369432f67727748544",
+      "outputs/research_2026/three_event_directional_advection_20261015/regional_pair_seasons.csv": "34541f479829128e9621e0a85212ad88e9225de8ceeaf7a54188fe29476464d3",
+      "outputs/research_2026/three_event_directional_advection_20261015/directional_spatial.nc": "7a0be179cc2a7206d8f5acc0c3f006a4658dd1d8d8021f72cc4eb21b25328b52",
+      "outputs/research_2026/three_event_directional_advection_20261015/validation.json": "143380fe2d7ea5cb784f6095d3df42f85254892a9799a8ae559edf70bdd6662a",
+      "outputs/research_2026/three_event_directional_advection_20261015/independent_validation.json": "5693aa86cd35d4f094aa3f4dfa19e3c85e18e556e22f95a4834fdfb14f26ead4",
+      "outputs/research_2026/three_event_directional_advection_20261015/结果与解释.txt": "3a178630b6e77b00b68cee93f77a4807291e5d31fefd43aeb878891a46413309"
+    },
+    "other_figure_files_unchanged": 24,
+    "other_figure_sha256": {
+      "M1_air_sea_evolution.png": "774964c1d102682a12f431be7e488a68c32b84b2ef4d40827b390454a825a93d",
+      "M1_air_sea_evolution.pdf": "c60dd78f45b3e40c200af7fea0efc1dae74480ca05e3aa8bdf79091e771f74b6",
+      "M1_air_sea_evolution.svg": "64b856e3ade52c49eaaaa038f08f7d5320b905d5380e50681e26cfeb8496ed53",
+      "presentation/M1_air_sea_evolution.png": "15b9e944aa297f37d83b421b3ace79e328d1337667a8a760c4e20de3b01454eb",
+      "M2_JFM_configuration.png": "35591fbd190c8914d38e364d06464844ff9144309c3a69c4fc71ca84d2603eaf",
+      "M2_JFM_configuration.pdf": "58eb4440315828fd4c746792699378cd83ebe35cab4b0a679fdd6d97a61a77fe",
+      "M2_JFM_configuration.svg": "5e00b30e6023f1931cddb7ac96d37a18bd64918fa7332f244a2aa53a7fbab854",
+      "presentation/M2_JFM_configuration.png": "e248aac36eaeefa4a03256073300d962ef5c6b0b33707c667ecdb27f71e7df93",
+      "M3_transport_persistence.png": "c1f89790f64cc624e5d142c2f2e7e17a0fcb50afc9e3d09e79bd6a759c4ae9a4",
+      "M3_transport_persistence.pdf": "6ed5599659a68616b5755d85ad01791cd259439da8adb800b3f68518cb36938b",
+      "M3_transport_persistence.svg": "efd5adc5214cc84b25eeef21211ea0bba5359dc3329824521261803514ec6269",
+      "presentation/M3_transport_persistence.png": "5aea85713e03003fe2b3aab198f696a8768e498a7f2648fb9aa709aa7b734ade",
+      "S1_wind_reference.png": "ec3c8f9dc4afa2439fab5b75f3e869b14464a973861ab802a84fc1e0bf2183c4",
+      "S1_wind_reference.pdf": "c0a03194532fc6b22555e494e13762cdefc29118132dd57f145b7be5933f60c0",
+      "S1_wind_reference.svg": "b7b70373efb0e12f296eb79db2bb8d0dfee50a03c6c959a64f061be480620fb9",
+      "presentation/S1_wind_reference.png": "cf3208711509d87eb20b5db2438b786edda660b97e74bcec28e0bdc7fa129581",
+      "S2_local_process_limits.png": "8a789d218bf72d5d2a1c15fd87890f1d36f035e7c53c5a80d2aa9788fd258a40",
+      "S2_local_process_limits.pdf": "49b83df558bc3a84bc015741dd5b81e06bbc85b4acab4d1ee1d2e0b7bc623464",
+      "S2_local_process_limits.svg": "caf9eb1f04bb46f34274a66ae77590f949add1aa7dfccd469a4a9969bdf4268c",
+      "presentation/S2_local_process_limits.png": "9f47b37737045c5067717b30f0f838624a406f1158f8705886ecccc2d4c42dc1",
+      "M5_wind_current_momentum.png": "33ad967057e5ed796fa733d6b23e7cdc507b80ec9029f8fc18e5331bb4346ca6",
+      "M5_wind_current_momentum.pdf": "9e0522fa8e8aa5fdccd95c3d4ae6ea75afb16b5105a2fe6b5be6f20890fffcf2",
+      "M5_wind_current_momentum.svg": "4625acd6e989831d517e2108605fbbb868cfe9c4946ec59a838b245380442b7c",
+      "presentation/M5_wind_current_momentum.png": "5aee831ba51ea2dd2eb047ce89e4cb3993e912f49d577907c93760f1c4c9539c"
+    }
+  },
+  "M4_140W_section": {
+    "source_sha256": {
+      "outputs/research_2026/three_event_summer_current_dynamics_20261015/inputs/ocean_1997.npz": "4e80123a121860337f31c78dcb43706aa7598b74427c169962e74dfa57293276",
+      "outputs/research_2026/three_event_summer_current_dynamics_20261015/inputs/ocean_1997_source.json": "fb64508a63d93be2e6d5e8acd6874cb73af5ab870f1576f1b3f4a6b1baaceb5e",
+      "outputs/research_2026/three_event_summer_current_dynamics_20261015/inputs/ocean_2015.npz": "1fe25acee50e6e9467907d2f02f31f83185f797e4a0d7d8f16769f66c17fde0b",
+      "outputs/research_2026/three_event_summer_current_dynamics_20261015/inputs/ocean_2015_source.json": "81ecc9f3153d87a9e10bed84ca8c65b1c001169fba0182018ac76dd5f5a9d1f0",
+      "outputs/research_2026/three_event_summer_current_dynamics_20261015/inputs/ocean_2023.npz": "dbc5700d3f154cc0d3a1037846fb6d7d4f98382c172f3f233bcb771d30148f3c",
+      "outputs/research_2026/three_event_summer_current_dynamics_20261015/inputs/ocean_2023_source.json": "44c5582cbf4fcade0e9a04b3ede343821e4c1a3e4ba3950a61d15ebbee942468"
+    },
+    "events": [
+      1997,
+      2015,
+      2023
+    ],
+    "months": [
+      7,
+      8,
+      9
+    ],
+    "longitude_degrees_east": 220,
+    "latitude_edges_degrees": [
+      -9,
+      9
+    ],
+    "local_latitude_markers_degrees": [
+      -5,
+      5
+    ],
+    "native_velocity_face_matches_transport_definition": true,
+    "source_provenance_hashes_match": true,
+    "raw_monthly_transport_max_error_sv": {
+      "1997": 3.552713678800501e-15,
+      "2015": 3.552713678800501e-15,
+      "2023": 7.105427357601002e-15
+    },
+    "JAS_velocity_contribution_errors_sv": {
+      "1997_0_50": 1.7763568394002505e-15,
+      "1997_50_150": 0.0,
+      "1997_150_sigma26": 0.0,
+      "1997_all": 0.0,
+      "2015_0_50": 0.0,
+      "2015_50_150": 4.440892098500626e-16,
+      "2015_150_sigma26": 2.220446049250313e-16,
+      "2015_all": 0.0
+    },
+    "common_valid_fraction_0_300m": 1.0,
+    "difference_formed_before_monthly_mean": true,
+    "no_filling_no_smoothing": true,
+    "color_limit_m_s": 0.5,
+    "fraction_beyond_color_limit": {
+      "1997": 0.019444444444444445,
+      "2015": 0.0
+    }
+  },
+  "M4_section_revision": {
+    "only_updated_figure": "M4_transport_current_advection",
+    "source_fields_and_diagnostics_unchanged": true,
+    "other_figure_files_unchanged": 24,
+    "other_figure_sha256": {
+      "M1_air_sea_evolution.png": "774964c1d102682a12f431be7e488a68c32b84b2ef4d40827b390454a825a93d",
+      "M1_air_sea_evolution.pdf": "c60dd78f45b3e40c200af7fea0efc1dae74480ca05e3aa8bdf79091e771f74b6",
+      "M1_air_sea_evolution.svg": "64b856e3ade52c49eaaaa038f08f7d5320b905d5380e50681e26cfeb8496ed53",
+      "presentation/M1_air_sea_evolution.png": "15b9e944aa297f37d83b421b3ace79e328d1337667a8a760c4e20de3b01454eb",
+      "M2_JFM_configuration.png": "35591fbd190c8914d38e364d06464844ff9144309c3a69c4fc71ca84d2603eaf",
+      "M2_JFM_configuration.pdf": "58eb4440315828fd4c746792699378cd83ebe35cab4b0a679fdd6d97a61a77fe",
+      "M2_JFM_configuration.svg": "5e00b30e6023f1931cddb7ac96d37a18bd64918fa7332f244a2aa53a7fbab854",
+      "presentation/M2_JFM_configuration.png": "e248aac36eaeefa4a03256073300d962ef5c6b0b33707c667ecdb27f71e7df93",
+      "M3_transport_persistence.png": "c1f89790f64cc624e5d142c2f2e7e17a0fcb50afc9e3d09e79bd6a759c4ae9a4",
+      "M3_transport_persistence.pdf": "6ed5599659a68616b5755d85ad01791cd259439da8adb800b3f68518cb36938b",
+      "M3_transport_persistence.svg": "efd5adc5214cc84b25eeef21211ea0bba5359dc3329824521261803514ec6269",
+      "presentation/M3_transport_persistence.png": "5aea85713e03003fe2b3aab198f696a8768e498a7f2648fb9aa709aa7b734ade",
+      "S1_wind_reference.png": "ec3c8f9dc4afa2439fab5b75f3e869b14464a973861ab802a84fc1e0bf2183c4",
+      "S1_wind_reference.pdf": "c0a03194532fc6b22555e494e13762cdefc29118132dd57f145b7be5933f60c0",
+      "S1_wind_reference.svg": "b7b70373efb0e12f296eb79db2bb8d0dfee50a03c6c959a64f061be480620fb9",
+      "presentation/S1_wind_reference.png": "cf3208711509d87eb20b5db2438b786edda660b97e74bcec28e0bdc7fa129581",
+      "S2_local_process_limits.png": "8a789d218bf72d5d2a1c15fd87890f1d36f035e7c53c5a80d2aa9788fd258a40",
+      "S2_local_process_limits.pdf": "49b83df558bc3a84bc015741dd5b81e06bbc85b4acab4d1ee1d2e0b7bc623464",
+      "S2_local_process_limits.svg": "caf9eb1f04bb46f34274a66ae77590f949add1aa7dfccd469a4a9969bdf4268c",
+      "presentation/S2_local_process_limits.png": "9f47b37737045c5067717b30f0f838624a406f1158f8705886ecccc2d4c42dc1",
+      "M5_wind_current_momentum.png": "33ad967057e5ed796fa733d6b23e7cdc507b80ec9029f8fc18e5331bb4346ca6",
+      "M5_wind_current_momentum.pdf": "9e0522fa8e8aa5fdccd95c3d4ae6ea75afb16b5105a2fe6b5be6f20890fffcf2",
+      "M5_wind_current_momentum.svg": "4625acd6e989831d517e2108605fbbb868cfe9c4946ec59a838b245380442b7c",
+      "presentation/M5_wind_current_momentum.png": "5aee831ba51ea2dd2eb047ce89e4cb3993e912f49d577907c93760f1c4c9539c"
+    },
+    "panel_count": 6,
+    "integrated_section_faces": [
+      "c",
+      "d"
+    ],
+    "actual_section_longitude_degrees_east": 220
+  },
+  "M4_folded_geometry": {
+    "layout": "joined top/front/right folded diagnostic faces",
+    "front": "5S-5N mean, not a boundary slice",
+    "right": "140W, 9S-9N, relocated for display; not the 120W boundary",
+    "all_face_values_preserved": true,
+    "shared_native_vertical_edges": true,
+    "full_170W_120W_map_and_front_preserved": true,
+    "figure_inches": [
+      10.4,
+      9.4
+    ]
+  },
+  "M4_folded_revision": {
+    "only_updated_figure": "M4_transport_current_advection",
+    "source_fields_and_diagnostics_unchanged": true,
+    "source_sha256": {
+      "outputs/research_2026/three_event_summer_current_dynamics_20261015/case_monthly.csv": "498592204869b4d63eb89a4847bf92edd6f99e8f49e680c42c5fa56be49318bd",
+      "outputs/research_2026/three_event_summer_current_dynamics_20261015/case_seasons.csv": "f0e0f1e9f623fd72137c5f652512046a704198f369d54bb0e746f081bfe8c219",
+      "outputs/research_2026/three_event_summer_current_dynamics_20261015/section_pair_seasons.csv": "f29289100dfbbe606018a88ebd74af3df511bc0e7c5acb33ab071efe9917c1a6",
+      "outputs/research_2026/three_event_summer_current_dynamics_20261015/wind_product_comparison.csv": "29c6f6f7cb99a8d17bf23b20c62374ef229f3a5aa5fd075afe9ceed96b3d6d7b",
+      "outputs/research_2026/three_event_summer_current_dynamics_20261015/spatial_diagnostics.nc": "82b1927dd84e6302286fa2de912e6ae5629213e87b4e7325ddd94726fa9f34e3",
+      "outputs/research_2026/three_event_scientific_figures_20261015/source_data/JAS_current_vertical_sections.npz": "a3e58a9bdb5eeb7c1cdc49c669c9d3ea58c645a2542b4d293a3382f96c8daaac",
+      "outputs/research_2026/three_event_scientific_figures_20261015/source_data/JAS_140W_meridional_current_sections.nc": "a7eaea108aaffbb4b9aa257536225f87370d78b2a82d2512edaaaaee20684c93",
+      "outputs/research_2026/three_event_summer_current_dynamics_20261015/inputs/ocean_1997.npz": "4e80123a121860337f31c78dcb43706aa7598b74427c169962e74dfa57293276",
+      "outputs/research_2026/three_event_summer_current_dynamics_20261015/inputs/ocean_2015.npz": "1fe25acee50e6e9467907d2f02f31f83185f797e4a0d7d8f16769f66c17fde0b",
+      "outputs/research_2026/three_event_summer_current_dynamics_20261015/inputs/ocean_2023.npz": "dbc5700d3f154cc0d3a1037846fb6d7d4f98382c172f3f233bcb771d30148f3c",
+      "outputs/research_2026/three_event_directional_advection_20261015/directional_pair_seasons.csv": "96c550f7b7d81917ee7c524d094f246fd7320f499888737bfd5cf9a8ea25d027",
+      "outputs/research_2026/three_event_directional_advection_20261015/directional_case_monthly.csv": "fa26838421b0f5beb84099abb40baeeb809cab6c1b2d68369432f67727748544",
+      "outputs/research_2026/three_event_directional_advection_20261015/regional_pair_seasons.csv": "34541f479829128e9621e0a85212ad88e9225de8ceeaf7a54188fe29476464d3",
+      "outputs/research_2026/three_event_directional_advection_20261015/directional_spatial.nc": "7a0be179cc2a7206d8f5acc0c3f006a4658dd1d8d8021f72cc4eb21b25328b52",
+      "outputs/research_2026/three_event_directional_advection_20261015/validation.json": "143380fe2d7ea5cb784f6095d3df42f85254892a9799a8ae559edf70bdd6662a",
+      "outputs/research_2026/three_event_directional_advection_20261015/independent_validation.json": "5693aa86cd35d4f094aa3f4dfa19e3c85e18e556e22f95a4834fdfb14f26ead4",
+      "outputs/research_2026/three_event_directional_advection_20261015/结果与解释.txt": "3a178630b6e77b00b68cee93f77a4807291e5d31fefd43aeb878891a46413309"
+    },
+    "other_figure_files_unchanged": 24,
+    "other_figure_sha256": {
+      "M1_air_sea_evolution.png": "774964c1d102682a12f431be7e488a68c32b84b2ef4d40827b390454a825a93d",
+      "M1_air_sea_evolution.pdf": "c60dd78f45b3e40c200af7fea0efc1dae74480ca05e3aa8bdf79091e771f74b6",
+      "M1_air_sea_evolution.svg": "64b856e3ade52c49eaaaa038f08f7d5320b905d5380e50681e26cfeb8496ed53",
+      "presentation/M1_air_sea_evolution.png": "15b9e944aa297f37d83b421b3ace79e328d1337667a8a760c4e20de3b01454eb",
+      "M2_JFM_configuration.png": "35591fbd190c8914d38e364d06464844ff9144309c3a69c4fc71ca84d2603eaf",
+      "M2_JFM_configuration.pdf": "58eb4440315828fd4c746792699378cd83ebe35cab4b0a679fdd6d97a61a77fe",
+      "M2_JFM_configuration.svg": "5e00b30e6023f1931cddb7ac96d37a18bd64918fa7332f244a2aa53a7fbab854",
+      "presentation/M2_JFM_configuration.png": "e248aac36eaeefa4a03256073300d962ef5c6b0b33707c667ecdb27f71e7df93",
+      "M3_transport_persistence.png": "c1f89790f64cc624e5d142c2f2e7e17a0fcb50afc9e3d09e79bd6a759c4ae9a4",
+      "M3_transport_persistence.pdf": "6ed5599659a68616b5755d85ad01791cd259439da8adb800b3f68518cb36938b",
+      "M3_transport_persistence.svg": "efd5adc5214cc84b25eeef21211ea0bba5359dc3329824521261803514ec6269",
+      "presentation/M3_transport_persistence.png": "5aea85713e03003fe2b3aab198f696a8768e498a7f2648fb9aa709aa7b734ade",
+      "S1_wind_reference.png": "ec3c8f9dc4afa2439fab5b75f3e869b14464a973861ab802a84fc1e0bf2183c4",
+      "S1_wind_reference.pdf": "c0a03194532fc6b22555e494e13762cdefc29118132dd57f145b7be5933f60c0",
+      "S1_wind_reference.svg": "b7b70373efb0e12f296eb79db2bb8d0dfee50a03c6c959a64f061be480620fb9",
+      "presentation/S1_wind_reference.png": "cf3208711509d87eb20b5db2438b786edda660b97e74bcec28e0bdc7fa129581",
+      "S2_local_process_limits.png": "8a789d218bf72d5d2a1c15fd87890f1d36f035e7c53c5a80d2aa9788fd258a40",
+      "S2_local_process_limits.pdf": "49b83df558bc3a84bc015741dd5b81e06bbc85b4acab4d1ee1d2e0b7bc623464",
+      "S2_local_process_limits.svg": "caf9eb1f04bb46f34274a66ae77590f949add1aa7dfccd469a4a9969bdf4268c",
+      "presentation/S2_local_process_limits.png": "9f47b37737045c5067717b30f0f838624a406f1158f8705886ecccc2d4c42dc1",
+      "M5_wind_current_momentum.png": "33ad967057e5ed796fa733d6b23e7cdc507b80ec9029f8fc18e5331bb4346ca6",
+      "M5_wind_current_momentum.pdf": "9e0522fa8e8aa5fdccd95c3d4ae6ea75afb16b5105a2fe6b5be6f20890fffcf2",
+      "M5_wind_current_momentum.svg": "4625acd6e989831d517e2108605fbbb868cfe9c4946ec59a838b245380442b7c",
+      "presentation/M5_wind_current_momentum.png": "5aee831ba51ea2dd2eb047ce89e4cb3993e912f49d577907c93760f1c4c9539c"
+    },
+    "panel_count": 6,
+    "figure_inches": [
+      10.4,
+      9.4
+    ]
+  },
+  "directional_advection_extension": {
+    "validation": {
+      "status": "PASS",
+      "rows": 3096,
+      "case_rows": 216,
+      "inputs_unchanged": true,
+      "same_common_ocean_mask": true,
+      "coverage": {
+        "30": 1.0,
+        "50": 0.9988553760732454,
+        "75": 0.9972356727437918
+      },
+      "analytic_tests": [
+        "constant gradients",
+        "linear spherical gradients",
+        "northward-flow sign"
+      ],
+      "independent_centered_gradient_max_C_m": {
+        "x": 1.739805673660333e-18,
+        "y": 1.1519648082658485e-19
+      },
+      "gridpoint_three_term_identity_max_C_month": {
+        "x": 2.2382096176443156e-13,
+        "y": 2.2870594307278225e-14
+      },
+      "previous_all_43_year_process_max_C_month": {
+        "x_temperature": 1.3877787807814457e-16,
+        "x_velocity": 1.942890293094024e-16,
+        "y_temperature": 1.6653345369377348e-16,
+        "y_velocity": 1.3877787807814457e-16,
+        "nonlinear_hadv_new": 3.885780586188048e-16,
+        "horizontal_total_new": 2.220446049250313e-16
+      },
+      "regional_sum_max_C_month": 2.220446049250313e-16,
+      "map_integral_max_error": 6.661338147750939e-16,
+      "settings": "30/50/75 m x mean/detrend; not independent samples",
+      "interpretation": "Kinematic temperature-advection decomposition, not a v-momentum or causal attribution"
+    },
+    "independent_validation": {
+      "status": "PASS",
+      "saved_product_checks_max_C_month": {
+        "x_three_components": 2.220446049250313e-16,
+        "y_three_components": 1.942890293094024e-16,
+        "xy_sum": 2.0816681711721685e-16,
+        "original_horizontal_total": 9.71445146547012e-17,
+        "original_nonlinear_total": 1.1102230246251565e-16,
+        "season_AMJ": 1.1102230246251565e-16,
+        "season_JAS": 1.3183898417423734e-16,
+        "saved_spatial_integral": 1.249000902703301e-16,
+        "saved_six_region_integral": 8.673617379884035e-17
+      },
+      "JAS_y_negative_in_all_settings": true,
+      "JAS_y_larger_magnitude_than_x": 11,
+      "setting_comparisons": 12,
+      "settings_are_not_independent_samples": true,
+      "regional_sensitivity": {
+        "1997_north_y_velocity": {
+          "min": -0.0935574799537287,
+          "max": -0.0313998998494965,
+          "negative_settings": 6,
+          "settings": 6
+        },
+        "1997_south_y_temperature": {
+          "min": -0.0646488102415297,
+          "max": -0.0494096837496447,
+          "negative_settings": 6,
+          "settings": 6
+        },
+        "2015_north_y_velocity": {
+          "min": -0.1162604723337957,
+          "max": -0.0953386811398043,
+          "negative_settings": 6,
+          "settings": 6
+        },
+        "2015_south_y_temperature": {
+          "min": -0.0791915597524442,
+          "max": -0.0598710554593411,
+          "negative_settings": 6,
+          "settings": 6
+        }
+      }
+    },
+    "main_JAS_pair_values": {
+      "1997": {
+        "depth_m": 50,
+        "background": "mean",
+        "season": "JAS",
+        "x_temperature": -0.0077861127500512,
+        "x_velocity": -0.197273374489981,
+        "x_nonlinear": 0.1533874647454234,
+        "x_total": -0.0516720224946088,
+        "u_anomaly": -0.130813458619114,
+        "Tx_anomaly": -0.2068252278551491,
+        "u_background": 0.0,
+        "Tx_background": 0.0,
+        "y_temperature": -0.1034040839601926,
+        "y_velocity": -0.066841469793833,
+        "y_nonlinear": 0.0256091576463332,
+        "y_total": -0.1446363961076925,
+        "v_anomaly": 0.0137129285419891,
+        "Ty_anomaly": 0.2050927927937892,
+        "v_background": 0.0,
+        "Ty_background": 0.0,
+        "horizontal_total": -0.1963084186023012,
+        "nonlinear_hadv": 0.1789966223917566
+      },
+      "2015": {
+        "depth_m": 50,
+        "background": "mean",
+        "season": "JAS",
+        "x_temperature": 0.0239242420543358,
+        "x_velocity": -0.1524388713029676,
+        "x_nonlinear": 0.0745089622957496,
+        "x_total": -0.0540056669528821,
+        "u_anomaly": -0.0872467827495576,
+        "Tx_anomaly": -0.0536611419963739,
+        "u_background": 0.0,
+        "Tx_background": 0.0,
+        "y_temperature": -0.0934426826623009,
+        "y_velocity": -0.1480182957151909,
+        "y_nonlinear": 0.1105201861017697,
+        "y_total": -0.1309407922757221,
+        "v_anomaly": 0.0098773508357475,
+        "Ty_anomaly": -0.2771063121816055,
+        "v_background": 0.0,
+        "Ty_background": 0.0,
+        "horizontal_total": -0.1849464592286041,
+        "nonlinear_hadv": 0.1850291483975193
+      }
+    },
+    "old_transport_and_current_fields_unchanged": true,
+    "bottom_panels": "complete zonal/meridional temperature-advection anomalies, three centered components",
+    "monthly_and_spatial_results_in_source_tables": true
+  },
+  "M4_directional_revision": {
+    "only_updated_figure": "M4_transport_current_advection",
+    "original_inputs_unchanged": true,
+    "other_figure_files_unchanged": 24,
+    "other_figure_sha256": {
+      "M1_air_sea_evolution.png": "774964c1d102682a12f431be7e488a68c32b84b2ef4d40827b390454a825a93d",
+      "M1_air_sea_evolution.pdf": "c60dd78f45b3e40c200af7fea0efc1dae74480ca05e3aa8bdf79091e771f74b6",
+      "M1_air_sea_evolution.svg": "64b856e3ade52c49eaaaa038f08f7d5320b905d5380e50681e26cfeb8496ed53",
+      "presentation/M1_air_sea_evolution.png": "15b9e944aa297f37d83b421b3ace79e328d1337667a8a760c4e20de3b01454eb",
+      "M2_JFM_configuration.png": "35591fbd190c8914d38e364d06464844ff9144309c3a69c4fc71ca84d2603eaf",
+      "M2_JFM_configuration.pdf": "58eb4440315828fd4c746792699378cd83ebe35cab4b0a679fdd6d97a61a77fe",
+      "M2_JFM_configuration.svg": "5e00b30e6023f1931cddb7ac96d37a18bd64918fa7332f244a2aa53a7fbab854",
+      "presentation/M2_JFM_configuration.png": "e248aac36eaeefa4a03256073300d962ef5c6b0b33707c667ecdb27f71e7df93",
+      "M3_transport_persistence.png": "c1f89790f64cc624e5d142c2f2e7e17a0fcb50afc9e3d09e79bd6a759c4ae9a4",
+      "M3_transport_persistence.pdf": "6ed5599659a68616b5755d85ad01791cd259439da8adb800b3f68518cb36938b",
+      "M3_transport_persistence.svg": "efd5adc5214cc84b25eeef21211ea0bba5359dc3329824521261803514ec6269",
+      "presentation/M3_transport_persistence.png": "5aea85713e03003fe2b3aab198f696a8768e498a7f2648fb9aa709aa7b734ade",
+      "S1_wind_reference.png": "ec3c8f9dc4afa2439fab5b75f3e869b14464a973861ab802a84fc1e0bf2183c4",
+      "S1_wind_reference.pdf": "c0a03194532fc6b22555e494e13762cdefc29118132dd57f145b7be5933f60c0",
+      "S1_wind_reference.svg": "b7b70373efb0e12f296eb79db2bb8d0dfee50a03c6c959a64f061be480620fb9",
+      "presentation/S1_wind_reference.png": "cf3208711509d87eb20b5db2438b786edda660b97e74bcec28e0bdc7fa129581",
+      "S2_local_process_limits.png": "8a789d218bf72d5d2a1c15fd87890f1d36f035e7c53c5a80d2aa9788fd258a40",
+      "S2_local_process_limits.pdf": "49b83df558bc3a84bc015741dd5b81e06bbc85b4acab4d1ee1d2e0b7bc623464",
+      "S2_local_process_limits.svg": "caf9eb1f04bb46f34274a66ae77590f949add1aa7dfccd469a4a9969bdf4268c",
+      "presentation/S2_local_process_limits.png": "9f47b37737045c5067717b30f0f838624a406f1158f8705886ecccc2d4c42dc1",
+      "M5_wind_current_momentum.png": "33ad967057e5ed796fa733d6b23e7cdc507b80ec9029f8fc18e5331bb4346ca6",
+      "M5_wind_current_momentum.pdf": "9e0522fa8e8aa5fdccd95c3d4ae6ea75afb16b5105a2fe6b5be6f20890fffcf2",
+      "M5_wind_current_momentum.svg": "4625acd6e989831d517e2108605fbbb868cfe9c4946ec59a838b245380442b7c",
+      "presentation/M5_wind_current_momentum.png": "5aee831ba51ea2dd2eb047ce89e4cb3993e912f49d577907c93760f1c4c9539c"
+    },
+    "updated_panels": [
+      "e",
+      "f"
+    ],
+    "panel_count": 6,
+    "upper_transport_current_panels_pixel_unchanged": true,
+    "upper_png_check_fraction": 0.7
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "runtime": {
+    "python": "3.12.2",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "xarray": "2023.6.0",
+    "gsw": "3.6.19",
+    "scipy": "1.17.1",
+    "matplotlib": "3.9.2",
+    "h5netcdf": "1.8.1"
+  },
+  "ocean_calendar_complete": true,
+  "atmosphere_calendar_complete": true,
+  "monthly_climatology_relative_zero_error": 1.1296391782779882e-16,
+  "three_regions_equal_basin": true,
+  "internal_zonal_gates_cancel": true,
+  "one_Sv_year_1e14m3": 0.31536,
+  "reference_excludes_target_years": true,
+  "case_fields_72_months": true,
+  "accounting_identity_not_physical_closure_error": 9.43689570931383e-16,
+  "minimum_active_heat_section_coverage": 0.7356100459280431,
+  "south_independent_split_gate_error_Sv": 5.329070518200751e-15,
+  "north_independent_split_gate_error_Sv": 3.552713678800501e-15,
+  "analytic_partial_layer_check": true,
+  "cached_density_depth_vs_current_runtime_max_difference_m": 7.487541665796016e-06,
+  "six_figure_assets_and_html_links": true,
+  "new_dynamical_model_run": false
+}

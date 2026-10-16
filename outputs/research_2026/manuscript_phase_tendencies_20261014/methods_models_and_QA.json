@@ -1,0 +1,222 @@
+{
+  "source_pdf": "/Users/daiyue/Library/Containers/com.tencent.qq/Data/Downloads/manuscript.pdf",
+  "source_pages": [
+    4,
+    5,
+    6,
+    10,
+    11,
+    12
+  ],
+  "target": "Figure 3a and section 3.3",
+  "observations": "ERSSTv5 Ni\u00f1o3.4; GODAS area-mean D20 as WWV proxy",
+  "observation_period": [
+    "2002-01",
+    "2025-04"
+  ],
+  "fit_period": [
+    "2002-01",
+    "2024-12"
+  ],
+  "climatology": "1991\u20132020 monthly climatology",
+  "event_groups": {
+    "EN": [
+      2002,
+      2004,
+      2006,
+      2009,
+      2014,
+      2015,
+      2018,
+      2023
+    ],
+    "FY_LN": [
+      2005,
+      2007,
+      2010,
+      2016,
+      2020,
+      2024
+    ],
+    "MY_LN": [
+      2008,
+      2011,
+      2017,
+      2021,
+      2022
+    ]
+  },
+  "event_group_note": "Years taken from manuscript Figure 4; Fig.3-specific inclusion is not supplied.",
+  "detrending": "OLS slope and intercept removed over 2002-01 to 2025-04; retaining intercept is a separate sensitivity.",
+  "standardization": "Each variable divided by its own 2002\u20132024 population SD; shared by all groups.",
+  "derivative": "Centered two-month-span finite difference, one-month step; initial Jan 2002 second-order forward difference.",
+  "tendency": "L(calendar month) @ observed normalized state / 12; L is in year^-1.",
+  "early_late_definition": "Jan\u2013Jun versus Jul\u2013Dec, an explicit diagnostic choice; manuscript does not define early/late months.",
+  "residual_metric": "sqrt(mean_month(||mean_event(observed tendency) \u2212 mean_event(RO tendency)||\u00b2))",
+  "sensitivity": "Mean-retaining detrend + complete model refit; omit one complete La Ni\u00f1a episode from composite with model fixed.",
+  "normalization_scale": [
+    0.8517609965664277,
+    5.535895219539315
+  ],
+  "mean_retained_offset_SD": [
+    -0.016137667036354397,
+    0.23814457453039165
+  ],
+  "observed_states_sha256": "e0590df0b57c1ec66655691eb9a775cb93dbe78b340a7795813f346234546f67",
+  "script_sha256": "f4861b80f1a5784f2e2a2f4e53ecd842a96777268dc2c53fac634ab922ebf853",
+  "primary_matches_previously_audited_coefficients": true,
+  "QA": {
+    "mean_removed": {
+      "physical_normalized_tendency_consistency": true,
+      "local_RO_composite_commutation_max_error": 1.720810993699473e-13,
+      "n_event_months": 228
+    },
+    "mean_retained": {
+      "physical_normalized_tendency_consistency": true,
+      "local_RO_composite_commutation_max_error": 1.916938829893411e-13,
+      "n_event_months": 228
+    }
+  },
+  "models": {
+    "mean_removed": {
+      "coef": [
+        [
+          [
+            -0.504318697636322,
+            1.3905267452862389
+          ],
+          [
+            -2.179354688343077,
+            -1.3062555717738649
+          ]
+        ],
+        [
+          [
+            -0.5074953903312951,
+            -0.5205556733787353
+          ],
+          [
+            -0.8979605411370811,
+            0.24953422209743437
+          ]
+        ],
+        [
+          [
+            -0.02144300240336272,
+            -0.12058395086047019
+          ],
+          [
+            0.03630324085353198,
+            -0.5834205935987625
+          ]
+        ],
+        [
+          [
+            -0.9659542589289144,
+            0.11672162282552342
+          ],
+          [
+            -1.5424056531756134,
+            -0.02048847420108607
+          ]
+        ],
+        [
+          [
+            -0.00821458705980882,
+            -0.18002548040415645
+          ],
+          [
+            0.7189785586225571,
+            0.18960258170349065
+          ]
+        ]
+      ],
+      "scale": [
+        0.8517609965664277,
+        5.535895219539315
+      ],
+      "order": 2,
+      "method": "perturb2",
+      "interpolation": "linear",
+      "diag": {
+        "condition": 1.1884372032117243,
+        "second_order_norm": 2.0754783112211848,
+        "first_order_norm": 3.484195391590029
+      },
+      "columns": [
+        "Nino34",
+        "WWV"
+      ]
+    },
+    "mean_retained": {
+      "coef": [
+        [
+          [
+            -0.5258933333552792,
+            1.2345941049656517
+          ],
+          [
+            -2.168658777986016,
+            -1.2780935471317836
+          ]
+        ],
+        [
+          [
+            -0.5270614170200286,
+            -0.6073424184722105
+          ],
+          [
+            -0.9031764067385163,
+            0.18853558636114975
+          ]
+        ],
+        [
+          [
+            -0.023598847845684834,
+            -0.18386565911607888
+          ],
+          [
+            0.0032942796499377813,
+            -0.5199836353709866
+          ]
+        ],
+        [
+          [
+            -1.011647482835343,
+            0.10919132420574061
+          ],
+          [
+            -1.5788289479688005,
+            0.028380785579767337
+          ]
+        ],
+        [
+          [
+            -0.03022751714510602,
+            -0.21706481830289104
+          ],
+          [
+            0.7071357888130861,
+            0.15342913972642813
+          ]
+        ]
+      ],
+      "scale": [
+        0.8517609965664277,
+        5.535895219539315
+      ],
+      "order": 2,
+      "method": "perturb2",
+      "interpolation": "linear",
+      "diag": {
+        "condition": 1.183052965098453,
+        "second_order_norm": 2.0077468015895223,
+        "first_order_norm": 3.443280339151958
+      },
+      "columns": [
+        "Nino34",
+        "WWV"
+      ]
+    }
+  }
+}

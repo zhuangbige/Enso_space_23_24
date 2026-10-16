@@ -1,0 +1,30 @@
+{
+  "sources": [
+    {
+      "path": "/Users/daiyue/Documents/Maryland/outputs/interview_redesign_20261014/source_data/RO_PMM_three_event_metrics.csv",
+      "sha256": "61c6a19cb6995d8d1270553404211ae0458b880a461e4c0bf633fcaccd0b59e5"
+    },
+    {
+      "path": "/Users/daiyue/Documents/Maryland/outputs/interview_redesign_20261014/source_data/RO_PMM_three_event_trajectories.csv",
+      "sha256": "c4b8f98c1638d7be17bca1d08bdee261fbd35d64ba5cea1ec46ffc52b667992e"
+    },
+    {
+      "path": "/Users/daiyue/Documents/Maryland/outputs/research_2026/three_event_temperature_tendency_20261015/case_monthly_tendencies.csv",
+      "sha256": "2245881efedd8e023102759c097c9d66c435b123c72e2e070c6e1b16b4d2dd0e"
+    },
+    {
+      "path": "/Users/daiyue/Documents/Maryland/outputs/research_2026/three_event_temperature_tendency_20261015/summer_zonal_advection_robustness.csv",
+      "sha256": "893c8d35f49746b38c518504e28c0bc0f22f0b44e1a4b8d5919f2e72239978fc"
+    },
+    {
+      "path": "/Users/daiyue/Documents/Maryland/outputs/research_2026/three_event_temperature_tendency_20261015/primary_season_result_table.csv",
+      "sha256": "be8cf8478c314155bdddf1259e9d5a355ea1d3e023a7467dcada8b6d006e264f"
+    },
+    {
+      "path": "/Users/daiyue/Documents/Maryland/outputs/research_2026/three_event_process_followup_20261015/all_month_evidence.csv",
+      "sha256": "b30dee86f4c46bfc04c4b325d85e93282b5bf56f9a27832dc9f76922970baa6b"
+    }
+  ],
+  "validation": "Recomputed each event RMSE from 25 original pairs; mean correction matches bias difference; JAS monthly advection matches robustness table. All assertions passed.",
+  "script": "/Users/daiyue/Documents/Maryland/scripts/build_pmm_advection_bridge_20261015.py"
+}

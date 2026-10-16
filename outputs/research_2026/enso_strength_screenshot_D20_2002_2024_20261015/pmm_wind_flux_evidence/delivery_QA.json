@@ -1,0 +1,17 @@
+{
+  "figure_count": 6,
+  "format_count": 18,
+  "local_links_resolve": true,
+  "independent_numerical_QA": {
+    "status": "passed",
+    "area_mean_recomputation_max_error": 4.949420429056772e-09,
+    "seasonal_recomputation_max_error": 5.000000413701855e-09,
+    "event_weight_recomputation_max_error": 1.000000082740371e-09,
+    "sign_convention_verified": true,
+    "complete_8_events": true,
+    "all_45_initializations_present": true,
+    "detrended_climatology_zero": true,
+    "original_model_forecasts_scores_unchanged": true
+  },
+  "source_scripts_hashed": true
+}

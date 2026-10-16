@@ -1,0 +1,254 @@
+{
+  "cases": {
+    "A_original": {
+      "scale": [
+        0.9230150260849048,
+        7.707965771769413
+      ],
+      "tendency_coefficients": [
+        [
+          -0.09093058787479885,
+          -0.156787864141183
+        ],
+        [
+          0.12771581604360016,
+          0.0026860718536600497
+        ],
+        [
+          -0.1392828261115419,
+          -0.032487431976396745
+        ],
+        [
+          0.06464893306589893,
+          -0.02850145966939211
+        ],
+        [
+          -0.08225414917091074,
+          -0.09188004907335524
+        ],
+        [
+          -0.044281312856148065,
+          -0.030859958336470095
+        ]
+      ],
+      "mean_H_to_T": 0.12771581604360016,
+      "mean_T_to_H": -0.156787864141183,
+      "mean_H_self_tendency": 0.0026860718536600497,
+      "annual_transition_spectral_radius": 0.6249661814813469,
+      "alpha": 1,
+      "seasonal": true,
+      "n_training_transitions": 395,
+      "preprocessing": "past_only",
+      "fit_window": "past_long",
+      "estimator": "original_monthly_ridge"
+    },
+    "B_forward_ac1": {
+      "training_months": 396,
+      "ac_order": 1,
+      "forward": true,
+      "taus": [
+        0,
+        0
+      ],
+      "preprocessing": "past_only",
+      "fit_window": "past_long",
+      "estimator": "forward_ac1",
+      "annual_mean_L": [
+        [
+          -1.0962567772383804,
+          0.18383157076453072
+        ],
+        [
+          -15.766706811551991,
+          0.033471236631992515
+        ]
+      ]
+    },
+    "C_forward_ac2": {
+      "training_months": 396,
+      "ac_order": 2,
+      "forward": true,
+      "taus": [
+        0,
+        0,
+        0
+      ],
+      "preprocessing": "past_only",
+      "fit_window": "past_long",
+      "estimator": "forward_ac2",
+      "annual_mean_L": [
+        [
+          -1.0159964148153653,
+          0.18184923030373212
+        ],
+        [
+          -16.011884446723652,
+          0.05849498539017751
+        ]
+      ]
+    },
+    "D_center_lag1_ac1": {
+      "training_months": 396,
+      "ac_order": 1,
+      "forward": false,
+      "taus": [
+        1,
+        1
+      ],
+      "preprocessing": "past_only",
+      "fit_window": "past_long",
+      "estimator": "center_ac1",
+      "annual_mean_L": [
+        [
+          -1.1525531350077285,
+          0.18556874154139522
+        ],
+        [
+          -16.685030642233464,
+          0.06190094305855751
+        ]
+      ]
+    },
+    "E_center_lag1_ac2": {
+      "training_months": 396,
+      "ac_order": 2,
+      "forward": false,
+      "taus": [
+        1,
+        1,
+        1
+      ],
+      "preprocessing": "past_only",
+      "fit_window": "past_long",
+      "estimator": "center_ac2",
+      "annual_mean_L": [
+        [
+          -1.0369781774429336,
+          0.17905311059866288
+        ],
+        [
+          -17.141967742068783,
+          0.12652885530394073
+        ]
+      ]
+    },
+    "F_recent_past_fit": {
+      "training_months": 156,
+      "ac_order": 2,
+      "forward": false,
+      "taus": [
+        1,
+        1,
+        1
+      ],
+      "preprocessing": "past_only",
+      "fit_window": "past_short",
+      "estimator": "center_ac2",
+      "annual_mean_L": [
+        [
+          -1.9866561916446839,
+          0.306516368267693
+        ],
+        [
+          -13.785192662148452,
+          -1.1940851075195207
+        ]
+      ]
+    },
+    "G_paper_fit_window": {
+      "training_months": 276,
+      "ac_order": 2,
+      "forward": false,
+      "taus": [
+        1,
+        1,
+        1
+      ],
+      "preprocessing": "past_only",
+      "fit_window": "paper_window",
+      "estimator": "center_ac2",
+      "annual_mean_L": [
+        [
+          -0.46571514560866384,
+          0.17614469413837067
+        ],
+        [
+          -12.222914977992746,
+          -0.9378607465062667
+        ]
+      ]
+    },
+    "H_paper_like_preprocessing": {
+      "training_months": 276,
+      "ac_order": 2,
+      "forward": false,
+      "taus": [
+        1,
+        1,
+        1
+      ],
+      "preprocessing": "paper_like",
+      "fit_window": "paper_window",
+      "estimator": "center_ac2",
+      "annual_mean_L": [
+        [
+          -0.5344439532422048,
+          0.17243026328665897
+        ],
+        [
+          -13.867944817259216,
+          -0.9229372340584677
+        ]
+      ]
+    },
+    "I_original_paper_fit": {
+      "scale": [
+        0.864391704604026,
+        5.845169206766472
+      ],
+      "tendency_coefficients": [
+        [
+          -0.04094147911639041,
+          -0.1415427337356368
+        ],
+        [
+          0.11975168781156756,
+          -0.0669886556650624
+        ],
+        [
+          -0.08092796095374498,
+          -0.04530903770633936
+        ],
+        [
+          0.044351931137143225,
+          -0.028977960677224406
+        ],
+        [
+          -0.09612214770409724,
+          -0.1857422256546601
+        ],
+        [
+          -0.030733053234198206,
+          0.03351559631159328
+        ]
+      ],
+      "mean_H_to_T": 0.11975168781156756,
+      "mean_T_to_H": -0.1415427337356368,
+      "mean_H_self_tendency": -0.0669886556650624,
+      "annual_transition_spectral_radius": 0.5557501810686559,
+      "alpha": 1,
+      "seasonal": true,
+      "n_training_transitions": 275,
+      "preprocessing": "past_only",
+      "fit_window": "paper_window",
+      "estimator": "original_monthly_ridge"
+    }
+  },
+  "qa": {
+    "original_reproduction_max_difference": 4.263256414560601e-14,
+    "center_integration_10_vs_20_Tmax": 0.0031415163112044064,
+    "center_integration_10_vs_20_Hmax": 0.05845982789671966
+  },
+  "raw_source": "/Users/daiyue/Documents/Maryland/data/derived/research_2026/oras5_ro_raw_indices/oras5_ro_raw_indices_1979_latest.nc",
+  "raw_sha256": "b138ba01230f225b6dd28c66fb32e4f3a656d0e1bfce962c313306f0ba35675e"
+}

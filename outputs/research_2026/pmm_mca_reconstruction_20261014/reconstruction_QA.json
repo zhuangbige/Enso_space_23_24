@@ -1,0 +1,49 @@
+{
+  "mode_reference": "1950-2005",
+  "covariance_fraction": 0.4875612844122411,
+  "second_to_first_singular_value": 0.6586557931061846,
+  "ocean_grid_points": 218,
+  "actual_lat_centers": [
+    30.475749969482422,
+    26.666250228881836,
+    22.856800079345703,
+    19.04734992980957,
+    15.237850189208984,
+    11.428420066833496,
+    7.618940353393555,
+    3.8094699382781982,
+    0.0,
+    -3.8094699382781982,
+    -7.618940353393555,
+    -11.428420066833496,
+    -15.237850189208984,
+    -19.04734992980957
+  ],
+  "actual_lon_centers": [
+    176.25,
+    181.875,
+    187.5,
+    193.125,
+    198.75,
+    204.375,
+    210.0,
+    215.625,
+    221.25,
+    226.875,
+    232.5,
+    238.125,
+    243.75,
+    249.375,
+    255.0,
+    260.625
+  ],
+  "R1_latest": "2026-02-01",
+  "projection_smoothing": false,
+  "calibration_end": "2005-12",
+  "source_switch": "NCEP/NCAR R1 to ERSSTv5",
+  "caveat": "Research reconstruction; original-source R1 stopped in March 2026. Not official PMM.",
+  "ERSSTv5_latest": "2026-09-01",
+  "extended_components": [
+    "SST"
+  ]
+}

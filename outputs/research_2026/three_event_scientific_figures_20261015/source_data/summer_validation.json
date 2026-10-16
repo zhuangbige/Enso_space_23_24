@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "source_calendar_checks": 43,
+  "rows": 3096,
+  "case_rows": 216,
+  "momentum_identity_error_m_s2": 1.3234889800848443e-22,
+  "independent_pressure_wind_max_error_m_s2": {
+    "30_pressure_density": 4.632211430296955e-23,
+    "30_pressure_ssh": 3.3881317890172014e-21,
+    "30_wind": 2.1015666691690665e-15,
+    "50_pressure_density": 6.948317145445432e-23,
+    "50_pressure_ssh": 2.964615315390051e-21,
+    "50_wind": 1.2675972993020325e-15,
+    "75_pressure_density": 1.0257039595657543e-22,
+    "75_pressure_ssh": 4.341043854678289e-21,
+    "75_wind": 8.215554667503119e-16
+  },
+  "independent_current_derivative_error_m_s2": 5.293955920339377e-23,
+  "six_setting_JAS_ranking_checks": {
+    "30_detrend": {
+      "u_m_s": true,
+      "u_prime_meanT": true,
+      "wind_m_s2": true
+    },
+    "30_mean": {
+      "u_m_s": true,
+      "u_prime_meanT": true,
+      "wind_m_s2": true
+    },
+    "50_detrend": {
+      "u_m_s": true,
+      "u_prime_meanT": true,
+      "wind_m_s2": true
+    },
+    "50_mean": {
+      "u_m_s": true,
+      "u_prime_meanT": true,
+      "wind_m_s2": true
+    },
+    "75_detrend": {
+      "u_m_s": true,
+      "u_prime_meanT": true,
+      "wind_m_s2": true
+    },
+    "75_mean": {
+      "u_m_s": true,
+      "u_prime_meanT": true,
+      "wind_m_s2": true
+    }
+  },
+  "protected_artifacts": {
+    "outputs/research_2026/three_event_fullsample_replay_20261015/model_and_preprocessing.json": true,
+    "outputs/research_2026/three_event_ocean_trajectory_swaps_20261015/index.html": true,
+    "outputs/research_2026/three_event_scientific_figures_20261015/M1_air_sea_evolution.png": true,
+    "outputs/research_2026/three_event_scientific_figures_20261015/M2_january_configuration.png": true,
+    "outputs/research_2026/three_event_scientific_figures_20261015/M3_transport_persistence.png": true,
+    "outputs/research_2026/three_event_scientific_figures_20261015/S1_wind_reference.png": true,
+    "outputs/research_2026/three_event_scientific_figures_20261015/S2_local_process_limits.png": true,
+    "outputs/research_2026/three_event_scientific_figures_20261015/S3_attribution_limits.png": true
+  },
+  "meaning": "Numerical and source consistency only; residual closure does not establish physical attribution."
+}

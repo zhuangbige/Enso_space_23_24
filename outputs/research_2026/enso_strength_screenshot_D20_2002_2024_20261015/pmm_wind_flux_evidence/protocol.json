@@ -1,0 +1,40 @@
+{
+  "events": "8 events / 9 development years from frozen 2002-2024 comparison",
+  "climatology": "1991-2020 calendar-month means; 360 complete months",
+  "region": {
+    "lat_min": 10,
+    "lat_max": 30,
+    "lon_min": 205,
+    "lon_max": 245
+  },
+  "map_domain": {
+    "lat": [
+      0,
+      30
+    ],
+    "lon": [
+      190,
+      260
+    ]
+  },
+  "primary_window": "February-June (same months as the existing model starts)",
+  "extra_windows": [
+    "MAM",
+    "JJA",
+    "SON",
+    "DJF"
+  ],
+  "field_processing": "monthly anomalies; no ENSO removal; no smoothing",
+  "wind_metric": "negative ERA5 wind anomaly projected onto local calendar-month climatological wind unit vector; positive weakens mean trades; NOT scalar wind speed anomaly",
+  "directional_check": "individual u and v anomalies are also saved",
+  "flux_metric": "NCEP-NCAR R1 LHTFL positive UPWARD, negated before forming downward anomalies; W m-2; no 86400 division",
+  "products": "ERA5 10m u/v + NCEP-NCAR R1 latent heat flux + ERSSTv5 SST",
+  "fallback": "CDS remaining ERA5 requests throttled; own pending jobs cancelled; no partial ERA5 flux mixed into monthly series",
+  "ocean_mask": "ERA5 lsm < 0.5; cos(lat)*(1-lsm) for regular wind grid; Gaussian quadrature*(1-lsm) for native flux grid; ERSST native mask",
+  "sensitivity": "remove 1982-2024 linear trend from each regional anomaly, anchored to each 1991-2020 calendar-month mean",
+  "weighting": "average development years within an event, then equal event weights",
+  "interpretation": "descriptive consistency of phases, not a causal WES estimate or heat budget closure",
+  "existing_forecasts": "unchanged; full-period fitted retrospective comparison",
+  "no_model_refitting": true,
+  "region_reference": "https://doi.org/10.1029/2024GL108924"
+}

@@ -1,0 +1,163 @@
+{
+  "chen_north": {
+    "lon_centers_min": 120.25,
+    "lon_centers_max": 279.75,
+    "lat_centers_min": 9.0,
+    "lat_centers_max": 9.0,
+    "n_columns": 320
+  },
+  "chen_south": {
+    "lon_centers_min": 120.25,
+    "lon_centers_max": 279.75,
+    "lat_centers_min": -9.0,
+    "lat_centers_max": -9.0,
+    "n_columns": 320
+  },
+  "chen_north_interior": {
+    "lon_centers_min": 140.25,
+    "lon_centers_max": 279.75,
+    "lat_centers_min": 9.0,
+    "lat_centers_max": 9.0,
+    "n_columns": 280
+  },
+  "chen_south_interior": {
+    "lon_centers_min": 160.25,
+    "lon_centers_max": 279.75,
+    "lat_centers_min": -9.0,
+    "lat_centers_max": -9.0,
+    "n_columns": 240
+  },
+  "chen_north_wbc": {
+    "lon_centers_min": 126.75,
+    "lon_centers_max": 139.75,
+    "lat_centers_min": 9.0,
+    "lat_centers_max": 9.0,
+    "n_columns": 27
+  },
+  "chen_south_wbc": {
+    "lon_centers_min": 149.25,
+    "lon_centers_max": 159.75,
+    "lat_centers_min": -9.0,
+    "lat_centers_max": -9.0,
+    "n_columns": 22
+  },
+  "chen_itf": {
+    "lon_centers_min": 120.25,
+    "lon_centers_max": 139.75,
+    "lat_centers_min": -9.0,
+    "lat_centers_max": -9.0,
+    "n_columns": 40
+  },
+  "chen_basin_west": {
+    "lon_centers_min": 120.0,
+    "lon_centers_max": 120.0,
+    "lat_centers_min": -8.75,
+    "lat_centers_max": 8.75,
+    "n_columns": 36
+  },
+  "chen_basin_east": {
+    "lon_centers_min": 280.0,
+    "lon_centers_max": 280.0,
+    "lat_centers_min": -8.75,
+    "lat_centers_max": 8.75,
+    "n_columns": 36
+  },
+  "chen_basin_south": {
+    "lon_centers_min": 120.25,
+    "lon_centers_max": 279.75,
+    "lat_centers_min": -9.0,
+    "lat_centers_max": -9.0,
+    "n_columns": 320
+  },
+  "chen_basin_north": {
+    "lon_centers_min": 120.25,
+    "lon_centers_max": 279.75,
+    "lat_centers_min": 9.0,
+    "lat_centers_max": 9.0,
+    "n_columns": 320
+  },
+  "west_west": {
+    "lon_centers_min": 160.0,
+    "lon_centers_max": 160.0,
+    "lat_centers_min": -9.75,
+    "lat_centers_max": 4.75,
+    "n_columns": 30
+  },
+  "west_east": {
+    "lon_centers_min": 180.0,
+    "lon_centers_max": 180.0,
+    "lat_centers_min": -9.75,
+    "lat_centers_max": 4.75,
+    "n_columns": 30
+  },
+  "west_south": {
+    "lon_centers_min": 160.25,
+    "lon_centers_max": 179.75,
+    "lat_centers_min": -10.0,
+    "lat_centers_max": -10.0,
+    "n_columns": 40
+  },
+  "west_north": {
+    "lon_centers_min": 160.25,
+    "lon_centers_max": 179.75,
+    "lat_centers_min": 5.0,
+    "lat_centers_max": 5.0,
+    "n_columns": 40
+  },
+  "central_west": {
+    "lon_centers_min": 180.0,
+    "lon_centers_max": 180.0,
+    "lat_centers_min": -9.75,
+    "lat_centers_max": 4.75,
+    "n_columns": 30
+  },
+  "central_east": {
+    "lon_centers_min": 220.0,
+    "lon_centers_max": 220.0,
+    "lat_centers_min": -9.75,
+    "lat_centers_max": 4.75,
+    "n_columns": 30
+  },
+  "central_south": {
+    "lon_centers_min": 180.25,
+    "lon_centers_max": 219.75,
+    "lat_centers_min": -10.0,
+    "lat_centers_max": -10.0,
+    "n_columns": 80
+  },
+  "central_north": {
+    "lon_centers_min": 180.25,
+    "lon_centers_max": 219.75,
+    "lat_centers_min": 5.0,
+    "lat_centers_max": 5.0,
+    "n_columns": 80
+  },
+  "east_west": {
+    "lon_centers_min": 220.0,
+    "lon_centers_max": 220.0,
+    "lat_centers_min": -9.75,
+    "lat_centers_max": 4.75,
+    "n_columns": 30
+  },
+  "east_east": {
+    "lon_centers_min": 280.0,
+    "lon_centers_max": 280.0,
+    "lat_centers_min": -9.75,
+    "lat_centers_max": 4.75,
+    "n_columns": 30
+  },
+  "east_south": {
+    "lon_centers_min": 220.25,
+    "lon_centers_max": 279.75,
+    "lat_centers_min": -10.0,
+    "lat_centers_max": -10.0,
+    "n_columns": 120
+  },
+  "east_north": {
+    "lon_centers_min": 220.25,
+    "lon_centers_max": 279.75,
+    "lat_centers_min": 5.0,
+    "lat_centers_max": 5.0,
+    "n_columns": 120
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "wet_profiles": 151632,
+  "shelf_capped_profiles": 4415,
+  "multiple_crossings": 12,
+  "surface_outcrop": 0,
+  "unresolved": 0,
+  "min_m": 26.63965808912124,
+  "max_m": 515.5652316689847,
+  "chen_north": {
+    "wet_profiles": 3696,
+    "shelf_capped_profiles": 108,
+    "multiple_crossings": 0,
+    "surface_outcrop": 0,
+    "unresolved": 0,
+    "min_m": 35.27322815976971,
+    "max_m": 455.99925994786594,
+    "missing_velocity_active_area_fraction": 0.0
+  },
+  "chen_south": {
+    "wet_profiles": 3588,
+    "shelf_capped_profiles": 468,
+    "multiple_crossings": 0,
+    "surface_outcrop": 0,
+    "unresolved": 0,
+    "min_m": 34.08558538101561,
+    "max_m": 299.90291456886507,
+    "missing_velocity_active_area_fraction": 0.0
+  },
+  "chen_north_interior": {
+    "wet_profiles": 3264,
+    "shelf_capped_profiles": 60,
+    "multiple_crossings": 0,
+    "surface_outcrop": 0,
+    "unresolved": 0,
+    "min_m": 35.27322815976971,
+    "max_m": 226.7106224789413,
+    "missing_velocity_active_area_fraction": 0.0
+  },
+  "chen_south_interior": {
+    "wet_profiles": 2856,
+    "shelf_capped_profiles": 12,
+    "multiple_crossings": 0,
+    "surface_outcrop": 0,
+    "unresolved": 0,
+    "min_m": 34.08558538101561,
+    "max_m": 287.05906942614297,
+    "missing_velocity_active_area_fraction": 0.0
+  },
+  "chen_north_wbc": {
+    "wet_profiles": 324,
+    "shelf_capped_profiles": 0,
+    "multiple_crossings": 0,
+    "surface_outcrop": 0,
+    "unresolved": 0,
+    "min_m": 155.36597310223573,
+    "max_m": 270.29331246955184,
+    "missing_velocity_active_area_fraction": 0.0
+  },
+  "chen_south_wbc": {
+    "wet_profiles": 264,
+    "shelf_capped_profiles": 144,
+    "multiple_crossings": 0,
+    "surface_outcrop": 0,
+    "unresolved": 0,
+    "min_m": 40.46739959716797,
+    "max_m": 273.12451844863347,
+    "missing_velocity_active_area_fraction": 0.0
+  },
+  "chen_itf": {
+    "wet_profiles": 384,
+    "shelf_capped_profiles": 240,
+    "multiple_crossings": 0,
+    "surface_outcrop": 0,
+    "unresolved": 0,
+    "min_m": 40.46739959716797,
+    "max_m": 253.33428512525035,
+    "missing_velocity_active_area_fraction": 0.0
+  },
+  "chen_basin_west": {
+    "wet_profiles": 240,
+    "shelf_capped_profiles": 60,
+    "multiple_crossings": 0,
+    "surface_outcrop": 0,
+    "unresolved": 0,
+    "min_m": 40.46739959716797,
+    "max_m": 411.0741775129681,
+    "missing_velocity_active_area_fraction": 0.0
+  },
+  "chen_basin_east": {
+    "wet_profiles": 228,
+    "shelf_capped_profiles": 78,
+    "multiple_crossings": 0,
+    "surface_outcrop": 0,
+    "unresolved": 0,
+    "min_m": 32.50114203626538,
+    "max_m": 198.42041682052587,
+    "missing_velocity_active_area_fraction": 0.0
+  },
+  "chen_basin_south": {
+    "wet_profiles": 3588,
+    "shelf_capped_profiles": 468,
+    "multiple_crossings": 0,
+    "surface_outcrop": 0,
+    "unresolved": 0,
+    "min_m": 34.08558538101561,
+    "max_m": 299.90291456886507,
+    "missing_velocity_active_area_fraction": 0.0
+  },
+  "chen_basin_north": {
+    "wet_profiles": 3696,
+    "shelf_capped_profiles": 108,
+    "multiple_crossings": 0,
+    "surface_outcrop": 0,
+    "unresolved": 0,
+    "min_m": 35.27322815976971,
+    "max_m": 455.99925994786594,
+    "missing_velocity_active_area_fraction": 0.0
+  },
+  "west_west": {
+    "wet_profiles": 336,
+    "shelf_capped_profiles": 36,
+    "multiple_crossings": 0,
+    "surface_outcrop": 0,
+    "unresolved": 0,
+    "min_m": 71.53230285644531,
+    "max_m": 254.58118870178677,
+    "missing_velocity_active_area_fraction": 0.0
+  },
+  "west_east": {
+    "wet_profiles": 360,
+    "shelf_capped_profiles": 0,
+    "multiple_crossings": 0,
+    "surface_outcrop": 0,
+    "unresolved": 0,
+    "min_m": 182.36115786468622,
+    "max_m": 276.5088095996626,
+    "missing_velocity_active_area_fraction": 0.0
+  },
+  "west_south": {
+    "wet_profiles": 456,
+    "shelf_capped_profiles": 0,
+    "multiple_crossings": 0,
+    "surface_outcrop": 0,
+    "unresolved": 0,
+    "min_m": 228.94998769825878,
+    "max_m": 284.14460871908017,
+    "missing_velocity_active_area_fraction": 0.0
+  },
+  "west_north": {
+    "wet_profiles": 480,
+    "shelf_capped_profiles": 0,
+    "multiple_crossings": 0,
+    "surface_outcrop": 0,
+    "unresolved": 0,
+    "min_m": 178.71174208249732,
+    "max_m": 228.96315766386752,
+    "missing_velocity_active_area_fraction": 0.0
+  },
+  "central_west": {
+    "wet_profiles": 360,
+    "shelf_capped_profiles": 0,
+    "multiple_crossings": 0,
+    "surface_outcrop": 0,
+    "unresolved": 0,
+    "min_m": 182.36115786468622,
+    "max_m": 276.5088095996626,
+    "missing_velocity_active_area_fraction": 0.0
+  },
+  "central_east": {
+    "wet_profiles": 360,
+    "shelf_capped_profiles": 0,
+    "multiple_crossings": 0,
+    "surface_outcrop": 0,
+    "unresolved": 0,
+    "min_m": 128.80659308175262,
+    "max_m": 257.1953702145378,
+    "missing_velocity_active_area_fraction": 0.0
+  },
+  "central_south": {
+    "wet_profiles": 960,
+    "shelf_capped_profiles": 0,
+    "multiple_crossings": 0,
+    "surface_outcrop": 0,
+    "unresolved": 0,
+    "min_m": 235.32954482341057,
+    "max_m": 294.7001824882719,
+    "missing_velocity_active_area_fraction": 0.0
+  },
+  "central_north": {
+    "wet_profiles": 960,
+    "shelf_capped_profiles": 0,
+    "multiple_crossings": 0,
+    "surface_outcrop": 0,
+    "unresolved": 0,
+    "min_m": 152.09612601270507,
+    "max_m": 227.9661509658839,
+    "missing_velocity_active_area_fraction": 0.0
+  },
+  "east_west": {
+    "wet_profiles": 360,
+    "shelf_capped_profiles": 0,
+    "multiple_crossings": 0,
+    "surface_outcrop": 0,
+    "unresolved": 0,
+    "min_m": 128.80659308175262,
+    "max_m": 257.1953702145378,
+    "missing_velocity_active_area_fraction": 0.0
+  },
+  "east_east": {
+    "wet_profiles": 180,
+    "shelf_capped_profiles": 54,
+    "multiple_crossings": 0,
+    "surface_outcrop": 0,
+    "unresolved": 0,
+    "min_m": 32.50114203626538,
+    "max_m": 198.42041682052587,
+    "missing_velocity_active_area_fraction": 0.0
+  },
+  "east_south": {
+    "wet_profiles": 1440,
+    "shelf_capped_profiles": 24,
+    "multiple_crossings": 0,
+    "surface_outcrop": 0,
+    "unresolved": 0,
+    "min_m": 42.23293753921611,
+    "max_m": 266.1180082009793,
+    "missing_velocity_active_area_fraction": 0.0
+  },
+  "east_north": {
+    "wet_profiles": 1440,
+    "shelf_capped_profiles": 0,
+    "multiple_crossings": 0,
+    "surface_outcrop": 0,
+    "unresolved": 0,
+    "min_m": 81.48570581655281,
+    "max_m": 189.9107289104155,
+    "missing_velocity_active_area_fraction": 0.0
+  }
+}

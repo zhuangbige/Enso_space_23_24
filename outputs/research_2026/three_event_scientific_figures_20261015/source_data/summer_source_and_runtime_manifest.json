@@ -1,0 +1,36 @@
+{
+  "python": "3.12.2 | packaged by conda-forge | (main, Feb 16 2024, 20:54:21) [Clang 16.0.6 ]",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scipy": "1.17.1",
+    "gsw": "3.6.19",
+    "xarray": "2023.6.0",
+    "h5netcdf": "1.8.1",
+    "matplotlib": "3.9.2",
+    "requests": "2.32.3",
+    "fsspec": "2024.6.1",
+    "h5py": "3.16.0",
+    "aiohttp": "3.10.5"
+  },
+  "analysis_code_sha256": {
+    "scripts/analyze_three_event_summer_dynamics.py": "0fa8acee6bda40b719e44eb71e06226b16fcc59984b152a9ce49229ead12c6f5",
+    "scripts/fetch_three_event_summer_dynamics.py": "47239b11ca7481a79ec1c5c56c7ea3f165c1aedad6c3ca79b85baa59fb95b805",
+    "scripts/report_three_event_summer_dynamics.py": "785ff11e46f50f08a3534b1e88171c300d900699b5ca958bb292cbe21ab65538",
+    "scripts/validate_three_event_summer_dynamics.py": "4316a7b84a2865464d4a3b2752b4a2888c212e86ef2beae871c46fccf49abc97"
+  },
+  "reused_inputs_and_helpers_sha256": {
+    "outputs/research_2026/three_event_temperature_tendency_20261015/local_fields_cache.npz": "c7254e62832b10079a99bfc047cc6673af65a05923a37eecc3abba6d9baeed2a",
+    "outputs/research_2026/three_event_temperature_tendency_20261015/monthly_local_tendencies.csv": "a76beeb2b94d98a56feea06d20bf9bb839bd2f204215dba31b5b166d09a3def3",
+    "outputs/research_2026/three_event_ocean_preconditioning_20261014/atmosphere_monthly.nc": "d6c88bd837e8f9c3dcd9eba05d96ca9198ca2ef86799824220f3e9c912705982",
+    "outputs/research_2026/three_event_ocean_preconditioning_20261014/atmosphere_absolute.csv": "fc3e4f1af7452fa11419e0f2ed7de0d92f6568ea9bd4b402a6ebf6aeac1ed654",
+    "scripts/analyze_chen2015_reanalysis.py": "3564e645529af003a7f8fd0294c643fc9c675987fc69f8eac1af469b963063cc",
+    "scripts/fetch_chen2015_reanalysis.py": "b1f45f538563b95e04f268997e92b65906f2d714fc4852db6ceb77840a170c2b"
+  },
+  "annual_ocean_source_records": "ocean_source_manifest.json",
+  "surface_source_records": "inputs/surface_YEAR_metadata.json",
+  "reference_sources": [
+    "https://www2.atmos.umd.edu/~carton/soda/soda3_readme.htm",
+    "https://mom-ocean.github.io/assets/pdfs/MOM5_manual.pdf"
+  ]
+}

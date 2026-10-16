@@ -1,0 +1,42 @@
+Frozen before viewing new local-process results, 2026-10-15.
+Primary diagnostic: Niño3.4, 5S--5N, 170W--120W, fixed 0--50m potential
+temperature. This follows the 50m Niño3.4 convention in Chen & Jin (2022),
+doi:10.1029/2021GL097603, section 2.3. 0--30/75m are thickness sensitivities.
+WWV26 remains the separate ocean-storage index, with its established +/-9deg
+three-box geometry. Layer temperature must not be renamed SST or warm volume.
+Use SODA3.15.2 monthly temperature, native B-grid u/v, and net_heating.
+Velocity is averaged from the four surrounding B-grid points to tracer centers;
+horizontal gradients use spherical metric distances and a one-cell halo.
+Use canonical 2024 sw_ocean layer boundaries with exact partial-layer overlap.
+All local terms use the same time-invariant finite ocean mask and volume.
+
+Process decomposition: -ubar*dTprime/dx, -uprime*dTbar/dx and meridional analogs;
+retain the nonlinear horizontal anomaly as a closure audit, not a new claimed
+mechanism. Net surface heating/(rho*Cp*H) is a proxy: penetrating shortwave below
+H is unavailable. Monthly products omit submonthly covariance. No full-year w,
+mixing or assimilation tendencies are available in the selected annual cache.
+The remaining tendency includes these, numerical error, and averaging mismatch;
+it MUST NOT be labeled vertical advection, thermocline feedback or heat loss.
+This partial local budget is distinct from the earlier two open-gate PW terms.
+
+Training excludes 1996--1998, 2014--2016, 2022--2024, leaving 34 years/408 months.
+Compute field climatologies from training only. Display training-climatology
+anomalies without trend removal; show all 24 months per case and common quarters.
+Monthly display derivative uses actual midmonth elapsed seconds. No causal
+significance testing on selected months or just these three events.
+
+For coefficient mapping, use T_H plus west/central/east WWV26 (primary) and T_H
+plus total WWV26 (compression sensitivity). Same training-only preprocessing
+as prior sLIM: monthly means then optional common linear trend, standardized.
+Interpolate each continuous training segment to 72 steps/year. Response terms
+are linearly interpolated in C/year; derivative is computed from that same
+interpolated T_H, exactly as in the existing sLIM. Residual is defined on this
+fine grid, never approximated by interpolating a monthly residual. Fit every
+response with the same lag6 annual-mean / lag1 seasonal moment operator; annual
+and semiannual harmonics, perturb2 and exact. Component coefficients including
+residual must sum to the temperature row of the independently fitted state
+operator. This identity verifies numerical bookkeeping, NOT physical closure.
+Process states and coefficients use layer T_H, so they are not identical to
+the earlier OISST-based coefficients. Compare OISST with T_H explicitly.
+Do not pick the layer, states, or estimator by success in these three events.
+No new initial-state swaps until native evolution is adequate.

@@ -1,0 +1,39 @@
+REPRODUCTION AND INTERPRETATION
+Run from repository root:
+MPLCONFIGDIR=/private/tmp/maryland_three_events_mpl OPENBLAS_NUM_THREADS=1 /opt/anaconda3/bin/python scripts/analyze_three_event_slim.py
+MPLCONFIGDIR=/private/tmp/maryland_three_events_mpl OPENBLAS_NUM_THREADS=1 /opt/anaconda3/bin/python scripts/report_three_event_slim.py
+MPLCONFIGDIR=/private/tmp/maryland_three_events_mpl OPENBLAS_NUM_THREADS=1 /opt/anaconda3/bin/python scripts/validate_three_event_slim.py
+
+The historical paper_ro_slim.py is unchanged. three_event_segmented_slim.py
+pools its identical moment estimator over disconnected chronological segments.
+Training excludes all target +/-1 years. This is retrospective, not a real-time
+forecast. Monthly means are labeled by month start only for calendar alignment;
+initialization uses the complete January monthly mean. Harmonic phase and RK4
+use mid-month as in the original implementation. Lag 6 = one month; lag 1 = 1/6
+month on the interpolation grid. No independent data are created by interpolation.
+
+WWV26 input is a previously validated SODA3 derived diagnostic; D20 input is
+GODAS and its historical CSV column was misleadingly named WWV. This script
+renames it d20 and never uses volume_m3 for WWV26. Source domains differ. OISST
+and ERSST are scored against their own observations and display climatologies.
+The model coefficients operate in years; plotted SST coefficients divide by 12
+and rescale to physical coordinates. They are conditional statistical tendencies,
+not closed process-budget contributions. No direct SST--wind coupling estimation
+is added here. No replacement initial-state causal claim is made.
+
+Parameter sensitivities: 200 deterministic-seed (20261014) draws of positive
+Exp(1) weights shared within original chronological two-year blocks. Segments
+are not concatenated; interpolation/lag/derivatives use original trajectories.
+Climatology/trend/scale are reestimated with these weights. Evaluation moment
+weights use the original month bin; boundaries may involve the adjacent original
+block, which is retained. There are short terminal blocks at segment ends.
+These are weighted-estimating-equation sensitivities, not calibrated predictive
+intervals. Innovations, observation error and structural uncertainty are absent.
+
+Native error timing computes e_t = x_obs(t)-Phi(t,t-1)x_obs(t-1) in model
+coordinates, propagates each e_t to Oct/Nov/Dec and averages. Its sum exactly
+equals observed-minus-free OND SST. The identity does not identify forcing.
+Validation confirms excluded values cannot enter coefficients. All numeric QA
+addresses implementation, not the scientific sufficiency of the state vector.
+
+Runtime: Python 3.12.2, numpy 1.26.4, pandas 2.2.2, matplotlib 3.9.2.

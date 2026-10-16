@@ -1,0 +1,56 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PMM—平流图件整理与最后一步</title><style>body{font-family:system-ui,sans-serif;max-width:1320px;margin:32px auto;padding:0 24px;background:#f5f7f9;color:#213143;line-height:1.8}h1{font-size:30px}h2{margin-top:38px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(450px,1fr));gap:22px}article{background:white;padding:20px;border:1px solid #e1e6eb;border-radius:10px}article h3{margin-top:8px}img{width:100%;background:white}.tag{font-size:12px;background:#e3edf3;padding:4px 9px;border-radius:4px;color:#2b6f97}.limit{font-size:14px;color:#596a7b}.lead{background:#e7eff5;padding:22px;border-left:4px solid #2b6f97}a{color:#236c9a}details{background:white;padding:20px;margin:24px 0}pre{white-space:pre-wrap;font-family:inherit;font-size:15px} @media(max-width:600px){.grid{display:block}article{margin:20px 0}}</style>
+<h1>PMM—平流：图件已归类，最后一步已收紧</h1><p>2026-10-15 · 已按新指令完成D20→WWV26配对预报；平流联合重建尚未执行。</p>
+<div class="lead"><b>先看三张：</b>M1（预报现象）、M3（逐月过程）、M4（稳健结论）。完整主线再加M2（风场背景）与M5（过程抵消）。<br><b>讨论最后一步时看D1：</b>它暴露另一个模型的平流表示缺口，不能直接解释M1的PMM技巧变化。</div>
+<p><a href="选图与最后一步.txt">完整选图说明与最后一步方案</a> · <a href="figure_index.csv">图件清单</a></p>
+<h2>最后一步要回答的唯一核心问题</h2><p><b>在同一训练与验证口径下，PMM能否同时解释海温预报修正和异常纬向平流的事件差异？</b></p><p>WWV26事件剔除预报已经完成：2015改善、2023下降、1997近零。接下来检验加入PMM是否改善平流重建，并结合已有通道切断及风—流诊断区分机制。最终应形成一张“海温预报＋平流重建＋PMM修正时序”的三事件检验图。这张图目前尚不存在。</p>
+<details><summary>展开：两套模型的区别、最后一步的检验顺序和完成标准</summary><pre>图件整理与最后一步建议｜2026-10-15｜已按用户要求改用WWV26
+
+本轮完成：图件归类、编号和复制；按新指令将无PMM/有PMM的海洋状态同时由D20替换为全盆地WWV26，完成配对预报与敏感性检验。尚未运行新的PMM—平流过程重建试验。
+
+最新模型
+主模型无PMM：[ERSST Niño3.4, 全盆地WWV26]。
+主模型有PMM：[ERSST Niño3.4, 全盆地WWV26, 标准PMM-SST]。
+WWV26单位10^14 m3，瞬时sigma_theta=26面以上，9S—9N、120E—80W，为原西/中/东三区之和。海温与标准PMM来源保持原预报来源。D20只保留为同口径对照。
+主检验1982—2024资料剔除1996—1998、2014—2016、2022—2024，训练34年；月背景、趋势、尺度和算子均由训练资料估计。另保留2002—2024共同拟合对照及两种背景、两种估计器。
+
+新结果改变了原表述
+主检验RMSE（无PMM→有PMM，°C）：1997为0.741→0.745，技巧−0.53%；2015为1.063→0.989，技巧+6.97%；2023为0.834→0.928，技巧−11.26%。
+事件剔除四种设置：1997技巧−0.53%至+0.13%，2015为+5.49%至+7.55%，2023为−15.55%至−9.52%。因此不能继续说WWV26下1997、2015都得到明显改善。新主线是2015改善、2023下降，1997增量近零。
+同口径D20对照仍保留1997/2015改善、2023下降；因此1997的差异确实需要考虑海洋状态表示，不可只归为训练窗变化。D20与WWV26的定义、区域和再分析来源同时不同，不能称纯变量定义的因果效应。
+所有模型仍有事件强度低估；WWV26替换不等于总体预报技巧提高。
+
+主图顺序
+M1 新WWV26配对预报：下排为主，上排D20对照，提出事件差异问题。
+M2 海温—风应力时空结构：提供动力背景。
+M3 局地温度与逐月过程：识别春夏转折。
+M4 纬向平流稳健性：落下最明确的过程结论。
+M5 春夏过程抵消：2023动力增暖弱、海表冷却也弱；不能由平流一项推出技巧好坏。
+最重要三张：M1、M3、M4。组会讨论最后一步时加D1。
+总览使用WWV26技巧敏感性图；旧D20预报和旧桥接图放入历史备份，停止作为新结果展示。
+
+已有证据的边界
+最新预报为SST＋总WWV26±PMM，过程重建D1仍是层温度＋三区WWV26，后者尚无PMM。它提示平流表示缺口，但不能直接解释新预报中的PMM效果。
+D1的异常纬向平流主设置MSE技巧约−0.610，海表项约+0.730。这是用实际状态作过程重建、相对零异常的MSE技巧，不是初始化预报RMSE技巧。不能据D1断言新预报漏掉海表冷却补偿。
+1997平流增暖较强而PMM增量接近零，是重要机制对照：当前数据不支持把强平流普遍等同于PMM增强。不能移除1997来制造一一对应。
+
+最后一步：同状态、同训练口径的PMM—平流联合检验（尚未执行）
+唯一核心问题：在已确定的SST＋总WWV26体系中，加入PMM能否改善实际异常纬向平流的表示，并解释2015与2023相反的预报修正？
+
+1. 复用已完成的事件剔除模型及PMM→SST/WWV26通道切断结果，不重复做模型体系选择。
+2. 使用完全相同的34年训练和三个留出窗口，以[SST, 总WWV26]和[SST, 总WWV26, PMM]分别重建局地q＝−u′∂xT̄；季节函数、估计方法和趋势处理对齐。初始主设置、敏感性与评分窗口先写明，再看结果。q目标为0—50m过程倾向，不能与SST导数或不同区域热输送直接混用。
+3. 用真实月状态重建q属于条件诊断，单独报告；若改用自由预报的状态输出q，起报后不输入观测。对照有无PMM的q误差、JAS均值及春夏转折，保留三个事件，不能只选2015/2023。
+4. 比较完整模型与固定其他系数、仅切断PMM→SST/WWV26的逐月海温差异；将它与过程诊断中的PMM相关q修正分开坐标展示，检查时序。该切断只识别模型内部通道，不是现实世界因果效应。
+5. 若PMM确实增加平流解释力，再用共同背景下的PMM—风应力—异常流空间/时序检查路径；跨年控制前期ENSO与海洋状态，不以三个事件做显著性推断，也不按结果挑滞后。月尺度是当前最小方案，不同时扩展成完整MJO/WWB研究。
+
+最后需要的一张关键新图（当前尚不存在）
+三列仍为1997、2015、2023。
+上排：已完成的新WWV26海温预报及PMM通道切断。
+中排：实际平流项、无PMM/有PMM的平流重建及误差。这一排是当前真正缺少的证据。
+下排：PMM引起的模型海温修正与PMM相关平流修正的时间对应；单位分开，不计算没有物理闭合支持的归因百分比。
+
+判别标准
+若PMM同时改善留出平流重建且修正时序与预报差异一致，支持统计过程桥梁。
+若PMM只改变海温预报而未改善平流表示，不能认定平流为PMM通道，应保留替代机制或模型失配解释。
+若1997的平流较强仍主要由海洋状态解释而PMM增量弱，将其作为条件依赖的证据，不强迫三个事件具有同一PMM贡献。
+强因果归因仍需受控动力试验；当前目标是做成可被证伪的统计机制检验，不预设桥梁一定成立。
+</pre></details><h2>总览图</h2><div class="grid"><article><span class="tag">新结果总览</span><h3>总览：WWV26下PMM技巧变化的稳健性</h3><a href="00_overview/Overview_WWV26_sensitivity.png"><img src="00_overview/Overview_WWV26_sensitivity.png" loading="lazy"></a><p>2015改善、2023下降；1997变化接近零，符号不稳定。</p><p class="limit">边界：预定义敏感性，不是独立样本或置信区间。</p><a href="00_overview/Overview_WWV26_sensitivity.pdf">PDF</a> · <a href="00_overview/Overview_WWV26_sensitivity.png">大图</a></article></div><h2>五张主图：按论证顺序</h2><div class="grid"><article><span class="tag">最重要</span><h3>M1｜新研究起点：WWV26＋PMM事件剔除预报</h3><a href="01_main/M1_WWV26_PMM_forecasts.png"><img src="01_main/M1_WWV26_PMM_forecasts.png" loading="lazy"></a><p>下排WWV26为主：2015技巧+7.0%、2023−11.3%、1997约−0.5%；上排为同口径D20对照。</p><p class="limit">边界：统一剔除三个目标及邻年，但使用未来非事件资料与公开固定PMM模态，仍是回顾性检验。</p><a href="01_main/M1_WWV26_PMM_forecasts.pdf">PDF</a> · <a href="01_main/M1_WWV26_PMM_forecasts.png">大图</a></article><article><span class="tag">主线连接</span><h3>M2｜过程背景：海温—风应力空间演变</h3><a href="01_main/M2_airsea_space_time.png"><img src="01_main/M2_airsea_space_time.png" loading="lazy"></a><p>交代2023风场响应偏弱的位置与持续性，为平流差异提供动力背景。</p><p class="limit">边界：不能把观测风场全部归于PMM；月平均不能识别WWB，图中细线为此前模型残差选月。</p><a href="01_main/M2_airsea_space_time.pdf">PDF</a> · <a href="01_main/M2_airsea_space_time.png">大图</a></article><article><span class="tag">最重要</span><h3>M3｜核心过程：春季建立，夏季减弱</h3><a href="01_main/M3_local_temperature_processes.png"><img src="01_main/M3_local_temperature_processes.png" loading="lazy"></a><p>直接看2023异常纬向平流春季正贡献、夏季减弱，并保留海表项与未解析倾向。</p><p class="limit">边界：0—50m层温度不同于SST；未解析项不能命名为某一种物理过程。</p><a href="01_main/M3_local_temperature_processes.pdf">PDF</a> · <a href="01_main/M3_local_temperature_processes.png">大图</a></article><article><span class="tag">最重要</span><h3>M4｜核心结论：2023夏季平流增暖稳健偏弱</h3><a href="01_main/M4_advection_robustness.png"><img src="01_main/M4_advection_robustness.png" loading="lazy"></a><p>层厚与趋势处理变化时，2023低于1997/2015的排序保持。</p><p class="limit">边界：绝对正负号依赖背景；六种设置不是六个独立样本。</p><a href="01_main/M4_advection_robustness.pdf">PDF</a> · <a href="01_main/M4_advection_robustness.png">大图</a></article><article><span class="tag">解释约束</span><h3>M5｜解释约束：动力增暖弱，海表冷却也弱</h3><a href="01_main/M5_process_compensation.png"><img src="01_main/M5_process_compensation.png" loading="lazy"></a><p>限制“散热更强”的解释，并提示理解预报误差要考虑过程抵消。</p><p class="limit">边界：这里异常流柱合并纬向和经向，不是M4中的纯纬向项；收支未物理闭合。</p><a href="01_main/M5_process_compensation.pdf">PDF</a> · <a href="01_main/M5_process_compensation.png">大图</a></article></div><h2>机制检查与短讲替代</h2><div class="grid"><article><span class="tag">决定下一步</span><h3>D1｜最后一步的起点：现有模型能否表示平流</h3><a href="02_mechanism_checks/D1_process_projection.png"><img src="02_mechanism_checks/D1_process_projection.png" loading="lazy"></a><p>现有层温度＋三区WWV26对平流重建不足，说明需要检验缺失的信息。</p><p class="limit">边界：这不是M1的新SST＋总WWV26＋PMM模型，不能直接解释其技巧下降；黑线已按主设置去过程趋势，不能逐点等同M3。</p><a href="02_mechanism_checks/D1_process_projection.pdf">PDF</a> · <a href="02_mechanism_checks/D1_process_projection.png">大图</a></article><article><span class="tag">训练口径敏感性</span><h3>D2｜共同拟合时段对照</h3><a href="02_mechanism_checks/D2_matched_period.png"><img src="02_mechanism_checks/D2_matched_period.png" loading="lazy"></a><p>在2002—2024共同拟合设置下对比D20与WWV26，检查主结果是否依赖事件剔除。</p><p class="limit">边界：1997为回推，2015/2023在拟合期内，不能作为独立技巧证明。</p><a href="02_mechanism_checks/D2_matched_period.pdf">PDF</a> · <a href="02_mechanism_checks/D2_matched_period.png">大图</a></article></div><h2>备份图：问到再展开</h2><div class="grid"><article><span class="tag">历史对照</span><h3>S0｜历史D20结果</h3><a href="03_backup/S0_legacy_D20_forecasts.png"><img src="03_backup/S0_legacy_D20_forecasts.png" loading="lazy"></a><p>保存原13%/19%/−30%的出处。</p><p class="limit">边界：已由WWV26主图替代，不延续为WWV26结论。</p><a href="03_backup/S0_legacy_D20_forecasts.pdf">PDF</a> · <a href="03_backup/S0_legacy_D20_forecasts.png">大图</a></article><article><span class="tag">历史对照</span><h3>S5｜旧D20桥接总图</h3><a href="03_backup/S5_legacy_bridge.png"><img src="03_backup/S5_legacy_bridge.png" loading="lazy"></a><p>保留此前讨论的证据组织。</p><p class="limit">边界：预报部分已过时，不进入WWV26主讲。</p><a href="03_backup/S5_legacy_bridge.pdf">PDF</a> · <a href="03_backup/S5_legacy_bridge.png">大图</a></article><article><span class="tag">备份</span><h3>S1｜风残差与模型残差</h3><a href="03_backup/S1_wind_residuals.png"><img src="03_backup/S1_wind_residuals.png" loading="lazy"></a><p>回答给定SST后的风响应与趋势敏感性。</p><p class="limit">边界：统计残差不是已识别的大气强迫，不用于证明PMM因果。</p><a href="03_backup/S1_wind_residuals.pdf">PDF</a> · <a href="03_backup/S1_wind_residuals.png">大图</a></article><article><span class="tag">备份</span><h3>S2｜海洋配置与暖水输送</h3><a href="03_backup/S2_ocean_configuration.png"><img src="03_backup/S2_ocean_configuration.png" loading="lazy"></a><p>回答2023是否已有春季东向暖水输入。</p><p class="limit">边界：体积输送不是局地温度倾向；不抢当前PMM—平流主线。</p><a href="03_backup/S2_ocean_configuration.pdf">PDF</a> · <a href="03_backup/S2_ocean_configuration.png">大图</a></article><article><span class="tag">备份</span><h3>S3｜季节系数分解</h3><a href="03_backup/S3_seasonal_coefficients.png"><img src="03_backup/S3_seasonal_coefficients.png" loading="lazy"></a><p>方法问答：过程如何投影到季节系数。</p><p class="limit">边界：系数可相加不代表过程被重建，更不代表反馈已识别。</p><a href="03_backup/S3_seasonal_coefficients.pdf">PDF</a> · <a href="03_backup/S3_seasonal_coefficients.png">大图</a></article><article><span class="tag">备份</span><h3>S4｜层温度模型原生模拟</h3><a href="03_backup/S4_native_layer_check.png"><img src="03_backup/S4_native_layer_check.png" loading="lazy"></a><p>回答模型能否恢复三个事件强度。</p><p class="limit">边界：模型仍明显低估，不据此作初态因果归因。</p><a href="03_backup/S4_native_layer_check.pdf">PDF</a> · <a href="03_backup/S4_native_layer_check.png">大图</a></article></div></html>

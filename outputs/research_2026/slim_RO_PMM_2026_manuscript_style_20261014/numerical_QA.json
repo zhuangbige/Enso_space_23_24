@@ -1,0 +1,27 @@
+{
+  "latest_T": "2026-09-01",
+  "latest_H": "2026-08-01",
+  "T_units": "degree_C",
+  "H_units": "m (area-mean D20, not volume)",
+  "updated_overlap_max_abs": {
+    "Nino34": 3.9558105484616135e-06,
+    "WWV": 2.842170943040401e-14
+  },
+  "training": "2002-01 through 2024-12; 276 monthly states",
+  "TH_climatology": "1991-2020",
+  "TH_trend_fit": "2002-01 through 2025-04 (unchanged manuscript protocol)",
+  "MCA_and_calibration_fit": "1950-2005",
+  "official_PMM_last": "2026-02",
+  "reconstructed_PMM_last": "2026-09-01",
+  "no_post_initialization_forcing": true,
+  "initial_state_max_error": 4.440892098500626e-16,
+  "rk4_24_vs_48_max_difference": 3.781610136144309e-09,
+  "frozen_model_archive_sha256": "57f1ee5a600f866e81ebc3f1737ef03a959dd90f321d1fc88057c06ee5e53bed",
+  "reconstructed_index_sha256": "74c9977b7b2f4f20ab71d0395d14b4a28347a7aa2ccc6a0dbc29a1f0d1fc8f00",
+  "reconstructed_components": [
+    "PMM_SST"
+  ],
+  "wind_extension_status": "ERA5 queued; no post-Feb wind index inferred",
+  "evaluation": "leads 1-9; observed target months only; overlapping initializations, not independent samples",
+  "operational_caveat": "Monthly states become available after the month. This is a retrospective free-evolution analysis, not an archived real-time forecast."
+}

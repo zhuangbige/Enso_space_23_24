@@ -1,0 +1,61 @@
+{
+  "january_event_order_sensitivity": {
+    "basin": {
+      "monthly_mean": [
+        1997,
+        2023,
+        2015
+      ],
+      "monthly_trend": [
+        1997,
+        2023,
+        2015
+      ]
+    },
+    "west": {
+      "monthly_mean": [
+        2023,
+        1997,
+        2015
+      ],
+      "monthly_trend": [
+        2023,
+        1997,
+        2015
+      ]
+    },
+    "central": {
+      "monthly_mean": [
+        1997,
+        2023,
+        2015
+      ],
+      "monthly_trend": [
+        1997,
+        2023,
+        2015
+      ]
+    },
+    "east": {
+      "monthly_mean": [
+        1997,
+        2015,
+        2023
+      ],
+      "monthly_trend": [
+        1997,
+        2015,
+        2023
+      ]
+    }
+  },
+  "figures": [
+    "Fig01_airsea_evolution",
+    "Fig02_sst_conditioned_wind",
+    "Fig03_wwv26_configuration",
+    "Fig04_temperature_vertical_structure",
+    "Fig05_volume_transport_and_storage",
+    "Fig06_two_term_heat_transport"
+  ],
+  "draft_claims_are_causal": false
+}

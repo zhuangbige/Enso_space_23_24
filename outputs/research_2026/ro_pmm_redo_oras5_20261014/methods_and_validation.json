@@ -1,0 +1,24 @@
+{
+  "raw_source": "/Users/daiyue/Documents/Maryland/data/derived/research_2026/oras5_ro_raw_indices/oras5_ro_raw_indices_1979_latest.nc",
+  "raw_sha256": "b138ba01230f225b6dd28c66fb32e4f3a656d0e1bfce962c313306f0ba35675e",
+  "reference_source": "/Users/daiyue/Documents/New project_XRO/XRO/data/XRO_indices_oras5.nc",
+  "reference_sha256": "3d0fc489a3286aea6c2c411a800bf3f684939c1cc455cddf0b65b652a7a589e9",
+  "raw_data_end": "2026-09-01",
+  "trend_order_selected": 1,
+  "selection": "2-state original linear RO; all monthly starts 2000–2013, leads 1–12; targets end December 2014; minimum T/H standardized joint MSE, candidate trends 0/1/2",
+  "display_baseline": "1982–2014 monthly climatology; model-removed background restored on both forecasts and observations",
+  "linear_model": "unchanged original standardized monthly delta regression; annual sine/cosine; ridge alpha=1",
+  "nonlinear_model": "separate XRO core; annual/semiannual coefficients; T^2 and T*H in SST equation; zero noise",
+  "PMM": "Two proxies tested separately: regional ORAS5 SST NPMM (10–25N, 160–120W), and train-only OISST SST + ERA5 u10 + v10 joint EOF. Neither is a separate canonical MCA PMM-SST or PMM-wind expansion coefficient.",
+  "limitations": [
+    "Reanalysis vintages and reporting latency not simulated.",
+    "Official preprocessed reference is diagnostic, not strict out-of-sample skill.",
+    "Postselection aggregate evaluation uses only 2015–2024 starts; short sample."
+  ],
+  "qa": {
+    "post_init_raw_perturbation_forecast_max_difference": 0.0,
+    "disconnected_third_state_max_difference": 0.0,
+    "unchanged_linear_model_vs_archived_forecasts_max_difference": 1.942890293094024e-15
+  },
+  "runtime_seconds": 21.90044641494751
+}

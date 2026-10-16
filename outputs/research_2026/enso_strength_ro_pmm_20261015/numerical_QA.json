@@ -1,0 +1,20 @@
+{
+  "max_heldout_coef_error": 0.0,
+  "max_heldout_preprocessing_error": 0.0,
+  "max_heldout_scale_error": 0.0,
+  "max_future_observation_error": 0.0,
+  "max_initial_error": 0.0,
+  "max_rk4_error": 2.394175524500497e-09,
+  "max_unit_scaling_error": 3.3306690738754696e-15,
+  "max_propagator_error": 5.329070518200751e-15,
+  "fits": 26,
+  "unstable_fits": 0,
+  "annual_radius_min": 0.3714880930976678,
+  "annual_radius_max": 0.48937274750917537,
+  "saved_score_max_error": 6.661338147750939e-14,
+  "saved_monthly_rows": 750,
+  "saved_seasonal_rows": 375,
+  "group_score_rows": 384,
+  "event_score_rows": 1248,
+  "saved_score_and_bootstrap_reconstruction": "passed"
+}

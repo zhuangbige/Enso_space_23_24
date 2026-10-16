@@ -1,0 +1,33 @@
+Screenshot-matched protocol, user instruction 2026-10-15.
+The ONLY protocol change relative to the original screenshot is that the fit
+start year moves from 2002 to 1982. All fitting uses continuous data.
+Operator fitting: 1982Jan--2024Dec (516 months); detrending: 1982Jan--2025Apr
+(520 months). Original end dates are retained. Climate: 1991--2020 monthly means.
+RO=[ERSSTv5 Nino3.4, GODAS mean D20], RO+PMM adds official PMM-SST. PMM is
+centered over 1982--2024. Standard deviations use the same operator-fitting
+period and ddof=0. D20=area-weighted 5S--5N,120E--80W mean, meters.
+Reuse original prepare(), perturb2 annual/semiannual sLIM, 6x monthly linear
+interpolation, covariance lags6/1, and RK4 24 substeps/month. No new estimator.
+Exactly two primary models, fitted once for all events. Feb--Jun observed
+monthly initial states; 9-month free integration, no later observed forcing.
+Restore trend/background; subtract fixed 1991--2020 SST monthly climatology.
+Both observation and prediction curves use centered 3-month arithmetic means.
+Forecast means use ONLY the corresponding free trajectory: first center lead1
+averages leads0,1,2; last center lead8 averages leads7,8,9. No partial windows,
+observed forecast padding, or additional filtering. Plot all center leads1--8.
+Observation curves: Jan of development year through next Mar; use actual
+neighboring months at both ends. The Jan1982 observation uses Dec1981.
+Primary scores: center leads1--5, five starts, 25 pairs/one-year case. Report
+event-pooled Pearson r, RMSE and bias. r is not multi-year fixed-lead ACC.
+Screenshot RMSE change=100*(RMSE_PMM/RMSE_RO-1); NEGATIVE means improvement.
+For continuity also save improvement_percent=-RMSE_change_percent.
+All 13 ONI events retained, strong7/moderate3/weak3, frozen original catalog.
+Sustained 1986--88 and 2014--16 have two separate development-year panels, but
+each counts once in group metrics. Average MSE/bias by event before grouping.
+For composite curves average development years within each event first, then
+give all events equal weight. Group curve errors are NOT used as skill scores.
+5000 paired-event bootstrap draws, fixed seed20261015+group offset, no refits.
+Primary plot range: x1--15 (Jan to next Mar), ticks1/5/9/13; y-1--3.5 degreesC.
+Black observed, blue dashed RO, orange RO+PMM, no synthetic initial anchors.
+This is an in-sample retrospective initialization comparison. Preserve older
+monthly and leave-one-event-out outputs in their existing directories.

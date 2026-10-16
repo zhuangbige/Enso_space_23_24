@@ -1,0 +1,22 @@
+2026-10-15: user correction: retain D20 forecasts and use D20 for process reconstruction.
+States: [ERSST Niño3.4, GODAS mean D20] vs [ERSST Niño3.4, GODAS mean D20, standard PMM-SST].
+No WWV26 predictor in this experiment. Retain original diagnosed local q=-u' dTbar/dx,
+Niño3.4 fixed 0--50m; 30/75m sensitivities. Surface flux proxy is a comparison process.
+Shared 1982--2024 monthly chronology and exclusion of 1996--98, 2014--16, 2022--24.
+408 training months/108 held-out months. Reuse saved D20 state operators, preprocessing,
+scales and forecast trajectories from the matched-control calculation. They do not
+depend on WWV26; verify all state columns and freshly estimated operators.
+Response preprocessing: training-only monthly mean, then optional linear trend.
+Project each response with identical segmented lag6 mean/lag1 seasonal sLIM moments,
+annual+semiannual harmonics. Response units C/standard-month throughout; not d(SST)/dt.
+Primary perturb2+detrend+50m. Exact solution, no trend, other depths are retained.
+Same-state OLS diagnostic is predeclared sensitivity, not a new dynamical forecast.
+Use observed states for conditional reconstruction. It is not an initialized forecast.
+Restore response background for plotted physical monthly-mean process anomalies.
+Report RMSE and MSE skill against zero of the processed response, separately from
+forecast RMSE skill. No sum-to-SST-derivative or full-budget closure is imposed.
+Score training, all held-out windows, each development year, and each JAS separately.
+Do not infer significance from three events or three summer months.
+Conditional difference decomposes into direct PMM term and changed SST/D20 coefficients;
+this algebra is not causal mediation. Forecast PMM-path cuts remain model-internal tests.
+No post-hoc variant selection, new WWB analysis, or physical causal attribution.

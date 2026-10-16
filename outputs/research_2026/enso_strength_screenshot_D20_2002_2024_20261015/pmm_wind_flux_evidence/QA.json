@@ -1,0 +1,38 @@
+{
+  "n_events": 8,
+  "n_development_years": 9,
+  "n_monthly_event_rows": 135,
+  "n_initializations": 45,
+  "n_complete_source_months": 516,
+  "mixed_products_explicitly_labeled": true,
+  "wind_metric_is_projection_not_scalar_speed": true,
+  "minimum_ocean_climatological_vector_speed_ms": 0.05476588958372966,
+  "native_flux_grid_gaussian_weights": true,
+  "climatology_max_errors": {
+    "u10": 8.289665250534502e-16,
+    "v10": 5.921189464667501e-16,
+    "latent_down": 1.8000415972589204e-14,
+    "sst": 1.6579330501069005e-15
+  },
+  "mean_ocean_latent_down_flux_wm2": -127.70596648708639,
+  "no_missing_regional_values": true,
+  "no_silent_event_exclusion": true,
+  "monthly_anomaly_not_enso_removed": true,
+  "original_models_forecasts_scores_unchanged": true,
+  "protected_sha256": {
+    "models_and_preprocessing.json": "27790df839c47ff61b69f06546218f3c245f65a243707d3eaa9562efa3afa24f",
+    "monthly_forecasts.csv": "832e3a978a35d043067f05e1438244a4f1ab46234188a621b57dc41b07f1825d",
+    "seasonal_forecasts.csv": "1f94590ecd772cd3b2dad70dca1acb6a7dd8658de5880cb653537396a02a7499",
+    "development_year_summary.csv": "23d76ed5754ce97bab565c53a711e9ad47f1780fe90f89329612672977480786",
+    "primary_event_summary.csv": "a17c27d2821a436da5480d4364b9814b69597c32d17f2b67832e0f4804662580",
+    "primary_group_summary.csv": "c29c44498316be1b76f4129f685d52da2d58588e4ca67750d4c38e4202bf9263"
+  },
+  "linear_trends_per_year": {
+    "sst_anomaly_c": 0.006756686266312851,
+    "wind_weakening_ms": -0.008402798197514626,
+    "along_trade_weakening_ms": -0.008402798197514626,
+    "latent_down_anomaly_wm2": 0.015359658009093516,
+    "u10_anomaly_ms": -0.005463452519754921,
+    "v10_anomaly_ms": -0.0038690836490683474
+  }
+}

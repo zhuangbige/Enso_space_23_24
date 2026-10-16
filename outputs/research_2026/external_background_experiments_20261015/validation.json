@@ -1,0 +1,41 @@
+{
+  "TNA": {
+    "box_s_n_w_e": [
+      0,
+      20,
+      300,
+      340
+    ],
+    "fixed_ocean_cells": 209,
+    "weighting_check_max_C": 0.0,
+    "source_units": "degC"
+  },
+  "TIO": {
+    "box_s_n_w_e": [
+      -20,
+      20,
+      40,
+      110
+    ],
+    "fixed_ocean_cells": 640,
+    "weighting_check_max_C": 0.0,
+    "source_units": "degC"
+  },
+  "ENP": {
+    "box_s_n_w_e": [
+      35,
+      45,
+      150,
+      240
+    ],
+    "fixed_ocean_cells": 222,
+    "weighting_check_max_C": 0.0,
+    "source_units": "degC"
+  },
+  "months": 516,
+  "years": 43,
+  "fits": 12,
+  "bootstrap_replicates": 3000,
+  "primary": "AMJ_detrended",
+  "interpretation": "retrospective conditional association; no causal intervention"
+}

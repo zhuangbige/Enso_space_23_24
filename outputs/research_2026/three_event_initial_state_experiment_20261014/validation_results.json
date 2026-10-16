@@ -1,0 +1,28 @@
+{
+  "runtime": {
+    "python": "3.12.2",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "matplotlib": "3.9.2",
+    "scikit-learn": "1.5.1"
+  },
+  "516_months_finite_and_volume_consistent": true,
+  "target_values_cannot_change_fitted_parameters": true,
+  "target_values_cannot_change_wind_closure": true,
+  "both_transition_endpoints_excluded": true,
+  "cross_validation_calendar_guards": true,
+  "forecast_matches_independent_affine_solution": true,
+  "initial_response_kernel_vs_finite_difference_error": 3.2916377956659915e-14,
+  "linear_swap_effects_are_additive_not_independent_interactions": true,
+  "no_ocean_control_invariant_to_donor": true,
+  "within_model_components_exactly_sum_to_total_swap_effect": true,
+  "temperature_anomaly_operation_order_max_difference_C": 8.548717289613705e-15,
+  "january_volume_matches_audited_stage_one": true,
+  "native_error_timing_sums_to_free_forecast_error": true,
+  "common_fit_training_months": 408,
+  "common_fit_training_pairs": 405,
+  "all_model_annual_radii_below_one": true,
+  "physical_density_velocity_balanced_initialization_verified": false,
+  "native_event_skill_is_separate_from_numerical_checks": true,
+  "six_figures_in_three_formats_and_report_links": true
+}

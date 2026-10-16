@@ -1,0 +1,25 @@
+{
+  "paper_2002_2024": {
+    "training_months": 276,
+    "initial_state_max_error": 1.7763568394002505e-15,
+    "restored_error_max_difference": 2.6201263381153694e-14,
+    "rk4_24_vs_48_max_difference": 7.143450888591474e-07,
+    "state_unit_invariance_max_difference": 3.552713678800501e-15
+  },
+  "past_2002_2014": {
+    "training_months": 156,
+    "initial_state_max_error": 2.220446049250313e-16,
+    "restored_error_max_difference": 2.5757174171303632e-14,
+    "rk4_24_vs_48_max_difference": 1.3131512464070738e-06,
+    "post_initialization_input_perturbation_max_difference": 0.0,
+    "state_unit_invariance_max_difference": 4.440892098500626e-15
+  },
+  "past_1982_2014": {
+    "training_months": 396,
+    "initial_state_max_error": 8.881784197001252e-16,
+    "restored_error_max_difference": 2.6645352591003757e-14,
+    "rk4_24_vs_48_max_difference": 4.1009862261631724e-07,
+    "post_initialization_input_perturbation_max_difference": 0.0,
+    "state_unit_invariance_max_difference": 4.440892098500626e-15
+  }
+}

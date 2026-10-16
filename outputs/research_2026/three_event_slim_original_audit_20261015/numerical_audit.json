@@ -1,0 +1,84 @@
+{
+  "primary_model_changed": false,
+  "primary_figures_changed": false,
+  "comparison_fits": 1,
+  "target_years_excluded": [],
+  "original_months": 516,
+  "saved_model_reproduction_max_error": 7.549516567451064e-15,
+  "appendix_trigonometric_product_max_error": 3.430589146091734e-14,
+  "relative_coefficient_difference_to_full_moment": 0.24218538592065503,
+  "max_absolute_OND_swap_difference_C": 0.07405015833490641,
+  "diagnostics": [
+    {
+      "estimator": "saved_perturb2",
+      "annual_spectral_radius": 0.48247478581768344,
+      "rk4_24_vs_48_max_error": 6.026862342523032e-10,
+      "one_step_sst_rmse_C": 0.2363902308177687,
+      "sst_residual_lag1_correlation": 0.09834105712937985,
+      "segments": [
+        {
+          "start": "1982-01-01",
+          "end": "2024-12-01",
+          "months": 516
+        }
+      ],
+      "original_months": 516,
+      "lag1_interpolated_count": 3089,
+      "lag6_interpolated_count": 3084,
+      "lag_cov_condition": 27.125044158477927,
+      "full_moment_condition": 75.57600364113301,
+      "first_order_norm": 7.134616422054379,
+      "second_order_norm": 3.8810055512788195,
+      "second_first_norm_ratio": 0.5439683539653141,
+      "relative_moment_residual": 0.2302116164214128
+    },
+    {
+      "estimator": "full_moment_sensitivity",
+      "annual_spectral_radius": 0.5344320759197722,
+      "rk4_24_vs_48_max_error": 7.321591666276106e-10,
+      "one_step_sst_rmse_C": 0.2341244898133813,
+      "sst_residual_lag1_correlation": 0.051605303166479384,
+      "segments": [
+        {
+          "start": "1982-01-01",
+          "end": "2024-12-01",
+          "months": 516
+        }
+      ],
+      "original_months": 516,
+      "lag1_interpolated_count": 3089,
+      "lag6_interpolated_count": 3084,
+      "lag_cov_condition": 27.125044158477927,
+      "full_moment_condition": 75.57600364113308,
+      "second_first_norm_ratio": null,
+      "relative_moment_residual": 2.204274910609974e-16
+    }
+  ],
+  "qualifications": [
+    "Full moment solve retains the code convention: one-month lag for the mean equation and one-pentad lag for seasonal equations; it is not an independently validated truth.",
+    "Numerical stability and agreement of two solvers do not establish physical closure or causal validity.",
+    "Residual correlations are descriptive in-sample quantities; no independent-white-noise hypothesis test or causal identification is claimed.",
+    "The propagated residual correction is not an atmospheric contribution or an explained-variance fraction.",
+    "The checks do not assess input-field extraction errors, alternative ocean proxies, parameter sampling uncertainty, or continuous ocean-clamping sensitivity."
+  ],
+  "sources": [
+    {
+      "doi": "10.1175/JCLI-D-20-0874.1",
+      "sections": "2a--c, 3b, Appendix A1--A7",
+      "url": "https://journals.ametsoc.org/view/journals/clim/34/12/JCLI-D-20-0874.1.xml"
+    },
+    {
+      "doi": "10.1029/2021GL097603",
+      "sections": "2.1--2.4",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021GL097603"
+    }
+  ],
+  "input_sha256": {
+    "outputs/research_2026/three_event_fullsample_replay_20261015/model_and_preprocessing.json": "62152ed9d1e2b8fc6a70cc9ba3ecf44579de9537129dd5ae127994b71477e1c6",
+    "outputs/research_2026/three_event_fullsample_replay_20261015/processed_states.csv": "7ec0b5947bc8070ad455785b88b8071c1fa80b9ec03af3c8ad42b28d494a5712",
+    "scripts/paper_ro_slim.py": "35607bb643f2d6d486c11cd5afd4806168c1db23c43e6ccba1b34b01358017b9",
+    "scripts/three_event_segmented_slim.py": "a6a0fa993be607a895ed79e4bf187a45c4c5c7cfd9f4c0a2b2fb838dca3bc201",
+    "scripts/analyze_three_event_ocean_swaps.py": "b7258e15c85ac6e44d89b66cdb084202719a79e4b07fa6ae302b62e8819cb776"
+  },
+  "input_files_unchanged": true
+}

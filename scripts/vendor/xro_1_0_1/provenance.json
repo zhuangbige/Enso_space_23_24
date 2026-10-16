@@ -1,0 +1,34 @@
+{
+  "author": "Sen Zhao",
+  "source": "https://github.com/senclimate/XRO",
+  "version": "1.0.1",
+  "source_checkout_commit": "3031b16e728c5aaf389627cb5a8d6199912919d4",
+  "local_source": "/Users/daiyue/Documents/New project_XRO/XRO",
+  "files": [
+    {
+      "file": "XRO/core.py",
+      "sha256": "247da576c32b354540237b7ae51a800bb5696df59d42acd700deee5c251fea85"
+    },
+    {
+      "file": "XRO/stats.py",
+      "sha256": "d050eb18c91018ba567e90e08a2fea8275f51973f89d646b0d7ae2f1371c6c05"
+    },
+    {
+      "file": "XRO/visual.py",
+      "sha256": "3e3afd2b9043d70ad822c7a733ded8ca9da00982c77ea1e29bef8f6b9d52f334"
+    },
+    {
+      "file": "XRO/__init__.py",
+      "sha256": "de816bb4d043a6dbd9c6b9f137a433190e32f3aa3c945893205823d2f45d1d12"
+    },
+    {
+      "file": "LICENSE",
+      "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94"
+    },
+    {
+      "file": "pyproject.toml",
+      "sha256": "db55d188c3d1fe2072b2cc86776fca6c8a1bd375bc1ae8ff8a3ce2a5e9bd144d"
+    }
+  ],
+  "changes": "No changes to copied upstream files."
+}

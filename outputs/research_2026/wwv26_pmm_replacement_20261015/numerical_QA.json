@@ -1,0 +1,16 @@
+{
+  "training_months": {
+    "heldout34": 408,
+    "fit2002_2024": 276
+  },
+  "initial_error": 1.7763568394002505e-15,
+  "rk4_error": 6.679661268549353e-10,
+  "heldout_parameter_error": 0.0,
+  "unit_error": 3.552713678800501e-15,
+  "fits": 32,
+  "monthly_forecast_rows": 7200,
+  "seasonal_forecast_rows": 5760,
+  "score_rows": 288,
+  "saved_score_check": "passed",
+  "no_future_observed_forcing": true
+}

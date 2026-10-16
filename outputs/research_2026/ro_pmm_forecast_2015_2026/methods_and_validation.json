@@ -1,0 +1,114 @@
+{
+  "sst_units": "degC",
+  "wind_units": "m s**-1",
+  "common_start": "1982-01-01",
+  "common_end": "2026-05-01",
+  "wwv_end": "2026-07-01",
+  "n_months": 533,
+  "files": [
+    {
+      "path": "data/interim/research_2026/pmm_inputs/oisst_sst_pmm_1deg_apr_1982_2026.nc",
+      "bytes": 1482288,
+      "sha256": "bc13f52bcc00857ae7fb59fec24ed4367967a13bf24a6da5e9d55d3096d6537e"
+    },
+    {
+      "path": "data/interim/research_2026/pmm_inputs/oisst_sst_pmm_1deg_aug_1982_2025.nc",
+      "bytes": 1449436,
+      "sha256": "581d8750222b185e119e616d98e35a7da1aa940f2964276d40a286bab104bc81"
+    },
+    {
+      "path": "data/interim/research_2026/pmm_inputs/oisst_sst_pmm_1deg_dec_1982_2025.nc",
+      "bytes": 1449436,
+      "sha256": "148f56fdba9409648abc8ff440edde391234f0a3d9a1a2c0ad0e7d0428dbe36d"
+    },
+    {
+      "path": "data/interim/research_2026/pmm_inputs/oisst_sst_pmm_1deg_feb_1982_2026.nc",
+      "bytes": 1482288,
+      "sha256": "2ab9ff75d5888f77fc0503bc99f39938fa3d711375a0087c72997833e6155a44"
+    },
+    {
+      "path": "data/interim/research_2026/pmm_inputs/oisst_sst_pmm_1deg_jan_1982_2026.nc",
+      "bytes": 1482288,
+      "sha256": "10c9af9422b319cd0a5933339482b2bdb65338f2bf17ab26d71f85c0c5ae7362"
+    },
+    {
+      "path": "data/interim/research_2026/pmm_inputs/oisst_sst_pmm_1deg_jul_1982_2025.nc",
+      "bytes": 1449436,
+      "sha256": "63165ad2139da428e6dc07705c0ad6b42ca462d268ab2d85bb52cc1adb7bec10"
+    },
+    {
+      "path": "data/interim/research_2026/pmm_inputs/oisst_sst_pmm_1deg_jun_1982_2025.nc",
+      "bytes": 1449436,
+      "sha256": "b2ea7458fabc37549acdb016ba663f815f29978700bad3013400b84841cf9659"
+    },
+    {
+      "path": "data/interim/research_2026/pmm_inputs/oisst_sst_pmm_1deg_mar_1982_2026.nc",
+      "bytes": 1482288,
+      "sha256": "24fe52398bf93eaaeb7b2a9b68e58e9f1ced90bc2420f56f396c3771be33cbc0"
+    },
+    {
+      "path": "data/interim/research_2026/pmm_inputs/oisst_sst_pmm_1deg_may_1982_2026.nc",
+      "bytes": 1482288,
+      "sha256": "9c6a8d27bcf2d4b088e0b0e3eb6a62e417045d1632b104c15c22c8a18195124b"
+    },
+    {
+      "path": "data/interim/research_2026/pmm_inputs/oisst_sst_pmm_1deg_nov_1982_2025.nc",
+      "bytes": 1449436,
+      "sha256": "0f92a7f40141197e1f66f1d90d33bea3497ef01e8fce14a68ba203054ed95829"
+    },
+    {
+      "path": "data/interim/research_2026/pmm_inputs/oisst_sst_pmm_1deg_oct_1982_2025.nc",
+      "bytes": 1449436,
+      "sha256": "ba5ae1b4c2f674ef9359ddfaf765f8f1884cff81ac6521f1820c540249456c9e"
+    },
+    {
+      "path": "data/interim/research_2026/pmm_inputs/oisst_sst_pmm_1deg_sep_1982_2025.nc",
+      "bytes": 1449436,
+      "sha256": "2f53c9f7295881e576878b6eb6625bce0e0fb03261f7d51ea8125b717f0d8930"
+    },
+    {
+      "path": "data/raw/era5/era5_monthly_10m_wind_pmm_1deg_1982_2025.nc",
+      "bytes": 48935697,
+      "sha256": "5f2aadcc9e422b19c78786ddd5e270bc64031396f6ed8ec65f54eb152c69e2b6"
+    },
+    {
+      "path": "data/raw/era5/era5_monthly_10m_wind_pmm_1deg_2026_jan_may.nc",
+      "bytes": 472647,
+      "sha256": "4574d081168c214d3f534dfa04c86b8ae64bf8e3a6e0d53b95b40d1b616e97d4"
+    },
+    {
+      "path": "data/raw/godas/authoritative_recharge_sections/pmel_tao_wwv.dat",
+      "bytes": 19738,
+      "sha256": "66b6de30237054decf18c846a88f265156015dd7fa8bde8f6cbb1e2468b490c6"
+    }
+  ],
+  "configuration": "v2_trainonly_joint_eof_seasonal_ridge1",
+  "ridge_alpha": 1.0,
+  "forecast_equation": "z(t+1)=z(t)+[z(t),z(t)*sin(2pi*(m-1)/12),z(t)*cos(2pi*(m-1)/12)] @ B",
+  "variables": {
+    "T": "OISST Nino3.4, 5S–5N, 170W–120W, cosine-latitude mean",
+    "H": "PMEL total WWV, above 20C isotherm, 5S–5N,120E–80W; anomalies re-computed",
+    "P": "joint EOF1 of detrended, Nino3.4-residual SST/u10/v10;20S–30N,120E–80W;project PMM-like definition"
+  },
+  "preprocessing": "Each fold: 1982 to prior December; monthly climatology, linear trend, ENSO removal, EOF, scaling all train-only",
+  "future_P": "Freely predicted as third state; no observed future PMM provided",
+  "model_scope": "Seasonally varying linear empirical RO and 3-state extension; not a reproduction of nonlinear XRO",
+  "initialization": "Monthly mean for labeled month, available only after that month; publication latency and vintage revisions not simulated",
+  "sensitivity": "Fixed 15N–25N,150W–120W box SST NPMM proxy; not official MCA",
+  "historical_skill": "300 monthly initializations, 2000–2024, target observations through 2025; no model tuning on 2015/2026",
+  "uncertainty": "Paired circular moving-block bootstrap, 3 initialization years, 4000 samples; descriptive, no multiplicity correction",
+  "checks": {
+    "2026_refit_vs_archived_joint_index_max_absolute_error": 1.9074626100845649e-07,
+    "future_perturbation_jan2015_forecast_max_difference": 0.0,
+    "zero_added_coupling_integrator_difference": 0.0,
+    "all_models_mean_H_to_T_positive": true,
+    "all_models_mean_T_to_H_negative": true,
+    "max_annual_spectral_radius": 0.5968491563309418
+  },
+  "runtime_seconds": 7.616051912307739,
+  "sources": [
+    "https://www.nature.com/articles/s41586-024-07534-6",
+    "https://zenodo.org/records/10681114",
+    "https://www.nature.com/articles/s41612-025-01013-z"
+  ]
+}

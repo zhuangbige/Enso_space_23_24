@@ -1,0 +1,63 @@
+{
+  "primary": "volume_temperature",
+  "states": {
+    "sst_only": [
+      "nino34",
+      "pattern"
+    ],
+    "total_volume": [
+      "nino34",
+      "pattern",
+      "basin_wwv"
+    ],
+    "three_volumes": [
+      "nino34",
+      "pattern",
+      "west_wwv",
+      "central_wwv",
+      "east_wwv"
+    ],
+    "volume_temperature": [
+      "nino34",
+      "pattern",
+      "west_wwv",
+      "central_wwv",
+      "east_wwv",
+      "west_t50_150",
+      "central_t50_150",
+      "east_t50_150"
+    ],
+    "with_deep_west": [
+      "nino34",
+      "pattern",
+      "west_wwv",
+      "central_wwv",
+      "east_wwv",
+      "west_t50_150",
+      "central_t50_150",
+      "east_t50_150",
+      "west_t150_300"
+    ]
+  },
+  "primary_chosen_from_previous_diagnostics_not_target_fit": true,
+  "model": "Monthly affine linear transition; constant plus annual sin/cos, ridge on tendency coefficients",
+  "exclusions": [
+    1996,
+    1997,
+    1998,
+    2014,
+    2015,
+    2016,
+    2022,
+    2023,
+    2024
+  ],
+  "selection": "Five contiguous time blocks with one-year guards; Jan-start Feb-Dec normalized errors for Nino3.4 and Nino3-Nino4; minimum average fold MSE",
+  "primary_background": "Training-only monthly means; training-only monthly trend is a sensitivity",
+  "display_background": "1982-2022 monthly mean, as in stage one, used only in presentation",
+  "initialization": "Actual January SST entries from row and ocean entries from column; no future observations",
+  "detrended_swap": "Absolute donor ocean values transplanted into recipient year, then standardized against recipient trend background",
+  "wind": "Same monthly SST diagnostic closure in every combination; not an independent prognostic wind state",
+  "linear_limitation": "Ocean swap differences must be additive and independent of row SST in the direct linear experiment. No state-dependent feedback interaction can be inferred.",
+  "interpretation_gate": "Inspect all native combinations and held-out baseline skill before interpreting any swap; failure remains a result, not a reason for event-specific refitting."
+}

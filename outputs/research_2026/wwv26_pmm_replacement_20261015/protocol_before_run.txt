@@ -1,0 +1,29 @@
+2026-10-15: user-requested D20 -> total WWV26 replacement. Written before new fits.
+RO-WWV26=[ERSST Niño3.4, total WWV26]; RO-WWV26+PMM adds standard PMM-SST.
+Retain [ERSST Niño3.4, GODAS D20] +/- PMM as matched controls, not the main ocean state.
+Total WWV26=sum of west/central/east original density-layer volumes; unit 1e14 m3;
+instantaneous sigma_theta=26 interface, 9S--9N, 120E--80W. Do not sum total and
+three boxes as independent predictors. No new spatial-WWV model this round.
+Retain ERSST, the original PMM forecast SST source, rather than change to OISST.
+Official PMM-SST is only centered on training samples; no second ENSO removal.
+Data common span 1982--2024, 516 months. Primary: all nine target/adjacent years
+1996--98, 2014--16, 2022--24 excluded from all fitted means/trends/scales/operators.
+408 training months, disjoint segments; never interpolate or lag across gaps.
+Secondary: common 2002--2024 training period, retrospective (1997 backward;
+2015/2023 in sample). Both use training-only monthly means, optional linear trend.
+This secondary is a new matched control, not an exact replication of the old
+1991--2020 climatology/trend-through-April-2025 setup. Do not splice its scores.
+Primary preprocessing detrended; no-trend retained. Estimator perturb2 primary,
+exact moment solution sensitivity. Annual+semiannual harmonics, 72 steps/year,
+existing sLIM mean lag6/seasonal lag1. No tuning, regularization or event scaling.
+Display: source-specific 1982--2022 monthly climatology, does not enter fitting.
+Five starts February--June per event; 9 months deterministic free integration.
+Centered seasonal forecasts center leads 1--8; score common center leads 1--5,
+25 overlapping pairs and 9 unique target centers. Month leads1--9 scored separately.
+Full model vs outgoing PMM->SST/ocean coefficient cut; all other coefficients and
+initial states fixed. Report separately from refitted no-PMM model comparison.
+QA: state identity/units, held-out preprocessing and parameter exclusion, RK4,
+unit scaling, cut behavior, initial states, saved score reconstruction.
+No new advection fit or PMM causal attribution. Existing process figures unchanged.
+All results retained even if previous three-event skill signs fail to reproduce.
+Not real-time validation: future non-event data and published fixed PMM pattern used.

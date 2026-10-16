@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "rows": 3096,
+  "case_rows": 216,
+  "inputs_unchanged": true,
+  "same_common_ocean_mask": true,
+  "coverage": {
+    "30": 1.0,
+    "50": 0.9988553760732454,
+    "75": 0.9972356727437918
+  },
+  "analytic_tests": [
+    "constant gradients",
+    "linear spherical gradients",
+    "northward-flow sign"
+  ],
+  "independent_centered_gradient_max_C_m": {
+    "x": 1.739805673660333e-18,
+    "y": 1.1519648082658485e-19
+  },
+  "gridpoint_three_term_identity_max_C_month": {
+    "x": 2.2382096176443156e-13,
+    "y": 2.2870594307278225e-14
+  },
+  "previous_all_43_year_process_max_C_month": {
+    "x_temperature": 1.3877787807814457e-16,
+    "x_velocity": 1.942890293094024e-16,
+    "y_temperature": 1.6653345369377348e-16,
+    "y_velocity": 1.3877787807814457e-16,
+    "nonlinear_hadv_new": 3.885780586188048e-16,
+    "horizontal_total_new": 2.220446049250313e-16
+  },
+  "regional_sum_max_C_month": 2.220446049250313e-16,
+  "map_integral_max_error": 6.661338147750939e-16,
+  "settings": "30/50/75 m x mean/detrend; not independent samples",
+  "interpretation": "Kinematic temperature-advection decomposition, not a v-momentum or causal attribution"
+}

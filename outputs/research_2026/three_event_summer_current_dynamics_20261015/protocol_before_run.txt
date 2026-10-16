@@ -1,0 +1,68 @@
+Frozen before inspecting the new decompositions, 2026-10-15.
+Question: Can the 2023 summer transport and local current-advection contrasts
+against 1997 and 2015 be explained by velocity, active thickness, wind input,
+and a reconstructed hydrostatic pressure gradient?
+
+Only three development years. Monthly Jan-Dec plots; AMJ/JAS means. No model
+fitting, external-basin selection, new dynamical integrations, or event expansion.
+Primary background: all 1982-2024 calendar months, including target years.
+Sensitivity: remove a single full-record linear trend from each monthly-anomaly
+diagnostic, not reselect years or recompute a target-specific thermal gradient.
+Main local layer: Nino3.4 (5S-5N, 170W-120W), 0-50m; 30/75m also reported.
+Section: 140W, 9S-9N, surface to instantaneous sigma0=26, unchanged geometry.
+
+Section differences use exact symmetric split:
+Delta(u*h)=Delta(u)*(h_2023+h_control)/2
+           +Delta(h)*(u_2023+u_control)/2,
+with h the partial thickness of every native vertical cell. Report 0-50,
+50-150, >150m and whole warm layer. Apply before section integration. At cells
+newly active in either event both velocities must exist; no missing velocity
+is filled. Raw event contrasts are also contrasts of a common monthly anomaly.
+For trend sensitivity remove the full-record trend from each decomposed term
+after constructing each year relative to the SAME 12-month reference u/h;
+the reference decomposition is exact and trends sum to the trend of transport.
+The symmetric pair split remains primary; reference split is a separate audit.
+
+Local advection: exact four linear horizontal terms plus nonlinear remainder;
+primary focus -u' dTbar/dx. Weighted covariance identity splits its regional
+mean into mean-u times mean-gradient, horizontal covariance of column means,
+and the within-column vertical covariance. Same fixed wet mask and volume.
+Temperature gradient and velocity are multiplied at cells before averaging.
+
+Zonal acceleration, reconstructed on a fixed-depth regular grid:
+du/dt = wind_surface + pressure_ssh + pressure_density + f*v
+        -u*du/dx -v*du/dy +u*v*tan(phi)/R + unresolved.
+Wind layer input is downward taux/(rho0*H); unknown layer-bottom stress remains
+unresolved. SSH includes atmospheric pressure loading; do not add it again.
+Density is TEOS-10 in-situ rho(SA,CT,p), not sigma0. Pressure uses effective SSH
+plus the hydrostatic integral of rho-rho0 from the surface to each cell center.
+Use piecewise-constant layer density in that integral, centered spherical
+horizontal gradients, B-grid-to-tracer interpolation, and partial-layer weights.
+rho0=1025 kg/m3; R=6371000m; g=9.81m/s2; Omega=7.292115e-5 s-1.
+No 1/f or equatorial geostrophic/Ekman estimate. This is not native MOM tendency
+output: z* coordinate motion, remapping and model EOS/discretization differences
+remain in unresolved together with vertical transport, viscosity, assimilation
+and submonthly covariance. The stored wt is not treated as physical fixed-z w.
+
+Time points are the 15th. Derivatives use actual elapsed seconds; rates may be
+displayed per standard month (365.25/12 days). Compute anomalies AFTER raw
+momentum products. For each background, tendency is the actual-time derivative
+of its displayed current anomaly; this keeps derivative/trend coordinates
+consistent. Absolute current and its derivative are also saved separately.
+The unresolved term is the diagnosed tendency minus resolved
+terms; its exact sum is bookkeeping only. Trapezoidal time integrals retain a
+SEPARATE numerical endpoint mismatch; do not hide this error in physical terms.
+Compare intervals Jan15-Jul15, Apr15-Jul15, Jul15-Oct15, Jan15-Dec15; keep interval
+labels distinct from AMJ/JAS arithmetic seasonal means. Initial current
+differences are separate from contributions accumulated after the interval start.
+
+Report both controls and all layers/backgrounds regardless of sign. Three
+events and sensitivity settings are not independent inferential samples.
+No causal fraction is inferred from force ratios when cancellation/residuals
+are substantial. A large residual is a valid negative result, not an invitation
+to add new hypotheses. Stop after the declared analysis and two mechanism figures.
+
+Inputs stay unchanged. New surface fields and extracted salt/section caches,
+tables, source hashes, QA and report are stored only in this result directory.
+Sources: https://www2.atmos.umd.edu/~carton/soda/soda3_readme.htm
+https://mom-ocean.github.io/assets/pdfs/MOM5_manual.pdf (momentum diagnostics)

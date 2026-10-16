@@ -1,0 +1,94 @@
+{
+  "source": "/private/tmp/maryland-2026-work/outputs/research_2026/IRI_RO_PMM_Maryland_bridge_20261014/common_seasonal_forecasts.csv",
+  "source_sha256": "453fdef96355ca6af9ff9dd343457dd644519c49369a8e9c3d224be61e643dd8",
+  "old_metric_max_abs_errors": {
+    "n": 0.0,
+    "r": 2.220446049250313e-16,
+    "RMSE": 1.1102230246251565e-16,
+    "bias": 1.1102230246251565e-16
+  },
+  "verified_pairs": {
+    "2015": 25,
+    "2023": 25,
+    "2026": 19
+  },
+  "n_by_lead": [
+    {
+      "year": 2015,
+      "lead_center": 1,
+      "n": 5
+    },
+    {
+      "year": 2015,
+      "lead_center": 2,
+      "n": 5
+    },
+    {
+      "year": 2015,
+      "lead_center": 3,
+      "n": 5
+    },
+    {
+      "year": 2015,
+      "lead_center": 4,
+      "n": 5
+    },
+    {
+      "year": 2015,
+      "lead_center": 5,
+      "n": 5
+    },
+    {
+      "year": 2023,
+      "lead_center": 1,
+      "n": 5
+    },
+    {
+      "year": 2023,
+      "lead_center": 2,
+      "n": 5
+    },
+    {
+      "year": 2023,
+      "lead_center": 3,
+      "n": 5
+    },
+    {
+      "year": 2023,
+      "lead_center": 4,
+      "n": 5
+    },
+    {
+      "year": 2023,
+      "lead_center": 5,
+      "n": 5
+    },
+    {
+      "year": 2026,
+      "lead_center": 1,
+      "n": 5
+    },
+    {
+      "year": 2026,
+      "lead_center": 2,
+      "n": 5
+    },
+    {
+      "year": 2026,
+      "lead_center": 3,
+      "n": 4
+    },
+    {
+      "year": 2026,
+      "lead_center": 4,
+      "n": 3
+    },
+    {
+      "year": 2026,
+      "lead_center": 5,
+      "n": 2
+    }
+  ],
+  "numerical_identity": "RMSE\u00b2 = bias\u00b2 + centered_RMSE\u00b2",
+  "all_methods_share_mask": true
+}

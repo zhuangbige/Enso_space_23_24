@@ -1,0 +1,12 @@
+{
+  "status": "PASS: implementation and saved-output consistency only",
+  "models": 24,
+  "case_scores": 72,
+  "score_and_background_error": 1.7763568394002505e-15,
+  "january_initial_error": 0.0,
+  "saved_forecast_reproduction_error": 1.7763568394002505e-15,
+  "radius_error": 5.551115123125783e-17,
+  "parameter_weight_draws": 200,
+  "figures": 5,
+  "interpretation": "Native event mismatch remains; no causal sufficiency claim."
+}

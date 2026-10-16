@@ -1,0 +1,37 @@
+2026-10-15: fixed-sLIM failure follow-up; scope frozen before the new replay.
+Compare 1996--1997, 2014--2015, 2022--2023. Present all months and common
+JFM/AMJ/JAS/OND windows, plus the previously reported top-three error months.
+All targeted-month comparisons are exploratory; no p-values from selected peaks.
+Reuse existing OISST/ERA5/SODA3 diagnostics and fixed sLIM coefficients.
+Do not tune parameters or state sets on these event outcomes.
+
+Diagnostic replay: monthly Phi matrices from the same four-state sLIM. Initialize
+at observed January. Before each transition either replace all three ocean
+coordinates with that month's observations and advance SST, or replace SST with
+its observation and advance ocean. No target-month observation enters its one-step
+prediction. These trajectories use development-year observations repeatedly;
+they are NOT independent forecasts, interventions or causal attribution.
+Retain detrend/mean and perturbative/exact estimator sensitivities.
+
+Use instantaneous model one-step residual separately from the previously saved
+residual propagated to OND. Wind is a contemporaneous SST/pattern-conditioned
+statistical residual, not the same residual and not an identified forcing.
+Show absolute stress, stress anomaly, and trend/no-trend wind reference together.
+No identification of daily westerly bursts from monthly averages.
+
+Use source 1982--2022 calendar-month anomalies for ocean/airsea diagnostics.
+Volume is WWV26 (surface to instantaneous sigma-theta=26), +/-9 degrees; transport
+Sv, volume m3. Adjacent-midmonth interval budget uses trapezoidal integration and
+actual elapsed seconds. Positive net input = west-east + south-north.
+Warm temperature anomalies in 0--50/50--150/150--300m are structure diagnostics,
+not interchangeable with warm-water volume. SST/wind Hovmollers are +/-5 degrees.
+Two heat terms at 180 and 140W are mean flow*T' and flow'*mean T, PW, positive
+eastward; both instantaneous and climatological sections retained. An interval
+with <95% effective area coverage is flagged, not filled. These are not the full
+heat transport anomaly or a mixed-layer SST tendency. Unresolved volume budget
+cannot be labeled heat loss, mixing or a named physical process.
+
+Deliver all-month evidence, common-window summaries, observed-state replays,
+scientific figures, Chinese report, reproducibility notes and numerical checks.
+Only add convection analysis if these diagnostics identify a specific unmet need;
+do not silently extend the state model or claim a complete mechanism.

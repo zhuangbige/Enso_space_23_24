@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "pdf_pages": 7,
+  "files_sha256": {
+    "index.html": "10529911621512c752a4c46261340710222e626bf388f874d337acd59bbdd4a0",
+    "three_event_figure_book.pdf": "40c01d99ac54e4afc892b0f935f276b96cc131dd53e149773a24a85ce0f04c18",
+    "figure_data.zip": "5b6b957e4dce4debcd35187303ca5d5a98faf61e712a362ba128216d497baa6d",
+    "figure_manifest.json": "e557c435b1fca9c6c3c317ba4e535b209d692c83bf1dbdff3f96090cf0e46544",
+    "figure_captions.txt": "315d11d0bbed2a3b2e6156c2b9a95f4105e072a7aff150103745afb34a0cc451",
+    "input_manifest.json": "4c495d31f41d311670eca062a8f8864ae253b0ddf153b654b490a1a00b757e65",
+    "M1_air_sea_evolution.png": "774964c1d102682a12f431be7e488a68c32b84b2ef4d40827b390454a825a93d",
+    "M1_air_sea_evolution.pdf": "c60dd78f45b3e40c200af7fea0efc1dae74480ca05e3aa8bdf79091e771f74b6",
+    "M1_air_sea_evolution.svg": "64b856e3ade52c49eaaaa038f08f7d5320b905d5380e50681e26cfeb8496ed53",
+    "M2_JFM_configuration.png": "35591fbd190c8914d38e364d06464844ff9144309c3a69c4fc71ca84d2603eaf",
+    "M2_JFM_configuration.pdf": "58eb4440315828fd4c746792699378cd83ebe35cab4b0a679fdd6d97a61a77fe",
+    "M2_JFM_configuration.svg": "5e00b30e6023f1931cddb7ac96d37a18bd64918fa7332f244a2aa53a7fbab854",
+    "M3_transport_persistence.png": "c1f89790f64cc624e5d142c2f2e7e17a0fcb50afc9e3d09e79bd6a759c4ae9a4",
+    "M3_transport_persistence.pdf": "6ed5599659a68616b5755d85ad01791cd259439da8adb800b3f68518cb36938b",
+    "M3_transport_persistence.svg": "efd5adc5214cc84b25eeef21211ea0bba5359dc3329824521261803514ec6269",
+    "S1_wind_reference.png": "ec3c8f9dc4afa2439fab5b75f3e869b14464a973861ab802a84fc1e0bf2183c4",
+    "S1_wind_reference.pdf": "c0a03194532fc6b22555e494e13762cdefc29118132dd57f145b7be5933f60c0",
+    "S1_wind_reference.svg": "b7b70373efb0e12f296eb79db2bb8d0dfee50a03c6c959a64f061be480620fb9",
+    "S2_local_process_limits.png": "8a789d218bf72d5d2a1c15fd87890f1d36f035e7c53c5a80d2aa9788fd258a40",
+    "S2_local_process_limits.pdf": "49b83df558bc3a84bc015741dd5b81e06bbc85b4acab4d1ee1d2e0b7bc623464",
+    "S2_local_process_limits.svg": "caf9eb1f04bb46f34274a66ae77590f949add1aa7dfccd469a4a9969bdf4268c",
+    "M4_transport_current_advection.png": "2a427cedd368dc4ed80baacfd56d34a5ee7c1ecdc66cf6c5a42ff2e3c9df7bd3",
+    "M4_transport_current_advection.pdf": "73b6119a9bd2676258b0b307f2bdde49aacffc082e20d548473d8df42f2bc20f",
+    "M4_transport_current_advection.svg": "59b7152a17d1382085078ea4d906a8881b6ed9f4845f4f9f388ed2861b875a76",
+    "M5_wind_current_momentum.png": "33ad967057e5ed796fa733d6b23e7cdc507b80ec9029f8fc18e5331bb4346ca6",
+    "M5_wind_current_momentum.pdf": "9e0522fa8e8aa5fdccd95c3d4ae6ea75afb16b5105a2fe6b5be6f20890fffcf2",
+    "M5_wind_current_momentum.svg": "4625acd6e989831d517e2108605fbbb868cfe9c4946ec59a838b245380442b7c"
+  },
+  "updated_scripts_sha256": {
+    "build_three_event_scientific_figures.py": "0dfc920ac94ba7dd309682d6db622d99f28f67587beb20b7a6a4c33d5a1f2e27",
+    "update_three_event_mechanism_figures.py": "85d2449d609fba38ddcc874c4eb7388caf3a3a8997845c315aad76883c8051e6",
+    "package_three_event_figure_gallery.py": "58e71b18552acd9b3147d9349aeb9910a0c0baf69550fb592d03cdd7eed31837",
+    "paper_figure_blocks.py": "b53cd7162f085491a79e7f2554786429584e06e8074518a744ded89d88aa8830",
+    "analyze_three_event_directional_advection.py": "3329b848e8100ce8ec22db4a9bfdab5105d86a27ef3bb888671ecb9262977444",
+    "report_three_event_directional_advection.py": "47726948fb0003c089e3d81f87fc37d59e6743d8691201574a2e54f341ff9c7f"
+  }
+}

@@ -1,0 +1,35 @@
+Frozen protocol: 2026-10-15, approved before all-event results.
+Inputs: ERSSTv5 monthly absolute Nino3.4 SST; SODA3 total WWV26 (1e14 m3,
+9S--9N, 120E--80W, volume above instantaneous sigma_theta=26); official PMM-SST.
+Common span: 1982-01 through 2024-12. WWV26 is not D20 or a heat budget.
+RO=[SST,WWV26]; RO_PMM=[SST,WWV26,PMM]. No other model or tuning.
+ONI vintage: local oni_as_of_2026-07-30.txt, rounded to published tenths using
+decimal ROUND_HALF_UP. Runs >=5 overlapping seasons at ONI>=0.5 define events;
+peak <1.0 weak, <1.5 moderate, otherwise strong (including very strong).
+Event seasons are mapped to center months (DJF -> January of the listed year).
+Exclusion: first season's first month through last season's last month, plus
+12 months on EACH side, inclusive, clipped to input coverage. All climatology,
+trend, scale and operator fitting excludes this interval. Disjoint segments
+are never joined for interpolation, differentiation or lagged covariance.
+Training includes all remaining ENSO phases, with no strength-specific fit.
+SST/WWV: training monthly means then one training linear trend; PMM: training
+mean only, no second detrending/ENSO removal. Existing sLIM perturb2, order=2,
+72 steps/year interpolation, mean lag6/seasonal lag1; RK4 24 steps/month.
+Development years: onset calendar year through the July--June year containing
+the peak season center (first maximum if tied; never before the onset year).
+Thus 1986/1987 and 2014/2015
+both contribute starts, each pair of years remains ONE statistical event.
+Five complete-month initial states Feb--Jun each development year; nine-month
+deterministic free forecasts, no future observed SST, WWV or PMM forcing.
+Display: fixed ERSST 1982--2022 monthly climatology; restore fitted background.
+Main scores: monthly leads1--9 (lead0 excluded). Supplemental: centered 3-month
+means at center leads1--5, including lead0 at the first seasonal center.
+Compute each event's MSE and bias first, then equal-weight events and sqrt(MSE).
+Skill percent = 100*(1-RMSE_RO_PMM/RMSE_RO); positive means improvement.
+Paired event bootstrap: 5000 draws, seed20261015 (+ fixed group offsets), 95%
+pointwise percentile intervals; no refitting during bootstrap. Not predictive
+intervals, not independent monthly samples; n=3 groups are descriptive.
+Current-vintage retrospective parameter-heldout assessment: future NON-target
+training data and the published fixed PMM spatial pattern remain available.
+Not a real-time forecast reconstruction or proof of PMM causality. Report both
+positive and negative skills. No process attribution, no added model variants.

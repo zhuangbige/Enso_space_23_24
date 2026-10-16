@@ -1,0 +1,58 @@
+Three-event initial-state experiment, 2026-10-14
+
+Sources: audited stage-one OISST, ERA5 and SODA3.15.2 indices/profiles.
+Primary state: Nino3.4, Nino3-Nino4, west/central/east WWV26 (1e14 m3),
+and west/central/east 50-150 m profile-mean potential temperatures (degC).
+Ocean boxes: 9S-9N, 120E-180, 180-140W, 140W-80W.
+WWV26 is volume from the surface to instantaneous sigma-theta=26, following
+the definition in Chen et al. (2015), doi:10.1175/JCLI-D-14-00134.1.
+This is NOT a reproduction of a published estimator or a closed heat budget.
+
+Fitting: affine monthly linear tendency regression with an annual sine/cosine
+operator, ridge-regularized tendency coefficients and effectively unpenalized
+harmonic intercepts. Standardization and calendar-month means/trends are learned
+within each training set. No temporal interpolation, no gap stitching.
+Saved matrices use row-vector convention: z_next = z @ A_month + b_month.
+1982-2024 except 1996-1998, 2014-2016, 2022-2024: 408 months and 405 pairs.
+Five contiguous calendar blocks with +/-1-year guards select ridge strength from
+the predefined grid using Jan-start Feb-Dec normalized SST errors. Internal CV
+scores are tuning scores, not nested estimates or significance tests. Target
+events are untouched by tuning, but later non-target years are used, so this is
+retrospective analysis, not a past-only operational forecast.
+
+All row/column combinations share coefficients, scaling and background treatment.
+Only the initial ocean entries are exchanged. The detrended sensitivity exchanges
+absolute donor values into the recipient-year trend background. Future observed
+states/winds/noise are NOT supplied to free forecasts or swaps. Wind is diagnosed
+with one training-only monthly SST relationship, not independently prognosed.
+
+300 paired two-year-block parameter resamples reestimate preprocessing and model
+coefficients at fixed ridge/state choice. Intervals exclude innovation, data-source
+and model-form uncertainty. Unstable draws are retained and counted.
+January statistical support uses leave-one-year-out Ledoit-Wolf distances and a
+descriptive 95th-percentile cutoff. Positive volumes are checked; complete balanced
+3D temperature/salinity/velocity initializations are NOT constructed. The
+conditioned-swap sensitivity exchanges ocean deviations from a regularized January
+ocean-given-SST relationship and therefore changes the intervention definition.
+
+Linear direct-swap effects must be additive across SST rows. An exact response
+kernel decomposes volume change into a fixed-climatological-fraction total-volume
+component and zero-sum redistribution, plus temperature changes. This is a
+coordinate-dependent algebraic split, NOT independent physical pathway attribution.
+Native one-step residuals are separately propagated to locate free forecast errors;
+this is a retrospective identity, NOT a new forecast or identified forcing.
+
+Interpretation: native runs underestimate event growth, especially 2015. The
+1997-for-2023 ocean substitution is not a robust warming effect across state and
+background choices. Numerical checks and periodic stability do not establish
+physical adequacy. No claim that ocean initial states are unimportant follows.
+
+Reproduce from project root using /opt/anaconda3/bin/python:
+MPLCONFIGDIR=/private/tmp/maryland_three_events_mpl OPENBLAS_NUM_THREADS=1 \
+  /opt/anaconda3/bin/python scripts/experiment_three_event_initial_states.py --bootstrap 300
+MPLCONFIGDIR=/private/tmp/maryland_three_events_mpl OPENBLAS_NUM_THREADS=1 \
+  /opt/anaconda3/bin/python scripts/plot_report_three_event_initial_states.py
+OPENBLAS_NUM_THREADS=1 /opt/anaconda3/bin/python scripts/validate_three_event_initial_states.py
+
+Use --reuse-models only to regenerate diagnostics from saved fits. Stage-one data,
+the historical RO/D20 forecasts and earlier results are not overwritten.

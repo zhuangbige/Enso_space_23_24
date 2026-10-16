@@ -1,0 +1,17 @@
+{
+  "analysis_date": "2026-10-14",
+  "data_end": "2026-05",
+  "training_period": "1982-2025",
+  "method": "Original local joint EOF and SST-only EOF; monthly climatology removed, one linear trend fitted across all training months, concurrent linear Niño-3.4 signal removed; sqrt(cos(lat)) area weighting; each variable scaled by its global training standard deviation.",
+  "joint_index_reconstruction_max_abs_error": 1.1759812768019628e-07,
+  "projection_components": "Exact linear contributions to the existing EOF score, not causal percentages.",
+  "spatial_statistics": "Descriptive area-weighted centered SST pattern correlations; no gridpoint independence or significance claimed.",
+  "lin_box": "15-25N, 150-120W. Uses OISST here, versus ERSSTv5 in Lin et al.; not an exact paper replication.",
+  "official_pmm": "Official PMM uses SST-wind maximum covariance analysis. Local joint EOF and independent SST-only EOF are different definitions.",
+  "sources": [
+    "https://www.nature.com/articles/s41612-025-01013-z",
+    "https://psl.noaa.gov/data/timeseries/month/PMM/"
+  ],
+  "legacy_report": "/Users/daiyue/Documents/Maryland/outputs/research_2026/reports/enso_event_comparison_unified_1980_2014_en_final_event_groups.docx",
+  "legacy_script": "/Users/daiyue/Documents/Maryland/scripts/plot_pmm_index_eof.py"
+}

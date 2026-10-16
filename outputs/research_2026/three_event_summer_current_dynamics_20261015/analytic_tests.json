@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "tests": [
+    "symmetric transport split",
+    "constant field gradients",
+    "linear SSH force sign",
+    "analytic meridional shear",
+    "weighted mean/horizontal/vertical covariance",
+    "analytic hydrostatic density-gradient force"
+  ]
+}

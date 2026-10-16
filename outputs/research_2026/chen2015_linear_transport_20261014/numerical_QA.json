@@ -1,0 +1,126 @@
+{
+  "depth_coordinate_roundoff_max": 4.376943252282217e-12,
+  "lon_coordinate_roundoff_max": 5.684341886080802e-14,
+  "source_ranges": {
+    "temp": [
+      8.97549057006836,
+      30.662609100341797
+    ],
+    "salt": [
+      29.569995880126953,
+      35.280372619628906
+    ],
+    "v": [
+      -0.825019896030426,
+      0.9570951461791992
+    ]
+  },
+  "files": [
+    {
+      "name": "soda3_5n_geostrophic_sections_1980_2022.nc",
+      "bytes": 7692672,
+      "sha256": "ca4f01b631fca592d18a23a6b29fc31f77971b9c1a99f493398bb8128af164dd"
+    },
+    {
+      "name": "soda3_5n_geostrophic_section_2024_jan_may.nc",
+      "bytes": 161437,
+      "sha256": "ea7b99389e8cd31e815e6902043584b9157f42dd6b4af73a87c53392f2f86b39"
+    }
+  ],
+  "climatology_identity_check_TEOS10_interfaces": {
+    "climatological": {
+      "profiles": 720,
+      "unresolved": 0,
+      "multiple_crossings": 0,
+      "d26_min_m": 94.55636781827346,
+      "d26_max_m": 180.0462654533063
+    },
+    "instantaneous": {
+      "profiles": 720,
+      "unresolved": 0,
+      "multiple_crossings": 0,
+      "d26_min_m": 94.55636781827346,
+      "d26_max_m": 180.0462654533063
+    }
+  },
+  "climatology_identity_check_TEOS10_climatological_sigma26_sum_error_pw": 0.0,
+  "climatology_identity_check_TEOS10_instantaneous_sigma26_sum_error_pw": 0.0,
+  "climatology_identity_max_pw": 0.0,
+  "1980-2022_TEOS10_interfaces": {
+    "climatological": {
+      "profiles": 31560,
+      "unresolved": 0,
+      "multiple_crossings": 0,
+      "d26_min_m": 94.55636781827346,
+      "d26_max_m": 180.0462654533063
+    },
+    "instantaneous": {
+      "profiles": 31560,
+      "unresolved": 0,
+      "multiple_crossings": 0,
+      "d26_min_m": 34.79027817457127,
+      "d26_max_m": 224.09594745969486
+    }
+  },
+  "1980-2022_TEOS10_climatological_sigma26_sum_error_pw": 8.881784197001252e-16,
+  "1980-2022_TEOS10_instantaneous_sigma26_sum_error_pw": 6.661338147750939e-16,
+  "1980-2022_EOS80_interfaces": {
+    "climatological": {
+      "profiles": 31560,
+      "unresolved": 0,
+      "multiple_crossings": 0,
+      "d26_min_m": 94.93507830234857,
+      "d26_max_m": 180.21906445440274
+    },
+    "instantaneous": {
+      "profiles": 31560,
+      "unresolved": 0,
+      "multiple_crossings": 0,
+      "d26_min_m": 34.82252450333735,
+      "d26_max_m": 225.00087728009908
+    }
+  },
+  "1980-2022_EOS80_climatological_sigma26_sum_error_pw": 8.881784197001252e-16,
+  "1980-2022_EOS80_instantaneous_sigma26_sum_error_pw": 6.661338147750939e-16,
+  "1980-2014_TEOS10_interfaces": {
+    "climatological": {
+      "profiles": 31560,
+      "unresolved": 0,
+      "multiple_crossings": 0,
+      "d26_min_m": 95.27542334750267,
+      "d26_max_m": 178.7992583158964
+    },
+    "instantaneous": {
+      "profiles": 31560,
+      "unresolved": 0,
+      "multiple_crossings": 0,
+      "d26_min_m": 34.79027817457127,
+      "d26_max_m": 224.09594745969486
+    }
+  },
+  "1980-2014_TEOS10_climatological_sigma26_sum_error_pw": 8.881784197001252e-16,
+  "1980-2014_TEOS10_instantaneous_sigma26_sum_error_pw": 4.440892098500626e-16,
+  "climatology_mean_max_pw": 2.3237226096805603e-17,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "gsw": "3.6.23"
+  },
+  "output_verification": {
+    "monthly_rows_main": 526,
+    "main_event_rows": 2,
+    "missing_numeric_values": 0,
+    "main_calendar_duration_days": 152,
+    "legacy_midpoint_duration_days": 121,
+    "retained_terms": [
+      "vbar_Tprime",
+      "vprime_Tbar"
+    ],
+    "units": [
+      "PW",
+      "ZJ"
+    ],
+    "nonlinear_term_assumed_omitted_not_evaluated": true,
+    "state_wwv_recomputed": false
+  }
+}

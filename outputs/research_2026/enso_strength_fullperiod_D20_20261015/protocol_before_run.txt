@@ -1,0 +1,32 @@
+User correction, 2026-10-15: continuous full-period manuscript-style fitting.
+Fit interval: 1982-01 through 2024-12, 516 consecutive months, all ENSO phases.
+Exactly ONE RO and ONE RO+PMM operator are used for all events and start months.
+No event exclusions, moving training windows, or strength-specific operators.
+RO=[ERSSTv5 Nino3.4, GODAS mean D20]; RO_PMM additionally uses official PMM-SST.
+D20: 20-degree-C isotherm depth, area-weighted 5S--5N,120E--80W mean, meters.
+The historical raw_indices.csv column WWV contains this mean D20, not WWV26.
+Reuse original manuscript preprocessing and paper_ro_slim.py: 1991--2020
+monthly climatology; one linear trend over 1982--2024; PMM full-fit mean only;
+standard deviation ddof=0; annual/semiannual harmonics; perturb2; linear 6x
+monthly interpolation, mean lag6/seasonal lag1; RK4 24 steps/month. No tuning.
+Original local 2002--2024 replication (trend to Apr2025) is checked separately
+against its saved coefficients. The new main analysis ends its trend at Dec2024
+to keep the entire fitting protocol inside the requested common interval.
+Classification: frozen local traditional ONI vintage 2026-07-30, decimal
+round-half-up to tenths, >=5 seasons >=0.5; strong >=1.5, moderate >=1, weak >=.5.
+13 events: 7 strong,3 moderate,3 weak. Sustained 1986--88 and 2014--16 each
+include two development years but count once in event-weighted statistics.
+75 starts: Feb--Jun in 15 development years. Each model takes its observed
+initial state and integrates freely for nine months with fixed fitted dynamics.
+PMM enters as an initial third state; it is not supplied as future observations.
+Adding PMM entails a separately estimated 3-state operator, not a coefficient
+switch during a pre-existing trajectory. No event-specific retraining.
+Restore the fitted trend; score/display in common 1991--2020 SST anomalies.
+Main: monthly leads1--9; supplement: centered 3-month means at center leads1--5.
+Score each event's MSE/bias first; average events equally, then sqrt for RMSE.
+Gain=100*(1-RMSE_RO_PMM/RMSE_RO); positive improves, negative worsens.
+5000 paired-event bootstrap draws, seed20261015+fixed group offsets; n=3 groups
+are small-sample summaries. Intervals condition on the two fixed fitted models.
+This is full-period in-sample retrospective initialization comparison, not
+parameter-out-of-sample verification or historical real-time prediction.
+Keep all outcomes, positive or negative. No process attribution or new variants.

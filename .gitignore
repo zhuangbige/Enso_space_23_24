@@ -21,3 +21,8 @@ experiments/isca_runtime/mamba_root/
 experiments/isca_runtime/conda_pkgs/
 experiments/isca_runtime/cache/
 experiments/isca_runtime/micromamba_extract/
+
+# Local chart and presentation build caches
+.chart-data-*/
+**/.build*/
+*.upload-partial

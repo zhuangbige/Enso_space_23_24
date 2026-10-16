@@ -1,0 +1,36 @@
+2026-10-14: target-excluded Chen--Jin sLIM test, frozen before inspecting this stage's fits.
+Aim: restore the existing sLIM estimator, check a baseline, and determine whether
+the minimum representation retaining all three WWV26 boxes supports native runs.
+Not a real-time hindcast: all non-target years from 1982--2024 are eligible.
+Exclude 1996--1998, 2014--2016, 2022--2024 from climatology/trend/scale/operator.
+Three chronological segments are pooled without crossing missing intervals.
+Monthly data are interpolated to 72 steps/year. These are NOT independent samples.
+Use existing sLIM mean lag 6 interpolated steps, seasonal lag 1; annual and
+semiannual harmonics; second-order perturbative estimator. Exact moment solution
+is an estimator sensitivity; annual-only is a harmonic sensitivity, not selected.
+Primary preprocessing: training-only monthly means, then a single linear trend,
+matching the historical sLIM preprocessing sequence. No-trend sensitivity retained.
+No ridge tuning or choosing variants by performance on the three target cases.
+Hierarchy: ERSST+D20 legacy baseline; OISST+D20 data bridge; OISST+total WWV26;
+OISST+three WWV26 boxes (primary minimal spatial model); +SST pattern sensitivity;
+old eight-state thermal representation is a complexity sensitivity only.
+GODAS D20 is mean depth (m), 5S--5N 120E--80W. SODA3 WWV26 is volume (1e14 m3),
+9S--9N 120E--80W, three boundaries 120E/180/140W/80W. They are distinct variables,
+domains, and datasets: no performance difference is a pure definition experiment.
+All forecasts start with complete January monthly means, integrate through Dec,
+and receive no later observations, wind forcing, or event-specific parameter.
+Display SST uses source-specific 1982--2022 monthly climatology, restoring the
+training-only trend/background. This display baseline never enters fitting.
+Diagnostics: original-fit equivalence on continuous data, no gap/future leakage,
+units, RK4 convergence, conditioning, perturbation size, exact sensitivity,
+annual propagator spectral radius, monthly residual serial correlation,
+native SST/WWV trajectories, persistence RMSE, and 200 two-year block-weighted
+parameter sensitivities for the primary spatial model (including preprocessing).
+Block sensitivities use chronological original trajectories and random positive
+exponential block weights; they are NOT independent innovations or forecast bands.
+No physical process decomposition: boundary PW/Sv do not directly equal an SST
+tendency. No causal initial-state conclusion unless native runs are adequate.
+Do not change model after viewing target performance to manufacture agreement.
+References: Chen & Jin 2021 doi:10.1175/JCLI-D-20-0874.1;
+Chen & Jin 2022 doi:10.1029/2021GL097603;
+Chen et al. 2015 doi:10.1175/JCLI-D-14-00134.1.

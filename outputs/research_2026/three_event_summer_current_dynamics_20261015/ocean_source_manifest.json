@@ -1,0 +1,647 @@
+[
+  {
+    "year": 1982,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_1982.npz",
+    "source_sha256": "a24cbb3fea3b18dd796be16cbb34e194a98c7607cf05e7b096b00b149610db8c",
+    "extracted_sha256": "ab547637df7d6c04116203206494c96c6d7a7fafe56421fdd09a6801586ee290",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 93.53668954436378,
+      "max_m": 254.8053788013258
+    }
+  },
+  {
+    "year": 1983,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_1983.npz",
+    "source_sha256": "855c9b706680af77556b5e7c794a0832db67788cba1e1a67e0a7617c3f9290a6",
+    "extracted_sha256": "5eb984d2aec7204349a1647628e97f80fca8c6eb4587a75e467c4da0bb1955b8",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 104.82192428704641,
+      "max_m": 238.4895427006112
+    }
+  },
+  {
+    "year": 1984,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_1984.npz",
+    "source_sha256": "92cb3333dc4c72720f3af56413a540a8d548315412faae7ccb0acde2e04762ca",
+    "extracted_sha256": "c440985afb05bff020f20b4b92832ad2c063562510d6c1a4406ae3b88b4f4165",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 96.91416416424849,
+      "max_m": 218.22975662681313
+    }
+  },
+  {
+    "year": 1985,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_1985.npz",
+    "source_sha256": "8160d9095d96603c4c6cace99a7f43c8df083d3450a2c0e2512339a77771c087",
+    "extracted_sha256": "412f19ae2ddd7b60a57d125d4d0b9bdf9d52a81d2ff2c4393c9aa7daf1781157",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 96.79640383544096,
+      "max_m": 230.72943550860901
+    }
+  },
+  {
+    "year": 1986,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_1986.npz",
+    "source_sha256": "5ec7f9e90e6126c9f97d6689577c76b77e1c01d91e654ded815a88ed2d034345",
+    "extracted_sha256": "3cfd45d95d5c77ccc6fffc7b0aec1b5cc192c3e211f1780087c2c540b09ba8a6",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 95.53252399649227,
+      "max_m": 239.43235225640964
+    }
+  },
+  {
+    "year": 1987,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_1987.npz",
+    "source_sha256": "e1edb6aa50ee5030d1adde00af2bc209e700ff9aee7e911bff7b95a1dd71a4a5",
+    "extracted_sha256": "aedcd7542c09262a6f719bcb52203a8965c34fdab5776ba3ec84a2bdced574cc",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 88.64417585506034,
+      "max_m": 242.89780175799712
+    }
+  },
+  {
+    "year": 1988,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_1988.npz",
+    "source_sha256": "d9cf4d812767647ca327f49941039332a433e8eba1f085a8348ad11e0b3eb206",
+    "extracted_sha256": "8652f2724e4b65de26223d0038c8345f6146c9f9ec9a2c3b728056dd46661479",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 82.88206582353155,
+      "max_m": 239.98733449908968
+    }
+  },
+  {
+    "year": 1989,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_1989.npz",
+    "source_sha256": "108ffa533513b677ae362f9431453fd6d899d4d4501d5ca47a3ca3599139070a",
+    "extracted_sha256": "a1c48e9d832be3578209380137af2ceb05e7b0fe0fbfb5afaf7c02dc71b9ec90",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 103.42742960328607,
+      "max_m": 251.00605075901854
+    }
+  },
+  {
+    "year": 1990,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_1990.npz",
+    "source_sha256": "1bbd8f9f06bbcaa1072f4e7be5965e0e90ab5d6a2c3e2781d312820029cee675",
+    "extracted_sha256": "e3c773a4008d491936dabf8991825a4babe5db52603814eb985472992784bd65",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 97.84528282624383,
+      "max_m": 246.04748329698725
+    }
+  },
+  {
+    "year": 1991,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_1991.npz",
+    "source_sha256": "0ede246ce33695b978a7685de175bfe44077fb16970b7e10812e60c2d2e393e4",
+    "extracted_sha256": "67df746cb786b1e838d4420ab2da76d2115606373b4e7d2e7cfd7944b3084097",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 90.5612239033882,
+      "max_m": 261.80060429421644
+    }
+  },
+  {
+    "year": 1992,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_1992.npz",
+    "source_sha256": "daa5eeaeb940003934e7111b3bd0a5765a4fa7d91fc98c0a23c495fd9252367d",
+    "extracted_sha256": "b4758e21b22be7b879a4ec1edf95102e0f04bad117d949badf7bee89d6d454cb",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 104.06532358315239,
+      "max_m": 268.94631154247514
+    }
+  },
+  {
+    "year": 1993,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_1993.npz",
+    "source_sha256": "c236d4fd0ebd17747e915e38b8b3aa2d2157ae3c463863159e9780f92a2c3aa3",
+    "extracted_sha256": "98acf0d3b00e5d5d2c7789a663cd01f7eb95f485be8204657cc0cda4cc0507c8",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 96.34604336303317,
+      "max_m": 243.2056120402233
+    }
+  },
+  {
+    "year": 1994,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_1994.npz",
+    "source_sha256": "52d34eee5166920ccfbe2f9393d548d7b0c7fe7bfc42cde7083524eb31d2c2e0",
+    "extracted_sha256": "c817ad66118728fb054de9a622a7f91949c1f4e2d614b3d9c04b7b95167dd0ee",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 89.9074538186025,
+      "max_m": 258.5668659700291
+    }
+  },
+  {
+    "year": 1995,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_1995.npz",
+    "source_sha256": "b963e5b49b4b2a0b3cab0b7b49dfb7f43220359a11892c2d01092e72dddc9fa9",
+    "extracted_sha256": "aff203cf2e799cc5715562a017a8c7ed4cd00fd1b6f12348d1913520b4b4e5e5",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 86.39461231156845,
+      "max_m": 254.3477607006768
+    }
+  },
+  {
+    "year": 1996,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_1996.npz",
+    "source_sha256": "9da8049f15f79a8071155d0681041b520829d40dcfdf9bc56d1e539166dddcb8",
+    "extracted_sha256": "3920e7ea3e9e6658590f5b97f2804d6ef33e1fe659d167dd3f52198a9684136d",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 85.67827999380604,
+      "max_m": 255.17678940959436
+    }
+  },
+  {
+    "year": 1997,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_1997.npz",
+    "source_sha256": "fc33c672c2e976fefe2abde8e66ff6b9a1ceecd2a3973bf185af838a4c8b467b",
+    "extracted_sha256": "4e80123a121860337f31c78dcb43706aa7598b74427c169962e74dfa57293276",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 45.633779935473825,
+      "max_m": 256.6294040941257
+    }
+  },
+  {
+    "year": 1998,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_1998.npz",
+    "source_sha256": "c8649d4e252f90bbe4bcc15ef0ec4423c61ef3fb7773e515432f8ba383b4b856",
+    "extracted_sha256": "12855eb0b8e7e645587a950c59c347036a45b0d670aa12e7e9e0b31610c73fd2",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 93.8138933083948,
+      "max_m": 243.22476993257067
+    }
+  },
+  {
+    "year": 1999,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_1999.npz",
+    "source_sha256": "1b72828b2152ffb05c6b0b8b4cfced89bfe35683850d49f6e9004d3598dafeef",
+    "extracted_sha256": "93657cb1ec54a197746ce7c2c272918d73cda6ffe915c5ea75708ff3a4cfbed9",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 80.17052351509518,
+      "max_m": 221.30959488485612
+    }
+  },
+  {
+    "year": 2000,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2000.npz",
+    "source_sha256": "30e42b765c6011455a12afb63c0faaa90a401a8bd7a549d3ee7b8efbce202077",
+    "extracted_sha256": "5b4260f32506c0bf634c765b2abf63a81f1f0cfeec034ebdb89264075ab07d4f",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 94.93378092064295,
+      "max_m": 220.42867491892764
+    }
+  },
+  {
+    "year": 2001,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2001.npz",
+    "source_sha256": "d70b1e2966a666423389b0d9bbad70b67ebd45f502f40ac44a1f27dbd2fde49b",
+    "extracted_sha256": "c0c09de2e3891b33ae8cb64123e0c6695101c9bfb3a961fcc592e9534644afbe",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 87.12578404291388,
+      "max_m": 229.99318735689153
+    }
+  },
+  {
+    "year": 2002,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2002.npz",
+    "source_sha256": "698447387f24f464b430e00ce149e964ae982d7c84a374e99f93d69bc67cad1c",
+    "extracted_sha256": "482ce35c3e55675dd5f277ec019e95c23a92889d07b4f2319af94a0c5c76da4a",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 83.2760389731144,
+      "max_m": 246.6125938838639
+    }
+  },
+  {
+    "year": 2003,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2003.npz",
+    "source_sha256": "b7fb5218507fcade12764bf6fec164de6e606e71cb60bf468e5bee37d95554a3",
+    "extracted_sha256": "40f675ec649ec14e978735c48171b229dc06dea1edac1674bc9f8337e23debf4",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 70.19020559005476,
+      "max_m": 256.9790858557952
+    }
+  },
+  {
+    "year": 2004,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2004.npz",
+    "source_sha256": "f069c603c6657aedd7d91794b2bee251f72b8ed17071e4bb9d8d127a06a0ba5d",
+    "extracted_sha256": "002cb2d484d3ac9993e98bec4dac04fc6fa564d53367f12c26ee05e6094f5855",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 84.94202385882934,
+      "max_m": 258.3714373400223
+    }
+  },
+  {
+    "year": 2005,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2005.npz",
+    "source_sha256": "be1465f179dfd8a035aa757ebd7af9692f397a243fa1e53303685c29151603e0",
+    "extracted_sha256": "6381520acd172f828a33409768b6993644542c2b193072b47a7ac509f352c0be",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 85.6699423233888,
+      "max_m": 253.66593548473728
+    }
+  },
+  {
+    "year": 2006,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2006.npz",
+    "source_sha256": "f848a8d3f0d0584c63a05da49008e3a08680616c967d4b3d2e9169891e282842",
+    "extracted_sha256": "0fff080b2ad0a9b2724d09eca64a7412c30010fbb3e6a2a73b803cc700965fd7",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 93.02322940746582,
+      "max_m": 246.02251955901914
+    }
+  },
+  {
+    "year": 2007,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2007.npz",
+    "source_sha256": "1012b24e59bbca43403178920c16203c4b7c7b5e1df77813079d35be0d13c505",
+    "extracted_sha256": "7e90026fa83e74faeaea329fcd0bf30dc44f7bf7ba02ac44d9df4b6fda21f3bc",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 91.46954646323125,
+      "max_m": 251.51475767449642
+    }
+  },
+  {
+    "year": 2008,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2008.npz",
+    "source_sha256": "fcb47769acd5d2d79c2e2e7f7c9a730276efa40e4f04b2220e916456ffb4a24c",
+    "extracted_sha256": "feca9ac4dc4d3cc64785d2bf2e161cabb7e7fbc682a21d7a08371992b8c54f2a",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 83.83707346740847,
+      "max_m": 238.43432092571558
+    }
+  },
+  {
+    "year": 2009,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2009.npz",
+    "source_sha256": "b639c624cc70de8847541cf79d03c4864b2ee21d9cba59c4433b5e5a828ede81",
+    "extracted_sha256": "b3bc22146fbade2cdfc26737b2e6ce60909d7ffffebbaf4cdec14bcd7e539d4b",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 79.95242758045622,
+      "max_m": 238.48533349601942
+    }
+  },
+  {
+    "year": 2010,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2010.npz",
+    "source_sha256": "ba96673560224b78e87691e28a66bd58efb62a04b1e892bfc90f201a246abdd3",
+    "extracted_sha256": "f8f2f618eda5cf309ac5fff68614182a17bcc18e0bbd9fd141144c4208904b32",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 89.65784928134376,
+      "max_m": 245.66577791655803
+    }
+  },
+  {
+    "year": 2011,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2011.npz",
+    "source_sha256": "4555292bf44af0288a6fe4f2a56563f584f4e27ec9ce54390fe21c3c4fadc035",
+    "extracted_sha256": "a7e0d8ffde0275a6d3be61ecef3c5a728f70a05170d092f4fbf88201d859229d",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 80.39739562488656,
+      "max_m": 226.31726437989778
+    }
+  },
+  {
+    "year": 2012,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2012.npz",
+    "source_sha256": "a65a1888d2f99b93937118357f732241187b4e002e1c4f2f6821da5cd1815712",
+    "extracted_sha256": "0af5247094f18aae96ff775f1d9d0e7739febaa5e80a934e79c9b0088beb3b50",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 82.14489433693866,
+      "max_m": 228.5598151658066
+    }
+  },
+  {
+    "year": 2013,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2013.npz",
+    "source_sha256": "7418d8dc4f33cbb8d130fa5b550d1faa498e997200f0e61a49cc2b5ab4365308",
+    "extracted_sha256": "ae55c2a7ed39c8b803c4fdf5e0d734bd7bc82a682fa9ca69f1eba2368e439541",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 77.84787107420257,
+      "max_m": 243.05122085410716
+    }
+  },
+  {
+    "year": 2014,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2014.npz",
+    "source_sha256": "7a63970c24d897430833d2e4871c07678166c8a4d46e7d8ba80629fafb1b49de",
+    "extracted_sha256": "e2d47b3b40f7d106139f1528a304da7791a781f0c3151d1f524457eccff2186c",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 85.21529128527193,
+      "max_m": 250.94838862304752
+    }
+  },
+  {
+    "year": 2015,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2015.npz",
+    "source_sha256": "0ad09e6225d20eb94d1c291eb09d0ed4f96bb19e4af095f585c30ca9e98046cd",
+    "extracted_sha256": "1fe25acee50e6e9467907d2f02f31f83185f797e4a0d7d8f16769f66c17fde0b",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 75.33623267605714,
+      "max_m": 263.7375373055097
+    }
+  },
+  {
+    "year": 2016,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2016.npz",
+    "source_sha256": "61d5c7aae2d6d0fb24dafe31e8a7fe32af5510823b8a0c91335edb04faa3c8ec",
+    "extracted_sha256": "af3957b789491999f5cf9e34f26853575709c51e4e93a60685679a3f3e16577d",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 96.4528235577609,
+      "max_m": 269.398561519814
+    }
+  },
+  {
+    "year": 2017,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2017.npz",
+    "source_sha256": "528b32da3e252008d96f74debca20754a4a585d70277564e9177287cefe06d20",
+    "extracted_sha256": "e1f2e9ae3798b2afd9e1dc7d9462d1c641a31ed414ce81f962261ed77447a1c1",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 112.51286880155487,
+      "max_m": 251.24882501767604
+    }
+  },
+  {
+    "year": 2018,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2018.npz",
+    "source_sha256": "3816a2cde21497857163439b7b01d52716fe7d8857bab007a5c72d0d0e787b08",
+    "extracted_sha256": "52d31f7c00df8f77b41f80714d6acc1d2531747064ad769beaa84295e532b78d",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 84.73468205606348,
+      "max_m": 253.36139859439442
+    }
+  },
+  {
+    "year": 2019,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2019.npz",
+    "source_sha256": "8e5d8602ef66e6a6d5a05dd2e79c3bce63a73033ac151103c735547112e0f718",
+    "extracted_sha256": "2ee2802d6d9284355519e891fe182c99f44fbbf84c7e6fdb93998c9f1aa54415",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 89.76420608413247,
+      "max_m": 254.05433996531127
+    }
+  },
+  {
+    "year": 2020,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2020.npz",
+    "source_sha256": "05d8304af19fdb50e4e0e7a9e4159f0cbde5b7601a21ea8b2fd75eb579392083",
+    "extracted_sha256": "abbc49b3e114e1491992988ba41f5cff64e9b6c922875b09ef0b527e3b55b0bf",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 96.8229457654511,
+      "max_m": 252.73659402641093
+    }
+  },
+  {
+    "year": 2021,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2021.npz",
+    "source_sha256": "992722890ce4f26ca503f4c592e44b2088b120d1a1f3a16481cafa48003a74c0",
+    "extracted_sha256": "ff8fcbfe11de10ad1c7035bbe004de38b8ab6840c719165b157d5510ac1dd65b",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 94.56078425902996,
+      "max_m": 247.76445176923494
+    }
+  },
+  {
+    "year": 2022,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2022.npz",
+    "source_sha256": "17c0c46813b914688147a06093cc3651e7cafa868f2e8b7a0f4abb924a5b45eb",
+    "extracted_sha256": "70d1ca4658bfb292dcc314ecaad5c295d6755ccd88af3bc1c90aa7e4fd510168",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 76.66011297008954,
+      "max_m": 254.037106887047
+    }
+  },
+  {
+    "year": 2023,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2023.npz",
+    "source_sha256": "8ed0ec515196ed4c72fd73823ca3d30ddc84224ffeeac06889ab551b3687f98d",
+    "extracted_sha256": "dbc5700d3f154cc0d3a1037846fb6d7d4f98382c172f3f233bcb771d30148f3c",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 57.424665969076294,
+      "max_m": 247.14370467955553
+    }
+  },
+  {
+    "year": 2024,
+    "source": "data/raw/chen2015_reanalysis_20261014/soda3_sigma26_inputs_2024.npz",
+    "source_sha256": "d632c8f2f29933f5c877cfa3cfed54ff320914837e8b55f931684213961c3664",
+    "extracted_sha256": "d6e3e0e05ece11e7b090c396ebff98ec3681cf0dd2f923731457a47045e57416",
+    "section_QA": {
+      "wet_profiles": 432,
+      "shelf_capped_profiles": 0,
+      "multiple_crossings": 0,
+      "surface_outcrop": 0,
+      "unresolved": 0,
+      "min_m": 76.44799778233497,
+      "max_m": 242.5319086258306
+    }
+  }
+]

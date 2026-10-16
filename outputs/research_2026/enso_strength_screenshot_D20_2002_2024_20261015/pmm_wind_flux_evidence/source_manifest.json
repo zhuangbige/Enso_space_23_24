@@ -1,0 +1,19 @@
+{
+  "sha256": {
+    "data/raw/era5/era5_monthly_10m_wind_pmm_1deg_1982_2025.nc": "5f2aadcc9e422b19c78786ddd5e270bc64031396f6ed8ec65f54eb152c69e2b6",
+    "data/raw/ersstv5_sst_monthly_full.nc": "8c6f6590b933918fe3628ef0bc2c51995cac5a22e4c8b42e6ab67fa50395ff9f",
+    "data/raw/ncep_pmm_flux_20261015/lhtfl.sfc.mon.mean.nc": "89acc896ded2b925bbd771762a6518f9d80b6e171304fe7900273d7b26aa8aa9",
+    "data/raw/ncep_pmm_flux_20261015/lhtfl.sfc.mon.mean.json": "9f0779862165d8e143e50b2d3ac78986cda142ef3f5f033a83bf4172730d4e8c",
+    "outputs/research_2026/enso_strength_screenshot_D20_2002_2024_20261015/event_catalog.csv": "d8ae846a6d3d53f0619300ec58b6802274775793b636905333e6d102990b24ed",
+    "outputs/research_2026/enso_strength_screenshot_D20_2002_2024_20261015/development_year_summary.csv": "23d76ed5754ce97bab565c53a711e9ad47f1780fe90f89329612672977480786",
+    "outputs/research_2026/enso_strength_screenshot_D20_2002_2024_20261015/pmm_comparison/monthly_event_PMM.csv": "bb1b749e3d6a10249590f2dfd46164a0071010f6f9080f586a9752ad5fe83366",
+    "scripts/analyze_pmm_wind_flux_evidence.py": "90d39086de8f1822151fbae4707f2dfb22f1918fb2d7d304ee3a4266518eddd4",
+    "data/raw/era5/pmm_wind_flux_20261015/era5_pmm_wind_flux_m01_1982_2024.grib": "cd9223fb40d2037f51d7eae3902cee0b37f9db2695dd8fa2d4401ddbe9fb6c9a",
+    "data/raw/era5/pmm_wind_flux_20261015/era5_pmm_wind_flux_m01_1982_2024.json": "991443237016ebd20c93320b7ff070a632982243b5ea96888e4bafd28e8c72a6",
+    "scripts/report_pmm_wind_flux_evidence.py": "f74ecf7c333db9d37a8d3d4589e9a89eb6d6f2c8683328d8b2b92840b878f78b",
+    "scripts/validate_pmm_wind_flux_evidence.py": "c4b39d105f629da4e6dfe5b477006c5a03aae8f1eb0bd9242ee63604ae313338",
+    "scripts/fetch_pmm_wind_flux_evidence.py": "53d46f056612fa845103d4aa53051514ff6c5ef1c7a6cab7ade8aabc2c73c717"
+  },
+  "era5_dataset": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-monthly-means",
+  "latent_flux_dataset": "https://psl.noaa.gov/thredds/dodsC/Datasets/ncep.reanalysis/Monthlies/surface_gauss/lhtfl.sfc.mon.mean.nc.html"
+}

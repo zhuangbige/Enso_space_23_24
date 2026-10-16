@@ -1,0 +1,9 @@
+Analysis (preserves original inputs):
+OPENBLAS_NUM_THREADS=1 /opt/anaconda3/bin/python -B scripts/analyze_three_event_directional_advection.py
+OPENBLAS_NUM_THREADS=1 /opt/anaconda3/bin/python -B scripts/report_three_event_directional_advection.py
+
+Update the current M4 after archiving it:
+OPENBLAS_NUM_THREADS=1 MPLCONFIGDIR=/private/tmp/maryland_story_mpl /opt/anaconda3/bin/python -B scripts/update_three_event_mechanism_figures.py --m4-only
+
+Render and visually inspect the updated PDF before recording its review:
+/Users/daiyue/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B scripts/package_three_event_figure_gallery.py --record-directional-visual-review

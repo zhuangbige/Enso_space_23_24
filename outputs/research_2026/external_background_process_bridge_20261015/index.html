@@ -1,0 +1,26 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>外部海洋背景：过程核对与替换实验</title>
+<style>body{max-width:1080px;margin:42px auto;padding:0 24px;font:17px/1.8 system-ui,sans-serif;color:#22313c;background:#fbfcfd}h1{font-size:29px}h2{font-size:22px;margin-top:38px}p{max-width:920px}a{color:#12618c}img{width:100%;background:white;border:1px solid #dae2e8;margin:12px 0}table{border-collapse:collapse;width:100%;background:white}td,th{padding:12px;text-align:left;border-bottom:1px solid #dae2e8}.status{border-left:4px solid #0072b2;padding:12px 18px;background:#edf5fa}.note{font-size:14px;color:#52636e}</style>
+<h1>外部海洋背景：过程核对与替换实验</h1>
+<p class="status">主线仍是海洋储备 → 夏季输送持续性 → Niño3.4发展。本页是补充实验。已完成72组回溯统计核对和7组海温边界准备；尚未运行新的AGCM或动力海洋模式。</p>
+<h2>本轮判断</h2>
+<table><tr><th>候选背景</th><th>已有线索</th><th>尚未支持的环节</th><th>取舍</th></tr>
+<tr><td>热带北大西洋（TNA）</td><td>与较弱风应力、较弱140°W输送、较少后续增暖的组内联系较一致</td><td>局地平流增暖及联合模型独立作用仍不确定</td><td>优先补充试验</td></tr>
+<tr><td>北太平洋PMM</td><td>与风应力、Niño3.4后续增长的条件联系较清楚</td><td>暖水输送与局地平流联系较弱</td><td>作为背景对照</td></tr></table>
+<p>目前不能把两条路径写成已经连通的因果链。30、50、75米层厚检查也没有补齐局地平流这一环；这正是后续物理替换需要检验的内容。</p>
+<h2>三次事件的过程演变</h2>
+<p>灰色窗口为7—9月。两种局地平流项分别保留流速变化和温度异常梯度的作用；它们与断面输送的单位、空间范围不同，不能相互替代。</p>
+<a href="Fig1_event_process_evolution.png"><img src="Fig1_event_process_evolution.png" alt="1997、2015、2023外部背景、风应力、输送和平流逐月对比"></a>
+<p class="note">资料：ERSSTv5、官方PMM、ERA5和SODA3；1982—2024月气候态和线性趋势已去除，全部目标年纳入。局地过程重新按完整43年建立背景，原模型与图件未修改。</p>
+<h2>同一控制条件下的过程联系</h2>
+<p>实心点为各组内的回归，空心点为两组一起回归。横线跨过零表示该设置下方向仍不确定。横坐标是标准化系数，不是事件贡献百分比。</p>
+<a href="Fig2_conditional_process_associations.png"><img src="Fig2_conditional_process_associations.png" alt="TNA和PMM与风应力、平流、输送和海温增长的条件回归及区间"></a>
+<p class="note">区间为3年循环块bootstrap的逐项95%区间，3000次抽样；未作多重比较后显著性宣称。首轮PMM输送区间下限约+0.05 Sv，本轮约−0.06 Sv，点估计完全相同；这是临界端点随固定抽样序列变化，不能强调显著性跨越。</p>
+<h2>已准备的最小替换输入</h2>
+<p>共同2023背景；用1997、2015同历月的去趋势SST异常分别替换A印—大西洋区域、B赤道外北太平洋区域，以及AB两者。加上共同控制，共7组。A、B掩膜不重叠，热带太平洋SST逐格保持不变。</p>
+<p>B是区域海温背景替换，不是单独修改PMM指数。文件处于通用原生网格阶段，仍需模式重网格化、缺测处理和日历适配。规定SST的大气模式只能检验大气响应；要得到新的输送或Niño3.4，必须让动力海洋响应。</p>
+<p><a href="最小替换实验规格.txt">最小替换实验规格</a> · <a href="boundary_inputs/experiment_matrix.csv">7组清单</a> · <a href="boundary_inputs/sst_background_swap_scenarios.nc">通用海温边界NetCDF</a></p>
+<h2>完整记录</h2>
+<p><a href="过程结果与解释.txt">结果解释</a> · <a href="过程核对事前约定.txt">事前约定</a> · <a href="process_evidence_summary.csv">过程证据表</a> · <a href="all_process_coefficients.csv">全部系数和区间</a> · <a href="delivery_validation.json">交付核验</a> · <a href="boundary_inputs/boundary_validation.json">边界核验</a></p>
+<p class="note">所有结果，包括无效与反向结果均已保留。主汇报的取舍依据是过程联系、稳健性及不确定性，不按最小p值选择。</p>
+</html>

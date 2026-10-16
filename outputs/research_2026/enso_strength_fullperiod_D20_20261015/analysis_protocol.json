@@ -1,0 +1,12 @@
+{
+  "design": "full_period_in_sample",
+  "start": "1982-01-01",
+  "end": "2024-12-01",
+  "training_months": 516,
+  "climatology": "1991-2020",
+  "trend_start": "1982-01-01",
+  "trend_end": "2024-12-01",
+  "ocean_state": "GODAS mean D20 (m)",
+  "model_count": 2,
+  "event_exclusion": false
+}

@@ -1,0 +1,192 @@
+{
+  "figures": 14,
+  "main_figures": 5,
+  "WWV26_forecast_replacement_completed": true,
+  "advection_bridge_experiment_run": false,
+  "source_data": [
+    "/Users/daiyue/Documents/Maryland/outputs/interview_redesign_20261014/source_data/RO_PMM_three_event_metrics.csv",
+    "/Users/daiyue/Documents/Maryland/outputs/interview_redesign_20261014/source_data/RO_PMM_three_event_trajectories.csv"
+  ],
+  "files": [
+    {
+      "path": "00_overview/Overview_WWV26_sensitivity.pdf",
+      "sha256": "c65b4fd001dd73c0605ab2257c579ac3792c5676444c863b1c991fff027692f6"
+    },
+    {
+      "path": "00_overview/Overview_WWV26_sensitivity.png",
+      "sha256": "a5bf4bc9fe549861edd8030856b31e0cdfcf1f571a674ce22009185302f7b95a"
+    },
+    {
+      "path": "00_overview/Overview_WWV26_sensitivity.svg",
+      "sha256": "22f4f5fbe6f3f3e773204e7fa2c7d5d8a48709108948c3aaf6cd43adc14dbb0f"
+    },
+    {
+      "path": "01_main/M1_WWV26_PMM_forecasts.pdf",
+      "sha256": "7132b17be207e56d8ab90b2dfde69413831b8ac8f91d3ff40347497d76ece027"
+    },
+    {
+      "path": "01_main/M1_WWV26_PMM_forecasts.png",
+      "sha256": "12e18d9e7c21ba9e6d53928367d4528360b7852d2223d9f97d4b7266fc0d8738"
+    },
+    {
+      "path": "01_main/M1_WWV26_PMM_forecasts.svg",
+      "sha256": "f21585390d1ee9a6fae7da2d667faf4d3e830a9e7426f05bc0d2a36815006131"
+    },
+    {
+      "path": "01_main/M2_airsea_space_time.pdf",
+      "sha256": "03a46b3739d8a67d6e597b6428675c8b2e0eaf59576de50e58577911e26e3fee"
+    },
+    {
+      "path": "01_main/M2_airsea_space_time.png",
+      "sha256": "c8f309d53128bcdb3402d868f91f71b2037e82205e3b8346ab45f3ec63d4dd8e"
+    },
+    {
+      "path": "01_main/M2_airsea_space_time.svg",
+      "sha256": "ed961fb842ee19b6183364ca87c37e0ebcd6d2295c3326db0da84faeed4abc9d"
+    },
+    {
+      "path": "01_main/M3_local_temperature_processes.pdf",
+      "sha256": "2e17951842f5eca4bfe254a261f0af8ea1b796e4aaecdb673ec3750a90b29f17"
+    },
+    {
+      "path": "01_main/M3_local_temperature_processes.png",
+      "sha256": "2987608f8a4c6b716cbd12ac1c365e61493904b63a168452a7bf05a071db871a"
+    },
+    {
+      "path": "01_main/M3_local_temperature_processes.svg",
+      "sha256": "91b38ce9d1c6e8597197e79cf4e5a821e05f2f0f3ee2fa0be7a4dde872179881"
+    },
+    {
+      "path": "01_main/M4_advection_robustness.pdf",
+      "sha256": "2d41bfc7810ee8546f72fd9d08656d726309551920311c8bfd7658c03ee9028b"
+    },
+    {
+      "path": "01_main/M4_advection_robustness.png",
+      "sha256": "b3a4464500b38b94eeabfcde69bb644c416b74b03caf7650f52be37191c33dcf"
+    },
+    {
+      "path": "01_main/M4_advection_robustness.svg",
+      "sha256": "fe79448df8a7528c485377cf0ba093f489c12516b4af9122c32b5854ff6817e6"
+    },
+    {
+      "path": "01_main/M5_process_compensation.pdf",
+      "sha256": "fccc3e0cdbf5fcec1b16bda38a89881ac5305209783f74413b20366d1ae1cdea"
+    },
+    {
+      "path": "01_main/M5_process_compensation.png",
+      "sha256": "3c131c2625d01d904c9d0125c60ba567673bd14f8ccbea951d1e712baf4153b9"
+    },
+    {
+      "path": "01_main/M5_process_compensation.svg",
+      "sha256": "708db9ca6231e73b17a2efd9ec0fce48bd5b449343d27e474680d6084940e68b"
+    },
+    {
+      "path": "02_mechanism_checks/D1_process_projection.pdf",
+      "sha256": "8401545a676689108afa38ffe03e31348c4920c31676f8f4b4c99dcb172e9cb2"
+    },
+    {
+      "path": "02_mechanism_checks/D1_process_projection.png",
+      "sha256": "b4c20ab59abded5d6bbc769510f027410b092667543f851e12343afb71a056c9"
+    },
+    {
+      "path": "02_mechanism_checks/D1_process_projection.svg",
+      "sha256": "7ddc861dae54cfd4d8b3003d67e7f4150ba4465746792600f91ec09909484977"
+    },
+    {
+      "path": "02_mechanism_checks/D2_matched_period.pdf",
+      "sha256": "4df62fa1b7975bd08e02eb7c755490e32b8292e0eb2ba0af1b60b18f8427bce3"
+    },
+    {
+      "path": "02_mechanism_checks/D2_matched_period.png",
+      "sha256": "fd29d4e95ccd3bec6a1ee7501970968b4cfd6997d13444c8e974273b2788ec77"
+    },
+    {
+      "path": "02_mechanism_checks/D2_matched_period.svg",
+      "sha256": "1bb8b00035a59c4c965c5b053ebd3dec623f9ddaec37a12f9b4f15f6db5a114d"
+    },
+    {
+      "path": "03_backup/S0_legacy_D20_forecasts.pdf",
+      "sha256": "70a0da595d59fb4f14d11aab6241f5239cecaa40c1b8ea02e57795761a3344ab"
+    },
+    {
+      "path": "03_backup/S0_legacy_D20_forecasts.png",
+      "sha256": "b16ad50773e6aa98a8d97890541c8086255b31345278155f806b8d63e4c861f6"
+    },
+    {
+      "path": "03_backup/S0_legacy_D20_forecasts.svg",
+      "sha256": "7255de52a7933521bd36cbe43eae760440bf2beaa16d4fd66082c175c4a2c912"
+    },
+    {
+      "path": "03_backup/S1_wind_residuals.pdf",
+      "sha256": "c178c3be0bd4bbb882708778255a8aba4503a9bdf7b96a23f58915e760c44981"
+    },
+    {
+      "path": "03_backup/S1_wind_residuals.png",
+      "sha256": "1d91f43c94ce2a10f1da747f33357326d6e8e0713dda310dcee5bb0186c11156"
+    },
+    {
+      "path": "03_backup/S1_wind_residuals.svg",
+      "sha256": "73e15c6c7dc88c8d1bece651725bc9bb92d2561cedf8a413c82d08abf3bd771b"
+    },
+    {
+      "path": "03_backup/S2_ocean_configuration.pdf",
+      "sha256": "3d1f392eec1b52aa42968ceb3817e39571460360ed187ba23040c77d5dfc0c58"
+    },
+    {
+      "path": "03_backup/S2_ocean_configuration.png",
+      "sha256": "4109e61168b004a4c5e09bc07ba5e4047b5a48e6e8a042f0b355b8a230646f3f"
+    },
+    {
+      "path": "03_backup/S2_ocean_configuration.svg",
+      "sha256": "0da048029a49d15a8732932f8a91210ce0a6c622b9b8d9f3a2c476a3685ce1d3"
+    },
+    {
+      "path": "03_backup/S3_seasonal_coefficients.pdf",
+      "sha256": "6678bd5276da0ee049ce7f8714e1f8f001d8d9e344a99f10c6d2e8915bfaac3b"
+    },
+    {
+      "path": "03_backup/S3_seasonal_coefficients.png",
+      "sha256": "0206d86d1f99d33aa0f72ef22807d57175371d0666c2597fe8c6276c609f81ad"
+    },
+    {
+      "path": "03_backup/S3_seasonal_coefficients.svg",
+      "sha256": "4688b365e71fdbd12be55aafc7cfdbfa7e824c5c326aa3720805a9cf41398894"
+    },
+    {
+      "path": "03_backup/S4_native_layer_check.pdf",
+      "sha256": "fb07346d5f7b28f9ea52c4b855d1ec0b26a8d3eb453f4b80a2e7221d46b5d6af"
+    },
+    {
+      "path": "03_backup/S4_native_layer_check.png",
+      "sha256": "e8fefc371e22f155013ec5c53fc6c06e910b272a39f5634d2611ca2a453a5046"
+    },
+    {
+      "path": "03_backup/S4_native_layer_check.svg",
+      "sha256": "08ecb99c8dc1bb6433c68f4a7cfd9c5933663af422a6dd5715ce958c03a05d15"
+    },
+    {
+      "path": "03_backup/S5_legacy_bridge.pdf",
+      "sha256": "8d012d692d72c7fbf119c6ebdc749ede06b39be4382522f3c7396c972e95713c"
+    },
+    {
+      "path": "03_backup/S5_legacy_bridge.png",
+      "sha256": "7f25b9124394798edb48e71af55abe1a04d65676e9b2e7caad1aa9737d75d8cb"
+    },
+    {
+      "path": "03_backup/S5_legacy_bridge.svg",
+      "sha256": "aa8e789352a78249204a0d732487c7052895c8729cdb3f12d19dc99133f85326"
+    },
+    {
+      "path": "figure_index.csv",
+      "sha256": "7d1ba1d995cc4982440f0db35c6e7f275ae40580e9685ee7f31bb110d8648122"
+    },
+    {
+      "path": "index.html",
+      "sha256": "6fd1f9e8be893dac1058e68a942da27c681d63ca8ccbb925bc4f45f47d68c9bd"
+    },
+    {
+      "path": "选图与最后一步.txt",
+      "sha256": "b718c3fa30519230a370fde0474977db86a71b84f9419bc2aa06882fd6909929"
+    }
+  ]
+}

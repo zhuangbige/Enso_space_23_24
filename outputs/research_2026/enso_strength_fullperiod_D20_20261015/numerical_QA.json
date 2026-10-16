@@ -1,0 +1,33 @@
+{
+  "original_replication": {
+    "saved_2002_2024_preprocessing_max_error": 3.552713678800501e-15,
+    "saved_2002_2024_coefficient_max_error": 8.881784197001252e-16,
+    "audit_only": true,
+    "main_period": "1982-01-01/2024-12-01",
+    "original_trend_end": "2025-04-01",
+    "main_trend_end": "2024-12-01"
+  },
+  "max_initial_error": 0.0,
+  "max_rk4_error": 3.038195472981897e-09,
+  "max_unit_scaling_error": 3.552713678800501e-15,
+  "max_fixed_model_future_observation_error": 0.0,
+  "max_propagator_error": 2.042810365310288e-14,
+  "max_continuous_segmented_coefficient_error": 1.5543122344752192e-15,
+  "max_restored_error_difference": 2.453592884421596e-14,
+  "fits": 2,
+  "training_months_per_model": 516,
+  "no_event_exclusions": true,
+  "unstable_fits": 0,
+  "annual_radius_min": 0.41646384390829505,
+  "annual_radius_max": 0.5014005302932389,
+  "saved_score_max_error": 4.440892098500626e-14,
+  "saved_monthly_rows": 750,
+  "saved_seasonal_rows": 375,
+  "group_score_rows": 384,
+  "event_score_rows": 1248,
+  "saved_score_and_bootstrap_reconstruction": "passed",
+  "saved_operator_forecast_max_error": 2.220446049250313e-16,
+  "saved_preprocessing_max_error": 3.552713678800501e-15,
+  "saved_models_count": 2,
+  "full_516_month_training_period_verified": true
+}

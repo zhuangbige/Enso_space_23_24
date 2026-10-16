@@ -1,0 +1,149 @@
+[
+  {
+    "file": "01_paper_main/Fig01_SST_precipitation_wind.png",
+    "vector": "01_paper_main/Fig01_SST_precipitation_wind.svg",
+    "title": "海温、降水与风应力的共同演变",
+    "claim": "2023东部先暖，中部降水与西风响应较晚、较弱。",
+    "notes": "大气图沿用1982—2022同月线性期望；不与WWV26同月均值基准混称。"
+  },
+  {
+    "file": "01_paper_main/Fig02_WWV26_spatial_evolution.png",
+    "vector": "01_paper_main/Fig02_WWV26_spatial_evolution.svg",
+    "title": "暖水储备与空间演变",
+    "claim": "比较三事件充放电时序，并展示暖层空间结构。",
+    "notes": "不是水团轨迹证明；D26不是D20或OHC。"
+  },
+  {
+    "file": "01_paper_main/Fig03_arrival_and_fate.png",
+    "vector": "01_paper_main/Fig03_arrival_and_fate.svg",
+    "title": "暖水到达、水平转移与海表散热",
+    "claim": "三事件都有东向输入；向西返回为主要已识别水平输出。",
+    "notes": "储量变化、边界转移、未解析项和海表能量分开；不作闭合去向百分比。"
+  },
+  {
+    "file": "01_paper_main/Fig04_two_term_heat_transport.png",
+    "vector": "01_paper_main/Fig04_two_term_heat_transport.svg",
+    "title": "北向热输送的温度项与流速项",
+    "claim": "在保留的两项中，异常流速项占主要贡献；2016和2024的月际时序不同。",
+    "notes": "不称纯风驱归因，不称完整热预算；开放断面温度参照已固定。"
+  },
+  {
+    "file": "01_paper_main/Fig05_forecasts.png",
+    "vector": "01_paper_main/Fig05_forecasts.svg",
+    "title": "观测与RO／RO＋PMM预报轨迹",
+    "claim": "展示五个起报的误差方向和幅度，以及2026验证的截止位置。",
+    "notes": "季节均值坐标；不要与原四联图的去趋势逐月r、RMSE混用。"
+  },
+  {
+    "file": "01_paper_main/Fig06_forecast_skill.png",
+    "vector": "01_paper_main/Fig06_forecast_skill.svg",
+    "title": "六种方法的预报技巧比较",
+    "claim": "相关、幅度误差和系统偏差共同评估；PMM增益因事件而异。",
+    "notes": "同一事件共用样本，2026仅19对；不做独立样本显著性声明。"
+  },
+  {
+    "file": "02_ppt_main/PPT01_atmospheric_context.png",
+    "vector": "02_ppt_main/PPT01_atmospheric_context.svg",
+    "title": "海温、降水与风应力的共同演变",
+    "claim": "2023东部先暖，中部降水与西风响应较晚、较弱。",
+    "notes": "大气图沿用1982—2022同月线性期望；不与WWV26同月均值基准混称。"
+  },
+  {
+    "file": "02_ppt_main/PPT02_WWV26_evolution.png",
+    "vector": "02_ppt_main/PPT02_WWV26_evolution.svg",
+    "title": "暖水储备与空间演变",
+    "claim": "比较三事件充放电时序，并展示暖层空间结构。",
+    "notes": "不是水团轨迹证明；D26不是D20或OHC。"
+  },
+  {
+    "file": "02_ppt_main/PPT03_arrival.png",
+    "vector": "02_ppt_main/PPT03_arrival.svg",
+    "title": "Warm Water Reaches the Eastern Pacific",
+    "claim": "一次只解释到达或后续转移。",
+    "notes": "与论文Fig03相同数据、时间窗与共用量程。"
+  },
+  {
+    "file": "02_ppt_main/PPT04_volume_fate.png",
+    "vector": "02_ppt_main/PPT04_volume_fate.svg",
+    "title": "Westward Return Is the Largest Resolved Horizontal Outflow",
+    "claim": "一次只解释到达或后续转移。",
+    "notes": "与论文Fig03相同数据、时间窗与共用量程。"
+  },
+  {
+    "file": "02_ppt_main/PPT05_surface_heat_loss.png",
+    "vector": "02_ppt_main/PPT05_surface_heat_loss.svg",
+    "title": "海表散热作为独立能量诊断",
+    "claim": "三事件海表热损失不同，和体积转移分开解释。",
+    "notes": "不与体积柱图直接相加。"
+  },
+  {
+    "file": "02_ppt_main/PPT06_two_term_heat.png",
+    "vector": "02_ppt_main/PPT06_two_term_heat.svg",
+    "title": "北向热输送的温度项与流速项",
+    "claim": "在保留的两项中，异常流速项占主要贡献；2016和2024的月际时序不同。",
+    "notes": "不称纯风驱归因，不称完整热预算；开放断面温度参照已固定。"
+  },
+  {
+    "file": "02_ppt_main/PPT07_forecasts.png",
+    "vector": "02_ppt_main/PPT07_forecasts.svg",
+    "title": "观测与RO／RO＋PMM预报轨迹",
+    "claim": "展示五个起报的误差方向和幅度，以及2026验证的截止位置。",
+    "notes": "季节均值坐标；不要与原四联图的去趋势逐月r、RMSE混用。"
+  },
+  {
+    "file": "02_ppt_main/PPT08_forecast_skill.png",
+    "vector": "02_ppt_main/PPT08_forecast_skill.svg",
+    "title": "六种方法的预报技巧比较",
+    "claim": "相关、幅度误差和系统偏差共同评估；PMM增益因事件而异。",
+    "notes": "同一事件共用样本，2026仅19对；不做独立样本显著性声明。"
+  },
+  {
+    "file": "03_supplementary/FigS01_past_only_training.png",
+    "vector": "03_supplementary/FigS01_past_only_training.svg",
+    "title": "事件前训练敏感性",
+    "claim": "2015改善、2023变差的方向在事件前训练中保留。",
+    "notes": "是主文预报结论必须配套的补充证据。"
+  },
+  {
+    "file": "03_supplementary/FigS02_STC_geometry.png",
+    "title": "FigS02_STC_geometry",
+    "claim": "补充或汇报备份，不与正文重复整图。",
+    "notes": "沿用对应源报告的方法、基准和限制。"
+  },
+  {
+    "file": "03_supplementary/FigS03_skill_by_lead.png",
+    "title": "FigS03_skill_by_lead",
+    "claim": "补充或汇报备份，不与正文重复整图。",
+    "notes": "沿用对应源报告的方法、基准和限制。"
+  },
+  {
+    "file": "03_supplementary/FigS04_PMM_reconstruction.png",
+    "title": "FigS04_PMM_reconstruction",
+    "claim": "补充或汇报备份，不与正文重复整图。",
+    "notes": "沿用对应源报告的方法、基准和限制。"
+  },
+  {
+    "file": "03_supplementary/FigS06_IRI_2023.png",
+    "title": "FigS06_IRI_2023",
+    "claim": "补充或汇报备份，不与正文重复整图。",
+    "notes": "沿用对应源报告的方法、基准和限制。"
+  },
+  {
+    "file": "03_supplementary/FigS05_IRI_2015.png",
+    "title": "FigS05_IRI_2015",
+    "claim": "补充或汇报备份，不与正文重复整图。",
+    "notes": "沿用对应源报告的方法、基准和限制。"
+  },
+  {
+    "file": "03_supplementary/FigS07_IRI_2026.png",
+    "title": "FigS07_IRI_2026",
+    "claim": "补充或汇报备份，不与正文重复整图。",
+    "notes": "沿用对应源报告的方法、基准和限制。"
+  },
+  {
+    "file": "03_supplementary/FigS08_full_bridge.png",
+    "title": "FigS08_full_bridge",
+    "claim": "补充或汇报备份，不与正文重复整图。",
+    "notes": "沿用对应源报告的方法、基准和限制。"
+  }
+]

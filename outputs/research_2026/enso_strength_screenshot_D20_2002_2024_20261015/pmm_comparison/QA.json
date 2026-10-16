@@ -1,0 +1,17 @@
+{
+  "event_count": 8,
+  "development_year_count": 9,
+  "monthly_curve_rows": 135,
+  "initial_state_count": 45,
+  "source_version_same_as_forecasts": true,
+  "model_pmm_mean": 0.1557608695652173,
+  "model_pmm_std_ddof0": 3.156618157014473,
+  "actual_initial_state_max_error": 2.220446049250313e-16,
+  "event_weight_max_error": 8.881784197001252e-16,
+  "missing_values": 0,
+  "no_additional_smoothing": true,
+  "no_model_refitting": true,
+  "unit_corrected_to": "degree_C, SST-mode projection amplitude; not regional-mean SSTA",
+  "PSL_UW_2002_2024_overlap_months": 276,
+  "PSL_UW_max_difference": 0.0
+}

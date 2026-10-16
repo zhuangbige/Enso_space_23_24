@@ -1,0 +1,27 @@
+{
+  "sha256": {
+    "data/raw/noaa_cpc/oni_as_of_2026-07-30.txt": "54ffcbf1339f334ee54bb14812033222cad86c4d0b3af59d6309e555614020fe",
+    "data/derived/research_2026/paper_ro_baseline_20261014/raw_indices.csv": "91559d974dfbdbdd9546afb94b31d18e287659ef13d385ed4f92e7c77ea0c82d",
+    "data/raw/climate_indices/standard_pmm_20261014/PMM_uw.txt": "04268780d66982c1048a7f099934d67834aaad5668f2336dbf6f4b489d375a98",
+    "outputs/research_2026/manuscript_RO_exact_period_20261014/models_exact_period.json": "d4644087e9ec18239e8bc1e848cde4add51384b2889ec1d822e769d8aa026bd7",
+    "outputs/research_2026/manuscript_RO_exact_period_20261014/observations_detrended_2002Jan_2025Apr.csv": "e0590df0b57c1ec66655691eb9a775cb93dbe78b340a7795813f346234546f67",
+    "scripts/analyze_enso_strength_fullperiod_d20.py": "66924b56e4682c138d9b0383ddce178ec7d2a8689e030887ce60c2841134e47d",
+    "scripts/report_enso_strength_fullperiod_d20.py": "cc2910c53485cd68131482cf70b1b7e60285ecb00cece04b4cb2e4d28b7c395e",
+    "scripts/analyze_enso_strength_pmm_skill.py": "3fab2b5f96701fa4a6b50ee91a53a5e24cfa7f2dea0139c1afe1a90ac6271906",
+    "scripts/report_enso_strength_pmm_skill.py": "82b27272587df97b069f8a614f9ca167413b188a44cef3a4d78085aa7c9badbc",
+    "scripts/plot_enso_strength_mean_trajectories.py": "3aaf658074ae121520f5b7e61d5daa3f2a71fd035c70e2ba455ebbf92ff2445c",
+    "scripts/paper_ro_slim.py": "35607bb643f2d6d486c11cd5afd4806168c1db23c43e6ccba1b34b01358017b9",
+    "scripts/three_event_segmented_slim.py": "a6a0fa993be607a895ed79e4bf187a45c4c5c7cfd9f4c0a2b2fb838dca3bc201",
+    "scripts/run_paper_ro_pmm.py": "65c353cab8868bab0724747dd329795850dda92a886dd418a4d775aa5b9cfce4",
+    "scripts/analyze_enso_screenshot_protocol.py": "ee1c73da76e65fcc311cfecef053775e538dc5c3b0654d4e689b27d7341907ec",
+    "scripts/report_enso_screenshot_protocol.py": "72231db2fa65ad92a41fc9b456e9a886e2cb6e9b95a0d8e449bb382366180693",
+    "outputs/research_2026/IRI_RO_PMM_Maryland_bridge_20261014/frozen_models_and_preprocessing.json": "b89c91f86d01d09de1f751baa70e007bfbe61aba33d2ff1f0e7cc95dea38ef1f",
+    "outputs/interview_redesign_20261014/source_data/RO_PMM_three_event_trajectories.csv": "c4b8f98c1638d7be17bca1d08bdee261fbd35d64ba5cea1ec46ffc52b667992e"
+  },
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "platform": "macOS-14.6.1-arm64-arm-64bit",
+  "numpy": "2.3.5",
+  "pandas": "3.0.3",
+  "seed": 20261015,
+  "bootstrap_replicates": 5000
+}

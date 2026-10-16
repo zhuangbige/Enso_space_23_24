@@ -1,0 +1,36 @@
+{
+  "events": 13,
+  "development_years": 15,
+  "groups": {
+    "strong": 7,
+    "moderate": 3,
+    "weak": 3
+  },
+  "starts": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "monthly_leads": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "group_forecast_rows": 150,
+  "group_observation_rows": 45,
+  "saved_vs_raw_observation_error": 3.608224830031759e-15,
+  "shared_observation_composite_error": 3.552713678800501e-15,
+  "initial_identity_error": 0.0,
+  "independent_event_weight_error": 2.220446049250313e-16,
+  "models_refit": false,
+  "temporal_smoothing": false
+}

@@ -1,0 +1,37 @@
+{
+  "anchors": [
+    {
+      "issue_month": 2,
+      "observed_center": "2022-12-01",
+      "value": -0.8296971000000006,
+      "error_vs_obs": 0.0
+    },
+    {
+      "issue_month": 3,
+      "observed_center": "2023-01-01",
+      "value": -0.6797551111111121,
+      "error_vs_obs": 0.0
+    },
+    {
+      "issue_month": 4,
+      "observed_center": "2023-02-01",
+      "value": -0.4303826000000015,
+      "error_vs_obs": 0.0
+    },
+    {
+      "issue_month": 5,
+      "observed_center": "2023-03-01",
+      "value": -0.1459963333333327,
+      "error_vs_obs": 0.0
+    },
+    {
+      "issue_month": 6,
+      "observed_center": "2023-04-01",
+      "value": 0.1610822000000003,
+      "error_vs_obs": 0.0
+    }
+  ],
+  "model_initial_state": false,
+  "forecast_values_adjusted": false,
+  "connectors_scored": false
+}

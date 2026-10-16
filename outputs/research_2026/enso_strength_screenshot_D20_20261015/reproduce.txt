@@ -1,0 +1,7 @@
+From the Maryland project root with numpy, pandas and matplotlib installed:
+python scripts/analyze_enso_screenshot_protocol.py
+python scripts/analyze_enso_screenshot_protocol.py --report-only
+python scripts/analyze_enso_screenshot_protocol.py --validate-only
+
+Primary scores and figures are seasonal. monthly_forecasts.csv and the mixed target_type score tables are audit intermediates.
+Only the start year changes from 2002 to 1982. The legacy detrending endpoint Apr2025 is retained.

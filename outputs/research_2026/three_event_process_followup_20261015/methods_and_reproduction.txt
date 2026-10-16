@@ -1,0 +1,46 @@
+REPRODUCTION AND INTERPRETATION
+Run from the repository root, using the installed Anaconda Python:
+MPLCONFIGDIR=/private/tmp/maryland_three_events_mpl OPENBLAS_NUM_THREADS=1 /opt/anaconda3/bin/python scripts/analyze_three_event_process_followup.py
+MPLCONFIGDIR=/private/tmp/maryland_three_events_mpl OPENBLAS_NUM_THREADS=1 /opt/anaconda3/bin/python scripts/report_three_event_process_followup.py
+MPLCONFIGDIR=/private/tmp/maryland_three_events_mpl OPENBLAS_NUM_THREADS=1 /opt/anaconda3/bin/python scripts/validate_three_event_process_followup.py
+
+No fitting or event-specific adjustments are introduced. Source diagnostics,
+units, latitude bands and baseline are inherited from the audited stage-one
+products. Dynamic coefficients are read from the preceding sLIM stage. The four
+predeclared exact/perturbative and mean/detrended variants are all retained.
+
+Monthly diagnostic replay uses Phi_m (four-state monthly propagator):
+T_replay(m+1) = Phi_TT(m)*T_replay(m) + Phi_TH(m)*H_observed(m).
+Reverse replay advances H_replay with SST_observed at each step. The starting
+January state is observed. Stored values are one-step predictions BEFORE the
+next reset. All calculations use each fixed fit's model anomalies, and outputs
+are restored to source 1982--2022 monthly display anomalies. This is neither an
+independent forecast nor an exogenous causal intervention. The reverse-replay
+SST is repeatedly reset, so its apparent SST skill must not be promoted as free
+SST prediction. Compare its ocean states only. Analogously compare ocean-replay
+SST only, not ocean states which were reset every previous month.
+
+For each transition, e_m=x_obs(m)-Phi_(m-1)*x_obs(m-1) has state units. This
+one-step SST residual differs from the previous full-state error propagated to
+OND, and from the contemporaneous wind regression residual. No lag correlation
+or selected-month p-value is used to attribute these residuals to wind.
+
+Interval volume anomaly budgets integrate (west-east) and (south-north) gate
+anomalies by the trapezoid rule between adjacent monthly 15ths using actual
+seconds. Sv*seconds/1e8 gives units of 1e14 m3. WWV storage changes use endpoint
+differences. Unresolved=storage-zonal-meridional, without physical naming. This
+midmonth treatment is a discrete approximation of monthly-mean data, not daily
+resolved tendency. Common quarter means are simple arithmetic monthly means;
+Jan15-Apr15 etc. integrals are separate and not mislabeled as full quarters.
+
+The two heat terms at 180 and 140W have complete effective coverage in existing
+diagnostics. Instantaneous and climatological density sections are both shown.
+Mean-flow*T' and flow'*mean-T omit nonlinear/background geometry contributions;
+their sum is not a complete heat-transport anomaly or closed SST budget. They
+cannot be converted into a local SST tendency without a matching heat budget.
+
+Target exclusions and reference uncertainty remain as in the prior stage:
+1996--98, 2014--16, 2022--24 omitted from fitting; wind-reference trend sensitivity
+shown explicitly. Diagnostics may use target observations, as intended. Prior
+top-three months are exploratory focus only; all months and quarters are saved.
+No new convection result, vertical heat budget, or initial-state causal claim.

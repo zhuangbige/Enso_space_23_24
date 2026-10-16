@@ -1,0 +1,93 @@
+{
+  "anchors": [
+    {
+      "year": 2015,
+      "issue_month": 2,
+      "observed_center": "2014-12-01",
+      "observed_season_end": "2015-01-01",
+      "value": 0.6533625666666675,
+      "error_vs_obs": 0.0
+    },
+    {
+      "year": 2015,
+      "issue_month": 3,
+      "observed_center": "2015-01-01",
+      "observed_season_end": "2015-02-01",
+      "value": 0.5504755555555553,
+      "error_vs_obs": 0.0
+    },
+    {
+      "year": 2015,
+      "issue_month": 4,
+      "observed_center": "2015-02-01",
+      "observed_season_end": "2015-03-01",
+      "value": 0.4749247333333315,
+      "error_vs_obs": 0.0
+    },
+    {
+      "year": 2015,
+      "issue_month": 5,
+      "observed_center": "2015-03-01",
+      "observed_season_end": "2015-04-01",
+      "value": 0.5364529999999993,
+      "error_vs_obs": 0.0
+    },
+    {
+      "year": 2015,
+      "issue_month": 6,
+      "observed_center": "2015-04-01",
+      "observed_season_end": "2015-05-01",
+      "value": 0.6981801999999983,
+      "error_vs_obs": 0.0
+    },
+    {
+      "year": 2026,
+      "issue_month": 2,
+      "observed_center": "2025-12-01",
+      "observed_season_end": "2026-01-01",
+      "value": -0.6510076355631504,
+      "error_vs_obs": 0.0
+    },
+    {
+      "year": 2026,
+      "issue_month": 3,
+      "observed_center": "2026-01-01",
+      "observed_season_end": "2026-02-01",
+      "value": -0.5090514192572707,
+      "error_vs_obs": 0.0
+    },
+    {
+      "year": 2026,
+      "issue_month": 4,
+      "observed_center": "2026-02-01",
+      "observed_season_end": "2026-03-01",
+      "value": -0.2880630409993507,
+      "error_vs_obs": 0.0
+    },
+    {
+      "year": 2026,
+      "issue_month": 5,
+      "observed_center": "2026-03-01",
+      "observed_season_end": "2026-04-01",
+      "value": 0.0062405494384757,
+      "error_vs_obs": 0.0
+    },
+    {
+      "year": 2026,
+      "issue_month": 6,
+      "observed_center": "2026-04-01",
+      "observed_season_end": "2026-05-01",
+      "value": 0.3980919456461578,
+      "error_vs_obs": 0.0
+    }
+  ],
+  "input_sha256": {
+    "iri_values_from_official_vector_plumes.csv": "985da31dc838561ddcc5d1488d11816201670d5a4e5fa672aacc1e602ae61ae9",
+    "observations.csv": "409155d1be28f1e7dc273504d5171a9de2fccf2d6f066fbf2651d62dc2381f6f",
+    "seasonal_skill_common_pairs.csv": "902a262c80b10c0ee97c3087123897d1425b76cbdec88cc92996d4d564821001",
+    "common_seasonal_forecasts.csv": "2c419a4a176ee72779b200c6c29d2d62d0dac8c410c6714fc008856f489df807"
+  },
+  "plotted_reference_is_model_initial_state": false,
+  "connectors_used_in_scores": false,
+  "forecast_values_shifted": false
+}

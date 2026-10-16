@@ -1,0 +1,297 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>强中弱厄尔尼诺：RO＋PMM预报增益</title>
+<style>body{font-family:system-ui,-apple-system,"PingFang SC",sans-serif;color:#25323a;background:#f4f5f6;margin:0;line-height:1.8}
+main{max-width:1200px;margin:40px auto;padding:0 24px}h1{font-size:32px;line-height:1.4}h2{font-size:22px}
+section,.summary{background:white;padding:26px;margin:22px 0;border-radius:12px}img{width:100%;height:auto}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:9px 12px;border-bottom:1px solid #e2e6e9;text-align:right}
+th:first-child,td:first-child{text-align:left}.scroll{overflow-x:auto}a{color:#256c94}.subtitle,.downloads{color:#5a6670}
+.lead{font-size:20px;font-weight:600}li{margin:10px 0}</style><main>
+<p class="subtitle">1982—2024 · 传统 ONI · 13 次事件 · 逐事件留出 · 总 WWV26</p>
+<h1>加入 PMM 后，强、中、弱事件的预报改善多少？</h1>
+<div class="summary"><p class="lead">整体RMSE 0.792 → 0.798°C；提升率 -0.8%；改善 7/13 次事件。</p><p>全部组：RMSE 0.792 → 0.798°C，变差 0.8%；7/13 次事件改善；95%事件重采样区间 [-8.8%, +7.3%]（区间跨零）。</p><p>强组：RMSE 0.894 → 0.930°C，变差 4.0%；3/7 次事件改善；95%事件重采样区间 [-13.4%, +6.2%]（区间跨零）。</p><p>中组：RMSE 0.829 → 0.760°C，改善 8.4%；2/3 次事件改善；95%事件重采样区间 [-0.0%, +26.3%]（区间跨零）。</p><p>弱组：RMSE 0.404 → 0.410°C，变差 1.5%；2/3 次事件改善；95%事件重采样区间 [-14.2%, +28.0%]（区间跨零）。</p>
+<p><strong>变差事件：</strong>2023-2024（-24.0%）、2006-2007（-14.2%）、2009-2010（-7.2%）、1991-1992（-4.2%）、1997-1998（-1.2%）、2002-2003（-0.0%）。</p></div>
+<section><h2>月平均主结果</h2><p>提前1—9个月；事件等权；RMSE和偏差单位°C；正提升率表示改善。</p>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>组别</th>
+      <th>事件数</th>
+      <th>RO_RMSE</th>
+      <th>加PMM_RMSE</th>
+      <th>提升率</th>
+      <th>区间</th>
+      <th>改善事件</th>
+      <th>RO偏差</th>
+      <th>加PMM偏差</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>全部</td>
+      <td>13</td>
+      <td>0.792</td>
+      <td>0.798</td>
+      <td>-0.8%</td>
+      <td>[-8.8%, +7.3%]</td>
+      <td>7/13</td>
+      <td>-0.586</td>
+      <td>-0.571</td>
+    </tr>
+    <tr>
+      <td>强</td>
+      <td>7</td>
+      <td>0.894</td>
+      <td>0.930</td>
+      <td>-4.0%</td>
+      <td>[-13.4%, +6.2%]</td>
+      <td>3/7</td>
+      <td>-0.684</td>
+      <td>-0.702</td>
+    </tr>
+    <tr>
+      <td>中</td>
+      <td>3</td>
+      <td>0.829</td>
+      <td>0.760</td>
+      <td>+8.4%</td>
+      <td>[-0.0%, +26.3%]</td>
+      <td>2/3</td>
+      <td>-0.661</td>
+      <td>-0.582</td>
+    </tr>
+    <tr>
+      <td>弱</td>
+      <td>3</td>
+      <td>0.404</td>
+      <td>0.410</td>
+      <td>-1.5%</td>
+      <td>[-14.2%, +28.0%]</td>
+      <td>2/3</td>
+      <td>-0.281</td>
+      <td>-0.257</td>
+    </tr>
+  </tbody>
+</table></div></section>
+<section><h2>各强度组的 RMSE 与 PMM 增益随提前期变化</h2><img src="Fig1_skill_by_lead.png" alt="各强度组的 RMSE 与 PMM 增益随提前期变化"><p class="downloads"><a href="Fig1_skill_by_lead.pdf">PDF</a> · <a href="Fig1_skill_by_lead.svg">SVG</a> · <a href="Fig1_source.csv">图源数据 CSV</a></p></section><section><h2>全部 13 次事件：RO 与 RO＋PMM 的误差和增益</h2><img src="Fig2_all_event_improvements.png" alt="全部 13 次事件：RO 与 RO＋PMM 的误差和增益"><p class="downloads"><a href="Fig2_all_event_improvements.pdf">PDF</a> · <a href="Fig2_all_event_improvements.svg">SVG</a> · <a href="Fig2_source.csv">图源数据 CSV</a></p></section><section><h2>起报月份 × 提前期：强、中、弱三组的 PMM 增益</h2><img src="Fig3_initialization_lead_skill.png" alt="起报月份 × 提前期：强、中、弱三组的 PMM 增益"><p class="downloads"><a href="Fig3_initialization_lead_skill.pdf">PDF</a> · <a href="Fig3_initialization_lead_skill.svg">SVG</a> · <a href="Fig3_source.csv">图源数据 CSV</a></p></section>
+<!-- mean-trajectories:start --><section><h2>强、中、弱：Niño3.4平均预报轨迹</h2>
+<img src="Fig4_strength_mean_Nino34_trajectories.png" alt="强中弱事件平均Niño3.4观测与五个起报的预报曲线">
+<p>强、中、弱三组的Niño3.4距平平均轨迹；组内事件等权。每个起报月份分别平均，保留2、3、4、5、6月五个起报，蓝色虚线为RO，橙色实线为RO＋PMM，黑色粗线为观测，空心点标出五个共同初态。每条预报包含起报月及后续9个月；横轴1为发展年1月，13为次年1月，绘至次年3月。1986—88和2014—16各先将两个发展年按相对月份平均，再与其他事件等权合成。图中为月平均ERSST Niño3.4距平，相对1982–2022同月气候态；未平滑、未改动或重新拟合模型。这张均值轨迹图用于展示平均演变；不能把平均曲线之间的误差当作前一轮逐事件计算再汇总的RMSE。</p><p><a href="Fig4_strength_mean_Nino34_trajectories.pdf">PDF</a> · <a href="Fig4_strength_mean_Nino34_trajectories.svg">SVG</a> ·
+<a href="mean_trajectory_group_forecasts.csv">分组预报数据</a> ·
+<a href="mean_trajectory_group_observations.csv">分组观测数据</a> ·
+<a href="mean_trajectory_QA.json">合成核验</a></p></section><!-- mean-trajectories:end --><section><h2>全部事件逐一核对</h2><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>事件</th>
+      <th>等级</th>
+      <th>ONI峰值</th>
+      <th>起报年</th>
+      <th>配对数</th>
+      <th>RO_RMSE</th>
+      <th>加PMM_RMSE</th>
+      <th>提升率</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1982-1983</td>
+      <td>强</td>
+      <td>2.2</td>
+      <td>1982</td>
+      <td>45</td>
+      <td>0.751</td>
+      <td>0.738</td>
+      <td>+1.6%</td>
+    </tr>
+    <tr>
+      <td>1986-1988</td>
+      <td>强</td>
+      <td>1.7</td>
+      <td>1986,1987</td>
+      <td>90</td>
+      <td>0.859</td>
+      <td>0.825</td>
+      <td>+4.0%</td>
+    </tr>
+    <tr>
+      <td>1991-1992</td>
+      <td>强</td>
+      <td>1.7</td>
+      <td>1991</td>
+      <td>45</td>
+      <td>0.503</td>
+      <td>0.524</td>
+      <td>-4.2%</td>
+    </tr>
+    <tr>
+      <td>1994-1995</td>
+      <td>中</td>
+      <td>1.1</td>
+      <td>1994</td>
+      <td>45</td>
+      <td>0.804</td>
+      <td>0.658</td>
+      <td>+18.1%</td>
+    </tr>
+    <tr>
+      <td>1997-1998</td>
+      <td>强</td>
+      <td>2.4</td>
+      <td>1997</td>
+      <td>45</td>
+      <td>0.798</td>
+      <td>0.807</td>
+      <td>-1.2%</td>
+    </tr>
+    <tr>
+      <td>2002-2003</td>
+      <td>中</td>
+      <td>1.3</td>
+      <td>2002</td>
+      <td>45</td>
+      <td>1.076</td>
+      <td>1.076</td>
+      <td>-0.0%</td>
+    </tr>
+    <tr>
+      <td>2004-2005</td>
+      <td>弱</td>
+      <td>0.7</td>
+      <td>2004</td>
+      <td>45</td>
+      <td>0.392</td>
+      <td>0.371</td>
+      <td>+5.4%</td>
+    </tr>
+    <tr>
+      <td>2006-2007</td>
+      <td>弱</td>
+      <td>0.9</td>
+      <td>2006</td>
+      <td>45</td>
+      <td>0.494</td>
+      <td>0.564</td>
+      <td>-14.2%</td>
+    </tr>
+    <tr>
+      <td>2009-2010</td>
+      <td>强</td>
+      <td>1.6</td>
+      <td>2009</td>
+      <td>45</td>
+      <td>1.146</td>
+      <td>1.230</td>
+      <td>-7.2%</td>
+    </tr>
+    <tr>
+      <td>2014-2016</td>
+      <td>强</td>
+      <td>2.8</td>
+      <td>2014,2015</td>
+      <td>90</td>
+      <td>1.041</td>
+      <td>0.914</td>
+      <td>+12.1%</td>
+    </tr>
+    <tr>
+      <td>2018-2019</td>
+      <td>中</td>
+      <td>1.0</td>
+      <td>2018</td>
+      <td>45</td>
+      <td>0.509</td>
+      <td>0.375</td>
+      <td>+26.3%</td>
+    </tr>
+    <tr>
+      <td>2019-2020</td>
+      <td>弱</td>
+      <td>0.7</td>
+      <td>2019</td>
+      <td>45</td>
+      <td>0.301</td>
+      <td>0.217</td>
+      <td>+28.0%</td>
+    </tr>
+    <tr>
+      <td>2023-2024</td>
+      <td>强</td>
+      <td>2.1</td>
+      <td>2023</td>
+      <td>45</td>
+      <td>1.005</td>
+      <td>1.246</td>
+      <td>-24.0%</td>
+    </tr>
+  </tbody>
+</table></div></section>
+<section><h2>三个月平均补充</h2><p>中心提前1—5个月；与旧图的评分定义衔接，模型训练样本不同，不直接继承旧数值。</p>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>组别</th>
+      <th>事件数</th>
+      <th>RO_RMSE</th>
+      <th>加PMM_RMSE</th>
+      <th>提升率</th>
+      <th>区间</th>
+      <th>改善事件</th>
+      <th>RO偏差</th>
+      <th>加PMM偏差</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>全部</td>
+      <td>13</td>
+      <td>0.526</td>
+      <td>0.534</td>
+      <td>-1.5%</td>
+      <td>[-7.2%, +3.8%]</td>
+      <td>8/13</td>
+      <td>-0.364</td>
+      <td>-0.359</td>
+    </tr>
+    <tr>
+      <td>强</td>
+      <td>7</td>
+      <td>0.595</td>
+      <td>0.615</td>
+      <td>-3.5%</td>
+      <td>[-10.7%, +3.1%]</td>
+      <td>4/7</td>
+      <td>-0.418</td>
+      <td>-0.428</td>
+    </tr>
+    <tr>
+      <td>中</td>
+      <td>3</td>
+      <td>0.551</td>
+      <td>0.528</td>
+      <td>+4.1%</td>
+      <td>[-0.3%, +23.2%]</td>
+      <td>2/3</td>
+      <td>-0.429</td>
+      <td>-0.396</td>
+    </tr>
+    <tr>
+      <td>弱</td>
+      <td>3</td>
+      <td>0.267</td>
+      <td>0.271</td>
+      <td>-1.5%</td>
+      <td>[-10.0%, +5.7%]</td>
+      <td>2/3</td>
+      <td>-0.175</td>
+      <td>-0.162</td>
+    </tr>
+  </tbody>
+</table></div></section>
+<section><h2>方法与解释边界</h2><p>共同资料1982-01至2024-12，516个月，无缺测。13次暖事件（强7、中3、弱3），15个发展年，75个起报。每个起报自由积分9个月，主评分共675对预测；两个模型始终逐条配对。每次排除首个达标季节首月至最后达标季节末月，再向两侧各扩12个月，边界裁至资料范围。其余全部ENSO位相参与拟合，预处理只用训练样本，分段矩估计不跨缺口。SST/WWV去训练同月均值后去单条线性趋势；PMM仅去训练均值。采用原sLIM年／半年谐波、perturb2估计和RK4积分，不调参、不增加其他模型。恢复训练趋势后用1982–2022同月海温气候态展示。汇总先计算每事件MSE、再等权平均开方；改善率=100×(1−RMSE加PMM/RMSE_RO)。</p><ul><li>中、弱组各只有3次事件，置信区间是描述性区间，不能据此作稳定的显著性判断。所有区间是逐指标区间，未作多重比较校正。</li><li>bootstrap按事件重采样既有预测，不重新训练；不包含模型参数、PMM模态、再分析产品和全部跨事件依赖的不确定性。</li><li>事件等级由完整事件的观测ONI峰值决定，仅用于事后评分。持续事件1986–88及2014–16分别含两个起报年，但汇总各占一个事件权重。</li><li>这是模型参数样本外的回溯试验。训练可使用目标事件以外的较晚年份；官方PMM采用1950–2005固定模态；完整月均初态及现版本资料不等于当时实时可用资料。</li><li>RO＋PMM与RO分别拟合，其差异包括增广后重新估计海温／海洋系数的变化；这是预测增益，不是PMM独立因果效应。</li><li>本轮海洋状态为总WWV26，不能继承旧D20模型的数值。三个月平均评分的第一目标窗包含共同的起报月，单列为补充，不与月平均主结果混排。</li></ul>
+<p>分类来源：<a href="https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/oni/v5/">NOAA ONI</a>；冻结本地2026-07-30版本，按发布的一位小数识别事件。</p></section>
+<section><h2>数值验证</h2><p>留出资料扰动系数最大差 0.00e+00；固定初态、修改未来留出观测后预测最大差 0.00e+00；RK4步长加密最大差 2.39e-09；单位变换最大差 3.33e-15；保存表独立重算评分最大差 6.66e-14。26个拟合中年度传播谱半径≥1的有0个；范围 0.3715–0.4894。数值稳定不等于物理模型充分。</p><p><a href="numerical_QA.json">完整数值核验</a> ·
+<a href="fit_diagnostics.csv">全部拟合诊断</a> · <a href="source_manifest.json">数据和代码校验值</a></p></section>
+<section><h2>下载结果</h2><p><a href="results_cn.txt">中文结果</a> · <a href="event_catalog.csv">事件目录</a> ·
+<a href="event_summary.csv">逐事件汇总</a> · <a href="group_summary.csv">分组汇总</a> ·
+<a href="monthly_forecasts.csv">逐起报月平均预测</a> · <a href="seasonal_forecasts.csv">季节平均预测</a> ·
+<a href="group_scores.csv">全部分组技巧</a> · <a href="protocol_before_run.txt">固定试验口径</a></p></section></main></html>

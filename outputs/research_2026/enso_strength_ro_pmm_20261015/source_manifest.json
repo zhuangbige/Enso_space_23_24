@@ -1,0 +1,19 @@
+{
+  "sha256": {
+    "data/raw/noaa_cpc/oni_as_of_2026-07-30.txt": "54ffcbf1339f334ee54bb14812033222cad86c4d0b3af59d6309e555614020fe",
+    "outputs/research_2026/three_event_slim_baseline_20261014/inputs_absolute.csv": "8c8eaf859e8659a03a8bcb54341af1546cbbea9b1e2a90d0a1185fc661baaed1",
+    "outputs/research_2026/IRI_RO_PMM_Maryland_bridge_20261014/official_PMM.csv": "3c6accbbca21371fd4e53a50f783da157ccfedc1e49c203f1f78070e7c728c63",
+    "scripts/analyze_enso_strength_pmm_skill.py": "3fab2b5f96701fa4a6b50ee91a53a5e24cfa7f2dea0139c1afe1a90ac6271906",
+    "scripts/paper_ro_slim.py": "35607bb643f2d6d486c11cd5afd4806168c1db23c43e6ccba1b34b01358017b9",
+    "scripts/three_event_segmented_slim.py": "a6a0fa993be607a895ed79e4bf187a45c4c5c7cfd9f4c0a2b2fb838dca3bc201",
+    "scripts/report_enso_strength_pmm_skill.py": "010602ac493d6faa57be232484128c409a5a9a8034e258e4004cf9f1243b4570"
+  },
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "executable": "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+  "platform": "macOS-14.6.1-arm64-arm-64bit",
+  "numpy": "2.3.5",
+  "pandas": "3.0.3",
+  "seed": 20261015,
+  "bootstrap_replicates": 5000,
+  "oni_source": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/oni/v5/"
+}

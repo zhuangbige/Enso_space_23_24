@@ -1,0 +1,138 @@
+{
+  "plots": [
+    {
+      "year": 2015,
+      "model": "NCEP CFSv2",
+      "stem": "IRI_NCEP_CFSv2_2015_RO_PMM",
+      "n": 25
+    },
+    {
+      "year": 2015,
+      "model": "NASA GMAO",
+      "stem": "IRI_NASA_GMAO_2015_RO_PMM",
+      "n": 25
+    },
+    {
+      "year": 2015,
+      "model": "CMC CANSIP",
+      "stem": "IRI_CMC_CANSIP_2015_RO_PMM",
+      "n": 25
+    },
+    {
+      "year": 2015,
+      "model": "JMA",
+      "stem": "IRI_JMA_2015_RO_PMM",
+      "n": 25
+    },
+    {
+      "year": 2026,
+      "model": "NCEP CFSv2",
+      "stem": "IRI_NCEP_CFSv2_2026_RO_PMM",
+      "n": 19
+    },
+    {
+      "year": 2026,
+      "model": "NASA GMAO",
+      "stem": "IRI_NASA_GMAO_2026_RO_PMM",
+      "n": 19
+    },
+    {
+      "year": 2026,
+      "model": "CMC CANSIP",
+      "stem": "IRI_CMC_CANSIP_2026_RO_PMM",
+      "n": 19
+    },
+    {
+      "year": 2026,
+      "model": "JMA",
+      "stem": "IRI_JMA_2026_RO_PMM",
+      "n": 19
+    }
+  ],
+  "common_sst_ylim": [
+    -1.0,
+    4.0
+  ],
+  "inputs": {
+    "outputs/research_2026/slim_RO_PMM_2015_manuscript_style_20261014/forecasts_2015.csv": "72550b04c5bfb091859b21f0174f8b72cdc5283c11abe910fbe4d369324746d3",
+    "outputs/research_2026/slim_RO_PMM_2026_manuscript_style_20261014/forecasts_2026.csv": "53b7f0d9857582b3224d7dc2439a96f3447202b40862e165d43e5f4ad44ea947",
+    "outputs/research_2026/slim_RO_PMM_2026_manuscript_style_20261014/observed_raw_indices.csv": "9300032d784044dbbc176d124c3e0e80b0c7cb9066baf8e09e0dd290334c49a2",
+    "data/raw/iri_plumes_2015_2026_20261014/iri_plume_2015_02.svg": "7983f66f5542bc984ae9788a60a70c817dc238fae52a6fbe2e33cfc428c6f1ec",
+    "data/raw/iri_plumes_2015_2026_20261014/iri_plume_2015_03.svg": "90b3c1ab7db627660f12c4ec21feb587e6062754108953b1692d326535d4305d",
+    "data/raw/iri_plumes_2015_2026_20261014/iri_plume_2015_04.svg": "65911e555d1ed90428bb38dff3668fb5f0777b433fa38e3328be447e8bd827a7",
+    "data/raw/iri_plumes_2015_2026_20261014/iri_plume_2015_05.svg": "e41b7f6e12b5a87f771a74eb28d8406dd2924e6afb99a39be19d458a4f4535b6",
+    "data/raw/iri_plumes_2015_2026_20261014/iri_plume_2015_06.svg": "60b410fcbdf5848b0c12492b6fe459f6c1d8bcb0410bad786543d6753976b01b",
+    "data/raw/iri_plumes_2015_2026_20261014/iri_plume_2026_02.svg": "047fd1cdcd4e416429f64b9ad48da063f600642f44298f53edc14df5fc828d5e",
+    "data/raw/iri_plumes_2015_2026_20261014/iri_plume_2026_03.svg": "5a27125415fff0171fdb143a8bdd19b911d8c5288d931771f7ad3e08b631a8c3",
+    "data/raw/iri_plumes_2015_2026_20261014/iri_plume_2026_04.svg": "ce35619d11ad88dbc892f7e010d2ba023a88e184567522618ffc427bff5b4a08",
+    "data/raw/iri_plumes_2015_2026_20261014/iri_plume_2026_05.svg": "4c4fa866c97ab1fd9bb89cc4b440eef9ee07652d801606b25109e7a34b26409c",
+    "data/raw/iri_plumes_2015_2026_20261014/iri_plume_2026_06.svg": "50634a49f423a5420bacddfb455f4bc103053a557b1d8ba103fc0f7f25c84448"
+  },
+  "code_sha256": "3f483c272f5f47eba47efecd3d610d17c79a430e2333ed5e530d66eb51db3ab3",
+  "model_selection": "Coverage and institutional representation; not skill selection",
+  "future_observations_filled": false,
+  "IRI_baselines_harmonized": false,
+  "model_refitting": false,
+  "IRI_source": "Published SVG coordinates, not raw member forecasts",
+  "IRI_only_figures": [
+    {
+      "year": 2015,
+      "model": "NCEP CFSv2",
+      "stem": "IRI_only_NCEP_CFSv2_2015"
+    },
+    {
+      "year": 2015,
+      "model": "NASA GMAO",
+      "stem": "IRI_only_NASA_GMAO_2015"
+    },
+    {
+      "year": 2015,
+      "model": "CMC CANSIP",
+      "stem": "IRI_only_CMC_CANSIP_2015"
+    },
+    {
+      "year": 2015,
+      "model": "JMA",
+      "stem": "IRI_only_JMA_2015"
+    },
+    {
+      "year": 2026,
+      "model": "NCEP CFSv2",
+      "stem": "IRI_only_NCEP_CFSv2_2026"
+    },
+    {
+      "year": 2026,
+      "model": "NASA GMAO",
+      "stem": "IRI_only_NASA_GMAO_2026"
+    },
+    {
+      "year": 2026,
+      "model": "CMC CANSIP",
+      "stem": "IRI_only_CMC_CANSIP_2026"
+    },
+    {
+      "year": 2026,
+      "model": "JMA",
+      "stem": "IRI_only_JMA_2026"
+    },
+    {
+      "year": 2015,
+      "model": "four-panel overview",
+      "stem": "IRI_only_four_models_2015"
+    },
+    {
+      "year": 2026,
+      "model": "four-panel overview",
+      "stem": "IRI_only_four_models_2026"
+    }
+  ],
+  "IRI_only_plot_code_sha256": "b3bcfc015d2620d96c25d2090e467df7b665aea0cf425584f14478735e704716",
+  "IRI_observed_reference_update": {
+    "observation_center": "issue month minus 2 months",
+    "observation_season_ends": "month preceding issue month",
+    "is_model_initial_state": false,
+    "dashed_link_is_forecast": false,
+    "forecast_values_shifted": false,
+    "QA": "IRI_observed_reference_QA.json"
+  }
+}

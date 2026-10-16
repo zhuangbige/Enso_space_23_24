@@ -1,0 +1,56 @@
+Reproduction (run from /Users/daiyue/Documents/Maryland):
+MPLCONFIGDIR=/private/tmp/maryland_three_events_mpl OPENBLAS_NUM_THREADS=1 /opt/anaconda3/bin/python scripts/analyze_three_event_temperature_tendency.py
+MPLCONFIGDIR=/private/tmp/maryland_three_events_mpl OPENBLAS_NUM_THREADS=1 /opt/anaconda3/bin/python scripts/validate_three_event_temperature_tendency.py
+OPENBLAS_NUM_THREADS=1 /opt/anaconda3/bin/python scripts/check_temperature_process_projection.py
+MPLCONFIGDIR=/private/tmp/maryland_three_events_mpl OPENBLAS_NUM_THREADS=1 /opt/anaconda3/bin/python scripts/report_three_event_temperature_tendency.py
+
+Inputs: official SODA3.15.2 annual-subset NPZ caches already validated by the
+WWV26 reanalysis stage. Read only temperature, u, v, net_heating, grid coordinates
+and canonical 2024 sw_ocean layer bottoms. No raw input file is modified.
+local_fields_cache.npz contains the actual 43-year, eight-level Niño3.4 subset
+with one-cell horizontal halos and B-grid velocity interpolated to tracer points.
+Its checksum is included in the output manifest. The original annual source
+paths and file sizes are recorded in source_files.csv; URLs, units, source
+header hashes and original variable metadata remain in the input metadata_YEAR.json.
+
+Time: monthly mean fields represented at the 15th. Display derivatives use
+actual elapsed seconds; process rates are C per standard month (365.25/12 days).
+The process operator follows the existing sLIM equal-month time coordinate and
+72-step/year interpolation. These interpolated steps are NOT independent samples.
+Quarterly tables contain arithmetic means of three monthly rates. Interval
+integrals are separately saved using actual elapsed seconds and trapezoids;
+unresolved interval = endpoint temperature change minus known process integrals.
+
+Two linear horizontal process groups follow the requested mean-flow and
+anomalous-flow distinction. The nonlinear horizontal remainder is retained here
+only to audit the LOCAL temperature equation. This does not modify the earlier
+user-specified TWO-TERM open-section PW transport results.
+
+Full-year vertical velocity, mixing and assimilation increments are not in the
+selected annual cache. The older January--June process file is not substituted:
+its calendar coverage is incomplete and the inspected 2023 surface wt level is
+missing. Surface net_heating includes coupler/mass-transfer heat; its fixed-layer
+conversion has no separately available penetrating-shortwave correction.
+Consequently this is a partial tendency decomposition, not a closed heat budget.
+
+Coefficient interpretation: q_k(t) ~= R_k(m)*T_H(t) + sum_j F_kj(m)*WWV26_j(t).
+T_H is layer temperature, j identifies west/central/east, and WWV is in 1e14 m3.
+R has month^-1 units; F has C month^-1 per 1e14 m3. The four-state coefficients
+are not interchangeable with the two-state western-thermocline h coefficients.
+An exact component-sum identity includes an unresolved response by construction.
+It is not evidence that observed physical processes close the budget, and a
+coefficient multiplying WWV is not automatically identified thermocline feedback.
+
+No target-dependent model tuning, causal initial-state swaps, event-wise fitted
+parameters, stochastic forecast claims, or historical event expansion are made.
+All 24 predeclared depth/state/background/estimator combinations are retained.
+Figures 24--29 are PNG/PDF/SVG; the HTML report embeds PNGs and is self-contained.
+
+An exploratory same-state OLS response check was added after the initial process
+projection, with the decision and limits recorded in followup_diagnostic_decision.txt.
+Software: Python in /opt/anaconda3/bin/python, numpy 1.26.4, pandas 2.2.2,
+scipy 1.17.1, matplotlib 3.9.2. No new package installation was required.
+Half-degree coordinates are matched after rounding numerical tails at 1e-6deg;
+this prevents a one-column endpoint difference between classic and HDF5 years.
+Time-invariant effective volume coverage: 30m 100%, 50m 99.9618%, 75m 99.9079%.
+The small exclusions are masked ocean/island/gradient cells, not filled with zero.

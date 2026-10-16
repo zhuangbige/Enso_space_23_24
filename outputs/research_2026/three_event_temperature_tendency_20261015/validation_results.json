@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "monthly_rows": 1548,
+  "case_rows": 216,
+  "variants": 24,
+  "independent_horizontal_max_error_C_month": 5.551115123125783e-15,
+  "independent_temperature_error_C": 1.4566126083082054e-13,
+  "independent_surface_error_C_month": 3.552713678800501e-15,
+  "operator_error": 3.552713678800501e-15,
+  "component_sum_error": 3.11972669919669e-14,
+  "warning": "Checks establish numerical consistency, not full physical closure or causal attribution."
+}

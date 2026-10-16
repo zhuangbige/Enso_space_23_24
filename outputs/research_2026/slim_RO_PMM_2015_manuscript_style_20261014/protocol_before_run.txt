@@ -1,0 +1,55 @@
+2015 sLIM RO + standard PMM; manuscript-style presentation
+
+Scope: Reuse the audited seasonal RO estimator and add standard PMM states.
+Main PMM choice fixed before this rerun: the canonical MCA SST coefficient,
+following the index provider's guidance that SST better represents the coupled
+mode. Retain canonical wind and SST+wind variants; do not select by 2015 skill.
+
+Three separate fitting protocols:
+1. paper_2002_2024: exactly reuse the mean-removed, detrended T/h series from
+   the Fig.3a/Fig.4 reconstruction, Jan 2002-Apr 2025; fit Jan 2002-Dec 2024.
+   This includes 2015 and is a retrospective reconstruction/extension.
+2. past_2002_2014: fit all preprocessing and coefficients on Jan 2002-Dec 2014;
+   same start year as the paper. Primary event-excluded hindcast.
+3. past_1982_2014: same procedure with a longer historical record, kept as
+   a training-length sensitivity, not chosen to maximize 2015 skill.
+
+All protocols use ERSSTv5 Niño3.4 and GODAS equatorial area-mean D20 (h, m).
+PMM: cached author-provided standard monthly MCA SST and Wind indices; the
+provider fixes patterns over 1950-2005. Center using the training period,
+then normalize each state by training SD. No extra ENSO regression or smoothing.
+The current index/reanalysis vintage makes past-only experiments retrospective
+hindcasts; the provider's original historical preprocessing cannot be controlled.
+
+Estimator unchanged: paper_ro_slim.fit, annual + semiannual harmonics,
+second-order seasonal perturbation solution, linear six-step-per-month
+interpolation. Refit the complete joint operator for every state selection.
+RO+PMM is a new extension here, not an author-reported result.
+
+Initial states: observed monthly means for February-June 2015. Forecast leads
+1-9 months; lead 0 displayed only as initialization and excluded from scoring.
+RK4 with 24 steps/month, deterministic, all states including PMM freely evolve
+after initialization. No future observed PMM forcing or trajectory resetting.
+Five initializations x nine targets = 45 paired forecasts per variable/model.
+Month labels refer to monthly-state initialization, not the IRI issue month.
+No smoothing of observations or predictions to improve visual agreement.
+
+Primary figures: Fig.3-style two phase panels above time-series and skill panels;
+black observations, coral El Niño forecasts, framed axes and inward ticks.
+RO vs RO+PMM-SST. A Fig.4-style plume supplement shows T and h separately;
+an ablation figure retains wind and joint PMM. Each protocol is separately labeled.
+Phase axes use the same RO training SD for all models in a protocol; all models
+share the same T/h initial conditions and preprocessing. Within-model timeseries
+show detrended anomaly units. Axis ranges shared across protocol comparison pages.
+
+Metrics: correlation and RMSE for T and h, matched initializations and targets;
+per-start metrics; normalized joint T/h RMSE; RMSE percent change relative to RO.
+These 45 pairs are overlapping forecasts of one event, not 45 independent events.
+No significance interval or claim of general PMM improvement from 2015 alone.
+Same-coefficient PMM-to-T/h cuts retained to distinguish removing a coupling
+from refitting the two-state model.
+
+QA: reproduce saved RO coefficients, exact initialization/date checks,
+finiteness and complete target coverage, past-only future-input perturbation,
+RK4 step convergence, state-unit invariance and common normalization.
+Keep all negative results and unselected sensitivities.

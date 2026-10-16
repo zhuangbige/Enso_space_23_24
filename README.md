@@ -1,5 +1,20 @@
 # 2023/24 El Nino Air-Sea Decoupling Attribution
 
+## Latest main work — 2026-10-16
+
+The current research and deliverables are indexed in
+[Maryland ENSO 主要工作入口](docs/MAIN_WORK_20261016.md).
+Start there for the updated three-event figure book, directional-advection
+diagnostics, D20/PMM event comparisons, and Chinese/English presentation files.
+Read the newest entries in [PROJECT_MEMORY.md](PROJECT_MEMORY.md) for the current
+analysis settings and corrections to earlier interpretations.
+
+This snapshot is on `codex/maryland-main-work-20261016`, building on the September
+backup. Binary deliverables use Git LFS. The original first-stage introduction
+below is retained as project history.
+
+## Original project scaffold
+
 This repository implements the first-stage research scaffold for diagnosing why the
 2023/24 strong El Nino had strong oceanic warming but comparatively weak wind,
 rainfall, and teleconnection responses.
